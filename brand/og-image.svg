@@ -1,29 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1014"/><stop offset="1" stop-color="#141a21"/>
+      <stop offset="0" stop-color="#0d1220"/><stop offset="1" stop-color="#101a26"/>
     </linearGradient>
-    <linearGradient id="sfi" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8b8bff"/><stop offset="0.55" stop-color="#a97bff"/><stop offset="1" stop-color="#3fd0c9"/>
+    <linearGradient id="bgr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f6fd6"/><stop offset="0.55" stop-color="#17a67a"/><stop offset="1" stop-color="#22c88f"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- top gradient accent bar -->
-  <rect x="0" y="0" width="1200" height="8" fill="url(#sfi)"/>
-  <!-- faint long/short chart motif -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#bgr)"/>
   <path d="M0 470 L150 440 L250 500 L370 420 L500 460 L640 360 L780 400 L920 300 L1060 340 L1200 250"
-        fill="none" stroke="url(#sfi)" stroke-width="3" stroke-opacity="0.25"/>
-  <!-- mark: bold rising-trend arrow (growth/strength), bright on dark -->
-  <g transform="translate(92,128) scale(2.0625)" fill="none" stroke="url(#sfi)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M8 50 L24 40 L34 44 L52 20"/>
-    <path d="M39 20 L52 20 L52 33"/>
-  </g>
-  <!-- wordmark -->
-  <text x="252" y="215" font-family="Inter, system-ui, sans-serif" font-size="104" font-weight="800" letter-spacing="-2">
-    <tspan fill="#eef3f9">SIF</tspan><tspan fill="url(#sfi)">intel</tspan>
+        fill="none" stroke="url(#bgr)" stroke-width="3" stroke-opacity="0.22"/>
+  <!-- wordmark with star over the "i" -->
+  <text x="92" y="250" font-family="Inter, system-ui, sans-serif" font-size="108" font-weight="800" letter-spacing="-2">
+    <tspan fill="#eef3f9">SIF</tspan><tspan fill="#22c88f">intel</tspan>
   </text>
-  <text x="92" y="330" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="600" fill="#dbe3ec">Intelligence on India's Specialized Investment Funds</text>
-  <text x="92" y="392" font-family="Inter, system-ui, sans-serif" font-size="27" font-weight="400" fill="#8b97a6">Real NAVs · disclosed holdings · risk/return · up/down capture · fund comparison</text>
-  <text x="92" y="560" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="24" font-weight="500" fill="#3fd0c9">sifintel.com</text>
-  <text x="92" y="596" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#5c6675">Decode the strategy behind the returns.</text>
+  <path d="M269 90 L278 111 L299 120 L278 129 L269 150 L260 129 L239 120 L260 111 Z" fill="#22c88f"/>
+  <text x="94" y="330" font-family="Inter, system-ui, sans-serif" font-size="33" font-weight="600" letter-spacing="4" fill="#cdd8e6">SPECIALISED INVESTMENT FUND INTELLIGENCE</text>
+  <text x="94" y="392" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="400" fill="#8b97a6">Real NAVs · disclosed holdings · risk/return · up/down capture · fund comparison</text>
+  <text x="94" y="560" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="24" font-weight="500" fill="#22c88f">sifintel.com</text>
+  <text x="94" y="596" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#5c6675">Decode the strategy behind the returns.</text>
 </svg>

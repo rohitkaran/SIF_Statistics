@@ -50,9 +50,13 @@
   body{padding-bottom:60px}
   a{color:var(--accent2)}
   .num{font-family:var(--mono);font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
-  h1{font-size:14px;font-weight:800;letter-spacing:.04em;margin:0;text-transform:uppercase;
-    background:linear-gradient(90deg,var(--grad1),var(--grad2),var(--grad3));
-    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1.wm{font-size:29px;font-weight:800;letter-spacing:-0.6px;margin:0;line-height:1.03;
+    text-transform:none;white-space:nowrap;color:#1c3f77;font-family:var(--sans)}
+  .wm .wm-in{position:relative;color:#17a67a}
+  .wm-star{position:absolute;left:-0.10em;top:-0.44em;width:0.5em;height:0.5em;fill:#17a67a}
+  :root[data-theme="dark"] h1.wm{color:#e6edf5}
+  :root[data-theme="dark"] .wm .wm-in{color:#33d69f}
+  :root[data-theme="dark"] .wm-star{fill:#33d69f}
   .sub{color:var(--ink-dim);font-size:11px}
 
   /* ---- control bar ---- */
@@ -257,10 +261,9 @@
 <header>
   <div class="bar">
     <div class="brand">
-      <img class="blogo" src="brand/logo-mark.svg" alt="SIFintel" width="38" height="38">
       <div class="btext">
-        <h1>SIFintel</h1>
-        <span class="sub">Intelligence on India's Specialized Investment Funds · real NAVs & holdings</span>
+        <h1 class="wm">SIF<span class="wm-in">intel<svg class="wm-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1>
+        <span class="sub">Specialised Investment Fund Intelligence</span>
       </div>
     </div>
     <button id="filtToggle" class="mobtoggle" aria-expanded="false">☰ Filters</button>
