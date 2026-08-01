@@ -86,11 +86,22 @@
   .cmp-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11.5px;margin:8px 0}
   .cmp-legend .lg{display:flex;align-items:center;gap:5px}
   .cmp-legend .sw2{width:14px;height:3px;border-radius:2px;display:inline-block}
-  table.cmpt{border-collapse:collapse;width:100%;margin-top:8px;font-size:11.5px}
-  table.cmpt th,table.cmpt td{border-bottom:1px solid var(--line);padding:4px 8px;white-space:nowrap;text-align:right}
-  table.cmpt th{color:var(--ink-dim);font-weight:600;text-transform:uppercase;font-size:9.5px;letter-spacing:.04em}
-  table.cmpt td:first-child,table.cmpt th:first-child{text-align:left;max-width:260px;overflow:hidden;text-overflow:ellipsis}
+  .cmpt-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px;border:1px solid var(--line);border-radius:8px}
+  .cmp-note{margin:2px 0 8px}
+  table.cmpt{border-collapse:collapse;width:100%;font-size:11.5px}
+  table.cmpt th,table.cmpt td{border-bottom:1px solid var(--line);padding:6px 10px;white-space:nowrap;text-align:right}
+  table.cmpt th{color:var(--ink-dim);font-weight:600;text-transform:uppercase;font-size:9.5px;letter-spacing:.04em;
+    position:sticky;top:0;background:var(--thead);z-index:1}
+  table.cmpt td:first-child,table.cmpt th:first-child{text-align:left;max-width:230px;overflow:hidden;text-overflow:ellipsis;
+    position:sticky;left:0;background:var(--panel);z-index:2;box-shadow:1px 0 0 var(--line2)}
+  table.cmpt th:first-child{z-index:3;background:var(--thead)}
+  table.cmpt tbody tr:hover td{background:var(--rowhover)}
   .cmp-empty{color:var(--ink-dim);font-size:12.5px;padding:16px 4px}
+  /* floating "Compare (n)" button when funds are ticked */
+  #cmpFloat{display:none;position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:70;
+    background:var(--accent);color:#fff;border:none;border-radius:24px;padding:11px 20px;font-weight:700;
+    font-size:13px;box-shadow:0 8px 24px rgba(91,91,240,.45);cursor:pointer}
+  #cmpFloat.on{display:inline-flex;align-items:center;gap:7px}
 
   /* ---- table ---- */
   .wrap{overflow-x:auto}
@@ -168,76 +179,60 @@
 
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
-  /* mobile-only controls (hidden on desktop) */
-  .mobtoggle{display:none}
-  .mobonly{display:none}
-  .fld .chk{display:flex;align-items:center;gap:6px;font-size:12.5px;font-family:var(--sans);color:var(--ink);padding:5px 0;cursor:pointer}
-  .fld .chk input{accent-color:var(--accent);width:15px;height:15px}
+  .hidden-col{display:none}          /* columns hidden via the Columns picker (any viewport) */
 
-  /* ---- mobile: each fund becomes a CARD (no horizontal scroll) ---- */
+  /* column picker */
+  .mobtoggle{display:none}
+  .colpick{position:relative}
+  .colpick>summary{list-style:none;cursor:pointer;background:var(--panel2);border:1px solid var(--line2);
+    color:var(--ink);border-radius:5px;padding:4px 8px;font-size:12px;font-family:var(--mono);white-space:nowrap}
+  .colpick>summary::-webkit-details-marker{display:none}
+  .colpick[open]>summary{border-color:var(--accent)}
+  .colpick-menu{position:absolute;z-index:60;top:calc(100% + 4px);left:0;min-width:200px;max-height:60vh;overflow:auto;
+    background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:6px;box-shadow:0 14px 34px rgba(0,0,0,.28)}
+  .colpick-menu .copt{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:5px;font-size:12.5px;cursor:pointer;color:var(--ink)}
+  .colpick-menu .copt:hover{background:var(--rowhover)}
+  .colpick-menu .copt input{accent-color:var(--accent);width:15px;height:15px}
+  .colpick-menu .cprow{display:flex;gap:6px;padding:3px 4px 6px;border-bottom:1px solid var(--line);margin-bottom:4px}
+  .colpick-menu .cprow button{flex:1;padding:4px;font-size:11px}
+
+  /* ---- mobile: compact COMPARISON table (funds = rows, chosen metrics = columns) ---- */
   .wrap{-webkit-overflow-scrolling:touch}
   @media (max-width:820px){
-    html,body{font-size:13px}
+    html,body{font-size:12.5px}
     body{padding-bottom:16px}
-    /* header: compact, data-first. Filters collapse behind a toggle. */
+    /* header scrolls away so the table owns the screen; filters collapse behind a toggle */
     header{position:static;padding:9px 11px}
     .bar{gap:9px 10px;align-items:center}
-    .brand{flex:1 1 calc(100% - 112px);min-width:0;margin:0}   /* brand+toggle own row; fields wrap below */
+    .brand{flex:1 1 calc(100% - 116px);min-width:0;margin:0}
     h1{font-size:14px} .brand .sub{font-size:10.5px}
-    .mobtoggle{align-self:center}
     .mobtoggle{display:inline-flex;align-items:center;gap:5px;background:var(--panel2);
-      border:1px solid var(--line2);color:var(--ink);border-radius:9px;padding:9px 15px;font-weight:600;font-size:13px}
-    .mobonly{display:flex}
+      border:1px solid var(--line2);color:var(--ink);border-radius:9px;padding:9px 15px;font-weight:600;font-size:13px;align-self:center}
     header.collapsed .fld,header.collapsed .status{display:none}
     header:not(.collapsed){box-shadow:0 14px 30px rgba(0,0,0,.22)}
     .fld{flex:1 1 44%} .fld label{font-size:10px}
-    .fld input,.fld select{width:100%;padding:10px 11px;font-size:14px;border-radius:8px}
+    .fld input,.fld select,.colpick>summary{width:100%;padding:10px 11px;font-size:14px;border-radius:8px}
     .fld input.small,.fld input.rx{width:100%}
     header:not(.collapsed) button{border-radius:8px;padding:10px 13px}
 
-    .wrap{overflow-x:visible}
-    table,tbody,tr,td{display:block;width:auto}
-    thead{display:none}                         /* labels come from each cell's data-label */
-    table{min-width:0}
-
-    /* group heading */
-    tr.grp{background:transparent;border:none;margin:16px 12px 6px;padding:0}
-    tr.grp td{background:transparent!important;border:none!important;padding:0;box-shadow:none;position:static}
-    .grp .gt{font-size:12px} .grp .gc{font-size:11px}
-
-    /* fund card */
-    tbody tr:not(.grp):not(.expand){background:var(--panel);border:1px solid var(--line2);
-      border-radius:14px;margin:9px 12px;padding:12px 14px;box-shadow:0 2px 6px rgba(15,20,30,.06)}
-    tbody tr.open{border-color:var(--accent);box-shadow:0 4px 14px rgba(91,91,240,.18)}
-    tbody tr:hover td{background:transparent}
-    tr.myfund{box-shadow:0 2px 6px rgba(15,20,30,.06),inset 3px 0 0 var(--accent)!important}
-
-    /* card header = the name cell */
-    td:first-child{position:static;box-shadow:none;display:block;border:none!important;padding:0 0 9px;
-      margin:0 0 8px;border-bottom:1px solid var(--line)!important;background:transparent!important;max-width:none;white-space:normal}
-    td:first-child::before{display:none}
-    .nm .caret{font-size:12px} .nm .amc{font-size:14.5px;font-weight:700}
-    .nm .parent{color:var(--ink-dim);font-size:12px} .nm .plan{display:inline;color:var(--ink-faint);font-size:11.5px}
-    .nm input.cmp{width:18px;height:18px;transform:scale(1.05)}
-
-    /* metric rows: label ⟷ value */
-    td{border:none;padding:6px 0;white-space:normal;font-size:13px;
-      display:flex;justify-content:space-between;align-items:center;gap:12px}
-    td::before{content:attr(data-label);color:var(--ink-dim);font-size:12px;font-weight:600;white-space:nowrap}
-    td.num,td .num{font-size:13.5px}
-    td>span{margin-left:auto;text-align:right}
-    tr.low td{opacity:1}                          /* cards read fine; don't fade */
-    tr.low{opacity:.62}
-    body:not(.allcols) .mhide{display:none}       /* a few key stats per card; "All columns" shows every field */
-
-    /* expanded detail */
-    tr.expand{background:transparent;margin:0 12px 9px}
-    .expand td{padding:0;background:transparent;display:block}
-    .expand td::before{display:none}
-    .exp-in{grid-template-columns:1fr;padding:0;gap:16px;background:var(--panel2);border:1px solid var(--line2);border-radius:12px;padding:12px}
+    /* fit-to-screen comparison table: fund column pinned, chosen metrics share the rest.
+       Auto layout (NOT table-layout:fixed) so display:none columns are dropped cleanly. */
+    .wrap{overflow-x:auto}
+    table{min-width:0;width:100%}
+    thead th{top:0;padding:7px 5px;font-size:9px;text-align:right}
+    thead th .qh{display:none}
+    td{padding:10px 6px;font-size:12.5px}
+    td .num,.num{font-size:12.5px}
+    tr.grp td{padding:7px 8px}
+    .nm{max-width:44vw;white-space:normal;line-height:1.3}
+    .nm .amc{font-size:12.5px} .nm .parent{display:block;font-size:10px;margin-left:16px} .nm .plan{display:none}
+    .nm input.cmp{width:17px;height:17px}
+    thead th:first-child,tbody td:first-child{box-shadow:2px 0 7px -3px rgba(0,0,0,.3)}
+    .exp-in{grid-template-columns:1fr;padding:12px;gap:16px}
     .port .pgrid{grid-template-columns:1fr}
     footer{position:static;padding:9px 12px;font-size:10.5px}
-    .cmp-in{padding:12px;border-radius:14px} table.cmpt{font-size:11px}
+    .cmp-in{padding:12px;border-radius:14px} table.cmpt{font-size:10.5px}
+    .colpick-menu{min-width:180px}
   }
 </style>
 
@@ -277,7 +272,10 @@
     </select></div>
     <div class="fld"><label>My funds (regex)</label><input class="rx" id="myrx" value="apex"></div>
     <div class="fld"><label>Search</label><input class="rx" id="search" placeholder="name…"></div>
-    <div class="fld mobonly"><label>Columns</label><label class="chk"><input type="checkbox" id="allcols"> All columns</label></div>
+    <div class="fld"><label>Columns to compare</label>
+      <details class="colpick"><summary id="colsum">Choose columns ▾</summary>
+        <div class="colpick-menu" id="colmenu"></div>
+      </details></div>
     <div class="fld"><label>&nbsp;</label><button class="pri" id="recompute">Recompute</button></div>
     <div class="fld"><label>&nbsp;</label><button id="maxrange">Max range</button></div>
     <div class="fld"><label>&nbsp;</label><button id="fetch">Fetch AMFI ↻</button></div>
@@ -293,6 +291,8 @@
 </header>
 
 <div id="drop"><div class="box">Drop a raw AMFI file<br><span class="sub">NAVAll.txt or a NAV History report — columns mapped by header name</span></div></div>
+
+<button id="cmpFloat">▦ Compare <span id="cmpFloatN">0</span> funds</button>
 
 <div id="cmp"><div class="cmp-in">
   <div class="cmp-hd"><b>Compare funds</b> <span class="sub" id="cmpSub"></span>
@@ -579,9 +579,13 @@ const SIFMetrics = (function(){
     downCapture:'Down capture vs NIFTY 50: on days the index fell, the fund moved this % of the index’s fall. Below 100 = fell less than the market; below 0 = actually ROSE when the market fell (ideal for long-short).',
     uw:'Underwater curve: how far below its last peak the fund was, over time.',
   };
-  // On phones we default to a curated set of columns for clarity; "All columns" (in Filters) shows the rest.
-  const MOBILE_HIDE=new Set(['rangeFrom','obs','r1d','r1w','rmtd','r2m','r3m','rfytd',
-    'annRet','annStd','sortino','calmar','maxRU','recovery','winRate','gainPain','upCapture','uw']);
+  // Columns hidden via the Columns picker. Seeded to a curated set on phones so the comparison
+  // table stays readable; the user can show/hide any column on any device.
+  // Phones start showing just these 4 (fit the screen, no side-scroll): 1M, Total, Sharpe, Dn Cap.
+  // Users swap in any timeframe/metric via the Columns picker, or open Compare for the full matrix.
+  const MOBILE_HIDE=['rangeFrom','obs','r1d','r1w','rmtd','r2m','r3m','r6m','rytd','rfytd',
+    'annRet','annStd','sortino','calmar','maxDD','maxRU','recovery','winRate','gainPain','upCapture','uw'];
+  let hiddenCols=new Set();
 
   // ---- formatting ----
   const na='<span class="na">—</span>';
@@ -702,7 +706,7 @@ const SIFMetrics = (function(){
     const tr=$('#head'); tr.innerHTML='';
     COLS.forEach(c=>{
       const th=document.createElement('th');
-      th.className=c.cls.replace('num','')+' col-'+c.k+(MOBILE_HIDE.has(c.k)?' mhide':'');
+      th.className=c.cls.replace('num','')+' col-'+c.k+(hiddenCols.has(c.k)?' hidden-col':'');
       th.innerHTML=c.label+(HELP[c.k]?'<span class="qh">ⓘ</span>':'')+(sortKey===c.k?'<span class="ar">'+(sortDir<0?'▼':'▲')+'</span>':'');
       if(HELP[c.k]) th.title=HELP[c.k];
       if(c.sortable){ th.onclick=()=>{ if(sortKey===c.k) sortDir*=-1; else {sortKey=c.k;sortDir=-1;} render(); }; }
@@ -759,9 +763,9 @@ const SIFMetrics = (function(){
     tr.appendChild(first);
     for(let i=1;i<COLS.length;i++){
       const c=COLS[i]; const td=document.createElement('td');
-      td.className=c.cls.replace('num','')+' num col-'+c.k+(MOBILE_HIDE.has(c.k)?' mhide':'');
-      td.setAttribute('data-label', c.label);   // becomes the field label in the mobile card view
-      if(c.k==='rangeFrom'){ td.className='r rng num col-rangeFrom mhide';
+      td.className=c.cls.replace('num','')+' num col-'+c.k+(hiddenCols.has(c.k)?' hidden-col':'');
+      td.setAttribute('data-label', c.label);   // field label used in the mobile card view
+      if(c.k==='rangeFrom'){ td.className='r rng num col-rangeFrom'+(hiddenCols.has('rangeFrom')?' hidden-col':'');
         td.innerHTML = r.m.rangeFrom? '<span>'+shortD(r.m.rangeFrom)+'→'+shortD(r.m.rangeTo)+'</span>':na; }
       else td.innerHTML = c.fmt? c.fmt(r): c.val(r);
       tr.appendChild(td);
@@ -948,7 +952,8 @@ const SIFMetrics = (function(){
   // ---- compare chart (overlay selected funds, rebased to 100, vs NIFTY 50) ----
   const CMP_PAL=['#5b5bf0','#0e9aa7','#d9820b','#12a150','#e5484d','#8b5cf6','#c026d3','#0891b2','#65a30d','#db2777'];
   function updateCompareBtn(){ const n=compareSet.size; $('#cmpN').textContent='('+n+')';
-    $('#compare').classList.toggle('pri', n>0); }
+    $('#compare').classList.toggle('pri', n>0);
+    const f=$('#cmpFloat'); if(f){ $('#cmpFloatN').textContent=n; f.classList.toggle('on', n>0); } }
   function openCompare(){ $('#cmp').classList.add('on'); renderCompare(); }
   function closeCompare(){ $('#cmp').classList.remove('on'); }
   function renderCompare(){
@@ -962,6 +967,7 @@ const SIFMetrics = (function(){
     codes.forEach((code,i)=>{ const s=DATA.schemes.find(x=>x.code===code); if(!s) return;
       const w=M.windowSeries(s.series, from, to); if(w.length<2) return;
       const m=M.compute(w,{D,Rf,recoveryMode}); Object.assign(m,M.captureRatios(w,BENCH));
+      Object.assign(m,M.periodReturns(s.series, to||(s.series.length?s.series[s.series.length-1][0]:null)));
       items.push({code,name:s.name,sif:s.sif,color:CMP_PAL[i%CMP_PAL.length],w,m}); });
     let bench=null;
     if(BENCH){ const bw=Object.keys(BENCH).filter(d=>(!from||d>=from)&&(!to||d<=to)).sort().map(d=>[d,BENCH[d]]);
@@ -985,14 +991,19 @@ const SIFMetrics = (function(){
     const legend='<div class="cmp-legend">'+lines.map(L=>'<span class="lg"><span class="sw2" style="background:'+L.color+'"></span>'+
       esc(L.sif)+(L.isBench?'':' <span class="sub">'+esc(splitName(L.name).plan||'')+'</span>')+'</span>').join('')+'</div>';
     const g=x=>x==null||!isFinite(x)?'—':(Math.abs(x)>=100?x.toFixed(0):x.toFixed(2));
-    let tbl='<table class="cmpt"><thead><tr><th>Fund</th><th>Total %</th><th>Ann Ret %</th><th>Ann Std %</th><th>Sharpe</th><th>Max DD %</th><th>Up Cap</th><th>Dn Cap</th></tr></thead><tbody>';
+    // full timeframe × metric comparison matrix (funds = rows)
+    const CMPCOLS=[['r1m','1M %'],['r3m','3M %'],['r6m','6M %'],['rytd','YTD %'],['rfytd','FYTD %'],
+      ['totalRet','Total %'],['annStd','Ann Std %'],['sharpe','Sharpe'],['sortino','Sortino'],
+      ['maxDD','Max DD %'],['upCapture','Up Cap'],['downCapture','Dn Cap']];
+    let tbl='<div class="cmpt-wrap"><table class="cmpt"><thead><tr><th>Fund</th>'+
+      CMPCOLS.map(c=>'<th>'+c[1]+'</th>').join('')+'</tr></thead><tbody>';
     items.forEach(L=>{ const m=L.m;
       tbl+='<tr><td><span class="sw2" style="background:'+L.color+';display:inline-block;width:12px;margin-right:6px"></span>'+
-        esc(L.sif)+' '+esc(splitName(L.name).plan||'')+'</td><td class="num">'+g(m.totalRet)+'</td><td class="num">'+g(m.annRet)+
-        '</td><td class="num">'+g(m.annStd)+'</td><td class="num">'+g(m.sharpe)+'</td><td class="num">'+g(m.maxDD)+
-        '</td><td class="num">'+g(m.upCapture)+'</td><td class="num">'+g(m.downCapture)+'</td></tr>'; });
-    tbl+='</tbody></table>';
-    body.innerHTML=legend+svg+tbl;
+        esc(L.sif)+' <span class="sub">'+esc(splitName(L.name).plan||'')+'</span></td>'+
+        CMPCOLS.map(c=>'<td class="num">'+g(m[c[0]])+'</td>').join('')+'</tr>'; });
+    tbl+='</tbody></table></div>';
+    body.innerHTML='<div class="cmp-note sub">NAV rebased to 100 vs '+esc(BENCHNAME)+
+      '. Table compares each fund across timeframes &amp; risk metrics for the current window.</div>'+svg+legend+tbl;
   }
 
   // ---- helpers ----
@@ -1140,17 +1151,41 @@ const SIFMetrics = (function(){
   setTheme(_theme);
   $('#theme').onclick=()=>setTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
 
-  // mobile: filters collapse by default (data-first) + curated columns toggle
+  // mobile: filters collapse by default (data-first)
   const _mq=window.matchMedia('(max-width:820px)');
   function applyMobile(){ document.querySelector('header').classList.toggle('collapsed', _mq.matches); }
   applyMobile(); try{ _mq.addEventListener('change',applyMobile); }catch(e){ _mq.addListener(applyMobile); }
   $('#filtToggle').onclick=()=>{ const h=document.querySelector('header');
     const c=h.classList.toggle('collapsed'); $('#filtToggle').setAttribute('aria-expanded',(!c).toString()); };
-  $('#allcols').onchange=e=>document.body.classList.toggle('allcols', e.target.checked);
+
+  // ---- Columns picker: choose which metric/timeframe columns to compare ----
+  const CPRESETS={ returns:['r1m','r3m','r6m','rytd','rfytd','totalRet'],
+                   risk:['sharpe','sortino','calmar','maxDD','downCapture','upCapture'] };
+  function pickable(){ return COLS.filter(c=>c.k!=='name'&&c.k!=='uw'); }
+  function updateColSum(){ const shown=pickable().filter(c=>!hiddenCols.has(c.k)).length;
+    const s=$('#colsum'); if(s) s.textContent='Columns ('+shown+') ▾'; }
+  function buildColMenu(){
+    const menu=$('#colmenu'); if(!menu) return;
+    const presets='<div class="cprow"><button data-preset="returns">Returns</button>'+
+      '<button data-preset="risk">Risk</button><button data-preset="all">All</button></div>';
+    menu.innerHTML=presets+pickable().map(c=>'<label class="copt"><input type="checkbox" data-col="'+c.k+'"'+
+      (hiddenCols.has(c.k)?'':' checked')+'>'+esc(c.label)+'</label>').join('');
+    menu.querySelectorAll('input[data-col]').forEach(cb=>cb.onchange=()=>{
+      const k=cb.getAttribute('data-col'); if(cb.checked) hiddenCols.delete(k); else hiddenCols.add(k);
+      render(); updateColSum(); });
+    menu.querySelectorAll('button[data-preset]').forEach(b=>b.onclick=e=>{ e.preventDefault();
+      const p=b.getAttribute('data-preset');
+      if(p==='all') hiddenCols=new Set();
+      else { const keep=new Set(CPRESETS[p]); hiddenCols=new Set(pickable().filter(c=>!keep.has(c.k)).map(c=>c.k)); }
+      buildColMenu(); render(); updateColSum(); });
+  }
+  if(_mq.matches) hiddenCols=new Set(MOBILE_HIDE);   // phones start on a readable, comparison-ready set
+  buildColMenu(); updateColSum();
 
   $('#recompute').onclick=recompute;
   $('#csv').onclick=exportCSV;
   $('#compare').onclick=openCompare;
+  $('#cmpFloat').onclick=openCompare;
   $('#cmpClose').onclick=closeCompare;
   $('#cmpClear').onclick=()=>{ compareSet.clear(); updateCompareBtn(); render(); renderCompare(); };
   $('#cmp').addEventListener('click',e=>{ if(e.target.id==='cmp') closeCompare(); });
