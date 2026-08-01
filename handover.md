@@ -3,9 +3,16 @@
 Living notes so any new session can pick up fast. Pairs with `README.md` (user-facing docs).
 
 ## What this is
-A public terminal for India's **Specialized Investment Funds (SIFs)**: live NAV-based risk/return
-metrics **plus** the fund-house monthly **portfolio disclosures** (holdings, allocation, long/short,
-strategy, fund managers). Product/monetization strategy lives in **`BUSINESS_PLAN.md`**.
+**Brand: SIFintel** (target domain **sifintel.com**, .com available as of naming). A public terminal
+for India's **Specialized Investment Funds (SIFs)**: live NAV-based risk/return metrics **plus** the
+fund-house monthly **portfolio disclosures** (holdings, allocation, long/short, strategy, fund
+managers). Differentiator = "intel": decode each fund's *strategy* from holdings/derivatives, not just
+show numbers. Product/monetization strategy lives in **`BUSINESS_PLAN.md`**.
+
+**To go live on sifintel.com:** buy the domain → add a `CNAME` file containing `sifintel.com` at the
+repo root (or set it in Settings → Pages → custom domain) → at the DNS registrar add the 4 GitHub
+Pages A records (185.199.108–111.153) for the apex and a CNAME `www → rohitkaran.github.io` → enable
+"Enforce HTTPS". Then update the canonical/OG URLs (already point to sifintel.com).
 
 **Coverage: 90 / 111 scheme codes have disclosed holdings.** Remaining gaps are genuine: qsif
 Sector Rotation, DynaSIF Ex-Top (old `.xls`, only 2 of 3 sheets parse), Altiva Ex-Top, and the

@@ -1,9 +1,14 @@
-# SIF Risk / Return Terminal
+# SIFintel — Intelligence on India's Specialized Investment Funds
 
-A local, self-contained dashboard for the risk/return profile of India's
-**Specialized Investment Funds (SIFs)** — the long-short / allocator / sector-rotation
-strategies AMFI publishes separately from mutual funds. Every number traces back to a
-NAV file downloaded live from AMFI; nothing is synthetic.
+**SIFintel** (sifintel.com) is the intelligence layer for India's **Specialized Investment
+Funds (SIFs)** — the long-short / allocator / sector-rotation strategies AMFI publishes
+separately from mutual funds. Real AMFI NAVs, risk/return analytics, disclosed holdings,
+up/down capture vs NIFTY 50, and side-by-side comparison — with the goal of *decoding the
+strategy behind the returns*. Every number traces back to a file downloaded live from AMFI or
+the AMC; nothing is synthetic.
+
+> This repo began as the "SIF Risk / Return Terminal" and is now the SIFintel web app; the
+> `sif_dashboard.html` terminal remains the free, SEO-facing front door.
 
 ```
 sif-dashboard/

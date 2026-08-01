@@ -1,13 +1,19 @@
-# SIF Statistics — Business Plan & Product Architecture
+# SIFintel — Business Plan & Product Architecture
 
-*Working name: **SIFwatch** (placeholder). A data, education and media platform for India's
-Specialized Investment Funds (SIFs). This document lays out the opportunity, the three customer
-segments, the product pillars, how we make money, the content/video engine, the full technical
-architecture, a phased roadmap, and the regulatory guardrails.*
+*Brand: **SIFintel** (sifintel.com). The intelligence layer for India's Specialized Investment
+Funds (SIFs) — data, strategy decoding, education and media. This document lays out the opportunity,
+the three customer segments, the product pillars, how we make money, the content/video engine, the
+full technical architecture, a phased roadmap, and the regulatory guardrails.*
 
 > **North star:** be the **default source of truth and preparation** for anyone touching SIFs —
 > investors researching, distributors selling, and AMCs benchmarking — and the **loudest, clearest
 > voice** explaining SIFs to India through short-form video.
+>
+> **The wedge in the name — "intel":** don't stop at NAVs and ratios. **Decode each fund's actual
+> strategy** — how the long/short book, hedges, arbitrage and asset mix *actually generate the
+> returns* — from the disclosed holdings and derivative positions. This strategy-intelligence layer
+> (a genuine team strength) is the differentiator competitors won't easily copy and the reason a
+> distributor or AMC pays: it turns raw disclosure into *understanding*.
 
 ---
 
