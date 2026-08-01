@@ -87,8 +87,13 @@
   td{padding:4px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
   td.r{text-align:right}
   tbody tr:hover td{background:var(--rowhover)}
+  /* pin the scheme-name column at ALL widths so the metrics scroll under it */
+  thead th:first-child{position:sticky;left:0;z-index:28;background:var(--thead);box-shadow:1px 0 0 var(--line2)}
+  tbody td:first-child{position:sticky;left:0;z-index:15;background:var(--panel);box-shadow:1px 0 0 var(--line2)}
+  tbody tr:hover td:first-child{background:var(--rowhover)}
+  tr.myfund td:first-child{background:var(--myfund)}
   tr.grp td{background:var(--grp);border-bottom:1px solid var(--line2);border-top:1px solid var(--line2);
-    padding:5px 8px}
+    padding:5px 8px;position:static;box-shadow:none}
   .grp .gt{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700}
   .grp .gc{color:var(--ink-faint);font-weight:500;letter-spacing:0;text-transform:none}
   tr.low td{opacity:.45}
@@ -146,29 +151,24 @@
 
   /* ---- mobile ---- */
   .wrap{-webkit-overflow-scrolling:touch}
-  @media (max-width:640px){
+  @media (max-width:820px){
     html,body{font-size:12px}
     body{padding-bottom:12px}
-    header{padding:6px 8px}
+    /* the control panel scrolls away instead of covering the data (it was sticky) */
+    header{position:static;padding:6px 8px}
     .bar{gap:7px 10px}
     .brand{width:100%;margin-bottom:2px}
     .fld input,.fld select{padding:6px 7px;font-size:13px}   /* bigger tap targets */
     .fld input[type=date]{min-width:118px}
     button{padding:7px 11px}
-    table{min-width:720px}
+    /* thead is sticky to the viewport top once the panel has scrolled off */
+    thead th{top:0}
+    table{min-width:640px}
     td{padding:5px 7px}
-    /* keep the scheme name pinned while metrics scroll sideways */
-    thead th:first-child,td:first-child{position:sticky;left:0;z-index:15;
-      background:var(--panel);box-shadow:1px 0 0 var(--line2)}
-    thead th:first-child{background:var(--thead);z-index:27}
-    tbody tr:hover td:first-child{background:var(--rowhover)}
-    tr.myfund td:first-child{background:var(--myfund)}
-    tr.grp td{position:static;box-shadow:none}
-    .nm{max-width:168px}
+    .nm{max-width:150px;white-space:normal}   /* let long names wrap in the pinned column */
     .exp-in{grid-template-columns:1fr;padding:10px 12px;gap:14px}
     .port .pgrid{grid-template-columns:1fr}
-    /* footer flows with content on phones instead of covering the table */
-    footer{position:static}
+    footer{position:static}   /* flows with content instead of covering the table */
   }
 </style>
 
