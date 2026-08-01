@@ -73,8 +73,14 @@ to a browser-based fetch (see deferred). The workflow's portfolio step is best-e
   curl, so its file was fetched via the browser (same-origin Blob download) and parsed with `--file`.
   Only Oct-2025 Hybrid is disclosed; manager left blank (only an unreliable aggregator name found —
   needs primary-source confirmation).
-- **Mobile** — first column now `position:sticky` at ALL widths; control panel is `position:static`
-  below 820px so it no longer covers the data.
+- **Mobile redesign** — control panel collapses behind a *☰ Filters* toggle (default collapsed on
+  ≤820px via `header.collapsed`); table defaults to a **curated column set** (`MOBILE_HIDE` + `.mhide`,
+  toggled by `#allcols` → `body.allcols`); first column pinned; pinch-zoom enabled; denser, polished.
+- **Chart axes** — shared `axisSVG`/`niceTicks` helpers give NAV / underwater / compare charts labelled
+  X (time) and Y (NAV ₹ / Drawdown % / rebased-NAV) axes with gridlines.
+- Note: rows whose nav `sif` is already a full AMC name (Kotak/Mirae/Jio/HSBC/Franklin/Invesco) show a
+  slightly redundant brand+parent (e.g. "Kotak Mahindra Mutual Fund" / "Kotak Mahindra"). Cosmetic;
+  could special-case later. The SIF-branded ones (Apex SIF / Aditya Birla) read perfectly.
 
 ## Deferred / next session (with design notes)
 1. **CI robustness / auto-discovery**: for WAF AMCs, add a headless-browser fetch (Playwright) step, or a

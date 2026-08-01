@@ -300,9 +300,12 @@ portfolio disclosure exists. Table grouped by strategy, sortable on every column
 tabular-lining numerals. Click a scheme name to expand its NAV path, underwater (drawdown) curve, and
 the disclosed-holdings panel; each row also carries an inline underwater sparkline. **Compare:** tick
 the checkbox on any rows and press *Compare* to overlay those funds' NAVs (rebased to 100) on one chart
-against **NIFTY 50**, with a side table of total return, Sharpe, Max DD and up/down capture. **Mobile:** the
-scheme-name column stays pinned while the metrics scroll sideways, with compact spacing and a
-flow-with-content footer. Visible keyboard focus, `prefers-reduced-motion` respected.
+against **NIFTY 50**, with a side table of total return, Sharpe, Max DD and up/down capture. All charts
+(NAV path, underwater, compare) have labelled axes — time on X, NAV / drawdown-% / rebased-NAV on Y —
+with tick gridlines. **Mobile:** the control panel collapses behind a *☰ Filters* toggle so the data
+leads; the table shows a **curated set of key columns** (1M, 6M, YTD, Total, Sharpe, Max DD, Dn Cap)
+with an *All columns* switch for the full set; the scheme column stays pinned, the page is pinch-to-zoom,
+and spacing is tuned for touch. Visible keyboard focus, `prefers-reduced-motion` respected.
 
 ---
 
