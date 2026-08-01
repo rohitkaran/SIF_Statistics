@@ -1,0 +1,847 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIF Risk / Return Terminal</title>
+<script>try{if(localStorage.getItem('sif-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{                              /* lively LIGHT theme (default) */
+    --bg:#eef1fb; --panel:#ffffff; --panel2:#f5f7fd; --line:#e5e9f4; --line2:#d3daec;
+    --ink:#1c2338; --ink-dim:#5a6485; --ink-faint:#9aa2bd;
+    --accent:#5b5bf0; --accent2:#0e9aa7;
+    --pos:#12a150; --neg:#e5484d; --amber:#d9820b;
+    --hl:#eef1ff; --myfund:#e7e6ff;
+    --thead:#e7ebf8; --grp:#eef1fb; --rowhover:#f0f3fd; --foot:#f2f5fc;
+    --grad1:#5b5bf0; --grad2:#8b5cf6; --grad3:#0e9aa7;
+    --mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace;
+    --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  :root[data-theme="dark"]{           /* midnight theme (toggle) */
+    --bg:#0d1014; --panel:#141a21; --panel2:#0f141a; --line:#222b35; --line2:#2c3947;
+    --ink:#dbe3ec; --ink-dim:#8b97a6; --ink-faint:#5c6675;
+    --accent:#8b8bff; --accent2:#3fd0c9;
+    --pos:#4bd28a; --neg:#f0687f; --amber:#e7b84b;
+    --hl:#1c2836; --myfund:#26384d;
+    --thead:#0f151c; --grp:#0b0f14; --rowhover:#12181f; --foot:#0b1015;
+    --grad1:#6d6dff; --grad2:#a97bff; --grad3:#3fd0c9;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+    font-size:13px;line-height:1.4;-webkit-font-smoothing:antialiased}
+  body{padding-bottom:60px}
+  a{color:var(--accent2)}
+  .num{font-family:var(--mono);font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+  h1{font-size:14px;font-weight:800;letter-spacing:.04em;margin:0;text-transform:uppercase;
+    background:linear-gradient(90deg,var(--grad1),var(--grad2),var(--grad3));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--ink-dim);font-size:11px}
+
+  /* ---- control bar ---- */
+  header{position:sticky;top:0;z-index:40;background:var(--panel);
+    border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--grad1),var(--grad2),var(--grad3)) 1;
+    border-bottom:1px solid var(--line2);padding:8px 12px}
+  .bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end}
+  .brand{display:flex;flex-direction:column;gap:1px;margin-right:6px}
+  .fld{display:flex;flex-direction:column;gap:3px}
+  .fld label{font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-faint)}
+  .fld input,.fld select{background:var(--panel2);border:1px solid var(--line2);color:var(--ink);
+    border-radius:3px;padding:4px 6px;font-size:12px;font-family:var(--mono)}
+  .fld input[type=date]{min-width:126px}
+  .fld input.small{width:58px}
+  .fld input.rx{width:120px;font-family:var(--mono)}
+  button{background:var(--panel2);border:1px solid var(--line2);color:var(--ink);
+    border-radius:3px;padding:5px 10px;font-size:12px;font-weight:600;cursor:pointer;font-family:var(--sans)}
+  button:hover{border-color:var(--accent);color:#fff}
+  button.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+  button.pri:hover{filter:brightness(1.08)}
+  button.ghost{background:transparent}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+  .status{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:7px;
+    font-size:11px;color:var(--ink-dim)}
+  .status b{color:var(--ink);font-weight:600}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--pos);display:inline-block;margin-right:5px}
+  .dot.err{background:var(--neg)} .dot.warn{background:var(--amber)}
+  .flags{color:var(--amber)}
+
+  /* ---- drop zone ---- */
+  #drop{position:fixed;inset:0;z-index:80;background:rgba(8,12,16,.86);display:none;
+    align-items:center;justify-content:center;text-align:center}
+  #drop.on{display:flex}
+  #drop .box{border:2px dashed var(--accent);border-radius:8px;padding:40px 60px;font-size:15px}
+
+  /* ---- table ---- */
+  .wrap{overflow-x:auto}
+  table{border-collapse:separate;border-spacing:0;width:100%;min-width:1080px}
+  thead th{position:sticky;top:0;z-index:20;background:var(--thead);border-bottom:1px solid var(--line2);
+    padding:6px 8px;font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-dim);
+    white-space:nowrap;cursor:pointer;user-select:none;font-weight:600}
+  thead th.r{text-align:right}
+  thead th:hover{color:var(--ink)}
+  thead th .ar{color:var(--accent);font-size:9px;margin-left:2px}
+  td{padding:4px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td.r{text-align:right}
+  tbody tr:hover td{background:var(--rowhover)}
+  tr.grp td{background:var(--grp);border-bottom:1px solid var(--line2);border-top:1px solid var(--line2);
+    padding:5px 8px}
+  .grp .gt{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700}
+  .grp .gc{color:var(--ink-faint);font-weight:500;letter-spacing:0;text-transform:none}
+  tr.low td{opacity:.45}
+  tr.myfund td{box-shadow:inset 2px 0 0 var(--accent)}
+  tr.myfund td:first-child{background:var(--myfund)}
+  .nm{max-width:340px;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+  .nm .plan{color:var(--ink-faint);font-size:10.5px}
+  .nm .amc{color:var(--ink-dim)}
+  .caret{display:inline-block;width:9px;color:var(--ink-faint);transition:transform .12s}
+  tr.open .caret{transform:rotate(90deg);color:var(--accent)}
+  .rng{color:var(--ink-dim);font-size:11px}
+  .spark{display:block}
+  .flag{color:var(--amber);font-weight:700;margin-left:3px}
+  .na{color:var(--ink-faint)}
+  .expand td{background:var(--grp);padding:0}
+  .exp-in{padding:12px 16px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .exp-meta{grid-column:1/3;display:flex;flex-wrap:wrap;gap:14px 26px;font-size:11.5px;color:var(--ink-dim)}
+  .exp-meta b{color:var(--ink);font-weight:600}
+  .chart h4{margin:0 0 4px;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-dim)}
+  @media (max-width:720px){ .exp-in{grid-template-columns:1fr} .exp-meta{grid-column:1} }
+
+  /* ---- portfolio (disclosed holdings) ---- */
+  .port{grid-column:1/3;border-top:1px dashed var(--line2);padding-top:10px;margin-top:2px}
+  .port .phead{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-bottom:8px;font-size:11.5px;color:var(--ink-dim)}
+  .port .phead b{color:var(--ink)}
+  .port select{background:var(--panel2);border:1px solid var(--line2);color:var(--ink);border-radius:3px;padding:2px 5px;font-size:11.5px;font-family:var(--mono)}
+  .port .none{color:var(--ink-faint);font-size:11.5px;padding:4px 0}
+  .port .pgrid{display:grid;grid-template-columns:1.35fr 1fr;gap:16px 22px;align-items:start}
+  @media (max-width:720px){ .port .pgrid{grid-template-columns:1fr} }
+  .port h5{margin:0 0 5px;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-dim)}
+  .allocbar{display:flex;height:16px;border-radius:3px;overflow:hidden;border:1px solid var(--line2);margin-bottom:4px}
+  .allocbar span{display:block}
+  .alloclegend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:10.5px;color:var(--ink-dim)}
+  .alloclegend i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:-1px}
+  .ls{display:flex;gap:14px;font-size:11.5px;margin:6px 0 2px}
+  .ls b{font-family:var(--mono)}
+  table.hold{min-width:0;width:100%;border-collapse:collapse}
+  table.hold td{border-bottom:1px solid var(--line);padding:2px 6px;white-space:nowrap}
+  table.hold td.w{text-align:right;position:relative}
+  table.hold .bar{position:absolute;right:0;top:0;bottom:0;background:var(--accent);opacity:.14;border-radius:2px}
+  table.hold td.nm2{max-width:230px;overflow:hidden;text-overflow:ellipsis}
+  table.hold .sec{color:var(--ink-faint);font-size:10px}
+  .short td.w .bar{background:var(--neg)}
+
+  footer{position:fixed;bottom:0;left:0;right:0;background:var(--foot);border-top:1px solid var(--line2);
+    padding:5px 12px;font-size:10.5px;color:var(--ink-faint);z-index:30;display:flex;gap:16px;flex-wrap:wrap}
+  .legend{display:flex;gap:8px;align-items:center}
+  .sw{width:11px;height:11px;border-radius:2px;display:inline-block}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header>
+  <div class="bar">
+    <div class="brand">
+      <h1>SIF Risk / Return Terminal</h1>
+      <span class="sub">AMFI Specialized Investment Funds · real NAVs</span>
+    </div>
+    <div class="fld"><label>From</label><input type="date" id="from"></div>
+    <div class="fld"><label>To</label><input type="date" id="to"></div>
+    <div class="fld"><label>Risk-free %</label><input class="small num" id="rf" value="6.5"></div>
+    <div class="fld"><label>Trading days</label><input class="small num" id="days" value="252"></div>
+    <div class="fld"><label>Min obs</label><input class="small num" id="minobs" value="10"></div>
+    <div class="fld"><label>Recovery</label><select id="recmode">
+      <option value="trading">Trading days</option><option value="calendar">Calendar days</option>
+    </select></div>
+    <div class="fld"><label>Strategy</label><select id="strat">
+      <option value="all">All strategies</option>
+      <option value="hls">Hybrid Long-Short</option>
+      <option value="els">Equity Long-Short</option>
+      <option value="smid">Ex-Top 100 SMID</option>
+      <option value="sr">Sector Rotation</option>
+      <option value="alloc">Allocator</option>
+      <option value="other">Other</option>
+    </select></div>
+    <div class="fld"><label>Plan</label><select id="plan">
+      <option value="all">All plans</option>
+      <option value="direct">Direct only</option>
+      <option value="regular">Regular only</option>
+    </select></div>
+    <div class="fld"><label>Option</label><select id="opt">
+      <option value="all">All options</option>
+      <option value="growth">Growth only</option>
+      <option value="idcw">IDCW / Dividend</option>
+    </select></div>
+    <div class="fld"><label>My funds (regex)</label><input class="rx" id="myrx" value="apex"></div>
+    <div class="fld"><label>Search</label><input class="rx" id="search" placeholder="name…"></div>
+    <div class="fld"><label>&nbsp;</label><button class="pri" id="recompute">Recompute</button></div>
+    <div class="fld"><label>&nbsp;</label><button id="maxrange">Max range</button></div>
+    <div class="fld"><label>&nbsp;</label><button id="fetch">Fetch AMFI ↻</button></div>
+    <div class="fld"><label>&nbsp;</label><button id="csv">Export CSV</button></div>
+    <div class="fld"><label>&nbsp;</label><button id="theme" class="ghost" title="Toggle light / dark">☾ Theme</button></div>
+  </div>
+  <div class="status">
+    <span><span class="dot" id="dot"></span><span id="stat">loading…</span></span>
+    <span id="cov" class="sub"></span>
+    <span id="flags" class="flags"></span>
+  </div>
+</header>
+
+<div id="drop"><div class="box">Drop a raw AMFI file<br><span class="sub">NAVAll.txt or a NAV History report — columns mapped by header name</span></div></div>
+
+<div class="wrap">
+  <table>
+    <thead><tr id="head"></tr></thead>
+    <tbody id="body"></tbody>
+  </table>
+</div>
+
+<footer>
+  <span>Bands:</span>
+  <span class="legend"><span class="sw" style="background:rgba(75,210,138,.55)"></span>strong</span>
+  <span class="legend"><span class="sw" style="background:rgba(75,210,138,.22)"></span>good</span>
+  <span class="legend"><span class="sw" style="background:rgba(231,184,75,.22)"></span>weak</span>
+  <span class="legend"><span class="sw" style="background:rgba(240,104,127,.28)"></span>poor</span>
+  <span id="fnote" class="sub"></span>
+</footer>
+
+<script>
+// ==METRICS-START==  (this exact block is unit-tested via node in verification)
+const SIFMetrics = (function(){
+  function daysBetween(a,b){
+    // a,b : 'YYYY-MM-DD'
+    const pa=a.split('-').map(Number), pb=b.split('-').map(Number);
+    const da=Date.UTC(pa[0],pa[1]-1,pa[2]), db=Date.UTC(pb[0],pb[1]-1,pb[2]);
+    return Math.round((db-da)/86400000);
+  }
+  // filter a full [ [iso,nav], ... ] series to the inclusive window [from,to]
+  function windowSeries(series, from, to){
+    const out=[];
+    for(const p of series){
+      if((!from || p[0]>=from) && (!to || p[0]<=to)) out.push(p);
+    }
+    return out;
+  }
+  // series: sorted ascending [ [iso,nav], ... ] already windowed
+  // opts: {D, Rf, recoveryMode:'trading'|'calendar'}
+  function compute(series, opts){
+    const D = opts.D, Rf = opts.Rf, recMode = opts.recoveryMode || 'trading';
+    const dates = series.map(p=>p[0]);
+    const navs  = series.map(p=>Number(p[1]));
+    const obs = navs.length;
+    const base = {obs, nret: Math.max(0, obs-1),
+                  rangeFrom: dates[0]||null, rangeTo: dates[obs-1]||null};
+    if(obs < 2) return Object.assign(base, {insufficient:true, underwater:[], navs, dates});
+
+    // daily returns
+    const r = [];
+    for(let i=1;i<obs;i++) r.push(navs[i]/navs[i-1]-1);
+    const n = r.length;
+    const mean = r.reduce((a,b)=>a+b,0)/n;
+    let ss=0; for(const x of r) ss += (x-mean)*(x-mean);
+    const stdev = n>1 ? Math.sqrt(ss/(n-1)) : 0;      // sample stdev
+
+    const avgDaily = mean*100;
+    const annRet   = mean*D*100;                       // simple annualisation (NOT CAGR)
+    const annStd   = stdev*Math.sqrt(D)*100;
+    const sharpe   = annStd!==0 ? (annRet-Rf)/annStd : null;
+
+    let dsum=0; for(const x of r) if(x<0) dsum += x*x;
+    const downDev = Math.sqrt(dsum/n)*Math.sqrt(D)*100; // annualised downside %, /n
+    const sortino = downDev!==0 ? (annRet-Rf)/downDev : null;
+
+    // drawdown / run-up, and underwater curve
+    let peak=navs[0], curPeakIdx=0, maxDD=0, ddTroughIdx=0, ddPeakIdx=0;
+    let trough=navs[0], maxRU=0;
+    const underwater=new Array(obs);
+    for(let i=0;i<obs;i++){
+      if(navs[i]>peak){peak=navs[i];curPeakIdx=i;}
+      const dd = navs[i]/peak-1;
+      underwater[i]=dd;
+      if(dd<maxDD){maxDD=dd; ddTroughIdx=i; ddPeakIdx=curPeakIdx;}
+      if(navs[i]<trough) trough=navs[i];
+      const ru = navs[i]/trough-1;
+      if(ru>maxRU) maxRU=ru;
+    }
+    const maxDDpct = -maxDD*100;
+    const maxRUpct =  maxRU*100;
+
+    // recovery: from max-DD trough until NAV regains the pre-DD peak value
+    const peakVal = navs[ddPeakIdx];
+    let recovery=null, recovered=false;
+    if(maxDDpct>0){
+      for(let i=ddTroughIdx+1;i<obs;i++){
+        if(navs[i]>=peakVal){
+          recovered=true;
+          recovery = recMode==='calendar' ? daysBetween(dates[ddTroughIdx],dates[i])
+                                           : (i-ddTroughIdx);
+          break;
+        }
+      }
+    } else { recovered=true; recovery=0; }
+
+    const totalRet=(navs[obs-1]/navs[0]-1)*100;
+    const wins=r.filter(x=>x>0).length;
+    const winRate=wins/n*100;
+    let gp=0,gn=0; for(const x of r){ if(x>0)gp+=x; else gn+=x; }
+    const gainPain = gn!==0 ? gp/Math.abs(gn) : (gp>0?Infinity:null);
+    const calmar = maxDDpct!==0 ? annRet/maxDDpct : null;
+
+    let cagr=null;
+    if(navs[0]>0){
+      const yrs = daysBetween(dates[0],dates[obs-1])/365.25;
+      if(yrs>0) cagr=(Math.pow(navs[obs-1]/navs[0],1/yrs)-1)*100;
+    }
+
+    return Object.assign(base,{
+      avgDaily, annRet, annStd, sharpe, sortino, downDev,
+      maxDD:maxDDpct, maxRU:maxRUpct, recovery, recovered,
+      notRecovered: !recovered, totalRet, winRate, gainPain, calmar, cagr,
+      ddTroughIdx, ddPeakIdx, underwater, navs, dates
+    });
+  }
+  function addDays(iso,n){ const p=iso.split('-').map(Number); const e=new Date(Date.UTC(p[0],p[1]-1,p[2])+n*86400000); return e.toISOString().slice(0,10); }
+  function addMonths(iso,n){ const p=iso.split('-').map(Number); const m=p[1]-1+n;
+    const last=new Date(Date.UTC(p[0],m+1,0)).getUTCDate();   // clamp day so 31 Jul −1m → 30 Jun, not 1 Jul
+    return new Date(Date.UTC(p[0],m,Math.min(p[2],last))).toISOString().slice(0,10); }
+  function monthStart(iso){ const p=iso.split('-'); return p[0]+'-'+p[1]+'-01'; }
+  function idxOnOrBefore(series,target){ let k=-1; for(let i=0;i<series.length;i++){ if(series[i][0]<=target)k=i; else break; } return k; }
+  // Trailing point-in-time returns (%) as of `asOf` (the window's To date), using the FULL
+  // series for the lookback so 1W/MTD/1M stay meaningful even under a narrow window.
+  //  1D  = vs previous trading day · 1W = vs last NAV on/before asOf-7d
+  //  MTD = vs last NAV of the prior month · 1M = vs last NAV on/before asOf-1 calendar month
+  function periodReturns(series, asOf){
+    const res={r1d:null,r1w:null,rmtd:null,r1m:null,asOf:null};
+    if(!series || series.length<2) return res;
+    let ai = asOf ? idxOnOrBefore(series, asOf) : series.length-1;
+    if(ai<1) return res;
+    const aDate=series[ai][0], aNav=series[ai][1]; res.asOf=aDate;
+    res.r1d=(aNav/series[ai-1][1]-1)*100;
+    const w=idxOnOrBefore(series, addDays(aDate,-7)); if(w>=0&&w<ai) res.r1w=(aNav/series[w][1]-1)*100;
+    let mb=idxOnOrBefore(series, addDays(monthStart(aDate),-1)); if(mb<0) mb=0;
+    if(mb<ai) res.rmtd=(aNav/series[mb][1]-1)*100;
+    const m1=idxOnOrBefore(series, addMonths(aDate,-1)); if(m1>=0&&m1<ai) res.r1m=(aNav/series[m1][1]-1)*100;
+    return res;
+  }
+  const api={compute, windowSeries, daysBetween, periodReturns};
+  if(typeof module!=='undefined' && module.exports) module.exports=api;
+  return api;
+})();
+// ==METRICS-END==
+</script>
+
+<script>
+(function(){
+  const M = SIFMetrics;
+  const $ = s=>document.querySelector(s);
+  let DATA=null;              // {generated, schemes:[{code,name,cat,sif,isin,series}]}
+  let ROWS=[];               // computed rows
+  let sortKey='sharpe', sortDir=-1;
+  const openSet=new Set();
+  let PORT=null;             // portfolios/index.json {periods, amcs, schemes:{code:{periods:{}}}}
+  const portCache=new Map(); // period-file path -> fetched fund JSON
+
+  // ---- strategy grouping ----
+  const GROUPS=[
+    {id:'hls', label:'Hybrid Long-Short', color:'#5b5bf0', match:c=>/hybrid long-short/i.test(c)},
+    {id:'els', label:'Equity Long-Short', color:'#0e9aa7', match:c=>/equity long-short/i.test(c) && !/ex-top/i.test(c)},
+    {id:'smid',label:'Ex-Top 100 SMID',   color:'#8b5cf6', match:c=>/ex-top ?100/i.test(c)},
+    {id:'sr',  label:'Sector Rotation',   color:'#d9820b', match:c=>/sector rotation/i.test(c)},
+    {id:'alloc',label:'Allocator',        color:'#c026d3', match:c=>/allocator/i.test(c)},
+    {id:'other',label:'Other',            color:'#64748b', match:c=>true},
+  ];
+  function groupOf(cat){ for(const g of GROUPS){ if(g.match(cat||'')) return g; } return GROUPS[GROUPS.length-1]; }
+
+  // amc + plan parts of a scheme name for compact display
+  function splitName(name){
+    const parts=name.split(' - ');
+    const plan=parts.slice(1).join(' · ');
+    return {head:parts[0], plan};
+  }
+
+  // ---- columns ----
+  const COLS=[
+    {k:'name', label:'Scheme', cls:'', sortable:true, val:r=>r.name},
+    {k:'rangeFrom', label:'Range', cls:'r', sortable:true, val:r=>r.m.rangeFrom||''},
+    {k:'obs', label:'Obs', cls:'r num', sortable:true, val:r=>r.m.obs, fmt:r=>fmtObs(r)},
+    {k:'r1d', label:'1D %', cls:'r num', sortable:true, val:r=>r.m.r1d, fmt:r=>signed(r.m.r1d,2)},
+    {k:'r1w', label:'1W %', cls:'r num', sortable:true, val:r=>r.m.r1w, fmt:r=>signed(r.m.r1w,2)},
+    {k:'rmtd', label:'MTD %', cls:'r num', sortable:true, val:r=>r.m.rmtd, fmt:r=>signed(r.m.rmtd,2)},
+    {k:'r1m', label:'1M %', cls:'r num', sortable:true, val:r=>r.m.r1m, fmt:r=>signed(r.m.r1m,2)},
+    {k:'totalRet', label:'Total %', cls:'r num', sortable:true, val:r=>r.m.totalRet, fmt:r=>signed(r.m.totalRet,2)},
+    {k:'annRet', label:'Ann Ret %', cls:'r num', sortable:true, val:r=>r.m.annRet, fmt:r=>signed(r.m.annRet,1)},
+    {k:'annStd', label:'Ann Std %', cls:'r num', sortable:true, val:r=>r.m.annStd, fmt:r=>num(r.m.annStd,1)},
+    {k:'sharpe', label:'Sharpe', cls:'r num', sortable:true, val:r=>r.m.sharpe, fmt:r=>band(r.m.sharpe,2,BAND.sharpe)},
+    {k:'sortino', label:'Sortino', cls:'r num', sortable:true, val:r=>r.m.sortino, fmt:r=>band(r.m.sortino,2,BAND.sortino)},
+    {k:'calmar', label:'Calmar', cls:'r num', sortable:true, val:r=>r.m.calmar, fmt:r=>band(r.m.calmar,2,BAND.calmar)},
+    {k:'maxDD', label:'Max DD %', cls:'r num', sortable:true, val:r=>r.m.maxDD, fmt:r=>bandDD(r.m.maxDD)},
+    {k:'maxRU', label:'Max RU %', cls:'r num', sortable:true, val:r=>r.m.maxRU, fmt:r=>num(r.m.maxRU,2)},
+    {k:'recovery', label:'Recovery', cls:'r num', sortable:true, val:r=>recVal(r.m), fmt:r=>recFmt(r.m)},
+    {k:'winRate', label:'Win %', cls:'r num', sortable:true, val:r=>r.m.winRate, fmt:r=>band(r.m.winRate,1,BAND.win)},
+    {k:'gainPain', label:'G/P', cls:'r num', sortable:true, val:r=>r.m.gainPain, fmt:r=>band(r.m.gainPain,2,BAND.gp)},
+    {k:'uw', label:'Underwater', cls:'r', sortable:false, val:r=>0, fmt:r=>sparkUW(r.m)},
+  ];
+
+  // ---- formatting ----
+  const na='<span class="na">—</span>';
+  function num(v,d){ return (v==null||!isFinite(v))?na:'<span>'+v.toFixed(d)+'</span>'; }
+  function signed(v,d){ if(v==null||!isFinite(v))return na;
+    const c=v>=0?'var(--pos)':'var(--neg)'; return '<span style="color:'+c+'">'+(v>=0?'+':'')+v.toFixed(d)+'</span>'; }
+  function fmtObs(r){ const f=r.m.obs<r.minobs?'<span class="flag" title="below min obs">▲</span>':'';
+    return '<span>'+r.m.obs+'</span>'+f; }
+  function recVal(m){ if(m.maxDD<=0)return -1; return m.recovered?m.recovery:1e9; }
+  function recFmt(m){ if(m.maxDD<=0) return na;
+    if(!m.recovered) return '<span style="color:var(--amber)">not rec.</span>';
+    return '<span>'+m.recovery+'</span>'; }
+
+  // conditional colour bands ---------------------------------------------
+  const BAND={
+    sharpe:[[-1e9,'poor'],[0,'weak'],[1,'good'],[2,'strong']],
+    sortino:[[-1e9,'poor'],[0,'weak'],[1.5,'good'],[3,'strong']],
+    calmar:[[-1e9,'poor'],[0,'weak'],[1,'good'],[3,'strong']],
+    win:[[-1e9,'poor'],[45,'weak'],[52,'good'],[58,'strong']],
+    gp:[[-1e9,'poor'],[1,'weak'],[1.5,'good'],[2.5,'strong']],
+  };
+  const TINT={poor:'rgba(240,104,127,.28)',weak:'rgba(231,184,75,.20)',
+              good:'rgba(75,210,138,.20)',strong:'rgba(75,210,138,.55)'};
+  function tierOf(v,scale){ let t='weak'; for(const [thr,name] of scale){ if(v>=thr) t=name; } return t; }
+  function band(v,d,scale){ if(v==null||!isFinite(v)) return na;
+    const t=tierOf(v,scale); const txt=(v===Infinity?'∞':v.toFixed(d));
+    return '<span style="display:inline-block;min-width:44px;padding:1px 5px;border-radius:2px;background:'+TINT[t]+'">'+txt+'</span>'; }
+  function bandDD(v){ if(v==null)return na;
+    // worse (bigger) DD -> stronger red
+    let a=0; if(v>0) a=Math.min(.42,.10+v/40);
+    return '<span style="display:inline-block;min-width:44px;padding:1px 5px;border-radius:2px;background:rgba(240,104,127,'+a.toFixed(3)+')">'+v.toFixed(2)+'</span>'; }
+
+  // inline underwater sparkline -----------------------------------------
+  function sparkUW(m){
+    const uw=m.underwater||[]; const W=104,H=22;
+    if(uw.length<2) return '<svg class="spark" width="'+W+'" height="'+H+'"></svg>';
+    const min=Math.min(...uw, -1e-9);
+    const step=W/(uw.length-1);
+    let d='M0 0';
+    for(let i=0;i<uw.length;i++){
+      const x=(i*step).toFixed(1);
+      const y=(min<0? (uw[i]/min)*(H-2):0).toFixed(1);
+      d+=' L'+x+' '+y;
+    }
+    d+=' L'+W+' 0 Z';
+    return '<svg class="spark" width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'">'+
+      '<path d="'+d+'" fill="rgba(240,104,127,.30)" stroke="var(--neg)" stroke-width="1"/></svg>';
+  }
+
+  // ---- compute all rows for current window ----
+  function recompute(){
+    if(!DATA) return;
+    const from=$('#from').value, to=$('#to').value;
+    const D=+$('#days').value||252, Rf=+$('#rf').value||0;
+    const recoveryMode=$('#recmode').value;
+    const minobs=+$('#minobs').value||0;
+    let myrx=null,srx=null;
+    try{ if($('#myrx').value.trim()) myrx=new RegExp($('#myrx').value.trim(),'i'); }catch(e){}
+    try{ if($('#search').value.trim()) srx=new RegExp($('#search').value.trim(),'i'); }catch(e){}
+
+    const strat=$('#strat').value, plan=$('#plan').value, opt=$('#opt').value;
+    ROWS=DATA.schemes.map(s=>{
+      const w=M.windowSeries(s.series, from, to);
+      const m=M.compute(w, {D,Rf,recoveryMode});
+      // trailing returns anchored at the window To (independent of From)
+      const anchor = to || (s.series.length? s.series[s.series.length-1][0] : null);
+      Object.assign(m, M.periodReturns(s.series, anchor));
+      return {code:s.code, name:s.name, cat:s.cat, sif:s.sif, isin:s.isin,
+              group:groupOf(s.cat), m, minobs,
+              mine: myrx?myrx.test(s.name):false};
+    });
+    if(srx) ROWS=ROWS.filter(r=>srx.test(r.name)||srx.test(r.sif));
+    ROWS=ROWS.filter(r=>{
+      if(strat!=='all' && r.group.id!==strat) return false;
+      if(plan==='direct'  && !/direct/i.test(r.name)) return false;
+      if(plan==='regular' && !/regular/i.test(r.name)) return false;
+      if(opt==='growth' && !/growth/i.test(r.name)) return false;
+      if(opt==='idcw'   && !/idcw|dividend|payout|re-?invest/i.test(r.name)) return false;
+      return true;
+    });
+    render();
+    updateStatus(from,to);
+  }
+
+  function updateStatus(from,to){
+    const all=ROWS.length;
+    const enough=ROWS.filter(r=>r.m.obs>=r.minobs).length;
+    const short=ROWS.filter(r=>r.m.obs>0 && r.m.obs<30).length;
+    $('#dot').className='dot';
+    $('#stat').innerHTML='<b>'+all+'</b> schemes · <b>'+enough+'</b> ≥ min obs';
+    $('#cov').textContent='window '+from+' → '+to+' · data '+DATA.dataFrom+' → '+DATA.dataTo+
+       ' · generated '+(DATA.generated||'').slice(0,16).replace('T',' ');
+    // data-quality flags
+    const fl=[];
+    if(short) fl.push(short+' scheme(s) < 30 obs');
+    if(DATA.qc && DATA.qc.jumps) fl.push(DATA.qc.jumps+' daily NAV jump(s) > 10%');
+    if(DATA.qc && DATA.qc.dupes) fl.push(DATA.qc.dupes+' duplicate date(s) collapsed');
+    $('#flags').textContent = fl.length? '⚠ '+fl.join(' · '):'';
+  }
+
+  // ---- render ----
+  function renderHead(){
+    const tr=$('#head'); tr.innerHTML='';
+    COLS.forEach(c=>{
+      const th=document.createElement('th');
+      th.className=c.cls.replace('num','');
+      th.innerHTML=c.label+(sortKey===c.k?'<span class="ar">'+(sortDir<0?'▼':'▲')+'</span>':'');
+      if(c.sortable){ th.onclick=()=>{ if(sortKey===c.k) sortDir*=-1; else {sortKey=c.k;sortDir=-1;} render(); }; }
+      else th.style.cursor='default';
+      tr.appendChild(th);
+    });
+  }
+  function cmp(a,b){
+    const col=COLS.find(c=>c.k===sortKey)||COLS[6];
+    let va=col.val(a), vb=col.val(b);
+    if(sortKey==='name'){ va=(''+va).toLowerCase(); vb=(''+vb).toLowerCase(); return va<vb?-sortDir:va>vb?sortDir:0; }
+    const na=(va==null||!isFinite(va)), nb=(vb==null||!isFinite(vb));
+    if(na&&nb)return 0; if(na)return 1; if(nb)return -1;   // nulls sink
+    return (va-vb)*sortDir;
+  }
+  function render(){
+    renderHead();
+    const body=$('#body'); body.innerHTML='';
+    const byGroup=new Map(GROUPS.map(g=>[g.id,[]]));
+    ROWS.forEach(r=>byGroup.get(r.group.id).push(r));
+    GROUPS.forEach(g=>{
+      const rows=byGroup.get(g.id); if(!rows.length) return;
+      rows.sort(cmp);
+      const gtr=document.createElement('tr'); gtr.className='grp';
+      gtr.innerHTML='<td colspan="'+COLS.length+'" style="border-left:3px solid '+g.color+
+        ';background:'+g.color+'14"><span class="gt" style="color:'+g.color+'">'+g.label+
+        '</span> <span class="gc">· '+rows.length+' schemes</span></td>';
+      body.appendChild(gtr);
+      rows.forEach(r=>{
+        body.appendChild(renderRow(r));
+        if(openSet.has(r.code)) body.appendChild(renderExpand(r));
+      });
+    });
+    if(!ROWS.length) body.innerHTML='<tr><td colspan="'+COLS.length+'" style="padding:20px;color:var(--ink-dim)">No schemes match.</td></tr>';
+  }
+  function renderRow(r){
+    const tr=document.createElement('tr');
+    tr.className=(r.m.obs<r.minobs?'low ':'')+(r.mine?'myfund ':'')+(openSet.has(r.code)?'open':'');
+    const sn=splitName(r.name);
+    const first=document.createElement('td'); first.className='nm';
+    if(!r.mine) first.style.borderLeft='3px solid '+r.group.color+'66';
+    first.innerHTML='<span class="caret">▶</span> <span class="amc">'+esc(r.sif||sn.head)+'</span>'+
+      (sn.plan?' <span class="plan">'+esc(sn.plan)+'</span>':'');
+    first.title=r.name; first.onclick=()=>toggle(r.code);
+    tr.appendChild(first);
+    for(let i=1;i<COLS.length;i++){
+      const c=COLS[i]; const td=document.createElement('td'); td.className=c.cls.replace('num','')+' num';
+      if(c.k==='rangeFrom'){ td.className='r rng num';
+        td.innerHTML = r.m.rangeFrom? '<span>'+shortD(r.m.rangeFrom)+'→'+shortD(r.m.rangeTo)+'</span>':na; }
+      else td.innerHTML = c.fmt? c.fmt(r): c.val(r);
+      tr.appendChild(td);
+    }
+    return tr;
+  }
+  function toggle(code){ if(openSet.has(code))openSet.delete(code); else openSet.add(code); render(); }
+
+  function renderExpand(r){
+    const tr=document.createElement('tr'); tr.className='expand';
+    const td=document.createElement('td'); td.colSpan=COLS.length;
+    const m=r.m;
+    const meta=[
+      ['Scheme', esc(r.name)], ['Code', r.code], ['ISIN', r.isin||'—'],
+      ['Avg daily', m.avgDaily!=null?m.avgDaily.toFixed(4)+'%':'—'],
+      ['Ann ret (simple)', m.annRet!=null?m.annRet.toFixed(2)+'%':'—'],
+      ['CAGR', m.cagr!=null?m.cagr.toFixed(2)+'%':'—'],
+      ['Downside dev (ann)', m.downDev!=null?m.downDev.toFixed(2)+'%':'—'],
+      ['Obs / returns', m.obs+' / '+m.nret],
+      ['NAV first→last', m.navs&&m.navs.length? m.navs[0]+' → '+m.navs[m.navs.length-1]:'—'],
+    ].map(x=>'<span><b>'+x[0]+':</b> '+x[1]+'</span>').join('');
+    td.innerHTML='<div class="exp-in"><div class="exp-meta num">'+meta+'</div>'+
+      '<div class="chart"><h4>NAV path</h4>'+navChart(m)+'</div>'+
+      '<div class="chart"><h4>Underwater (drawdown)</h4>'+uwChart(m)+'</div>'+
+      '<div class="port" id="port-'+esc(r.code)+'"><h4>Portfolio (disclosed holdings)</h4>'+
+        '<div class="port-body none">…</div></div></div>';
+    tr.appendChild(td);
+    fillPortfolio(r, td.querySelector('#port-'+cssId(r.code)+' .port-body'));
+    return tr;
+  }
+  function cssId(s){ return (''+s).replace(/[^A-Za-z0-9_-]/g,'\\$&'); }
+
+  function navChart(m){
+    const v=m.navs||[]; const W=440,H=120,P=4;
+    if(v.length<2) return '<div class="sub">insufficient data</div>';
+    const mn=Math.min(...v),mx=Math.max(...v),rng=(mx-mn)||1;
+    const sx=(W-2*P)/(v.length-1);
+    let d=''; v.forEach((y,i)=>{ const X=(P+i*sx).toFixed(1),Y=(P+(H-2*P)*(1-(y-mn)/rng)).toFixed(1); d+=(i?'L':'M')+X+' '+Y+' '; });
+    return '<svg width="100%" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" style="height:120px">'+
+      '<path d="'+d+'" fill="none" stroke="var(--accent)" stroke-width="1.4"/></svg>';
+  }
+  function uwChart(m){
+    const uw=m.underwater||[]; const W=440,H=120,P=4;
+    if(uw.length<2) return '<div class="sub">insufficient data</div>';
+    const mn=Math.min(...uw,-1e-9); const sx=(W-2*P)/(uw.length-1);
+    let d='M'+P+' '+P; uw.forEach((y,i)=>{ const X=(P+i*sx).toFixed(1),Y=(P+(H-2*P)*(y/mn)).toFixed(1); d+=' L'+X+' '+Y; });
+    d+=' L'+(P+(uw.length-1)*sx).toFixed(1)+' '+P+' Z';
+    return '<svg width="100%" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" style="height:120px">'+
+      '<path d="'+d+'" fill="rgba(240,104,127,.28)" stroke="var(--neg)" stroke-width="1.2"/>'+
+      '<text x="'+(W-4)+'" y="'+(H-4)+'" text-anchor="end" fill="var(--ink-faint)" font-size="9">min '+(mn*100).toFixed(1)+'%</text></svg>';
+  }
+
+  // ---- portfolio (disclosed holdings) ----
+  const ALLOC_KEYS=[
+    ['equity','Equity','#5b5bf0'],['debt','Debt','#0e9aa7'],
+    ['money_market','Money mkt','#8b5cf6'],['others','Others / cash','#64748b'],
+    ['net_receivables','Net recv.','#d9820b']];
+
+  function fillPortfolio(r, node){
+    if(!node) return;
+    const entry = PORT && PORT.schemes && PORT.schemes[r.code];
+    if(!entry || !entry.periods || !Object.keys(entry.periods).length){
+      const amc = r.sif ? esc(r.sif) : 'the fund house';
+      node.className='port-body none';
+      node.innerHTML='No portfolio disclosed here yet — SIFs report holdings <b>bi-monthly</b>. '+
+        'When '+amc+' publishes a machine-readable file it is fetched, saved to the repo, and shown here.';
+      return;
+    }
+    node.className='port-body';
+    const periods=Object.keys(entry.periods).sort().reverse();
+    const sel='<label style="font-size:10.5px;color:var(--ink-faint)">Period '+
+      '<select data-code="'+esc(r.code)+'">'+periods.map(p=>'<option>'+p+'</option>').join('')+'</select></label>';
+    node.innerHTML='<div class="phead">'+sel+'<span class="pstat sub">loading…</span></div><div class="pmain"></div>';
+    const selEl=node.querySelector('select');
+    const load=()=>loadPortfolioPeriod(entry, selEl.value, node);
+    selEl.onchange=load; load();
+  }
+
+  function loadPortfolioPeriod(entry, period, node){
+    const path=entry.periods[period];
+    const main=node.querySelector('.pmain'), stat=node.querySelector('.pstat');
+    const draw=fund=>{ stat.textContent=''; main.innerHTML=portfolioHTML(fund, entry); };
+    if(portCache.has(path)) return draw(portCache.get(path));
+    stat.textContent='loading…';
+    fetch(path,{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
+      .then(f=>{ portCache.set(path,f); draw(f); })
+      .catch(e=>{ stat.textContent='could not load portfolio ('+e.message+')'; });
+  }
+
+  function portfolioHTML(f, entry){
+    const amc = (PORT.amcs&&PORT.amcs[f.amc])||{};
+    // header: as-of, net assets, holdings, source links
+    const links=[];
+    if(f.raw) links.push('<a href="'+esc(f.raw)+'">raw file ↧</a>');
+    if(f.source_url && !/^file:/.test(f.source_url)) links.push('<a href="'+esc(f.source_url)+'" target="_blank" rel="noopener">source</a>');
+    if(amc.disclosure_page) links.push('<a href="'+esc(amc.disclosure_page)+'" target="_blank" rel="noopener">'+esc(amc.name||f.amc)+' ↗</a>');
+    const head='<div class="phead">'+
+      '<span><b>'+esc(f.fund_name)+'</b></span>'+
+      '<span>as of <b>'+esc(f.as_of||f.period)+'</b></span>'+
+      (f.net_assets_cr!=null?'<span>net assets <b class="num">₹'+f.net_assets_cr.toLocaleString('en-IN')+' Cr</b></span>':'')+
+      '<span><b>'+f.n_holdings+'</b> holdings</span>'+
+      '<span>'+links.join(' · ')+'</span></div>';
+
+    // allocation bar
+    const a=f.allocation||{}; let alloc='';
+    const segs=ALLOC_KEYS.filter(k=>a[k[0]]>0.01);
+    if(segs.length){
+      alloc='<h5>Asset allocation</h5><div class="allocbar">'+
+        segs.map(k=>'<span style="width:'+Math.max(0,a[k[0]]).toFixed(2)+'%;background:'+k[2]+'" title="'+k[1]+' '+a[k[0]].toFixed(1)+'%"></span>').join('')+
+        '</div><div class="alloclegend">'+
+        segs.map(k=>'<span><i style="background:'+k[2]+'"></i>'+k[1]+' '+a[k[0]].toFixed(1)+'%</span>').join('')+'</div>';
+    }
+    // long/short from derivatives + cash equity
+    let ls='';
+    const derivs=f.derivatives||[];
+    if(derivs.length){
+      const dl=derivs.filter(d=>d.position==='Long').reduce((s,d)=>s+(d.weight||0),0);
+      const ds=derivs.filter(d=>d.position==='Short').reduce((s,d)=>s+(d.weight||0),0);
+      ls='<div class="ls"><span>Derivatives: <b style="color:var(--pos)">+'+dl.toFixed(2)+'%</b> long</span>'+
+         '<span><b style="color:var(--neg)">−'+ds.toFixed(2)+'%</b> short</span>'+
+         '<span class="sub">('+derivs.length+' F&O legs)</span></div>';
+    }
+    // sectors (equity)
+    let sec='';
+    const secs=(f.sectors||[]).slice(0,8);
+    if(secs.length){
+      const mx=Math.max(...secs.map(s=>s.weight));
+      sec='<h5>Equity sectors</h5><table class="hold">'+secs.map(s=>
+        '<tr><td class="nm2">'+esc(s.sector)+'</td><td class="w num" style="min-width:70px">'+
+        '<span class="bar" style="width:'+(s.weight/mx*100).toFixed(0)+'%"></span>'+s.weight.toFixed(2)+'%</td></tr>').join('')+'</table>';
+    }
+    // top holdings
+    const top=(f.top||f.holdings||[]).slice(0,12);
+    const mxh=Math.max(1,...top.map(h=>Math.abs(h.weight||0)));
+    const holds='<h5>Top holdings</h5><table class="hold">'+top.map(h=>
+      '<tr><td class="nm2">'+esc(h.name)+(h.sector?' <span class="sec">'+esc(h.sector)+'</span>':'')+
+      '</td><td class="w num" style="min-width:64px">'+
+      '<span class="bar" style="width:'+(Math.abs(h.weight||0)/mxh*100).toFixed(0)+'%"></span>'+
+      (h.weight!=null?h.weight.toFixed(2)+'%':'—')+'</td></tr>').join('')+'</table>';
+
+    return head+'<div class="pgrid"><div>'+holds+'</div><div>'+alloc+ls+sec+'</div></div>';
+  }
+
+  // ---- helpers ----
+  function esc(s){ return (''+s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+  const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function shortD(iso){ if(!iso)return''; const p=iso.split('-'); return p[2]+MON[+p[1]-1]; }
+
+  // ---- data quality scan (on load / on new data) ----
+  function scanQC(data){
+    let jumps=0,dupes=0,minD='9999',maxD='0000';
+    data.schemes.forEach(s=>{
+      const seen=new Set(); let prev=null;
+      s.series.forEach(([d,nav])=>{
+        if(seen.has(d)) dupes++; seen.add(d);
+        if(d<minD)minD=d; if(d>maxD)maxD=d;
+        if(prev!=null && prev>0){ if(Math.abs(nav/prev-1)>0.10) jumps++; }
+        prev=nav;
+      });
+    });
+    data.qc={jumps,dupes}; data.dataFrom=minD==='9999'?'—':minD; data.dataTo=maxD==='0000'?'—':maxD;
+  }
+
+  // ---- CSV export ----
+  function exportCSV(){
+    const cols=['group','sif','name','code','isin','rangeFrom','rangeTo','obs',
+      'ret1d','ret1w','retMTD','ret1m','totalRet','avgDaily',
+      'annRet','annStd','sharpe','sortino','calmar','maxDD','maxRU','recovery','recovered',
+      'winRate','gainPain','cagr'];
+    const lines=[cols.join(',')];
+    ROWS.forEach(r=>{ const m=r.m;
+      const row=[r.group.label,r.sif,r.name,r.code,r.isin,m.rangeFrom,m.rangeTo,m.obs,
+        f(m.r1d),f(m.r1w),f(m.rmtd),f(m.r1m),f(m.totalRet),f(m.avgDaily),
+        f(m.annRet),f(m.annStd),f(m.sharpe),f(m.sortino),f(m.calmar),f(m.maxDD),f(m.maxRU),
+        (m.maxDD<=0?'':m.recovery),m.recovered,f(m.winRate),f(m.gainPain),f(m.cagr)]
+        .map(x=>{ x=(x==null?'':''+x); return /[",\n]/.test(x)?'"'+x.replace(/"/g,'""')+'"':x; });
+      lines.push(row.join(','));
+    });
+    function f(v){ return (v==null||!isFinite(v))?'':(+v).toFixed(4); }
+    const blob=new Blob([lines.join('\n')],{type:'text/csv'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+    a.download='sif_metrics_'+$('#from').value+'_'+$('#to').value+'.csv'; a.click();
+  }
+
+  // ---- raw AMFI file parsing (drag-drop) — map columns BY HEADER NAME ----
+  function parseAMFI(text){
+    const lines=text.split(/\r?\n/);
+    let hdr=-1, delim=';';
+    for(let i=0;i<lines.length;i++){
+      const L=lines[i];
+      if(/scheme name/i.test(L) && /net asset value/i.test(L) && /date/i.test(L)){
+        hdr=i; delim = L.indexOf(';')>=0?';':(L.indexOf('\t')>=0?'\t':';'); break;
+      }
+    }
+    if(hdr<0) throw new Error('No AMFI header row (need Scheme Name / Net Asset Value / Date).');
+    const cols=lines[hdr].split(delim).map(s=>s.trim().toLowerCase());
+    const idx=(...names)=>{ for(const nm of names){ const k=cols.findIndex(c=>c.includes(nm)); if(k>=0)return k; } return -1; };
+    const iName=idx('scheme name'), iNav=idx('net asset value'), iDate=idx('date'),
+          iCode=idx('scheme code'), iIsin=idx('isin div payout','isin growth','isin');
+    const map=new Map();
+    for(let i=hdr+1;i<lines.length;i++){
+      const L=lines[i]; if(!L || L.indexOf(delim)<0) continue;
+      const f=L.split(delim); if(f.length<=Math.max(iName,iNav,iDate)) continue;
+      const name=(f[iName]||'').trim(); const navs=(f[iNav]||'').trim(); const ds=(f[iDate]||'').trim();
+      if(!name||!navs||!ds) continue;
+      const nav=parseFloat(navs); if(!isFinite(nav)) continue;
+      const iso=toISO(ds); if(!iso) continue;
+      const code=iCode>=0?(f[iCode]||'').trim():name;
+      const key=code||name;
+      if(!map.has(key)) map.set(key,{code:code||name,name,cat:name,sif:name.split(' - ')[0],
+        isin:iIsin>=0?(f[iIsin]||'').trim():'', series:[]});
+      map.get(key).series.push([iso,nav]);
+    }
+    const schemes=[...map.values()].map(s=>{
+      const seen=new Map(); s.series.forEach(([d,n])=>seen.set(d,n));
+      s.series=[...seen.entries()].sort((a,b)=>a[0]<b[0]?-1:1);
+      return s;
+    });
+    return {generated:new Date().toISOString(), source:'drag-drop AMFI file', schemes};
+  }
+  function toISO(s){
+    s=s.trim(); if(/^\d{4}-\d{2}-\d{2}/.test(s)) return s.slice(0,10);
+    const m=s.match(/^(\d{1,2})[-\/ ]([A-Za-z]{3})[-\/ ](\d{4})$/);
+    if(m){ const mi=MON.indexOf(m[2][0].toUpperCase()+m[2].slice(1,3).toLowerCase()); if(mi<0)return null;
+      return m[3]+'-'+String(mi+1).padStart(2,'0')+'-'+m[1].padStart(2,'0'); }
+    return null;
+  }
+
+  // ---- load ----
+  function ingest(data, note){
+    scanQC(data);
+    DATA=data;
+    // default window = full data extent (clamped)
+    if(!$('#from').value){ $('#from').value=data.dataFrom; }
+    if(!$('#to').value){ $('#to').value=data.dataTo; }
+    $('#fnote').textContent=note||('source: '+(data.source||'nav_data.json'));
+    recompute();
+  }
+  function loadJSON(tries){
+    tries = tries||0;
+    fetch('nav_data.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
+      .then(d=>ingest(d))
+      .catch(e=>{
+        if(tries<3){ setTimeout(()=>loadJSON(tries+1), 350); return; }  // self-heal transient reset
+        $('#dot').className='dot err';
+        $('#stat').innerHTML='could not load nav_data.json ('+e.message+
+          ') — run <code>python fetch_amfi_sif.py --serve</code> then open via http://127.0.0.1:8765/sif_dashboard.html, or drag a raw AMFI file here.';
+      });
+  }
+  function loadPortfolios(){
+    // optional: the page works fully without it. Refresh open rows once it arrives.
+    fetch('portfolios/index.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
+      .then(idx=>{ PORT=idx; if(openSet.size) render(); })
+      .catch(()=>{ PORT={schemes:{},amcs:{},periods:[]}; });
+  }
+  function doFetch(){
+    // Optional proxy base: open the page as ...?api=https://your-worker.example.com to make
+    // the button work on static hosting. Defaults to the local --serve endpoint.
+    const base = new URLSearchParams(location.search).get('api') || '';
+    const from=$('#from').value, to=$('#to').value;
+    $('#dot').className='dot warn'; $('#stat').textContent='fetching from AMFI…';
+    fetch(base+'/refresh?from='+from+'&to='+to,{cache:'no-store'})
+      .then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
+      .then(d=>{ if(d.error)throw new Error(d.error); ingest(d,'refreshed from AMFI '+new Date().toLocaleTimeString()); })
+      .catch(e=>{ $('#dot').className='dot err';
+        $('#stat').innerHTML='live fetch failed ('+e.message+') — it needs the local Python server '+
+          '(<code>python fetch_amfi_sif.py --serve</code>) or a proxy. On the hosted site the data auto-refreshes daily.'; });
+  }
+
+  // ---- wire up ----
+  // theme toggle (persisted; a tiny <head> script applies the saved theme before first paint)
+  function setTheme(t){
+    if(t==='dark') document.documentElement.setAttribute('data-theme','dark');
+    else document.documentElement.removeAttribute('data-theme');
+    $('#theme').textContent = (t==='dark'?'☀ Theme':'☾ Theme');
+    try{ localStorage.setItem('sif-theme', t); }catch(e){}
+  }
+  let _theme='light'; try{ _theme=localStorage.getItem('sif-theme')||'light'; }catch(e){}
+  setTheme(_theme);
+  $('#theme').onclick=()=>setTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
+
+  $('#recompute').onclick=recompute;
+  $('#csv').onclick=exportCSV;
+  $('#fetch').onclick=doFetch;
+  $('#maxrange').onclick=()=>{ if(DATA){ $('#from').value=DATA.dataFrom; $('#to').value=DATA.dataTo; recompute(); } };
+  ['from','to','rf','days','minobs','recmode','strat','plan','opt','myrx','search'].forEach(id=>{
+    const el=document.getElementById(id);
+    el.addEventListener('change',recompute);
+    if(el.type!=='date'&&el.tagName!=='SELECT') el.addEventListener('keydown',e=>{ if(e.key==='Enter')recompute(); });
+  });
+
+  // drag-drop
+  const dz=$('#drop');
+  window.addEventListener('dragover',e=>{e.preventDefault(); dz.classList.add('on');});
+  dz.addEventListener('dragleave',e=>{ if(e.target===dz) dz.classList.remove('on'); });
+  window.addEventListener('drop',e=>{
+    e.preventDefault(); dz.classList.remove('on');
+    const f=e.dataTransfer.files[0]; if(!f)return;
+    const rd=new FileReader();
+    rd.onload=()=>{ try{
+        const txt=rd.result;
+        const data = txt.trim().startsWith('{') ? JSON.parse(txt) : parseAMFI(txt);
+        $('#from').value=''; $('#to').value='';
+        ingest(data,'loaded '+f.name+' · '+data.schemes.length+' schemes');
+      }catch(err){ $('#dot').className='dot err'; $('#stat').textContent='parse failed: '+err.message; }
+    };
+    rd.readAsText(f);
+  });
+
+  loadJSON();
+  loadPortfolios();
+})();
+</script>

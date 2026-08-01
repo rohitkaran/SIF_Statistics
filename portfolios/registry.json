@@ -1,0 +1,15 @@
+{
+  "_comment": "Per-AMC SIF portfolio-disclosure sources. SIFs disclose holdings BI-MONTHLY (every alternate month, a SEBI rule); AMFI only links out to each AMC's own site, so holdings must be fetched per-AMC. Add an AMC = add one entry here + (if its file layout is new) one adapter in fetch_sif_portfolios.py. 'nav_sif' matches the 'sif' field in nav_data.json so disclosed funds map back to dashboard scheme codes.",
+  "amcs": {
+    "apex": {
+      "name": "Apex SIF (Aditya Birla Sun Life AMC)",
+      "site": "https://apexsif.adityabirlacapital.com",
+      "disclosure_page": "https://apexsif.adityabirlacapital.com/",
+      "adapter": "absl",
+      "nav_sif": "Apex SIF",
+      "listing_urls": ["https://apexsif.adityabirlacapital.com/"],
+      "file_pattern": "/uploads/(?P<date>\\d{8})_ABSLMF_Monthly_SIF_[A-Za-z0-9]+\\.xlsx",
+      "date_format": "%d%m%Y"
+    }
+  }
+}

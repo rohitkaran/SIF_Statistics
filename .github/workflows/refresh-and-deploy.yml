@@ -1,0 +1,89 @@
+name: Refresh AMFI SIF data & deploy to Pages
+
+# Fetches real NAVs (daily) and, monthly, the fund-house PORTFOLIO disclosures; commits both
+# back into the repo (so the data is versioned/"saved on the repo"), then publishes to Pages.
+# Assumes THIS folder (sif-dashboard/) is the repository root.
+
+on:
+  schedule:
+    # 14:30 UTC = 20:00 IST, Mon-Fri — AMFI publishes SIF NAVs in the evening IST.
+    - cron: '30 14 * * 1-5'
+    # 5th of each month, 15:00 UTC — pull the latest disclosed portfolios (SIFs report bi-monthly).
+    - cron: '0 15 5 * *'
+  workflow_dispatch:            # trigger a refresh manually from the Actions tab
+    inputs:
+      from:
+        description: 'NAV start date (YYYY-MM-DD)'
+        default: '2025-10-01'
+      portfolios:
+        description: 'Also refresh portfolio disclosures?'
+        type: boolean
+        default: true
+  push:
+    branches: [ main ]          # also rebuild whenever you push changes
+
+permissions:
+  contents: write               # commit refreshed nav_data.json + portfolios/ back to main
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch real NAVs from AMFI
+        # If AMFI blocks the CI runner, the job still deploys the last committed nav_data.json.
+        run: |
+          python fetch_amfi_sif.py \
+            --from "${{ github.event.inputs.from || '2025-10-01' }}" \
+            --to "$(date -u +%F)" \
+            --out nav_data.json \
+          || echo "::warning::AMFI NAV fetch failed — keeping last committed nav_data.json"
+
+      - name: Fetch portfolio disclosures (monthly cron or manual)
+        # Skipped on the daily NAV cron and on plain pushes, so portfolios refresh ~monthly.
+        if: ${{ github.event.schedule == '0 15 5 * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.portfolios != 'false') }}
+        run: |
+          pip install -r requirements.txt
+          python fetch_sif_portfolios.py \
+          || echo "::warning::Portfolio fetch failed — keeping last committed portfolios/"
+
+      - name: Commit refreshed data back to the repo
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nav_data.json portfolios/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "data: refresh NAVs / portfolios [skip ci]"
+            git push
+          fi
+
+      - name: Use the dashboard as the site index
+        run: cp sif_dashboard.html index.html
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true      # turns on Pages automatically, so no manual Settings step
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

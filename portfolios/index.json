@@ -1,0 +1,48 @@
+{
+ "generated": "2026-08-01T04:28:00+00:00",
+ "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (see registry.json).",
+ "periods": [
+  "2026-05"
+ ],
+ "amcs": {
+  "apex": {
+   "name": "Apex SIF (Aditya Birla Sun Life AMC)",
+   "site": "https://apexsif.adityabirlacapital.com",
+   "disclosure_page": "https://apexsif.adityabirlacapital.com/"
+  }
+ },
+ "schemes": {
+  "SIF-83": {
+   "name": "APEX HYBRID LONG-SHORT FUND",
+   "amc": "apex",
+   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
+   }
+  },
+  "SIF-80": {
+   "name": "APEX HYBRID LONG-SHORT FUND",
+   "amc": "apex",
+   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
+   }
+  },
+  "SIF-81": {
+   "name": "APEX HYBRID LONG-SHORT FUND",
+   "amc": "apex",
+   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
+   }
+  },
+  "SIF-79": {
+   "name": "APEX HYBRID LONG-SHORT FUND",
+   "amc": "apex",
+   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
+   }
+  }
+ }
+}
