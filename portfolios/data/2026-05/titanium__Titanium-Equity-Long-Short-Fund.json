@@ -1,0 +1,717 @@
+{
+ "amc": "titanium",
+ "fund_code": "Titanium Equity Long Short Fund",
+ "fund_name": "Titanium Equity Long-Short Fund Direct Growth",
+ "period": "2026-05",
+ "as_of": "2026-05-31",
+ "source_url": "https://www.tatamutualfund.com/system/files/2026-06/Titanium%20SIF%20Portfolio%20%2831st%20May%202026%29.xlsx",
+ "raw": "portfolios/raw/titanium/2026-05/Titanium%20SIF%20Portfolio%20%2831st%20May%202026%29.xlsx",
+ "fetched": "2026-08-01T05:18:59+00:00",
+ "net_assets_cr": null,
+ "n_holdings": 45,
+ "allocation": {
+  "equity": 5946.99,
+  "money_market": 1188.0,
+  "cash_other": 0.0
+ },
+ "sectors": [
+  {
+   "sector": "Private Sector Bank",
+   "weight": 890.25
+  },
+  {
+   "sector": "Pharmaceuticals",
+   "weight": 516.49
+  },
+  {
+   "sector": "Computers - Software & Consulting",
+   "weight": 386.43
+  },
+  {
+   "sector": "Public Sector Bank",
+   "weight": 333.27
+  },
+  {
+   "sector": "2/3 Wheelers",
+   "weight": 301.72
+  },
+  {
+   "sector": "Passenger Cars & Utility Vehicles",
+   "weight": 293.05
+  },
+  {
+   "sector": "Cement & Cement Products",
+   "weight": 214.36
+  },
+  {
+   "sector": "Life Insurance",
+   "weight": 195.0
+  },
+  {
+   "sector": "Oil Exploration & Production",
+   "weight": 191.53
+  },
+  {
+   "sector": "Packaged Foods",
+   "weight": 175.27
+  },
+  {
+   "sector": "Power Generation",
+   "weight": 167.53
+  },
+  {
+   "sector": "Commercial Vehicles",
+   "weight": 146.06
+  },
+  {
+   "sector": "Refineries & Marketing",
+   "weight": 134.94
+  },
+  {
+   "sector": "Telecom - Cellular & Fixed line services",
+   "weight": 131.99
+  },
+  {
+   "sector": "Household Appliances",
+   "weight": 131.97
+  },
+  {
+   "sector": "Heavy Electrical Equipment",
+   "weight": 130.4
+  },
+  {
+   "sector": "Port & Port services",
+   "weight": 128.69
+  },
+  {
+   "sector": "E-Retail/ E-Commerce",
+   "weight": 124.08
+  },
+  {
+   "sector": "Logistics Solution Provider",
+   "weight": 122.69
+  },
+  {
+   "sector": "Residential, Commercial Projects",
+   "weight": 118.57
+  },
+  {
+   "sector": "Tour, Travel Related Services",
+   "weight": 118.29
+  },
+  {
+   "sector": "Consumer Electronics",
+   "weight": 116.08
+  },
+  {
+   "sector": "Edible Oil",
+   "weight": 111.02
+  },
+  {
+   "sector": "Stockbroking & Allied",
+   "weight": 106.28
+  },
+  {
+   "sector": "Paints",
+   "weight": 104.91
+  },
+  {
+   "sector": "Non Banking Financial Company (NBFC)",
+   "weight": 91.14
+  },
+  {
+   "sector": "General Insurance",
+   "weight": 86.22
+  },
+  {
+   "sector": "Airline",
+   "weight": 84.77
+  },
+  {
+   "sector": "Internet & Catalogue Retail",
+   "weight": 83.08
+  },
+  {
+   "sector": "Hotels & Resorts",
+   "weight": 79.56
+  },
+  {
+   "sector": "Hospital",
+   "weight": 61.32
+  },
+  {
+   "sector": "Iron & Steel",
+   "weight": 58.08
+  },
+  {
+   "sector": "Pesticides & Agrochemicals",
+   "weight": 11.95
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "TREASURY BILL 91 DAYS (20/08/2026)",
+   "isin": "IN002026X073",
+   "sector": "SOVRN",
+   "qty": 2500000.0,
+   "mv_cr": null,
+   "weight": 1188.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC BANK LTD.",
+   "isin": "INE040A01034",
+   "sector": "Private Sector Bank",
+   "qty": 130000.0,
+   "mv_cr": null,
+   "weight": 465.67,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI BANK LTD.",
+   "isin": "INE090A01021",
+   "sector": "Private Sector Bank",
+   "qty": 60000.0,
+   "mv_cr": null,
+   "weight": 362.68,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "MAHINDRA & MAHINDRA LTD.",
+   "isin": "INE101A01026",
+   "sector": "Passenger Cars & Utility Vehicles",
+   "qty": 20000.0,
+   "mv_cr": null,
+   "weight": 293.05,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INFOSYS LTD.",
+   "isin": "INE009A01021",
+   "sector": "Computers - Software & Consulting",
+   "qty": 40000.0,
+   "mv_cr": null,
+   "weight": 223.41,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "OIL & NATU. GAS CO.",
+   "isin": "INE213A01029",
+   "sector": "Oil Exploration & Production",
+   "qty": 150000.0,
+   "mv_cr": null,
+   "weight": 191.53,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HERO MOTOCORP LTD.",
+   "isin": "INE158A01026",
+   "sector": "2/3 Wheelers",
+   "qty": 8000.0,
+   "mv_cr": null,
+   "weight": 188.71,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BRITANNIA INDUSTRIES LTD.",
+   "isin": "INE216A01030",
+   "sector": "Packaged Foods",
+   "qty": 7000.0,
+   "mv_cr": null,
+   "weight": 175.27,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "NTPC Ltd.",
+   "isin": "INE733E01010",
+   "sector": "Power Generation",
+   "qty": 90000.0,
+   "mv_cr": null,
+   "weight": 167.53,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ULTRATECH CEMENT LTD.",
+   "isin": "INE481G01011",
+   "sector": "Cement & Cement Products",
+   "qty": 3000.0,
+   "mv_cr": null,
+   "weight": 165.72,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "TREASURY BILL 91 DAYS (20/08/2026)",
+   "isin": "IN002026X073",
+   "sector": "SOVRN",
+   "qty": 2500000.0,
+   "mv_cr": null,
+   "weight": 1188.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC BANK LTD.",
+   "isin": "INE040A01034",
+   "sector": "Private Sector Bank",
+   "qty": 130000.0,
+   "mv_cr": null,
+   "weight": 465.67,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI BANK LTD.",
+   "isin": "INE090A01021",
+   "sector": "Private Sector Bank",
+   "qty": 60000.0,
+   "mv_cr": null,
+   "weight": 362.68,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "MAHINDRA & MAHINDRA LTD.",
+   "isin": "INE101A01026",
+   "sector": "Passenger Cars & Utility Vehicles",
+   "qty": 20000.0,
+   "mv_cr": null,
+   "weight": 293.05,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INFOSYS LTD.",
+   "isin": "INE009A01021",
+   "sector": "Computers - Software & Consulting",
+   "qty": 40000.0,
+   "mv_cr": null,
+   "weight": 223.41,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "OIL & NATU. GAS CO.",
+   "isin": "INE213A01029",
+   "sector": "Oil Exploration & Production",
+   "qty": 150000.0,
+   "mv_cr": null,
+   "weight": 191.53,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HERO MOTOCORP LTD.",
+   "isin": "INE158A01026",
+   "sector": "2/3 Wheelers",
+   "qty": 8000.0,
+   "mv_cr": null,
+   "weight": 188.71,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BRITANNIA INDUSTRIES LTD.",
+   "isin": "INE216A01030",
+   "sector": "Packaged Foods",
+   "qty": 7000.0,
+   "mv_cr": null,
+   "weight": 175.27,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "NTPC Ltd.",
+   "isin": "INE733E01010",
+   "sector": "Power Generation",
+   "qty": 90000.0,
+   "mv_cr": null,
+   "weight": 167.53,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ULTRATECH CEMENT LTD.",
+   "isin": "INE481G01011",
+   "sector": "Cement & Cement Products",
+   "qty": 3000.0,
+   "mv_cr": null,
+   "weight": 165.72,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TATA CONSULTANCY SERVICES LTD.",
+   "isin": "INE467B01029",
+   "sector": "Computers - Software & Consulting",
+   "qty": 15000.0,
+   "mv_cr": null,
+   "weight": 163.02,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "GLAXO SMITHKLINE PHARMA",
+   "isin": "INE159A01016",
+   "sector": "Pharmaceuticals",
+   "qty": 15000.0,
+   "mv_cr": null,
+   "weight": 159.5,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ABBOTT INDIA LTD.",
+   "isin": "INE358A01014",
+   "sector": "Pharmaceuticals",
+   "qty": 1200.0,
+   "mv_cr": null,
+   "weight": 155.04,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "FDC LTD.",
+   "isin": "INE258B01022",
+   "sector": "Pharmaceuticals",
+   "qty": 75000.0,
+   "mv_cr": null,
+   "weight": 146.14,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TATA MOTORS LTD",
+   "isin": "INE1TAE01010",
+   "sector": "Commercial Vehicles",
+   "qty": 80000.0,
+   "mv_cr": null,
+   "weight": 146.06,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INDIAN OIL CORP LTD.",
+   "isin": "INE242A01010",
+   "sector": "Refineries & Marketing",
+   "qty": 200000.0,
+   "mv_cr": null,
+   "weight": 134.94,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BHARTI AIRTEL LTD.",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Cellular & Fixed line services",
+   "qty": 15000.0,
+   "mv_cr": null,
+   "weight": 131.99,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LG ELECTRONICS INDIA LTD",
+   "isin": "INE324D01010",
+   "sector": "Household Appliances",
+   "qty": 18000.0,
+   "mv_cr": null,
+   "weight": 131.97,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SIEMENS ENERGY INDIA LIMITED",
+   "isin": "INE1NPP01017",
+   "sector": "Heavy Electrical Equipment",
+   "qty": 7000.0,
+   "mv_cr": null,
+   "weight": 130.4,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BANK OF BARODA",
+   "isin": "INE028A01039",
+   "sector": "Public Sector Bank",
+   "qty": 100000.0,
+   "mv_cr": null,
+   "weight": 129.18,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "GUJARAT PIPAVAV PORT LTD.",
+   "isin": "INE517F01014",
+   "sector": "Port & Port services",
+   "qty": 170000.0,
+   "mv_cr": null,
+   "weight": 128.69,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SWIGGY LTD",
+   "isin": "INE00H001014",
+   "sector": "E-Retail/ E-Commerce",
+   "qty": 100000.0,
+   "mv_cr": null,
+   "weight": 124.08,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "CONTAINER CORPORATION OF INDIA LTD.",
+   "isin": "INE111A01025",
+   "sector": "Logistics Solution Provider",
+   "qty": 55000.0,
+   "mv_cr": null,
+   "weight": 122.69,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PRESTIGE ESTATES PROJECTS LTD.",
+   "isin": "INE811K01011",
+   "sector": "Residential, Commercial Projects",
+   "qty": 18000.0,
+   "mv_cr": null,
+   "weight": 118.57,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TBO TEK LTD.",
+   "isin": "INE673O01025",
+   "sector": "Tour, Travel Related Services",
+   "qty": 20000.0,
+   "mv_cr": null,
+   "weight": 118.29,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PG ELECTROPLAST LTD.",
+   "isin": "INE457L01029",
+   "sector": "Consumer Electronics",
+   "qty": 50000.0,
+   "mv_cr": null,
+   "weight": 116.08,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "STATE BANK OF INDIA",
+   "isin": "INE062A01020",
+   "sector": "Public Sector Bank",
+   "qty": 25000.0,
+   "mv_cr": null,
+   "weight": 115.99,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC LIFE INSURANCE CO. LTD.",
+   "isin": "INE795G01014",
+   "sector": "Life Insurance",
+   "qty": 40000.0,
+   "mv_cr": null,
+   "weight": 114.46,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TVS MOTOR COMPANY LTD.",
+   "isin": "INE494B01023",
+   "sector": "2/3 Wheelers",
+   "qty": 7000.0,
+   "mv_cr": null,
+   "weight": 113.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "AWL AGRI BUSINESS LTD.",
+   "isin": "INE699H01024",
+   "sector": "Edible Oil",
+   "qty": 120000.0,
+   "mv_cr": null,
+   "weight": 111.02,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "360 ONE WAM LTD.(ERSTWHILE IIFL WEALTH MANAGEMENT LTD)",
+   "isin": "INE466L01038",
+   "sector": "Stockbroking & Allied",
+   "qty": 20000.0,
+   "mv_cr": null,
+   "weight": 106.28,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "KANSAI NEROLAC PAINTS LTD.",
+   "isin": "INE531A01024",
+   "sector": "Paints",
+   "qty": 100000.0,
+   "mv_cr": null,
+   "weight": 104.91,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SHRIRAM FINANCE LTD.",
+   "isin": "INE721A01047",
+   "sector": "Non Banking Financial Company (NBFC)",
+   "qty": 20000.0,
+   "mv_cr": null,
+   "weight": 91.14,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "CANARA BANK",
+   "isin": "INE476A01022",
+   "sector": "Public Sector Bank",
+   "qty": 140000.0,
+   "mv_cr": null,
+   "weight": 88.1,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI LOMBARD GENERAL INSURANCE CO. LTD.",
+   "isin": "INE765G01017",
+   "sector": "General Insurance",
+   "qty": 10000.0,
+   "mv_cr": null,
+   "weight": 86.22,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INTERGLOBE AVIATION LTD.",
+   "isin": "INE646L01027",
+   "sector": "Airline",
+   "qty": 4000.0,
+   "mv_cr": null,
+   "weight": 84.77,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INFO EDGE (INDIA) LTD.",
+   "isin": "INE663F01032",
+   "sector": "Internet & Catalogue Retail",
+   "qty": 17356.0,
+   "mv_cr": null,
+   "weight": 83.08,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "MAX FINANCIAL SERVICES LTD.",
+   "isin": "INE180A01020",
+   "sector": "Life Insurance",
+   "qty": 10000.0,
+   "mv_cr": null,
+   "weight": 80.54,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LEELA PALACES HOTELS & RESORTS LIMITED",
+   "isin": "INE0AQ201015",
+   "sector": "Hotels & Resorts",
+   "qty": 40000.0,
+   "mv_cr": null,
+   "weight": 79.56,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "AXIS BANK LTD.",
+   "isin": "INE238A01034",
+   "sector": "Private Sector Bank",
+   "qty": 10000.0,
+   "mv_cr": null,
+   "weight": 61.9,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HEALTHCARE GLOBAL ENTERPRISES LTD.",
+   "isin": "INE075I01017",
+   "sector": "Hospital",
+   "qty": 20000.0,
+   "mv_cr": null,
+   "weight": 61.32,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JINDAL STEEL LTD.",
+   "isin": "INE749A01030",
+   "sector": "Iron & Steel",
+   "qty": 10000.0,
+   "mv_cr": null,
+   "weight": 58.08,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SAI LIFE SCIENCES LTD",
+   "isin": "INE570L01029",
+   "sector": "Pharmaceuticals",
+   "qty": 10000.0,
+   "mv_cr": null,
+   "weight": 55.81,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SHREE CEMENT LTD.",
+   "isin": "INE070A01015",
+   "sector": "Cement & Cement Products",
+   "qty": 400.0,
+   "mv_cr": null,
+   "weight": 48.64,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BAYER CROPSCIENCE LTD.",
+   "isin": "INE462A01022",
+   "sector": "Pesticides & Agrochemicals",
+   "qty": 551.0,
+   "mv_cr": null,
+   "weight": 11.95,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-99",
+  "SIF-100",
+  "SIF-103",
+  "SIF-102",
+  "SIF-98",
+  "SIF-101"
+ ],
+ "managers": "Suraj Nanda",
+ "strategy": "Actively buys stocks it expects to rise and shorts stocks it expects to fall via shares and derivatives, shifting net exposure (~-25% to 100%) to make money in both rising and falling markets from stock selection on both sides.",
+ "presentation": "https://betacms.tatamutualfund.com/system/files/2026-04/Titanium%20Equity%20Long-Short%20Fund_PPT_0.pdf"
+}

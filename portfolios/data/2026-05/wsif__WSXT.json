@@ -1,0 +1,577 @@
+{
+ "amc": "wsif",
+ "fund_code": "WSXT",
+ "fund_name": "WSIF Equity Ex-Top 100 Long-Short Fund",
+ "period": "2026-05",
+ "as_of": "2026-05-31",
+ "source_url": "https://www.wealthcompanyamc.in/uploads/Monthly_Portfolio_Ex_Top_100_Long_Short_d85c8cdb77.xlsx",
+ "raw": "portfolios/raw/wsif/unknown/Monthly_Portfolio_Ex_Top_100_Long_Short_d85c8cdb77.xlsx",
+ "fetched": "2026-08-01T05:26:24+00:00",
+ "net_assets_cr": 16.15,
+ "n_holdings": 36,
+ "allocation": {
+  "equity": 73.25,
+  "money_market": 13.73,
+  "cash_other": 13.02
+ },
+ "sectors": [
+  {
+   "sector": "Banks",
+   "weight": 12.3576
+  },
+  {
+   "sector": "Consumer Durables",
+   "weight": 8.1104
+  },
+  {
+   "sector": "Industrial Products",
+   "weight": 7.1076
+  },
+  {
+   "sector": "Retailing",
+   "weight": 5.7265
+  },
+  {
+   "sector": "Leisure Services",
+   "weight": 4.3181
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 4.2173
+  },
+  {
+   "sector": "Cement & Cement Products",
+   "weight": 4.0554
+  },
+  {
+   "sector": "Personal Products",
+   "weight": 3.2267
+  },
+  {
+   "sector": "Insurance",
+   "weight": 3.0628
+  },
+  {
+   "sector": "Healthcare Services",
+   "weight": 2.6095
+  },
+  {
+   "sector": "Aerospace & Defense",
+   "weight": 2.5426
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 2.3929
+  },
+  {
+   "sector": "Agricultural Food & other Products",
+   "weight": 2.2794
+  },
+  {
+   "sector": "Capital Markets",
+   "weight": 2.1621
+  },
+  {
+   "sector": "Realty",
+   "weight": 2.0191
+  },
+  {
+   "sector": "Ferrous Metals",
+   "weight": 1.5828
+  },
+  {
+   "sector": "Gas",
+   "weight": 1.5776
+  },
+  {
+   "sector": "Food Products",
+   "weight": 1.52
+  },
+  {
+   "sector": "Transport Services",
+   "weight": 0.8129
+  },
+  {
+   "sector": "Fertilizers & Agrochemicals",
+   "weight": 0.8012
+  },
+  {
+   "sector": "Chemicals & Petrochemicals",
+   "weight": 0.7681
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "CCIL",
+   "isin": "INTRPS010626",
+   "sector": "",
+   "qty": 221774.56,
+   "mv_cr": 2.2177,
+   "weight": 13.7284,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 15000.0,
+   "mv_cr": 1.1168,
+   "weight": 6.9134,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Limited",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 7000.0,
+   "mv_cr": 0.8795,
+   "weight": 5.4442,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Infrastructure Limited",
+   "isin": "INE880J01026",
+   "sector": "Transport Infrastructure",
+   "qty": 24747.0,
+   "mv_cr": 0.6813,
+   "weight": 4.2173,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Grindwell Norton Limited",
+   "isin": "INE536A01023",
+   "sector": "Industrial Products",
+   "qty": 3000.0,
+   "mv_cr": 0.5519,
+   "weight": 3.4166,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Crompton Greaves Consumer Electrical Ltd",
+   "isin": "INE299U01018",
+   "sector": "Consumer Durables",
+   "qty": 19441.0,
+   "mv_cr": 0.5466,
+   "weight": 3.3835,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Honasa Consumer Limited",
+   "isin": "INE0J5401028",
+   "sector": "Personal Products",
+   "qty": 12826.0,
+   "mv_cr": 0.5212,
+   "weight": 3.2267,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INDIGO PAINTS LIMITED",
+   "isin": "INE09VQ01012",
+   "sector": "Consumer Durables",
+   "qty": 5000.0,
+   "mv_cr": 0.4955,
+   "weight": 3.067,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Prudential Life Insurance Company",
+   "isin": "INE726G01019",
+   "sector": "Insurance",
+   "qty": 9818.0,
+   "mv_cr": 0.4948,
+   "weight": 3.0628,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "AIA Engineering Limited",
+   "isin": "INE212H01026",
+   "sector": "Industrial Products",
+   "qty": 1052.0,
+   "mv_cr": 0.4738,
+   "weight": 2.9328,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "CCIL",
+   "isin": "INTRPS010626",
+   "sector": "",
+   "qty": 221774.56,
+   "mv_cr": 2.2177,
+   "weight": 13.7284,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 15000.0,
+   "mv_cr": 1.1168,
+   "weight": 6.9134,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Limited",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 7000.0,
+   "mv_cr": 0.8795,
+   "weight": 5.4442,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Infrastructure Limited",
+   "isin": "INE880J01026",
+   "sector": "Transport Infrastructure",
+   "qty": 24747.0,
+   "mv_cr": 0.6813,
+   "weight": 4.2173,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Grindwell Norton Limited",
+   "isin": "INE536A01023",
+   "sector": "Industrial Products",
+   "qty": 3000.0,
+   "mv_cr": 0.5519,
+   "weight": 3.4166,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Crompton Greaves Consumer Electrical Ltd",
+   "isin": "INE299U01018",
+   "sector": "Consumer Durables",
+   "qty": 19441.0,
+   "mv_cr": 0.5466,
+   "weight": 3.3835,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Honasa Consumer Limited",
+   "isin": "INE0J5401028",
+   "sector": "Personal Products",
+   "qty": 12826.0,
+   "mv_cr": 0.5212,
+   "weight": 3.2267,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INDIGO PAINTS LIMITED",
+   "isin": "INE09VQ01012",
+   "sector": "Consumer Durables",
+   "qty": 5000.0,
+   "mv_cr": 0.4955,
+   "weight": 3.067,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Prudential Life Insurance Company",
+   "isin": "INE726G01019",
+   "sector": "Insurance",
+   "qty": 9818.0,
+   "mv_cr": 0.4948,
+   "weight": 3.0628,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "AIA Engineering Limited",
+   "isin": "INE212H01026",
+   "sector": "Industrial Products",
+   "qty": 1052.0,
+   "mv_cr": 0.4738,
+   "weight": 2.9328,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Lenskart Solutions Limited",
+   "isin": "INE956O01016",
+   "sector": "Retailing",
+   "qty": 7847.0,
+   "mv_cr": 0.4111,
+   "weight": 2.5446,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 10000.0,
+   "mv_cr": 0.4108,
+   "weight": 2.5426,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "EIH Limited",
+   "isin": "INE230A01023",
+   "sector": "Leisure Services",
+   "qty": 13182.0,
+   "mv_cr": 0.3905,
+   "weight": 2.417,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Brigade Enterprises Limited",
+   "isin": "INE791I01019",
+   "sector": "Realty",
+   "qty": 5000.0,
+   "mv_cr": 0.3262,
+   "weight": 2.0191,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Lemon Tree Hotels Limited",
+   "isin": "INE970X01018",
+   "sector": "Leisure Services",
+   "qty": 26951.0,
+   "mv_cr": 0.3071,
+   "weight": 1.9011,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Cement Limited",
+   "isin": "INE718I01012",
+   "sector": "Cement & Cement Products",
+   "qty": 21260.0,
+   "mv_cr": 0.2756,
+   "weight": 1.706,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Dr. Lal Path Labs Ltd.",
+   "isin": "INE600L01024",
+   "sector": "Healthcare Services",
+   "qty": 1688.0,
+   "mv_cr": 0.2713,
+   "weight": 1.6796,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kajaria Ceramics Limited",
+   "isin": "INE217B01036",
+   "sector": "Consumer Durables",
+   "qty": 2500.0,
+   "mv_cr": 0.2681,
+   "weight": 1.6599,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Eternal Limited",
+   "isin": "INE758T01015",
+   "sector": "Retailing",
+   "qty": 10588.0,
+   "mv_cr": 0.2653,
+   "weight": 1.6424,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Alivus Life Sciences",
+   "isin": "INE03Q201024",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 2455.0,
+   "mv_cr": 0.2591,
+   "weight": 1.6041,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Jindal Steel Limited",
+   "isin": "INE749A01030",
+   "sector": "Ferrous Metals",
+   "qty": 2118.0,
+   "mv_cr": 0.2557,
+   "weight": 1.5828,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Indraprastha Gas Limited",
+   "isin": "INE203G01027",
+   "sector": "Gas",
+   "qty": 15882.0,
+   "mv_cr": 0.2549,
+   "weight": 1.5776,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SWIGGY LIMITED",
+   "isin": "INE00H001014",
+   "sector": "Retailing",
+   "qty": 9643.0,
+   "mv_cr": 0.2487,
+   "weight": 1.5395,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Orkla India Limited",
+   "isin": "INE16NZ01023",
+   "sector": "Food Products",
+   "qty": 4000.0,
+   "mv_cr": 0.2455,
+   "weight": 1.52,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "CCL Products (India) Limited",
+   "isin": "INE421D01022",
+   "sector": "Agricultural Food & other Products",
+   "qty": 2250.0,
+   "mv_cr": 0.2371,
+   "weight": 1.4677,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JK Lakshmi Cement Limited",
+   "isin": "INE786A01032",
+   "sector": "Cement & Cement Products",
+   "qty": 3857.0,
+   "mv_cr": 0.2277,
+   "weight": 1.4095,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICRA LIMITED",
+   "isin": "INE725G01011",
+   "sector": "Capital Markets",
+   "qty": 400.0,
+   "mv_cr": 0.215,
+   "weight": 1.3309,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Nuvoco Vistas Corporation Limited",
+   "isin": "INE118D01016",
+   "sector": "Cement & Cement Products",
+   "qty": 4355.0,
+   "mv_cr": 0.1518,
+   "weight": 0.9399,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Thyrocare Technologies Limited",
+   "isin": "INE594H01019",
+   "sector": "Healthcare Services",
+   "qty": 2967.0,
+   "mv_cr": 0.1502,
+   "weight": 0.9299,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Aditya Birla Sun Life Mutual Fund",
+   "isin": "INE404A01024",
+   "sector": "Capital Markets",
+   "qty": 1262.0,
+   "mv_cr": 0.1343,
+   "weight": 0.8312,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Delhivery Limited",
+   "isin": "INE148O01028",
+   "sector": "Transport Services",
+   "qty": 2903.0,
+   "mv_cr": 0.1313,
+   "weight": 0.8129,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Balrampur Chini Mills Limited",
+   "isin": "INE119A01028",
+   "sector": "Agricultural Food & other Products",
+   "qty": 2547.0,
+   "mv_cr": 0.1311,
+   "weight": 0.8117,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bayer Cropscience Limited",
+   "isin": "INE462A01022",
+   "sector": "Fertilizers & Agrochemicals",
+   "qty": 287.0,
+   "mv_cr": 0.1294,
+   "weight": 0.8012,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Alembic Pharmaceuticals Limited",
+   "isin": "INE901L01018",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 1731.0,
+   "mv_cr": 0.1274,
+   "weight": 0.7888,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BASF India Limited",
+   "isin": "INE373A01013",
+   "sector": "Chemicals & Petrochemicals",
+   "qty": 365.0,
+   "mv_cr": 0.1241,
+   "weight": 0.7681,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "KIRLOSKAR BROTHERS LIMITED",
+   "isin": "INE732A01036",
+   "sector": "Industrial Products",
+   "qty": 750.0,
+   "mv_cr": 0.1225,
+   "weight": 0.7582,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-107",
+  "SIF-104",
+  "SIF-105",
+  "SIF-106"
+ ],
+ "managers": "",
+ "strategy": "",
+ "presentation": ""
+}

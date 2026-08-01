@@ -1,0 +1,870 @@
+{
+ "amc": "redhex",
+ "fund_code": "RHSIFHY",
+ "fund_name": "RedHex Hybrid Long-Short Fund",
+ "period": "2026-06",
+ "as_of": "2026-06-30",
+ "source_url": "https://www.assetmanagement.hsbc.co.in/-/media/Files/attachments/india/redhex-sif/portfolios/redhex-hybrid-long-short-fund-30-jun-2026",
+ "raw": "portfolios/raw/redhex/2026-06/redhex-hybrid-long-short-fund-30-jun-2026.xlsx",
+ "fetched": "2026-08-01T05:24:24+00:00",
+ "net_assets_cr": 581.18,
+ "n_holdings": 63,
+ "allocation": {
+  "equity": 30.71,
+  "debt": 61.54,
+  "cash_other": 7.75
+ },
+ "sectors": [
+  {
+   "sector": "Banks",
+   "weight": 5.64
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 4.92
+  },
+  {
+   "sector": "Automobiles",
+   "weight": 3.75
+  },
+  {
+   "sector": "Realty",
+   "weight": 3.22
+  },
+  {
+   "sector": "Finance",
+   "weight": 2.07
+  },
+  {
+   "sector": "Capital Markets",
+   "weight": 1.93
+  },
+  {
+   "sector": "Consumer Durables",
+   "weight": 1.49
+  },
+  {
+   "sector": "Non - Ferrous Metals",
+   "weight": 1.35
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 1.28
+  },
+  {
+   "sector": "Beverages",
+   "weight": 0.99
+  },
+  {
+   "sector": "Personal Products",
+   "weight": 0.86
+  },
+  {
+   "sector": "Ferrous Metals",
+   "weight": 0.83
+  },
+  {
+   "sector": "Financial Technology (Fintech)",
+   "weight": 0.71
+  },
+  {
+   "sector": "Cement & Cement Products",
+   "weight": 0.28
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 0.25
+  },
+  {
+   "sector": "Retailing",
+   "weight": 0.22
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 0.21
+  },
+  {
+   "sector": "Auto Components",
+   "weight": 0.18
+  },
+  {
+   "sector": "Agricultural, Commercial & Construction Vehicles",
+   "weight": 0.14
+  },
+  {
+   "sector": "Leisure Services",
+   "weight": 0.14
+  },
+  {
+   "sector": "Power",
+   "weight": 0.12
+  },
+  {
+   "sector": "Agricultural Food & other Products",
+   "weight": 0.03
+  },
+  {
+   "sector": "Consumable Fuels",
+   "weight": 0.03
+  },
+  {
+   "sector": "Diversified Metals",
+   "weight": 0.03
+  },
+  {
+   "sector": "Healthcare Services",
+   "weight": 0.02
+  },
+  {
+   "sector": "Insurance",
+   "weight": 0.01
+  },
+  {
+   "sector": "Diversified FMCG",
+   "weight": 0.01
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "HSBC Money Market Fund - Direct Growth",
+   "isin": "INF917K01FE6",
+   "sector": "Internal - Mutual Fund Units",
+   "qty": 13591856.77,
+   "mv_cr": 40.1209,
+   "weight": 6.9,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Krazybee Services Limited**",
+   "isin": "INE07HK07874",
+   "sector": "CARE A",
+   "qty": 4000000.0,
+   "mv_cr": 40.013,
+   "weight": 6.89,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "ARIEL TRUST 2026**",
+   "isin": "INE2XEV15016",
+   "sector": "IND AA+(SO)",
+   "qty": 4000000.0,
+   "mv_cr": 40.0465,
+   "weight": 6.89,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "LIC Housing Finance Limited^",
+   "isin": "INE115A07RJ0",
+   "sector": "CRISIL AAA",
+   "qty": 3500000.0,
+   "mv_cr": 35.173,
+   "weight": 6.05,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Oxyzo Financial Services Pvt Limited**",
+   "isin": "INE04VS07529",
+   "sector": "ICRA A+",
+   "qty": 3500000.0,
+   "mv_cr": 34.8888,
+   "weight": 6.0,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Indus Towers Limited",
+   "isin": "INE121J01017",
+   "sector": "Telecom - Services",
+   "qty": 719100.0,
+   "mv_cr": 28.1671,
+   "weight": 4.85,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "GMR Airports Limited**",
+   "isin": "INE776C08083",
+   "sector": "CRISIL A+",
+   "qty": 2500000.0,
+   "mv_cr": 26.5601,
+   "weight": 4.57,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "NABARD^",
+   "isin": "INE261F08EG3",
+   "sector": "CRISIL AAA",
+   "qty": 2500000.0,
+   "mv_cr": 25.6229,
+   "weight": 4.41,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "National Highways Infra Trust",
+   "isin": "INE0H7R23014",
+   "sector": "InVITs",
+   "qty": 1500000.0,
+   "mv_cr": 25.1925,
+   "weight": 4.34,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "MUTHOOT HOUSING FINANCE**",
+   "isin": "INE882Z08056",
+   "sector": "CRISIL AA-",
+   "qty": 2500000.0,
+   "mv_cr": 24.7565,
+   "weight": 4.26,
+   "category": "debt",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "HSBC Money Market Fund - Direct Growth",
+   "isin": "INF917K01FE6",
+   "sector": "Internal - Mutual Fund Units",
+   "qty": 13591856.77,
+   "mv_cr": 40.1209,
+   "weight": 6.9,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Krazybee Services Limited**",
+   "isin": "INE07HK07874",
+   "sector": "CARE A",
+   "qty": 4000000.0,
+   "mv_cr": 40.013,
+   "weight": 6.89,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "ARIEL TRUST 2026**",
+   "isin": "INE2XEV15016",
+   "sector": "IND AA+(SO)",
+   "qty": 4000000.0,
+   "mv_cr": 40.0465,
+   "weight": 6.89,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "LIC Housing Finance Limited^",
+   "isin": "INE115A07RJ0",
+   "sector": "CRISIL AAA",
+   "qty": 3500000.0,
+   "mv_cr": 35.173,
+   "weight": 6.05,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Oxyzo Financial Services Pvt Limited**",
+   "isin": "INE04VS07529",
+   "sector": "ICRA A+",
+   "qty": 3500000.0,
+   "mv_cr": 34.8888,
+   "weight": 6.0,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Indus Towers Limited",
+   "isin": "INE121J01017",
+   "sector": "Telecom - Services",
+   "qty": 719100.0,
+   "mv_cr": 28.1671,
+   "weight": 4.85,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "GMR Airports Limited**",
+   "isin": "INE776C08083",
+   "sector": "CRISIL A+",
+   "qty": 2500000.0,
+   "mv_cr": 26.5601,
+   "weight": 4.57,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "NABARD^",
+   "isin": "INE261F08EG3",
+   "sector": "CRISIL AAA",
+   "qty": 2500000.0,
+   "mv_cr": 25.6229,
+   "weight": 4.41,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "National Highways Infra Trust",
+   "isin": "INE0H7R23014",
+   "sector": "InVITs",
+   "qty": 1500000.0,
+   "mv_cr": 25.1925,
+   "weight": 4.34,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "MUTHOOT HOUSING FINANCE**",
+   "isin": "INE882Z08056",
+   "sector": "CRISIL AA-",
+   "qty": 2500000.0,
+   "mv_cr": 24.7565,
+   "weight": 4.26,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Cube Highway Trust",
+   "isin": "INE0NR623014",
+   "sector": "InVITs",
+   "qty": 1425000.0,
+   "mv_cr": 22.0875,
+   "weight": 3.8,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Canara Bank",
+   "isin": "INE476A01022",
+   "sector": "Banks",
+   "qty": 1674000.0,
+   "mv_cr": 21.012,
+   "weight": 3.62,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bagmane Prime Office REIT",
+   "isin": "INE2OVN25015",
+   "sector": "ReITs",
+   "qty": 1956310.0,
+   "mv_cr": 20.3045,
+   "weight": 3.49,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Godrej Properties Limited",
+   "isin": "INE484J01027",
+   "sector": "Realty",
+   "qty": 100100.0,
+   "mv_cr": 18.6847,
+   "weight": 3.22,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TVS Motor Company Limited",
+   "isin": "INE494B01023",
+   "sector": "Automobiles",
+   "qty": 39725.0,
+   "mv_cr": 13.7472,
+   "weight": 2.37,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Mindspace Business Parks REIT",
+   "isin": "INE0CCU25019",
+   "sector": "ReITs",
+   "qty": 265222.0,
+   "mv_cr": 12.5553,
+   "weight": 2.16,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "7.06% GOI - 10-Apr-2028",
+   "isin": "IN0020230010",
+   "sector": "SOVEREIGN",
+   "qty": 1000000.0,
+   "mv_cr": 10.3359,
+   "weight": 1.78,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Indian Energy Exchange Limited",
+   "isin": "INE022Q01020",
+   "sector": "Capital Markets",
+   "qty": 756900.0,
+   "mv_cr": 9.4711,
+   "weight": 1.63,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindustan Zinc Limited",
+   "isin": "INE267A01025",
+   "sector": "Non - Ferrous Metals",
+   "qty": 145775.0,
+   "mv_cr": 7.772,
+   "weight": 1.34,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindustan Petroleum Corporation Limited",
+   "isin": "INE094A01015",
+   "sector": "Petroleum Products",
+   "qty": 188325.0,
+   "mv_cr": 7.4285,
+   "weight": 1.28,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Varun Beverages Limited",
+   "isin": "INE200M01039",
+   "sector": "Beverages",
+   "qty": 113475.0,
+   "mv_cr": 5.7594,
+   "weight": 0.99,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Mahindra & Mahindra Limited",
+   "isin": "INE101A01026",
+   "sector": "Automobiles",
+   "qty": 18400.0,
+   "mv_cr": 5.6466,
+   "weight": 0.97,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Crompton Greaves Consumer Electrical Ltd",
+   "isin": "INE299U01018",
+   "sector": "Consumer Durables",
+   "qty": 184900.0,
+   "mv_cr": 5.0801,
+   "weight": 0.87,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Dabur India Limited",
+   "isin": "INE016A01026",
+   "sector": "Personal Products",
+   "qty": 110000.0,
+   "mv_cr": 4.6442,
+   "weight": 0.8,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "One 97 Communications Limited",
+   "isin": "INE982J01020",
+   "sector": "Financial Technology (Fintech)",
+   "qty": 36250.0,
+   "mv_cr": 4.1379,
+   "weight": 0.71,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bandhan Bank Limited",
+   "isin": "INE545U01014",
+   "sector": "Banks",
+   "qty": 201600.0,
+   "mv_cr": 4.1163,
+   "weight": 0.71,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bank of India",
+   "isin": "INE084A01016",
+   "sector": "Banks",
+   "qty": 286000.0,
+   "mv_cr": 4.0154,
+   "weight": 0.69,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Manappuram Finance Limited",
+   "isin": "INE522D01027",
+   "sector": "Finance",
+   "qty": 117000.0,
+   "mv_cr": 3.7931,
+   "weight": 0.65,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finserv Limited",
+   "isin": "INE918I01026",
+   "sector": "Finance",
+   "qty": 21000.0,
+   "mv_cr": 3.7384,
+   "weight": 0.64,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Steel Limited",
+   "isin": "INE081A01020",
+   "sector": "Ferrous Metals",
+   "qty": 195250.0,
+   "mv_cr": 3.6719,
+   "weight": 0.63,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "KALYAN JEWELLERS INDIA LIMITED",
+   "isin": "INE303R01014",
+   "sector": "Consumer Durables",
+   "qty": 93150.0,
+   "mv_cr": 3.6021,
+   "weight": 0.62,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "State Bank of India",
+   "isin": "INE062A01020",
+   "sector": "Banks",
+   "qty": 33000.0,
+   "mv_cr": 3.3888,
+   "weight": 0.58,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finance Limited",
+   "isin": "INE296A01032",
+   "sector": "Finance",
+   "qty": 30000.0,
+   "mv_cr": 3.0143,
+   "weight": 0.52,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Eicher Motors Limited",
+   "isin": "INE066A01021",
+   "sector": "Automobiles",
+   "qty": 2500.0,
+   "mv_cr": 1.7684,
+   "weight": 0.3,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Asset Management Company Limited",
+   "isin": "INE127D01025",
+   "sector": "Capital Markets",
+   "qty": 6600.0,
+   "mv_cr": 1.7511,
+   "weight": 0.3,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Ambuja Cements Limited",
+   "isin": "INE079A01024",
+   "sector": "Cement & Cement Products",
+   "qty": 38400.0,
+   "mv_cr": 1.6199,
+   "weight": 0.28,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Aurobindo Pharma Limited",
+   "isin": "INE406A01037",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 9350.0,
+   "mv_cr": 1.4761,
+   "weight": 0.25,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Shriram Finance Limited",
+   "isin": "INE721A01047",
+   "sector": "Finance",
+   "qty": 14025.0,
+   "mv_cr": 1.4616,
+   "weight": 0.25,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Port & Special Economic Zone Ltd",
+   "isin": "INE742F01042",
+   "sector": "Transport Infrastructure",
+   "qty": 6650.0,
+   "mv_cr": 1.2038,
+   "weight": 0.21,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Steel Limited",
+   "isin": "INE019A01038",
+   "sector": "Ferrous Metals",
+   "qty": 9450.0,
+   "mv_cr": 1.1589,
+   "weight": 0.2,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Ashok Leyland Limited",
+   "isin": "INE208A01029",
+   "sector": "Agricultural, Commercial & Construction Vehicles",
+   "qty": 50000.0,
+   "mv_cr": 0.7885,
+   "weight": 0.14,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "The Indian Hotels Company Limited",
+   "isin": "INE053A01029",
+   "sector": "Leisure Services",
+   "qty": 11000.0,
+   "mv_cr": 0.7853,
+   "weight": 0.14,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Exide Industries Limited",
+   "isin": "INE302A01020",
+   "sector": "Auto Components",
+   "qty": 18000.0,
+   "mv_cr": 0.6977,
+   "weight": 0.12,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "FSN E-Commerce Ventures Limited",
+   "isin": "INE388Y01029",
+   "sector": "Retailing",
+   "qty": 21875.0,
+   "mv_cr": 0.68,
+   "weight": 0.12,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Maruti Suzuki India Limited",
+   "isin": "INE585B01010",
+   "sector": "Automobiles",
+   "qty": 450.0,
+   "mv_cr": 0.6352,
+   "weight": 0.11,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Vishal Mega Mart Limited",
+   "isin": "INE01EA01019",
+   "sector": "Retailing",
+   "qty": 48500.0,
+   "mv_cr": 0.5721,
+   "weight": 0.1,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "NTPC Limited",
+   "isin": "INE733E01010",
+   "sector": "Power",
+   "qty": 15000.0,
+   "mv_cr": 0.535,
+   "weight": 0.09,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Vodafone Idea Limited",
+   "isin": "INE669E01016",
+   "sector": "Telecom - Services",
+   "qty": 285900.0,
+   "mv_cr": 0.4134,
+   "weight": 0.07,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Godrej Consumer Products Limited",
+   "isin": "INE102D01028",
+   "sector": "Personal Products",
+   "qty": 3500.0,
+   "mv_cr": 0.3535,
+   "weight": 0.06,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "UNO Minda Limited",
+   "isin": "INE405E01023",
+   "sector": "Auto Components",
+   "qty": 2750.0,
+   "mv_cr": 0.2991,
+   "weight": 0.05,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Marico Limited",
+   "isin": "INE196A01026",
+   "sector": "Agricultural Food & other Products",
+   "qty": 2400.0,
+   "mv_cr": 0.2007,
+   "weight": 0.03,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Coal India Limited",
+   "isin": "INE522F01014",
+   "sector": "Consumable Fuels",
+   "qty": 4050.0,
+   "mv_cr": 0.1778,
+   "weight": 0.03,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "The Federal Bank  Limited",
+   "isin": "INE171A01029",
+   "sector": "Banks",
+   "qty": 5000.0,
+   "mv_cr": 0.165,
+   "weight": 0.03,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Vedanta Limited",
+   "isin": "INE205A01025",
+   "sector": "Diversified Metals",
+   "qty": 5750.0,
+   "mv_cr": 0.1614,
+   "weight": 0.03,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Apollo Hospitals Enterprise Limited",
+   "isin": "INE437A01024",
+   "sector": "Healthcare Services",
+   "qty": 125.0,
+   "mv_cr": 0.1085,
+   "weight": 0.02,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Energy Solutions Limited",
+   "isin": "INE931S01010",
+   "sector": "Power",
+   "qty": 675.0,
+   "mv_cr": 0.1007,
+   "weight": 0.02,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 625.0,
+   "mv_cr": 0.0841,
+   "weight": 0.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Power Limited",
+   "isin": "INE814H01029",
+   "sector": "Power",
+   "qty": 3550.0,
+   "mv_cr": 0.0794,
+   "weight": 0.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SBI Life Insurance Company Limited",
+   "isin": "INE123W01016",
+   "sector": "Insurance",
+   "qty": 375.0,
+   "mv_cr": 0.0662,
+   "weight": 0.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "National Aluminium Company Limited",
+   "isin": "INE139A01034",
+   "sector": "Non - Ferrous Metals",
+   "qty": 1875.0,
+   "mv_cr": 0.0637,
+   "weight": 0.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TUBE INVESTMENTS OF INDIA LTD",
+   "isin": "INE974X01010",
+   "sector": "Auto Components",
+   "qty": 200.0,
+   "mv_cr": 0.0606,
+   "weight": 0.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Jio Financial Services Limited",
+   "isin": "INE758E01017",
+   "sector": "Finance",
+   "qty": 2350.0,
+   "mv_cr": 0.0556,
+   "weight": 0.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ITC Limited",
+   "isin": "INE154A01025",
+   "sector": "Diversified FMCG",
+   "qty": 1725.0,
+   "mv_cr": 0.0495,
+   "weight": 0.01,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-129",
+  "SIF-130",
+  "SIF-128"
+ ],
+ "managers": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi",
+ "strategy": "Puts about half its money into low-risk high-quality bonds and market-neutral equity arbitrage for steady income, and half into yield-enhancement bets plus REIT/InvIT units, keeping bond maturities short (~1-2 years).",
+ "presentation": "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/-/media/Files/attachments/india/redhex-sif/nfo-deck-redhex-hybrid-long-short-fund"
+}

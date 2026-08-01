@@ -1,47 +1,747 @@
 {
- "generated": "2026-08-01T04:28:00+00:00",
- "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (see registry.json).",
+ "generated": "2026-08-01T05:26:52+00:00",
+ "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
-  "2026-05"
+  "2026-05",
+  "2026-06"
  ],
  "amcs": {
   "apex": {
-   "name": "Apex SIF (Aditya Birla Sun Life AMC)",
+   "name": "Apex SIF",
+   "brand": "Apex",
+   "parent": "Aditya Birla Sun Life AMC",
    "site": "https://apexsif.adityabirlacapital.com",
-   "disclosure_page": "https://apexsif.adityabirlacapital.com/"
+   "nav_sif": "Apex SIF",
+   "disclosure_page": "https://apexsif.adityabirlacapital.com/",
+   "managers": "Lovelish Solanki, Mohit Sharma",
+   "strategy": "An interval fund spreading money across arbitrage, long stocks, bonds and limited short bets (via derivatives) plus some REITs/InvITs. Returns come from steady low-risk arbitrage/debt income and equity gains, while shorts and hedging cushion losses when markets fall.",
+   "presentation": "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf"
+  },
+  "titanium": {
+   "name": "Titanium SIF",
+   "brand": "Titanium",
+   "parent": "Tata Asset Management",
+   "site": "https://www.tatamutualfund.com/titanium-sif",
+   "nav_sif": "Titanium SIF",
+   "disclosure_page": "https://www.tatamutualfund.com/titanium-sif/schemes-related",
+   "managers": "Suraj Nanda",
+   "strategy": "Buys stocks it expects to rise (long) and bets against stocks it expects to fall (short) via shares and derivatives, shifting net market exposure dynamically to profit in both rising and falling markets.",
+   "presentation": "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf"
+  },
+  "dynasif": {
+   "name": "DynaSIF SIF",
+   "brand": "DynaSIF",
+   "parent": "360 ONE Asset Management",
+   "site": "https://www.360.one/dyna-sif",
+   "nav_sif": "DynaSIF SIF",
+   "disclosure_page": "https://www.360.one/dyna-sif/mandatory-disclosures",
+   "managers": "Harsh Agarwal",
+   "strategy": "Buys stocks it expects to rise while short-selling (via derivatives) those it expects to fall, aiming to make money in both up and down markets from stock-picking rather than market direction.",
+   "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Equity_Long_Short_Fund_Presentation_d42634825b.pdf"
+  },
+  "arudha": {
+   "name": "Arudha SIF",
+   "brand": "Arudha",
+   "parent": "Bandhan AMC",
+   "site": "https://arudhasif.com",
+   "nav_sif": "Arudha SIF",
+   "disclosure_page": "https://arudhasif.com/downloads/",
+   "managers": "Nilesh Saha, Brijesh Shah",
+   "strategy": "Mostly holds listed Indian stocks it expects to rise while placing limited bets against stocks it expects to fall, plus covered calls and a small debt sleeve -- aiming for equity-like returns with lower volatility.",
+   "presentation": "https://arudhasif.com/downloads/assest/file/downloads/NFO%20Deck-%20Arudha%20Equity%20Long%20Short%20Fund.pdf"
+  },
+  "isif": {
+   "name": "iSIF",
+   "brand": "iSIF",
+   "parent": "ICICI Prudential AMC",
+   "site": "https://www.isif.icicipruamc.com",
+   "nav_sif": "iSIF SIF",
+   "disclosure_page": "https://www.isif.icicipruamc.com/media-center/downloads",
+   "managers": "Rajat Chandak, Ayush Shah, Manish Banthia, Akhil Kakkar",
+   "strategy": "Mostly buys equities for growth while holding debt for steadier income, using derivatives to take limited short bets against stocks/bonds it expects to fall.",
+   "presentation": "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/April/Filing%20date%2017-04-2026/Release%20date%2014-04-2026/Advertisements/Annexure%206%20-%20iSIF%20Factsheet.PDF"
+  },
+  "diviniti": {
+   "name": "Diviniti SIF",
+   "brand": "Diviniti",
+   "parent": "ITI Asset Management",
+   "site": "https://sif.itiamc.com",
+   "nav_sif": "Diviniti SIF",
+   "disclosure_page": "https://sif.itiamc.com/Disclosure?category=PORTFOLIO%20DISCLOSURES",
+   "managers": "Vasav Sahgal, Rajesh Bhatia",
+   "strategy": "Mainly buys shares it expects to rise and takes limited short bets (via derivatives) on shares it expects to fall, to cushion losses when markets drop. Returns come from stock selection on both the long and short sides.",
+   "presentation": "https://sif.itiamc.com/Home/DownloaddFile/10"
+  },
+  "magnum": {
+   "name": "Magnum SIF",
+   "brand": "Magnum",
+   "parent": "SBI Funds Management",
+   "site": "https://www.sbimf.com/magnumsif",
+   "nav_sif": "Magnum SIF",
+   "disclosure_page": "https://www.sbimf.com/magnumsif-portfolios",
+   "managers": "Gaurav Mehta",
+   "strategy": "Earns steady income mainly through low-risk arbitrage (small cash-vs-futures price gaps) and options strategies like covered calls, while keeping some money in stocks for growth. Returns come from hedged income trades, some equity gains, and debt interest.",
+   "presentation": "https://www.sbimf.com/docs/default-source/sif-documents/sid---magnum-hybrid-long-short-fund.pdf?sfvrsn=c6e09ae7_2"
+  },
+  "arthaya": {
+   "name": "Arthaya SIF",
+   "brand": "Arthaya",
+   "parent": "Union Asset Management",
+   "site": "https://www.unionmf.com/arthayasif",
+   "nav_sif": "Arthaya SIF",
+   "disclosure_page": "https://www.unionmf.com/arthayasif/about-us/downloads#factsheets",
+   "managers": "Rajesh Aynor, Hiten Bhadra",
+   "strategy": "Invests mainly in Indian stocks it expects to rise while taking limited short bets against stocks it expects to fall, across all company sizes. Returns come from stock-picking on both sides plus adjusting the long-vs-short balance to the market outlook.",
+   "presentation": "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/isid/arthaya-equity-long-short-fund.pdf"
+  },
+  "sapphire": {
+   "name": "Sapphire SIF",
+   "brand": "Sapphire",
+   "parent": "Franklin Templeton India",
+   "site": "https://www.franklintempletonindia.com/sapphiresif",
+   "nav_sif": "Franklin Templeton Mutual Fund",
+   "disclosure_page": "https://www.franklintempletonindia.com/sapphiresif",
+   "managers": "Arihant Jain",
+   "strategy": "Buys large, mid and small Indian companies it expects to rise while placing limited bets (capped at 25%) against shares it expects to fall, using a rules-based quant model. Aims to make money in rising and falling markets while cushioning downturns.",
+   "presentation": "https://www.franklintempletonindia.com/download/en-in/sif-open-end-dvsfd-equity-schemes/3ccdfa21-b19b-4a1c-9f19-eb2989a4ca17/Sapphire%20Equity%20Long-Short%20SIF%20_KIM.pdf"
+  },
+  "platinum": {
+   "name": "Platinum SIF",
+   "brand": "Platinum",
+   "parent": "Mirae Asset",
+   "site": "https://platinumsif.miraeassetmf.co.in",
+   "nav_sif": "Mirae Asset Mutual Fund",
+   "disclosure_page": "https://platinumsif.miraeassetmf.co.in/forms-downloads/regulatory/portfolio",
+   "managers": "Gaurik Shah",
+   "strategy": "Spreads money across hedged arbitrage trades, high-quality bonds and a controlled slice of equity (using option collars and special situations that cap gains and losses). Returns come mainly from interest income and market-neutral arbitrage, with a limited hedged-equity portion.",
+   "presentation": "https://miraeassetetf.co.in/wp-content/uploads/2026/05/Platinum-Hybrid-Long-Short-Fund-Four-Pager-1.pdf"
+  },
+  "redhex": {
+   "name": "RedHex SIF",
+   "brand": "RedHex",
+   "parent": "HSBC Asset Management",
+   "site": "https://www.assetmanagement.hsbc.co.in/en/redhex-sif",
+   "nav_sif": "HSBC Mutual Fund",
+   "disclosure_page": "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/investor-resources/information-library",
+   "managers": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi",
+   "strategy": "Puts about half its money into low-risk high-quality bonds and market-neutral equity arbitrage for steady income, and half into yield-enhancement bets plus REIT/InvIT units, keeping bond maturities short (~1-2 years).",
+   "presentation": "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/-/media/Files/attachments/india/redhex-sif/nfo-deck-redhex-hybrid-long-short-fund"
+  },
+  "wsif": {
+   "name": "WSIF",
+   "brand": "WSIF",
+   "parent": "The Wealth Company AMC",
+   "site": "https://www.wealthcompanyamc.in/wsif/",
+   "nav_sif": "The Wealth Company Mutual Fund",
+   "disclosure_page": "https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/",
+   "managers": "",
+   "strategy": "",
+   "presentation": ""
+  },
+  "quant": {
+   "name": "qsif",
+   "brand": "qsif",
+   "parent": "Quant Money Managers",
+   "site": "https://www.qsif.com",
+   "nav_sif": "qsif SIF",
+   "disclosure_page": "https://www.qsif.com/statutory-disclosures",
+   "managers": "",
+   "strategy": "",
+   "presentation": ""
+  },
+  "summit": {
+   "name": "Summit SIF",
+   "brand": "Summit",
+   "parent": "Invesco Asset Management India",
+   "site": "https://summitsif.invescomutualfund.com/",
+   "nav_sif": "Invesco Mutual Fund",
+   "disclosure_page": "https://summitsif.invescomutualfund.com/statutory-disclosures",
+   "managers": "",
+   "strategy": "",
+   "presentation": ""
+  },
+  "infinity": {
+   "name": "Infinity SIF",
+   "brand": "Infinity",
+   "parent": "Kotak Mahindra AMC",
+   "site": "https://www.kotakmf.com/sif/",
+   "nav_sif": "Kotak Mahindra Mutual Fund",
+   "disclosure_page": "https://www.kotakmf.com/sif/",
+   "managers": "",
+   "strategy": "",
+   "presentation": ""
+  },
+  "prism": {
+   "name": "Prism SIF",
+   "brand": "Prism",
+   "parent": "Jio BlackRock AMC",
+   "site": "https://www.jioblackrockamc.com/prismsif",
+   "nav_sif": "Jio BlackRock Mutual Fund",
+   "disclosure_page": "https://www.jioblackrockamc.com/prismsif/statutory-disclosure/fund-document/portfolio-insights",
+   "managers": "",
+   "strategy": "",
+   "presentation": ""
   }
  },
  "schemes": {
   "SIF-83": {
-   "name": "APEX HYBRID LONG-SHORT FUND",
+   "name": "Apex Hybrid Long-Short Fund",
    "amc": "apex",
-   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "fund": "Apex Hybrid Long-Short Fund",
    "periods": {
     "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
    }
   },
   "SIF-80": {
-   "name": "APEX HYBRID LONG-SHORT FUND",
+   "name": "Apex Hybrid Long-Short Fund",
    "amc": "apex",
-   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "fund": "Apex Hybrid Long-Short Fund",
    "periods": {
     "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
    }
   },
   "SIF-81": {
-   "name": "APEX HYBRID LONG-SHORT FUND",
+   "name": "Apex Hybrid Long-Short Fund",
    "amc": "apex",
-   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "fund": "Apex Hybrid Long-Short Fund",
    "periods": {
     "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
    }
   },
   "SIF-79": {
-   "name": "APEX HYBRID LONG-SHORT FUND",
+   "name": "Apex Hybrid Long-Short Fund",
    "amc": "apex",
-   "fund": "APEX HYBRID LONG-SHORT FUND",
+   "fund": "Apex Hybrid Long-Short Fund",
    "periods": {
     "2026-05": "portfolios/data/2026-05/apex__SIFAHLS.json"
+   }
+  },
+  "SIF-112": {
+   "name": "Arthaya Equity Long Short Fund",
+   "amc": "arthaya",
+   "fund": "Arthaya Equity Long Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json"
+   }
+  },
+  "SIF-114": {
+   "name": "Arthaya Equity Long Short Fund",
+   "amc": "arthaya",
+   "fund": "Arthaya Equity Long Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json"
+   }
+  },
+  "SIF-115": {
+   "name": "Arthaya Equity Long Short Fund",
+   "amc": "arthaya",
+   "fund": "Arthaya Equity Long Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json"
+   }
+  },
+  "SIF-57": {
+   "name": "DynaSIF Equity Long - Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Equity Long - Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS01.json"
+   }
+  },
+  "SIF-55": {
+   "name": "DynaSIF Equity Long - Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Equity Long - Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS01.json"
+   }
+  },
+  "SIF-59": {
+   "name": "DynaSIF Equity Long - Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Equity Long - Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS01.json"
+   }
+  },
+  "SIF-88": {
+   "name": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS02.json"
+   }
+  },
+  "SIF-86": {
+   "name": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS02.json"
+   }
+  },
+  "SIF-87": {
+   "name": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS02.json"
+   }
+  },
+  "SIF-89": {
+   "name": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Active Asset Allocator Long- Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS02.json"
+   }
+  },
+  "SIF-95": {
+   "name": "Sapphire Equity Long-Short SIF",
+   "amc": "sapphire",
+   "fund": "Sapphire Equity Long-Short SIF",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
+   }
+  },
+  "SIF-94": {
+   "name": "Sapphire Equity Long-Short SIF",
+   "amc": "sapphire",
+   "fund": "Sapphire Equity Long-Short SIF",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
+   }
+  },
+  "SIF-96": {
+   "name": "Sapphire Equity Long-Short SIF",
+   "amc": "sapphire",
+   "fund": "Sapphire Equity Long-Short SIF",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
+   }
+  },
+  "SIF-97": {
+   "name": "Sapphire Equity Long-Short SIF",
+   "amc": "sapphire",
+   "fund": "Sapphire Equity Long-Short SIF",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
+   }
+  },
+  "SIF-99": {
+   "name": "Titanium Equity Long-Short Fund Direct Growth",
+   "amc": "titanium",
+   "fund": "Titanium Equity Long-Short Fund Direct Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Equity-Long-Short-Fund.json"
+   }
+  },
+  "SIF-100": {
+   "name": "Titanium Equity Long-Short Fund Direct Growth",
+   "amc": "titanium",
+   "fund": "Titanium Equity Long-Short Fund Direct Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Equity-Long-Short-Fund.json"
+   }
+  },
+  "SIF-103": {
+   "name": "Titanium Equity Long-Short Fund Direct Growth",
+   "amc": "titanium",
+   "fund": "Titanium Equity Long-Short Fund Direct Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Equity-Long-Short-Fund.json"
+   }
+  },
+  "SIF-102": {
+   "name": "Titanium Equity Long-Short Fund Direct Growth",
+   "amc": "titanium",
+   "fund": "Titanium Equity Long-Short Fund Direct Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Equity-Long-Short-Fund.json"
+   }
+  },
+  "SIF-98": {
+   "name": "Titanium Equity Long-Short Fund Direct Growth",
+   "amc": "titanium",
+   "fund": "Titanium Equity Long-Short Fund Direct Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Equity-Long-Short-Fund.json"
+   }
+  },
+  "SIF-101": {
+   "name": "Titanium Equity Long-Short Fund Direct Growth",
+   "amc": "titanium",
+   "fund": "Titanium Equity Long-Short Fund Direct Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Equity-Long-Short-Fund.json"
+   }
+  },
+  "SIF-32": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "amc": "titanium",
+   "fund": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Hybrid-Long-Short-Fund.json"
+   }
+  },
+  "SIF-31": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "amc": "titanium",
+   "fund": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Hybrid-Long-Short-Fund.json"
+   }
+  },
+  "SIF-28": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "amc": "titanium",
+   "fund": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Hybrid-Long-Short-Fund.json"
+   }
+  },
+  "SIF-29": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "amc": "titanium",
+   "fund": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Hybrid-Long-Short-Fund.json"
+   }
+  },
+  "SIF-30": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "amc": "titanium",
+   "fund": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Hybrid-Long-Short-Fund.json"
+   }
+  },
+  "SIF-27": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "amc": "titanium",
+   "fund": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/titanium__Titanium-Hybrid-Long-Short-Fund.json"
+   }
+  },
+  "SIF-108": {
+   "name": "WSIF Equity Long-Short Fund",
+   "amc": "wsif",
+   "fund": "WSIF Equity Long-Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json"
+   }
+  },
+  "SIF-111": {
+   "name": "WSIF Equity Long-Short Fund",
+   "amc": "wsif",
+   "fund": "WSIF Equity Long-Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json"
+   }
+  },
+  "SIF-110": {
+   "name": "WSIF Equity Long-Short Fund",
+   "amc": "wsif",
+   "fund": "WSIF Equity Long-Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json"
+   }
+  },
+  "SIF-107": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "amc": "wsif",
+   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+   }
+  },
+  "SIF-104": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "amc": "wsif",
+   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+   }
+  },
+  "SIF-105": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "amc": "wsif",
+   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+   }
+  },
+  "SIF-106": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "amc": "wsif",
+   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+   }
+  },
+  "SIF-51": {
+   "name": "Arudha Hybrid Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF01.json"
+   }
+  },
+  "SIF-54": {
+   "name": "Arudha Hybrid Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF01.json"
+   }
+  },
+  "SIF-48": {
+   "name": "Arudha Hybrid Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF01.json"
+   }
+  },
+  "SIF-40": {
+   "name": "Arudha Hybrid Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF01.json"
+   }
+  },
+  "SIF-44": {
+   "name": "Arudha Hybrid Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF01.json"
+   }
+  },
+  "SIF-61": {
+   "name": "Arudha Equity Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Equity Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF02.json"
+   }
+  },
+  "SIF-75": {
+   "name": "Arudha Equity Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Equity Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF02.json"
+   }
+  },
+  "SIF-62": {
+   "name": "Arudha Equity Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Equity Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF02.json"
+   }
+  },
+  "SIF-69": {
+   "name": "Arudha Equity Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Equity Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF02.json"
+   }
+  },
+  "SIF-71": {
+   "name": "Arudha Equity Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Equity Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF02.json"
+   }
+  },
+  "SIF-19": {
+   "name": "Diviniti Equity Long Short Fund",
+   "amc": "diviniti",
+   "fund": "Diviniti Equity Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+   }
+  },
+  "SIF-20": {
+   "name": "Diviniti Equity Long Short Fund",
+   "amc": "diviniti",
+   "fund": "Diviniti Equity Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+   }
+  },
+  "SIF-21": {
+   "name": "Diviniti Equity Long Short Fund",
+   "amc": "diviniti",
+   "fund": "Diviniti Equity Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+   }
+  },
+  "SIF-22": {
+   "name": "Diviniti Equity Long Short Fund",
+   "amc": "diviniti",
+   "fund": "Diviniti Equity Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+   }
+  },
+  "SIF-125": {
+   "name": "iSIF Active Asset Allocator Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Active Asset Allocator Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFACTLS.json"
+   }
+  },
+  "SIF-124": {
+   "name": "iSIF Active Asset Allocator Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Active Asset Allocator Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFACTLS.json"
+   }
+  },
+  "SIF-127": {
+   "name": "iSIF Equity Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Equity Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFEQTLS.json"
+   }
+  },
+  "SIF-126": {
+   "name": "iSIF Equity Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Equity Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFEQTLS.json"
+   }
+  },
+  "SIF-33": {
+   "name": "iSIF Equity Ex-Top 100 Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Equity Ex-Top 100 Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFEX100.json"
+   }
+  },
+  "SIF-34": {
+   "name": "iSIF Equity Ex-Top 100 Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Equity Ex-Top 100 Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFEX100.json"
+   }
+  },
+  "SIF-36": {
+   "name": "iSIF Hybrid Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFHYBID.json"
+   }
+  },
+  "SIF-35": {
+   "name": "iSIF Hybrid Long-Short Fund",
+   "amc": "isif",
+   "fund": "iSIF Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/isif__SIFHYBID.json"
+   }
+  },
+  "SIF-14": {
+   "name": "Magnum Hybrid Long Short Fund",
+   "amc": "magnum",
+   "fund": "Magnum Hybrid Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+   }
+  },
+  "SIF-15": {
+   "name": "Magnum Hybrid Long Short Fund",
+   "amc": "magnum",
+   "fund": "Magnum Hybrid Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+   }
+  },
+  "SIF-13": {
+   "name": "Magnum Hybrid Long Short Fund",
+   "amc": "magnum",
+   "fund": "Magnum Hybrid Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+   }
+  },
+  "SIF-16": {
+   "name": "Magnum Hybrid Long Short Fund",
+   "amc": "magnum",
+   "fund": "Magnum Hybrid Long Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+   }
+  },
+  "SIF-134": {
+   "name": "Platinum Hybrid Long-Short Fund",
+   "amc": "platinum",
+   "fund": "Platinum Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
+   }
+  },
+  "SIF-135": {
+   "name": "Platinum Hybrid Long-Short Fund",
+   "amc": "platinum",
+   "fund": "Platinum Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
+   }
+  },
+  "SIF-136": {
+   "name": "Platinum Hybrid Long-Short Fund",
+   "amc": "platinum",
+   "fund": "Platinum Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
+   }
+  },
+  "SIF-137": {
+   "name": "Platinum Hybrid Long-Short Fund",
+   "amc": "platinum",
+   "fund": "Platinum Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
+   }
+  },
+  "SIF-129": {
+   "name": "RedHex Hybrid Long-Short Fund",
+   "amc": "redhex",
+   "fund": "RedHex Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
+   }
+  },
+  "SIF-130": {
+   "name": "RedHex Hybrid Long-Short Fund",
+   "amc": "redhex",
+   "fund": "RedHex Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
+   }
+  },
+  "SIF-128": {
+   "name": "RedHex Hybrid Long-Short Fund",
+   "amc": "redhex",
+   "fund": "RedHex Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
    }
   }
  }

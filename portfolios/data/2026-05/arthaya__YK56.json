@@ -1,0 +1,356 @@
+{
+ "amc": "arthaya",
+ "fund_code": "YK56",
+ "fund_name": "Arthaya Equity Long Short Fund",
+ "period": "2026-05",
+ "as_of": "2026-05-31",
+ "source_url": "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/fund-portfolio/may-2026/monthly-portfolio-report-arthaya-equity-long-short-fund-31-05-2026.xlsx",
+ "raw": "portfolios/raw/arthaya/2026-05/monthly-portfolio-report-arthaya-equity-long-short-fund-31-05-2026.xlsx",
+ "fetched": "2026-08-01T05:19:04+00:00",
+ "net_assets_cr": 1.17,
+ "n_holdings": 18,
+ "allocation": {
+  "equity": 6591.0,
+  "money_market": 1270.0,
+  "cash_other": 0.0
+ },
+ "sectors": [
+  {
+   "sector": "Healthcare Services",
+   "weight": 1199.0
+  },
+  {
+   "sector": "Consumer Durables",
+   "weight": 866.0
+  },
+  {
+   "sector": "Insurance",
+   "weight": 855.0
+  },
+  {
+   "sector": "Automobiles",
+   "weight": 840.0
+  },
+  {
+   "sector": "Transport Services",
+   "weight": 464.0
+  },
+  {
+   "sector": "Power",
+   "weight": 433.0
+  },
+  {
+   "sector": "Oil",
+   "weight": 425.0
+  },
+  {
+   "sector": "Cement & Cement Products",
+   "weight": 421.0
+  },
+  {
+   "sector": "Food Products",
+   "weight": 420.0
+  },
+  {
+   "sector": "Agricultural Food & other Products",
+   "weight": 412.0
+  },
+  {
+   "sector": "Auto Components",
+   "weight": 256.0
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X073",
+   "sector": "Sovereign",
+   "qty": 100000000.0,
+   "mv_cr": 9.8804,
+   "weight": 847.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Interglobe Aviation Ltd.",
+   "isin": "INE646L01027",
+   "sector": "Transport Services",
+   "qty": 12300.0,
+   "mv_cr": 5.4182,
+   "weight": 464.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Amber Enterprises India Ltd.",
+   "isin": "INE371P01015",
+   "sector": "Consumer Durables",
+   "qty": 6700.0,
+   "mv_cr": 5.1021,
+   "weight": 437.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SBI Life Insurance Co. Ltd.",
+   "isin": "INE123W01016",
+   "sector": "Insurance",
+   "qty": 27750.0,
+   "mv_cr": 5.0785,
+   "weight": 435.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "NTPC Ltd.",
+   "isin": "INE733E01010",
+   "sector": "Power",
+   "qty": 130500.0,
+   "mv_cr": 5.049,
+   "weight": 433.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kalyan Jewellers India Ltd.",
+   "isin": "INE303R01014",
+   "sector": "Consumer Durables",
+   "qty": 141000.0,
+   "mv_cr": 5.0062,
+   "weight": 429.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Oil & Natural Gas Corporation Ltd.",
+   "isin": "INE213A01029",
+   "sector": "Oil",
+   "qty": 186750.0,
+   "mv_cr": 4.9563,
+   "weight": 425.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X081",
+   "sector": "Sovereign",
+   "qty": 50000000.0,
+   "mv_cr": 4.9346,
+   "weight": 423.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Maruti Suzuki India Ltd.",
+   "isin": "INE585B01010",
+   "sector": "Automobiles",
+   "qty": 3750.0,
+   "mv_cr": 4.9226,
+   "weight": 422.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Grasim Industries Ltd.",
+   "isin": "INE047A01021",
+   "sector": "Cement & Cement Products",
+   "qty": 15750.0,
+   "mv_cr": 4.9178,
+   "weight": 421.0,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X073",
+   "sector": "Sovereign",
+   "qty": 100000000.0,
+   "mv_cr": 9.8804,
+   "weight": 847.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Interglobe Aviation Ltd.",
+   "isin": "INE646L01027",
+   "sector": "Transport Services",
+   "qty": 12300.0,
+   "mv_cr": 5.4182,
+   "weight": 464.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Amber Enterprises India Ltd.",
+   "isin": "INE371P01015",
+   "sector": "Consumer Durables",
+   "qty": 6700.0,
+   "mv_cr": 5.1021,
+   "weight": 437.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SBI Life Insurance Co. Ltd.",
+   "isin": "INE123W01016",
+   "sector": "Insurance",
+   "qty": 27750.0,
+   "mv_cr": 5.0785,
+   "weight": 435.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "NTPC Ltd.",
+   "isin": "INE733E01010",
+   "sector": "Power",
+   "qty": 130500.0,
+   "mv_cr": 5.049,
+   "weight": 433.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kalyan Jewellers India Ltd.",
+   "isin": "INE303R01014",
+   "sector": "Consumer Durables",
+   "qty": 141000.0,
+   "mv_cr": 5.0062,
+   "weight": 429.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Oil & Natural Gas Corporation Ltd.",
+   "isin": "INE213A01029",
+   "sector": "Oil",
+   "qty": 186750.0,
+   "mv_cr": 4.9563,
+   "weight": 425.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X081",
+   "sector": "Sovereign",
+   "qty": 50000000.0,
+   "mv_cr": 4.9346,
+   "weight": 423.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Maruti Suzuki India Ltd.",
+   "isin": "INE585B01010",
+   "sector": "Automobiles",
+   "qty": 3750.0,
+   "mv_cr": 4.9226,
+   "weight": 422.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Grasim Industries Ltd.",
+   "isin": "INE047A01021",
+   "sector": "Cement & Cement Products",
+   "qty": 15750.0,
+   "mv_cr": 4.9178,
+   "weight": 421.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Max Healthcare Institute Ltd.",
+   "isin": "INE027H01010",
+   "sector": "Healthcare Services",
+   "qty": 50925.0,
+   "mv_cr": 4.9148,
+   "weight": 421.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Life Insurance Company Ltd.",
+   "isin": "INE795G01014",
+   "sector": "Insurance",
+   "qty": 82500.0,
+   "mv_cr": 4.9071,
+   "weight": 420.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Nestle India Ltd.",
+   "isin": "INE239A01024",
+   "sector": "Food Products",
+   "qty": 34500.0,
+   "mv_cr": 4.9042,
+   "weight": 420.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Fortis Healthcare Ltd.",
+   "isin": "INE061F01013",
+   "sector": "Healthcare Services",
+   "qty": 52700.0,
+   "mv_cr": 4.8929,
+   "weight": 419.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Eicher Motors Ltd.",
+   "isin": "INE066A01021",
+   "sector": "Automobiles",
+   "qty": 6800.0,
+   "mv_cr": 4.8804,
+   "weight": 418.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Patanjali Foods Ltd.",
+   "isin": "INE619A01035",
+   "sector": "Agricultural Food & other Products",
+   "qty": 105300.0,
+   "mv_cr": 4.8038,
+   "weight": 412.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Apollo Hospitals Enterprise Ltd.",
+   "isin": "INE437A01024",
+   "sector": "Healthcare Services",
+   "qty": 5125.0,
+   "mv_cr": 4.1905,
+   "weight": 359.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Exide Industries Ltd.",
+   "isin": "INE302A01020",
+   "sector": "Auto Components",
+   "qty": 77400.0,
+   "mv_cr": 2.9915,
+   "weight": 256.0,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-112",
+  "SIF-114",
+  "SIF-115"
+ ],
+ "managers": "Rajesh Aynor, Hiten Bhadra",
+ "strategy": "Invests mainly in Indian stocks it expects to rise while taking limited short bets against stocks it expects to fall, across all company sizes. Returns come from stock-picking on both sides plus adjusting the long-vs-short balance to the market outlook.",
+ "presentation": "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/isid/arthaya-equity-long-short-fund.pdf"
+}

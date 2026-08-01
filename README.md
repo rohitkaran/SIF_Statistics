@@ -188,39 +188,49 @@ python fetch_sif_portfolios.py --file mine.xlsx --amc apex   # normalise a hand-
 python fetch_sif_portfolios.py --list              # show what's already stored
 ```
 
-**What it does per AMC:** reads [`portfolios/registry.json`](portfolios/registry.json) → discovers
-the disclosure file for the period on the AMC's site → downloads it verbatim into
-`portfolios/raw/<amc>/<period>/` → parses it into normalised holdings under
-`portfolios/data/<period>/<amc>__<fund>.json` → rebuilds `portfolios/index.json`, which maps each
-dashboard **scheme code** (a portfolio is per *fund*, so it fans out to that fund's Direct/Regular ×
-Growth/IDCW variants) to the periods available. All of it is **committed to the repo** — the raw
-files and the normalised JSON are versioned, so you get a monthly history you can diff.
+**What it does per AMC:** reads [`portfolios/registry.json`](portfolios/registry.json) → **discovers**
+the disclosure file for the period → downloads it verbatim into `portfolios/raw/<amc>/<period>/` →
+**parses** it into normalised holdings under `portfolios/data/<period>/<amc>__<fund>.json` → rebuilds
+`portfolios/index.json`, mapping each dashboard **scheme code** (a portfolio is per *fund*, so it fans
+out to that fund's Direct/Regular × Growth/IDCW variants) to the periods available. Everything is
+**committed to the repo** — raw files and normalised JSON are versioned, so you get a history you can diff.
 
-A normalised `data/*.json` holds `{fund_name, as_of, period, source_url, raw, net_assets_cr,
-allocation{equity,debt,money_market,others,net_receivables}, sectors[], derivatives[] (long/short
-F&O legs), top[], holdings[]}`.
+- **Discovery** (`discovery.method` in the registry): `http_listing` (regex a page for the file URL),
+  `template` (build candidate month-end URLs from a date template, keep the ones that 200), or `manual`
+  (pinned URLs, for sites behind a WAF / SPA / API-only).
+- **Parsing** (`adapter: sebi_xlsx`): the SEBI-standard monthly-portfolio layout that *every* AMC uses,
+  so one parser covers all of them; it also unpacks a zip-of-xlsx bundle (ICICI) and reads the statement
+  date from inside the sheet. Funds map to dashboard schemes by **strategy** (hybrid / equity long-short /
+  ex-top-100 / allocator / sector), which survives the wildly inconsistent fund-name lines.
 
-### Seeded AMC: Apex (Aditya Birla Sun Life)
+A normalised `data/*.json` holds `{fund_name, as_of, period, source_url, raw, net_assets_cr, managers,
+strategy, presentation, allocation{equity,debt,money_market,cash_other}, sectors[], derivatives[]
+(long/short F&O legs), top[], holdings[]}`.
 
-`apex` is wired end-to-end as the reference adapter (`absl`): it finds
-`/uploads/DDMMYYYY_ABSLMF_Monthly_SIF_*.xlsx` on `apexsif.adityabirlacapital.com`, reads the per-fund
-sheets (holdings, industry, market value, % to net assets, plus the futures/options long-short book),
-and maps the fund to its Apex scheme codes.
+### Coverage
+
+Fetches real disclosures for **~17 funds across 12 fund houses** — Apex (Aditya Birla SL), Titanium
+(Tata), DynaSIF (360 ONE), Arudha (Bandhan), iSIF (ICICI Prudential, a 4-fund zip), Diviniti (ITI),
+Magnum (SBI), Arthaya (Union), Sapphire (Franklin Templeton), Platinum (Mirae), RedHex (HSBC), WSIF
+(The Wealth Company). Four SIFs (qsif/Quant, Summit/Invesco, Infinity/Kotak, Prism/Jio BlackRock) are
+too new to have disclosed a portfolio yet — they're registered and picked up automatically once they
+publish. See [`handover.md`](handover.md) for the full status table and per-AMC notes.
 
 ### Adding another AMC
 
-1. Add an entry under `amcs` in `registry.json`: the AMC's `site`, the `nav_sif` name (matching the
-   `sif` field in `nav_data.json`), the `file_pattern` regex for its disclosure file, and an
-   `adapter` key.
-2. If the file layout matches an existing adapter (`absl`, or the header-mapped `generic_xlsx`),
-   you're done. Otherwise add a small adapter function in `fetch_sif_portfolios.py` and register it in
-   `ADAPTERS` / `DISCOVERERS`. The `--file` path + `generic_xlsx` header-name mapping also let you
-   normalise any hand-downloaded sheet without writing code.
+1. Add an entry under `amcs` in `registry.json`: `site`, `nav_sif` (matching the `sif` field in
+   `nav_data.json`), a `discovery` block (`http_listing` + `file_pattern`, `template` + `url_template`,
+   or `manual` + `files[]`), and `managers`/`strategy`/`presentation` (per-fund overrides via a `funds`
+   map when an AMC runs several funds with different managers).
+2. If the layout is the usual SEBI monthly portfolio, `adapter: sebi_xlsx` already handles it. The
+   `--file` path also normalises any hand-downloaded sheet without writing code.
 
-In the dashboard, click a scheme name to expand it: the **Portfolio (disclosed holdings)** panel shows
-the period selector, top holdings, asset allocation, long/short F&O exposure, equity sectors, and links
-to the raw file and the AMC's disclosure page. Schemes with no disclosure yet show a graceful note (SIFs
-report bi-monthly), so the page is always complete.
+In the dashboard, each row shows the **brand + parent AMC** and a `▣` badge when a portfolio exists.
+Click a scheme to expand it: the **Portfolio (disclosed holdings)** panel shows the period selector,
+**strategy + fund managers + presentation link**, top holdings, asset allocation, long/short F&O
+exposure, and equity sectors — with links to the raw file and the AMC's disclosure page. Schemes with no
+disclosure yet still show the strategy/manager and a note (SIFs report bi-monthly), so the page is
+always complete.
 
 ---
 
@@ -244,6 +254,9 @@ Let `r(t) = NAV(t)/NAV(t−1) − 1`, `D` = trading days/year (default 252), `Rf
 | **1W %** | return vs the last NAV on/before (To − 7 calendar days) |
 | **MTD %** | month-to-date: return vs the last NAV of the prior month |
 | **1M %** | return vs the last NAV on/before (To − 1 calendar month; month-end clamped, so 31 Jul − 1m = 30 Jun) |
+| **2M / 3M / 6M %** | return vs the last NAV on/before (To − 2 / 3 / 6 calendar months) |
+| **YTD %** | calendar year-to-date: return vs the last NAV on/before 31 Dec of the prior year |
+| **FYTD %** | Indian financial year-to-date (FY starts 1 Apr): return vs the last NAV on/before 31 Mar of the FY start |
 | **Total %** | `NAV_last / NAV_first − 1` |
 | **Win %** | share of days with `r > 0` |
 | **G/P** (gain-to-pain) | `Σ r⁺ / |Σ r⁻|` |
@@ -258,10 +271,12 @@ Rows below **Min obs** (default 10) are greyed out and flagged ▲. A row that a
 huge number (e.g. a fund up 8% in its first 6 trading days → ~125% "annualised") is a
 short-window artifact, not alpha — the fetcher and the header status line surface these.
 
-### Colour bands
+### Colour bands & tooltips
 
 Conditional tints on Sharpe, Sortino, Calmar, Gain-to-pain, Win %, and Max DD:
-green = strong/good, amber = weak, red = poor (Max DD reddens with magnitude).
+green = strong/good, amber = weak, red = poor (Max DD reddens with magnitude); the tints are
+theme-aware so they stay legible in dark mode. Every column header carries an **ⓘ hover tooltip**
+that defines the metric in plain English (e.g. what Sharpe/Sortino actually mean for an investor).
 
 ### UI
 
@@ -275,12 +290,13 @@ dropdowns:
 - **Option** — All / Growth only / IDCW (Dividend).
 
 The three compose, so e.g. *Ex-Top 100 SMID + Direct + Growth* isolates one comparable series
-per AMC. The 1D/1W/MTD/1M trailing-return columns update with them and are anchored at the
-window's To date. Table grouped by strategy, sortable on every column, sticky header,
-tabular-lining numerals. Click a scheme name
-to expand its NAV path and underwater (drawdown) curve; each row also carries an inline
-underwater sparkline. Responsive to mobile, visible keyboard focus, `prefers-reduced-motion`
-respected.
+per AMC. The 1D/1W/MTD/1M/2M/3M/6M/YTD/FYTD trailing-return columns update with them and are anchored
+at the window's To date. Each row shows the fund **brand + parent AMC** and a `▣` badge when a
+portfolio disclosure exists. Table grouped by strategy, sortable on every column, sticky header,
+tabular-lining numerals. Click a scheme name to expand its NAV path, underwater (drawdown) curve, and
+the disclosed-holdings panel; each row also carries an inline underwater sparkline. **Mobile:** the
+scheme-name column stays pinned while the metrics scroll sideways, with compact spacing and a
+flow-with-content footer. Visible keyboard focus, `prefers-reduced-motion` respected.
 
 ---
 

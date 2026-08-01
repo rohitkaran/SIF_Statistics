@@ -18,14 +18,16 @@
     --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   }
   :root[data-theme="dark"]{           /* midnight theme (toggle) */
-    --bg:#0d1014; --panel:#141a21; --panel2:#0f141a; --line:#222b35; --line2:#2c3947;
-    --ink:#dbe3ec; --ink-dim:#8b97a6; --ink-faint:#5c6675;
-    --accent:#8b8bff; --accent2:#3fd0c9;
-    --pos:#4bd28a; --neg:#f0687f; --amber:#e7b84b;
+    --bg:#0d1014; --panel:#141a21; --panel2:#0f141a; --line:#2a3542; --line2:#3a4a5c;
+    --ink:#eef3f9; --ink-dim:#aab6c6; --ink-faint:#7c8798;
+    --accent:#9a9aff; --accent2:#4fe0d8;
+    --pos:#5fdf9a; --neg:#ff7d90; --amber:#f0c65e;
     --hl:#1c2836; --myfund:#26384d;
     --thead:#0f151c; --grp:#0b0f14; --rowhover:#12181f; --foot:#0b1015;
     --grad1:#6d6dff; --grad2:#a97bff; --grad3:#3fd0c9;
   }
+  :root[data-theme="dark"] .num{color:var(--ink)}      /* keep figures bright on dark */
+  :root[data-theme="dark"] tr.low td{opacity:.62}      /* greyed rows stay legible */
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
     font-size:13px;line-height:1.4;-webkit-font-smoothing:antialiased}
@@ -80,6 +82,8 @@
   thead th.r{text-align:right}
   thead th:hover{color:var(--ink)}
   thead th .ar{color:var(--accent);font-size:9px;margin-left:2px}
+  thead th .qh{color:var(--ink-faint);font-size:8.5px;margin-left:2px;vertical-align:top;cursor:help}
+  thead th:hover .qh{color:var(--accent2)}
   td{padding:4px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
   td.r{text-align:right}
   tbody tr:hover td{background:var(--rowhover)}
@@ -92,7 +96,9 @@
   tr.myfund td:first-child{background:var(--myfund)}
   .nm{max-width:340px;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
   .nm .plan{color:var(--ink-faint);font-size:10.5px}
-  .nm .amc{color:var(--ink-dim)}
+  .nm .amc{color:var(--ink);font-weight:600}
+  .nm .parent{color:var(--ink-dim);font-size:11px}
+  .nm .pbadge{color:var(--accent2);font-size:10px}
   .caret{display:inline-block;width:9px;color:var(--ink-faint);transition:transform .12s}
   tr.open .caret{transform:rotate(90deg);color:var(--accent)}
   .rng{color:var(--ink-dim);font-size:11px}
@@ -112,6 +118,8 @@
   .port .phead b{color:var(--ink)}
   .port select{background:var(--panel2);border:1px solid var(--line2);color:var(--ink);border-radius:3px;padding:2px 5px;font-size:11.5px;font-family:var(--mono)}
   .port .none{color:var(--ink-faint);font-size:11.5px;padding:4px 0}
+  .port .pstrat{display:flex;flex-direction:column;gap:3px;margin:2px 0 9px;font-size:11.5px;color:var(--ink-dim);max-width:900px}
+  .port .pstrat b{color:var(--ink)} .port .pstrat .mgr{color:var(--ink-dim)}
   .port .pgrid{display:grid;grid-template-columns:1.35fr 1fr;gap:16px 22px;align-items:start}
   @media (max-width:720px){ .port .pgrid{grid-template-columns:1fr} }
   .port h5{margin:0 0 5px;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-dim)}
@@ -135,6 +143,33 @@
   .sw{width:11px;height:11px;border-radius:2px;display:inline-block}
 
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+  /* ---- mobile ---- */
+  .wrap{-webkit-overflow-scrolling:touch}
+  @media (max-width:640px){
+    html,body{font-size:12px}
+    body{padding-bottom:12px}
+    header{padding:6px 8px}
+    .bar{gap:7px 10px}
+    .brand{width:100%;margin-bottom:2px}
+    .fld input,.fld select{padding:6px 7px;font-size:13px}   /* bigger tap targets */
+    .fld input[type=date]{min-width:118px}
+    button{padding:7px 11px}
+    table{min-width:720px}
+    td{padding:5px 7px}
+    /* keep the scheme name pinned while metrics scroll sideways */
+    thead th:first-child,td:first-child{position:sticky;left:0;z-index:15;
+      background:var(--panel);box-shadow:1px 0 0 var(--line2)}
+    thead th:first-child{background:var(--thead);z-index:27}
+    tbody tr:hover td:first-child{background:var(--rowhover)}
+    tr.myfund td:first-child{background:var(--myfund)}
+    tr.grp td{position:static;box-shadow:none}
+    .nm{max-width:168px}
+    .exp-in{grid-template-columns:1fr;padding:10px 12px;gap:14px}
+    .port .pgrid{grid-template-columns:1fr}
+    /* footer flows with content on phones instead of covering the table */
+    footer{position:static}
+  }
 </style>
 
 <header>
@@ -309,16 +344,25 @@ const SIFMetrics = (function(){
   //  1D  = vs previous trading day · 1W = vs last NAV on/before asOf-7d
   //  MTD = vs last NAV of the prior month · 1M = vs last NAV on/before asOf-1 calendar month
   function periodReturns(series, asOf){
-    const res={r1d:null,r1w:null,rmtd:null,r1m:null,asOf:null};
+    const res={r1d:null,r1w:null,rmtd:null,r1m:null,r2m:null,r3m:null,r6m:null,rytd:null,rfytd:null,asOf:null};
     if(!series || series.length<2) return res;
     let ai = asOf ? idxOnOrBefore(series, asOf) : series.length-1;
     if(ai<1) return res;
     const aDate=series[ai][0], aNav=series[ai][1]; res.asOf=aDate;
+    const ret = target => { const k=idxOnOrBefore(series, target); return (k>=0&&k<ai)?(aNav/series[k][1]-1)*100:null; };
     res.r1d=(aNav/series[ai-1][1]-1)*100;
-    const w=idxOnOrBefore(series, addDays(aDate,-7)); if(w>=0&&w<ai) res.r1w=(aNav/series[w][1]-1)*100;
+    res.r1w = ret(addDays(aDate,-7));
     let mb=idxOnOrBefore(series, addDays(monthStart(aDate),-1)); if(mb<0) mb=0;
     if(mb<ai) res.rmtd=(aNav/series[mb][1]-1)*100;
-    const m1=idxOnOrBefore(series, addMonths(aDate,-1)); if(m1>=0&&m1<ai) res.r1m=(aNav/series[m1][1]-1)*100;
+    res.r1m = ret(addMonths(aDate,-1));
+    res.r2m = ret(addMonths(aDate,-2));
+    res.r3m = ret(addMonths(aDate,-3));
+    res.r6m = ret(addMonths(aDate,-6));
+    // YTD: vs the last NAV on/before prior calendar year-end (31 Dec)
+    res.rytd = ret((parseInt(aDate.slice(0,4))-1)+'-12-31');
+    // FYTD: Indian financial year (starts 1 Apr); vs last NAV on/before 31 Mar of the FY start
+    const yr=parseInt(aDate.slice(0,4)), mo=parseInt(aDate.slice(5,7));
+    res.rfytd = ret((mo>=4?yr:yr-1)+'-03-31');
     return res;
   }
   const api={compute, windowSeries, daysBetween, periodReturns};
@@ -350,6 +394,16 @@ const SIFMetrics = (function(){
   ];
   function groupOf(cat){ for(const g of GROUPS){ if(g.match(cat||'')) return g; } return GROUPS[GROUPS.length-1]; }
 
+  // map a scheme's AMC brand (nav "sif") to its registry metadata (parent, managers, strategy…)
+  let _sifMeta=null;
+  function normStr(s){ return (''+s).toLowerCase().replace(/[^a-z0-9]/g,''); }
+  function amcMetaFor(sif){
+    if(!PORT||!PORT.amcs) return null;
+    if(!_sifMeta){ _sifMeta={}; for(const k in PORT.amcs){ const a=PORT.amcs[k]; if(a&&a.nav_sif) _sifMeta[normStr(a.nav_sif)]=a; } }
+    return _sifMeta[normStr(sif)]||null;
+  }
+  function shortParent(p){ return (''+p).replace(/\s+(Asset Management|Sun Life AMC|Mutual Fund|AMC|Investment Managers|Money Managers|Funds Management).*$/i,'').trim()||p; }
+
   // amc + plan parts of a scheme name for compact display
   function splitName(name){
     const parts=name.split(' - ');
@@ -366,6 +420,11 @@ const SIFMetrics = (function(){
     {k:'r1w', label:'1W %', cls:'r num', sortable:true, val:r=>r.m.r1w, fmt:r=>signed(r.m.r1w,2)},
     {k:'rmtd', label:'MTD %', cls:'r num', sortable:true, val:r=>r.m.rmtd, fmt:r=>signed(r.m.rmtd,2)},
     {k:'r1m', label:'1M %', cls:'r num', sortable:true, val:r=>r.m.r1m, fmt:r=>signed(r.m.r1m,2)},
+    {k:'r2m', label:'2M %', cls:'r num', sortable:true, val:r=>r.m.r2m, fmt:r=>signed(r.m.r2m,2)},
+    {k:'r3m', label:'3M %', cls:'r num', sortable:true, val:r=>r.m.r3m, fmt:r=>signed(r.m.r3m,2)},
+    {k:'r6m', label:'6M %', cls:'r num', sortable:true, val:r=>r.m.r6m, fmt:r=>signed(r.m.r6m,2)},
+    {k:'rytd', label:'YTD %', cls:'r num', sortable:true, val:r=>r.m.rytd, fmt:r=>signed(r.m.rytd,2)},
+    {k:'rfytd', label:'FYTD %', cls:'r num', sortable:true, val:r=>r.m.rfytd, fmt:r=>signed(r.m.rfytd,2)},
     {k:'totalRet', label:'Total %', cls:'r num', sortable:true, val:r=>r.m.totalRet, fmt:r=>signed(r.m.totalRet,2)},
     {k:'annRet', label:'Ann Ret %', cls:'r num', sortable:true, val:r=>r.m.annRet, fmt:r=>signed(r.m.annRet,1)},
     {k:'annStd', label:'Ann Std %', cls:'r num', sortable:true, val:r=>r.m.annStd, fmt:r=>num(r.m.annStd,1)},
@@ -379,6 +438,34 @@ const SIFMetrics = (function(){
     {k:'gainPain', label:'G/P', cls:'r num', sortable:true, val:r=>r.m.gainPain, fmt:r=>band(r.m.gainPain,2,BAND.gp)},
     {k:'uw', label:'Underwater', cls:'r', sortable:false, val:r=>0, fmt:r=>sparkUW(r.m)},
   ];
+
+  // plain-language definitions shown on hover over each column header
+  const HELP={
+    name:'Fund house / scheme. Click a row to see holdings, strategy & manager.',
+    rangeFrom:'First → last NAV date actually available inside your window.',
+    obs:'Number of daily NAVs in the window. ▲ = fewer than "Min obs" (too little data to trust the ratios).',
+    r1d:'Return over the last 1 trading day.',
+    r1w:'Return over the last 1 week (7 calendar days).',
+    rmtd:'Month-to-date: return since the end of last month.',
+    r1m:'Return over the last 1 month.',
+    r2m:'Return over the last 2 months.',
+    r3m:'Return over the last 3 months.',
+    r6m:'Return over the last 6 months.',
+    rytd:'Calendar year-to-date: return since 31 December last year.',
+    rfytd:'Financial year-to-date (India, since 1 April): return since 31 March.',
+    totalRet:'Total return across the whole window (last NAV ÷ first NAV − 1).',
+    annRet:'Return scaled to a yearly rate (simple, not compounded). Big numbers on very short histories are an artefact, not skill.',
+    annStd:'How much the fund bounces around year-to-year (volatility). Lower = steadier.',
+    sharpe:'Reward for the risk taken: extra return above a safe deposit, per unit of ups-and-downs. Higher is better. Above 1 is good, above 2 is strong.',
+    sortino:'Like Sharpe but only counts DOWNSIDE swings (ignores good volatility). Higher is better; punishes losses, not gains.',
+    calmar:'Yearly return divided by the worst peak-to-trough fall. Higher = more return per unit of pain.',
+    maxDD:'Maximum drawdown: the worst peak-to-trough drop in the window. Smaller (less negative) is better.',
+    maxRU:'Maximum run-up: the largest trough-to-peak rise in the window.',
+    recovery:'Days taken to climb back to the previous peak after the worst fall. "not rec." = not yet recovered.',
+    winRate:'Share of days the fund went up. Above 50% means more up-days than down.',
+    gainPain:'Gain-to-pain: total gains divided by total losses. Above 1 means gains outweighed losses.',
+    uw:'Underwater curve: how far below its last peak the fund was, over time.',
+  };
 
   // ---- formatting ----
   const na='<span class="na">—</span>';
@@ -402,14 +489,19 @@ const SIFMetrics = (function(){
   };
   const TINT={poor:'rgba(240,104,127,.28)',weak:'rgba(231,184,75,.20)',
               good:'rgba(75,210,138,.20)',strong:'rgba(75,210,138,.55)'};
+  const TINT_DARK={poor:'rgba(255,125,144,.30)',weak:'rgba(240,198,94,.26)',
+              good:'rgba(95,223,154,.24)',strong:'rgba(95,223,154,.52)'};
+  function darkMode(){ return document.documentElement.getAttribute('data-theme')==='dark'; }
   function tierOf(v,scale){ let t='weak'; for(const [thr,name] of scale){ if(v>=thr) t=name; } return t; }
   function band(v,d,scale){ if(v==null||!isFinite(v)) return na;
     const t=tierOf(v,scale); const txt=(v===Infinity?'∞':v.toFixed(d));
-    return '<span style="display:inline-block;min-width:44px;padding:1px 5px;border-radius:2px;background:'+TINT[t]+'">'+txt+'</span>'; }
+    const tint=(darkMode()?TINT_DARK:TINT)[t];
+    return '<span class="num" style="display:inline-block;min-width:44px;padding:1px 5px;border-radius:2px;background:'+tint+'">'+txt+'</span>'; }
   function bandDD(v){ if(v==null)return na;
     // worse (bigger) DD -> stronger red
-    let a=0; if(v>0) a=Math.min(.42,.10+v/40);
-    return '<span style="display:inline-block;min-width:44px;padding:1px 5px;border-radius:2px;background:rgba(240,104,127,'+a.toFixed(3)+')">'+v.toFixed(2)+'</span>'; }
+    let a=0; if(v>0) a=Math.min(darkMode()?.5:.42,.12+v/38);
+    const c=darkMode()?'255,125,144':'240,104,127';
+    return '<span class="num" style="display:inline-block;min-width:44px;padding:1px 5px;border-radius:2px;background:rgba('+c+','+a.toFixed(3)+')">'+v.toFixed(2)+'</span>'; }
 
   // inline underwater sparkline -----------------------------------------
   function sparkUW(m){
@@ -485,7 +577,8 @@ const SIFMetrics = (function(){
     COLS.forEach(c=>{
       const th=document.createElement('th');
       th.className=c.cls.replace('num','');
-      th.innerHTML=c.label+(sortKey===c.k?'<span class="ar">'+(sortDir<0?'▼':'▲')+'</span>':'');
+      th.innerHTML=c.label+(HELP[c.k]?'<span class="qh">ⓘ</span>':'')+(sortKey===c.k?'<span class="ar">'+(sortDir<0?'▼':'▲')+'</span>':'');
+      if(HELP[c.k]) th.title=HELP[c.k];
       if(c.sortable){ th.onclick=()=>{ if(sortKey===c.k) sortDir*=-1; else {sortKey=c.k;sortDir=-1;} render(); }; }
       else th.style.cursor='default';
       tr.appendChild(th);
@@ -525,7 +618,10 @@ const SIFMetrics = (function(){
     const sn=splitName(r.name);
     const first=document.createElement('td'); first.className='nm';
     if(!r.mine) first.style.borderLeft='3px solid '+r.group.color+'66';
-    first.innerHTML='<span class="caret">▶</span> <span class="amc">'+esc(r.sif||sn.head)+'</span>'+
+    const meta=amcMetaFor(r.sif);
+    const parent=(meta&&meta.parent)?' <span class="parent">'+esc(shortParent(meta.parent))+'</span>':'';
+    const badge=(PORT&&PORT.schemes&&PORT.schemes[r.code])?' <span class="pbadge" title="Portfolio holdings disclosed">▣</span>':'';
+    first.innerHTML='<span class="caret">▶</span> <span class="amc">'+esc(r.sif||sn.head)+'</span>'+parent+badge+
       (sn.plan?' <span class="plan">'+esc(sn.plan)+'</span>':'');
     first.title=r.name; first.onclick=()=>toggle(r.code);
     tr.appendChild(first);
@@ -587,17 +683,24 @@ const SIFMetrics = (function(){
   // ---- portfolio (disclosed holdings) ----
   const ALLOC_KEYS=[
     ['equity','Equity','#5b5bf0'],['debt','Debt','#0e9aa7'],
-    ['money_market','Money mkt','#8b5cf6'],['others','Others / cash','#64748b'],
-    ['net_receivables','Net recv.','#d9820b']];
+    ['money_market','Money mkt','#8b5cf6'],['cash_other','Cash / other','#64748b']];
 
   function fillPortfolio(r, node){
     if(!node) return;
     const entry = PORT && PORT.schemes && PORT.schemes[r.code];
     if(!entry || !entry.periods || !Object.keys(entry.periods).length){
+      const m=amcMetaFor(r.sif)||{};
       const amc = r.sif ? esc(r.sif) : 'the fund house';
-      node.className='port-body none';
-      node.innerHTML='No portfolio disclosed here yet — SIFs report holdings <b>bi-monthly</b>. '+
-        'When '+amc+' publishes a machine-readable file it is fetched, saved to the repo, and shown here.';
+      const bits=[];
+      if(m.strategy) bits.push('<div class="pstrat"><span><b>Strategy:</b> '+esc(m.strategy)+'</span>'+
+        (m.managers?'<span class="mgr"><b>Fund manager:</b> '+esc(m.managers)+'</span>':'')+'</div>');
+      const pl=[]; if(m.presentation) pl.push('<a href="'+esc(m.presentation)+'" target="_blank" rel="noopener">presentation ↗</a>');
+      if(m.disclosure_page) pl.push('<a href="'+esc(m.disclosure_page)+'" target="_blank" rel="noopener">'+esc(shortParent(m.parent)||amc)+' ↗</a>');
+      node.className='port-body';
+      node.innerHTML=(bits.join('')||'')+
+        '<div class="none">No holdings disclosed here yet — SIFs report portfolios <b>bi-monthly</b>. '+
+        'When '+amc+' publishes a machine-readable file it is fetched, saved to the repo, and shown here.'+
+        (pl.length?'<div style="margin-top:4px">'+pl.join(' · ')+'</div>':'')+'</div>';
       return;
     }
     node.className='port-body';
@@ -624,16 +727,22 @@ const SIFMetrics = (function(){
   function portfolioHTML(f, entry){
     const amc = (PORT.amcs&&PORT.amcs[f.amc])||{};
     // header: as-of, net assets, holdings, source links
+    const pres=f.presentation||amc.presentation||'';
     const links=[];
     if(f.raw) links.push('<a href="'+esc(f.raw)+'">raw file ↧</a>');
-    if(f.source_url && !/^file:/.test(f.source_url)) links.push('<a href="'+esc(f.source_url)+'" target="_blank" rel="noopener">source</a>');
-    if(amc.disclosure_page) links.push('<a href="'+esc(amc.disclosure_page)+'" target="_blank" rel="noopener">'+esc(amc.name||f.amc)+' ↗</a>');
+    if(pres) links.push('<a href="'+esc(pres)+'" target="_blank" rel="noopener">presentation ↗</a>');
+    if(amc.disclosure_page) links.push('<a href="'+esc(amc.disclosure_page)+'" target="_blank" rel="noopener">'+esc(shortParent(amc.parent)||amc.name||f.amc)+' ↗</a>');
     const head='<div class="phead">'+
       '<span><b>'+esc(f.fund_name)+'</b></span>'+
+      (amc.parent?'<span class="sub">'+esc(shortParent(amc.parent))+'</span>':'')+
       '<span>as of <b>'+esc(f.as_of||f.period)+'</b></span>'+
       (f.net_assets_cr!=null?'<span>net assets <b class="num">₹'+f.net_assets_cr.toLocaleString('en-IN')+' Cr</b></span>':'')+
       '<span><b>'+f.n_holdings+'</b> holdings</span>'+
-      '<span>'+links.join(' · ')+'</span></div>';
+      '<span>'+links.join(' · ')+'</span></div>'+
+      ((f.strategy||f.managers)?'<div class="pstrat">'+
+        (f.strategy?'<span><b>Strategy:</b> '+esc(f.strategy)+'</span>':'')+
+        (f.managers?'<span class="mgr"><b>Fund manager'+(f.managers.indexOf(',')>=0?'s':'')+':</b> '+esc(f.managers)+'</span>':'')+
+        '</div>':'');
 
     // allocation bar
     const a=f.allocation||{}; let alloc='';
@@ -784,7 +893,7 @@ const SIFMetrics = (function(){
   function loadPortfolios(){
     // optional: the page works fully without it. Refresh open rows once it arrives.
     fetch('portfolios/index.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
-      .then(idx=>{ PORT=idx; if(openSet.size) render(); })
+      .then(idx=>{ PORT=idx; _sifMeta=null; if(DATA) render(); })   // re-render so rows pick up parent AMC + badge
       .catch(()=>{ PORT={schemes:{},amcs:{},periods:[]}; });
   }
   function doFetch(){
@@ -808,6 +917,7 @@ const SIFMetrics = (function(){
     else document.documentElement.removeAttribute('data-theme');
     $('#theme').textContent = (t==='dark'?'☀ Theme':'☾ Theme');
     try{ localStorage.setItem('sif-theme', t); }catch(e){}
+    if(DATA) render();   // re-tint bands for the active theme
   }
   let _theme='light'; try{ _theme=localStorage.getItem('sif-theme')||'light'; }catch(e){}
   setTheme(_theme);

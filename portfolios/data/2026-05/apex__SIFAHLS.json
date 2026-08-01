@@ -1,21 +1,19 @@
 {
  "amc": "apex",
  "fund_code": "SIFAHLS",
- "fund_name": "APEX HYBRID LONG-SHORT FUND",
+ "fund_name": "Apex Hybrid Long-Short Fund",
  "period": "2026-05",
  "as_of": "2026-05-31",
  "source_url": "https://apexsif.adityabirlacapital.com/uploads/31052026_ABSLMF_Monthly_SIF_bc3f4fe314.xlsx",
  "raw": "portfolios/raw/apex/2026-05/31052026_ABSLMF_Monthly_SIF_bc3f4fe314.xlsx",
- "fetched": "2026-08-01T04:28:00+00:00",
+ "fetched": "2026-08-01T05:18:58+00:00",
  "net_assets_cr": 75.99,
  "n_holdings": 61,
  "allocation": {
-  "equity": 39.7438,
-  "debt": 19.6022,
-  "money_market": 2.6175,
-  "others": 36.4494,
-  "net_receivables": 1.587,
-  "grand_total": 100.0
+  "equity": 39.74,
+  "debt": 19.6,
+  "money_market": 17.02,
+  "cash_other": 23.64
  },
  "sectors": [
   {
@@ -467,7 +465,7 @@
    "qty": 224842.923,
    "mv_cr": 10.1242,
    "weight": 13.3234,
-   "category": "others",
+   "category": "money_market",
    "position": "Long"
   },
   {
@@ -569,7 +567,7 @@
    "qty": 224842.923,
    "mv_cr": 10.1242,
    "weight": 13.3234,
-   "category": "others",
+   "category": "money_market",
    "position": "Long"
   },
   {
@@ -689,7 +687,7 @@
    "qty": 18000.0,
    "mv_cr": 0.7689,
    "weight": 1.0119,
-   "category": "others",
+   "category": "money_market",
    "position": "Long"
   },
   {
@@ -1169,7 +1167,7 @@
    "qty": 19221.0,
    "mv_cr": 0.0529,
    "weight": 0.0697,
-   "category": "others",
+   "category": "money_market",
    "position": "Long"
   }
  ],
@@ -1178,5 +1176,8 @@
   "SIF-80",
   "SIF-81",
   "SIF-79"
- ]
+ ],
+ "managers": "Lovelish Solanki, Mohit Sharma",
+ "strategy": "An interval fund spreading money across arbitrage, long stocks, bonds and limited short bets (via derivatives) plus some REITs/InvITs. Returns come from steady low-risk arbitrage/debt income and equity gains, while shorts and hedging cushion losses when markets fall.",
+ "presentation": "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf"
 }

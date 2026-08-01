@@ -1,0 +1,511 @@
+{
+ "amc": "diviniti",
+ "fund_code": "DIVLSF",
+ "fund_name": "Diviniti Equity Long Short Fund",
+ "period": "2026-06",
+ "as_of": "2026-06-30",
+ "source_url": "https://sif.itiamc.com/Files/PortfolioDisclosureFiles/DIVINITI%20SIF_Monthly%20Portfolio_June%202026.xlsx",
+ "raw": "portfolios/raw/diviniti/2026-06/DIVINITI%20SIF_Monthly%20Portfolio_June%202026.xlsx",
+ "fetched": "2026-08-01T05:19:00+00:00",
+ "net_assets_cr": 334.04,
+ "n_holdings": 25,
+ "allocation": {
+  "equity": 73.16,
+  "money_market": 8.89,
+  "cash_other": 17.95
+ },
+ "sectors": [
+  {
+   "sector": "Banks",
+   "weight": 19.97
+  },
+  {
+   "sector": "Finance",
+   "weight": 8.13
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 5.72
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 5.56
+  },
+  {
+   "sector": "Insurance",
+   "weight": 5.44
+  },
+  {
+   "sector": "Construction",
+   "weight": 4.29
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 3.36
+  },
+  {
+   "sector": "Aerospace & Defense",
+   "weight": 3.13
+  },
+  {
+   "sector": "Retailing",
+   "weight": 3.05
+  },
+  {
+   "sector": "Industrial Manufacturing",
+   "weight": 2.15
+  },
+  {
+   "sector": "Transport Services",
+   "weight": 2.03
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 1.96
+  },
+  {
+   "sector": "Financial Technology (Fintech)",
+   "weight": 1.83
+  },
+  {
+   "sector": "Diversified FMCG",
+   "weight": 1.63
+  },
+  {
+   "sector": "Power",
+   "weight": 1.52
+  },
+  {
+   "sector": "Non - Ferrous Metals",
+   "weight": 1.42
+  },
+  {
+   "sector": "Capital Markets",
+   "weight": 1.14
+  },
+  {
+   "sector": "Industrial Products",
+   "weight": 0.83
+  }
+ ],
+ "derivatives": [
+  {
+   "underlying": "Bank Nifty Index",
+   "position": "Long",
+   "weight": 4.38
+  },
+  {
+   "underlying": "HDFC Bank Limited",
+   "position": "Long",
+   "weight": 2.91
+  },
+  {
+   "underlying": "NTPC Limited",
+   "position": "Long",
+   "weight": 2.05
+  },
+  {
+   "underlying": "Lupin Limited",
+   "position": "Long",
+   "weight": 1.94
+  },
+  {
+   "underlying": "PNB Housing Finance Limited",
+   "position": "Long",
+   "weight": 1.16
+  },
+  {
+   "underlying": "Max Financial Services Limited",
+   "position": "Long",
+   "weight": 1.14
+  },
+  {
+   "underlying": "Shriram Finance Limited",
+   "position": "Long",
+   "weight": 1.06
+  },
+  {
+   "underlying": "Aditya Birla Capital Limited",
+   "position": "Long",
+   "weight": 1.02
+  },
+  {
+   "underlying": "One 97 Communications Limited",
+   "position": "Short",
+   "weight": -1.85
+  },
+  {
+   "underlying": "SBI Life Insurance Company Limited",
+   "position": "Short",
+   "weight": -2.61
+  },
+  {
+   "underlying": "Bharti Airtel Limited",
+   "position": "Short",
+   "weight": -3.36
+  }
+ ],
+ "top": [
+  {
+   "name": "91 Days Tbill (MD 17/09/2026)",
+   "isin": "IN002026X115",
+   "sector": "Sovereign",
+   "qty": 3000000.0,
+   "mv_cr": 29.6708,
+   "weight": 8.89,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finance Limited",
+   "isin": "INE296A01032",
+   "sector": "Finance",
+   "qty": 270188.0,
+   "mv_cr": 27.1471,
+   "weight": 8.13,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 251604.0,
+   "mv_cr": 20.0767,
+   "weight": 6.02,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 143334.0,
+   "mv_cr": 18.546,
+   "weight": 5.56,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Limited",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 117690.0,
+   "mv_cr": 16.1847,
+   "weight": 4.85,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Larsen & Toubro Limited",
+   "isin": "INE018A01030",
+   "sector": "Construction",
+   "qty": 34597.0,
+   "mv_cr": 14.3349,
+   "weight": 4.29,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 86898.0,
+   "mv_cr": 11.6939,
+   "weight": 3.5,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 60644.0,
+   "mv_cr": 11.2313,
+   "weight": 3.36,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "State Bank of India",
+   "isin": "INE062A01020",
+   "sector": "Banks",
+   "qty": 108406.0,
+   "mv_cr": 11.1322,
+   "weight": 3.34,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 253385.0,
+   "mv_cr": 10.4344,
+   "weight": 3.13,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "91 Days Tbill (MD 17/09/2026)",
+   "isin": "IN002026X115",
+   "sector": "Sovereign",
+   "qty": 3000000.0,
+   "mv_cr": 29.6708,
+   "weight": 8.89,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finance Limited",
+   "isin": "INE296A01032",
+   "sector": "Finance",
+   "qty": 270188.0,
+   "mv_cr": 27.1471,
+   "weight": 8.13,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 251604.0,
+   "mv_cr": 20.0767,
+   "weight": 6.02,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 143334.0,
+   "mv_cr": 18.546,
+   "weight": 5.56,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Limited",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 117690.0,
+   "mv_cr": 16.1847,
+   "weight": 4.85,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Larsen & Toubro Limited",
+   "isin": "INE018A01030",
+   "sector": "Construction",
+   "qty": 34597.0,
+   "mv_cr": 14.3349,
+   "weight": 4.29,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 86898.0,
+   "mv_cr": 11.6939,
+   "weight": 3.5,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 60644.0,
+   "mv_cr": 11.2313,
+   "weight": 3.36,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "State Bank of India",
+   "isin": "INE062A01020",
+   "sector": "Banks",
+   "qty": 108406.0,
+   "mv_cr": 11.1322,
+   "weight": 3.34,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 253385.0,
+   "mv_cr": 10.4344,
+   "weight": 3.13,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sun Pharmaceutical Industries Limited",
+   "isin": "INE044A01036",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 54825.0,
+   "mv_cr": 10.2112,
+   "weight": 3.06,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cartrade Tech Limited",
+   "isin": "INE290S01011",
+   "sector": "Retailing",
+   "qty": 37842.0,
+   "mv_cr": 10.1909,
+   "weight": 3.05,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Life Insurance Company Limited",
+   "isin": "INE795G01014",
+   "sector": "Insurance",
+   "qty": 164070.0,
+   "mv_cr": 9.448,
+   "weight": 2.83,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cipla Limited",
+   "isin": "INE059A01026",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 60594.0,
+   "mv_cr": 8.8794,
+   "weight": 2.66,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SBI Life Insurance Company Limited",
+   "isin": "INE123W01016",
+   "sector": "Insurance",
+   "qty": 49379.0,
+   "mv_cr": 8.7189,
+   "weight": 2.61,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kotak Mahindra Bank Limited",
+   "isin": "INE237A01036",
+   "sector": "Banks",
+   "qty": 192000.0,
+   "mv_cr": 7.5312,
+   "weight": 2.26,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kaynes Technology India Limited",
+   "isin": "INE918Z01012",
+   "sector": "Industrial Manufacturing",
+   "qty": 23014.0,
+   "mv_cr": 7.1847,
+   "weight": 2.15,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "The Great Eastern Shipping Company Limited",
+   "isin": "INE017A01032",
+   "sector": "Transport Services",
+   "qty": 45794.0,
+   "mv_cr": 6.7917,
+   "weight": 2.03,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Ports and Special Economic Zone Limited",
+   "isin": "INE742F01042",
+   "sector": "Transport Infrastructure",
+   "qty": 36101.0,
+   "mv_cr": 6.535,
+   "weight": 1.96,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "One 97 Communications Limited",
+   "isin": "INE982J01020",
+   "sector": "Financial Technology (Fintech)",
+   "qty": 53650.0,
+   "mv_cr": 6.1241,
+   "weight": 1.83,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ITC Limited",
+   "isin": "INE154A01025",
+   "sector": "Diversified FMCG",
+   "qty": 189881.0,
+   "mv_cr": 5.4486,
+   "weight": 1.63,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Power Grid Corporation of India Limited",
+   "isin": "INE752E01010",
+   "sector": "Power",
+   "qty": 177401.0,
+   "mv_cr": 5.079,
+   "weight": 1.52,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindalco Industries Limited",
+   "isin": "INE038A01020",
+   "sector": "Non - Ferrous Metals",
+   "qty": 49651.0,
+   "mv_cr": 4.7496,
+   "weight": 1.42,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Central Depository Services (India) Limited",
+   "isin": "INE736A01011",
+   "sector": "Capital Markets",
+   "qty": 29273.0,
+   "mv_cr": 3.8216,
+   "weight": 1.14,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Garware Hi-Tech Films Limited",
+   "isin": "INE291A01017",
+   "sector": "Industrial Products",
+   "qty": 4152.0,
+   "mv_cr": 2.7725,
+   "weight": 0.83,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-19",
+  "SIF-20",
+  "SIF-21",
+  "SIF-22"
+ ],
+ "managers": "Vasav Sahgal, Rajesh Bhatia",
+ "strategy": "Mainly buys shares it expects to rise and takes limited short bets (via derivatives) on shares it expects to fall, to cushion losses when markets drop. Returns come from stock selection on both the long and short sides.",
+ "presentation": "https://sif.itiamc.com/Home/DownloaddFile/10"
+}

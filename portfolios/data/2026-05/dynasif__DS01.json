@@ -1,0 +1,882 @@
+{
+ "amc": "dynasif",
+ "fund_code": "DS01",
+ "fund_name": "DynaSIF Equity Long - Short Fund",
+ "period": "2026-05",
+ "as_of": "2026-05-31",
+ "source_url": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Portfolio_May_26_Final_023bb6c2f2.xls",
+ "raw": "portfolios/raw/dynasif/2026-05/Dyna_SIF_Portfolio_May_26_Final_023bb6c2f2.xls",
+ "fetched": "2026-08-01T05:18:59+00:00",
+ "net_assets_cr": 276.51,
+ "n_holdings": 63,
+ "allocation": {
+  "equity": 72.07,
+  "money_market": 16.23,
+  "cash_other": 11.7
+ },
+ "sectors": [
+  {
+   "sector": "Consumer Durables",
+   "weight": 7.5693
+  },
+  {
+   "sector": "Capital Markets",
+   "weight": 5.4434
+  },
+  {
+   "sector": "Retailing",
+   "weight": 4.9627
+  },
+  {
+   "sector": "Power",
+   "weight": 4.3738
+  },
+  {
+   "sector": "IT - Services",
+   "weight": 4.0253
+  },
+  {
+   "sector": "Finance",
+   "weight": 3.5834
+  },
+  {
+   "sector": "Banks",
+   "weight": 3.4171
+  },
+  {
+   "sector": "Industrial Products",
+   "weight": 3.1584
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 2.9028
+  },
+  {
+   "sector": "Agricultural Food & other Products",
+   "weight": 2.8921
+  },
+  {
+   "sector": "Electrical Equipment",
+   "weight": 2.6038
+  },
+  {
+   "sector": "Transport Services",
+   "weight": 2.4679
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 2.4504
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 2.2402
+  },
+  {
+   "sector": "Beverages",
+   "weight": 2.0787
+  },
+  {
+   "sector": "Personal Products",
+   "weight": 1.949
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 1.9481
+  },
+  {
+   "sector": "Automobiles",
+   "weight": 1.9285
+  },
+  {
+   "sector": "Construction",
+   "weight": 1.6954
+  },
+  {
+   "sector": "Insurance",
+   "weight": 1.6203
+  },
+  {
+   "sector": "Healthcare Services",
+   "weight": 1.6067
+  },
+  {
+   "sector": "Ferrous Metals",
+   "weight": 1.5046
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 1.3229
+  },
+  {
+   "sector": "Auto Components",
+   "weight": 1.2082
+  },
+  {
+   "sector": "Aerospace & Defense",
+   "weight": 1.0398
+  },
+  {
+   "sector": "Food Products",
+   "weight": 0.847
+  },
+  {
+   "sector": "Cement & Cement Products",
+   "weight": 0.4983
+  },
+  {
+   "sector": "Financial Technology (Fintech)",
+   "weight": 0.431
+  },
+  {
+   "sector": "Realty",
+   "weight": 0.2306
+  },
+  {
+   "sector": "Agricultural, Commercial & Construction Vehicles",
+   "weight": 0.0686
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "91 Days Tbill (MD 11/06/2026)",
+   "isin": "IN002025X497",
+   "sector": "SOVEREIGN",
+   "qty": 2000000.0,
+   "mv_cr": 19.971,
+   "weight": 7.2224,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Tbill (MD 04/06/2026)",
+   "isin": "IN002025X489",
+   "sector": "SOVEREIGN",
+   "qty": 1000000.0,
+   "mv_cr": 9.9958,
+   "weight": 3.6149,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Tbill (MD 30/07/2026)",
+   "isin": "IN002026X040",
+   "sector": "SOVEREIGN",
+   "qty": 1000000.0,
+   "mv_cr": 9.9132,
+   "weight": 3.585,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Netweb Technologies India Limited",
+   "isin": "INE0NT901020",
+   "sector": "IT - Services",
+   "qty": 16000.0,
+   "mv_cr": 7.4731,
+   "weight": 2.7026,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Ports and Special Economic Zone Limited",
+   "isin": "INE742F01042",
+   "sector": "Transport Infrastructure",
+   "qty": 35000.0,
+   "mv_cr": 6.3161,
+   "weight": 2.2842,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Amber Enterprises India Limited",
+   "isin": "INE371P01015",
+   "sector": "Consumer Durables",
+   "qty": 7500.0,
+   "mv_cr": 5.7112,
+   "weight": 2.0654,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LG Electronics India Ltd",
+   "isin": "INE324D01010",
+   "sector": "Consumer Durables",
+   "qty": 35000.0,
+   "mv_cr": 5.3337,
+   "weight": 1.9289,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Lenskart Solutions Limited",
+   "isin": "INE956O01016",
+   "sector": "Retailing",
+   "qty": 100000.0,
+   "mv_cr": 5.2385,
+   "weight": 1.8945,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 39000.0,
+   "mv_cr": 5.0177,
+   "weight": 1.8146,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Tbill (MD 18/06/2026)",
+   "isin": "IN002025Z120",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.9879,
+   "weight": 1.8038,
+   "category": "money_market",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "91 Days Tbill (MD 11/06/2026)",
+   "isin": "IN002025X497",
+   "sector": "SOVEREIGN",
+   "qty": 2000000.0,
+   "mv_cr": 19.971,
+   "weight": 7.2224,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Tbill (MD 04/06/2026)",
+   "isin": "IN002025X489",
+   "sector": "SOVEREIGN",
+   "qty": 1000000.0,
+   "mv_cr": 9.9958,
+   "weight": 3.6149,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Tbill (MD 30/07/2026)",
+   "isin": "IN002026X040",
+   "sector": "SOVEREIGN",
+   "qty": 1000000.0,
+   "mv_cr": 9.9132,
+   "weight": 3.585,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Netweb Technologies India Limited",
+   "isin": "INE0NT901020",
+   "sector": "IT - Services",
+   "qty": 16000.0,
+   "mv_cr": 7.4731,
+   "weight": 2.7026,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Ports and Special Economic Zone Limited",
+   "isin": "INE742F01042",
+   "sector": "Transport Infrastructure",
+   "qty": 35000.0,
+   "mv_cr": 6.3161,
+   "weight": 2.2842,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Amber Enterprises India Limited",
+   "isin": "INE371P01015",
+   "sector": "Consumer Durables",
+   "qty": 7500.0,
+   "mv_cr": 5.7112,
+   "weight": 2.0654,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LG Electronics India Ltd",
+   "isin": "INE324D01010",
+   "sector": "Consumer Durables",
+   "qty": 35000.0,
+   "mv_cr": 5.3337,
+   "weight": 1.9289,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Lenskart Solutions Limited",
+   "isin": "INE956O01016",
+   "sector": "Retailing",
+   "qty": 100000.0,
+   "mv_cr": 5.2385,
+   "weight": 1.8945,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 39000.0,
+   "mv_cr": 5.0177,
+   "weight": 1.8146,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Tbill (MD 18/06/2026)",
+   "isin": "IN002025Z120",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.9879,
+   "weight": 1.8038,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Asset Management Company Limited",
+   "isin": "INE127D01025",
+   "sector": "Capital Markets",
+   "qty": 18000.0,
+   "mv_cr": 4.8137,
+   "weight": 1.7409,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Computer Age Management Services Limited",
+   "isin": "INE596I01020",
+   "sector": "Capital Markets",
+   "qty": 60000.0,
+   "mv_cr": 4.749,
+   "weight": 1.7174,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cummins India Limited",
+   "isin": "INE298A01020",
+   "sector": "Industrial Products",
+   "qty": 8000.0,
+   "mv_cr": 4.7048,
+   "weight": 1.7015,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Larsen & Toubro Limited",
+   "isin": "INE018A01030",
+   "sector": "Construction",
+   "qty": 11500.0,
+   "mv_cr": 4.688,
+   "weight": 1.6954,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Power Grid Corporation of India Limited",
+   "isin": "INE752E01010",
+   "sector": "Power",
+   "qty": 160000.0,
+   "mv_cr": 4.6488,
+   "weight": 1.6812,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sun Pharmaceutical Industries Limited",
+   "isin": "INE044A01036",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 25000.0,
+   "mv_cr": 4.498,
+   "weight": 1.6267,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Lombard General Insurance Company Limited",
+   "isin": "INE765G01017",
+   "sector": "Insurance",
+   "qty": 25000.0,
+   "mv_cr": 4.4805,
+   "weight": 1.6203,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Metropolis Healthcare Limited",
+   "isin": "INE112L01020",
+   "sector": "Healthcare Services",
+   "qty": 80000.0,
+   "mv_cr": 4.4428,
+   "weight": 1.6067,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "AU Small Finance Bank Limited",
+   "isin": "INE949L01017",
+   "sector": "Banks",
+   "qty": 45000.0,
+   "mv_cr": 4.4311,
+   "weight": 1.6025,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Eternal Limited",
+   "isin": "INE758T01015",
+   "sector": "Retailing",
+   "qty": 170000.0,
+   "mv_cr": 4.2599,
+   "weight": 1.5406,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Emmvee Photovoltaic Power Limited",
+   "isin": "INE1C6T01020",
+   "sector": "Electrical Equipment",
+   "qty": 130000.0,
+   "mv_cr": 4.2289,
+   "weight": 1.5294,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Varun Beverages Limited",
+   "isin": "INE200M01039",
+   "sector": "Beverages",
+   "qty": 80000.0,
+   "mv_cr": 4.224,
+   "weight": 1.5276,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Trent Limited",
+   "isin": "INE849A01020",
+   "sector": "Retailing",
+   "qty": 10000.0,
+   "mv_cr": 4.224,
+   "weight": 1.5276,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Steel Limited",
+   "isin": "INE081A01020",
+   "sector": "Ferrous Metals",
+   "qty": 200000.0,
+   "mv_cr": 4.1604,
+   "weight": 1.5046,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cholamandalam Investment and Finance Company Ltd",
+   "isin": "INE121A01024",
+   "sector": "Finance",
+   "qty": 27000.0,
+   "mv_cr": 4.1518,
+   "weight": 1.5015,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Marico Limited",
+   "isin": "INE196A01026",
+   "sector": "Agricultural Food & other Products",
+   "qty": 50000.0,
+   "mv_cr": 4.1085,
+   "weight": 1.4858,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Nuvama Wealth Management Limited",
+   "isin": "INE531F01023",
+   "sector": "Capital Markets",
+   "qty": 25974.0,
+   "mv_cr": 4.0379,
+   "weight": 1.4603,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "APL Apollo Tubes Limited",
+   "isin": "INE702C01027",
+   "sector": "Industrial Products",
+   "qty": 22000.0,
+   "mv_cr": 4.0284,
+   "weight": 1.4569,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "InterGlobe Aviation Limited",
+   "isin": "INE646L01027",
+   "sector": "Transport Services",
+   "qty": 9000.0,
+   "mv_cr": 3.9645,
+   "weight": 1.4337,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Consumer Products Limited",
+   "isin": "INE192A01025",
+   "sector": "Agricultural Food & other Products",
+   "qty": 33000.0,
+   "mv_cr": 3.8887,
+   "weight": 1.4063,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "NTPC Limited",
+   "isin": "INE733E01010",
+   "sector": "Power",
+   "qty": 100000.0,
+   "mv_cr": 3.869,
+   "weight": 1.3992,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 29000.0,
+   "mv_cr": 3.8315,
+   "weight": 1.3856,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 20000.0,
+   "mv_cr": 3.658,
+   "weight": 1.3229,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Affle 3i Limited",
+   "isin": "INE00WC01027",
+   "sector": "IT - Services",
+   "qty": 25000.0,
+   "mv_cr": 3.6575,
+   "weight": 1.3227,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Mahindra & Mahindra Limited",
+   "isin": "INE101A01026",
+   "sector": "Automobiles",
+   "qty": 12000.0,
+   "mv_cr": 3.6547,
+   "weight": 1.3217,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Power Company Limited",
+   "isin": "INE245A01021",
+   "sector": "Power",
+   "qty": 85000.0,
+   "mv_cr": 3.5764,
+   "weight": 1.2934,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Torrent Pharmaceuticals Limited",
+   "isin": "INE685A01028",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 8000.0,
+   "mv_cr": 3.5286,
+   "weight": 1.2761,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Honasa Consumer Limited",
+   "isin": "INE0J5401028",
+   "sector": "Personal Products",
+   "qty": 85000.0,
+   "mv_cr": 3.4544,
+   "weight": 1.2493,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finserv Limited",
+   "isin": "INE918I01026",
+   "sector": "Finance",
+   "qty": 19000.0,
+   "mv_cr": 3.3888,
+   "weight": 1.2256,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sona BLW Precision Forgings Limited",
+   "isin": "INE073K01018",
+   "sector": "Auto Components",
+   "qty": 55000.0,
+   "mv_cr": 3.341,
+   "weight": 1.2082,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Coforge Limited",
+   "isin": "INE591G01025",
+   "sector": "IT - Software",
+   "qty": 22000.0,
+   "mv_cr": 3.128,
+   "weight": 1.1312,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Premier Energies Limited",
+   "isin": "INE0BS701011",
+   "sector": "Electrical Equipment",
+   "qty": 28000.0,
+   "mv_cr": 2.9708,
+   "weight": 1.0744,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 70000.0,
+   "mv_cr": 2.8752,
+   "weight": 1.0398,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Crompton Greaves Consumer Electricals Limited",
+   "isin": "INE299U01018",
+   "sector": "Consumer Durables",
+   "qty": 90000.0,
+   "mv_cr": 2.5303,
+   "weight": 0.9151,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Shriram Finance Limited",
+   "isin": "INE721A01047",
+   "sector": "Finance",
+   "qty": 25000.0,
+   "mv_cr": 2.3679,
+   "weight": 0.8563,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindustan Petroleum Corporation Limited",
+   "isin": "INE094A01015",
+   "sector": "Petroleum Products",
+   "qty": 60000.0,
+   "mv_cr": 2.3631,
+   "weight": 0.8546,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Havells India Limited",
+   "isin": "INE176B01034",
+   "sector": "Consumer Durables",
+   "qty": 20000.0,
+   "mv_cr": 2.3536,
+   "weight": 0.8512,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Britannia Industries Limited",
+   "isin": "INE216A01030",
+   "sector": "Food Products",
+   "qty": 4500.0,
+   "mv_cr": 2.342,
+   "weight": 0.847,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Consultancy Services Limited",
+   "isin": "INE467B01029",
+   "sector": "IT - Software",
+   "qty": 10000.0,
+   "mv_cr": 2.2589,
+   "weight": 0.8169,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bata India Limited",
+   "isin": "INE176A01028",
+   "sector": "Consumer Durables",
+   "qty": 30000.0,
+   "mv_cr": 2.0069,
+   "weight": 0.7258,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Consumer Care Limited",
+   "isin": "INE933K01021",
+   "sector": "Personal Products",
+   "qty": 35000.0,
+   "mv_cr": 1.9348,
+   "weight": 0.6997,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Dixon Technologies (India) Limited",
+   "isin": "INE935N01020",
+   "sector": "Consumer Durables",
+   "qty": 1500.0,
+   "mv_cr": 1.7286,
+   "weight": 0.6251,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TVS Motor Company Limited",
+   "isin": "INE494B01023",
+   "sector": "Automobiles",
+   "qty": 5000.0,
+   "mv_cr": 1.6779,
+   "weight": 0.6068,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Delhivery Limited",
+   "isin": "INE148O01028",
+   "sector": "Transport Services",
+   "qty": 35000.0,
+   "mv_cr": 1.5832,
+   "weight": 0.5726,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "United Spirits Limited",
+   "isin": "INE854D01024",
+   "sector": "Beverages",
+   "qty": 12000.0,
+   "mv_cr": 1.524,
+   "weight": 0.5511,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BSE Limited",
+   "isin": "INE118H01025",
+   "sector": "Capital Markets",
+   "qty": 3500.0,
+   "mv_cr": 1.4511,
+   "weight": 0.5248,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "UltraTech Cement Limited",
+   "isin": "INE481G01011",
+   "sector": "Cement & Cement Products",
+   "qty": 1200.0,
+   "mv_cr": 1.3778,
+   "weight": 0.4983,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Black Buck Ltd",
+   "isin": "INE0UIZ01018",
+   "sector": "Transport Services",
+   "qty": 25000.0,
+   "mv_cr": 1.2764,
+   "weight": 0.4616,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Campus Activewear Limited",
+   "isin": "INE278Y01022",
+   "sector": "Consumer Durables",
+   "qty": 50000.0,
+   "mv_cr": 1.266,
+   "weight": 0.4578,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PB Fintech Limited",
+   "isin": "INE417T01026",
+   "sector": "Financial Technology (Fintech)",
+   "qty": 7000.0,
+   "mv_cr": 1.1917,
+   "weight": 0.431,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Brookfield India Real Estate Trust",
+   "isin": "INE0FDU25010",
+   "sector": "Realty",
+   "qty": 20000.0,
+   "mv_cr": 0.6378,
+   "weight": 0.2306,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Raajmarg Infra Investment Trust",
+   "isin": "INE2PB023011",
+   "sector": "Transport Infrastructure",
+   "qty": 41403.0,
+   "mv_cr": 0.4595,
+   "weight": 0.1662,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Motors Ltd",
+   "isin": "INE1TAE01010",
+   "sector": "Agricultural, Commercial & Construction Vehicles",
+   "qty": 5000.0,
+   "mv_cr": 0.1898,
+   "weight": 0.0686,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-57",
+  "SIF-55",
+  "SIF-59"
+ ],
+ "managers": "Harsh Agarwal",
+ "strategy": "Buys stocks it expects to rise while short-selling (via derivatives) those it expects to fall; returns come mainly from stock-picking skill rather than overall market direction.",
+ "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Equity_Long_Short_Fund_Presentation_d42634825b.pdf"
+}

@@ -1,15 +1,205 @@
 {
-  "_comment": "Per-AMC SIF portfolio-disclosure sources. SIFs disclose holdings BI-MONTHLY (every alternate month, a SEBI rule); AMFI only links out to each AMC's own site, so holdings must be fetched per-AMC. Add an AMC = add one entry here + (if its file layout is new) one adapter in fetch_sif_portfolios.py. 'nav_sif' matches the 'sif' field in nav_data.json so disclosed funds map back to dashboard scheme codes.",
+  "_comment": "Per-AMC SIF portfolio-disclosure sources. SIFs disclose holdings BI-MONTHLY (a SEBI rule); AMFI only links out to each AMC's own site, so holdings are fetched per-AMC. 'nav_sif' matches the 'sif' field in nav_data.json so disclosed funds map to dashboard scheme codes. discovery.method = http_listing | template | manual. adapter = sebi_xlsx (the SEBI-standard monthly-portfolio layout all AMCs use; also unpacks a zip-of-xlsx). Files that need a browser (WAF/Akamai/SPA) are pinned as manual URLs, refreshed via a headless browser or --file. Adding an AMC = one entry here (+ a new adapter only if the layout is genuinely different).",
   "amcs": {
     "apex": {
-      "name": "Apex SIF (Aditya Birla Sun Life AMC)",
+      "brand": "Apex", "name": "Apex SIF", "parent": "Aditya Birla Sun Life AMC",
       "site": "https://apexsif.adityabirlacapital.com",
       "disclosure_page": "https://apexsif.adityabirlacapital.com/",
-      "adapter": "absl",
-      "nav_sif": "Apex SIF",
-      "listing_urls": ["https://apexsif.adityabirlacapital.com/"],
-      "file_pattern": "/uploads/(?P<date>\\d{8})_ABSLMF_Monthly_SIF_[A-Za-z0-9]+\\.xlsx",
-      "date_format": "%d%m%Y"
+      "presentation": "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf",
+      "managers": "Lovelish Solanki, Mohit Sharma",
+      "strategy": "An interval fund spreading money across arbitrage, long stocks, bonds and limited short bets (via derivatives) plus some REITs/InvITs. Returns come from steady low-risk arbitrage/debt income and equity gains, while shorts and hedging cushion losses when markets fall.",
+      "nav_sif": "Apex SIF", "adapter": "sebi_xlsx",
+      "discovery": {"method": "http_listing", "listing_urls": ["https://apexsif.adityabirlacapital.com/"],
+        "file_pattern": "/uploads/(?P<date>\\d{8})_ABSLMF_Monthly_SIF_[A-Za-z0-9]+\\.xlsx", "date_format": "%d%m%Y"}
+    },
+    "titanium": {
+      "brand": "Titanium", "name": "Titanium SIF", "parent": "Tata Asset Management",
+      "site": "https://www.tatamutualfund.com/titanium-sif",
+      "disclosure_page": "https://www.tatamutualfund.com/titanium-sif/schemes-related",
+      "presentation": "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf",
+      "managers": "Suraj Nanda",
+      "strategy": "Buys stocks it expects to rise (long) and bets against stocks it expects to fall (short) via shares and derivatives, shifting net market exposure dynamically to profit in both rising and falling markets.",
+      "nav_sif": "Titanium SIF", "adapter": "sebi_xlsx",
+      "funds": {
+        "equitylong": {"managers": "Suraj Nanda", "presentation": "https://betacms.tatamutualfund.com/system/files/2026-04/Titanium%20Equity%20Long-Short%20Fund_PPT_0.pdf",
+          "strategy": "Actively buys stocks it expects to rise and shorts stocks it expects to fall via shares and derivatives, shifting net exposure (~-25% to 100%) to make money in both rising and falling markets from stock selection on both sides."},
+        "hybrid": {"managers": "Suraj Nanda", "presentation": "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf",
+          "strategy": "Mixes equities, debt and derivatives -- long positions to benefit from rising markets, short/arbitrage positions to cushion falls, and debt for steadier income -- aiming for smoother risk-adjusted returns."}
+      },
+      "discovery": {"method": "manual", "files": [
+        {"period": "2026-05", "as_of": "2026-05-31", "url": "https://www.tatamutualfund.com/system/files/2026-06/Titanium%20SIF%20Portfolio%20%2831st%20May%202026%29.xlsx"}
+      ]}
+    },
+    "dynasif": {
+      "brand": "DynaSIF", "name": "DynaSIF SIF", "parent": "360 ONE Asset Management",
+      "site": "https://www.360.one/dyna-sif",
+      "disclosure_page": "https://www.360.one/dyna-sif/mandatory-disclosures",
+      "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Equity_Long_Short_Fund_Presentation_d42634825b.pdf",
+      "managers": "Harsh Agarwal",
+      "strategy": "Buys stocks it expects to rise while short-selling (via derivatives) those it expects to fall, aiming to make money in both up and down markets from stock-picking rather than market direction.",
+      "nav_sif": "DynaSIF SIF", "adapter": "sebi_xlsx",
+      "funds": {
+        "equitylong": {"managers": "Harsh Agarwal", "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Equity_Long_Short_Fund_Presentation_d42634825b.pdf",
+          "strategy": "Buys stocks it expects to rise while short-selling (via derivatives) those it expects to fall; returns come mainly from stock-picking skill rather than overall market direction."},
+        "alloc": {"managers": "Harsh Agarwal, Milan Mody", "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Asset_Allocator_PPT_1765c7849b.pdf",
+          "strategy": "Dynamically shifts money between equities, bonds and commodities, using long-short/hedging (options, arbitrage) to cut downside. Returns come from asset-class rotation plus instrument selection."},
+        "extop": {"managers": "Harsh Agarwal, Mayur Patel, Milan Mody, Pranav Mise", "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/360_ONE_Dyna_SIF_Equity_EX_Top100_LSF_PPT_dfe3ce5ae1.pdf",
+          "strategy": "Focuses on mid/small-caps outside the largest 100 stocks, holding those it expects to outperform while shorting (up to ~25% unhedged) those it expects to lag."}
+      },
+      "discovery": {"method": "manual", "files": [
+        {"period": "2026-05", "as_of": "2026-05-31", "url": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Portfolio_May_26_Final_023bb6c2f2.xls"}
+      ]}
+    },
+    "arudha": {
+      "brand": "Arudha", "name": "Arudha SIF", "parent": "Bandhan AMC",
+      "site": "https://arudhasif.com",
+      "disclosure_page": "https://arudhasif.com/downloads/",
+      "presentation": "https://arudhasif.com/downloads/assest/file/downloads/NFO%20Deck-%20Arudha%20Equity%20Long%20Short%20Fund.pdf",
+      "managers": "Nilesh Saha, Brijesh Shah",
+      "strategy": "Mostly holds listed Indian stocks it expects to rise while placing limited bets against stocks it expects to fall, plus covered calls and a small debt sleeve -- aiming for equity-like returns with lower volatility.",
+      "nav_sif": "Arudha SIF", "adapter": "sebi_xlsx",
+      "funds": {
+        "equitylong": {"managers": "Nilesh Saha, Brijesh Shah", "presentation": "https://arudhasif.com/downloads/assest/file/downloads/NFO%20Deck-%20Arudha%20Equity%20Long%20Short%20Fund.pdf",
+          "strategy": "Mostly holds listed stocks it expects to rise while shorting (via derivatives) those it expects to fall and writing covered calls; returns come from long picks, shorts, call premiums and a small debt sleeve."},
+        "hybrid": {"managers": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri", "presentation": "https://arudhasif.com/downloads/assest/file/downloads/Deck-Arudha-Hybrid-Long-Short-Fund-May2026.pdf",
+          "strategy": "Puts up to ~65% into short-duration bonds for steady income and at least 35% in fully-hedged (market-neutral arbitrage) equity; returns come mainly from debt plus low-risk arbitrage, for steadier returns with limited stock-market volatility."}
+      },
+      "discovery": {"method": "manual", "_note": "F5 WAF blocks curl; fetch via browser or --file", "files": [
+        {"period": "2026-06", "as_of": "2026-06-30", "url": "https://arudhasif.com/downloads/assest/file/portfolio/month/Monthly-Portfolio_June-2026_ASIF02-Arudha-Equity-Long-Short-Fund.xlsx"},
+        {"period": "2026-06", "as_of": "2026-06-30", "url": "https://arudhasif.com/downloads/assest/file/portfolio/month/Monthly-Portfolio_June-2026_ASIF01-Arudha-Hybrid-Long-Short-Fund.xlsx"}
+      ]}
+    },
+    "isif": {
+      "brand": "iSIF", "name": "iSIF", "parent": "ICICI Prudential AMC",
+      "site": "https://www.isif.icicipruamc.com",
+      "disclosure_page": "https://www.isif.icicipruamc.com/media-center/downloads",
+      "presentation": "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/April/Filing%20date%2017-04-2026/Release%20date%2014-04-2026/Advertisements/Annexure%206%20-%20iSIF%20Factsheet.PDF",
+      "managers": "Rajat Chandak, Ayush Shah, Manish Banthia, Akhil Kakkar",
+      "strategy": "Mostly buys equities for growth while holding debt for steadier income, using derivatives to take limited short bets against stocks/bonds it expects to fall.",
+      "nav_sif": "iSIF SIF", "adapter": "sebi_xlsx",
+      "funds": {
+        "hybrid": {"managers": "Rajat Chandak, Ayush Shah, Manish Banthia, Akhil Kakkar",
+          "strategy": "Mostly buys equities for growth while holding debt for steadier income, using derivatives to short stocks/bonds it expects to fall. Returns come from stock gains, bond interest and profiting on both rising and falling positions."},
+        "equitylong": {"managers": "Mittul Kalawadia, Nitya Mishra, Sri Sharma",
+          "strategy": "Mainly buys listed shares for long-term growth, able to short (via derivatives) up to 25% of the portfolio on stocks it expects to fall."},
+        "extop": {"managers": "Sankaran Naren, Manan Tijoriwala, Divya Jain",
+          "strategy": "Invests in mid/small-caps outside India's largest 100 stocks, buying promising ones and shorting overvalued ones (up to 25%) via derivatives."},
+        "alloc": {"managers": "Ihab Dalwai, Sharmila D'silva, Masoomi Jhurmrvala, Manish Banthia, Akhil Kakkar, Gaurav Chikane",
+          "strategy": "Dynamically shifts money across shares, bonds and commodity/equity derivatives with limited short positions; returns come from moving between asset classes plus long/short bets."}
+      },
+      "discovery": {"method": "manual", "_note": "WAF blocks curl; zip of 4 xlsx; fetch via browser", "files": [
+        {"period": "2026-06", "as_of": "2026-06-30", "url": "https://www.icicipruamc.com/blob/downloads/Files/Monthly Portfolio Disclosures/2026/June/SIF/iSIF Monthly-Portfolio-Disclosure-June-2026.zip"}
+      ]}
+    },
+    "diviniti": {
+      "brand": "Diviniti", "name": "Diviniti SIF", "parent": "ITI Asset Management",
+      "site": "https://sif.itiamc.com",
+      "disclosure_page": "https://sif.itiamc.com/Disclosure?category=PORTFOLIO%20DISCLOSURES",
+      "presentation": "https://sif.itiamc.com/Home/DownloaddFile/10",
+      "managers": "Vasav Sahgal, Rajesh Bhatia",
+      "strategy": "Mainly buys shares it expects to rise and takes limited short bets (via derivatives) on shares it expects to fall, to cushion losses when markets drop. Returns come from stock selection on both the long and short sides.",
+      "nav_sif": "Diviniti SIF", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "files": [
+        {"period": "2026-06", "as_of": "2026-06-30", "url": "https://sif.itiamc.com/Files/PortfolioDisclosureFiles/DIVINITI%20SIF_Monthly%20Portfolio_June%202026.xlsx"}
+      ]}
+    },
+    "magnum": {
+      "brand": "Magnum", "name": "Magnum SIF", "parent": "SBI Funds Management",
+      "site": "https://www.sbimf.com/magnumsif",
+      "disclosure_page": "https://www.sbimf.com/magnumsif-portfolios",
+      "presentation": "https://www.sbimf.com/docs/default-source/sif-documents/sid---magnum-hybrid-long-short-fund.pdf?sfvrsn=c6e09ae7_2",
+      "managers": "Gaurav Mehta",
+      "strategy": "Earns steady income mainly through low-risk arbitrage (small cash-vs-futures price gaps) and options strategies like covered calls, while keeping some money in stocks for growth. Returns come from hedged income trades, some equity gains, and debt interest.",
+      "nav_sif": "Magnum SIF", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "files": [
+        {"period": "2026-06", "as_of": "2026-06-30", "url": "https://www.sbimf.com/docs/default-source/sif-scheme-portfolios/sif-sbi-mf-monthly-portfolio-report-30-june-2026.xlsx?sfvrsn=ea813d1_4"}
+      ]}
+    },
+    "arthaya": {
+      "brand": "Arthaya", "name": "Arthaya SIF", "parent": "Union Asset Management",
+      "site": "https://www.unionmf.com/arthayasif",
+      "disclosure_page": "https://www.unionmf.com/arthayasif/about-us/downloads#factsheets",
+      "presentation": "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/isid/arthaya-equity-long-short-fund.pdf",
+      "managers": "Rajesh Aynor, Hiten Bhadra",
+      "strategy": "Invests mainly in Indian stocks it expects to rise while taking limited short bets against stocks it expects to fall, across all company sizes. Returns come from stock-picking on both sides plus adjusting the long-vs-short balance to the market outlook.",
+      "nav_sif": "Arthaya SIF", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "files": [
+        {"period": "2026-05", "as_of": "2026-05-31", "url": "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/fund-portfolio/may-2026/monthly-portfolio-report-arthaya-equity-long-short-fund-31-05-2026.xlsx"}
+      ]}
+    },
+    "sapphire": {
+      "brand": "Sapphire", "name": "Sapphire SIF", "parent": "Franklin Templeton India",
+      "site": "https://www.franklintempletonindia.com/sapphiresif",
+      "disclosure_page": "https://www.franklintempletonindia.com/sapphiresif",
+      "presentation": "https://www.franklintempletonindia.com/download/en-in/sif-open-end-dvsfd-equity-schemes/3ccdfa21-b19b-4a1c-9f19-eb2989a4ca17/Sapphire%20Equity%20Long-Short%20SIF%20_KIM.pdf",
+      "managers": "Arihant Jain",
+      "strategy": "Buys large, mid and small Indian companies it expects to rise while placing limited bets (capped at 25%) against shares it expects to fall, using a rules-based quant model. Aims to make money in rising and falling markets while cushioning downturns.",
+      "nav_sif": "Franklin Templeton Mutual Fund", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "files": [
+        {"period": "2026-05", "as_of": "2026-05-29", "url": "https://www.franklintempletonindia.com/download/en-in/dis-portfolio-monthly/68250a43-8c48-4dc2-93d1-18bfce9c631b/Sapphire-Equity-Long-Short-SIF_May_26_Monthly.xlsx"}
+      ]}
+    },
+    "platinum": {
+      "brand": "Platinum", "name": "Platinum SIF", "parent": "Mirae Asset",
+      "site": "https://platinumsif.miraeassetmf.co.in",
+      "disclosure_page": "https://platinumsif.miraeassetmf.co.in/forms-downloads/regulatory/portfolio",
+      "presentation": "https://miraeassetetf.co.in/wp-content/uploads/2026/05/Platinum-Hybrid-Long-Short-Fund-Four-Pager-1.pdf",
+      "managers": "Gaurik Shah",
+      "strategy": "Spreads money across hedged arbitrage trades, high-quality bonds and a controlled slice of equity (using option collars and special situations that cap gains and losses). Returns come mainly from interest income and market-neutral arbitrage, with a limited hedged-equity portion.",
+      "nav_sif": "Mirae Asset Mutual Fund", "adapter": "sebi_xlsx",
+      "discovery": {"method": "template",
+        "url_template": "https://miraeassetetf.co.in/wp-content/uploads/{uy}/{um}/SIF_MAMF_Monthly_Portfolio_Report_{dd}.{m}.{y}.xlsx"}
+    },
+    "redhex": {
+      "brand": "RedHex", "name": "RedHex SIF", "parent": "HSBC Asset Management",
+      "site": "https://www.assetmanagement.hsbc.co.in/en/redhex-sif",
+      "disclosure_page": "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/investor-resources/information-library",
+      "presentation": "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/-/media/Files/attachments/india/redhex-sif/nfo-deck-redhex-hybrid-long-short-fund",
+      "managers": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi",
+      "strategy": "Puts about half its money into low-risk high-quality bonds and market-neutral equity arbitrage for steady income, and half into yield-enhancement bets plus REIT/InvIT units, keeping bond maturities short (~1-2 years).",
+      "nav_sif": "HSBC Mutual Fund", "adapter": "sebi_xlsx",
+      "discovery": {"method": "template",
+        "url_template": "https://www.assetmanagement.hsbc.co.in/-/media/Files/attachments/india/redhex-sif/portfolios/redhex-hybrid-long-short-fund-{dd}-{mon}-{y}"}
+    },
+    "wsif": {
+      "brand": "WSIF", "name": "WSIF", "parent": "The Wealth Company AMC",
+      "site": "https://www.wealthcompanyamc.in/wsif/",
+      "disclosure_page": "https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/",
+      "presentation": "", "managers": "", "strategy": "",
+      "nav_sif": "The Wealth Company Mutual Fund", "adapter": "sebi_xlsx",
+      "discovery": {"method": "http_listing",
+        "listing_urls": ["https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/"],
+        "file_pattern": "/uploads/Monthly_Portfolio_[A-Za-z0-9_]+\\.xlsx"}
+    },
+    "quant": {
+      "brand": "qsif", "name": "qsif", "parent": "Quant Money Managers",
+      "site": "https://www.qsif.com", "disclosure_page": "https://www.qsif.com/statutory-disclosures",
+      "presentation": "", "managers": "", "strategy": "",
+      "nav_sif": "qsif SIF", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "_note": "Funds opened 31-Jul-2026; no portfolio disclosed yet. Re-check ~Sep 2026.", "files": []}
+    },
+    "summit": {
+      "brand": "Summit", "name": "Summit SIF", "parent": "Invesco Asset Management India",
+      "site": "https://summitsif.invescomutualfund.com/",
+      "disclosure_page": "https://summitsif.invescomutualfund.com/statutory-disclosures",
+      "presentation": "", "managers": "", "strategy": "",
+      "nav_sif": "Invesco Mutual Fund", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "_note": "NFO mid-Jul-2026; no portfolio yet. Clean OData API at /api/default/documents once live.", "files": []}
+    },
+    "infinity": {
+      "brand": "Infinity", "name": "Infinity SIF", "parent": "Kotak Mahindra AMC",
+      "site": "https://www.kotakmf.com/sif/", "disclosure_page": "https://www.kotakmf.com/sif/",
+      "presentation": "", "managers": "", "strategy": "",
+      "nav_sif": "Kotak Mahindra Mutual Fund", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "_note": "Ops began ~09-Jul-2026; no portfolio yet. Radware WAF; needs browser. Re-check ~mid-Aug 2026.", "files": []}
+    },
+    "prism": {
+      "brand": "Prism", "name": "Prism SIF", "parent": "Jio BlackRock AMC",
+      "site": "https://www.jioblackrockamc.com/prismsif",
+      "disclosure_page": "https://www.jioblackrockamc.com/prismsif/statutory-disclosure/fund-document/portfolio-insights",
+      "presentation": "", "managers": "", "strategy": "",
+      "nav_sif": "Jio BlackRock Mutual Fund", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "_note": "First portfolio as-of 31-Jul-2026, due ~10-Aug-2026. JS/API-rendered; needs browser.", "files": []}
     }
   }
 }

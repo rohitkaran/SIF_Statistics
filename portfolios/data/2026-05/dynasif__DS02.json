@@ -1,0 +1,634 @@
+{
+ "amc": "dynasif",
+ "fund_code": "DS02",
+ "fund_name": "DynaSIF Active Asset Allocator Long- Short Fund",
+ "period": "2026-05",
+ "as_of": "2026-05-31",
+ "source_url": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Portfolio_May_26_Final_023bb6c2f2.xls",
+ "raw": "portfolios/raw/dynasif/2026-05/Dyna_SIF_Portfolio_May_26_Final_023bb6c2f2.xls",
+ "fetched": "2026-08-01T05:18:59+00:00",
+ "net_assets_cr": 194.53,
+ "n_holdings": 42,
+ "allocation": {
+  "equity": 25.39,
+  "debt": 34.37,
+  "money_market": 11.78,
+  "cash_other": 28.46
+ },
+ "sectors": [
+  {
+   "sector": "Capital Markets",
+   "weight": 2.735
+  },
+  {
+   "sector": "Consumer Durables",
+   "weight": 1.9579
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 1.6898
+  },
+  {
+   "sector": "Realty",
+   "weight": 1.623
+  },
+  {
+   "sector": "Retailing",
+   "weight": 1.6009
+  },
+  {
+   "sector": "Finance",
+   "weight": 1.4908
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 1.4103
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 1.3915
+  },
+  {
+   "sector": "Ferrous Metals",
+   "weight": 1.3367
+  },
+  {
+   "sector": "IT - Services",
+   "weight": 1.2005
+  },
+  {
+   "sector": "Electrical Equipment",
+   "weight": 1.1088
+  },
+  {
+   "sector": "Insurance",
+   "weight": 1.1055
+  },
+  {
+   "sector": "Beverages",
+   "weight": 1.0857
+  },
+  {
+   "sector": "Aerospace & Defense",
+   "weight": 1.0557
+  },
+  {
+   "sector": "Agricultural Food & other Products",
+   "weight": 0.9086
+  },
+  {
+   "sector": "Industrial Products",
+   "weight": 0.9069
+  },
+  {
+   "sector": "Banks",
+   "weight": 0.8528
+  },
+  {
+   "sector": "Transport Services",
+   "weight": 0.6976
+  },
+  {
+   "sector": "Automobiles",
+   "weight": 0.6262
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 0.6074
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "9% Piramal Finance Limited (28/06/2027) **",
+   "isin": "INE202B07JT0",
+   "sector": "ICRA AA+",
+   "qty": 1000000.0,
+   "mv_cr": 10.0086,
+   "weight": 5.1449,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Tbill (MD 25/06/2026)",
+   "isin": "IN002025Z138",
+   "sector": "SOVEREIGN",
+   "qty": 1000000.0,
+   "mv_cr": 9.9658,
+   "weight": 5.1229,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "9.1% SK Finance Limited (09/10/2028) **",
+   "isin": "INE124N07770",
+   "sector": "ICRA AA-",
+   "qty": 1000000.0,
+   "mv_cr": 9.9046,
+   "weight": 5.0914,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "8.95% Vedanta Limited (16/03/2029) **",
+   "isin": "INE205A08095",
+   "sector": "CRISIL AA",
+   "qty": 1000000.0,
+   "mv_cr": 9.8943,
+   "weight": 5.0862,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Prudential Gold ETF",
+   "isin": "INF109KC1NT3",
+   "sector": "",
+   "qty": 600000.0,
+   "mv_cr": 7.9872,
+   "weight": 4.1058,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "8.6% Cholamandalam Investment and Finance Company Ltd (15/03/2029) **",
+   "isin": "INE121A07RY7",
+   "sector": "ICRA AA+",
+   "qty": 500000.0,
+   "mv_cr": 5.0241,
+   "weight": 2.5826,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "8.6% Cholamandalam Investment and Finance Company Ltd (05/03/2029) **",
+   "isin": "INE121A07RX9",
+   "sector": "ICRA AA+",
+   "qty": 500000.0,
+   "mv_cr": 5.0236,
+   "weight": 2.5824,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "8.25% Poonawalla Fincorp Limited (11/05/2028) **",
+   "isin": "INE511C07AA1",
+   "sector": "CRISIL AAA",
+   "qty": 500000.0,
+   "mv_cr": 4.9862,
+   "weight": 2.5631,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Tbill (MD 16/07/2026)",
+   "isin": "IN002025Z161",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.9668,
+   "weight": 2.5532,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "7.58% State Government Securities (11/02/2037)",
+   "isin": "IN3120250714",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.9452,
+   "weight": 2.5421,
+   "category": "debt",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "9% Piramal Finance Limited (28/06/2027) **",
+   "isin": "INE202B07JT0",
+   "sector": "ICRA AA+",
+   "qty": 1000000.0,
+   "mv_cr": 10.0086,
+   "weight": 5.1449,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Tbill (MD 25/06/2026)",
+   "isin": "IN002025Z138",
+   "sector": "SOVEREIGN",
+   "qty": 1000000.0,
+   "mv_cr": 9.9658,
+   "weight": 5.1229,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "9.1% SK Finance Limited (09/10/2028) **",
+   "isin": "INE124N07770",
+   "sector": "ICRA AA-",
+   "qty": 1000000.0,
+   "mv_cr": 9.9046,
+   "weight": 5.0914,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "8.95% Vedanta Limited (16/03/2029) **",
+   "isin": "INE205A08095",
+   "sector": "CRISIL AA",
+   "qty": 1000000.0,
+   "mv_cr": 9.8943,
+   "weight": 5.0862,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Prudential Gold ETF",
+   "isin": "INF109KC1NT3",
+   "sector": "",
+   "qty": 600000.0,
+   "mv_cr": 7.9872,
+   "weight": 4.1058,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "8.6% Cholamandalam Investment and Finance Company Ltd (15/03/2029) **",
+   "isin": "INE121A07RY7",
+   "sector": "ICRA AA+",
+   "qty": 500000.0,
+   "mv_cr": 5.0241,
+   "weight": 2.5826,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "8.6% Cholamandalam Investment and Finance Company Ltd (05/03/2029) **",
+   "isin": "INE121A07RX9",
+   "sector": "ICRA AA+",
+   "qty": 500000.0,
+   "mv_cr": 5.0236,
+   "weight": 2.5824,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "8.25% Poonawalla Fincorp Limited (11/05/2028) **",
+   "isin": "INE511C07AA1",
+   "sector": "CRISIL AAA",
+   "qty": 500000.0,
+   "mv_cr": 4.9862,
+   "weight": 2.5631,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Tbill (MD 16/07/2026)",
+   "isin": "IN002025Z161",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.9668,
+   "weight": 2.5532,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "7.58% State Government Securities (11/02/2037)",
+   "isin": "IN3120250714",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.9452,
+   "weight": 2.5421,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "7.48% State Government Securities (04/09/2037)",
+   "isin": "IN1920250280",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.9063,
+   "weight": 2.5221,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "6.01% Government of India (21/07/2030)",
+   "isin": "IN0020250067",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.8835,
+   "weight": 2.5104,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "6.48% Government of India (06/10/2035)",
+   "isin": "IN0020250091",
+   "sector": "SOVEREIGN",
+   "qty": 500000.0,
+   "mv_cr": 4.8217,
+   "weight": 2.4786,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Embassy Office Parks REIT",
+   "isin": "INE041025011",
+   "sector": "Realty",
+   "qty": 73914.0,
+   "mv_cr": 3.1574,
+   "weight": 1.623,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 15000.0,
+   "mv_cr": 2.7435,
+   "weight": 1.4103,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Ports and Special Economic Zone Limited",
+   "isin": "INE742F01042",
+   "sector": "Transport Infrastructure",
+   "qty": 15000.0,
+   "mv_cr": 2.7069,
+   "weight": 1.3915,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Steel Limited",
+   "isin": "INE081A01020",
+   "sector": "Ferrous Metals",
+   "qty": 125000.0,
+   "mv_cr": 2.6002,
+   "weight": 1.3367,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "6.36% Government of India (16/02/2031)",
+   "isin": "IN0020250141",
+   "sector": "SOVEREIGN",
+   "qty": 251200.0,
+   "mv_cr": 2.4657,
+   "weight": 1.2675,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Netweb Technologies India Limited",
+   "isin": "INE0NT901020",
+   "sector": "IT - Services",
+   "qty": 5000.0,
+   "mv_cr": 2.3354,
+   "weight": 1.2005,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LG Electronics India Ltd",
+   "isin": "INE324D01010",
+   "sector": "Consumer Durables",
+   "qty": 15000.0,
+   "mv_cr": 2.2858,
+   "weight": 1.175,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Lombard General Insurance Company Limited",
+   "isin": "INE765G01017",
+   "sector": "Insurance",
+   "qty": 12000.0,
+   "mv_cr": 2.1506,
+   "weight": 1.1055,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Varun Beverages Limited",
+   "isin": "INE200M01039",
+   "sector": "Beverages",
+   "qty": 40000.0,
+   "mv_cr": 2.112,
+   "weight": 1.0857,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Trent Limited",
+   "isin": "INE849A01020",
+   "sector": "Retailing",
+   "qty": 5000.0,
+   "mv_cr": 2.112,
+   "weight": 1.0857,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 50000.0,
+   "mv_cr": 2.0537,
+   "weight": 1.0557,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Asset Management Company Limited",
+   "isin": "INE127D01025",
+   "sector": "Capital Markets",
+   "qty": 7000.0,
+   "mv_cr": 1.872,
+   "weight": 0.9623,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Nuvama Wealth Management Limited",
+   "isin": "INE531F01023",
+   "sector": "Capital Markets",
+   "qty": 12000.0,
+   "mv_cr": 1.8655,
+   "weight": 0.959,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Consumer Products Limited",
+   "isin": "INE192A01025",
+   "sector": "Agricultural Food & other Products",
+   "qty": 15000.0,
+   "mv_cr": 1.7676,
+   "weight": 0.9086,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cummins India Limited",
+   "isin": "INE298A01020",
+   "sector": "Industrial Products",
+   "qty": 3000.0,
+   "mv_cr": 1.7643,
+   "weight": 0.9069,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Coforge Limited",
+   "isin": "INE591G01025",
+   "sector": "IT - Software",
+   "qty": 12000.0,
+   "mv_cr": 1.7062,
+   "weight": 0.877,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Emmvee Photovoltaic Power Limited",
+   "isin": "INE1C6T01020",
+   "sector": "Electrical Equipment",
+   "qty": 50000.0,
+   "mv_cr": 1.6265,
+   "weight": 0.8361,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Computer Age Management Services Limited",
+   "isin": "INE596I01020",
+   "sector": "Capital Markets",
+   "qty": 20000.0,
+   "mv_cr": 1.583,
+   "weight": 0.8137,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Consultancy Services Limited",
+   "isin": "INE467B01029",
+   "sector": "IT - Software",
+   "qty": 7000.0,
+   "mv_cr": 1.5812,
+   "weight": 0.8128,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cholamandalam Investment and Finance Company Ltd",
+   "isin": "INE121A01024",
+   "sector": "Finance",
+   "qty": 10000.0,
+   "mv_cr": 1.5377,
+   "weight": 0.7905,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Amber Enterprises India Limited",
+   "isin": "INE371P01015",
+   "sector": "Consumer Durables",
+   "qty": 2000.0,
+   "mv_cr": 1.523,
+   "weight": 0.7829,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finance Limited",
+   "isin": "INE296A01032",
+   "sector": "Finance",
+   "qty": 15000.0,
+   "mv_cr": 1.3624,
+   "weight": 0.7003,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Delhivery Limited",
+   "isin": "INE148O01028",
+   "sector": "Transport Services",
+   "qty": 30000.0,
+   "mv_cr": 1.3571,
+   "weight": 0.6976,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 10000.0,
+   "mv_cr": 1.2866,
+   "weight": 0.6614,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Mahindra & Mahindra Limited",
+   "isin": "INE101A01026",
+   "sector": "Automobiles",
+   "qty": 4000.0,
+   "mv_cr": 1.2182,
+   "weight": 0.6262,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindustan Petroleum Corporation Limited",
+   "isin": "INE094A01015",
+   "sector": "Petroleum Products",
+   "qty": 30000.0,
+   "mv_cr": 1.1816,
+   "weight": 0.6074,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Eternal Limited",
+   "isin": "INE758T01015",
+   "sector": "Retailing",
+   "qty": 40000.0,
+   "mv_cr": 1.0023,
+   "weight": 0.5152,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Premier Energies Limited",
+   "isin": "INE0BS701011",
+   "sector": "Electrical Equipment",
+   "qty": 5000.0,
+   "mv_cr": 0.5305,
+   "weight": 0.2727,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 5000.0,
+   "mv_cr": 0.3723,
+   "weight": 0.1914,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-88",
+  "SIF-86",
+  "SIF-87",
+  "SIF-89"
+ ],
+ "managers": "Harsh Agarwal, Milan Mody",
+ "strategy": "Dynamically shifts money between equities, bonds and commodities, using long-short/hedging (options, arbitrage) to cut downside. Returns come from asset-class rotation plus instrument selection.",
+ "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Asset_Allocator_PPT_1765c7849b.pdf"
+}
