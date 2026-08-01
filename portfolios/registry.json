@@ -96,7 +96,7 @@
       "site": "https://sif.itiamc.com",
       "disclosure_page": "https://sif.itiamc.com/Disclosure?category=PORTFOLIO%20DISCLOSURES",
       "presentation": "https://sif.itiamc.com/Home/DownloaddFile/10",
-      "managers": "Vasav Sahgal, Rajesh Bhatia",
+      "managers": "Vasav Sahgal",
       "strategy": "Mainly buys shares it expects to rise and takes limited short bets (via derivatives) on shares it expects to fall, to cushion losses when markets drop. Returns come from stock selection on both the long and short sides.",
       "nav_sif": "Diviniti SIF", "adapter": "sebi_xlsx",
       "discovery": {"method": "manual", "files": [
@@ -165,7 +165,8 @@
       "brand": "WSIF", "name": "WSIF", "parent": "The Wealth Company AMC",
       "site": "https://www.wealthcompanyamc.in/wsif/",
       "disclosure_page": "https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/",
-      "presentation": "", "managers": "", "strategy": "",
+      "presentation": "", "managers": "Chinmay Sathe",
+      "strategy": "Holds listed Indian stocks it expects to rise while taking limited short bets (via derivatives) against stocks it expects to fall; returns come from stock selection on both the long and short sides.",
       "nav_sif": "The Wealth Company Mutual Fund", "adapter": "sebi_xlsx",
       "discovery": {"method": "http_listing",
         "listing_urls": ["https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/"],
@@ -174,7 +175,8 @@
     "quant": {
       "brand": "qsif", "name": "qsif", "parent": "Quant Money Managers",
       "site": "https://www.qsif.com", "disclosure_page": "https://www.qsif.com/statutory-disclosures",
-      "presentation": "", "managers": "", "strategy": "",
+      "presentation": "", "managers": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+      "strategy": "Quant's VLRT-driven long-short strategies that buy stocks expected to rise and short those expected to fall across equity, hybrid, ex-top-100, sector-rotation and asset-allocator mandates.",
       "nav_sif": "qsif SIF", "adapter": "sebi_xlsx",
       "discovery": {"method": "manual", "_note": "Funds opened 31-Jul-2026; no portfolio disclosed yet. Re-check ~Sep 2026.", "files": []}
     },
@@ -182,14 +184,16 @@
       "brand": "Summit", "name": "Summit SIF", "parent": "Invesco Asset Management India",
       "site": "https://summitsif.invescomutualfund.com/",
       "disclosure_page": "https://summitsif.invescomutualfund.com/statutory-disclosures",
-      "presentation": "", "managers": "", "strategy": "",
+      "presentation": "", "managers": "Hiten Jain",
+      "strategy": "Buys stocks it expects to rise and short-sells (via derivatives) those it expects to fall, aiming to make money in both rising and falling markets from stock selection.",
       "nav_sif": "Invesco Mutual Fund", "adapter": "sebi_xlsx",
       "discovery": {"method": "manual", "_note": "NFO mid-Jul-2026; no portfolio yet. Clean OData API at /api/default/documents once live.", "files": []}
     },
     "infinity": {
       "brand": "Infinity", "name": "Infinity SIF", "parent": "Kotak Mahindra AMC",
       "site": "https://www.kotakmf.com/sif/", "disclosure_page": "https://www.kotakmf.com/sif/",
-      "presentation": "", "managers": "", "strategy": "",
+      "presentation": "", "managers": "Kalpesh Jain, Hiten Shah, Abhishek Bisen",
+      "strategy": "Mixes equities, arbitrage and debt with long and short (derivative) positions, aiming for steadier returns across market conditions; debt (Bisen) provides income while the equity long-short book drives growth.",
       "nav_sif": "Kotak Mahindra Mutual Fund", "adapter": "sebi_xlsx",
       "discovery": {"method": "manual", "_note": "Ops began ~09-Jul-2026; no portfolio yet. Radware WAF; needs browser. Re-check ~mid-Aug 2026.", "files": []}
     },
@@ -197,7 +201,8 @@
       "brand": "Prism", "name": "Prism SIF", "parent": "Jio BlackRock AMC",
       "site": "https://www.jioblackrockamc.com/prismsif",
       "disclosure_page": "https://www.jioblackrockamc.com/prismsif/statutory-disclosure/fund-document/portfolio-insights",
-      "presentation": "", "managers": "", "strategy": "",
+      "presentation": "", "managers": "Tanvi Kacheria, Siddharth Deb, Virendra Kumar",
+      "strategy": "A hybrid long-short strategy combining equities, debt and derivatives with long and short positions, aiming for steadier risk-adjusted returns; overseen by the SIF CIO.",
       "nav_sif": "Jio BlackRock Mutual Fund", "adapter": "sebi_xlsx",
       "discovery": {"method": "manual", "_note": "First portfolio as-of 31-Jul-2026, due ~10-Aug-2026. JS/API-rendered; needs browser.", "files": []}
     }

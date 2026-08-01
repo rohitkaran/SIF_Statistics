@@ -640,13 +640,53 @@ def process_file(path, amc, period, nav_schemes):
     return _write_funds(funds, amc_schemes, cfg)
 
 
+def relabel_all():
+    """Re-apply managers/strategy/presentation from the registry onto EXISTING data files.
+
+    No network -- use after editing registry metadata (e.g. corrected fund managers), so
+    WAF-protected AMCs don't need re-downloading.
+    """
+    reg = load_registry()
+    data_root = os.path.join(out_dir(), "data")
+    n = 0
+    if os.path.isdir(data_root):
+        for period in sorted(os.listdir(data_root)):
+            pdir = os.path.join(data_root, period)
+            if not os.path.isdir(pdir):
+                continue
+            for fn in sorted(os.listdir(pdir)):
+                if not fn.endswith(".json"):
+                    continue
+                path = os.path.join(pdir, fn)
+                with open(path, encoding="utf-8") as f:
+                    fund = json.load(f)
+                cfg = reg["amcs"].get(fund.get("amc"), {})
+                strat = strat_token((fund.get("fund_name", "") + " " + fund.get("fund_code", "")))
+                o = (cfg.get("funds", {}) or {}).get(strat, {}) if strat else {}
+                fund["managers"] = o.get("managers", cfg.get("managers", ""))
+                fund["strategy"] = o.get("strategy", cfg.get("strategy", ""))
+                fund["presentation"] = o.get("presentation", cfg.get("presentation", ""))
+                with open(path, "w", encoding="utf-8") as f:
+                    json.dump(fund, f, ensure_ascii=False, indent=1)
+                n += 1
+    rebuild_index()
+    sys.stderr.write(f"[relabel] refreshed metadata on {n} fund file(s)\n")
+    return n
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description="Fetch & normalise SIF portfolio disclosures.")
     p.add_argument("--amc", help="AMC key from registry.json (default: all)")
     p.add_argument("--period", help="YYYY-MM to fetch (default: latest disclosed)")
     p.add_argument("--file", help="normalise a hand-downloaded xlsx/zip instead of fetching")
+    p.add_argument("--relabel", action="store_true",
+                   help="re-apply registry metadata (managers/strategy/presentation) to stored data, no fetch")
     p.add_argument("--list", action="store_true", help="list stored portfolios and exit")
     args = p.parse_args(argv)
+
+    if args.relabel:
+        relabel_all()
+        return 0
 
     if args.list:
         idx = rebuild_index()

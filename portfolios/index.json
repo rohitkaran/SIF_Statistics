@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-01T05:26:52+00:00",
+ "generated": "2026-08-01T05:49:51+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2026-05",
@@ -68,7 +68,7 @@
    "site": "https://sif.itiamc.com",
    "nav_sif": "Diviniti SIF",
    "disclosure_page": "https://sif.itiamc.com/Disclosure?category=PORTFOLIO%20DISCLOSURES",
-   "managers": "Vasav Sahgal, Rajesh Bhatia",
+   "managers": "Vasav Sahgal",
    "strategy": "Mainly buys shares it expects to rise and takes limited short bets (via derivatives) on shares it expects to fall, to cushion losses when markets drop. Returns come from stock selection on both the long and short sides.",
    "presentation": "https://sif.itiamc.com/Home/DownloaddFile/10"
   },
@@ -134,8 +134,8 @@
    "site": "https://www.wealthcompanyamc.in/wsif/",
    "nav_sif": "The Wealth Company Mutual Fund",
    "disclosure_page": "https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/",
-   "managers": "",
-   "strategy": "",
+   "managers": "Chinmay Sathe",
+   "strategy": "Holds listed Indian stocks it expects to rise while taking limited short bets (via derivatives) against stocks it expects to fall; returns come from stock selection on both the long and short sides.",
    "presentation": ""
   },
   "quant": {
@@ -145,8 +145,8 @@
    "site": "https://www.qsif.com",
    "nav_sif": "qsif SIF",
    "disclosure_page": "https://www.qsif.com/statutory-disclosures",
-   "managers": "",
-   "strategy": "",
+   "managers": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+   "strategy": "Quant's VLRT-driven long-short strategies that buy stocks expected to rise and short those expected to fall across equity, hybrid, ex-top-100, sector-rotation and asset-allocator mandates.",
    "presentation": ""
   },
   "summit": {
@@ -156,8 +156,8 @@
    "site": "https://summitsif.invescomutualfund.com/",
    "nav_sif": "Invesco Mutual Fund",
    "disclosure_page": "https://summitsif.invescomutualfund.com/statutory-disclosures",
-   "managers": "",
-   "strategy": "",
+   "managers": "Hiten Jain",
+   "strategy": "Buys stocks it expects to rise and short-sells (via derivatives) those it expects to fall, aiming to make money in both rising and falling markets from stock selection.",
    "presentation": ""
   },
   "infinity": {
@@ -167,8 +167,8 @@
    "site": "https://www.kotakmf.com/sif/",
    "nav_sif": "Kotak Mahindra Mutual Fund",
    "disclosure_page": "https://www.kotakmf.com/sif/",
-   "managers": "",
-   "strategy": "",
+   "managers": "Kalpesh Jain, Hiten Shah, Abhishek Bisen",
+   "strategy": "Mixes equities, arbitrage and debt with long and short (derivative) positions, aiming for steadier returns across market conditions; debt (Bisen) provides income while the equity long-short book drives growth.",
    "presentation": ""
   },
   "prism": {
@@ -178,8 +178,8 @@
    "site": "https://www.jioblackrockamc.com/prismsif",
    "nav_sif": "Jio BlackRock Mutual Fund",
    "disclosure_page": "https://www.jioblackrockamc.com/prismsif/statutory-disclosure/fund-document/portfolio-insights",
-   "managers": "",
-   "strategy": "",
+   "managers": "Tanvi Kacheria, Siddharth Deb, Virendra Kumar",
+   "strategy": "A hybrid long-short strategy combining equities, debt and derivatives with long and short positions, aiming for steadier risk-adjusted returns; overseen by the SIF CIO.",
    "presentation": ""
   }
  },
