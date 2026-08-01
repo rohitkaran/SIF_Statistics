@@ -174,43 +174,70 @@
   .fld .chk{display:flex;align-items:center;gap:6px;font-size:12.5px;font-family:var(--sans);color:var(--ink);padding:5px 0;cursor:pointer}
   .fld .chk input{accent-color:var(--accent);width:15px;height:15px}
 
-  /* ---- mobile: data-first, curated, dense, zoomable ---- */
+  /* ---- mobile: each fund becomes a CARD (no horizontal scroll) ---- */
   .wrap{-webkit-overflow-scrolling:touch}
   @media (max-width:820px){
-    html,body{font-size:12px}
-    body{padding-bottom:14px}
-    /* header scrolls away so the table owns the screen; Filters collapse behind a toggle */
-    header{position:static;padding:8px 11px}
+    html,body{font-size:13px}
+    body{padding-bottom:16px}
+    /* header: compact, data-first. Filters collapse behind a toggle. */
+    header{position:static;padding:9px 11px}
     .bar{gap:9px 10px;align-items:center}
-    .brand{flex:1;margin:0}
-    h1{font-size:13px} .brand .sub{font-size:10px}
+    .brand{flex:1 1 calc(100% - 112px);min-width:0;margin:0}   /* brand+toggle own row; fields wrap below */
+    h1{font-size:14px} .brand .sub{font-size:10.5px}
+    .mobtoggle{align-self:center}
     .mobtoggle{display:inline-flex;align-items:center;gap:5px;background:var(--panel2);
-      border:1px solid var(--line2);color:var(--ink);border-radius:8px;padding:8px 14px;font-weight:600;font-size:12.5px}
+      border:1px solid var(--line2);color:var(--ink);border-radius:9px;padding:9px 15px;font-weight:600;font-size:13px}
     .mobonly{display:flex}
-    header.collapsed .fld{display:none}
-    header.collapsed .status{display:none}
+    header.collapsed .fld,header.collapsed .status{display:none}
     header:not(.collapsed){box-shadow:0 14px 30px rgba(0,0,0,.22)}
-    .fld{flex:1 1 44%}                          /* neat two-per-row filter grid when expanded */
-    .fld label{font-size:10px}
-    .fld input,.fld select{width:100%;padding:9px 10px;font-size:13.5px;border-radius:7px}
+    .fld{flex:1 1 44%} .fld label{font-size:10px}
+    .fld input,.fld select{width:100%;padding:10px 11px;font-size:14px;border-radius:8px}
     .fld input.small,.fld input.rx{width:100%}
-    header:not(.collapsed) button{border-radius:7px;padding:9px 12px}
-    /* dense, curated table (only key columns unless "All columns" is on) */
-    thead th{top:0;padding:7px 8px;font-size:9.5px}
-    td{padding:8px 8px;font-size:11.5px}
-    tr.grp td{padding:7px 9px}
-    .num{font-size:11.5px}
-    .nm{max-width:42vw;white-space:normal;line-height:1.3}
-    .nm .amc{font-size:12px} .nm .parent{display:block;font-size:10px;margin-left:15px}
-    .nm .plan{display:none}                     /* plan hidden in the pinned column to save room */
-    .nm input.cmp{width:17px;height:17px}
-    thead th:first-child,tbody td:first-child{box-shadow:2px 0 6px -2px rgba(0,0,0,.25)}
-    body:not(.allcols) .mhide{display:none}     /* curated set by default; toggle shows the rest */
-    .exp-in{grid-template-columns:1fr;padding:12px;gap:16px}
+    header:not(.collapsed) button{border-radius:8px;padding:10px 13px}
+
+    .wrap{overflow-x:visible}
+    table,tbody,tr,td{display:block;width:auto}
+    thead{display:none}                         /* labels come from each cell's data-label */
+    table{min-width:0}
+
+    /* group heading */
+    tr.grp{background:transparent;border:none;margin:16px 12px 6px;padding:0}
+    tr.grp td{background:transparent!important;border:none!important;padding:0;box-shadow:none;position:static}
+    .grp .gt{font-size:12px} .grp .gc{font-size:11px}
+
+    /* fund card */
+    tbody tr:not(.grp):not(.expand){background:var(--panel);border:1px solid var(--line2);
+      border-radius:14px;margin:9px 12px;padding:12px 14px;box-shadow:0 2px 6px rgba(15,20,30,.06)}
+    tbody tr.open{border-color:var(--accent);box-shadow:0 4px 14px rgba(91,91,240,.18)}
+    tbody tr:hover td{background:transparent}
+    tr.myfund{box-shadow:0 2px 6px rgba(15,20,30,.06),inset 3px 0 0 var(--accent)!important}
+
+    /* card header = the name cell */
+    td:first-child{position:static;box-shadow:none;display:block;border:none!important;padding:0 0 9px;
+      margin:0 0 8px;border-bottom:1px solid var(--line)!important;background:transparent!important;max-width:none;white-space:normal}
+    td:first-child::before{display:none}
+    .nm .caret{font-size:12px} .nm .amc{font-size:14.5px;font-weight:700}
+    .nm .parent{color:var(--ink-dim);font-size:12px} .nm .plan{display:inline;color:var(--ink-faint);font-size:11.5px}
+    .nm input.cmp{width:18px;height:18px;transform:scale(1.05)}
+
+    /* metric rows: label ⟷ value */
+    td{border:none;padding:6px 0;white-space:normal;font-size:13px;
+      display:flex;justify-content:space-between;align-items:center;gap:12px}
+    td::before{content:attr(data-label);color:var(--ink-dim);font-size:12px;font-weight:600;white-space:nowrap}
+    td.num,td .num{font-size:13.5px}
+    td>span{margin-left:auto;text-align:right}
+    tr.low td{opacity:1}                          /* cards read fine; don't fade */
+    tr.low{opacity:.62}
+    body:not(.allcols) .mhide{display:none}       /* a few key stats per card; "All columns" shows every field */
+
+    /* expanded detail */
+    tr.expand{background:transparent;margin:0 12px 9px}
+    .expand td{padding:0;background:transparent;display:block}
+    .expand td::before{display:none}
+    .exp-in{grid-template-columns:1fr;padding:0;gap:16px;background:var(--panel2);border:1px solid var(--line2);border-radius:12px;padding:12px}
     .port .pgrid{grid-template-columns:1fr}
-    footer{position:static;padding:8px 11px;font-size:10px}
-    .cmp-in{padding:12px;border-radius:12px}
-    table.cmpt{font-size:10.5px}
+    footer{position:static;padding:9px 12px;font-size:10.5px}
+    .cmp-in{padding:12px;border-radius:14px} table.cmpt{font-size:11px}
   }
 </style>
 
@@ -718,7 +745,9 @@ const SIFMetrics = (function(){
     const first=document.createElement('td'); first.className='nm';
     if(!r.mine) first.style.borderLeft='3px solid '+r.group.color+'66';
     const meta=amcMetaFor(r.sif);
-    const parent=(meta&&meta.parent)?' <span class="parent">'+esc(shortParent(meta.parent))+'</span>':'';
+    let parent='';
+    if(meta&&meta.parent){ const sp=shortParent(meta.parent), a=normStr(r.sif), b=normStr(sp);
+      if(a.indexOf(b)<0 && b.indexOf(a)<0) parent=' <span class="parent">'+esc(sp)+'</span>'; }
     const badge=(PORT&&PORT.schemes&&PORT.schemes[r.code])?' <span class="pbadge" title="Portfolio holdings disclosed">▣</span>':'';
     first.innerHTML='<input type="checkbox" class="cmp" title="Add to compare chart"'+(compareSet.has(r.code)?' checked':'')+'>'+
       '<span class="caret">▶</span> <span class="amc">'+esc(r.sif||sn.head)+'</span>'+parent+badge+
@@ -731,6 +760,7 @@ const SIFMetrics = (function(){
     for(let i=1;i<COLS.length;i++){
       const c=COLS[i]; const td=document.createElement('td');
       td.className=c.cls.replace('num','')+' num col-'+c.k+(MOBILE_HIDE.has(c.k)?' mhide':'');
+      td.setAttribute('data-label', c.label);   // becomes the field label in the mobile card view
       if(c.k==='rangeFrom'){ td.className='r rng num col-rangeFrom mhide';
         td.innerHTML = r.m.rangeFrom? '<span>'+shortD(r.m.rangeFrom)+'→'+shortD(r.m.rangeTo)+'</span>':na; }
       else td.innerHTML = c.fmt? c.fmt(r): c.val(r);
