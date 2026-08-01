@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1014"/><stop offset="1" stop-color="#141a21"/>
+    </linearGradient>
+    <linearGradient id="sfi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b8bff"/><stop offset="0.55" stop-color="#a97bff"/><stop offset="1" stop-color="#3fd0c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#sfi)"/>
+  <!-- faint long/short chart motif -->
+  <path d="M0 470 L150 440 L250 500 L370 420 L500 460 L640 360 L780 400 L920 300 L1060 340 L1200 250"
+        fill="none" stroke="url(#sfi)" stroke-width="3" stroke-opacity="0.25"/>
+  <!-- mark -->
+  <g transform="translate(90,120)">
+    <rect x="0" y="0" width="132" height="132" rx="34" fill="url(#sfi)"/>
+    <path d="M24 86 L46 99 L64 68 L84 82 L104 40" fill="none" stroke="#0d1014" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="104" cy="40" r="10" fill="#0d1014"/>
+    <circle cx="104" cy="40" r="18" fill="none" stroke="#0d1014" stroke-opacity="0.35" stroke-width="4"/>
+  </g>
+  <!-- wordmark -->
+  <text x="252" y="215" font-family="Inter, system-ui, sans-serif" font-size="104" font-weight="800" letter-spacing="-2">
+    <tspan fill="#eef3f9">SIF</tspan><tspan fill="url(#sfi)">intel</tspan>
+  </text>
+  <text x="92" y="330" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="600" fill="#dbe3ec">Intelligence on India's Specialized Investment Funds</text>
+  <text x="92" y="392" font-family="Inter, system-ui, sans-serif" font-size="27" font-weight="400" fill="#8b97a6">Real NAVs · disclosed holdings · risk/return · up/down capture · fund comparison</text>
+  <text x="92" y="560" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="24" font-weight="500" fill="#3fd0c9">sifintel.com</text>
+  <text x="92" y="596" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#5c6675">Decode the strategy behind the returns.</text>
+</svg>

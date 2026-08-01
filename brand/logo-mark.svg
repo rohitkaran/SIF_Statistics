@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="SIFintel">
+  <defs>
+    <linearGradient id="sfi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b5bf0"/>
+      <stop offset="0.55" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#0e9aa7"/>
+    </linearGradient>
+  </defs>
+  <!-- app-icon tile -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#sfi)"/>
+  <!-- long/short signal path: down then a decisive rise (net long) -->
+  <path d="M13 41 L23 47 L31 33 L40 39 L49 20" fill="none" stroke="#ffffff"
+        stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- the 'intel' node: insight point + radar ping -->
+  <circle cx="49" cy="20" r="4.6" fill="#ffffff"/>
+  <circle cx="49" cy="20" r="8.6" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.8"/>
+</svg>
