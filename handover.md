@@ -5,7 +5,11 @@ Living notes so any new session can pick up fast. Pairs with `README.md` (user-f
 ## What this is
 A public terminal for India's **Specialized Investment Funds (SIFs)**: live NAV-based risk/return
 metrics **plus** the fund-house monthly **portfolio disclosures** (holdings, allocation, long/short,
-strategy, fund managers).
+strategy, fund managers). Product/monetization strategy lives in **`BUSINESS_PLAN.md`**.
+
+**Coverage: 90 / 111 scheme codes have disclosed holdings.** Remaining gaps are genuine: qsif
+Sector Rotation, DynaSIF Ex-Top (old `.xls`, only 2 of 3 sheets parse), Altiva Ex-Top, and the
+newest funds not yet disclosed (Summit/Invesco, Infinity/Kotak, Prism/Jio — first bi-monthly not due).
 
 - **Live:** https://rohitkaran.github.io/SIF_Statistics/  · repo `rohitkaran/SIF_Statistics`
 - `sif-dashboard/` is its **own git root** (nested inside `C:\Users\rohit\ClaudeCodeTradingView`;
