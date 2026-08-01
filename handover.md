@@ -63,19 +63,21 @@ to a browser-based fetch (see deferred). The workflow's portfolio step is best-e
 - **Mobile**: `@media (max-width:640px)` — sticky first column, compact spacing, static footer, bigger
   tap targets. (Couldn't emulate <640px in the test browser; rule verified parsed.)
 
+## DONE since first handover
+- **Up/Down capture vs NIFTY 50** — `fetch_benchmark.py` (stdlib, Yahoo `^NSEI`) → `benchmark_data.json`;
+  `SIFMetrics.captureRatios(windowedSeries, benchByDate)` in the tested metrics block; two columns
+  (Up Cap %, Dn Cap %) with tooltips; Dn Cap tinted green when low/negative. Workflow fetches it daily.
+- **Compare chart** — checkbox on each row + a *Compare (n)* button opens a modal overlaying the ticked
+  funds' NAVs (rebased to 100) vs NIFTY 50, with a metrics table. Vanilla SVG.
+- **Altiva (Edelweiss)** added — it was missing from the registry (not old, just omitted). Akamai blocks
+  curl, so its file was fetched via the browser (same-origin Blob download) and parsed with `--file`.
+  Only Oct-2025 Hybrid is disclosed; manager left blank (only an unreliable aggregator name found —
+  needs primary-source confirmation).
+- **Mobile** — first column now `position:sticky` at ALL widths; control panel is `position:static`
+  below 820px so it no longer covers the data.
+
 ## Deferred / next session (with design notes)
-1. **Up/Down capture vs Nifty** (user asked): "when Nifty up, fraction of returns; when Nifty down,
-   return as % of index." Needs a **Nifty daily series** aligned to fund NAV dates — NOT yet ingested.
-   - Recommend a small stdlib `fetch_benchmark.py` pulling Nifty 50 (and maybe Nifty 50 Hybrid Composite
-     Debt 50:50 for hybrids) daily closes → `benchmark_data.json`. Source options: NSE indices historical
-     (needs browser UA + cookie priming), or niftyindices.com CSV. Verify licensing/ToS.
-   - Metric: **up-capture** = mean(fund_ret on days index>0) / mean(index_ret on those days) ×100;
-     **down-capture** likewise on index<0 days. Add two columns + tooltips; note the benchmark used
-     (equity funds → Nifty 50; hybrids → hybrid index) and label clearly.
-2. **Multi-fund compare chart** (user asked): checkbox-select rows → overlay normalised NAV (rebased to
-   100 at window start) on one SVG line chart, with a legend + up/down-capture summary. Add a "Compare
-   (n)" button that opens a panel. Keep vanilla SVG.
-3. **CI robustness / auto-discovery**: for WAF AMCs, add a headless-browser fetch (Playwright) step, or a
+1. **CI robustness / auto-discovery**: for WAF AMCs, add a headless-browser fetch (Playwright) step, or a
    per-AMC API call (SBI POST `ajaxcall/CMS/GetSIFSchemePortfolioSheets`, Union OData
    `/api/downloads/documents`, Invesco Sitefinity OData `/api/default/documents`). Also **auto-detect new
    funds**: the fetcher already enumerates schemes from `nav_data.json`, so new SIFs appear automatically

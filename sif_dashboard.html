@@ -72,6 +72,23 @@
     align-items:center;justify-content:center;text-align:center}
   #drop.on{display:flex}
   #drop .box{border:2px dashed var(--accent);border-radius:8px;padding:40px 60px;font-size:15px}
+  .nm input.cmp{margin:0 5px 0 0;vertical-align:middle;cursor:pointer;accent-color:var(--accent)}
+
+  /* ---- compare modal ---- */
+  #cmp{position:fixed;inset:0;z-index:90;background:rgba(8,12,16,.72);display:none;
+    align-items:center;justify-content:center;padding:18px}
+  #cmp.on{display:flex}
+  .cmp-in{background:var(--panel);border:1px solid var(--line2);border-radius:8px;max-width:1000px;
+    width:100%;max-height:92vh;overflow:auto;padding:14px 16px;box-shadow:0 16px 50px rgba(0,0,0,.4)}
+  .cmp-hd{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .cmp-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11.5px;margin:8px 0}
+  .cmp-legend .lg{display:flex;align-items:center;gap:5px}
+  .cmp-legend .sw2{width:14px;height:3px;border-radius:2px;display:inline-block}
+  table.cmpt{border-collapse:collapse;width:100%;margin-top:8px;font-size:11.5px}
+  table.cmpt th,table.cmpt td{border-bottom:1px solid var(--line);padding:4px 8px;white-space:nowrap;text-align:right}
+  table.cmpt th{color:var(--ink-dim);font-weight:600;text-transform:uppercase;font-size:9.5px;letter-spacing:.04em}
+  table.cmpt td:first-child,table.cmpt th:first-child{text-align:left;max-width:260px;overflow:hidden;text-overflow:ellipsis}
+  .cmp-empty{color:var(--ink-dim);font-size:12.5px;padding:16px 4px}
 
   /* ---- table ---- */
   .wrap{overflow-x:auto}
@@ -210,6 +227,7 @@
     <div class="fld"><label>&nbsp;</label><button class="pri" id="recompute">Recompute</button></div>
     <div class="fld"><label>&nbsp;</label><button id="maxrange">Max range</button></div>
     <div class="fld"><label>&nbsp;</label><button id="fetch">Fetch AMFI ↻</button></div>
+    <div class="fld"><label>&nbsp;</label><button id="compare" title="Overlay the ticked funds on one chart">Compare <span id="cmpN">(0)</span></button></div>
     <div class="fld"><label>&nbsp;</label><button id="csv">Export CSV</button></div>
     <div class="fld"><label>&nbsp;</label><button id="theme" class="ghost" title="Toggle light / dark">☾ Theme</button></div>
   </div>
@@ -221,6 +239,13 @@
 </header>
 
 <div id="drop"><div class="box">Drop a raw AMFI file<br><span class="sub">NAVAll.txt or a NAV History report — columns mapped by header name</span></div></div>
+
+<div id="cmp"><div class="cmp-in">
+  <div class="cmp-hd"><b>Compare funds</b> <span class="sub" id="cmpSub"></span>
+    <span style="flex:1"></span>
+    <button id="cmpClear" class="ghost">Clear</button><button id="cmpClose">Close ✕</button></div>
+  <div id="cmpBody"></div>
+</div></div>
 
 <div class="wrap">
   <table>
@@ -365,7 +390,34 @@ const SIFMetrics = (function(){
     res.rfytd = ret((mo>=4?yr:yr-1)+'-03-31');
     return res;
   }
-  const api={compute, windowSeries, daysBetween, periodReturns};
+  // Up/Down capture vs a benchmark: on days the index rose, what fraction of the index's
+  // move did the fund capture (and likewise on down days). series = windowed [[date,nav]];
+  // benchByDate = {date: indexClose}. up = Σ fundRet(up days) / Σ indexRet(up days) × 100.
+  //  down<100 = fell less than the index; down<0 = actually ROSE when the index fell.
+  function captureRatios(series, benchByDate){
+    const res={upCapture:null,downCapture:null,upDays:0,downDays:0,beta:null};
+    if(!series || series.length<3 || !benchByDate) return res;
+    let un=0,ud=0,dn=0,dd=0,uc=0,dc=0;
+    let sxy=0,sxx=0,mfr=0,mbr=0,nn=0;
+    const frs=[],brs=[];
+    for(let i=1;i<series.length;i++){
+      const b0=benchByDate[series[i-1][0]], b1=benchByDate[series[i][0]];
+      if(b0==null||b1==null) continue;
+      const fr=series[i][1]/series[i-1][1]-1, br=b1/b0-1;
+      frs.push(fr); brs.push(br); mfr+=fr; mbr+=br; nn++;
+      if(br>0){ un+=fr; ud+=br; uc++; }
+      else if(br<0){ dn+=fr; dd+=br; dc++; }
+    }
+    if(nn>1){ mfr/=nn; mbr/=nn;
+      for(let i=0;i<nn;i++){ sxy+=(brs[i]-mbr)*(frs[i]-mfr); sxx+=(brs[i]-mbr)*(brs[i]-mbr); }
+      if(sxx>0) res.beta=sxy/sxx;
+    }
+    res.upDays=uc; res.downDays=dc;
+    res.upCapture = ud!==0 ? (un/ud)*100 : null;
+    res.downCapture = dd!==0 ? (dn/dd)*100 : null;
+    return res;
+  }
+  const api={compute, windowSeries, daysBetween, periodReturns, captureRatios};
   if(typeof module!=='undefined' && module.exports) module.exports=api;
   return api;
 })();
@@ -382,6 +434,9 @@ const SIFMetrics = (function(){
   const openSet=new Set();
   let PORT=null;             // portfolios/index.json {periods, amcs, schemes:{code:{periods:{}}}}
   const portCache=new Map(); // period-file path -> fetched fund JSON
+  let BENCH=null;            // {date: NIFTY-50 close} for up/down capture
+  let BENCHNAME='NIFTY 50';
+  const compareSet=new Set();// scheme codes selected for the compare chart
 
   // ---- strategy grouping ----
   const GROUPS=[
@@ -436,6 +491,8 @@ const SIFMetrics = (function(){
     {k:'recovery', label:'Recovery', cls:'r num', sortable:true, val:r=>recVal(r.m), fmt:r=>recFmt(r.m)},
     {k:'winRate', label:'Win %', cls:'r num', sortable:true, val:r=>r.m.winRate, fmt:r=>band(r.m.winRate,1,BAND.win)},
     {k:'gainPain', label:'G/P', cls:'r num', sortable:true, val:r=>r.m.gainPain, fmt:r=>band(r.m.gainPain,2,BAND.gp)},
+    {k:'upCapture', label:'Up Cap %', cls:'r num', sortable:true, val:r=>r.m.upCapture, fmt:r=>num(r.m.upCapture,0)},
+    {k:'downCapture', label:'Dn Cap %', cls:'r num', sortable:true, val:r=>r.m.downCapture, fmt:r=>capDD(r.m.downCapture)},
     {k:'uw', label:'Underwater', cls:'r', sortable:false, val:r=>0, fmt:r=>sparkUW(r.m)},
   ];
 
@@ -464,6 +521,8 @@ const SIFMetrics = (function(){
     recovery:'Days taken to climb back to the previous peak after the worst fall. "not rec." = not yet recovered.',
     winRate:'Share of days the fund went up. Above 50% means more up-days than down.',
     gainPain:'Gain-to-pain: total gains divided by total losses. Above 1 means gains outweighed losses.',
+    upCapture:'Up capture vs NIFTY 50: on days the index rose, the fund captured this % of the index’s gain. 100 = matched the market; lower = rose less (typical for a hedged long-short fund).',
+    downCapture:'Down capture vs NIFTY 50: on days the index fell, the fund moved this % of the index’s fall. Below 100 = fell less than the market; below 0 = actually ROSE when the market fell (ideal for long-short).',
     uw:'Underwater curve: how far below its last peak the fund was, over time.',
   };
 
@@ -503,6 +562,15 @@ const SIFMetrics = (function(){
     const c=darkMode()?'255,125,144':'240,104,127';
     return '<span class="num" style="display:inline-block;min-width:44px;padding:1px 5px;border-radius:2px;background:rgba('+c+','+a.toFixed(3)+')">'+v.toFixed(2)+'</span>'; }
 
+  // down-capture: lower is better; <=0 (rose while market fell) is ideal -> greens; >100 -> red
+  function capDD(v){ if(v==null||!isFinite(v)) return na;
+    const g=darkMode()?'95,223,154':'75,210,138', rd=darkMode()?'255,125,144':'240,104,127';
+    let bg;
+    if(v<=0) bg='rgba('+g+','+(darkMode()?.52:.5)+')';
+    else if(v<100) bg='rgba('+g+','+(0.30*(1-v/100)+0.05).toFixed(3)+')';
+    else bg='rgba('+rd+','+Math.min(.32,(v-100)/300+0.08).toFixed(3)+')';
+    return '<span class="num" style="display:inline-block;min-width:40px;padding:1px 5px;border-radius:2px;background:'+bg+'">'+v.toFixed(0)+'</span>'; }
+
   // inline underwater sparkline -----------------------------------------
   function sparkUW(m){
     const uw=m.underwater||[]; const W=104,H=22;
@@ -538,6 +606,7 @@ const SIFMetrics = (function(){
       // trailing returns anchored at the window To (independent of From)
       const anchor = to || (s.series.length? s.series[s.series.length-1][0] : null);
       Object.assign(m, M.periodReturns(s.series, anchor));
+      Object.assign(m, M.captureRatios(w, BENCH));   // up/down capture vs NIFTY 50
       return {code:s.code, name:s.name, cat:s.cat, sif:s.sif, isin:s.isin,
               group:groupOf(s.cat), m, minobs,
               mine: myrx?myrx.test(s.name):false};
@@ -621,9 +690,13 @@ const SIFMetrics = (function(){
     const meta=amcMetaFor(r.sif);
     const parent=(meta&&meta.parent)?' <span class="parent">'+esc(shortParent(meta.parent))+'</span>':'';
     const badge=(PORT&&PORT.schemes&&PORT.schemes[r.code])?' <span class="pbadge" title="Portfolio holdings disclosed">▣</span>':'';
-    first.innerHTML='<span class="caret">▶</span> <span class="amc">'+esc(r.sif||sn.head)+'</span>'+parent+badge+
+    first.innerHTML='<input type="checkbox" class="cmp" title="Add to compare chart"'+(compareSet.has(r.code)?' checked':'')+'>'+
+      '<span class="caret">▶</span> <span class="amc">'+esc(r.sif||sn.head)+'</span>'+parent+badge+
       (sn.plan?' <span class="plan">'+esc(sn.plan)+'</span>':'');
-    first.title=r.name; first.onclick=()=>toggle(r.code);
+    first.title=r.name;
+    const cb=first.querySelector('.cmp');
+    cb.onclick=e=>{ e.stopPropagation(); if(cb.checked)compareSet.add(r.code); else compareSet.delete(r.code); updateCompareBtn(); };
+    first.onclick=e=>{ if(e.target!==cb) toggle(r.code); };
     tr.appendChild(first);
     for(let i=1;i<COLS.length;i++){
       const c=COLS[i]; const td=document.createElement('td'); td.className=c.cls.replace('num','')+' num';
@@ -784,6 +857,57 @@ const SIFMetrics = (function(){
     return head+'<div class="pgrid"><div>'+holds+'</div><div>'+alloc+ls+sec+'</div></div>';
   }
 
+  // ---- compare chart (overlay selected funds, rebased to 100, vs NIFTY 50) ----
+  const CMP_PAL=['#5b5bf0','#0e9aa7','#d9820b','#12a150','#e5484d','#8b5cf6','#c026d3','#0891b2','#65a30d','#db2777'];
+  function updateCompareBtn(){ const n=compareSet.size; $('#cmpN').textContent='('+n+')';
+    $('#compare').classList.toggle('pri', n>0); }
+  function openCompare(){ $('#cmp').classList.add('on'); renderCompare(); }
+  function closeCompare(){ $('#cmp').classList.remove('on'); }
+  function renderCompare(){
+    const body=$('#cmpBody'); if(!DATA){ body.innerHTML=''; return; }
+    const from=$('#from').value,to=$('#to').value;
+    const D=+$('#days').value||252, Rf=+$('#rf').value||0, recoveryMode=$('#recmode').value;
+    $('#cmpSub').textContent = from+' → '+to+' · NAV rebased to 100 · vs '+BENCHNAME;
+    const codes=[...compareSet];
+    if(!codes.length){ body.innerHTML='<div class="cmp-empty">Tick the checkbox on any fund rows, then reopen Compare — overlay as many as you like against '+esc(BENCHNAME)+'. Lines are each fund’s NAV rebased to 100 at the start of your date window.</div>'; return; }
+    const items=[];
+    codes.forEach((code,i)=>{ const s=DATA.schemes.find(x=>x.code===code); if(!s) return;
+      const w=M.windowSeries(s.series, from, to); if(w.length<2) return;
+      const m=M.compute(w,{D,Rf,recoveryMode}); Object.assign(m,M.captureRatios(w,BENCH));
+      items.push({code,name:s.name,sif:s.sif,color:CMP_PAL[i%CMP_PAL.length],w,m}); });
+    let bench=null;
+    if(BENCH){ const bw=Object.keys(BENCH).filter(d=>(!from||d>=from)&&(!to||d<=to)).sort().map(d=>[d,BENCH[d]]);
+      if(bw.length>1) bench={name:BENCHNAME,sif:BENCHNAME,color:'#94a3b8',w:bw,isBench:true}; }
+    const lines=items.concat(bench?[bench]:[]);
+    if(!lines.length){ body.innerHTML='<div class="cmp-empty">No data for the selected funds in this window.</div>'; return; }
+    let dmin=null,dmax=null;
+    lines.forEach(L=>{ const a=L.w[0][0],b=L.w[L.w.length-1][0]; if(!dmin||a<dmin)dmin=a; if(!dmax||b>dmax)dmax=b; });
+    const span=Math.max(1,M.daysBetween(dmin,dmax));
+    const W=940,H=360,P=34; let vmin=1e9,vmax=-1e9;
+    lines.forEach(L=>{ const base=L.w[0][1]; L.pts=L.w.map(p=>[M.daysBetween(dmin,p[0])/span,(p[1]/base)*100]);
+      L.pts.forEach(q=>{ if(q[1]<vmin)vmin=q[1]; if(q[1]>vmax)vmax=q[1]; }); });
+    const pad=(vmax-vmin)*0.08||1; vmin-=pad; vmax+=pad;
+    const X=t=>P+t*(W-2*P), Y=v=>P+(H-2*P)*(1-(v-vmin)/(vmax-vmin));
+    let svg='<svg width="100%" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" style="max-height:58vh">';
+    svg+='<line x1="'+P+'" x2="'+(W-P)+'" y1="'+Y(100).toFixed(1)+'" y2="'+Y(100).toFixed(1)+'" stroke="var(--line2)" stroke-dasharray="3 3"/>'+
+      '<text x="'+(P-4)+'" y="'+(Y(100)+3).toFixed(1)+'" text-anchor="end" font-size="9" fill="var(--ink-faint)">100</text>';
+    lines.forEach(L=>{ let d=''; L.pts.forEach((q,i)=>{ d+=(i?'L':'M')+X(q[0]).toFixed(1)+' '+Y(q[1]).toFixed(1)+' '; });
+      svg+='<path d="'+d+'" fill="none" stroke="'+L.color+'" stroke-width="'+(L.isBench?1.3:1.7)+'"'+(L.isBench?' stroke-dasharray="5 4"':'')+'/>'; });
+    svg+='<text x="'+P+'" y="'+(H-8)+'" font-size="9" fill="var(--ink-faint)">'+shortD(dmin)+'</text>'+
+      '<text x="'+(W-P)+'" y="'+(H-8)+'" text-anchor="end" font-size="9" fill="var(--ink-faint)">'+shortD(dmax)+'</text></svg>';
+    const legend='<div class="cmp-legend">'+lines.map(L=>'<span class="lg"><span class="sw2" style="background:'+L.color+'"></span>'+
+      esc(L.sif)+(L.isBench?'':' <span class="sub">'+esc(splitName(L.name).plan||'')+'</span>')+'</span>').join('')+'</div>';
+    const g=x=>x==null||!isFinite(x)?'—':(Math.abs(x)>=100?x.toFixed(0):x.toFixed(2));
+    let tbl='<table class="cmpt"><thead><tr><th>Fund</th><th>Total %</th><th>Ann Ret %</th><th>Ann Std %</th><th>Sharpe</th><th>Max DD %</th><th>Up Cap</th><th>Dn Cap</th></tr></thead><tbody>';
+    items.forEach(L=>{ const m=L.m;
+      tbl+='<tr><td><span class="sw2" style="background:'+L.color+';display:inline-block;width:12px;margin-right:6px"></span>'+
+        esc(L.sif)+' '+esc(splitName(L.name).plan||'')+'</td><td class="num">'+g(m.totalRet)+'</td><td class="num">'+g(m.annRet)+
+        '</td><td class="num">'+g(m.annStd)+'</td><td class="num">'+g(m.sharpe)+'</td><td class="num">'+g(m.maxDD)+
+        '</td><td class="num">'+g(m.upCapture)+'</td><td class="num">'+g(m.downCapture)+'</td></tr>'; });
+    tbl+='</tbody></table>';
+    body.innerHTML=legend+svg+tbl;
+  }
+
   // ---- helpers ----
   function esc(s){ return (''+s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
   const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -806,16 +930,16 @@ const SIFMetrics = (function(){
 
   // ---- CSV export ----
   function exportCSV(){
-    const cols=['group','sif','name','code','isin','rangeFrom','rangeTo','obs',
-      'ret1d','ret1w','retMTD','ret1m','totalRet','avgDaily',
+    const cols=['group','sif','parent','name','code','isin','rangeFrom','rangeTo','obs',
+      'ret1d','ret1w','retMTD','ret1m','ret2m','ret3m','ret6m','retYTD','retFYTD','totalRet','avgDaily',
       'annRet','annStd','sharpe','sortino','calmar','maxDD','maxRU','recovery','recovered',
-      'winRate','gainPain','cagr'];
+      'winRate','gainPain','upCapture','downCapture','cagr'];
     const lines=[cols.join(',')];
-    ROWS.forEach(r=>{ const m=r.m;
-      const row=[r.group.label,r.sif,r.name,r.code,r.isin,m.rangeFrom,m.rangeTo,m.obs,
-        f(m.r1d),f(m.r1w),f(m.rmtd),f(m.r1m),f(m.totalRet),f(m.avgDaily),
+    ROWS.forEach(r=>{ const m=r.m; const pm=amcMetaFor(r.sif);
+      const row=[r.group.label,r.sif,(pm&&pm.parent)||'',r.name,r.code,r.isin,m.rangeFrom,m.rangeTo,m.obs,
+        f(m.r1d),f(m.r1w),f(m.rmtd),f(m.r1m),f(m.r2m),f(m.r3m),f(m.r6m),f(m.rytd),f(m.rfytd),f(m.totalRet),f(m.avgDaily),
         f(m.annRet),f(m.annStd),f(m.sharpe),f(m.sortino),f(m.calmar),f(m.maxDD),f(m.maxRU),
-        (m.maxDD<=0?'':m.recovery),m.recovered,f(m.winRate),f(m.gainPain),f(m.cagr)]
+        (m.maxDD<=0?'':m.recovery),m.recovered,f(m.winRate),f(m.gainPain),f(m.upCapture),f(m.downCapture),f(m.cagr)]
         .map(x=>{ x=(x==null?'':''+x); return /[",\n]/.test(x)?'"'+x.replace(/"/g,'""')+'"':x; });
       lines.push(row.join(','));
     });
@@ -890,6 +1014,12 @@ const SIFMetrics = (function(){
           ') — run <code>python fetch_amfi_sif.py --serve</code> then open via http://127.0.0.1:8765/sif_dashboard.html, or drag a raw AMFI file here.';
       });
   }
+  function loadBenchmark(){
+    fetch('benchmark_data.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
+      .then(d=>{ BENCH={}; (d.series||[]).forEach(p=>BENCH[p[0]]=p[1]); BENCHNAME=d.index||'NIFTY 50';
+        if(DATA) recompute(); })
+      .catch(()=>{ BENCH=null; });
+  }
   function loadPortfolios(){
     // optional: the page works fully without it. Refresh open rows once it arrives.
     fetch('portfolios/index.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
@@ -925,6 +1055,11 @@ const SIFMetrics = (function(){
 
   $('#recompute').onclick=recompute;
   $('#csv').onclick=exportCSV;
+  $('#compare').onclick=openCompare;
+  $('#cmpClose').onclick=closeCompare;
+  $('#cmpClear').onclick=()=>{ compareSet.clear(); updateCompareBtn(); render(); renderCompare(); };
+  $('#cmp').addEventListener('click',e=>{ if(e.target.id==='cmp') closeCompare(); });
+  window.addEventListener('keydown',e=>{ if(e.key==='Escape') closeCompare(); });
   $('#fetch').onclick=doFetch;
   $('#maxrange').onclick=()=>{ if(DATA){ $('#from').value=DATA.dataFrom; $('#to').value=DATA.dataTo; recompute(); } };
   ['from','to','rf','days','minobs','recmode','strat','plan','opt','myrx','search'].forEach(id=>{
@@ -953,5 +1088,6 @@ const SIFMetrics = (function(){
 
   loadJSON();
   loadPortfolios();
+  loadBenchmark();
 })();
 </script>

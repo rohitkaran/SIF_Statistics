@@ -53,6 +53,11 @@ jobs:
             --out nav_data.json \
           || echo "::warning::AMFI NAV fetch failed — keeping last committed nav_data.json"
 
+      - name: Fetch NIFTY 50 benchmark (for up/down capture)
+        run: |
+          python fetch_benchmark.py --to "$(date -u +%F)" \
+          || echo "::warning::benchmark fetch failed — keeping last committed benchmark_data.json"
+
       - name: Fetch portfolio disclosures (monthly cron or manual)
         # Skipped on the daily NAV cron and on plain pushes, so portfolios refresh ~monthly.
         if: ${{ github.event.schedule == '0 15 5 * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.portfolios != 'false') }}
@@ -67,7 +72,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nav_data.json portfolios/ 2>/dev/null || true
+          git add nav_data.json benchmark_data.json portfolios/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

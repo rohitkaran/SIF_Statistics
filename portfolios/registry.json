@@ -91,6 +91,18 @@
         {"period": "2026-06", "as_of": "2026-06-30", "url": "https://www.icicipruamc.com/blob/downloads/Files/Monthly Portfolio Disclosures/2026/June/SIF/iSIF Monthly-Portfolio-Disclosure-June-2026.zip"}
       ]}
     },
+    "altiva": {
+      "brand": "Altiva", "name": "Altiva SIF", "parent": "Edelweiss Asset Management",
+      "site": "https://www.edelweissmf.com/altivasif",
+      "disclosure_page": "https://www.edelweissmf.com/altivasif/statutory/disclosures",
+      "presentation": "",
+      "managers": "",
+      "strategy": "A hybrid long-short fund mixing equities, debt and derivatives — holding stocks it expects to rise while hedging/shorting via derivatives, with a debt sleeve for steadier income; aims for equity-like returns with lower volatility.",
+      "nav_sif": "Altiva SIF", "adapter": "sebi_xlsx",
+      "discovery": {"method": "manual", "_note": "Akamai WAF blocks curl -- fetch via browser same-origin. Only Oct-2025 Hybrid portfolio disclosed so far.", "files": [
+        {"period": "2025-10", "as_of": "2025-10-31", "url": "https://www.edelweissmf.com/altivaSIF/docs/Edelweiss%20MF_Altiva%20Equity%20Hybrid%20Long%20Short%20Fund%20Portfolio%20Monthly%20Notes%2031-October-2025_12112025_104710_AM.xlsx"}
+      ]}
+    },
     "diviniti": {
       "brand": "Diviniti", "name": "Diviniti SIF", "parent": "ITI Asset Management",
       "site": "https://sif.itiamc.com",

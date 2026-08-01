@@ -1,7 +1,8 @@
 {
- "generated": "2026-08-01T05:54:10+00:00",
+ "generated": "2026-08-01T06:15:17+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
+  "2025-10",
   "2026-05",
   "2026-06"
  ],
@@ -60,6 +61,17 @@
    "managers": "Rajat Chandak, Ayush Shah, Manish Banthia, Akhil Kakkar",
    "strategy": "Mostly buys equities for growth while holding debt for steadier income, using derivatives to take limited short bets against stocks/bonds it expects to fall.",
    "presentation": "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/April/Filing%20date%2017-04-2026/Release%20date%2014-04-2026/Advertisements/Annexure%206%20-%20iSIF%20Factsheet.PDF"
+  },
+  "altiva": {
+   "name": "Altiva SIF",
+   "brand": "Altiva",
+   "parent": "Edelweiss Asset Management",
+   "site": "https://www.edelweissmf.com/altivasif",
+   "nav_sif": "Altiva SIF",
+   "disclosure_page": "https://www.edelweissmf.com/altivasif/statutory/disclosures",
+   "managers": "",
+   "strategy": "A hybrid long-short fund mixing equities, debt and derivatives — holding stocks it expects to rise while hedging/shorting via derivatives, with a debt sleeve for steadier income; aims for equity-like returns with lower volatility.",
+   "presentation": ""
   },
   "diviniti": {
    "name": "Diviniti SIF",
@@ -184,6 +196,38 @@
   }
  },
  "schemes": {
+  "SIF-9": {
+   "name": "Altiva Hybrid Long-Short Fund",
+   "amc": "altiva",
+   "fund": "Altiva Hybrid Long-Short Fund",
+   "periods": {
+    "2025-10": "portfolios/data/2025-10/altiva__AEHYLS.json"
+   }
+  },
+  "SIF-10": {
+   "name": "Altiva Hybrid Long-Short Fund",
+   "amc": "altiva",
+   "fund": "Altiva Hybrid Long-Short Fund",
+   "periods": {
+    "2025-10": "portfolios/data/2025-10/altiva__AEHYLS.json"
+   }
+  },
+  "SIF-11": {
+   "name": "Altiva Hybrid Long-Short Fund",
+   "amc": "altiva",
+   "fund": "Altiva Hybrid Long-Short Fund",
+   "periods": {
+    "2025-10": "portfolios/data/2025-10/altiva__AEHYLS.json"
+   }
+  },
+  "SIF-12": {
+   "name": "Altiva Hybrid Long-Short Fund",
+   "amc": "altiva",
+   "fund": "Altiva Hybrid Long-Short Fund",
+   "periods": {
+    "2025-10": "portfolios/data/2025-10/altiva__AEHYLS.json"
+   }
+  },
   "SIF-83": {
    "name": "Apex Hybrid Long-Short Fund",
    "amc": "apex",
