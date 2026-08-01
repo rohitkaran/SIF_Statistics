@@ -423,7 +423,7 @@ const SIFMetrics = (function(){
   //  1D  = vs previous trading day · 1W = vs last NAV on/before asOf-7d
   //  MTD = vs last NAV of the prior month · 1M = vs last NAV on/before asOf-1 calendar month
   function periodReturns(series, asOf){
-    const res={r1d:null,r1w:null,rmtd:null,r1m:null,r2m:null,r3m:null,r6m:null,rytd:null,rfytd:null,asOf:null};
+    const res={r1d:null,r1w:null,rwtd:null,rmtd:null,r1m:null,r2m:null,r3m:null,r6m:null,rytd:null,rfytd:null,asOf:null};
     if(!series || series.length<2) return res;
     let ai = asOf ? idxOnOrBefore(series, asOf) : series.length-1;
     if(ai<1) return res;
@@ -431,6 +431,10 @@ const SIFMetrics = (function(){
     const ret = target => { const k=idxOnOrBefore(series, target); return (k>=0&&k<ai)?(aNav/series[k][1]-1)*100:null; };
     res.r1d=(aNav/series[ai-1][1]-1)*100;
     res.r1w = ret(addDays(aDate,-7));
+    // WTD: vs the last NAV of the previous week (the day before this week's Monday)
+    const _p=aDate.split('-').map(Number), _d=new Date(Date.UTC(_p[0],_p[1]-1,_p[2])), _dow=_d.getUTCDay();
+    const _mon=new Date(_d.getTime()-((_dow===0?6:_dow-1))*86400000).toISOString().slice(0,10);
+    res.rwtd = ret(addDays(_mon,-1));
     let mb=idxOnOrBefore(series, addDays(monthStart(aDate),-1)); if(mb<0) mb=0;
     if(mb<ai) res.rmtd=(aNav/series[mb][1]-1)*100;
     res.r1m = ret(addMonths(aDate,-1));
@@ -527,6 +531,7 @@ const SIFMetrics = (function(){
     {k:'obs', label:'Obs', cls:'r num', sortable:true, val:r=>r.m.obs, fmt:r=>fmtObs(r)},
     {k:'r1d', label:'1D %', cls:'r num', sortable:true, val:r=>r.m.r1d, fmt:r=>signed(r.m.r1d,2)},
     {k:'r1w', label:'1W %', cls:'r num', sortable:true, val:r=>r.m.r1w, fmt:r=>signed(r.m.r1w,2)},
+    {k:'rwtd', label:'WTD %', cls:'r num', sortable:true, val:r=>r.m.rwtd, fmt:r=>signed(r.m.rwtd,2)},
     {k:'rmtd', label:'MTD %', cls:'r num', sortable:true, val:r=>r.m.rmtd, fmt:r=>signed(r.m.rmtd,2)},
     {k:'r1m', label:'1M %', cls:'r num', sortable:true, val:r=>r.m.r1m, fmt:r=>signed(r.m.r1m,2)},
     {k:'r2m', label:'2M %', cls:'r num', sortable:true, val:r=>r.m.r2m, fmt:r=>signed(r.m.r2m,2)},
@@ -557,6 +562,7 @@ const SIFMetrics = (function(){
     obs:'Number of daily NAVs in the window. ▲ = fewer than "Min obs" (too little data to trust the ratios).',
     r1d:'Return over the last 1 trading day.',
     r1w:'Return over the last 1 week (7 calendar days).',
+    rwtd:'Week-to-date: return since the close of last week (this week so far).',
     rmtd:'Month-to-date: return since the end of last month.',
     r1m:'Return over the last 1 month.',
     r2m:'Return over the last 2 months.',
@@ -583,7 +589,7 @@ const SIFMetrics = (function(){
   // table stays readable; the user can show/hide any column on any device.
   // Phones start showing just these 4 (fit the screen, no side-scroll): 1M, Total, Sharpe, Dn Cap.
   // Users swap in any timeframe/metric via the Columns picker, or open Compare for the full matrix.
-  const MOBILE_HIDE=['rangeFrom','obs','r1d','r1w','rmtd','r2m','r3m','r6m','rytd','rfytd',
+  const MOBILE_HIDE=['rangeFrom','obs','r1d','r1w','rwtd','rmtd','r2m','r3m','r6m','rytd','rfytd',
     'annRet','annStd','sortino','calmar','maxDD','maxRU','recovery','winRate','gainPain','upCapture','uw'];
   let hiddenCols=new Set();
 
@@ -992,8 +998,9 @@ const SIFMetrics = (function(){
       esc(L.sif)+(L.isBench?'':' <span class="sub">'+esc(splitName(L.name).plan||'')+'</span>')+'</span>').join('')+'</div>';
     const g=x=>x==null||!isFinite(x)?'—':(Math.abs(x)>=100?x.toFixed(0):x.toFixed(2));
     // full timeframe × metric comparison matrix (funds = rows)
-    const CMPCOLS=[['r1m','1M %'],['r3m','3M %'],['r6m','6M %'],['rytd','YTD %'],['rfytd','FYTD %'],
-      ['totalRet','Total %'],['annStd','Ann Std %'],['sharpe','Sharpe'],['sortino','Sortino'],
+    const CMPCOLS=[['r1d','1D %'],['r1w','1W %'],['rwtd','WTD %'],['rmtd','MTD %'],['r1m','1M %'],
+      ['r3m','3M %'],['r6m','6M %'],['rytd','YTD %'],['rfytd','FYTD %'],['totalRet','Total %'],
+      ['annStd','Ann Std %'],['sharpe','Sharpe'],['sortino','Sortino'],
       ['maxDD','Max DD %'],['upCapture','Up Cap'],['downCapture','Dn Cap']];
     let tbl='<div class="cmpt-wrap"><table class="cmpt"><thead><tr><th>Fund</th>'+
       CMPCOLS.map(c=>'<th>'+c[1]+'</th>').join('')+'</tr></thead><tbody>';
@@ -1159,7 +1166,7 @@ const SIFMetrics = (function(){
     const c=h.classList.toggle('collapsed'); $('#filtToggle').setAttribute('aria-expanded',(!c).toString()); };
 
   // ---- Columns picker: choose which metric/timeframe columns to compare ----
-  const CPRESETS={ returns:['r1m','r3m','r6m','rytd','rfytd','totalRet'],
+  const CPRESETS={ returns:['r1d','r1w','rwtd','rmtd','r1m','r3m','r6m','rytd','rfytd','totalRet'],
                    risk:['sharpe','sortino','calmar','maxDD','downCapture','upCapture'] };
   function pickable(){ return COLS.filter(c=>c.k!=='name'&&c.k!=='uw'); }
   function updateColSum(){ const shown=pickable().filter(c=>!hiddenCols.has(c.k)).length;
