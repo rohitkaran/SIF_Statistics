@@ -190,7 +190,12 @@
       "presentation": "", "managers": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
       "strategy": "Quant's VLRT-driven long-short strategies that buy stocks expected to rise and short those expected to fall across equity, hybrid, ex-top-100, sector-rotation and asset-allocator mandates.",
       "nav_sif": "qsif SIF", "adapter": "sebi_xlsx",
-      "discovery": {"method": "manual", "_note": "Funds opened 31-Jul-2026; no portfolio disclosed yet. Re-check ~Sep 2026.", "files": []}
+      "discovery": {"method": "manual", "_note": "One of the oldest SIFs (NAVs from Oct 2025); discloses bi-monthly (Jan/Mar/May 2026...). Files under /Admin/disclouser/ (curl-able) but the listing is a JS accordion year>month>fund; URLs pinned per period.", "files": [
+        {"period": "2026-05", "as_of": "2026-05-29", "url": "https://www.qsif.com/Admin/disclouser/qSIF_EQUITY_LONG_SHORT_FUND_29-May_2026.xlsx"},
+        {"period": "2026-05", "as_of": "2026-05-29", "url": "https://www.qsif.com/Admin/disclouser/qSIF_HYBRID_LONG-SHORT_FUND_29-May_2026.xlsx"},
+        {"period": "2026-05", "as_of": "2026-05-29", "url": "https://www.qsif.com/Admin/disclouser/qSIF_EQUITY_EX_TOP_100_LONG-SHORT_FUND_29-May_2026.xlsx"},
+        {"period": "2026-05", "as_of": "2026-05-29", "url": "https://www.qsif.com/Admin/disclouser/qSIF_ACTIVE_ASSET_ALLOCATOR_LONG-SHORT_FUND_29-May_2026.xlsx"}
+      ]}
     },
     "summit": {
       "brand": "Summit", "name": "Summit SIF", "parent": "Invesco Asset Management India",

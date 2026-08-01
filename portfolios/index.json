@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-01T06:15:17+00:00",
+ "generated": "2026-08-01T06:45:38+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2025-10",
@@ -338,6 +338,134 @@
    "fund": "DynaSIF Active Asset Allocator Long- Short Fund",
    "periods": {
     "2026-05": "portfolios/data/2026-05/dynasif__DS02.json"
+   }
+  },
+  "SIF-92": {
+   "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "amc": "quant",
+   "fund": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__QSIF_ACTIVE_ASSET_ALLOCATOR_LON.json"
+   }
+  },
+  "SIF-91": {
+   "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "amc": "quant",
+   "fund": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__QSIF_ACTIVE_ASSET_ALLOCATOR_LON.json"
+   }
+  },
+  "SIF-90": {
+   "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "amc": "quant",
+   "fund": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__QSIF_ACTIVE_ASSET_ALLOCATOR_LON.json"
+   }
+  },
+  "SIF-93": {
+   "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "amc": "quant",
+   "fund": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__QSIF_ACTIVE_ASSET_ALLOCATOR_LON.json"
+   }
+  },
+  "SIF-23": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_EX_TOP_100_LONG-SHO.json"
+   }
+  },
+  "SIF-25": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_EX_TOP_100_LONG-SHO.json"
+   }
+  },
+  "SIF-24": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_EX_TOP_100_LONG-SHO.json"
+   }
+  },
+  "SIF-26": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_EX_TOP_100_LONG-SHO.json"
+   }
+  },
+  "SIF-1": {
+   "name": "qsif Equity Long Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Long Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_LONG_SHORT_FUND.json"
+   }
+  },
+  "SIF-3": {
+   "name": "qsif Equity Long Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Long Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_LONG_SHORT_FUND.json"
+   }
+  },
+  "SIF-2": {
+   "name": "qsif Equity Long Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Long Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_LONG_SHORT_FUND.json"
+   }
+  },
+  "SIF-4": {
+   "name": "qsif Equity Long Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Equity Long Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_EQUITY_LONG_SHORT_FUND.json"
+   }
+  },
+  "SIF-5": {
+   "name": "qsif Hybrid Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Hybrid Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_HYBRID_LONG-SHORT_FUND.json"
+   }
+  },
+  "SIF-7": {
+   "name": "qsif Hybrid Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Hybrid Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_HYBRID_LONG-SHORT_FUND.json"
+   }
+  },
+  "SIF-6": {
+   "name": "qsif Hybrid Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Hybrid Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_HYBRID_LONG-SHORT_FUND.json"
+   }
+  },
+  "SIF-8": {
+   "name": "qsif Hybrid Long-Short Fund - Growth Option",
+   "amc": "quant",
+   "fund": "qsif Hybrid Long-Short Fund - Growth Option",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/quant__qSIF_HYBRID_LONG-SHORT_FUND.json"
    }
   },
   "SIF-95": {

@@ -1,0 +1,380 @@
+{
+ "amc": "quant",
+ "fund_code": "qSIF_HYBRID_LONG-SHORT_FUND",
+ "fund_name": "qsif Hybrid Long-Short Fund - Growth Option",
+ "period": "2026-05",
+ "as_of": "2026-05-29",
+ "source_url": "https://www.qsif.com/Admin/disclouser/qSIF_HYBRID_LONG-SHORT_FUND_29-May_2026.xlsx",
+ "raw": "portfolios/raw/quant/2026-05/qSIF_HYBRID_LONG-SHORT_FUND_29-May_2026.xlsx",
+ "fetched": "2026-08-01T06:45:38+00:00",
+ "net_assets_cr": 1.58,
+ "n_holdings": 21,
+ "allocation": {
+  "equity": 4412.08,
+  "debt": 613.72,
+  "money_market": 5104.03,
+  "cash_other": 0.0
+ },
+ "sectors": [
+  {
+   "sector": "Power",
+   "weight": 853.3252
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 850.9543
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 751.5874
+  },
+  {
+   "sector": "Realty",
+   "weight": 654.9027
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 502.3506
+  },
+  {
+   "sector": "Auto Components",
+   "weight": 296.7433
+  },
+  {
+   "sector": "Banks",
+   "weight": 207.3141
+  },
+  {
+   "sector": "Chemicals & Petrochemicals",
+   "weight": 184.0523
+  },
+  {
+   "sector": "Healthcare Equipment & Supplies",
+   "weight": 110.8459
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "TREPS 01-Jun-2026 DEPO 10",
+   "isin": "INCBLO010626",
+   "sector": "N.A.",
+   "qty": 26979.5,
+   "mv_cr": 26.9716,
+   "weight": 1708.3766,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "SIDBI CD 27-Oct-2026",
+   "isin": "INE556F16BN1",
+   "sector": "N.A.",
+   "qty": 1500000.0,
+   "mv_cr": 14.5289,
+   "weight": 920.258,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 89812.0,
+   "mv_cr": 11.866,
+   "weight": 751.5874,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PTC India Limited",
+   "isin": "INE877F01012",
+   "sector": "Power",
+   "qty": 646768.0,
+   "mv_cr": 11.8456,
+   "weight": 750.2949,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "India Grid Trust (INVIT)",
+   "isin": "INE219X23014",
+   "sector": "Power",
+   "qty": 674846.0,
+   "mv_cr": 11.5689,
+   "weight": 732.7706,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Bagmane Prime Office REIT",
+   "isin": "INE2OVN25015",
+   "sector": "Realty",
+   "qty": 1000050.0,
+   "mv_cr": 10.3395,
+   "weight": 654.9027,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Muthoot Finance Ltd CP 08-Sep-2026",
+   "isin": "INE414G14UT3",
+   "sector": "N.A.",
+   "qty": 1000000.0,
+   "mv_cr": 9.776,
+   "weight": 619.211,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "6.28% GOI 14-July-2032",
+   "isin": "IN0020250059",
+   "sector": "N.A.",
+   "qty": 1000000.0,
+   "mv_cr": 9.6893,
+   "weight": 613.72,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 46403.0,
+   "mv_cr": 8.4871,
+   "weight": 537.5716,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Indus Towers Limited",
+   "isin": "INE121J01017",
+   "sector": "Telecom - Services",
+   "qty": 111925.0,
+   "mv_cr": 4.9476,
+   "weight": 313.3827,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "TREPS 01-Jun-2026 DEPO 10",
+   "isin": "INCBLO010626",
+   "sector": "N.A.",
+   "qty": 26979.5,
+   "mv_cr": 26.9716,
+   "weight": 1708.3766,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "SIDBI CD 27-Oct-2026",
+   "isin": "INE556F16BN1",
+   "sector": "N.A.",
+   "qty": 1500000.0,
+   "mv_cr": 14.5289,
+   "weight": 920.258,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 89812.0,
+   "mv_cr": 11.866,
+   "weight": 751.5874,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PTC India Limited",
+   "isin": "INE877F01012",
+   "sector": "Power",
+   "qty": 646768.0,
+   "mv_cr": 11.8456,
+   "weight": 750.2949,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "India Grid Trust (INVIT)",
+   "isin": "INE219X23014",
+   "sector": "Power",
+   "qty": 674846.0,
+   "mv_cr": 11.5689,
+   "weight": 732.7706,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Bagmane Prime Office REIT",
+   "isin": "INE2OVN25015",
+   "sector": "Realty",
+   "qty": 1000050.0,
+   "mv_cr": 10.3395,
+   "weight": 654.9027,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Muthoot Finance Ltd CP 08-Sep-2026",
+   "isin": "INE414G14UT3",
+   "sector": "N.A.",
+   "qty": 1000000.0,
+   "mv_cr": 9.776,
+   "weight": 619.211,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "6.28% GOI 14-July-2032",
+   "isin": "IN0020250059",
+   "sector": "N.A.",
+   "qty": 1000000.0,
+   "mv_cr": 9.6893,
+   "weight": 613.72,
+   "category": "debt",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 46403.0,
+   "mv_cr": 8.4871,
+   "weight": 537.5716,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Indus Towers Limited",
+   "isin": "INE121J01017",
+   "sector": "Telecom - Services",
+   "qty": 111925.0,
+   "mv_cr": 4.9476,
+   "weight": 313.3827,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Treasury Bill  12-Nov-2026",
+   "isin": "IN002025Z336",
+   "sector": "N.A.",
+   "qty": 500000.0,
+   "mv_cr": 4.8736,
+   "weight": 308.6921,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Tech Mahindra Limited",
+   "isin": "INE669C01036",
+   "sector": "IT - Software",
+   "qty": 32533.0,
+   "mv_cr": 4.8276,
+   "weight": 305.7773,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "364 Days Treasury Bill 06-May-2027",
+   "isin": "IN002026Z052",
+   "sector": "N.A.",
+   "qty": 500000.0,
+   "mv_cr": 4.7356,
+   "weight": 299.9487,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Samvardhana Motherson International Ltd",
+   "isin": "INE775A01035",
+   "sector": "Auto Components",
+   "qty": 321459.0,
+   "mv_cr": 4.6849,
+   "weight": 296.7433,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Citius TransNet Investment Trust (INVIT)",
+   "isin": "INE2Q7823014",
+   "sector": "Transport Infrastructure",
+   "qty": 400000.0,
+   "mv_cr": 4.2428,
+   "weight": 268.738,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Raajmarg Infra Investment Trust  (InvIT)",
+   "isin": "INE2PB023011",
+   "sector": "Transport Infrastructure",
+   "qty": 350009.0,
+   "mv_cr": 3.8844,
+   "weight": 246.037,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Limited",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 26051.0,
+   "mv_cr": 3.273,
+   "weight": 207.3141,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sonata Software Limited",
+   "isin": "INE269A01021",
+   "sector": "IT - Software",
+   "qty": 117068.0,
+   "mv_cr": 3.1035,
+   "weight": 196.5733,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Chemicals Ltd",
+   "isin": "INE092A01019",
+   "sector": "Chemicals & Petrochemicals",
+   "qty": 38335.0,
+   "mv_cr": 2.9058,
+   "weight": 184.0523,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Poly Medicure Limited",
+   "isin": "INE205C01021",
+   "sector": "Healthcare Equipment & Supplies",
+   "qty": 12966.0,
+   "mv_cr": 1.75,
+   "weight": 110.8459,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Green Energy Limited",
+   "isin": "INE364U01010",
+   "sector": "Power",
+   "qty": 11025.0,
+   "mv_cr": 1.6266,
+   "weight": 103.0303,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-5",
+  "SIF-7",
+  "SIF-6",
+  "SIF-8"
+ ],
+ "managers": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+ "strategy": "Quant's VLRT-driven long-short strategies that buy stocks expected to rise and short those expected to fall across equity, hybrid, ex-top-100, sector-rotation and asset-allocator mandates.",
+ "presentation": ""
+}

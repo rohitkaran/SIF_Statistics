@@ -1,0 +1,545 @@
+{
+ "amc": "quant",
+ "fund_code": "qSIF_EQUITY_EX_TOP_100_LONG-SHO",
+ "fund_name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
+ "period": "2026-05",
+ "as_of": "2026-05-29",
+ "source_url": "https://www.qsif.com/Admin/disclouser/qSIF_EQUITY_EX_TOP_100_LONG-SHORT_FUND_29-May_2026.xlsx",
+ "raw": "portfolios/raw/quant/2026-05/qSIF_EQUITY_EX_TOP_100_LONG-SHORT_FUND_29-May_2026.xlsx",
+ "fetched": "2026-08-01T06:45:38+00:00",
+ "net_assets_cr": 2.33,
+ "n_holdings": 34,
+ "allocation": {
+  "equity": 7566.22,
+  "money_market": 2450.59,
+  "cash_other": 0.0
+ },
+ "sectors": [
+  {
+   "sector": "Auto Components",
+   "weight": 1226.5472
+  },
+  {
+   "sector": "Power",
+   "weight": 618.199
+  },
+  {
+   "sector": "Construction",
+   "weight": 591.2037
+  },
+  {
+   "sector": "Industrial Products",
+   "weight": 588.7944
+  },
+  {
+   "sector": "Banks",
+   "weight": 577.7046
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 571.6205
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 570.4624
+  },
+  {
+   "sector": "IT - Services",
+   "weight": 464.0402
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 432.157
+  },
+  {
+   "sector": "Finance",
+   "weight": 293.0727
+  },
+  {
+   "sector": "Industrial Manufacturing",
+   "weight": 269.1656
+  },
+  {
+   "sector": "Agricultural Food & other Products",
+   "weight": 263.9172
+  },
+  {
+   "sector": "Chemicals & Petrochemicals",
+   "weight": 251.466
+  },
+  {
+   "sector": "Healthcare Equipment & Supplies",
+   "weight": 224.4194
+  },
+  {
+   "sector": "Entertainment",
+   "weight": 191.7682
+  },
+  {
+   "sector": "Consumer Durables",
+   "weight": 186.066
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 145.6474
+  },
+  {
+   "sector": "Textiles & Apparels",
+   "weight": 99.9704
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "TREPS 01-Jun-2026 DEPO 10",
+   "isin": "INCBLO010626",
+   "sector": "N.A.",
+   "qty": 44254.4,
+   "mv_cr": 44.2415,
+   "weight": 1897.4401,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "YES Bank Ltd.",
+   "isin": "INE528G01035",
+   "sector": "Banks",
+   "qty": 5818571.0,
+   "mv_cr": 13.47,
+   "weight": 577.7046,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 100879.0,
+   "mv_cr": 13.3281,
+   "weight": 571.6205,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sona BLW Precision Forgings Limited",
+   "isin": "INE073K01018",
+   "sector": "Auto Components",
+   "qty": 218000.0,
+   "mv_cr": 13.2424,
+   "weight": 567.944,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INOX INDIA LIMITED",
+   "isin": "INE616N01034",
+   "sector": "Industrial Products",
+   "qty": 68956.0,
+   "mv_cr": 10.2993,
+   "weight": 441.7177,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "L&T Technology Services Limited",
+   "isin": "INE010V01017",
+   "sector": "IT - Services",
+   "qty": 27276.0,
+   "mv_cr": 9.3622,
+   "weight": 401.5291,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HFCL Limited",
+   "isin": "INE548A01028",
+   "sector": "Telecom - Services",
+   "qty": 449648.0,
+   "mv_cr": 8.091,
+   "weight": 347.0075,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PTC India Limited",
+   "isin": "INE877F01012",
+   "sector": "Power",
+   "qty": 409791.0,
+   "mv_cr": 7.5053,
+   "weight": 321.8902,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sonata Software Limited",
+   "isin": "INE269A01021",
+   "sector": "IT - Software",
+   "qty": 266835.0,
+   "mv_cr": 7.0738,
+   "weight": 303.3828,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Green Energy Limited",
+   "isin": "INE364U01010",
+   "sector": "Power",
+   "qty": 46827.0,
+   "mv_cr": 6.9089,
+   "weight": 296.3088,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "TREPS 01-Jun-2026 DEPO 10",
+   "isin": "INCBLO010626",
+   "sector": "N.A.",
+   "qty": 44254.4,
+   "mv_cr": 44.2415,
+   "weight": 1897.4401,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "YES Bank Ltd.",
+   "isin": "INE528G01035",
+   "sector": "Banks",
+   "qty": 5818571.0,
+   "mv_cr": 13.47,
+   "weight": 577.7046,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 100879.0,
+   "mv_cr": 13.3281,
+   "weight": 571.6205,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sona BLW Precision Forgings Limited",
+   "isin": "INE073K01018",
+   "sector": "Auto Components",
+   "qty": 218000.0,
+   "mv_cr": 13.2424,
+   "weight": 567.944,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INOX INDIA LIMITED",
+   "isin": "INE616N01034",
+   "sector": "Industrial Products",
+   "qty": 68956.0,
+   "mv_cr": 10.2993,
+   "weight": 441.7177,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "L&T Technology Services Limited",
+   "isin": "INE010V01017",
+   "sector": "IT - Services",
+   "qty": 27276.0,
+   "mv_cr": 9.3622,
+   "weight": 401.5291,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HFCL Limited",
+   "isin": "INE548A01028",
+   "sector": "Telecom - Services",
+   "qty": 449648.0,
+   "mv_cr": 8.091,
+   "weight": 347.0075,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PTC India Limited",
+   "isin": "INE877F01012",
+   "sector": "Power",
+   "qty": 409791.0,
+   "mv_cr": 7.5053,
+   "weight": 321.8902,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sonata Software Limited",
+   "isin": "INE269A01021",
+   "sector": "IT - Software",
+   "qty": 266835.0,
+   "mv_cr": 7.0738,
+   "weight": 303.3828,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Green Energy Limited",
+   "isin": "INE364U01010",
+   "sector": "Power",
+   "qty": 46827.0,
+   "mv_cr": 6.9089,
+   "weight": 296.3088,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Manappuram Finance Ltd",
+   "isin": "INE522D01027",
+   "sector": "Finance",
+   "qty": 210000.0,
+   "mv_cr": 6.8334,
+   "weight": 293.0727,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Apollo Tyres Ltd",
+   "isin": "INE438A01022",
+   "sector": "Auto Components",
+   "qty": 171415.0,
+   "mv_cr": 6.7623,
+   "weight": 290.0242,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Samvardhana Motherson International Ltd",
+   "isin": "INE775A01035",
+   "sector": "Auto Components",
+   "qty": 451452.0,
+   "mv_cr": 6.5795,
+   "weight": 282.1817,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kaynes Technology India Limited",
+   "isin": "INE918Z01012",
+   "sector": "Industrial Manufacturing",
+   "qty": 20028.0,
+   "mv_cr": 6.276,
+   "weight": 269.1656,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tech Mahindra Limited",
+   "isin": "INE669C01036",
+   "sector": "IT - Software",
+   "qty": 41966.0,
+   "mv_cr": 6.2273,
+   "weight": 267.0796,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Wilmar Limited",
+   "isin": "INE699H01024",
+   "sector": "Agricultural Food & other Products",
+   "qty": 320000.0,
+   "mv_cr": 6.1536,
+   "weight": 263.9172,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Chemicals Ltd",
+   "isin": "INE092A01019",
+   "sector": "Chemicals & Petrochemicals",
+   "qty": 77352.0,
+   "mv_cr": 5.8633,
+   "weight": 251.466,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "IRB Infrastructure Developers Limited",
+   "isin": "INE821I01022",
+   "sector": "Construction",
+   "qty": 2600000.0,
+   "mv_cr": 5.5016,
+   "weight": 235.9541,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Poly Medicure Limited",
+   "isin": "INE205C01021",
+   "sector": "Healthcare Equipment & Supplies",
+   "qty": 38769.0,
+   "mv_cr": 5.2327,
+   "weight": 224.4194,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Afcons Infrastructure Limited",
+   "isin": "INE101I01011",
+   "sector": "Construction",
+   "qty": 153000.0,
+   "mv_cr": 5.1875,
+   "weight": 222.4814,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 11-Jun-2026",
+   "isin": "IN002025X497",
+   "sector": "N.A.",
+   "qty": 500000.0,
+   "mv_cr": 4.9913,
+   "weight": 214.0684,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "SUN TV Network Limited",
+   "isin": "INE424H01027",
+   "sector": "Entertainment",
+   "qty": 89044.0,
+   "mv_cr": 4.4713,
+   "weight": 191.7682,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LG Electronics India Limited",
+   "isin": "INE324D01010",
+   "sector": "Consumer Durables",
+   "qty": 28469.0,
+   "mv_cr": 4.3384,
+   "weight": 186.066,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Usha Martin Limited",
+   "isin": "INE228A01035",
+   "sector": "Industrial Products",
+   "qty": 67766.0,
+   "mv_cr": 3.4293,
+   "weight": 147.0767,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Aurobindo Pharma Limited",
+   "isin": "INE406A01037",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 23808.0,
+   "mv_cr": 3.396,
+   "weight": 145.6474,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Simplex Infrastructures Limited",
+   "isin": "INE059B01024",
+   "sector": "Construction",
+   "qty": 123501.0,
+   "mv_cr": 3.0957,
+   "weight": 132.7682,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Gokaldas Exports Ltd",
+   "isin": "INE887G01027",
+   "sector": "Textiles & Apparels",
+   "qty": 33694.0,
+   "mv_cr": 2.331,
+   "weight": 99.9704,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TVS Srichakra Limited",
+   "isin": "INE421C01016",
+   "sector": "Auto Components",
+   "qty": 5189.0,
+   "mv_cr": 2.0145,
+   "weight": 86.3973,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 10855.0,
+   "mv_cr": 1.9854,
+   "weight": 85.1495,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 06-Aug-2026",
+   "isin": "IN002026X057",
+   "sector": "N.A.",
+   "qty": 200000.0,
+   "mv_cr": 1.9797,
+   "weight": 84.9065,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 13-Aug-2026",
+   "isin": "IN002026X065",
+   "sector": "N.A.",
+   "qty": 200000.0,
+   "mv_cr": 1.9777,
+   "weight": 84.818,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 20-Aug-2026",
+   "isin": "IN002026X073",
+   "sector": "N.A.",
+   "qty": 200000.0,
+   "mv_cr": 1.9755,
+   "weight": 84.725,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 28-Aug-2026",
+   "isin": "IN002026X081",
+   "sector": "N.A.",
+   "qty": 200000.0,
+   "mv_cr": 1.9732,
+   "weight": 84.6288,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Digitide Solutions Limited",
+   "isin": "INE0U4701011",
+   "sector": "IT - Services",
+   "qty": 168872.0,
+   "mv_cr": 1.4575,
+   "weight": 62.5111,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-23",
+  "SIF-25",
+  "SIF-24",
+  "SIF-26"
+ ],
+ "managers": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+ "strategy": "Quant's VLRT-driven long-short strategies that buy stocks expected to rise and short those expected to fall across equity, hybrid, ex-top-100, sector-rotation and asset-allocator mandates.",
+ "presentation": ""
+}

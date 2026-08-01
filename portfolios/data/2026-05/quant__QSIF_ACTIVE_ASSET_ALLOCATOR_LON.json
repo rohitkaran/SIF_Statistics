@@ -1,0 +1,339 @@
+{
+ "amc": "quant",
+ "fund_code": "QSIF_ACTIVE_ASSET_ALLOCATOR_LON",
+ "fund_name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option",
+ "period": "2026-05",
+ "as_of": "2026-05-29",
+ "source_url": "https://www.qsif.com/Admin/disclouser/qSIF_ACTIVE_ASSET_ALLOCATOR_LONG-SHORT_FUND_29-May_2026.xlsx",
+ "raw": "portfolios/raw/quant/2026-05/qSIF_ACTIVE_ASSET_ALLOCATOR_LONG-SHORT_FUND_29-May_2026.xlsx",
+ "fetched": "2026-08-01T06:45:38+00:00",
+ "net_assets_cr": 0.64,
+ "n_holdings": 17,
+ "allocation": {
+  "equity": 4902.99,
+  "money_market": 5131.99,
+  "cash_other": 0.0
+ },
+ "sectors": [
+  {
+   "sector": "Telecom - Services",
+   "weight": 1140.3182
+  },
+  {
+   "sector": "Insurance",
+   "weight": 629.0871
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 609.2652
+  },
+  {
+   "sector": "Finance",
+   "weight": 601.729
+  },
+  {
+   "sector": "IT - Services",
+   "weight": 571.1172
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 492.1883
+  },
+  {
+   "sector": "Banks",
+   "weight": 466.9225
+  },
+  {
+   "sector": "Auto Components",
+   "weight": 198.8841
+  },
+  {
+   "sector": "Industrial Manufacturing",
+   "weight": 193.4794
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "TREPS 01-Jun-2026 DEPO 10",
+   "isin": "INCBLO010626",
+   "sector": "N.A.",
+   "qty": 28376.6,
+   "mv_cr": 28.3683,
+   "weight": 4435.4494,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 22167.0,
+   "mv_cr": 4.0543,
+   "weight": 633.9058,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Life Insurance Co Ltd",
+   "isin": "INE795G01014",
+   "sector": "Insurance",
+   "qty": 67645.0,
+   "mv_cr": 4.0235,
+   "weight": 629.0871,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 29494.0,
+   "mv_cr": 3.8967,
+   "weight": 609.2652,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "L&T Technology Services Limited",
+   "isin": "INE010V01017",
+   "sector": "IT - Services",
+   "qty": 10642.0,
+   "mv_cr": 3.6528,
+   "weight": 571.1172,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HFCL Limited",
+   "isin": "INE548A01028",
+   "sector": "Telecom - Services",
+   "qty": 180000.0,
+   "mv_cr": 3.2389,
+   "weight": 506.4124,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tech Mahindra Limited",
+   "isin": "INE669C01036",
+   "sector": "IT - Software",
+   "qty": 21214.0,
+   "mv_cr": 3.1479,
+   "weight": 492.1883,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "YES Bank Ltd.",
+   "isin": "INE528G01035",
+   "sector": "Banks",
+   "qty": 1290000.0,
+   "mv_cr": 2.9864,
+   "weight": 466.9225,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LIC Housing Finance Ltd",
+   "isin": "INE115A01026",
+   "sector": "Finance",
+   "qty": 44814.0,
+   "mv_cr": 2.3893,
+   "weight": 373.5659,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Manappuram Finance Ltd",
+   "isin": "INE522D01027",
+   "sector": "Finance",
+   "qty": 44846.0,
+   "mv_cr": 1.4593,
+   "weight": 228.1631,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "TREPS 01-Jun-2026 DEPO 10",
+   "isin": "INCBLO010626",
+   "sector": "N.A.",
+   "qty": 28376.6,
+   "mv_cr": 28.3683,
+   "weight": 4435.4494,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 22167.0,
+   "mv_cr": 4.0543,
+   "weight": 633.9058,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Life Insurance Co Ltd",
+   "isin": "INE795G01014",
+   "sector": "Insurance",
+   "qty": 67645.0,
+   "mv_cr": 4.0235,
+   "weight": 629.0871,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 29494.0,
+   "mv_cr": 3.8967,
+   "weight": 609.2652,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "L&T Technology Services Limited",
+   "isin": "INE010V01017",
+   "sector": "IT - Services",
+   "qty": 10642.0,
+   "mv_cr": 3.6528,
+   "weight": 571.1172,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HFCL Limited",
+   "isin": "INE548A01028",
+   "sector": "Telecom - Services",
+   "qty": 180000.0,
+   "mv_cr": 3.2389,
+   "weight": 506.4124,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tech Mahindra Limited",
+   "isin": "INE669C01036",
+   "sector": "IT - Software",
+   "qty": 21214.0,
+   "mv_cr": 3.1479,
+   "weight": 492.1883,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "YES Bank Ltd.",
+   "isin": "INE528G01035",
+   "sector": "Banks",
+   "qty": 1290000.0,
+   "mv_cr": 2.9864,
+   "weight": 466.9225,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "LIC Housing Finance Ltd",
+   "isin": "INE115A01026",
+   "sector": "Finance",
+   "qty": 44814.0,
+   "mv_cr": 2.3893,
+   "weight": 373.5659,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Manappuram Finance Ltd",
+   "isin": "INE522D01027",
+   "sector": "Finance",
+   "qty": 44846.0,
+   "mv_cr": 1.4593,
+   "weight": 228.1631,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Apollo Tyres Ltd",
+   "isin": "INE438A01022",
+   "sector": "Auto Components",
+   "qty": 32244.0,
+   "mv_cr": 1.272,
+   "weight": 198.8841,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kaynes Technology India Limited",
+   "isin": "INE918Z01012",
+   "sector": "Industrial Manufacturing",
+   "qty": 3949.0,
+   "mv_cr": 1.2375,
+   "weight": 193.4794,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 23-Jul-2026",
+   "isin": "IN002026X032",
+   "sector": "N.A.",
+   "qty": 100000.0,
+   "mv_cr": 0.9919,
+   "weight": 155.0925,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 30-Jul-2026",
+   "isin": "IN002026X040",
+   "sector": "N.A.",
+   "qty": 100000.0,
+   "mv_cr": 0.991,
+   "weight": 154.9491,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 06-Aug-2026",
+   "isin": "IN002026X057",
+   "sector": "N.A.",
+   "qty": 100000.0,
+   "mv_cr": 0.9899,
+   "weight": 154.7664,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 13-Aug-2026",
+   "isin": "IN002026X065",
+   "sector": "N.A.",
+   "qty": 100000.0,
+   "mv_cr": 0.9888,
+   "weight": 154.605,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Days Treasury Bill 28-Aug-2026",
+   "isin": "IN002026X081",
+   "sector": "N.A.",
+   "qty": 50000.0,
+   "mv_cr": 0.4933,
+   "weight": 77.1301,
+   "category": "money_market",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-92",
+  "SIF-91",
+  "SIF-90",
+  "SIF-93"
+ ],
+ "managers": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+ "strategy": "Quant's VLRT-driven long-short strategies that buy stocks expected to rise and short those expected to fall across equity, hybrid, ex-top-100, sector-rotation and asset-allocator mandates.",
+ "presentation": ""
+}
