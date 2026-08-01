@@ -628,7 +628,7 @@
   "SIF-87",
   "SIF-89"
  ],
- "managers": "Harsh Agarwal, Milan Mody",
+ "managers": "Harsh Agarwal, Milan Mody, Rahul Khetawat",
  "strategy": "Dynamically shifts money between equities, bonds and commodities, using long-short/hedging (options, arbitrage) to cut downside. Returns come from asset-class rotation plus instrument selection.",
  "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Asset_Allocator_PPT_1765c7849b.pdf"
 }

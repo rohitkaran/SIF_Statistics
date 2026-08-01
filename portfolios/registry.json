@@ -6,7 +6,7 @@
       "site": "https://apexsif.adityabirlacapital.com",
       "disclosure_page": "https://apexsif.adityabirlacapital.com/",
       "presentation": "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf",
-      "managers": "Lovelish Solanki, Mohit Sharma",
+      "managers": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
       "strategy": "An interval fund spreading money across arbitrage, long stocks, bonds and limited short bets (via derivatives) plus some REITs/InvITs. Returns come from steady low-risk arbitrage/debt income and equity gains, while shorts and hedging cushion losses when markets fall.",
       "nav_sif": "Apex SIF", "adapter": "sebi_xlsx",
       "discovery": {"method": "http_listing", "listing_urls": ["https://apexsif.adityabirlacapital.com/"],
@@ -17,13 +17,13 @@
       "site": "https://www.tatamutualfund.com/titanium-sif",
       "disclosure_page": "https://www.tatamutualfund.com/titanium-sif/schemes-related",
       "presentation": "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf",
-      "managers": "Suraj Nanda",
+      "managers": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
       "strategy": "Buys stocks it expects to rise (long) and bets against stocks it expects to fall (short) via shares and derivatives, shifting net market exposure dynamically to profit in both rising and falling markets.",
       "nav_sif": "Titanium SIF", "adapter": "sebi_xlsx",
       "funds": {
-        "equitylong": {"managers": "Suraj Nanda", "presentation": "https://betacms.tatamutualfund.com/system/files/2026-04/Titanium%20Equity%20Long-Short%20Fund_PPT_0.pdf",
+        "equitylong": {"managers": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya", "presentation": "https://betacms.tatamutualfund.com/system/files/2026-04/Titanium%20Equity%20Long-Short%20Fund_PPT_0.pdf",
           "strategy": "Actively buys stocks it expects to rise and shorts stocks it expects to fall via shares and derivatives, shifting net exposure (~-25% to 100%) to make money in both rising and falling markets from stock selection on both sides."},
-        "hybrid": {"managers": "Suraj Nanda", "presentation": "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf",
+        "hybrid": {"managers": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya", "presentation": "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf",
           "strategy": "Mixes equities, debt and derivatives -- long positions to benefit from rising markets, short/arbitrage positions to cushion falls, and debt for steadier income -- aiming for smoother risk-adjusted returns."}
       },
       "discovery": {"method": "manual", "files": [
@@ -41,7 +41,7 @@
       "funds": {
         "equitylong": {"managers": "Harsh Agarwal", "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Equity_Long_Short_Fund_Presentation_d42634825b.pdf",
           "strategy": "Buys stocks it expects to rise while short-selling (via derivatives) those it expects to fall; returns come mainly from stock-picking skill rather than overall market direction."},
-        "alloc": {"managers": "Harsh Agarwal, Milan Mody", "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Asset_Allocator_PPT_1765c7849b.pdf",
+        "alloc": {"managers": "Harsh Agarwal, Milan Mody, Rahul Khetawat", "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Asset_Allocator_PPT_1765c7849b.pdf",
           "strategy": "Dynamically shifts money between equities, bonds and commodities, using long-short/hedging (options, arbitrage) to cut downside. Returns come from asset-class rotation plus instrument selection."},
         "extop": {"managers": "Harsh Agarwal, Mayur Patel, Milan Mody, Pranav Mise", "presentation": "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/360_ONE_Dyna_SIF_Equity_EX_Top100_LSF_PPT_dfe3ce5ae1.pdf",
           "strategy": "Focuses on mid/small-caps outside the largest 100 stocks, holding those it expects to outperform while shorting (up to ~25% unhedged) those it expects to lag."}

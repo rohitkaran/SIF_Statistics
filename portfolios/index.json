@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-01T05:49:51+00:00",
+ "generated": "2026-08-01T05:54:10+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2026-05",
@@ -13,7 +13,7 @@
    "site": "https://apexsif.adityabirlacapital.com",
    "nav_sif": "Apex SIF",
    "disclosure_page": "https://apexsif.adityabirlacapital.com/",
-   "managers": "Lovelish Solanki, Mohit Sharma",
+   "managers": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
    "strategy": "An interval fund spreading money across arbitrage, long stocks, bonds and limited short bets (via derivatives) plus some REITs/InvITs. Returns come from steady low-risk arbitrage/debt income and equity gains, while shorts and hedging cushion losses when markets fall.",
    "presentation": "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf"
   },
@@ -24,7 +24,7 @@
    "site": "https://www.tatamutualfund.com/titanium-sif",
    "nav_sif": "Titanium SIF",
    "disclosure_page": "https://www.tatamutualfund.com/titanium-sif/schemes-related",
-   "managers": "Suraj Nanda",
+   "managers": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
    "strategy": "Buys stocks it expects to rise (long) and bets against stocks it expects to fall (short) via shares and derivatives, shifting net market exposure dynamically to profit in both rising and falling markets.",
    "presentation": "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf"
   },
