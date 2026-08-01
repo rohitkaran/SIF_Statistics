@@ -15,9 +15,9 @@ Never "Sifintel", "SIF Intel", "SIF-intel", or "SIFINTEL".
 | Favicon | `../favicon.svg` | browser tab |
 | Social card | `og-image.svg` | export to `og-image.png` (1200×630) for OG/Twitter |
 
-**The mark** is a gradient tile with a white long/short path (down-then-decisively-up = a hedged book
-that nets long) ending in an **insight node with a radar ping** — the "intel". It doubles as a line
-chart and the tittle of an "i".
+**The mark** is a bold **rising-trend arrow** in the bright electric gradient (with a soft glow) — an
+"up and to the right" growth signal that reads as *strength and momentum*, paired with the wordmark for
+the *intelligence* (SIF + intel). Full tagline lockup: `logo-lockup.svg`.
 
 **Clear space:** keep padding ≥ the height of the tile's corner radius around the logo. **Min size:**
 mark 24 px; wordmark 96 px wide. Don't recolor, stretch, rotate, add shadows, or place the light
