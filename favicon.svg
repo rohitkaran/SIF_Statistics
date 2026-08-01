@@ -1,10 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
-    <linearGradient id="f" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5b5bf0"/><stop offset="0.55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#0e9aa7"/>
+    <linearGradient id="br" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f6bff"/><stop offset="0.5" stop-color="#b45cff"/><stop offset="1" stop-color="#2ee6ff"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161d33"/><stop offset="1" stop-color="#0a0e18"/>
     </linearGradient>
   </defs>
-  <rect x="0" y="0" width="64" height="64" rx="16" fill="url(#f)"/>
-  <path d="M13 41 L23 47 L31 33 L40 39 L49 20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="49" cy="20" r="5" fill="#fff"/>
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#tile)"/>
+  <g fill="url(#br)">
+    <rect x="14" y="35" width="9" height="15" rx="3"/>
+    <rect x="27.5" y="27" width="9" height="23" rx="3"/>
+    <rect x="41" y="19" width="9" height="31" rx="3"/>
+  </g>
+  <path d="M45 7 L47 12.4 L52.5 14.5 L47 16.6 L45 22 L43 16.6 L37.5 14.5 L43 12.4 Z" fill="#eafcff"/>
 </svg>

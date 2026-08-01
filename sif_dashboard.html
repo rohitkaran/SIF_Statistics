@@ -29,7 +29,7 @@
     --pos:#12a150; --neg:#e5484d; --amber:#d9820b;
     --hl:#eef1ff; --myfund:#e7e6ff;
     --thead:#e7ebf8; --grp:#eef1fb; --rowhover:#f0f3fd; --foot:#f2f5fc;
-    --grad1:#5b5bf0; --grad2:#8b5cf6; --grad3:#0e9aa7;
+    --grad1:#4361ff; --grad2:#a855f7; --grad3:#22d3ee;
     --mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace;
     --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   }
@@ -40,7 +40,7 @@
     --pos:#5fdf9a; --neg:#ff7d90; --amber:#f0c65e;
     --hl:#1c2836; --myfund:#26384d;
     --thead:#0f151c; --grp:#0b0f14; --rowhover:#12181f; --foot:#0b1015;
-    --grad1:#6d6dff; --grad2:#a97bff; --grad3:#3fd0c9;
+    --grad1:#5f7bff; --grad2:#b45cff; --grad3:#2ee6ff;
   }
   :root[data-theme="dark"] .num{color:var(--ink)}      /* keep figures bright on dark */
   :root[data-theme="dark"] tr.low td{opacity:.62}      /* greyed rows stay legible */
@@ -60,7 +60,9 @@
     border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--grad1),var(--grad2),var(--grad3)) 1;
     border-bottom:1px solid var(--line2);padding:8px 12px}
   .bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end}
-  .brand{display:flex;flex-direction:column;gap:1px;margin-right:6px}
+  .brand{display:flex;flex-direction:row;align-items:center;gap:10px;margin-right:6px}
+  .blogo{flex:none;border-radius:10px;box-shadow:0 2px 10px rgba(67,97,255,.35)}
+  .btext{display:flex;flex-direction:column;gap:1px;min-width:0}
   .fld{display:flex;flex-direction:column;gap:3px}
   .fld label{font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-faint)}
   .fld input,.fld select{background:var(--panel2);border:1px solid var(--line2);color:var(--ink);
@@ -255,8 +257,11 @@
 <header>
   <div class="bar">
     <div class="brand">
-      <h1>SIFintel</h1>
-      <span class="sub">Intelligence on India's Specialized Investment Funds · real NAVs & holdings</span>
+      <img class="blogo" src="brand/logo-mark.svg" alt="SIFintel" width="38" height="38">
+      <div class="btext">
+        <h1>SIFintel</h1>
+        <span class="sub">Intelligence on India's Specialized Investment Funds · real NAVs & holdings</span>
+      </div>
     </div>
     <button id="filtToggle" class="mobtoggle" aria-expanded="false">☰ Filters</button>
     <div class="fld"><label>From</label><input type="date" id="from"></div>
