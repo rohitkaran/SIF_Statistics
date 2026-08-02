@@ -13,3 +13,11 @@ Thumbs.db
 
 # Local scratch / experiments (never committed)
 .scratch/
+
+# Publishing secrets & rendered video (never commit)
+publish/client_secret.json
+publish/token.json
+publish/*token*
+publish/metadata.json
+renders/
+*.mp4

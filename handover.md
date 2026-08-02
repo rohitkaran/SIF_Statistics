@@ -82,6 +82,19 @@ to a browser-based fetch (see deferred). The workflow's portfolio step is best-e
 - **Mobile**: `@media (max-width:640px)` — sticky first column, compact spacing, static footer, bigger
   tap targets. (Couldn't emulate <640px in the test browser; rule verified parsed.)
 
+## Content & video engine (2026-08)
+- `make_video_ideas.py` → reads live NAV/holdings/benchmark data, ranks it (biggest movers, best
+  down-capture, top Sharpe, calmest, new disclosures, market context) and writes
+  `content/video/ideas/<date>.md` — real, timely short-form video briefs. Run weekly.
+- `content/video/VIDEO_PIPELINE.md` — full produce→publish runbook (Higgsfield → edit → captions →
+  brand → YouTube/IG/LinkedIn). Reusable style kit + 3 scripts in `content/video/intro-sif-scripts.md`.
+- `brand/video/endcard.svg` + `watermark.svg` — video brand assets (export to PNG/MP4 for the editor).
+- `publish/` — `youtube_upload.py` (YouTube Data API, needs OAuth `client_secret.json` — git-ignored),
+  `metadata.template.json`, and `README.md` (IG Reels Graph API + LinkedIn + scheduler runbook).
+- **Next (user sequence):** redesign the site into one page combining **data + articles + videos +
+  resources** using Claude Design. Then the cleanup (trim workflow to data-only, disable old GH Pages,
+  export OG PNG).
+
 ## DONE since first handover
 - **Up/Down capture vs NIFTY 50** — `fetch_benchmark.py` (stdlib, Yahoo `^NSEI`) → `benchmark_data.json`;
   `SIFMetrics.captureRatios(windowedSeries, benchByDate)` in the tested metrics block; two columns

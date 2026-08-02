@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="300" height="64" role="img" aria-label="SIFintel">
+  <!-- transparent background: export as PNG for a corner overlay on video -->
+  <path d="M24 8 L30 30 L52 36 L30 42 L24 64 L18 42 L-4 36 L18 30 Z" transform="translate(6,0) scale(0.62)" fill="#22c88f"/>
+  <text x="44" y="44" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+    <tspan fill="#ffffff">SIF</tspan><tspan fill="#22c88f">intel</tspan>
+  </text>
+</svg>
