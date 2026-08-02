@@ -81,9 +81,7 @@ jobs:
             git push || echo "::warning::data commit push failed — will retry next run"
           fi
 
-      - name: Use the dashboard as the site index
-        run: cp sif_dashboard.html index.html
-
+      # index.html is the homepage (served at /) — no copy step needed.
       - uses: actions/configure-pages@v5
         with:
           enablement: true      # turns on Pages automatically, so no manual Settings step

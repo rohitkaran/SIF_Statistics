@@ -343,7 +343,7 @@ def serve(directory, host, port, default_url, chunk_days, workers):
     handler = functools.partial(Handler, directory=directory)
     httpd = http.server.ThreadingHTTPServer((host, port), handler)
     print(f"Serving {directory} at http://{host}:{port}")
-    print(f"  dashboard : http://{host}:{port}/sif_dashboard.html")
+    print(f"  dashboard : http://{host}:{port}/")
     print(f"  refresh   : http://{host}:{port}/refresh?from=2025-10-01&to={dt.date.today()}")
     print("Ctrl-C to stop.")
     try:

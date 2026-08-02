@@ -13,6 +13,3 @@ Thumbs.db
 
 # Local scratch / experiments (never committed)
 .scratch/
-
-# Build artifact copied by the Pages workflow (regenerated each deploy)
-index.html
