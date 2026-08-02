@@ -9,10 +9,18 @@ fund-house monthly **portfolio disclosures** (holdings, allocation, long/short, 
 managers). Differentiator = "intel": decode each fund's *strategy* from holdings/derivatives, not just
 show numbers. Product/monetization strategy lives in **`BUSINESS_PLAN.md`**.
 
-**To go live on sifintel.com:** buy the domain → add a `CNAME` file containing `sifintel.com` at the
-repo root (or set it in Settings → Pages → custom domain) → at the DNS registrar add the 4 GitHub
-Pages A records (185.199.108–111.153) for the apex and a CNAME `www → rohitkaran.github.io` → enable
-"Enforce HTTPS". Then update the canonical/OG URLs (already point to sifintel.com).
+**Live on sifintel.com (Cloudflare Pages — recommended).** Domain bought at BigRock (2026-08).
+`index.html` is at the repo root, so hosting needs **no build step**. Steps:
+1. Cloudflare (free) → Add Site `sifintel.com` → copy the 2 Cloudflare nameservers.
+2. BigRock → domain → Nameservers → replace with Cloudflare's (propagation mins–hours).
+3. Cloudflare → Workers & Pages → Create → Pages → Connect to Git → repo `rohitkaran/SIF_Statistics`,
+   branch `main`. Build: **preset None, build command empty, output dir `/`**. Deploy.
+4. Pages project → Custom domains → add `www.sifintel.com` + `sifintel.com`; redirect apex → www
+   (www is canonical). SSL is automatic.
+Then: trim this workflow to **data-refresh-only** (Cloudflare auto-deploys on each data commit —
+free tier 500 builds/mo, we're well under), and **disable the old GitHub Pages site** so there's one
+canonical home. Canonical/OG already point to www.sifintel.com. (Interim option: GitHub Pages custom
+domain via a `CNAME` file + 4 A records 185.199.108–111.153 — skip if going Cloudflare.)
 
 **Coverage: 90 / 111 scheme codes have disclosed holdings.** Remaining gaps are genuine: qsif
 Sector Rotation, DynaSIF Ex-Top (old `.xls`, only 2 of 3 sheets parse), Altiva Ex-Top, and the
