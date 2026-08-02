@@ -14,6 +14,9 @@ Thumbs.db
 # Local scratch / experiments (never committed)
 .scratch/
 
+# Internal, fund-specific analytical briefs (never publish/commit — compliance)
+content/video/ideas/_analytical/
+
 # Publishing secrets & rendered video (never commit)
 publish/client_secret.json
 publish/token.json

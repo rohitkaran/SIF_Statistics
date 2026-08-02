@@ -8,12 +8,14 @@ The repeatable process to turn data into short-form videos and publish them. Wee
    data          template        clips + VO                 captions      compliance     YT/IG/LI        loop back
 ```
 
-## 1. Ideas (automated)
-```
-python make_video_ideas.py          # writes content/video/ideas/<date>.md from live data
-```
-Pick 2–3 concepts. Each already has a hook, real numbers, a Higgsfield visual, and caption tags.
-Evergreen fallbacks + the reusable style kit live in `content/video/intro-sif-scripts.md`.
+## 1. Ideas
+**Public content must be fund-agnostic & educational** (no SEBI licence needed — see
+`content/COMPLIANCE.md`). Do **not** name/rank specific funds or their returns in public videos.
+- **Primary source (safe):** `content/video/educational-series.md` — the "SIF Academy" series (what
+  SIFs are, the 5 categories, and concepts). Plus the style kit + 3 scripts in `intro-sif-scripts.md`.
+- **Internal only:** `python make_video_ideas.py --analytical` writes fund-specific data briefs to a
+  **git-ignored** folder — for your own analysis / the neutral data tool, **never** for publishing
+  without the appropriate SEBI registration.
 
 ## 2. Script
 Use the idea's hook + 3 talking points → write a 20–45s VO (≈150 wpm). Keep captions ≤ 6 words.

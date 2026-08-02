@@ -242,13 +242,17 @@ def build(min_obs, window_days):
         "Follow the reusable 'What is a SIF?' storyboard in content/video/intro-sif-scripts.md.",
         "#SIF #SpecializedInvestmentFund #InvestingIndia #SIFintel")
 
-    # ---- write the brief ----
-    out_dir = os.path.join(HERE, "content", "video", "ideas")
+    # ---- write the brief (INTERNAL, git-ignored — names specific funds/returns) ----
+    out_dir = os.path.join(HERE, "content", "video", "ideas", "_analytical")
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, f"{asof}.md")
-    L = [f"# SIFintel video ideas — data as of {asof}", "",
-         f"_Auto-generated from live data ({len(rows)} funds). Pick 2-3, shoot in Higgsfield using the "
-         f"style kit in `content/video/intro-sif-scripts.md`. Every number below is real — keep it that way._", ""]
+    L = [f"# INTERNAL analytical briefs — data as of {asof}", "",
+         "> ⚠️ **COMPLIANCE:** these name **specific funds and their returns/rankings**. Do **NOT** use "
+         "them in public videos/posts/ads — that is fund promotion and needs a SEBI licence "
+         "(RA/RIA/ARN). See `content/COMPLIANCE.md`. Public content must be **fund-agnostic & "
+         "educational** — use `content/video/educational-series.md`. Use these only for internal "
+         "analysis / the neutral data tool.", "",
+         f"_Auto-generated from live data ({len(rows)} funds)._", ""]
     for i, v in enumerate(ideas, 1):
         L.append(f"## {i}. {v['title']}")
         L.append(f"**Hook (0-3s):** {v['hook']}")
@@ -260,14 +264,24 @@ def build(min_obs, window_days):
                  "_Educational, not investment advice._")
         L.append("")
     open(path, "w", encoding="utf-8").write("\n".join(L))
-    print(f"[ideas] wrote {len(ideas)} ideas -> content/video/ideas/{asof}.md")
+    print(f"[ideas] wrote {len(ideas)} INTERNAL briefs -> {os.path.relpath(path, HERE)} (git-ignored; do NOT publish)")
 
 
 def main():
-    p = argparse.ArgumentParser()
+    p = argparse.ArgumentParser(description="SIF video ideas. Public content must be fund-agnostic & educational.")
     p.add_argument("--min-obs", type=int, default=30)
     p.add_argument("--window-days", type=int, default=30)
-    build(p.parse_args().min_obs, p.parse_args().window_days)
+    p.add_argument("--analytical", action="store_true",
+                   help="generate INTERNAL data-driven briefs that name specific funds/returns. "
+                        "NOT for public publishing without a SEBI licence — see content/COMPLIANCE.md.")
+    a = p.parse_args()
+    if not a.analytical:
+        print("For PUBLIC content, use the fund-agnostic educational series:")
+        print("  content/video/educational-series.md   (what SIFs are, the 5 categories, concepts)")
+        print("  content/COMPLIANCE.md                 (no promoting/ranking specific funds without a licence)")
+        print("\nTo generate INTERNAL analytical briefs (fund-specific; do NOT publish), run: --analytical")
+        return
+    build(a.min_obs, a.window_days)
 
 
 if __name__ == "__main__":
