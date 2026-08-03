@@ -63,6 +63,13 @@
   header{position:sticky;top:0;z-index:40;background:var(--panel);
     border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--grad1),var(--grad2),var(--grad3)) 1;
     border-bottom:1px solid var(--line2);padding:8px 12px}
+  .topstrip{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:-2px 0 7px;
+    font-family:var(--mono);font-size:11px;color:var(--ink-dim);white-space:nowrap}
+  .topstrip .live{display:inline-flex;align-items:center;gap:6px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .livedot{width:7px;height:7px;border-radius:50%;background:var(--pos);flex:none;
+    box-shadow:0 0 0 0 rgba(18,161,80,.5);animation:livepulse 2s infinite}
+  @keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(18,161,80,.5)}70%{box-shadow:0 0 0 7px rgba(18,161,80,0)}100%{box-shadow:0 0 0 0 rgba(18,161,80,0)}}
+  .navtill{color:var(--ink-dim);overflow:hidden;text-overflow:ellipsis} .navtill b{color:var(--ink)}
   .bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end}
   .brand{display:flex;flex-direction:row;align-items:center;gap:10px;margin-right:6px}
   .blogo{flex:none}
@@ -259,6 +266,10 @@
 </style>
 
 <header>
+  <div class="topstrip">
+    <span id="liveclock" class="live"><span class="livedot"></span> Live · —</span>
+    <span id="navtill" class="navtill"></span>
+  </div>
   <div class="bar">
     <div class="brand">
       <div class="btext">
@@ -1130,8 +1141,18 @@ const SIFMetrics = (function(){
     if(!$('#from').value){ $('#from').value=data.dataFrom; }
     if(!$('#to').value){ $('#to').value=data.dataTo; }
     $('#fnote').textContent=note||('source: '+(data.source||'nav_data.json'));
+    const nt=$('#navtill');
+    if(nt) nt.innerHTML='NAVs updated till <b>'+(data.dataTo? niceDate(data.dataTo):'—')+'</b>';
     recompute();
   }
+  function niceDate(iso){ if(!iso||iso.length<10) return iso||'—'; const p=iso.split('-');
+    return p[2]+' '+MON[+p[1]-1]+' '+p[0]; }
+  // live clock (top-left) — updates every second so it's obvious the page isn't cached
+  function tickClock(){ const el=$('#liveclock'); if(!el) return;
+    const s=new Date().toLocaleString('en-IN',{weekday:'short',day:'2-digit',month:'short',
+      year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true});
+    el.innerHTML='<span class="livedot"></span> Live · '+s; }
+  tickClock(); setInterval(tickClock, 1000);
   function loadJSON(tries){
     tries = tries||0;
     fetch('nav_data.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
