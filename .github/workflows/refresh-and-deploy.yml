@@ -26,6 +26,7 @@ permissions:
   contents: write               # commit refreshed nav_data.json + portfolios/ back to main
   pages: write
   id-token: write
+  issues: write                 # open an alert issue when the monitor detects changes
 
 concurrency:
   group: pages
@@ -66,13 +67,16 @@ jobs:
           python fetch_sif_portfolios.py \
           || echo "::warning::Portfolio fetch failed — keeping last committed portfolios/"
 
+      - name: Daily change monitor (new funds · disclosures · manager changes · dead links)
+        run: python monitor.py || echo "::warning::monitor failed"
+
       - name: Commit refreshed data back to the repo
         # Best-effort: a data-push race must never block the site deploy below.
         continue-on-error: true
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nav_data.json benchmark_data.json portfolios/ 2>/dev/null || true
+          git add nav_data.json benchmark_data.json portfolios/ monitor/state.json monitor/CHANGELOG.md 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
@@ -80,6 +84,15 @@ jobs:
             git pull --rebase --autostash origin main || true
             git push || echo "::warning::data commit push failed — will retry next run"
           fi
+
+      - name: Alert on detected changes (opens a GitHub issue → emails you)
+        if: ${{ hashFiles('monitor/changed.flag') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "SIF change alert — $(date -u +%F)" \
+            --body-file monitor/changed.flag \
+          || echo "::warning::could not open alert issue"
 
       # index.html is the homepage (served at /) — no copy step needed.
       - uses: actions/configure-pages@v5

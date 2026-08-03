@@ -24,3 +24,6 @@ publish/*token*
 publish/metadata.json
 renders/
 *.mp4
+
+# Monitor run flag (ephemeral)
+monitor/changed.flag

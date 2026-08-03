@@ -1,0 +1,1074 @@
+{
+ "generated": "2026-08-03T02:06:59+00:00",
+ "latest_nav": "2026-07-31",
+ "schemes": {
+  "SIF-120": {
+   "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Direct Plan - Growth",
+   "sif": "Altiva SIF",
+   "first": "2026-06-10",
+   "last": "2026-07-31"
+  },
+  "SIF-121": {
+   "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Direct Plan - IDCW",
+   "sif": "Altiva SIF",
+   "first": "2026-06-10",
+   "last": "2026-07-31"
+  },
+  "SIF-122": {
+   "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Regular Plan - Growth",
+   "sif": "Altiva SIF",
+   "first": "2026-06-10",
+   "last": "2026-07-31"
+  },
+  "SIF-123": {
+   "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Regular Plan - IDCW",
+   "sif": "Altiva SIF",
+   "first": "2026-06-10",
+   "last": "2026-07-31"
+  },
+  "SIF-140": {
+   "name": "DynaSIF Equity Ex-Top 100 Long - Short Fund - Direct Plan - Growth Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-06-29",
+   "last": "2026-07-31"
+  },
+  "SIF-143": {
+   "name": "DynaSIF Equity Ex-Top 100 Long - Short Fund - Regular Plan - Growth Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-06-29",
+   "last": "2026-07-31"
+  },
+  "SIF-144": {
+   "name": "DynaSIF Equity Ex-Top 100 Long - Short Fund - Regular Plan - IDCW Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-06-29",
+   "last": "2026-07-31"
+  },
+  "SIF-107": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund - Direct Growth",
+   "sif": "The Wealth Company Mutual Fund",
+   "first": "2026-05-11",
+   "last": "2026-07-31"
+  },
+  "SIF-104": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund - Direct IDCW",
+   "sif": "The Wealth Company Mutual Fund",
+   "first": "2026-05-11",
+   "last": "2026-07-31"
+  },
+  "SIF-105": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund - Regular Growth",
+   "sif": "The Wealth Company Mutual Fund",
+   "first": "2026-05-11",
+   "last": "2026-07-31"
+  },
+  "SIF-106": {
+   "name": "WSIF Equity Ex-Top 100 Long-Short Fund - Regular IDCW",
+   "sif": "The Wealth Company Mutual Fund",
+   "first": "2026-05-11",
+   "last": "2026-07-31"
+  },
+  "SIF-33": {
+   "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Direct Plan - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-02-05",
+   "last": "2026-07-31"
+  },
+  "SIF-34": {
+   "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-02-05",
+   "last": "2026-07-31"
+  },
+  "SIF-23": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2025-11-13",
+   "last": "2026-07-31"
+  },
+  "SIF-25": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2025-11-13",
+   "last": "2026-07-31"
+  },
+  "SIF-24": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2025-11-13",
+   "last": "2026-07-31"
+  },
+  "SIF-26": {
+   "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2025-11-13",
+   "last": "2026-07-31"
+  },
+  "SIF-112": {
+   "name": "Arthaya Equity Long Short Fund - Direct Plan - Growth Option",
+   "sif": "Arthaya SIF",
+   "first": "2026-05-29",
+   "last": "2026-07-31"
+  },
+  "SIF-114": {
+   "name": "Arthaya Equity Long Short Fund - Regular Plan - Growth Option",
+   "sif": "Arthaya SIF",
+   "first": "2026-05-29",
+   "last": "2026-07-31"
+  },
+  "SIF-115": {
+   "name": "Arthaya Equity Long Short Fund - Regular Plan - IDCW Option",
+   "sif": "Arthaya SIF",
+   "first": "2026-05-29",
+   "last": "2026-07-31"
+  },
+  "SIF-61": {
+   "name": "Arudha Equity Long-Short Fund-Direct Plan-Growth",
+   "sif": "Arudha SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-75": {
+   "name": "Arudha Equity Long-Short Fund-Regular Plan-Annual IDCW",
+   "sif": "Arudha SIF",
+   "first": "2026-06-23",
+   "last": "2026-07-31"
+  },
+  "SIF-62": {
+   "name": "Arudha Equity Long-Short Fund-Regular Plan-Growth",
+   "sif": "Arudha SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-69": {
+   "name": "Arudha Equity Long-Short Fund-Regular Plan-Monthly IDCW",
+   "sif": "Arudha SIF",
+   "first": "2026-04-10",
+   "last": "2026-07-31"
+  },
+  "SIF-71": {
+   "name": "Arudha Equity Long-Short Fund-Regular Plan-Quarterly IDCW",
+   "sif": "Arudha SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-19": {
+   "name": "Diviniti Equity Long Short Fund - Direct Plan Growth Option",
+   "sif": "Diviniti SIF",
+   "first": "2025-12-03",
+   "last": "2026-07-31"
+  },
+  "SIF-20": {
+   "name": "Diviniti Equity Long Short Fund - Direct Plan IDCW Option",
+   "sif": "Diviniti SIF",
+   "first": "2025-12-03",
+   "last": "2026-07-31"
+  },
+  "SIF-21": {
+   "name": "Diviniti Equity Long Short Fund - Regular Plan Growth Option",
+   "sif": "Diviniti SIF",
+   "first": "2025-12-03",
+   "last": "2026-07-31"
+  },
+  "SIF-22": {
+   "name": "Diviniti Equity Long Short Fund - Regular Plan IDCW Option",
+   "sif": "Diviniti SIF",
+   "first": "2025-12-03",
+   "last": "2026-07-31"
+  },
+  "SIF-57": {
+   "name": "DynaSIF Equity Long - Short Fund - Direct Plan - Growth Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-02-27",
+   "last": "2026-07-31"
+  },
+  "SIF-55": {
+   "name": "DynaSIF Equity Long - Short Fund - Regular Plan - Growth Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-02-27",
+   "last": "2026-07-31"
+  },
+  "SIF-59": {
+   "name": "DynaSIF Equity Long - Short Fund - Regular Plan - IDCW Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-05-27",
+   "last": "2026-07-31"
+  },
+  "SIF-95": {
+   "name": "Sapphire Equity Long-Short SIF - Direct - Growth",
+   "sif": "Franklin Templeton Mutual Fund",
+   "first": "2026-04-29",
+   "last": "2026-07-31"
+  },
+  "SIF-94": {
+   "name": "Sapphire Equity Long-Short SIF - Direct- IDCW",
+   "sif": "Franklin Templeton Mutual Fund",
+   "first": "2026-04-29",
+   "last": "2026-07-31"
+  },
+  "SIF-96": {
+   "name": "Sapphire Equity Long-Short SIF - Growth",
+   "sif": "Franklin Templeton Mutual Fund",
+   "first": "2026-04-29",
+   "last": "2026-07-31"
+  },
+  "SIF-97": {
+   "name": "Sapphire Equity Long-Short SIF - IDCW",
+   "sif": "Franklin Templeton Mutual Fund",
+   "first": "2026-04-29",
+   "last": "2026-07-31"
+  },
+  "SIF-149": {
+   "name": "Summit Equity Long-Short Fund - Direct Plan - Growth",
+   "sif": "Invesco Mutual Fund",
+   "first": "2026-07-24",
+   "last": "2026-07-31"
+  },
+  "SIF-151": {
+   "name": "Summit Equity Long-Short Fund - Direct Plan - IDCW (Payout / Reinvestment)",
+   "sif": "Invesco Mutual Fund",
+   "first": "2026-07-24",
+   "last": "2026-07-31"
+  },
+  "SIF-150": {
+   "name": "Summit Equity Long-Short Fund - Regular Plan - Growth",
+   "sif": "Invesco Mutual Fund",
+   "first": "2026-07-24",
+   "last": "2026-07-31"
+  },
+  "SIF-152": {
+   "name": "Summit Equity Long-Short Fund - Regular Plan - IDCW (Payout / Reinvestment)",
+   "sif": "Invesco Mutual Fund",
+   "first": "2026-07-24",
+   "last": "2026-07-31"
+  },
+  "SIF-99": {
+   "name": "Titanium Equity Long-Short Fund Direct Growth",
+   "sif": "Titanium SIF",
+   "first": "2026-05-20",
+   "last": "2026-07-31"
+  },
+  "SIF-100": {
+   "name": "Titanium Equity Long-Short Fund Direct IDCW Payout",
+   "sif": "Titanium SIF",
+   "first": "2026-05-26",
+   "last": "2026-06-08"
+  },
+  "SIF-103": {
+   "name": "Titanium Equity Long-Short Fund Direct IDCW Reinvestment",
+   "sif": "Titanium SIF",
+   "first": "2026-05-26",
+   "last": "2026-06-08"
+  },
+  "SIF-102": {
+   "name": "Titanium Equity Long-Short Fund Regular Growth",
+   "sif": "Titanium SIF",
+   "first": "2026-05-20",
+   "last": "2026-07-31"
+  },
+  "SIF-98": {
+   "name": "Titanium Equity Long-Short Fund Regular IDCW Payout",
+   "sif": "Titanium SIF",
+   "first": "2026-05-20",
+   "last": "2026-07-31"
+  },
+  "SIF-101": {
+   "name": "Titanium Equity Long-Short Fund Regular IDCW Reinvestment",
+   "sif": "Titanium SIF",
+   "first": "2026-05-20",
+   "last": "2026-07-31"
+  },
+  "SIF-108": {
+   "name": "WSIF Equity Long-Short Fund - Direct Growth",
+   "sif": "The Wealth Company Mutual Fund",
+   "first": "2026-05-11",
+   "last": "2026-07-31"
+  },
+  "SIF-111": {
+   "name": "WSIF Equity Long-Short Fund - Regular Growth",
+   "sif": "The Wealth Company Mutual Fund",
+   "first": "2026-05-11",
+   "last": "2026-07-31"
+  },
+  "SIF-110": {
+   "name": "WSIF Equity Long-Short Fund - Regular IDCW",
+   "sif": "The Wealth Company Mutual Fund",
+   "first": "2026-05-11",
+   "last": "2026-07-31"
+  },
+  "SIF-127": {
+   "name": "iSIF Equity Long-Short Fund - Direct Plan - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-06-08",
+   "last": "2026-07-31"
+  },
+  "SIF-126": {
+   "name": "iSIF Equity Long-Short Fund - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-06-08",
+   "last": "2026-07-31"
+  },
+  "SIF-1": {
+   "name": "qsif Equity Long Short Fund - Growth Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-08",
+   "last": "2026-07-31"
+  },
+  "SIF-3": {
+   "name": "qsif Equity Long Short Fund - Growth Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-08",
+   "last": "2026-07-31"
+  },
+  "SIF-2": {
+   "name": "qsif Equity Long Short Fund - IDCW Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-08",
+   "last": "2026-07-31"
+  },
+  "SIF-4": {
+   "name": "qsif Equity Long Short Fund - IDCW Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-08",
+   "last": "2026-07-31"
+  },
+  "SIF-116": {
+   "name": "qsif Sector Rotation Long-Short Fund - Growth Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2026-05-18",
+   "last": "2026-07-31"
+  },
+  "SIF-117": {
+   "name": "qsif Sector Rotation Long-Short Fund - Growth Option - RegularPlan",
+   "sif": "qsif SIF",
+   "first": "2026-05-18",
+   "last": "2026-07-31"
+  },
+  "SIF-118": {
+   "name": "qsif Sector Rotation Long-Short Fund - IDCW Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2026-05-18",
+   "last": "2026-07-31"
+  },
+  "SIF-119": {
+   "name": "qsif Sector Rotation Long-Short Fund - IDCW Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2026-05-18",
+   "last": "2026-07-31"
+  },
+  "SIF-88": {
+   "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-86": {
+   "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-87": {
+   "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - Growth Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-89": {
+   "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - IDCW Option",
+   "sif": "DynaSIF SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-125": {
+   "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-06-08",
+   "last": "2026-07-31"
+  },
+  "SIF-124": {
+   "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-06-08",
+   "last": "2026-07-31"
+  },
+  "SIF-92": {
+   "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2026-04-24",
+   "last": "2026-07-31"
+  },
+  "SIF-91": {
+   "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2026-04-24",
+   "last": "2026-07-31"
+  },
+  "SIF-90": {
+   "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2026-04-24",
+   "last": "2026-07-31"
+  },
+  "SIF-93": {
+   "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2026-04-24",
+   "last": "2026-07-31"
+  },
+  "SIF-9": {
+   "name": "Altiva Hybrid Long-Short Fund - Direct Plan - Growth",
+   "sif": "Altiva SIF",
+   "first": "2025-10-24",
+   "last": "2026-07-31"
+  },
+  "SIF-10": {
+   "name": "Altiva Hybrid Long-Short Fund - Direct Plan - IDCW",
+   "sif": "Altiva SIF",
+   "first": "2025-10-24",
+   "last": "2026-07-31"
+  },
+  "SIF-11": {
+   "name": "Altiva Hybrid Long-Short Fund - Regular Plan - Growth",
+   "sif": "Altiva SIF",
+   "first": "2025-10-24",
+   "last": "2026-07-31"
+  },
+  "SIF-12": {
+   "name": "Altiva Hybrid Long-Short Fund - Regular Plan - IDCW",
+   "sif": "Altiva SIF",
+   "first": "2025-10-24",
+   "last": "2026-07-31"
+  },
+  "SIF-83": {
+   "name": "Apex Hybrid Long-Short Fund - Direct - Payout of IDCW",
+   "sif": "Apex SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-80": {
+   "name": "Apex Hybrid Long-Short Fund - Regular - Growth",
+   "sif": "Apex SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-81": {
+   "name": "Apex Hybrid Long-Short Fund - Regular - Payout of IDCW",
+   "sif": "Apex SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-79": {
+   "name": "Apex Hybrid Long-Short Fund-Direct Growth",
+   "sif": "Apex SIF",
+   "first": "2026-03-30",
+   "last": "2026-07-31"
+  },
+  "SIF-51": {
+   "name": "Arudha Hybrid Long-Short Fund-Direct Plan-Annual IDCW",
+   "sif": "Arudha SIF",
+   "first": "2026-04-08",
+   "last": "2026-07-31"
+  },
+  "SIF-54": {
+   "name": "Arudha Hybrid Long-Short Fund-Direct Plan-Growth",
+   "sif": "Arudha SIF",
+   "first": "2026-02-04",
+   "last": "2026-07-31"
+  },
+  "SIF-48": {
+   "name": "Arudha Hybrid Long-Short Fund-Direct Plan-Half Yearly IDCW",
+   "sif": "Arudha SIF",
+   "first": "2026-02-04",
+   "last": "2026-07-31"
+  },
+  "SIF-40": {
+   "name": "Arudha Hybrid Long-Short Fund-Regular Plan-Growth",
+   "sif": "Arudha SIF",
+   "first": "2026-02-04",
+   "last": "2026-07-31"
+  },
+  "SIF-44": {
+   "name": "Arudha Hybrid Long-Short Fund-Regular Plan-Monthly IDCW",
+   "sif": "Arudha SIF",
+   "first": "2026-02-04",
+   "last": "2026-07-31"
+  },
+  "SIF-145": {
+   "name": "INFINITY HYBRID LONG-SHORT FUND-DIRECT - GROWTH",
+   "sif": "Kotak Mahindra Mutual Fund",
+   "first": "2026-07-09",
+   "last": "2026-07-31"
+  },
+  "SIF-148": {
+   "name": "INFINITY HYBRID LONG-SHORT FUND-DIRECT - IDCW",
+   "sif": "Kotak Mahindra Mutual Fund",
+   "first": "2026-07-09",
+   "last": "2026-07-31"
+  },
+  "SIF-146": {
+   "name": "INFINITY HYBRID LONG-SHORT FUND-REGULAR - GROWTH",
+   "sif": "Kotak Mahindra Mutual Fund",
+   "first": "2026-07-09",
+   "last": "2026-07-31"
+  },
+  "SIF-147": {
+   "name": "INFINITY HYBRID LONG-SHORT FUND-REGULAR - IDCW",
+   "sif": "Kotak Mahindra Mutual Fund",
+   "first": "2026-07-09",
+   "last": "2026-07-31"
+  },
+  "SIF-14": {
+   "name": "Magnum Hybrid Long Short Fund - Direct  Plan - Growth",
+   "sif": "Magnum SIF",
+   "first": "2025-10-29",
+   "last": "2026-07-31"
+  },
+  "SIF-15": {
+   "name": "Magnum Hybrid Long Short Fund - Direct Plan - Income Distribution Cum Capital Withdrawal",
+   "sif": "Magnum SIF",
+   "first": "2025-10-29",
+   "last": "2026-07-31"
+  },
+  "SIF-13": {
+   "name": "Magnum Hybrid Long Short Fund - Regular Plan - Growth",
+   "sif": "Magnum SIF",
+   "first": "2025-10-29",
+   "last": "2026-07-31"
+  },
+  "SIF-16": {
+   "name": "Magnum Hybrid Long Short Fund - Regular Plan - Income Distribution Cum Capital Withdrawal",
+   "sif": "Magnum SIF",
+   "first": "2025-10-29",
+   "last": "2026-07-31"
+  },
+  "SIF-134": {
+   "name": "Platinum Hybrid Long-Short Fund - Direct Plan - Growth",
+   "sif": "Mirae Asset Mutual Fund",
+   "first": "2026-06-11",
+   "last": "2026-07-31"
+  },
+  "SIF-135": {
+   "name": "Platinum Hybrid Long-Short Fund - Direct Plan - IDCW",
+   "sif": "Mirae Asset Mutual Fund",
+   "first": "2026-06-11",
+   "last": "2026-07-31"
+  },
+  "SIF-136": {
+   "name": "Platinum Hybrid Long-Short Fund - Regular Plan - Growth",
+   "sif": "Mirae Asset Mutual Fund",
+   "first": "2026-06-11",
+   "last": "2026-07-31"
+  },
+  "SIF-137": {
+   "name": "Platinum Hybrid Long-Short Fund - Regular Plan - IDCW",
+   "sif": "Mirae Asset Mutual Fund",
+   "first": "2026-06-11",
+   "last": "2026-07-31"
+  },
+  "SIF-139": {
+   "name": "Prism Hybrid Long-Short Fund - Direct Plan - Growth Option",
+   "sif": "Jio BlackRock Mutual Fund",
+   "first": "2026-07-23",
+   "last": "2026-07-31"
+  },
+  "SIF-138": {
+   "name": "Prism Hybrid Long-Short Fund - Regular Plan- Growth Option",
+   "sif": "Jio BlackRock Mutual Fund",
+   "first": "2026-07-23",
+   "last": "2026-07-31"
+  },
+  "SIF-129": {
+   "name": "RedHex Hybrid Long-Short Fund - Direct - Growth",
+   "sif": "HSBC Mutual Fund",
+   "first": "2026-06-25",
+   "last": "2026-07-31"
+  },
+  "SIF-130": {
+   "name": "RedHex Hybrid Long-Short Fund - Direct - IDCW",
+   "sif": "HSBC Mutual Fund",
+   "first": "2026-06-25",
+   "last": "2026-07-31"
+  },
+  "SIF-128": {
+   "name": "RedHex Hybrid Long-Short Fund - Regular - Growth",
+   "sif": "HSBC Mutual Fund",
+   "first": "2026-06-25",
+   "last": "2026-07-31"
+  },
+  "SIF-32": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
+   "sif": "Titanium SIF",
+   "first": "2025-12-17",
+   "last": "2026-07-31"
+  },
+  "SIF-31": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan IDCW Payout",
+   "sif": "Titanium SIF",
+   "first": "2025-12-17",
+   "last": "2026-07-31"
+  },
+  "SIF-28": {
+   "name": "Titanium Hybrid Long-Short Fund Direct Plan IDCW Reinvestment",
+   "sif": "Titanium SIF",
+   "first": "2025-12-17",
+   "last": "2026-07-31"
+  },
+  "SIF-29": {
+   "name": "Titanium Hybrid Long-Short Fund Regular Plan Growth",
+   "sif": "Titanium SIF",
+   "first": "2025-12-17",
+   "last": "2026-07-31"
+  },
+  "SIF-30": {
+   "name": "Titanium Hybrid Long-Short Fund Regular Plan IDCW Payout",
+   "sif": "Titanium SIF",
+   "first": "2025-12-17",
+   "last": "2026-07-31"
+  },
+  "SIF-27": {
+   "name": "Titanium Hybrid Long-Short Fund Regular Plan IDCW Reinvestment",
+   "sif": "Titanium SIF",
+   "first": "2025-12-17",
+   "last": "2026-07-31"
+  },
+  "SIF-36": {
+   "name": "iSIF Hybrid Long-Short Fund - Direct Plan - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-02-05",
+   "last": "2026-07-31"
+  },
+  "SIF-35": {
+   "name": "iSIF Hybrid Long-Short Fund - Growth",
+   "sif": "iSIF SIF",
+   "first": "2026-02-05",
+   "last": "2026-07-31"
+  },
+  "SIF-5": {
+   "name": "qsif Hybrid Long-Short Fund - Growth Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-20",
+   "last": "2026-07-31"
+  },
+  "SIF-7": {
+   "name": "qsif Hybrid Long-Short Fund - Growth Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-20",
+   "last": "2026-07-31"
+  },
+  "SIF-6": {
+   "name": "qsif Hybrid Long-Short Fund - IDCW Option - Direct Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-20",
+   "last": "2026-07-31"
+  },
+  "SIF-8": {
+   "name": "qsif Hybrid Long-Short Fund - IDCW Option - Regular Plan",
+   "sif": "qsif SIF",
+   "first": "2025-10-29",
+   "last": "2026-07-31"
+  }
+ },
+ "periods": {
+  "SIF-9": [
+   "2025-10"
+  ],
+  "SIF-10": [
+   "2025-10"
+  ],
+  "SIF-11": [
+   "2025-10"
+  ],
+  "SIF-12": [
+   "2025-10"
+  ],
+  "SIF-83": [
+   "2026-05"
+  ],
+  "SIF-80": [
+   "2026-05"
+  ],
+  "SIF-81": [
+   "2026-05"
+  ],
+  "SIF-79": [
+   "2026-05"
+  ],
+  "SIF-112": [
+   "2026-05"
+  ],
+  "SIF-114": [
+   "2026-05"
+  ],
+  "SIF-115": [
+   "2026-05"
+  ],
+  "SIF-57": [
+   "2026-05"
+  ],
+  "SIF-55": [
+   "2026-05"
+  ],
+  "SIF-59": [
+   "2026-05"
+  ],
+  "SIF-88": [
+   "2026-05"
+  ],
+  "SIF-86": [
+   "2026-05"
+  ],
+  "SIF-87": [
+   "2026-05"
+  ],
+  "SIF-89": [
+   "2026-05"
+  ],
+  "SIF-92": [
+   "2026-05"
+  ],
+  "SIF-91": [
+   "2026-05"
+  ],
+  "SIF-90": [
+   "2026-05"
+  ],
+  "SIF-93": [
+   "2026-05"
+  ],
+  "SIF-23": [
+   "2026-05"
+  ],
+  "SIF-25": [
+   "2026-05"
+  ],
+  "SIF-24": [
+   "2026-05"
+  ],
+  "SIF-26": [
+   "2026-05"
+  ],
+  "SIF-1": [
+   "2026-05"
+  ],
+  "SIF-3": [
+   "2026-05"
+  ],
+  "SIF-2": [
+   "2026-05"
+  ],
+  "SIF-4": [
+   "2026-05"
+  ],
+  "SIF-5": [
+   "2026-05"
+  ],
+  "SIF-7": [
+   "2026-05"
+  ],
+  "SIF-6": [
+   "2026-05"
+  ],
+  "SIF-8": [
+   "2026-05"
+  ],
+  "SIF-95": [
+   "2026-05"
+  ],
+  "SIF-94": [
+   "2026-05"
+  ],
+  "SIF-96": [
+   "2026-05"
+  ],
+  "SIF-97": [
+   "2026-05"
+  ],
+  "SIF-99": [
+   "2026-05"
+  ],
+  "SIF-100": [
+   "2026-05"
+  ],
+  "SIF-103": [
+   "2026-05"
+  ],
+  "SIF-102": [
+   "2026-05"
+  ],
+  "SIF-98": [
+   "2026-05"
+  ],
+  "SIF-101": [
+   "2026-05"
+  ],
+  "SIF-32": [
+   "2026-05"
+  ],
+  "SIF-31": [
+   "2026-05"
+  ],
+  "SIF-28": [
+   "2026-05"
+  ],
+  "SIF-29": [
+   "2026-05"
+  ],
+  "SIF-30": [
+   "2026-05"
+  ],
+  "SIF-27": [
+   "2026-05"
+  ],
+  "SIF-108": [
+   "2026-05"
+  ],
+  "SIF-111": [
+   "2026-05"
+  ],
+  "SIF-110": [
+   "2026-05"
+  ],
+  "SIF-107": [
+   "2026-05"
+  ],
+  "SIF-104": [
+   "2026-05"
+  ],
+  "SIF-105": [
+   "2026-05"
+  ],
+  "SIF-106": [
+   "2026-05"
+  ],
+  "SIF-51": [
+   "2026-06"
+  ],
+  "SIF-54": [
+   "2026-06"
+  ],
+  "SIF-48": [
+   "2026-06"
+  ],
+  "SIF-40": [
+   "2026-06"
+  ],
+  "SIF-44": [
+   "2026-06"
+  ],
+  "SIF-61": [
+   "2026-06"
+  ],
+  "SIF-75": [
+   "2026-06"
+  ],
+  "SIF-62": [
+   "2026-06"
+  ],
+  "SIF-69": [
+   "2026-06"
+  ],
+  "SIF-71": [
+   "2026-06"
+  ],
+  "SIF-19": [
+   "2026-06"
+  ],
+  "SIF-20": [
+   "2026-06"
+  ],
+  "SIF-21": [
+   "2026-06"
+  ],
+  "SIF-22": [
+   "2026-06"
+  ],
+  "SIF-125": [
+   "2026-06"
+  ],
+  "SIF-124": [
+   "2026-06"
+  ],
+  "SIF-127": [
+   "2026-06"
+  ],
+  "SIF-126": [
+   "2026-06"
+  ],
+  "SIF-33": [
+   "2026-06"
+  ],
+  "SIF-34": [
+   "2026-06"
+  ],
+  "SIF-36": [
+   "2026-06"
+  ],
+  "SIF-35": [
+   "2026-06"
+  ],
+  "SIF-14": [
+   "2026-06"
+  ],
+  "SIF-15": [
+   "2026-06"
+  ],
+  "SIF-13": [
+   "2026-06"
+  ],
+  "SIF-16": [
+   "2026-06"
+  ],
+  "SIF-134": [
+   "2026-06"
+  ],
+  "SIF-135": [
+   "2026-06"
+  ],
+  "SIF-136": [
+   "2026-06"
+  ],
+  "SIF-137": [
+   "2026-06"
+  ],
+  "SIF-129": [
+   "2026-06"
+  ],
+  "SIF-130": [
+   "2026-06"
+  ],
+  "SIF-128": [
+   "2026-06"
+  ]
+ },
+ "managers": {
+  "SIF-9": "",
+  "SIF-10": "",
+  "SIF-11": "",
+  "SIF-12": "",
+  "SIF-83": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
+  "SIF-80": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
+  "SIF-81": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
+  "SIF-79": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
+  "SIF-112": "Rajesh Aynor, Hiten Bhadra",
+  "SIF-114": "Rajesh Aynor, Hiten Bhadra",
+  "SIF-115": "Rajesh Aynor, Hiten Bhadra",
+  "SIF-57": "Harsh Agarwal",
+  "SIF-55": "Harsh Agarwal",
+  "SIF-59": "Harsh Agarwal",
+  "SIF-88": "Harsh Agarwal, Milan Mody, Rahul Khetawat",
+  "SIF-86": "Harsh Agarwal, Milan Mody, Rahul Khetawat",
+  "SIF-87": "Harsh Agarwal, Milan Mody, Rahul Khetawat",
+  "SIF-89": "Harsh Agarwal, Milan Mody, Rahul Khetawat",
+  "SIF-92": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-91": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-90": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-93": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-23": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-25": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-24": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-26": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-1": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-3": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-2": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-4": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-5": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-7": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-6": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-8": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
+  "SIF-95": "Arihant Jain",
+  "SIF-94": "Arihant Jain",
+  "SIF-96": "Arihant Jain",
+  "SIF-97": "Arihant Jain",
+  "SIF-99": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-100": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-103": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-102": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-98": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-101": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-32": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-31": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-28": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-29": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-30": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-27": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
+  "SIF-108": "Chinmay Sathe",
+  "SIF-111": "Chinmay Sathe",
+  "SIF-110": "Chinmay Sathe",
+  "SIF-107": "Chinmay Sathe",
+  "SIF-104": "Chinmay Sathe",
+  "SIF-105": "Chinmay Sathe",
+  "SIF-106": "Chinmay Sathe",
+  "SIF-51": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
+  "SIF-54": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
+  "SIF-48": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
+  "SIF-40": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
+  "SIF-44": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
+  "SIF-61": "Nilesh Saha, Brijesh Shah",
+  "SIF-75": "Nilesh Saha, Brijesh Shah",
+  "SIF-62": "Nilesh Saha, Brijesh Shah",
+  "SIF-69": "Nilesh Saha, Brijesh Shah",
+  "SIF-71": "Nilesh Saha, Brijesh Shah",
+  "SIF-19": "Vasav Sahgal",
+  "SIF-20": "Vasav Sahgal",
+  "SIF-21": "Vasav Sahgal",
+  "SIF-22": "Vasav Sahgal",
+  "SIF-125": "Ihab Dalwai, Sharmila D'silva, Masoomi Jhurmrvala, Manish Banthia, Akhil Kakkar, Gaurav Chikane",
+  "SIF-124": "Ihab Dalwai, Sharmila D'silva, Masoomi Jhurmrvala, Manish Banthia, Akhil Kakkar, Gaurav Chikane",
+  "SIF-127": "Mittul Kalawadia, Nitya Mishra, Sri Sharma",
+  "SIF-126": "Mittul Kalawadia, Nitya Mishra, Sri Sharma",
+  "SIF-33": "Sankaran Naren, Manan Tijoriwala, Divya Jain",
+  "SIF-34": "Sankaran Naren, Manan Tijoriwala, Divya Jain",
+  "SIF-36": "Rajat Chandak, Ayush Shah, Manish Banthia, Akhil Kakkar",
+  "SIF-35": "Rajat Chandak, Ayush Shah, Manish Banthia, Akhil Kakkar",
+  "SIF-14": "Gaurav Mehta",
+  "SIF-15": "Gaurav Mehta",
+  "SIF-13": "Gaurav Mehta",
+  "SIF-16": "Gaurav Mehta",
+  "SIF-134": "Gaurik Shah",
+  "SIF-135": "Gaurik Shah",
+  "SIF-136": "Gaurik Shah",
+  "SIF-137": "Gaurik Shah",
+  "SIF-129": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi",
+  "SIF-130": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi",
+  "SIF-128": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi"
+ },
+ "link_health": {
+  "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf": true,
+  "https://apexsif.adityabirlacapital.com/": true,
+  "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf": true,
+  "https://www.tatamutualfund.com/titanium-sif/schemes-related": true,
+  "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Equity_Long_Short_Fund_Presentation_d42634825b.pdf": true,
+  "https://www.360.one/dyna-sif/mandatory-disclosures": true,
+  "https://arudhasif.com/downloads/assest/file/downloads/NFO%20Deck-%20Arudha%20Equity%20Long%20Short%20Fund.pdf": true,
+  "https://arudhasif.com/downloads/": true,
+  "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/April/Filing%20date%2017-04-2026/Release%20date%2014-04-2026/Advertisements/Annexure%206%20-%20iSIF%20Factsheet.PDF": true,
+  "https://www.isif.icicipruamc.com/media-center/downloads": false,
+  "https://www.edelweissmf.com/altivasif/statutory/disclosures": false,
+  "https://sif.itiamc.com/Home/DownloaddFile/10": true,
+  "https://sif.itiamc.com/Disclosure?category=PORTFOLIO%20DISCLOSURES": true,
+  "https://www.sbimf.com/docs/default-source/sif-documents/sid---magnum-hybrid-long-short-fund.pdf?sfvrsn=c6e09ae7_2": true,
+  "https://www.sbimf.com/magnumsif-portfolios": true,
+  "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/isid/arthaya-equity-long-short-fund.pdf": true,
+  "https://www.unionmf.com/arthayasif/about-us/downloads#factsheets": true,
+  "https://www.franklintempletonindia.com/download/en-in/sif-open-end-dvsfd-equity-schemes/3ccdfa21-b19b-4a1c-9f19-eb2989a4ca17/Sapphire%20Equity%20Long-Short%20SIF%20_KIM.pdf": true,
+  "https://www.franklintempletonindia.com/sapphiresif": true,
+  "https://miraeassetetf.co.in/wp-content/uploads/2026/05/Platinum-Hybrid-Long-Short-Fund-Four-Pager-1.pdf": true,
+  "https://platinumsif.miraeassetmf.co.in/forms-downloads/regulatory/portfolio": true,
+  "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/-/media/Files/attachments/india/redhex-sif/nfo-deck-redhex-hybrid-long-short-fund": true,
+  "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/investor-resources/information-library": true,
+  "https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/": true,
+  "https://www.qsif.com/statutory-disclosures": true,
+  "https://summitsif.invescomutualfund.com/statutory-disclosures": true,
+  "https://www.kotakmf.com/sif/": true,
+  "https://www.jioblackrockamc.com/prismsif/statutory-disclosure/fund-document/portfolio-insights": true
+ },
+ "missing_presentations": [
+  "Altiva (Edelweiss Asset Management)",
+  "Infinity (Kotak Mahindra AMC)",
+  "Prism (Jio BlackRock AMC)",
+  "Summit (Invesco Asset Management India)",
+  "WSIF (The Wealth Company AMC)",
+  "qsif (Quant Money Managers)"
+ ]
+}
