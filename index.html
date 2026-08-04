@@ -213,16 +213,16 @@
 
   /* ---- table ---- */
   .wrap{overflow-x:auto}
-  table{border-collapse:separate;border-spacing:0;width:100%;min-width:1080px}
+  table{border-collapse:separate;border-spacing:0;width:100%;min-width:0}
   thead th{position:sticky;top:0;z-index:20;background:var(--thead);border-bottom:1px solid var(--line2);
-    padding:6px 8px;font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-dim);
+    padding:4px 6px;font-size:9.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-dim);
     white-space:nowrap;cursor:pointer;user-select:none;font-weight:600}
   thead th.r{text-align:right}
   thead th:hover{color:var(--ink)}
   thead th .ar{color:var(--accent);font-size:9px;margin-left:2px}
   thead th .qh{color:var(--ink-faint);font-size:8.5px;margin-left:2px;vertical-align:top;cursor:help}
   thead th:hover .qh{color:var(--accent2)}
-  td{padding:4px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:3px 6px;border-bottom:1px solid var(--line);white-space:nowrap;font-size:11px}
   td.r{text-align:right}
   tbody tr:hover td{background:var(--rowhover)}
   /* pin the scheme-name column at ALL widths so the metrics scroll under it */
@@ -760,7 +760,11 @@ const SIFMetrics = (function(){
   // Users swap in any timeframe/metric via the Columns picker, or open Compare for the full matrix.
   const MOBILE_HIDE=['rangeFrom','obs','r1d','r1w','rwtd','rmtd','r2m','r3m','r6m','rytd','rfytd',
     'annRet','annStd','sortino','calmar','maxDD','maxRU','recovery','winRate','gainPain','upCapture','uw'];
-  let hiddenCols=new Set();
+  // Desktop default: a focused, no-scroll "Overview" set — every other column is one click away
+  // in the Columns picker (see the Overview / Returns / Risk / All presets).
+  const OVERVIEW_KEEP=['r1d','rmtd','r1m','r3m','r6m','rytd','rfytd','totalRet','annStd','sharpe',
+    'sortino','maxDD','recovery','upCapture','downCapture'];
+  let hiddenCols=new Set(COLS.filter(c=>c.k!=='name'&&!OVERVIEW_KEEP.includes(c.k)).map(c=>c.k));
 
   // ---- formatting ----
   const na='<span class="na">—</span>';
@@ -1345,14 +1349,16 @@ const SIFMetrics = (function(){
     const c=h.classList.toggle('collapsed'); $('#filtToggle').setAttribute('aria-expanded',(!c).toString()); };
 
   // ---- Columns picker: choose which metric/timeframe columns to compare ----
-  const CPRESETS={ returns:['r1d','r1w','rwtd','rmtd','r1m','r3m','r6m','rytd','rfytd','totalRet'],
+  const CPRESETS={ overview:OVERVIEW_KEEP,
+                   returns:['r1d','r1w','rwtd','rmtd','r1m','r3m','r6m','rytd','rfytd','totalRet'],
                    risk:['sharpe','sortino','calmar','maxDD','downCapture','upCapture'] };
   function pickable(){ return COLS.filter(c=>c.k!=='name'&&c.k!=='uw'); }
   function updateColSum(){ const shown=pickable().filter(c=>!hiddenCols.has(c.k)).length;
     const s=$('#colsum'); if(s) s.textContent='Columns ('+shown+') ▾'; }
   function buildColMenu(){
     const menu=$('#colmenu'); if(!menu) return;
-    const presets='<div class="cprow"><button data-preset="returns">Returns</button>'+
+    const presets='<div class="cprow"><button data-preset="overview">Overview</button>'+
+      '<button data-preset="returns">Returns</button>'+
       '<button data-preset="risk">Risk</button><button data-preset="all">All</button></div>';
     menu.innerHTML=presets+pickable().map(c=>'<label class="copt"><input type="checkbox" data-col="'+c.k+'"'+
       (hiddenCols.has(c.k)?'':' checked')+'>'+esc(c.label)+'</label>').join('');
@@ -1362,7 +1368,7 @@ const SIFMetrics = (function(){
     menu.querySelectorAll('button[data-preset]').forEach(b=>b.onclick=e=>{ e.preventDefault();
       const p=b.getAttribute('data-preset');
       if(p==='all') hiddenCols=new Set();
-      else { const keep=new Set(CPRESETS[p]); hiddenCols=new Set(pickable().filter(c=>!keep.has(c.k)).map(c=>c.k)); }
+      else { const keep=new Set(CPRESETS[p]); hiddenCols=new Set(COLS.filter(c=>c.k!=='name'&&!keep.has(c.k)).map(c=>c.k)); }
       buildColMenu(); render(); updateColSum(); });
   }
   if(_mq.matches) hiddenCols=new Set(MOBILE_HIDE);   // phones start on a readable, comparison-ready set
