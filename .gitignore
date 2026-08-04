@@ -27,3 +27,6 @@ renders/
 
 # Monitor run flag (ephemeral)
 monitor/changed.flag
+
+# local page-generation scratch
+.build/
