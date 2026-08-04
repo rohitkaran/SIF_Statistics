@@ -1,0 +1,15 @@
+# Cloudflare Pages — cache rules.
+# Keep the page shell + data files always-revalidated so new NAVs appear the moment a deploy lands
+# (each push publishes a new deployment; must-revalidate stops browsers/edge serving a stale copy).
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/nav_data.json
+  Cache-Control: public, max-age=0, must-revalidate
+/benchmark_data.json
+  Cache-Control: public, max-age=0, must-revalidate
+/portfolios/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Long-lived, content-hashed brand assets can cache hard.
+/brand/*
+  Cache-Control: public, max-age=86400
