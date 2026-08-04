@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-04T01:13:50+00:00",
+ "generated": "2026-08-04T01:29:07+00:00",
  "latest_nav": "2026-08-03",
  "schemes": {
   "SIF-120": {
@@ -942,10 +942,10 @@
   ]
  },
  "managers": {
-  "SIF-9": "",
-  "SIF-10": "",
-  "SIF-11": "",
-  "SIF-12": "",
+  "SIF-9": "Bhavesh Jain, Bharat Lahoti, Dhawal Dalal, Kedar Karnik",
+  "SIF-10": "Bhavesh Jain, Bharat Lahoti, Dhawal Dalal, Kedar Karnik",
+  "SIF-11": "Bhavesh Jain, Bharat Lahoti, Dhawal Dalal, Kedar Karnik",
+  "SIF-12": "Bhavesh Jain, Bharat Lahoti, Dhawal Dalal, Kedar Karnik",
   "SIF-83": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
   "SIF-80": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
   "SIF-81": "Lovelish Solanki, Rohit Karan, Mohit Sharma",
@@ -1044,6 +1044,7 @@
   "https://arudhasif.com/downloads/": true,
   "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/April/Filing%20date%2017-04-2026/Release%20date%2014-04-2026/Advertisements/Annexure%206%20-%20iSIF%20Factsheet.PDF": true,
   "https://www.isif.icicipruamc.com/media-center/downloads": false,
+  "https://www.edelweissmf.com/altivaSIF/docs/Altiva-Hybrid-Long-Short-Fund-presentation.pdf": false,
   "https://www.edelweissmf.com/altivasif/statutory/disclosures": false,
   "https://sif.itiamc.com/Home/DownloaddFile/10": true,
   "https://sif.itiamc.com/Disclosure?category=PORTFOLIO%20DISCLOSURES": true,
@@ -1057,18 +1058,16 @@
   "https://platinumsif.miraeassetmf.co.in/forms-downloads/regulatory/portfolio": true,
   "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/-/media/Files/attachments/india/redhex-sif/nfo-deck-redhex-hybrid-long-short-fund": true,
   "https://www.assetmanagement.hsbc.co.in/en/redhex-sif/investor-resources/information-library": true,
+  "https://www.wealthcompanyamc.in/uploads/ISID_wsif_Equity_Long_Short_Fund_20d41ea013.pdf": true,
   "https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/": true,
+  "https://www.qsif.com/Admin/Pdf/qsif_Equity_Long-Short_Fund_Presentation.pdf": true,
   "https://www.qsif.com/statutory-disclosures": true,
+  "https://summitsif.invescomutualfund.com/docs/siflibraries/default-document-library/summit-sif---isid---summit-equity-long-short-fund-(1).pdf?sfvrsn=20cd9fc2_3": true,
   "https://summitsif.invescomutualfund.com/statutory-disclosures": true,
+  "https://www.kotakmf.com/documents/Infinity_Hybrid_Long_Short_NFO_PPT_V8": true,
   "https://www.kotakmf.com/sif/": true,
+  "https://cdnstorage-ddh3hqhvg3gyedd9.a02.azurefd.net/brcms/prismhybri-mpux8hz1-faf798.pdf": true,
   "https://www.jioblackrockamc.com/prismsif/statutory-disclosure/fund-document/portfolio-insights": true
  },
- "missing_presentations": [
-  "Altiva (Edelweiss Asset Management)",
-  "Infinity (Kotak Mahindra AMC)",
-  "Prism (Jio BlackRock AMC)",
-  "Summit (Invesco Asset Management India)",
-  "WSIF (The Wealth Company AMC)",
-  "qsif (Quant Money Managers)"
- ]
+ "missing_presentations": []
 }
