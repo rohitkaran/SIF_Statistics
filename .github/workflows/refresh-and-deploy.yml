@@ -1,8 +1,9 @@
-name: Refresh AMFI SIF data & deploy to Pages
+name: Refresh AMFI SIF data
 
-# Fetches real NAVs (daily) and, monthly, the fund-house PORTFOLIO disclosures; commits both
-# back into the repo (so the data is versioned/"saved on the repo"), then publishes to Pages.
-# Assumes THIS folder (sif-dashboard/) is the repository root.
+# Fetches real NAVs (daily) and, monthly, the fund-house PORTFOLIO disclosures, then commits both
+# back into the repo (so the data is versioned/"saved on the repo"). Deployment is handled by
+# Cloudflare Pages, which is Git-connected and auto-publishes every push to main (including the
+# data commits below) — so this workflow only has to refresh data. THIS folder is the repo root.
 
 on:
   schedule:
@@ -20,24 +21,15 @@ on:
         type: boolean
         default: true
   push:
-    branches: [ main ]          # also rebuild whenever you push changes
+    branches: [ main ]          # re-run monitor/checks whenever you push changes
 
 permissions:
   contents: write               # commit refreshed nav_data.json + portfolios/ back to main
-  pages: write
-  id-token: write
   issues: write                 # open an alert issue when the monitor detects changes
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
-  build-deploy:
+  refresh:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -46,7 +38,7 @@ jobs:
           python-version: '3.12'
 
       - name: Fetch real NAVs from AMFI
-        # If AMFI blocks the CI runner, the job still deploys the last committed nav_data.json.
+        # If AMFI blocks the CI runner, the job keeps the last committed nav_data.json.
         run: |
           python fetch_amfi_sif.py \
             --from "${{ github.event.inputs.from || '2025-10-01' }}" \
@@ -71,7 +63,8 @@ jobs:
         run: python monitor.py || echo "::warning::monitor failed"
 
       - name: Commit refreshed data back to the repo
-        # Best-effort: a data-push race must never block the site deploy below.
+        # Best-effort: a data-push race must never fail the job. The push itself triggers the
+        # Cloudflare Pages deploy, so fresh data is live within ~a minute of this commit.
         continue-on-error: true
         run: |
           git config user.name  "github-actions[bot]"
@@ -93,16 +86,3 @@ jobs:
           gh issue create --title "SIF change alert — $(date -u +%F)" \
             --body-file monitor/changed.flag \
           || echo "::warning::could not open alert issue"
-
-      # index.html is the homepage (served at /) — no copy step needed.
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true      # turns on Pages automatically, so no manual Settings step
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Deploy to GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v4
