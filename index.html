@@ -297,12 +297,12 @@
     </select></div>
     <div class="fld"><label>Plan</label><select id="plan">
       <option value="all">All plans</option>
-      <option value="direct">Direct only</option>
+      <option value="direct" selected>Direct only</option>
       <option value="regular">Regular only</option>
     </select></div>
     <div class="fld"><label>Option</label><select id="opt">
       <option value="all">All options</option>
-      <option value="growth">Growth only</option>
+      <option value="growth" selected>Growth only</option>
       <option value="idcw">IDCW / Dividend</option>
     </select></div>
     <div class="fld"><label>My funds (regex)</label><input class="rx" id="myrx" value="apex"></div>
@@ -523,7 +523,7 @@ const SIFMetrics = (function(){
   const $ = s=>document.querySelector(s);
   let DATA=null;              // {generated, schemes:[{code,name,cat,sif,isin,series}]}
   let ROWS=[];               // computed rows
-  let sortKey='sharpe', sortDir=-1;
+  let sortKey='name', sortDir=1;   // land on a clean A→Z order (per strategy group); click a metric header to re-sort
   const openSet=new Set();
   let PORT=null;             // portfolios/index.json {periods, amcs, schemes:{code:{periods:{}}}}
   const portCache=new Map(); // period-file path -> fetched fund JSON
