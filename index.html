@@ -421,7 +421,7 @@ const SIFMetrics = (function(){
         if(navs[i]>=peakVal){
           recovered=true;
           recovery = recMode==='calendar' ? daysBetween(dates[ddTroughIdx],dates[i])
-                                           : (i-ddTroughIdx);
+                                           : (i-ddTroughIdx+1);   // inclusive of the trough day
           break;
         }
       }
@@ -613,7 +613,7 @@ const SIFMetrics = (function(){
     calmar:'Yearly return divided by the worst peak-to-trough fall. Higher = more return per unit of pain.',
     maxDD:'Maximum drawdown: the worst peak-to-trough drop in the window. Smaller (less negative) is better.',
     maxRU:'Maximum run-up: the largest trough-to-peak rise in the window.',
-    recovery:'Days taken to climb back to the previous peak after the worst fall. "not rec." = not yet recovered.',
+    recovery:'Trading days to climb back to the previous peak after the worst fall, counted inclusively from the low (the trough day is day 1). "not rec." = not yet recovered.',
     winRate:'Share of days the fund went up. Above 50% means more up-days than down.',
     gainPain:'Gain-to-pain: total gains divided by total losses. Above 1 means gains outweighed losses.',
     upCapture:'Up capture vs NIFTY 50: on days the index rose, the fund captured this % of the index’s gain. 100 = matched the market; lower = rose less (typical for a hedged long-short fund).',
