@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Keep the raw data/tooling out of search results (still publicly reachable, just not indexed)
+Disallow: /portfolios/raw/
+Disallow: /monitor/
+Disallow: /publish/
+Disallow: /content/
+
+Sitemap: https://www.sifintel.com/sitemap.xml
