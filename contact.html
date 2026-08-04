@@ -52,14 +52,36 @@
 <p>The fastest way to reach us is by email. We read every message and typically reply within a couple of working days.</p>
 <p style="font-size:19px"><a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a></p>
 <h2>Send a message</h2>
-<p>Prefer a form? Fill this in and it will open your email app with the details ready to send.</p>
-<form onsubmit="var s=encodeURIComponent(this.subject.value||'SIFintel enquiry');var b=encodeURIComponent('From: '+this.name.value+' <'+this.email.value+'>\n\n'+this.msg.value);location.href='mailto:ceo@lumesoftai.com?subject='+s+'&body='+b;return false;">
+<p>Fill this in and we'll get it straight to our inbox — no email app needed.</p>
+<form id="cform" novalidate>
   <div class="field"><label>Your name</label><input name="name" required></div>
   <div class="field"><label>Your email</label><input name="email" type="email" required></div>
   <div class="field"><label>Subject</label><input name="subject"></div>
-  <div class="field"><label>Message</label><textarea name="msg" rows="5" required></textarea></div>
-  <button class="btn" type="submit">Compose email</button>
+  <div class="field"><label>Message</label><textarea name="message" rows="5" required></textarea></div>
+  <!-- honeypot: hidden from humans; bots fill it and get silently dropped -->
+  <div style="position:absolute;left:-5000px" aria-hidden="true"><input name="company" tabindex="-1" autocomplete="off"></div>
+  <button class="btn" type="submit">Send message</button>
+  <span id="cstatus" style="margin-left:12px;font-size:14px"></span>
 </form>
+<script>
+(function(){
+  var f=document.getElementById('cform'), s=document.getElementById('cstatus');
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit]');
+    var d={name:f.name.value,email:f.email.value,subject:f.subject.value,message:f.message.value,company:f.company.value};
+    if(!d.name.trim()||!d.email.trim()||!d.message.trim()){ s.style.color='#d9820b'; s.textContent='Please fill in your name, email and message.'; return; }
+    btn.disabled=true; s.style.color='#5a6485'; s.textContent='Sending…';
+    try{
+      var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
+      var j=await r.json().catch(function(){return {};});
+      if(r.ok && j.ok){ s.style.color='#12a150'; s.textContent='Thanks — your message has been sent.'; f.reset(); }
+      else { s.style.color='#e5484d'; s.textContent=(j&&j.error)||'Could not send. Please email ceo@lumesoftai.com.'; }
+    }catch(err){ s.style.color='#e5484d'; s.textContent='Network error. Please email ceo@lumesoftai.com.'; }
+    btn.disabled=false;
+  });
+})();
+</script>
 <h2>Company</h2>
 <p><strong>Lume Software Private Limited</strong><br>Email: <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a></p>
 <div class="callout">SIFintel is an education and data platform. We cannot give personal investment advice or execute
