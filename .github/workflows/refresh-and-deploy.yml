@@ -7,8 +7,12 @@ name: Refresh AMFI SIF data
 
 on:
   schedule:
-    # 14:30 UTC = 20:00 IST, Mon-Fri — AMFI publishes SIF NAVs in the evening IST.
-    - cron: '30 14 * * 1-5'
+    # AMFI publishes SIF NAVs in the evening IST — fetch a few times so late-published NAVs are
+    # caught the same day, with a next-morning backfill as a safety net. Each run is idempotent
+    # (fetches the full range, commits only if the data actually changed).
+    - cron: '30 14 * * 1-5'   # 20:00 IST Mon-Fri
+    - cron: '30 17 * * 1-5'   # 23:00 IST Mon-Fri (catches late-evening publication)
+    - cron: '30 2 * * 2-6'    # 08:00 IST Tue-Sat (backfill the previous trading day)
     # 5th of each month, 15:00 UTC — pull the latest disclosed portfolios (SIFs report bi-monthly).
     - cron: '0 15 5 * *'
   workflow_dispatch:            # trigger a refresh manually from the Actions tab
