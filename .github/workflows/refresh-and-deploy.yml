@@ -77,7 +77,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
-            git commit -m "data: refresh NAVs / portfolios [skip ci]"
+            # NOTE: do NOT put [skip ci] here — Cloudflare Pages honors it and would skip the deploy,
+            # so the site would never update from data commits. A GITHUB_TOKEN push does not re-trigger
+            # this workflow anyway (GitHub blocks recursive workflow runs), so there is no CI loop.
+            git commit -m "data: refresh NAVs / portfolios"
             git pull --rebase --autostash origin main || true
             git push || echo "::warning::data commit push failed — will retry next run"
           fi
