@@ -1,0 +1,42 @@
+{
+ "generated": "2026-08-13T16:20:57Z",
+ "source": "https://www.amfiindia.com/api/sif-nfo",
+ "note": "AMFI publishes the open-NFO list without dates. first_seen/last_seen are the dates SIFintel observed each offer on that list; launched_on is the scheme's first published NAV.",
+ "open_count": 3,
+ "total_tracked": 3,
+ "nfos": [
+  {
+   "key": "apex-sif__apex-equity-ex-top-100-long-short-fund",
+   "fund_house": "Apex SIF",
+   "strategy": "Apex Equity Ex-Top 100 Long-short Fund",
+   "scheme_id": "S-32",
+   "sif_id": "3",
+   "first_seen": "2026-08-13",
+   "last_seen": "2026-08-13",
+   "status": "open",
+   "launched_on": null
+  },
+  {
+   "key": "apex-sif__apex-equity-long-short-fund",
+   "fund_house": "Apex SIF",
+   "strategy": "Apex Equity Long-Short Fund",
+   "scheme_id": "S-31",
+   "sif_id": "3",
+   "first_seen": "2026-08-13",
+   "last_seen": "2026-08-13",
+   "status": "open",
+   "launched_on": null
+  },
+  {
+   "key": "magnum-sif__magnum-equity-ex-top-100long-short-fund",
+   "fund_house": "Magnum SIF",
+   "strategy": "Magnum Equity Ex-Top 100Long Short Fund",
+   "scheme_id": "S-33",
+   "sif_id": "22",
+   "first_seen": "2026-08-13",
+   "last_seen": "2026-08-13",
+   "status": "open",
+   "launched_on": null
+  }
+ ]
+}

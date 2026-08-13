@@ -21,13 +21,17 @@ COMPANY = "Lume Software Private Limited"
 STAR = ('<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 '
         'L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg>')
 
+# NOTE: /videos is intentionally footer-only. It is still built, linked and in the sitemap — it just
+# doesn't earn a top-nav slot while it has no videos on it. Add ("videos", "/videos", "Videos") back
+# here the day the first one is published.
 NAV = [("home", "/", "Dashboard"),
        ("news", "/news", "News"),
+       ("nfo", "/nfo", "NFOs"),
+       ("aum", "/aum", "AUM"),
        ("commentary", "/commentary/", "Commentary"),
        ("learn", "/learn/", "Learn"),
        ("distributors", "/distributors", "For distributors"),
        ("data", "/data", "Data &amp; API"),
-       ("videos", "/videos", "Videos"),
        ("about", "/about", "About")]
 
 
@@ -59,6 +63,8 @@ FOOTER = f'''<footer class="site">
       <h4>SIFintel</h4>
       <a href="/">SIF comparison dashboard</a>
       <a href="/news">World financial news</a>
+      <a href="/nfo">SIF new fund offers</a>
+      <a href="/aum">AUM &amp; market share</a>
       <a href="/commentary/">Market commentary</a>
       <a href="/learn/">Learn about SIFs</a>
       <a href="/videos">Videos</a>

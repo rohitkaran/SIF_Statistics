@@ -16,6 +16,10 @@
   Cache-Control: public, max-age=0, must-revalidate
 /news_data.json
   Cache-Control: public, max-age=0, must-revalidate
+/nfo_data.json
+  Cache-Control: public, max-age=0, must-revalidate
+/aum_data.json
+  Cache-Control: public, max-age=0, must-revalidate
 /commentary/*
   Cache-Control: public, max-age=0, must-revalidate
 

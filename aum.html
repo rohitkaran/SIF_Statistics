@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIF AUM & market share — by fund house and strategy | SIFintel</title>
+<meta name="description" content="How big each Indian Specialized Investment Fund is: disclosed net assets, market share by fund house and by long-short strategy, and growth between disclosures. Built from fund houses' own portfolio filings.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel, SIF AUM, SIF market share, SIF assets under management, largest SIF, SIF fund size">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.sifintel.com/aum">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SIFintel">
+<meta property="og:title" content="SIF AUM & market share — by fund house and strategy | SIFintel">
+<meta property="og:description" content="How big each Indian Specialized Investment Fund is: disclosed net assets, market share by fund house and by long-short strategy, and growth between disclosures. Built from fund houses' own portfolio filings.">
+<meta property="og:url" content="https://www.sifintel.com/aum">
+<meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="theme-color" content="#5b5bf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/logo-mark.svg">
+<script>try{if(localStorage.getItem('sif-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Indian SIF AUM and market share","description":"Disclosed net assets, market share by fund house and strategy for India\u2019s Specialized Investment Funds.","creator":{"@type":"Organization","name":"SIFintel"},"inLanguage":"en-IN"}</script>
+</head>
+<body>
+<header class="site">
+  <div class="navwrap">
+    <a href="/" style="text-decoration:none"><h1 class="wm">SIF<span class="in">intel<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1></a>
+    <nav class="main">
+      <a href="/">Dashboard</a>
+      <a href="/news">News</a>
+      <a href="/nfo">NFOs</a>
+      <a href="/aum" class="active">AUM</a>
+      <a href="/commentary/">Commentary</a>
+      <a href="/learn/">Learn</a>
+      <a href="/distributors">For distributors</a>
+      <a href="/data">Data &amp; API</a>
+      <a href="/about">About</a>
+    </nav>
+    <span class="navspace"></span>
+    <a class="navcta" href="/contact">Contact</a>
+    <button class="themebtn" onclick="(function(){var d=document.documentElement;var n=d.getAttribute('data-theme')==='dark'?'':'dark';if(n)d.setAttribute('data-theme','dark');else d.removeAttribute('data-theme');try{localStorage.setItem('sif-theme',n)}catch(e){}})()">◐</button>
+  </div>
+</header>
+<main class="wrap wide">
+<div class="crumb"><a href="/">Home</a> / AUM</div>
+<article class="doc">
+<h1>SIF AUM &amp; market share</h1>
+<p class="lede">How big each Specialized Investment Fund actually is, who holds what share of the category, and how
+that is split across strategies — built from the net assets each fund house discloses in its own portfolio filings.</p>
+<p class="meta" id="aummeta">Loading AUM data…</p>
+
+<div id="aumstats" class="statrow"></div>
+
+<div class="callout" id="aumbasis"></div>
+
+<h2>Market share by fund house</h2>
+<div id="byhouse"></div>
+
+<h2>Market share by strategy</h2>
+<div id="bycat"></div>
+
+<h2>Every disclosed fund</h2>
+<div id="byfund"></div>
+
+<h2>Growth between disclosures</h2>
+<p id="moversnote"></p>
+<div id="movers"></div>
+
+<h2>How this is built</h2>
+<p>AMFI publishes NAVs for SIFs but no AUM feed — there is no <code>sif-aum</code> endpoint of any kind. Every figure
+here therefore comes from the fund houses themselves: each portfolio disclosure states the scheme's net assets, and we
+normalise those filings into one schema. One portfolio file counts as one fund; Direct/Regular and Growth/IDCW variants
+are never added together.</p>
+<p><strong>Why there is no month-by-month industry chart.</strong> SIF houses disclose on a staggered, roughly
+bi-monthly cycle — consecutive months contain almost entirely different fund houses. Differencing two months would
+compare one set of AMCs against another and report that composition change as "growth", which would be wrong. So a
+fund is only ever compared against its <em>own</em> previous disclosure, and the gap between them is stated.</p>
+
+<div class="callout warn">Figures are disclosed net assets as at each fund's own disclosure date, reproduced for
+information only. They are not investment advice and not a measure of fund quality — size is not performance. Verify
+against scheme documents before relying on them.</div>
+</article>
+<script>
+(function(){
+  var META=document.getElementById('aummeta'), STATS=document.getElementById('aumstats'),
+      BASIS=document.getElementById('aumbasis'), HOUSE=document.getElementById('byhouse'),
+      CAT=document.getElementById('bycat'), FUND=document.getElementById('byfund'),
+      MOV=document.getElementById('movers'), MNOTE=document.getElementById('moversnote');
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function cr(n){ return '₹'+Number(n).toLocaleString('en-IN',{maximumFractionDigits:0})+' cr'; }
+  function per(p){ if(!p) return '—'; var m=p.split('-');
+    return new Date(Date.UTC(+m[0],+m[1]-1,1)).toLocaleDateString(undefined,{month:'short',year:'numeric'}); }
+
+  function bars(rows){
+    var max=Math.max.apply(null,rows.map(function(r){return r.aum_cr;}))||1;
+    return '<div class="bars">'+rows.map(function(r){
+      return '<div class="barrow">'+
+        '<div class="barlabel">'+esc(r.name)+'<span>'+r.funds+' fund'+(r.funds===1?'':'s')+
+          (r.as_of_periods?' · '+r.as_of_periods.map(per).join(', '):'')+'</span></div>'+
+        '<div class="bartrack"><div class="barfill" style="width:'+(100*r.aum_cr/max).toFixed(1)+'%"></div></div>'+
+        '<div class="barval">'+cr(r.aum_cr)+'<span>'+r.share_pct.toFixed(1)+'%</span></div>'+
+      '</div>';
+    }).join('')+'</div>';
+  }
+
+  fetch('/aum_data.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+    var L=j.latest;
+    META.textContent = L.funds+' funds disclosed · '+cr(L.aum_cr)+' total · covering '+
+      L.periods_spanned.map(per).join(', ');
+
+    STATS.innerHTML =
+      '<div class="stat"><b>'+cr(L.aum_cr).replace('₹','')+'</b><span>total disclosed AUM</span></div>'+
+      '<div class="stat"><b>'+L.funds+'</b><span>funds with disclosures</span></div>'+
+      '<div class="stat"><b>'+L.by_house.length+'</b><span>fund houses</span></div>'+
+      '<div class="stat"><b>'+L.by_category.length+'</b><span>strategies</span></div>';
+
+    // Deliberately not echoing j.caveat — that wording is written for API consumers and names raw
+    // JSON fields. Readers get the same caution in plain English.
+    BASIS.innerHTML = '<b>What you are looking at.</b> Each fund at its most recent disclosure — which is not the '+
+      'same month for every house, so the period is shown against each one. Fund houses file on a staggered, '+
+      'roughly bi-monthly cycle, so this is the current picture of the funds that have disclosed, not an '+
+      'industry total, and the monthly totals further down are not comparable with one another.';
+
+    HOUSE.innerHTML = bars(L.by_house);
+    CAT.innerHTML = bars(L.by_category);
+
+    FUND.innerHTML = '<div class="tablewrap"><table class="data"><thead><tr><th>Fund</th><th>Fund house</th>'+
+      '<th>Strategy</th><th>Disclosed</th><th style="text-align:right">Net assets</th></tr></thead><tbody>'+
+      L.funds_detail.map(function(f){
+        return '<tr><td>'+esc(f.fund)+'</td><td>'+esc(f.house)+'</td><td>'+esc(f.category)+
+               '</td><td>'+per(f.period)+'</td><td style="text-align:right">'+cr(f.aum_cr)+'</td></tr>';
+      }).join('')+'</tbody></table></div>';
+
+    if(!j.fund_movers || !j.fund_movers.length){
+      MNOTE.textContent='No fund has disclosed twice yet in the data we hold, so there is no growth to report. '+
+        'The moment any fund files a second disclosure, its change appears here automatically.';
+      MOV.innerHTML='';
+    } else {
+      MNOTE.textContent='Each fund against its own previous disclosure. The gap is stated because it is not always one month.';
+      MOV.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Fund</th><th>Fund house</th>'+
+        '<th>Between</th><th style="text-align:right">Was</th><th style="text-align:right">Now</th>'+
+        '<th style="text-align:right">Change</th></tr></thead><tbody>'+
+        j.fund_movers.map(function(m){
+          var up=m.change_cr>=0;
+          return '<tr><td>'+esc(m.fund)+'</td><td>'+esc(m.house)+'</td><td>'+per(m.from_period)+' → '+per(m.to_period)+
+            ' <span class="pill">'+m.gap_months+'m</span></td>'+
+            '<td style="text-align:right">'+cr(m.from_cr)+'</td><td style="text-align:right">'+cr(m.to_cr)+'</td>'+
+            '<td style="text-align:right;color:'+(up?'var(--pos)':'#e5484d')+'">'+(up?'+':'')+cr(m.change_cr)+
+            (m.change_pct==null?'':' ('+(up?'+':'')+m.change_pct.toFixed(1)+'%)')+'</td></tr>';
+        }).join('')+'</tbody></table></div>';
+    }
+  }).catch(function(){ META.textContent='AUM data is temporarily unavailable — please try again shortly.'; });
+})();
+</script>
+</main>
+<footer class="site">
+  <div class="footwrap">
+    <div class="footcol">
+      <h4>SIFintel</h4>
+      <a href="/">SIF comparison dashboard</a>
+      <a href="/news">World financial news</a>
+      <a href="/nfo">SIF new fund offers</a>
+      <a href="/aum">AUM &amp; market share</a>
+      <a href="/commentary/">Market commentary</a>
+      <a href="/learn/">Learn about SIFs</a>
+      <a href="/videos">Videos</a>
+    </div>
+    <div class="footcol">
+      <h4>Learn</h4>
+      <a href="/learn/what-is-a-sif">What is a SIF?</a>
+      <a href="/learn/sif-categories">The SIF categories</a>
+      <a href="/learn/sif-regulatory-framework">SEBI regulatory framework</a>
+    </div>
+    <div class="footcol">
+      <h4>For distributors</h4>
+      <a href="/distributors">Distributor guide</a>
+      <a href="/learn/sif-certification-study-guide">Certification study guide</a>
+      <a href="/learn/sif-tax-suitability-guide">Tax &amp; suitability primer</a>
+    </div>
+    <div class="footcol">
+      <h4>For business</h4>
+      <a href="/data">SIF data &amp; API</a>
+      <a href="/services">Build with us</a>
+      <a href="/api/v1/meta">API reference</a>
+    </div>
+    <div class="footcol">
+      <h4>Company</h4>
+      <a href="/about">About us</a>
+      <a href="/contact">Contact</a>
+      <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>
+    </div>
+  </div>
+  <div class="legal">
+    <p>SIFintel is an independent data &amp; education platform for India's Specialized Investment Funds (SIFs),
+    built to help investors and distributors understand this new asset class. We are not a SEBI-registered
+    investment adviser, research analyst or distributor. Content is for education only and is not investment,
+    legal or tax advice; no fund is recommended, ranked or promoted. SIFs carry higher risk — read scheme
+    documents and consult a SEBI-registered adviser before investing.</p>
+    <p>© 2026 Lume Software Private Limited. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

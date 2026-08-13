@@ -13,8 +13,12 @@ on:
     - cron: '30 14 * * 1-5'   # 20:00 IST Mon-Fri
     - cron: '30 17 * * 1-5'   # 23:00 IST Mon-Fri (catches late-evening publication)
     - cron: '30 2 * * 2-6'    # 08:00 IST Tue-Sat (backfill the previous trading day)
-    # 5th of each month, 15:00 UTC — pull the latest disclosed portfolios (SIFs report bi-monthly).
-    - cron: '0 15 5 * *'
+    # Portfolio disclosures: WEEKLY, not monthly. SIF houses file on a staggered, roughly bi-monthly
+    # cycle and not on the same month as each other (verified: 2026-05 and 2026-06 share no funds at
+    # all), so a fixed monthly date silently misses whoever published just after it. Polling every
+    # Monday picks each disclosure up within a week of publication, whatever month it lands in; the
+    # fetcher stamps each file with its own disclosure period, so months stay correctly aligned.
+    - cron: '0 15 * * 1'
   workflow_dispatch:            # trigger a refresh manually from the Actions tab
     inputs:
       from:
@@ -55,13 +59,26 @@ jobs:
           python fetch_benchmark.py --to "$(date -u +%F)" \
           || echo "::warning::benchmark fetch failed — keeping last committed benchmark_data.json"
 
-      - name: Fetch portfolio disclosures (monthly cron or manual)
-        # Skipped on the daily NAV cron and on plain pushes, so portfolios refresh ~monthly.
-        if: ${{ github.event.schedule == '0 15 5 * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.portfolios != 'false') }}
+      - name: Fetch portfolio disclosures (weekly cron or manual)
+        # Skipped on the daily NAV crons and on plain pushes, so portfolios refresh weekly.
+        if: ${{ github.event.schedule == '0 15 * * 1' || (github.event_name == 'workflow_dispatch' && github.event.inputs.portfolios != 'false') }}
         run: |
           pip install -r requirements.txt
           python fetch_sif_portfolios.py \
           || echo "::warning::Portfolio fetch failed — keeping last committed portfolios/"
+
+      - name: Track SIF new fund offers
+        # AMFI's NFO list is a dateless snapshot with no archive, so the history only exists if we
+        # record it. Runs on every job — a missed day just widens one offer's observed window.
+        run: |
+          python fetch_sif_nfo.py --out nfo_data.json \
+          || echo "::warning::NFO fetch failed — keeping last committed nfo_data.json"
+
+      - name: Rebuild AUM / market-share aggregates
+        # Derived purely from the committed portfolio files, so it is cheap and always safe to run.
+        run: |
+          python build_aum.py \
+          || echo "::warning::AUM aggregation failed — keeping last committed aum_data.json"
 
       - name: Snapshot world financial news (fallback copy only)
         # The LIVE /news page is served by the Cloudflare Pages Function functions/api/news.js,
@@ -82,7 +99,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nav_data.json benchmark_data.json news_data.json portfolios/ monitor/state.json monitor/CHANGELOG.md 2>/dev/null || true
+          git add nav_data.json benchmark_data.json news_data.json nfo_data.json aum_data.json portfolios/ monitor/state.json monitor/CHANGELOG.md 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

@@ -103,6 +103,17 @@ main.wrap.wide{max-width:1080px}
 .postcard .tag{font-family:var(--mono);font-size:11px;color:var(--teal);letter-spacing:.5px}
 .postcard h3{margin:.25em 0 .35em;font-size:17px;color:var(--ink);line-height:1.35}
 .postcard p{margin:0 0 9px;font-size:14px;color:var(--ink-dim)}
+.bars{margin:16px 0}
+.barrow{display:grid;grid-template-columns:minmax(150px,1.4fr) minmax(80px,2fr) minmax(110px,auto);
+  gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.barlabel{font-size:14.5px;color:var(--ink);line-height:1.3}
+.barlabel span{display:block;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint)}
+.bartrack{background:var(--panel2);border-radius:20px;height:9px;overflow:hidden}
+.barfill{background:var(--teal);height:100%;border-radius:20px;min-width:2px}
+.barval{text-align:right;font-family:var(--mono);font-size:13px;color:var(--ink)}
+.barval span{display:block;font-size:11px;color:var(--ink-faint)}
+@media(max-width:560px){ .barrow{grid-template-columns:1fr auto;gap:6px}
+  .bartrack{grid-column:1/-1;order:3} }
 .statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:20px 0 8px}
 .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
 .stat b{display:block;font-size:26px;line-height:1.15;letter-spacing:-.5px;color:var(--teal);font-family:var(--sans)}
