@@ -89,6 +89,13 @@ jobs:
           python build_aum.py \
           || echo "::warning::AUM aggregation failed — keeping last committed aum_data.json"
 
+      - name: Rebuild return attribution
+        # Pure computation over nav_data.json + benchmark_data.json (+ portfolios for the
+        # portfolio-change section), so it must run AFTER the NAV fetch above.
+        run: |
+          python build_attribution.py \
+          || echo "::warning::attribution build failed — keeping last committed attribution_data.json"
+
       - name: Snapshot world financial news (fallback copy only)
         # The LIVE /news page is served by the Cloudflare Pages Function functions/api/news.js,
         # which re-aggregates the same feeds at the edge every 30 minutes. This step only refreshes
@@ -108,7 +115,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nav_data.json benchmark_data.json news_data.json nfo_data.json aum_data.json industry_data.json portfolios/ monitor/state.json monitor/CHANGELOG.md 2>/dev/null || true
+          git add nav_data.json benchmark_data.json news_data.json nfo_data.json aum_data.json industry_data.json attribution_data.json portfolios/ monitor/state.json monitor/CHANGELOG.md 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

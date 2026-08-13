@@ -22,6 +22,8 @@
   Cache-Control: public, max-age=0, must-revalidate
 /industry_data.json
   Cache-Control: public, max-age=0, must-revalidate
+/attribution_data.json
+  Cache-Control: public, max-age=0, must-revalidate
 /commentary/*
   Cache-Control: public, max-age=0, must-revalidate
 

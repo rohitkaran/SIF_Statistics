@@ -28,6 +28,7 @@ NAV = [("home", "/", "Dashboard"),
        ("news", "/news", "News"),
        ("nfo", "/nfo", "NFOs"),
        ("aum", "/aum", "AUM"),
+       ("attribution", "/attribution", "Attribution"),
        ("commentary", "/commentary/", "Commentary"),
        ("learn", "/learn/", "Learn"),
        ("distributors", "/distributors", "For distributors"),
@@ -65,6 +66,7 @@ FOOTER = f'''<footer class="site">
       <a href="/news">World financial news</a>
       <a href="/nfo">SIF new fund offers</a>
       <a href="/aum">AUM &amp; market share</a>
+      <a href="/attribution">Return attribution</a>
       <a href="/commentary/">Market commentary</a>
       <a href="/learn/">Learn about SIFs</a>
       <a href="/videos">Videos</a>

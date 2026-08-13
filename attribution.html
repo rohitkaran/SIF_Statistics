@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIF return attribution — market vs manager | SIFintel</title>
+<meta name="description" content="Where each Indian Specialized Investment Fund's return came from: market contribution versus manager contribution, with beta, R-squared, up/down capture and drawdown. Educational analysis of published NAVs.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel, SIF attribution, SIF alpha, SIF beta, market vs manager return, long-short attribution">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.sifintel.com/attribution">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SIFintel">
+<meta property="og:title" content="SIF return attribution — market vs manager | SIFintel">
+<meta property="og:description" content="Where each Indian Specialized Investment Fund's return came from: market contribution versus manager contribution, with beta, R-squared, up/down capture and drawdown. Educational analysis of published NAVs.">
+<meta property="og:url" content="https://www.sifintel.com/attribution">
+<meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="theme-color" content="#5b5bf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/logo-mark.svg">
+<script>try{if(localStorage.getItem('sif-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SIF return attribution","description":"How much of each Indian SIF\u2019s return came from market exposure versus the manager.","inLanguage":"en-IN","isAccessibleForFree":true}</script>
+</head>
+<body>
+<header class="site">
+  <div class="navwrap">
+    <a href="/" style="text-decoration:none"><h1 class="wm">SIF<span class="in">intel<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1></a>
+    <nav class="main">
+      <a href="/">Dashboard</a>
+      <a href="/news">News</a>
+      <a href="/nfo">NFOs</a>
+      <a href="/aum">AUM</a>
+      <a href="/attribution" class="active">Attribution</a>
+      <a href="/commentary/">Commentary</a>
+      <a href="/learn/">Learn</a>
+      <a href="/distributors">For distributors</a>
+      <a href="/data">Data &amp; API</a>
+      <a href="/about">About</a>
+    </nav>
+    <span class="navspace"></span>
+    <a class="navcta" href="/contact">Contact</a>
+    <button class="themebtn" onclick="(function(){var d=document.documentElement;var n=d.getAttribute('data-theme')==='dark'?'':'dark';if(n)d.setAttribute('data-theme','dark');else d.removeAttribute('data-theme');try{localStorage.setItem('sif-theme',n)}catch(e){}})()">◐</button>
+  </div>
+</header>
+<main class="wrap wide">
+<div class="crumb"><a href="/">Home</a> / Attribution</div>
+<article class="doc">
+<h1>SIF return attribution</h1>
+<p class="lede">Where each Specialized Investment Fund's return actually came from — how much was simply the market
+going up or down, and how much was everything else the manager did. The question that matters for a long-short fund,
+because paying for a hedge fund structure to deliver index beta is the thing worth spotting.</p>
+<p class="meta" id="attrmeta">Loading attribution…</p>
+
+<div class="callout" id="attrmethod"></div>
+
+<h2>Market vs manager contribution</h2>
+<p class="meta">Each bar splits the fund's total return since launch into the part explained by its market exposure
+and the part that is not. Green to the left of zero means market exposure <em>cost</em> the fund return over the period.</p>
+<div id="attrbars"></div>
+
+<h2>Full table</h2>
+<div id="attrtable"></div>
+
+<h2>By strategy category</h2>
+<div id="attrcats"></div>
+
+<h2>What changed inside the portfolios</h2>
+<p id="pcnote" class="meta"></p>
+<div id="pchanges"></div>
+
+<h2>Method, and its limits</h2>
+<p>Each fund's daily return is regressed on the NIFTY 50's daily return over their overlapping history:
+<code>r_fund = alpha + beta x r_nifty + e</code>. The <strong>market contribution</strong> is beta multiplied by the
+benchmark's cumulative return over the same window. The <strong>manager contribution</strong> is what is left over.</p>
+<p>That residual is not a skill score. It contains stock selection, the short book, timing, cash drag, fees and plain
+luck, all together. It is fair to say it is the part market exposure does not explain; it is not fair to read it as
+proof of stock-picking ability, particularly over windows this short.</p>
+<p><strong>This is not a Brinson attribution.</strong> A true allocation-versus-selection breakdown needs benchmark
+sector weights at every date, which nobody publishes for this category, and holdings disclosures here are staggered and
+roughly bi-monthly. Producing a Brinson table from this data would look precise and be wrong, so we do not.</p>
+<p><strong>Beta is less stable for long-short funds</strong> than for long-only ones — several of these deliberately run
+low or varying net exposure. The R-squared column sits next to beta for exactly that reason: where it is low, the
+market term explains little and the split should be read loosely.</p>
+<p>Funds need at least <strong>60 overlapping trading days</strong> to appear. Most of this category launched recently,
+so a large number are listed as insufficient history rather than given a number built on noise.</p>
+
+<div class="callout warn">Educational analysis of published NAVs, not investment advice and not a recommendation or
+rating of any fund. Past return attribution says nothing reliable about future returns, and these windows are short.
+Consult a SEBI-registered adviser before investing.</div>
+</article>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id);};
+  var META=$('attrmeta'), METHOD=$('attrmethod'), BARS=$('attrbars'), TABLE=$('attrtable'),
+      CATS=$('attrcats'), PC=$('pchanges'), PCN=$('pcnote');
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function pct(n){ return n==null?'—':(n>=0?'+':'')+n.toFixed(2)+'%'; }
+  function col(n){ return n==null?'var(--ink-dim)':(n>=0?'var(--pos)':'#e5484d'); }
+  function num(n,d){ return n==null?'—':n.toFixed(d==null?2:d); }
+  function per(p){ if(!p) return '—'; var m=p.split('-');
+    return new Date(Date.UTC(+m[0],+m[1]-1,1)).toLocaleDateString(undefined,{month:'short',year:'numeric'}); }
+  function shortName(s){ return String(s).replace(/\s*-\s*(direct|regular)\s+plan.*$/i,'')
+    .replace(/\s*-\s*(growth|idcw)(\s+option)?.*$/i,''); }
+
+  fetch('/attribution_data.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+    var F=j.funds_primary||[];
+    META.textContent=F.length+' funds analysed against '+j.benchmark+' · '+j.insufficient_history+
+      ' too new to measure · minimum '+j.min_observations+' trading days';
+
+    METHOD.innerHTML='<b>How to read this.</b> Market contribution is the fund\u2019s beta times the '+
+      esc(j.benchmark)+'\u2019s return over the same window. Manager contribution is everything else — '+
+      'selection, the short book, timing, cash and fees combined. A high manager contribution alongside a '+
+      'low R-squared is the signature of a fund genuinely doing something other than tracking the index.';
+
+    // Diverging bars around a zero axis: market contribution left/right, manager contribution stacked.
+    var top=F.slice(0,18);
+    var mx=Math.max.apply(null,top.map(function(f){
+      return Math.max(Math.abs(f.market_contribution_pct||0),Math.abs(f.manager_contribution_pct||0));}))||1;
+    BARS.innerHTML='<div class="bars">'+top.map(function(f){
+      function seg(v,c){ var w=Math.abs(v||0)/mx*50;
+        return '<div style="position:absolute;left:'+((v>=0?50:50-w)).toFixed(1)+'%;width:'+w.toFixed(1)+
+          '%;height:100%;background:'+c+';border-radius:2px"></div>'; }
+      return '<div class="barrow">'+
+        '<div class="barlabel">'+esc(shortName(f.name))+'<span>'+esc(f.fund_house||'')+' · beta '+
+          num(f.beta)+' · R² '+num(f.r_squared)+'</span></div>'+
+        '<div class="bartrack" style="position:relative;height:16px;background:var(--panel2)">'+
+          '<div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line2)"></div>'+
+          seg(f.market_contribution_pct,'var(--accent2)')+seg(f.manager_contribution_pct,'var(--teal)')+
+        '</div>'+
+        '<div class="barval" style="color:'+col(f.total_return_pct)+'">'+pct(f.total_return_pct)+
+          '<span>total</span></div>'+
+      '</div>';
+    }).join('')+'</div>'+
+    '<p class="meta"><span style="display:inline-block;width:10px;height:10px;background:var(--accent2);'+
+    'border-radius:2px"></span> market &nbsp; <span style="display:inline-block;width:10px;height:10px;'+
+    'background:var(--teal);border-radius:2px"></span> manager</p>';
+
+    TABLE.innerHTML='<div class="tablewrap"><table class="data"><thead><tr>'+
+      '<th>Fund</th><th>Fund house</th><th style="text-align:right">Total</th>'+
+      '<th style="text-align:right">Market</th><th style="text-align:right">Manager</th>'+
+      '<th style="text-align:right">Beta</th><th style="text-align:right">R²</th>'+
+      '<th style="text-align:right">Up capt.</th><th style="text-align:right">Down capt.</th>'+
+      '<th style="text-align:right">Vol</th><th style="text-align:right">Max DD</th>'+
+      '<th style="text-align:right">Days</th></tr></thead><tbody>'+
+      F.map(function(f){
+        return '<tr><td>'+esc(shortName(f.name))+(f.variants>1?' <span class="pill">'+f.variants+
+            ' plans</span>':'')+'</td>'+
+          '<td>'+esc(f.fund_house||'—')+'</td>'+
+          '<td style="text-align:right;color:'+col(f.total_return_pct)+'">'+pct(f.total_return_pct)+'</td>'+
+          '<td style="text-align:right;color:'+col(f.market_contribution_pct)+'">'+pct(f.market_contribution_pct)+'</td>'+
+          '<td style="text-align:right;color:'+col(f.manager_contribution_pct)+'">'+pct(f.manager_contribution_pct)+'</td>'+
+          '<td style="text-align:right">'+num(f.beta)+'</td>'+
+          '<td style="text-align:right">'+num(f.r_squared)+'</td>'+
+          '<td style="text-align:right">'+(f.up_capture_pct==null?'—':f.up_capture_pct.toFixed(0)+'%')+'</td>'+
+          '<td style="text-align:right">'+(f.down_capture_pct==null?'—':f.down_capture_pct.toFixed(0)+'%')+'</td>'+
+          '<td style="text-align:right">'+num(f.volatility_annual_pct,1)+'%</td>'+
+          '<td style="text-align:right">'+num(f.max_drawdown_pct,1)+'%</td>'+
+          '<td style="text-align:right">'+f.observations+'</td></tr>';
+      }).join('')+'</tbody></table></div>';
+
+    CATS.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Strategy</th>'+
+      '<th style="text-align:right">Funds</th><th style="text-align:right">Avg total</th>'+
+      '<th style="text-align:right">Avg market</th><th style="text-align:right">Avg manager</th>'+
+      '<th style="text-align:right">Avg beta</th><th style="text-align:right">Avg R²</th>'+
+      '<th style="text-align:right">Avg vol</th></tr></thead><tbody>'+
+      (j.by_category||[]).map(function(c){
+        return '<tr><td>'+esc(c.category)+'</td><td style="text-align:right">'+c.funds+'</td>'+
+          '<td style="text-align:right;color:'+col(c.avg_total_return_pct)+'">'+pct(c.avg_total_return_pct)+'</td>'+
+          '<td style="text-align:right;color:'+col(c.avg_market_contribution_pct)+'">'+pct(c.avg_market_contribution_pct)+'</td>'+
+          '<td style="text-align:right;color:'+col(c.avg_manager_contribution_pct)+'">'+pct(c.avg_manager_contribution_pct)+'</td>'+
+          '<td style="text-align:right">'+num(c.avg_beta)+'</td>'+
+          '<td style="text-align:right">'+num(c.avg_r_squared)+'</td>'+
+          '<td style="text-align:right">'+num(c.avg_volatility_pct,1)+'%</td></tr>';
+      }).join('')+'</tbody></table></div>';
+
+    var PCs=j.portfolio_changes||[];
+    if(!PCs.length){
+      PCN.textContent='No fund has filed two portfolio disclosures yet in the data we hold.';
+    } else {
+      PCN.textContent='Holdings disclosures are staggered and roughly bi-monthly, so this is how the book was '+
+        'repositioned between two snapshots — not what each position contributed to return, which daily holdings '+
+        'would be needed to compute.';
+      PC.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Fund</th><th>Between</th>'+
+        '<th style="text-align:right">Net assets</th><th style="text-align:right">Holdings</th>'+
+        '<th>Biggest sector shifts</th></tr></thead><tbody>'+
+        PCs.map(function(p){
+          var d=(p.net_assets_to_cr||0)-(p.net_assets_from_cr||0);
+          var shifts=(p.sector_shifts||[]).slice(0,4).map(function(s){
+            return '<span class="pill" style="color:'+col(s.change_pct)+'">'+esc(s.sector)+' '+
+              (s.change_pct>=0?'+':'')+s.change_pct.toFixed(1)+'</span>'; }).join(' ');
+          return '<tr><td>'+esc(p.fund)+'</td><td>'+per(p.from_period)+' → '+per(p.to_period)+'</td>'+
+            '<td style="text-align:right;color:'+col(d)+'">'+(d>=0?'+':'')+Math.round(d).toLocaleString('en-IN')+' cr</td>'+
+            '<td style="text-align:right">'+(p.holdings_from||'—')+' → '+(p.holdings_to||'—')+'</td>'+
+            '<td>'+(shifts||'<span class="meta">no material shift</span>')+'</td></tr>';
+        }).join('')+'</tbody></table></div>';
+    }
+  }).catch(function(){ META.textContent='Attribution data is temporarily unavailable — please try again shortly.'; });
+})();
+</script>
+</main>
+<footer class="site">
+  <div class="footwrap">
+    <div class="footcol">
+      <h4>SIFintel</h4>
+      <a href="/">SIF comparison dashboard</a>
+      <a href="/news">World financial news</a>
+      <a href="/nfo">SIF new fund offers</a>
+      <a href="/aum">AUM &amp; market share</a>
+      <a href="/attribution">Return attribution</a>
+      <a href="/commentary/">Market commentary</a>
+      <a href="/learn/">Learn about SIFs</a>
+      <a href="/videos">Videos</a>
+    </div>
+    <div class="footcol">
+      <h4>Learn</h4>
+      <a href="/learn/what-is-a-sif">What is a SIF?</a>
+      <a href="/learn/sif-categories">The SIF categories</a>
+      <a href="/learn/sif-regulatory-framework">SEBI regulatory framework</a>
+    </div>
+    <div class="footcol">
+      <h4>For distributors</h4>
+      <a href="/distributors">Distributor guide</a>
+      <a href="/learn/sif-certification-study-guide">Certification study guide</a>
+      <a href="/learn/sif-tax-suitability-guide">Tax &amp; suitability primer</a>
+    </div>
+    <div class="footcol">
+      <h4>For business</h4>
+      <a href="/data">SIF data &amp; API</a>
+      <a href="/services">Build with us</a>
+      <a href="/api/v1/meta">API reference</a>
+    </div>
+    <div class="footcol">
+      <h4>Company</h4>
+      <a href="/about">About us</a>
+      <a href="/contact">Contact</a>
+      <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>
+    </div>
+  </div>
+  <div class="legal">
+    <p>SIFintel is an independent data &amp; education platform for India's Specialized Investment Funds (SIFs),
+    built to help investors and distributors understand this new asset class. We are not a SEBI-registered
+    investment adviser, research analyst or distributor. Content is for education only and is not investment,
+    legal or tax advice; no fund is recommended, ranked or promoted. SIFs carry higher risk — read scheme
+    documents and consult a SEBI-registered adviser before investing.</p>
+    <p>© 2026 Lume Software Private Limited. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
