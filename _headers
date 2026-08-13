@@ -10,6 +10,15 @@
 /portfolios/*
   Cache-Control: public, max-age=0, must-revalidate
 
+# News: the page shell and the fallback snapshot must always revalidate. The live headlines come
+# from /api/news, which sets its own 30-minute Cache-Control (see functions/api/news.js).
+/news.html
+  Cache-Control: public, max-age=0, must-revalidate
+/news_data.json
+  Cache-Control: public, max-age=0, must-revalidate
+/commentary/*
+  Cache-Control: public, max-age=0, must-revalidate
+
 # Long-lived, content-hashed brand assets can cache hard.
 /brand/*
   Cache-Control: public, max-age=86400

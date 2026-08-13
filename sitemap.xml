@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.sifintel.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.sifintel.com/news</loc><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.sifintel.com/commentary/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <!-- commentary:begin -->
+  <!-- commentary:end -->
   <url><loc>https://www.sifintel.com/learn/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.sifintel.com/learn/what-is-a-sif</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.sifintel.com/learn/sif-categories</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

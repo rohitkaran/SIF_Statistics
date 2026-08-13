@@ -68,6 +68,51 @@ table.data th{background:var(--panel2);color:var(--ink);font-weight:600}
 .pill{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--ink-dim);
   background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:2px 10px;margin:0 4px 4px 0}
 
+/* ---- news feed (/news) & commentary index (/commentary/) ---- */
+main.wrap.wide{max-width:1080px}
+.newsbar{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;margin:18px 0 6px;
+  padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chips{display:flex;gap:7px;flex-wrap:wrap;flex:1;min-width:60%}
+.chip{font-family:var(--mono);font-size:11.5px;letter-spacing:.2px;color:var(--ink-dim);
+  background:var(--panel);border:1px solid var(--line2);border-radius:20px;padding:4px 11px;
+  cursor:pointer;line-height:1.5}
+.chip b{color:var(--ink-faint);font-weight:500}
+.chip:hover{border-color:var(--accent2);color:var(--ink)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip.on b{color:rgba(255,255,255,.75)}
+.newssearch{flex:0 1 230px;padding:7px 12px;border:1px solid var(--line2);border-radius:20px;
+  background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:14px}
+.daydiv{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.7px;
+  color:var(--ink-faint);margin:26px 0 8px;padding-bottom:5px;border-bottom:1px solid var(--line)}
+.daydiv:first-child{margin-top:16px}
+.nitem{padding:13px 0;border-bottom:1px solid var(--line)}
+.nhead{font-size:16.5px;font-weight:600;line-height:1.4;color:var(--ink);display:block}
+.nhead:hover{color:var(--accent2);text-decoration:none}
+.nsum{margin:.3em 0 0;font-size:14px;color:var(--ink-dim);line-height:1.55}
+.nmeta{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:7px;
+  font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
+.nsrc{color:var(--ink-dim);font-weight:500}
+.nsrc.official{color:var(--teal)}
+.nsrc.official::after{content:" ★";font-size:9px}
+.nsep{opacity:.5}
+.ntag{background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:1px 8px}
+.warnspan{color:var(--amber)}
+.postlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin:20px 0}
+.postcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:17px 18px;display:block}
+.postcard:hover{border-color:var(--accent2);text-decoration:none}
+.postcard .tag{font-family:var(--mono);font-size:11px;color:var(--teal);letter-spacing:.5px}
+.postcard h3{margin:.25em 0 .35em;font-size:17px;color:var(--ink);line-height:1.35}
+.postcard p{margin:0 0 9px;font-size:14px;color:var(--ink-dim)}
+.tablewrap{overflow-x:auto;margin:16px 0}
+.tablewrap table.data{margin:0}
+article.doc blockquote.callout{margin:16px 0;font-style:normal}
+article.doc pre{background:var(--panel2);border:1px solid var(--line);border-radius:8px;
+  padding:12px 14px;overflow-x:auto;font-family:var(--mono);font-size:13px;line-height:1.5}
+article.doc code{font-family:var(--mono);font-size:13.5px;background:var(--panel2);
+  border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+article.doc pre code{background:none;border:0;padding:0}
+article.doc hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+
 /* forms (contact) */
 .field{margin:12px 0} .field label{display:block;font-size:13px;color:var(--ink-dim);margin-bottom:4px}
 .field input,.field textarea{width:100%;padding:10px 12px;border:1px solid var(--line2);border-radius:8px;
@@ -85,4 +130,5 @@ footer.site{border-top:1px solid var(--line);background:var(--panel);margin-top:
 .legal{max-width:1100px;margin:0 auto;padding:0 20px 26px;font-size:12px;color:var(--ink-faint);line-height:1.6}
 .themebtn{background:none;border:1px solid var(--line2);color:var(--ink-dim);border-radius:7px;
   padding:5px 10px;font-size:12px;cursor:pointer;font-family:var(--mono)}
-@media(max-width:640px){ article.doc h1{font-size:25px} .navwrap{gap:12px} nav.main{gap:13px;font-size:14px} }
+@media(max-width:640px){ article.doc h1{font-size:25px} .navwrap{gap:12px} nav.main{gap:13px;font-size:14px}
+  .newssearch{flex:1 1 100%} .chips{min-width:100%} .nhead{font-size:16px} }
