@@ -30,11 +30,16 @@ const FEEDS = [
   { url: "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms", source: "ET Economy", region: "India" },
   { url: "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",  source: "ET Markets",     region: "India" },
   { url: "https://www.livemint.com/rss/economy",                                  source: "Mint Economy",   region: "India" },
-  { url: "https://www.business-standard.com/rss/economy-102.rss",                 source: "Business Standard", region: "India" },
   // ---- broad macro sweep (fills in wires we can't read directly) ----
-  { url: "https://news.google.com/rss/search?q=(federal+reserve+OR+ECB+OR+%22central+bank%22+OR+inflation+OR+%22interest+rates%22+OR+tariffs+OR+%22oil+prices%22)+when:2d&hl=en-IN&gl=IN&ceid=IN:en",
-    source: "Google News", region: "Global", googleNews: true },
+  { url: "https://www.bing.com/news/search?q=%28federal+reserve+OR+ECB+OR+%22central+bank%22+OR+inflation+OR+%22interest+rates%22+OR+tariffs+OR+%22oil+prices%22%29&format=RSS",
+    source: "Bing News", region: "Global", bingNews: true },
 ];
+
+// NOT fetched from the edge: news.google.com (503) and business-standard.com (403) both block
+// Cloudflare's datacenter ranges — verified via /api/news?debug=1. They still work from GitHub
+// Actions, so fetch_news.py collects them into news_data.json and mergeSnapshot() folds that in
+// below. That keeps the Reuters/Bloomberg/WSJ-class wire coverage Google News provides.
+const SNAPSHOT = "/news_data.json";
 
 // This page is about news that moves — or hints at — the financial world. Indian market feeds in
 // particular carry a lot of single-stock retail chatter that is noise at that altitude; drop it.
@@ -86,7 +91,10 @@ export async function onRequestGet(context) {
     if (hit) return hit;
   }
 
-  const settled = await Promise.allSettled(FEEDS.map(fetchFeed));
+  const [settled, snapshot] = await Promise.all([
+    Promise.allSettled(FEEDS.map(fetchFeed)),
+    mergeSnapshot(url.origin),
+  ]);
 
   const items = [];
   const ok = [];
@@ -104,6 +112,10 @@ export async function onRequestGet(context) {
         r.status === "rejected" ? String(r.reason && r.reason.message || r.reason) : "0 items parsed";
     }
   });
+
+  // Live feeds first, so when the same story appears in both the live pull and the snapshot the
+  // live copy wins dedupe and the snapshot only ever adds coverage.
+  items.push(...snapshot);
 
   const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
   const seen = new Set();
@@ -163,6 +175,28 @@ const UA = "Mozilla/5.0 (compatible; SIFintelNewsBot/1.0; +https://www.sifintel.
 const UA_FALLBACK =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
+// Fold in the committed snapshot (written by fetch_news.py on the GitHub Action) so publishers
+// that block Cloudflare still reach the page. Never fatal: no snapshot just means fewer items.
+async function mergeSnapshot(origin) {
+  try {
+    const res = await fetch(origin + SNAPSHOT, { signal: AbortSignal.timeout(5000) });
+    if (!res.ok) return [];
+    const j = await res.json();
+    return (j.items || []).map((it) => ({
+      title: it.title,
+      url: it.url,
+      source: it.source,
+      region: it.region,
+      official: it.official,
+      ts: it.published ? Date.parse(it.published) || null : null,
+      summary: it.summary || "",
+      categories: it.categories && it.categories.length ? it.categories : categorise(it.title),
+    }));
+  } catch {
+    return [];
+  }
+}
+
 async function fetchFeed(feed) {
   let res = await get(feed.url, UA);
   if ([401, 403, 406, 429].includes(res.status)) res = await get(feed.url, UA_FALLBACK);
@@ -212,6 +246,17 @@ function parseFeed(xml, feed) {
       if (m) {
         title = m[1].trim();
         source = m[2].trim();
+      }
+    } else if (feed.bingNews) {
+      // Bing carries the publisher in <News:Source> and wraps links in an apiclick redirect
+      // that holds the real URL in its ?url= parameter — unwrap it so readers land on the source.
+      const s = clean(pick(b, "News:Source"));
+      if (s) source = s;
+      const real = link.match(/[?&]url=([^&]+)/);
+      if (real) {
+        try {
+          link = decodeURIComponent(real[1]);
+        } catch { /* keep the redirect link */ }
       }
     }
 
