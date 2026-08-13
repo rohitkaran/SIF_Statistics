@@ -75,7 +75,8 @@ const CACHE_SECONDS = 1800; // 30 minutes
 export async function onRequestGet(context) {
   const { request, waitUntil } = context;
   const url = new URL(request.url);
-  const bypass = url.searchParams.get("refresh") === "1";
+  const debug = url.searchParams.get("debug") === "1";
+  const bypass = debug || url.searchParams.get("refresh") === "1";
 
   const cache = caches.default;
   const cacheKey = new Request(url.origin + "/api/news", { method: "GET" });
@@ -90,12 +91,17 @@ export async function onRequestGet(context) {
   const items = [];
   const ok = [];
   const failed = [];
+  const errors = {};
   settled.forEach((r, i) => {
     if (r.status === "fulfilled" && r.value.length) {
       ok.push(FEEDS[i].source);
       items.push(...r.value);
     } else {
       failed.push(FEEDS[i].source);
+      // Publishers block datacenter IPs from time to time, and what works from a laptop can fail
+      // from the edge. /api/news?debug=1 reports why, so a dead feed is diagnosable not guessable.
+      errors[FEEDS[i].source] =
+        r.status === "rejected" ? String(r.reason && r.reason.message || r.reason) : "0 items parsed";
     }
   });
 
@@ -126,6 +132,7 @@ export async function onRequestGet(context) {
     count: clean.length,
     sources_ok: ok,
     sources_failed: failed,
+    ...(debug ? { errors } : {}),
     items: clean.map((it) => ({
       title: it.title,
       url: it.url,
@@ -146,7 +153,7 @@ export async function onRequestGet(context) {
     },
   });
 
-  if (waitUntil) waitUntil(cache.put(cacheKey, resp.clone()));
+  if (waitUntil && !debug) waitUntil(cache.put(cacheKey, resp.clone()));
   return resp;
 }
 
