@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIF data & API — NAV history and portfolios for every Indian SIF | SIFintel</title>
+<meta name="description" content="License the complete Indian SIF dataset: 111 schemes, 10,633 daily NAV points from 2025-10-08, plus disclosed portfolios. JSON API with a free tier, no signup.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel, SIF data, SIF API, SIF NAV data, mutual fund data India, SIF dataset, NAV API India">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.sifintel.com/data">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SIFintel">
+<meta property="og:title" content="SIF data & API — NAV history and portfolios for every Indian SIF | SIFintel">
+<meta property="og:description" content="License the complete Indian SIF dataset: 111 schemes, 10,633 daily NAV points from 2025-10-08, plus disclosed portfolios. JSON API with a free tier, no signup.">
+<meta property="og:url" content="https://www.sifintel.com/data">
+<meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="theme-color" content="#5b5bf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/logo-mark.svg">
+<script>try{if(localStorage.getItem('sif-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Indian Specialized Investment Fund (SIF) NAV and portfolio dataset","description":"Daily NAV history and disclosed portfolios for every Indian Specialized Investment Fund.","creator":{"@type":"Organization","name":"SIFintel"},"inLanguage":"en-IN","isAccessibleForFree":false}</script>
+</head>
+<body>
+<header class="site">
+  <div class="navwrap">
+    <a href="/" style="text-decoration:none"><h1 class="wm">SIF<span class="in">intel<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1></a>
+    <nav class="main">
+      <a href="/">Dashboard</a>
+      <a href="/news">News</a>
+      <a href="/commentary/">Commentary</a>
+      <a href="/learn/">Learn</a>
+      <a href="/distributors">For distributors</a>
+      <a href="/data" class="active">Data &amp; API</a>
+      <a href="/videos">Videos</a>
+      <a href="/about">About</a>
+    </nav>
+    <span class="navspace"></span>
+    <a class="navcta" href="/contact">Contact</a>
+    <button class="themebtn" onclick="(function(){var d=document.documentElement;var n=d.getAttribute('data-theme')==='dark'?'':'dark';if(n)d.setAttribute('data-theme','dark');else d.removeAttribute('data-theme');try{localStorage.setItem('sif-theme',n)}catch(e){}})()">◐</button>
+  </div>
+</header>
+<main class="wrap">
+<div class="crumb"><a href="/">Home</a> / Data & API</div>
+<article class="doc">
+<h1>SIF data &amp; API</h1>
+<p class="lede">The complete NAV and portfolio history of India's Specialized Investment Funds, maintained daily,
+available as a JSON API or a flat file. If you are building a product, a report or a research process that has to
+know what SIFs are actually doing, this is the dataset behind it.</p>
+<p class="meta">SIFintel · Data licensing</p>
+
+<div class="statrow">
+  <div class="stat"><b>111</b><span>schemes tracked</span></div>
+  <div class="stat"><b>17</b><span>fund houses</span></div>
+  <div class="stat"><b>10,633</b><span>daily NAV points</span></div>
+  <div class="stat"><b>3</b><span>disclosure periods</span></div>
+</div>
+<p class="meta">Coverage 2025-10-08 to 2026-08-12 — from the category's first NAV onward. Refreshed every trading day.</p>
+
+<h2>What's in it</h2>
+<ul>
+<li><strong>NAV history</strong> for every SIF scheme AMFI publishes, from launch to yesterday, with scheme code,
+ISIN, fund house and SEBI category.</li>
+<li><strong>Disclosed portfolios</strong> — the holdings each fund house publishes, normalised into one schema
+instead of 3 different spreadsheet and PDF layouts.</li>
+<li><strong>Benchmark series</strong> (NIFTY 50) aligned to the same dates, so capture ratios and relative
+returns are computable without a second vendor.</li>
+</ul>
+
+<h2>Try it right now — no key needed</h2>
+<p>The free tier is live and needs no signup. It returns 30 days for a single scheme, which is enough to see the
+shape of the data:</p>
+<pre><code>curl "https://www.sifintel.com/api/v1/meta"
+curl "https://www.sifintel.com/api/v1/schemes?q=long-short"
+curl "https://www.sifintel.com/api/v1/nav?code=SIF-120"</code></pre>
+<p>With a key, pass it as a bearer token:</p>
+<pre><code>curl -H "Authorization: Bearer YOUR_KEY" \
+  "https://www.sifintel.com/api/v1/nav?code=SIF-120&amp;from=2025-10-01"</code></pre>
+
+<h2>Plans</h2>
+<div class="tablewrap">
+<table class="data">
+<thead><tr><th>&nbsp;</th><th>Free</th><th>Starter</th><th>Pro</th></tr></thead>
+<tbody>
+<tr><td><strong>NAV history</strong></td><td>Last 30 days</td><td>Full history</td><td>Full history</td></tr>
+<tr><td><strong>Schemes per call</strong></td><td>1</td><td>All</td><td>All</td></tr>
+<tr><td><strong>Disclosed portfolios</strong></td><td>—</td><td>—</td><td>Yes</td></tr>
+<tr><td><strong>Bulk file delivery</strong></td><td>—</td><td>Monthly</td><td>Daily</td></tr>
+<tr><td><strong>Support</strong></td><td>—</td><td>Email</td><td>Email + schema change notice</td></tr>
+<tr><td><strong>Price</strong></td><td>Free</td><td>₹8,000 / month</td><td>₹20,000 / month</td></tr>
+</tbody>
+</table>
+</div>
+<p class="meta">Annual billing takes two months off. Redistribution and white-label terms are quoted separately.</p>
+
+<h2>Who it's for</h2>
+<div class="grid">
+<a class="card" href="/contact"><span class="tag">AMCs</span><h3>Fund houses</h3><p>See your SIF next to every
+competing scheme on identical, independently computed metrics — including the ones your competitors disclose.</p></a>
+<a class="card" href="/contact"><span class="tag">Wealth &amp; distribution</span><h3>Distributors and RIAs</h3>
+<p>Feed real SIF numbers into your client reporting and suitability process instead of screenshots from factsheets.</p></a>
+<a class="card" href="/contact"><span class="tag">Fintech</span><h3>Platforms and research desks</h3><p>One API
+for a category with no established data vendor yet. Attribution-based redistribution available.</p></a>
+</div>
+
+<h2>Terms in plain language</h2>
+<p>NAVs originate from AMFI and portfolio disclosures from the fund houses themselves; we normalise, verify and
+timestamp them. Licensing the feed gives you the right to use it internally and, on the Pro plan, to display it to
+your own users with attribution to SIFintel. We don't offer exclusivity, and we don't sell recommendations —
+this is data, not a view.</p>
+
+<p style="margin-top:22px"><a class="navcta" href="/contact">Request a key or a sample file</a>
+&nbsp; <a class="navcta" style="background:#0e9aa7" href="/services">Or have us build with it</a></p>
+
+<div class="callout warn">The data is provided for information and analysis. It is not investment advice, and it
+is not a recommendation of any fund. Verify against scheme documents before relying on it in a regulated process.</div>
+</article>
+</main>
+<footer class="site">
+  <div class="footwrap">
+    <div class="footcol">
+      <h4>SIFintel</h4>
+      <a href="/">SIF comparison dashboard</a>
+      <a href="/news">World financial news</a>
+      <a href="/commentary/">Market commentary</a>
+      <a href="/learn/">Learn about SIFs</a>
+      <a href="/videos">Videos</a>
+    </div>
+    <div class="footcol">
+      <h4>Learn</h4>
+      <a href="/learn/what-is-a-sif">What is a SIF?</a>
+      <a href="/learn/sif-categories">The SIF categories</a>
+      <a href="/learn/sif-regulatory-framework">SEBI regulatory framework</a>
+    </div>
+    <div class="footcol">
+      <h4>For distributors</h4>
+      <a href="/distributors">Distributor guide</a>
+      <a href="/learn/sif-certification-study-guide">Certification study guide</a>
+      <a href="/learn/sif-tax-suitability-guide">Tax &amp; suitability primer</a>
+    </div>
+    <div class="footcol">
+      <h4>For business</h4>
+      <a href="/data">SIF data &amp; API</a>
+      <a href="/services">Build with us</a>
+      <a href="/api/v1/meta">API reference</a>
+    </div>
+    <div class="footcol">
+      <h4>Company</h4>
+      <a href="/about">About us</a>
+      <a href="/contact">Contact</a>
+      <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>
+    </div>
+  </div>
+  <div class="legal">
+    <p>SIFintel is an independent data &amp; education platform for India's Specialized Investment Funds (SIFs),
+    built to help investors and distributors understand this new asset class. We are not a SEBI-registered
+    investment adviser, research analyst or distributor. Content is for education only and is not investment,
+    legal or tax advice; no fund is recommended, ranked or promoted. SIFs carry higher risk — read scheme
+    documents and consult a SEBI-registered adviser before investing.</p>
+    <p>© 2026 Lume Software Private Limited. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -103,6 +103,10 @@ main.wrap.wide{max-width:1080px}
 .postcard .tag{font-family:var(--mono);font-size:11px;color:var(--teal);letter-spacing:.5px}
 .postcard h3{margin:.25em 0 .35em;font-size:17px;color:var(--ink);line-height:1.35}
 .postcard p{margin:0 0 9px;font-size:14px;color:var(--ink-dim)}
+.statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:20px 0 8px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-size:26px;line-height:1.15;letter-spacing:-.5px;color:var(--teal);font-family:var(--sans)}
+.stat span{font-size:12.5px;color:var(--ink-dim)}
 .tablewrap{overflow-x:auto;margin:16px 0}
 .tablewrap table.data{margin:0}
 article.doc blockquote.callout{margin:16px 0;font-style:normal}

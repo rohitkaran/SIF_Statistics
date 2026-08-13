@@ -26,6 +26,7 @@ NAV = [("home", "/", "Dashboard"),
        ("commentary", "/commentary/", "Commentary"),
        ("learn", "/learn/", "Learn"),
        ("distributors", "/distributors", "For distributors"),
+       ("data", "/data", "Data &amp; API"),
        ("videos", "/videos", "Videos"),
        ("about", "/about", "About")]
 
@@ -73,6 +74,12 @@ FOOTER = f'''<footer class="site">
       <a href="/distributors">Distributor guide</a>
       <a href="/learn/sif-certification-study-guide">Certification study guide</a>
       <a href="/learn/sif-tax-suitability-guide">Tax &amp; suitability primer</a>
+    </div>
+    <div class="footcol">
+      <h4>For business</h4>
+      <a href="/data">SIF data &amp; API</a>
+      <a href="/services">Build with us</a>
+      <a href="/api/v1/meta">API reference</a>
     </div>
     <div class="footcol">
       <h4>Company</h4>
