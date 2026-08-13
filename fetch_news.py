@@ -80,7 +80,7 @@ NOISE = re.compile(
     r"ex-dividend|smart talk|on tradingview|positive breakout|negative breakout|"
     r"\bdmas?\b|moving averages?|muhurat|zodiac|horoscope)\b|"
     # insider-trade filings and single-stock clickbait — noise on a page about the world
-    r"\b(buys?|sold|sells?|purchases?) \$[\d.,]+[kmb]? (in|of) (stock|shares)|"
+    r"\b(buys?|bought|sold|sells?|purchases?) \$[\d.,]+ ?[kmb]?n? (in|of)( \w+){0,2} (stock|shares)|"
     r"\binsider (buying|selling|trades?)\b|"
     r"\bwhy (is|are|did) .{2,40}\b(stock|shares|share price)\b", re.I)
 

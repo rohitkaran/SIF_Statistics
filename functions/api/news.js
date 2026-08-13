@@ -52,7 +52,7 @@ const NOISE = new RegExp(
   "ex-dividend|smart talk|on tradingview|positive breakout|negative breakout|" +
   "\\bdmas?\\b|moving averages?|muhurat|zodiac|horoscope)\\b|" +
   // insider-trade filings and single-stock clickbait — noise on a page about the world
-  "\\b(buys?|sold|sells?|purchases?) \\$[\\d.,]+[kmb]? (in|of) (stock|shares)|" +
+  "\\b(buys?|bought|sold|sells?|purchases?) \\$[\\d.,]+ ?[kmb]?n? (in|of)( \\w+){0,2} (stock|shares)|" +
   "\\binsider (buying|selling|trades?)\\b|" +
   "\\bwhy (is|are|did) .{2,40}\\b(stock|shares|share price)\\b", "i");
 
