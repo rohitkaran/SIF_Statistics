@@ -2,3 +2,4 @@
 # The NAV fetcher (fetch_amfi_sif.py) remains Python-stdlib-only and needs none of these.
 openpyxl>=3.1      # read AMC monthly-portfolio .xlsx disclosures
 pdfplumber>=0.11   # read AMC portfolio disclosures published as PDF
+xlrd>=2.0          # read AMFI's SIF Monthly Report (legacy OLE2 .xls; openpyxl cannot)

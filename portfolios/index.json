@@ -1,10 +1,11 @@
 {
- "generated": "2026-08-13T16:20:04+00:00",
+ "generated": "2026-08-13T16:49:03+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2025-10",
   "2026-05",
-  "2026-06"
+  "2026-06",
+  "2026-07"
  ],
  "amcs": {
   "apex": {
@@ -265,7 +266,8 @@
    "amc": "arthaya",
    "fund": "Arthaya Equity Long Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json"
+    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json",
+    "2026-07": "portfolios/data/2026-07/arthaya__YK56.json"
    }
   },
   "SIF-114": {
@@ -273,7 +275,8 @@
    "amc": "arthaya",
    "fund": "Arthaya Equity Long Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json"
+    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json",
+    "2026-07": "portfolios/data/2026-07/arthaya__YK56.json"
    }
   },
   "SIF-115": {
@@ -281,7 +284,8 @@
    "amc": "arthaya",
    "fund": "Arthaya Equity Long Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json"
+    "2026-05": "portfolios/data/2026-05/arthaya__YK56.json",
+    "2026-07": "portfolios/data/2026-07/arthaya__YK56.json"
    }
   },
   "SIF-57": {
@@ -601,7 +605,8 @@
    "amc": "wsif",
    "fund": "WSIF Equity Long-Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json"
+    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json",
+    "2026-07": "portfolios/data/2026-07/wsif__WSLS.json"
    }
   },
   "SIF-111": {
@@ -609,7 +614,8 @@
    "amc": "wsif",
    "fund": "WSIF Equity Long-Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json"
+    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json",
+    "2026-07": "portfolios/data/2026-07/wsif__WSLS.json"
    }
   },
   "SIF-110": {
@@ -617,7 +623,8 @@
    "amc": "wsif",
    "fund": "WSIF Equity Long-Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json"
+    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json",
+    "2026-07": "portfolios/data/2026-07/wsif__WSLS.json"
    }
   },
   "SIF-107": {
@@ -625,7 +632,8 @@
    "amc": "wsif",
    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
+    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
    }
   },
   "SIF-104": {
@@ -633,7 +641,8 @@
    "amc": "wsif",
    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
+    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
    }
   },
   "SIF-105": {
@@ -641,7 +650,8 @@
    "amc": "wsif",
    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
+    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
    }
   },
   "SIF-106": {
@@ -649,7 +659,8 @@
    "amc": "wsif",
    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
    "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json"
+    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
+    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
    }
   },
   "SIF-51": {
@@ -737,7 +748,8 @@
    "amc": "diviniti",
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
    }
   },
   "SIF-20": {
@@ -745,7 +757,8 @@
    "amc": "diviniti",
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
    }
   },
   "SIF-21": {
@@ -753,7 +766,8 @@
    "amc": "diviniti",
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
    }
   },
   "SIF-22": {
@@ -761,7 +775,8 @@
    "amc": "diviniti",
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json"
+    "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
    }
   },
   "SIF-125": {
@@ -769,7 +784,8 @@
    "amc": "isif",
    "fund": "iSIF Active Asset Allocator Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFACTLS.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFACTLS.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFACTLS.json"
    }
   },
   "SIF-124": {
@@ -777,7 +793,8 @@
    "amc": "isif",
    "fund": "iSIF Active Asset Allocator Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFACTLS.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFACTLS.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFACTLS.json"
    }
   },
   "SIF-127": {
@@ -785,7 +802,8 @@
    "amc": "isif",
    "fund": "iSIF Equity Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFEQTLS.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFEQTLS.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFEQTLS.json"
    }
   },
   "SIF-126": {
@@ -793,7 +811,8 @@
    "amc": "isif",
    "fund": "iSIF Equity Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFEQTLS.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFEQTLS.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFEQTLS.json"
    }
   },
   "SIF-33": {
@@ -801,7 +820,8 @@
    "amc": "isif",
    "fund": "iSIF Equity Ex-Top 100 Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFEX100.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFEX100.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFEX100.json"
    }
   },
   "SIF-34": {
@@ -809,7 +829,8 @@
    "amc": "isif",
    "fund": "iSIF Equity Ex-Top 100 Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFEX100.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFEX100.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFEX100.json"
    }
   },
   "SIF-36": {
@@ -817,7 +838,8 @@
    "amc": "isif",
    "fund": "iSIF Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFHYBID.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFHYBID.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFHYBID.json"
    }
   },
   "SIF-35": {
@@ -825,7 +847,8 @@
    "amc": "isif",
    "fund": "iSIF Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/isif__SIFHYBID.json"
+    "2026-06": "portfolios/data/2026-06/isif__SIFHYBID.json",
+    "2026-07": "portfolios/data/2026-07/isif__SIFHYBID.json"
    }
   },
   "SIF-14": {
@@ -897,7 +920,8 @@
    "amc": "redhex",
    "fund": "RedHex Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json",
+    "2026-07": "portfolios/data/2026-07/redhex__RHSIFHY.json"
    }
   },
   "SIF-130": {
@@ -905,7 +929,8 @@
    "amc": "redhex",
    "fund": "RedHex Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json",
+    "2026-07": "portfolios/data/2026-07/redhex__RHSIFHY.json"
    }
   },
   "SIF-128": {
@@ -913,7 +938,8 @@
    "amc": "redhex",
    "fund": "RedHex Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json",
+    "2026-07": "portfolios/data/2026-07/redhex__RHSIFHY.json"
    }
   }
  }

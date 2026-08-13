@@ -1,0 +1,579 @@
+{
+ "amc": "diviniti",
+ "fund_code": "DIVLSF",
+ "fund_name": "Diviniti Equity Long Short Fund",
+ "period": "2026-07",
+ "as_of": "2026-07-31",
+ "source_url": "https://sif.itiamc.com/Files/PortfolioDisclosureFiles/DIVINITI%20SIF_Monthly%20Portfolio_July%202026.xlsx",
+ "raw": "portfolios/raw/diviniti/2026-07/DIVINITI%20SIF_Monthly%20Portfolio_July%202026.xlsx",
+ "fetched": "2026-08-13T16:37:16+00:00",
+ "net_assets_cr": 316.98,
+ "n_holdings": 31,
+ "allocation": {
+  "equity": 77.12,
+  "money_market": 9.41,
+  "cash_other": 13.47
+ },
+ "sectors": [
+  {
+   "sector": "Banks",
+   "weight": 22.19
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 8.94
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 8.04
+  },
+  {
+   "sector": "Electrical Equipment",
+   "weight": 7.51
+  },
+  {
+   "sector": "Ferrous Metals",
+   "weight": 5.48
+  },
+  {
+   "sector": "Non - Ferrous Metals",
+   "weight": 4.01
+  },
+  {
+   "sector": "Finance",
+   "weight": 3.92
+  },
+  {
+   "sector": "Retailing",
+   "weight": 3.78
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 3.77
+  },
+  {
+   "sector": "Aerospace & Defense",
+   "weight": 2.04
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 1.93
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 1.91
+  },
+  {
+   "sector": "Capital Markets",
+   "weight": 1.32
+  },
+  {
+   "sector": "Diversified Metals",
+   "weight": 1.26
+  },
+  {
+   "sector": "Consumer Durables",
+   "weight": 1.02
+  }
+ ],
+ "derivatives": [
+  {
+   "underlying": "Larsen & Toubro Limited",
+   "position": "Long",
+   "weight": 4.17
+  },
+  {
+   "underlying": "Maruti Suzuki India Limited",
+   "position": "Long",
+   "weight": 2.05
+  },
+  {
+   "underlying": "ITC Limited",
+   "position": "Long",
+   "weight": 1.53
+  },
+  {
+   "underlying": "Jio Financial Services Limited",
+   "position": "Long",
+   "weight": 1.16
+  },
+  {
+   "underlying": "Wipro Limited",
+   "position": "Long",
+   "weight": 1.05
+  },
+  {
+   "underlying": "Tata Consumer Products Limited",
+   "position": "Long",
+   "weight": 1.04
+  },
+  {
+   "underlying": "National Aluminium Company Limited",
+   "position": "Long",
+   "weight": 1.04
+  },
+  {
+   "underlying": "Cipla Limited",
+   "position": "Long",
+   "weight": 1.01
+  },
+  {
+   "underlying": "Varun Beverages Limited",
+   "position": "Long",
+   "weight": 0.98
+  },
+  {
+   "underlying": "Bank Nifty Index",
+   "position": "Long",
+   "weight": 0.98
+  },
+  {
+   "underlying": "Bajaj Finserv Limited",
+   "position": "Long",
+   "weight": 0.91
+  },
+  {
+   "underlying": "Trent Limited",
+   "position": "Long",
+   "weight": 0.81
+  },
+  {
+   "underlying": "Kaynes Technology India Limited",
+   "position": "Long",
+   "weight": 0.54
+  },
+  {
+   "underlying": "Dixon Technologies (India) Limited",
+   "position": "Long",
+   "weight": 0.48
+  },
+  {
+   "underlying": "Axis Bank Limited",
+   "position": "Short",
+   "weight": -1.54
+  }
+ ],
+ "top": [
+  {
+   "name": "91 Days Tbill (MD 17/09/2026)",
+   "isin": "IN002026X115",
+   "sector": "Sovereign",
+   "qty": 3000000.0,
+   "mv_cr": 29.7995,
+   "weight": 9.41,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 194715.0,
+   "mv_cr": 25.4648,
+   "weight": 8.04,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 334281.0,
+   "mv_cr": 25.0092,
+   "weight": 7.89,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Limited",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 141401.0,
+   "mv_cr": 20.2967,
+   "weight": 6.41,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindalco Industries Limited",
+   "isin": "INE038A01020",
+   "sector": "Non - Ferrous Metals",
+   "qty": 130308.0,
+   "mv_cr": 12.6979,
+   "weight": 4.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 60644.0,
+   "mv_cr": 11.959,
+   "weight": 3.77,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "State Bank of India",
+   "isin": "INE062A01020",
+   "sector": "Banks",
+   "qty": 108406.0,
+   "mv_cr": 11.1376,
+   "weight": 3.52,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 86898.0,
+   "mv_cr": 10.6841,
+   "weight": 3.37,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Infosys Limited",
+   "isin": "INE009A01021",
+   "sector": "IT - Software",
+   "qty": 94247.0,
+   "mv_cr": 10.6509,
+   "weight": 3.36,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Heavy Electricals Limited",
+   "isin": "INE257A01026",
+   "sector": "Electrical Equipment",
+   "qty": 254493.0,
+   "mv_cr": 10.3579,
+   "weight": 3.27,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "91 Days Tbill (MD 17/09/2026)",
+   "isin": "IN002026X115",
+   "sector": "Sovereign",
+   "qty": 3000000.0,
+   "mv_cr": 29.7995,
+   "weight": 9.41,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 194715.0,
+   "mv_cr": 25.4648,
+   "weight": 8.04,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 334281.0,
+   "mv_cr": 25.0092,
+   "weight": 7.89,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Limited",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 141401.0,
+   "mv_cr": 20.2967,
+   "weight": 6.41,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindalco Industries Limited",
+   "isin": "INE038A01020",
+   "sector": "Non - Ferrous Metals",
+   "qty": 130308.0,
+   "mv_cr": 12.6979,
+   "weight": 4.01,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 60644.0,
+   "mv_cr": 11.959,
+   "weight": 3.77,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "State Bank of India",
+   "isin": "INE062A01020",
+   "sector": "Banks",
+   "qty": 108406.0,
+   "mv_cr": 11.1376,
+   "weight": 3.52,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Limited",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 86898.0,
+   "mv_cr": 10.6841,
+   "weight": 3.37,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Infosys Limited",
+   "isin": "INE009A01021",
+   "sector": "IT - Software",
+   "qty": 94247.0,
+   "mv_cr": 10.6509,
+   "weight": 3.36,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Heavy Electricals Limited",
+   "isin": "INE257A01026",
+   "sector": "Electrical Equipment",
+   "qty": 254493.0,
+   "mv_cr": 10.3579,
+   "weight": 3.27,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cartrade Tech Limited",
+   "isin": "INE290S01011",
+   "sector": "Retailing",
+   "qty": 34948.0,
+   "mv_cr": 9.5045,
+   "weight": 3.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finance Limited",
+   "isin": "INE296A01032",
+   "sector": "Finance",
+   "qty": 81000.0,
+   "mv_cr": 9.2437,
+   "weight": 2.92,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Steel Limited",
+   "isin": "INE081A01020",
+   "sector": "Ferrous Metals",
+   "qty": 400874.0,
+   "mv_cr": 7.6042,
+   "weight": 2.4,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Persistent Systems Limited",
+   "isin": "INE262H01021",
+   "sector": "IT - Software",
+   "qty": 13367.0,
+   "mv_cr": 7.4173,
+   "weight": 2.34,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Thermax Limited",
+   "isin": "INE152A01029",
+   "sector": "Electrical Equipment",
+   "qty": 15840.0,
+   "mv_cr": 6.8207,
+   "weight": 2.15,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 166370.0,
+   "mv_cr": 6.4527,
+   "weight": 2.04,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Jindal Steel Limited",
+   "isin": "INE749A01030",
+   "sector": "Ferrous Metals",
+   "qty": 57236.0,
+   "mv_cr": 6.3097,
+   "weight": 1.99,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Ports and Special Economic Zone Limited",
+   "isin": "INE742F01042",
+   "sector": "Transport Infrastructure",
+   "qty": 36101.0,
+   "mv_cr": 6.1245,
+   "weight": 1.93,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sun Pharmaceutical Industries Limited",
+   "isin": "INE044A01036",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 30368.0,
+   "mv_cr": 6.0448,
+   "weight": 1.91,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Consultancy Services Limited",
+   "isin": "INE467B01029",
+   "sector": "IT - Software",
+   "qty": 24531.0,
+   "mv_cr": 5.8031,
+   "weight": 1.83,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hitachi Energy India Limited",
+   "isin": "INE07Y701011",
+   "sector": "Electrical Equipment",
+   "qty": 1793.0,
+   "mv_cr": 5.769,
+   "weight": 1.82,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tech Mahindra Limited",
+   "isin": "INE669C01036",
+   "sector": "IT - Software",
+   "qty": 27064.0,
+   "mv_cr": 4.4691,
+   "weight": 1.41,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Asset Management Company Limited",
+   "isin": "INE127D01025",
+   "sector": "Capital Markets",
+   "qty": 15977.0,
+   "mv_cr": 4.1793,
+   "weight": 1.32,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Vedanta Limited",
+   "isin": "INE205A01025",
+   "sector": "Diversified Metals",
+   "qty": 151350.0,
+   "mv_cr": 3.9994,
+   "weight": 1.26,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Steel Limited",
+   "isin": "INE019A01038",
+   "sector": "Ferrous Metals",
+   "qty": 27231.0,
+   "mv_cr": 3.4583,
+   "weight": 1.09,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Berger Paints (I) Limited",
+   "isin": "INE463A01038",
+   "sector": "Consumer Durables",
+   "qty": 62301.0,
+   "mv_cr": 3.2425,
+   "weight": 1.02,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Housing Finance Limited",
+   "isin": "INE377Y01014",
+   "sector": "Finance",
+   "qty": 368729.0,
+   "mv_cr": 3.1718,
+   "weight": 1.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Trent Limited",
+   "isin": "INE849A01020",
+   "sector": "Retailing",
+   "qty": 8272.0,
+   "mv_cr": 2.4865,
+   "weight": 0.78,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Union Bank of India",
+   "isin": "INE692A01016",
+   "sector": "Banks",
+   "qty": 92902.0,
+   "mv_cr": 1.5909,
+   "weight": 0.5,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bank of Baroda",
+   "isin": "INE028A01039",
+   "sector": "Banks",
+   "qty": 65312.0,
+   "mv_cr": 1.5845,
+   "weight": 0.5,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Voltamp Transformers Limited",
+   "isin": "INE540H01012",
+   "sector": "Electrical Equipment",
+   "qty": 868.0,
+   "mv_cr": 0.8613,
+   "weight": 0.27,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-19",
+  "SIF-20",
+  "SIF-21",
+  "SIF-22"
+ ],
+ "managers": "Vasav Sahgal",
+ "strategy": "Mainly buys shares it expects to rise and takes limited short bets (via derivatives) on shares it expects to fall, to cushion losses when markets drop. Returns come from stock selection on both the long and short sides.",
+ "presentation": "https://sif.itiamc.com/Home/DownloaddFile/10"
+}

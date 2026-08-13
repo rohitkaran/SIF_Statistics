@@ -1,0 +1,518 @@
+{
+ "amc": "arthaya",
+ "fund_code": "YK56",
+ "fund_name": "Arthaya Equity Long Short Fund",
+ "period": "2026-07",
+ "as_of": "2026-07-31",
+ "source_url": "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/fund-portfolio/july-2026/monthly-portfolio-report-arthaya-equity-long-short-fund-31-07-2026.xlsx",
+ "raw": "portfolios/raw/arthaya/2026-07/monthly-portfolio-report-arthaya-equity-long-short-fund-31-07-2026.xlsx",
+ "fetched": "2026-08-13T16:38:30+00:00",
+ "net_assets_cr": 1.33,
+ "n_holdings": 33,
+ "allocation": {
+  "equity": 7387.0,
+  "money_market": 1880.0,
+  "cash_other": 0.0
+ },
+ "sectors": [
+  {
+   "sector": "Banks",
+   "weight": 2292.0
+  },
+  {
+   "sector": "Automobiles",
+   "weight": 984.0
+  },
+  {
+   "sector": "Healthcare Services",
+   "weight": 681.0
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 561.0
+  },
+  {
+   "sector": "Retailing",
+   "weight": 510.0
+  },
+  {
+   "sector": "Finance",
+   "weight": 499.0
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 479.0
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 382.0
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 317.0
+  },
+  {
+   "sector": "Insurance",
+   "weight": 213.0
+  },
+  {
+   "sector": "Non - Ferrous Metals",
+   "weight": 154.0
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 128.0
+  },
+  {
+   "sector": "Electrical Equipment",
+   "weight": 96.0
+  },
+  {
+   "sector": "Transport Services",
+   "weight": 91.0
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X073",
+   "sector": "Sovereign",
+   "qty": 100000000.0,
+   "mv_cr": 9.9731,
+   "weight": 753.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Ltd.",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 61600.0,
+   "mv_cr": 8.8421,
+   "weight": 667.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Ltd.",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 95150.0,
+   "mv_cr": 7.1186,
+   "weight": 537.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Ltd.",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 48500.0,
+   "mv_cr": 6.3428,
+   "weight": 479.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Maruti Suzuki India Ltd.",
+   "isin": "INE585B01010",
+   "sector": "Automobiles",
+   "qty": 3750.0,
+   "mv_cr": 5.3378,
+   "weight": 403.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Ltd.",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 41875.0,
+   "mv_cr": 5.1485,
+   "weight": 388.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Ltd.",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 25650.0,
+   "mv_cr": 5.0582,
+   "weight": 382.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "State Bank of India",
+   "isin": "INE062A01020",
+   "sector": "Banks",
+   "qty": 48750.0,
+   "mv_cr": 5.0086,
+   "weight": 378.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X081",
+   "sector": "Sovereign",
+   "qty": 50000000.0,
+   "mv_cr": 4.9809,
+   "weight": 376.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "364 Day Treasury Bills",
+   "isin": "IN002025Z237",
+   "sector": "Sovereign",
+   "qty": 50000000.0,
+   "mv_cr": 4.9766,
+   "weight": 376.0,
+   "category": "money_market",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X073",
+   "sector": "Sovereign",
+   "qty": 100000000.0,
+   "mv_cr": 9.9731,
+   "weight": 753.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Bank Ltd.",
+   "isin": "INE090A01021",
+   "sector": "Banks",
+   "qty": 61600.0,
+   "mv_cr": 8.8421,
+   "weight": 667.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Bank Ltd.",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 95150.0,
+   "mv_cr": 7.1186,
+   "weight": 537.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Ltd.",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 48500.0,
+   "mv_cr": 6.3428,
+   "weight": 479.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Maruti Suzuki India Ltd.",
+   "isin": "INE585B01010",
+   "sector": "Automobiles",
+   "qty": 3750.0,
+   "mv_cr": 5.3378,
+   "weight": 403.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Axis Bank Ltd.",
+   "isin": "INE238A01034",
+   "sector": "Banks",
+   "qty": 41875.0,
+   "mv_cr": 5.1485,
+   "weight": 388.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Ltd.",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 25650.0,
+   "mv_cr": 5.0582,
+   "weight": 382.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "State Bank of India",
+   "isin": "INE062A01020",
+   "sector": "Banks",
+   "qty": 48750.0,
+   "mv_cr": 5.0086,
+   "weight": 378.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X081",
+   "sector": "Sovereign",
+   "qty": 50000000.0,
+   "mv_cr": 4.9809,
+   "weight": 376.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "364 Day Treasury Bills",
+   "isin": "IN002025Z237",
+   "sector": "Sovereign",
+   "qty": 50000000.0,
+   "mv_cr": 4.9766,
+   "weight": 376.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "91 Day Treasury Bills",
+   "isin": "IN002026X107",
+   "sector": "Sovereign",
+   "qty": 50000000.0,
+   "mv_cr": 4.9716,
+   "weight": 375.0,
+   "category": "money_market",
+   "position": "Long"
+  },
+  {
+   "name": "Apollo Hospitals Enterprise Ltd.",
+   "isin": "INE437A01024",
+   "sector": "Healthcare Services",
+   "qty": 5125.0,
+   "mv_cr": 4.5905,
+   "weight": 346.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Max Healthcare Institute Ltd.",
+   "isin": "INE027H01010",
+   "sector": "Healthcare Services",
+   "qty": 40425.0,
+   "mv_cr": 4.4407,
+   "weight": 335.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Mahindra & Mahindra Ltd.",
+   "isin": "INE101A01026",
+   "sector": "Automobiles",
+   "qty": 12000.0,
+   "mv_cr": 4.0782,
+   "weight": 308.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Trent Ltd.",
+   "isin": "INE849A01020",
+   "sector": "Retailing",
+   "qty": 13500.0,
+   "mv_cr": 4.058,
+   "weight": 306.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "TVS Motor Company Ltd.",
+   "isin": "INE494B01023",
+   "sector": "Automobiles",
+   "qty": 8400.0,
+   "mv_cr": 3.623,
+   "weight": 273.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bajaj Finance Ltd.",
+   "isin": "INE296A01032",
+   "sector": "Finance",
+   "qty": 30000.0,
+   "mv_cr": 3.4236,
+   "weight": 258.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Shriram Finance Ltd.",
+   "isin": "INE721A01047",
+   "sector": "Finance",
+   "qty": 30525.0,
+   "mv_cr": 3.1951,
+   "weight": 241.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Divi's Laboratories Ltd.",
+   "isin": "INE361B01024",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 3700.0,
+   "mv_cr": 2.9807,
+   "weight": 225.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "FSN E-Commerce Ventures Ltd.",
+   "isin": "INE388Y01029",
+   "sector": "Retailing",
+   "qty": 81250.0,
+   "mv_cr": 2.7089,
+   "weight": 204.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Sun Pharmaceutical Industries Ltd.",
+   "isin": "INE044A01036",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 12950.0,
+   "mv_cr": 2.5777,
+   "weight": 194.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Coforge Ltd.",
+   "isin": "INE591G01025",
+   "sector": "IT - Software",
+   "qty": 12350.0,
+   "mv_cr": 2.1254,
+   "weight": 160.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tech Mahindra Ltd.",
+   "isin": "INE669C01036",
+   "sector": "IT - Software",
+   "qty": 12600.0,
+   "mv_cr": 2.0806,
+   "weight": 157.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hindalco Industries Ltd.",
+   "isin": "INE038A01020",
+   "sector": "Non - Ferrous Metals",
+   "qty": 21000.0,
+   "mv_cr": 2.0463,
+   "weight": 154.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cipla Ltd.",
+   "isin": "INE059A01026",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 12750.0,
+   "mv_cr": 1.8783,
+   "weight": 142.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "RBL Bank Ltd.",
+   "isin": "INE976G01028",
+   "sector": "Banks",
+   "qty": 47625.0,
+   "mv_cr": 1.7883,
+   "weight": 135.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Adani Ports and Special Economic Zone Ltd.",
+   "isin": "INE742F01042",
+   "sector": "Transport Infrastructure",
+   "qty": 9975.0,
+   "mv_cr": 1.6923,
+   "weight": 128.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SBI Life Insurance Co. Ltd.",
+   "isin": "INE123W01016",
+   "sector": "Insurance",
+   "qty": 8625.0,
+   "mv_cr": 1.6232,
+   "weight": 122.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Kotak Mahindra Bank Ltd.",
+   "isin": "INE237A01036",
+   "sector": "Banks",
+   "qty": 38000.0,
+   "mv_cr": 1.4831,
+   "weight": 112.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ABB India Ltd.",
+   "isin": "INE117A01022",
+   "sector": "Electrical Equipment",
+   "qty": 1741.0,
+   "mv_cr": 1.2682,
+   "weight": 96.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Life Insurance Company Ltd.",
+   "isin": "INE795G01014",
+   "sector": "Insurance",
+   "qty": 22000.0,
+   "mv_cr": 1.2067,
+   "weight": 91.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Delhivery Ltd.",
+   "isin": "INE148O01028",
+   "sector": "Transport Services",
+   "qty": 24900.0,
+   "mv_cr": 1.2001,
+   "weight": 91.0,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bank of Baroda",
+   "isin": "INE028A01039",
+   "sector": "Banks",
+   "qty": 40950.0,
+   "mv_cr": 0.9934,
+   "weight": 75.0,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-112",
+  "SIF-114",
+  "SIF-115"
+ ],
+ "managers": "Rajesh Aynor, Hiten Bhadra",
+ "strategy": "Invests mainly in Indian stocks it expects to rise while taking limited short bets against stocks it expects to fall, across all company sizes. Returns come from stock-picking on both sides plus adjusting the long-vs-short balance to the market outlook.",
+ "presentation": "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/isid/arthaya-equity-long-short-fund.pdf"
+}

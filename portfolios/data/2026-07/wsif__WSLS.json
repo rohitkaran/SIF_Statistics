@@ -1,0 +1,685 @@
+{
+ "amc": "wsif",
+ "fund_code": "WSLS",
+ "fund_name": "WSIF Equity Long-Short Fund",
+ "period": "2026-07",
+ "as_of": "2026-07-31",
+ "source_url": "https://www.wealthcompanyamc.in/uploads/Monthly_Portfolio_Long_Short_Fund_cab8cd6b74.xlsx",
+ "raw": "portfolios/raw/wsif/unknown/Monthly_Portfolio_Long_Short_Fund_cab8cd6b74.xlsx",
+ "fetched": "2026-08-13T16:49:01+00:00",
+ "net_assets_cr": 33.73,
+ "n_holdings": 45,
+ "allocation": {
+  "equity": 84.64,
+  "cash_other": 15.36
+ },
+ "sectors": [
+  {
+   "sector": "Insurance",
+   "weight": 7.6389
+  },
+  {
+   "sector": "Pharmaceuticals & Biotechnology",
+   "weight": 6.277
+  },
+  {
+   "sector": "Banks",
+   "weight": 6.2108
+  },
+  {
+   "sector": "Automobiles",
+   "weight": 5.1047
+  },
+  {
+   "sector": "IT - Software",
+   "weight": 4.9841
+  },
+  {
+   "sector": "Cement & Cement Products",
+   "weight": 4.8391
+  },
+  {
+   "sector": "Transport Infrastructure",
+   "weight": 4.703
+  },
+  {
+   "sector": "Consumer Durables",
+   "weight": 4.3922
+  },
+  {
+   "sector": "Chemicals & Petrochemicals",
+   "weight": 3.6912
+  },
+  {
+   "sector": "Petroleum Products",
+   "weight": 3.5672
+  },
+  {
+   "sector": "Industrial Products",
+   "weight": 3.515
+  },
+  {
+   "sector": "Aerospace & Defense",
+   "weight": 3.4497
+  },
+  {
+   "sector": "Fertilizers & Agrochemicals",
+   "weight": 3.423
+  },
+  {
+   "sector": "Leisure Services",
+   "weight": 3.3033
+  },
+  {
+   "sector": "Construction",
+   "weight": 3.2699
+  },
+  {
+   "sector": "Power",
+   "weight": 2.7778
+  },
+  {
+   "sector": "Ferrous Metals",
+   "weight": 2.4811
+  },
+  {
+   "sector": "Transport Services",
+   "weight": 1.9124
+  },
+  {
+   "sector": "Telecom - Services",
+   "weight": 1.754
+  },
+  {
+   "sector": "Personal Products",
+   "weight": 1.5868
+  },
+  {
+   "sector": "Capital Markets",
+   "weight": 1.4538
+  },
+  {
+   "sector": "Diversified FMCG",
+   "weight": 1.333
+  },
+  {
+   "sector": "Financial Technology (Fintech)",
+   "weight": 1.2361
+  },
+  {
+   "sector": "Retailing",
+   "weight": 0.9653
+  },
+  {
+   "sector": "Food Products",
+   "weight": 0.6609
+  },
+  {
+   "sector": "Finance",
+   "weight": 0.1097
+  }
+ ],
+ "derivatives": [],
+ "top": [
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 28000.0,
+   "mv_cr": 2.0948,
+   "weight": 6.2108,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Infrastructure Limited",
+   "isin": "INE880J01026",
+   "sector": "Transport Infrastructure",
+   "qty": 50776.0,
+   "mv_cr": 1.5862,
+   "weight": 4.703,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 9200.0,
+   "mv_cr": 1.2032,
+   "weight": 3.5672,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 30000.0,
+   "mv_cr": 1.1636,
+   "weight": 3.4497,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Infosys Limited",
+   "isin": "INE009A01021",
+   "sector": "IT - Software",
+   "qty": 10000.0,
+   "mv_cr": 1.1301,
+   "weight": 3.3506,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Larsen & Toubro Limited",
+   "isin": "INE018A01030",
+   "sector": "Construction",
+   "qty": 2800.0,
+   "mv_cr": 1.1029,
+   "weight": 3.2699,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Maruti Suzuki India Limited",
+   "isin": "INE585B01010",
+   "sector": "Automobiles",
+   "qty": 750.0,
+   "mv_cr": 1.0675,
+   "weight": 3.1651,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Life Insurance Company Limited",
+   "isin": "INE795G01014",
+   "sector": "Insurance",
+   "qty": 18000.0,
+   "mv_cr": 0.9873,
+   "weight": 2.9272,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Ambuja Cements Limited",
+   "isin": "INE079A01024",
+   "sector": "Cement & Cement Products",
+   "qty": 20000.0,
+   "mv_cr": 0.8644,
+   "weight": 2.5628,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Niva Bupa Health Insurance Company Ltd.",
+   "isin": "INE995S01015",
+   "sector": "Insurance",
+   "qty": 96500.0,
+   "mv_cr": 0.8396,
+   "weight": 2.4894,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "holdings": [
+  {
+   "name": "HDFC Bank Limited",
+   "isin": "INE040A01034",
+   "sector": "Banks",
+   "qty": 28000.0,
+   "mv_cr": 2.0948,
+   "weight": 6.2108,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Infrastructure Limited",
+   "isin": "INE880J01026",
+   "sector": "Transport Infrastructure",
+   "qty": 50776.0,
+   "mv_cr": 1.5862,
+   "weight": 4.703,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Reliance Industries Limited",
+   "isin": "INE002A01018",
+   "sector": "Petroleum Products",
+   "qty": 9200.0,
+   "mv_cr": 1.2032,
+   "weight": 3.5672,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharat Electronics Limited",
+   "isin": "INE263A01024",
+   "sector": "Aerospace & Defense",
+   "qty": 30000.0,
+   "mv_cr": 1.1636,
+   "weight": 3.4497,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Infosys Limited",
+   "isin": "INE009A01021",
+   "sector": "IT - Software",
+   "qty": 10000.0,
+   "mv_cr": 1.1301,
+   "weight": 3.3506,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Larsen & Toubro Limited",
+   "isin": "INE018A01030",
+   "sector": "Construction",
+   "qty": 2800.0,
+   "mv_cr": 1.1029,
+   "weight": 3.2699,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Maruti Suzuki India Limited",
+   "isin": "INE585B01010",
+   "sector": "Automobiles",
+   "qty": 750.0,
+   "mv_cr": 1.0675,
+   "weight": 3.1651,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "HDFC Life Insurance Company Limited",
+   "isin": "INE795G01014",
+   "sector": "Insurance",
+   "qty": 18000.0,
+   "mv_cr": 0.9873,
+   "weight": 2.9272,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Ambuja Cements Limited",
+   "isin": "INE079A01024",
+   "sector": "Cement & Cement Products",
+   "qty": 20000.0,
+   "mv_cr": 0.8644,
+   "weight": 2.5628,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Niva Bupa Health Insurance Company Ltd.",
+   "isin": "INE995S01015",
+   "sector": "Insurance",
+   "qty": 96500.0,
+   "mv_cr": 0.8396,
+   "weight": 2.4894,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Crompton Greaves Consumer Electrical Ltd",
+   "isin": "INE299U01018",
+   "sector": "Consumer Durables",
+   "qty": 31189.0,
+   "mv_cr": 0.8115,
+   "weight": 2.4061,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "The Tata Power Company Limited",
+   "isin": "INE245A01021",
+   "sector": "Power",
+   "qty": 20000.0,
+   "mv_cr": 0.7614,
+   "weight": 2.2574,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "FINOLEX CABLES LTD",
+   "isin": "INE235A01022",
+   "sector": "Industrial Products",
+   "qty": 7500.0,
+   "mv_cr": 0.7407,
+   "weight": 2.1961,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bayer Cropscience Limited",
+   "isin": "INE462A01022",
+   "sector": "Fertilizers & Agrochemicals",
+   "qty": 1690.0,
+   "mv_cr": 0.7156,
+   "weight": 2.1217,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Alembic Pharmaceuticals Limited",
+   "isin": "INE901L01018",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 8527.0,
+   "mv_cr": 0.6796,
+   "weight": 2.015,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Hyundai Motor India Limited",
+   "isin": "INE0V6F01027",
+   "sector": "Automobiles",
+   "qty": 3000.0,
+   "mv_cr": 0.6542,
+   "weight": 1.9396,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Blue Dart Express Limited",
+   "isin": "INE233B01017",
+   "sector": "Transport Services",
+   "qty": 1250.0,
+   "mv_cr": 0.645,
+   "weight": 1.9124,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "EIH Limited",
+   "isin": "INE230A01023",
+   "sector": "Leisure Services",
+   "qty": 19697.0,
+   "mv_cr": 0.6441,
+   "weight": 1.9096,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "BASF India Limited",
+   "isin": "INE373A01013",
+   "sector": "Chemicals & Petrochemicals",
+   "qty": 1671.0,
+   "mv_cr": 0.6072,
+   "weight": 1.8003,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Bharti Airtel Limited",
+   "isin": "INE397D01024",
+   "sector": "Telecom - Services",
+   "qty": 3000.0,
+   "mv_cr": 0.5916,
+   "weight": 1.754,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Alkem Laboratories Limited",
+   "isin": "INE540L01014",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 1000.0,
+   "mv_cr": 0.5752,
+   "weight": 1.7052,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Jindal Steel Limited",
+   "isin": "INE749A01030",
+   "sector": "Ferrous Metals",
+   "qty": 5010.0,
+   "mv_cr": 0.5523,
+   "weight": 1.6375,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Wipro Limited",
+   "isin": "INE075A01022",
+   "sector": "IT - Software",
+   "qty": 30000.0,
+   "mv_cr": 0.5509,
+   "weight": 1.6335,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Godrej Consumer Products Limited",
+   "isin": "INE102D01028",
+   "sector": "Personal Products",
+   "qty": 5000.0,
+   "mv_cr": 0.5352,
+   "weight": 1.5868,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICRA LIMITED",
+   "isin": "INE725G01011",
+   "sector": "Capital Markets",
+   "qty": 1000.0,
+   "mv_cr": 0.4903,
+   "weight": 1.4538,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Lemon Tree Hotels Limited",
+   "isin": "INE970X01018",
+   "sector": "Leisure Services",
+   "qty": 43008.0,
+   "mv_cr": 0.4701,
+   "weight": 1.3937,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Max Financial Services Limited",
+   "isin": "INE180A01020",
+   "sector": "Insurance",
+   "qty": 3000.0,
+   "mv_cr": 0.4497,
+   "weight": 1.3333,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ITC Limited",
+   "isin": "INE154A01025",
+   "sector": "Diversified FMCG",
+   "qty": 16000.0,
+   "mv_cr": 0.4496,
+   "weight": 1.333,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Glenmark Pharmaceuticals Limited",
+   "isin": "INE935A01035",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 2000.0,
+   "mv_cr": 0.4468,
+   "weight": 1.3246,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "EPL Limited",
+   "isin": "INE255A01020",
+   "sector": "Industrial Products",
+   "qty": 20000.0,
+   "mv_cr": 0.4448,
+   "weight": 1.3189,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Chambal Fertilizers & Chemicals Limited",
+   "isin": "INE085A01013",
+   "sector": "Fertilizers & Agrochemicals",
+   "qty": 10000.0,
+   "mv_cr": 0.4389,
+   "weight": 1.3013,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Pine Labs Limited",
+   "isin": "INE15B701018",
+   "sector": "Financial Technology (Fintech)",
+   "qty": 30000.0,
+   "mv_cr": 0.4169,
+   "weight": 1.2361,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Dr. Reddy's Laboratories Limited",
+   "isin": "INE089A01031",
+   "sector": "Pharmaceuticals & Biotechnology",
+   "qty": 3620.0,
+   "mv_cr": 0.4156,
+   "weight": 1.2322,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JK Lakshmi Cement Limited",
+   "isin": "INE786A01032",
+   "sector": "Cement & Cement Products",
+   "qty": 6856.0,
+   "mv_cr": 0.3871,
+   "weight": 1.1478,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "JSW Cement Limited",
+   "isin": "INE718I01012",
+   "sector": "Cement & Cement Products",
+   "qty": 28598.0,
+   "mv_cr": 0.3806,
+   "weight": 1.1285,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Atul Limited",
+   "isin": "INE100A01010",
+   "sector": "Chemicals & Petrochemicals",
+   "qty": 500.0,
+   "mv_cr": 0.3368,
+   "weight": 0.9986,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "EUREKA FORBES LTD",
+   "isin": "INE0KCE01017",
+   "sector": "Consumer Durables",
+   "qty": 7500.0,
+   "mv_cr": 0.3363,
+   "weight": 0.9972,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "INDIGO PAINTS LIMITED",
+   "isin": "INE09VQ01012",
+   "sector": "Consumer Durables",
+   "qty": 3000.0,
+   "mv_cr": 0.3335,
+   "weight": 0.9889,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "SWIGGY LIMITED",
+   "isin": "INE00H001014",
+   "sector": "Retailing",
+   "qty": 11429.0,
+   "mv_cr": 0.3256,
+   "weight": 0.9653,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Chemplast Sanmar Ltd",
+   "isin": "INE488A01050",
+   "sector": "Chemicals & Petrochemicals",
+   "qty": 15499.0,
+   "mv_cr": 0.301,
+   "weight": 0.8923,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "ICICI Prudential Life Insurance Company",
+   "isin": "INE726G01019",
+   "sector": "Insurance",
+   "qty": 5818.0,
+   "mv_cr": 0.2999,
+   "weight": 0.889,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Tata Steel Limited",
+   "isin": "INE081A01020",
+   "sector": "Ferrous Metals",
+   "qty": 15000.0,
+   "mv_cr": 0.2845,
+   "weight": 0.8436,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Orkla India Limited",
+   "isin": "INE16NZ01023",
+   "sector": "Food Products",
+   "qty": 4000.0,
+   "mv_cr": 0.2229,
+   "weight": 0.6609,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "PTC India Limited",
+   "isin": "INE877F01012",
+   "sector": "Power",
+   "qty": 10000.0,
+   "mv_cr": 0.1755,
+   "weight": 0.5204,
+   "category": "equity",
+   "position": "Long"
+  },
+  {
+   "name": "Cholamandalam Invest & Finance Co Ltd",
+   "isin": "INE121A01024",
+   "sector": "Finance",
+   "qty": 200.0,
+   "mv_cr": 0.037,
+   "weight": 0.1097,
+   "category": "equity",
+   "position": "Long"
+  }
+ ],
+ "_codes": [
+  "SIF-108",
+  "SIF-111",
+  "SIF-110"
+ ],
+ "managers": "Chinmay Sathe",
+ "strategy": "Holds listed Indian stocks it expects to rise while taking limited short bets (via derivatives) against stocks it expects to fall; returns come from stock selection on both the long and short sides.",
+ "presentation": "https://www.wealthcompanyamc.in/uploads/ISID_wsif_Equity_Long_Short_Fund_20d41ea013.pdf"
+}

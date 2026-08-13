@@ -242,8 +242,11 @@ def discover_http_listing(cfg):
 
 def _tokens(d):
     up = d.replace(day=28) + dt.timedelta(days=7)   # a day in the following month
+    suffix = "th" if 11 <= d.day <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(d.day % 10, "th")
     return {
         "y": d.year, "yy": f"{d.year % 100:02d}", "m": f"{d.month:02d}", "dd": f"{d.day:02d}",
+        "d": d.day,                                # unpadded day
+        "ord": suffix,                             # "st"/"nd"/"rd"/"th" — Tata names files "31st May"
         "mon": d.strftime("%b").lower(), "Mon": d.strftime("%b"), "MON": d.strftime("%b").upper(),
         "month": d.strftime("%B").lower(), "Month": d.strftime("%B"),
         "uy": up.year, "um": f"{up.month:02d}",   # upload-month (data month + 1)
@@ -251,14 +254,26 @@ def _tokens(d):
 
 
 def discover_template(cfg):
-    """Probe candidate month-end URLs built from a strftime-ish template; keep the 200s."""
+    """Probe candidate month-end URLs built from a strftime-ish template; keep the 200s.
+
+    Accepts `url_template` (one file per month) or `url_templates` (a list — several AMCs publish
+    one file PER FUND per month, e.g. Arudha and qSIF). Every template is probed for every month in
+    the lookback window, so a month is recovered as long as any of its files is still up.
+
+    NOTE ON RETENTION: AMC sites keep only the last ~3 months at these URLs (measured 2026-08-13:
+    SBI and ICICI both serve May/Jun/Jul 2026 and 404 everything older). Probing a longer lookback
+    is cheap and harmless, and it means that once this runs weekly we permanently capture each
+    month while it is still up — the archive is built forward, since it cannot be recovered back.
+    """
     disc = cfg["discovery"]
-    tmpl = disc["url_template"]
+    tmpls = disc.get("url_templates") or [disc["url_template"]]
     out = []
     for d in month_ends(disc.get("lookback", 8)):
-        url = tmpl.format(**_tokens(d))
-        blob = http_ok(url)
-        if blob is not None:
+        for tmpl in tmpls:
+            url = tmpl.format(**_tokens(d))
+            blob = http_ok(url)
+            if blob is None:
+                continue
             out.append({"period": f"{d.year}-{d.month:02d}", "as_of": d.isoformat(),
                         "url": url, "filename": os.path.basename(urllib.parse.urlparse(url).path)
                                      or f"{cfg.get('adapter','file')}_{d.isoformat()}.xlsx",

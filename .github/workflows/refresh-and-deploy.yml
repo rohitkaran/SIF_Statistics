@@ -67,6 +67,15 @@ jobs:
           python fetch_sif_portfolios.py \
           || echo "::warning::Portfolio fetch failed — keeping last committed portfolios/"
 
+      - name: Fetch AMFI official SIF monthly industry reports
+        # The authoritative industry AUM / folios / flows series, one whole-industry snapshot per
+        # month since the category launched. Cheap and idempotent: months already fetched are simply
+        # re-read, and AMFI publishes the new month a week or two after month end.
+        run: |
+          pip install -r requirements.txt
+          python fetch_amfi_monthly.py --out industry_data.json \
+          || echo "::warning::AMFI monthly fetch failed — keeping last committed industry_data.json"
+
       - name: Track SIF new fund offers
         # AMFI's NFO list is a dateless snapshot with no archive, so the history only exists if we
         # record it. Runs on every job — a missed day just widens one offer's observed window.
@@ -99,7 +108,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nav_data.json benchmark_data.json news_data.json nfo_data.json aum_data.json portfolios/ monitor/state.json monitor/CHANGELOG.md 2>/dev/null || true
+          git add nav_data.json benchmark_data.json news_data.json nfo_data.json aum_data.json industry_data.json portfolios/ monitor/state.json monitor/CHANGELOG.md 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

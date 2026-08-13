@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SIF AUM & market share — by fund house and strategy | SIFintel</title>
-<meta name="description" content="How big each Indian Specialized Investment Fund is: disclosed net assets, market share by fund house and by long-short strategy, and growth between disclosures. Built from fund houses' own portfolio filings.">
-<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel, SIF AUM, SIF market share, SIF assets under management, largest SIF, SIF fund size">
+<title>SIF industry AUM, flows & market share by strategy | SIFintel</title>
+<meta name="description" content="India's SIF industry AUM month by month since launch: assets, investor folios, net flows and market share by SEBI strategy category, from AMFI's official monthly industry report.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel, SIF AUM, SIF industry AUM, SIF market share, SIF net inflows, SIF folios, SIF assets under management">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://www.sifintel.com/aum">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SIFintel">
-<meta property="og:title" content="SIF AUM & market share — by fund house and strategy | SIFintel">
-<meta property="og:description" content="How big each Indian Specialized Investment Fund is: disclosed net assets, market share by fund house and by long-short strategy, and growth between disclosures. Built from fund houses' own portfolio filings.">
+<meta property="og:title" content="SIF industry AUM, flows & market share by strategy | SIFintel">
+<meta property="og:description" content="India's SIF industry AUM month by month since launch: assets, investor folios, net flows and market share by SEBI strategy category, from AMFI's official monthly industry report.">
 <meta property="og:url" content="https://www.sifintel.com/aum">
 <meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -49,113 +49,153 @@
 <main class="wrap wide">
 <div class="crumb"><a href="/">Home</a> / AUM</div>
 <article class="doc">
-<h1>SIF AUM &amp; market share</h1>
-<p class="lede">How big each Specialized Investment Fund actually is, who holds what share of the category, and how
-that is split across strategies — built from the net assets each fund house discloses in its own portfolio filings.</p>
-<p class="meta" id="aummeta">Loading AUM data…</p>
+<h1>SIF industry AUM &amp; market share</h1>
+<p class="lede">How large India's Specialized Investment Fund industry actually is, month by month since the category
+launched — assets, investor folios, flows, and how the money splits across the SEBI strategy categories. Sourced from
+AMFI's official monthly industry report.</p>
+<p class="meta" id="aummeta">Loading industry data…</p>
 
 <div id="aumstats" class="statrow"></div>
 
-<div class="callout" id="aumbasis"></div>
+<h2>Industry AUM, month by month</h2>
+<div id="aumchart"></div>
+<p class="meta" id="aumgrowth"></p>
 
-<h2>Market share by fund house</h2>
-<div id="byhouse"></div>
-
-<h2>Market share by strategy</h2>
+<h2>Where the money sits</h2>
 <div id="bycat"></div>
 
-<h2>Every disclosed fund</h2>
+<h2>Category detail &amp; monthly change</h2>
+<div id="cattable"></div>
+
+<h2>Flows and folios by month</h2>
+<div id="flowtable"></div>
+
+<h2>Fund-level disclosed assets</h2>
+<p id="fundnote" class="meta"></p>
 <div id="byfund"></div>
 
-<h2>Growth between disclosures</h2>
-<p id="moversnote"></p>
-<div id="movers"></div>
-
 <h2>How this is built</h2>
-<p>AMFI publishes NAVs for SIFs but no AUM feed — there is no <code>sif-aum</code> endpoint of any kind. Every figure
-here therefore comes from the fund houses themselves: each portfolio disclosure states the scheme's net assets, and we
-normalise those filings into one schema. One portfolio file counts as one fund; Direct/Regular and Growth/IDCW variants
-are never added together.</p>
-<p><strong>Why there is no month-by-month industry chart.</strong> SIF houses disclose on a staggered, roughly
-bi-monthly cycle — consecutive months contain almost entirely different fund houses. Differencing two months would
-compare one set of AMCs against another and report that composition change as "growth", which would be wrong. So a
-fund is only ever compared against its <em>own</em> previous disclosure, and the gap between them is stated.</p>
+<p>The industry figures above come from <strong>AMFI's official SIF Monthly Report</strong>, published as a
+spreadsheet for every month since the category began. Each month is a whole-industry snapshot taken at the same
+month-end, which is what makes the month-on-month comparisons here valid.</p>
+<p>The fund-level section is a different thing and is labelled as such. AMFI's monthly report does not break AUM down
+to individual schemes, so those figures come from each fund house's own portfolio disclosure. Houses file on a
+staggered, roughly bi-monthly cycle, so each fund is shown with the date its number actually applies to, and they do
+not sum to the industry total.</p>
 
-<div class="callout warn">Figures are disclosed net assets as at each fund's own disclosure date, reproduced for
-information only. They are not investment advice and not a measure of fund quality — size is not performance. Verify
-against scheme documents before relying on them.</div>
+<div class="callout warn">Figures are reproduced from published industry data for information only. They are not
+investment advice, and fund size is not a measure of fund quality or a predictor of returns.</div>
 </article>
 <script>
 (function(){
-  var META=document.getElementById('aummeta'), STATS=document.getElementById('aumstats'),
-      BASIS=document.getElementById('aumbasis'), HOUSE=document.getElementById('byhouse'),
-      CAT=document.getElementById('bycat'), FUND=document.getElementById('byfund'),
-      MOV=document.getElementById('movers'), MNOTE=document.getElementById('moversnote');
+  var $=function(id){return document.getElementById(id);};
+  var META=$('aummeta'), STATS=$('aumstats'), CHART=$('aumchart'), GROWTH=$('aumgrowth'),
+      CAT=$('bycat'), CATT=$('cattable'), FLOW=$('flowtable'), FUND=$('byfund'), FNOTE=$('fundnote');
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function cr(n){ return '₹'+Number(n).toLocaleString('en-IN',{maximumFractionDigits:0})+' cr'; }
+  function n0(n){ return Number(n).toLocaleString('en-IN',{maximumFractionDigits:0}); }
+  function cr(n){ return n==null?'—':'₹'+n0(n)+' cr'; }
   function per(p){ if(!p) return '—'; var m=p.split('-');
     return new Date(Date.UTC(+m[0],+m[1]-1,1)).toLocaleDateString(undefined,{month:'short',year:'numeric'}); }
+  function sign(n,fmt){ if(n==null) return '—';
+    return '<span style="color:'+(n>=0?'var(--pos)':'#e5484d')+'">'+(n>=0?'+':'')+(fmt?fmt(n):n0(n))+'</span>'; }
 
-  function bars(rows){
-    var max=Math.max.apply(null,rows.map(function(r){return r.aum_cr;}))||1;
+  // Inline SVG column chart — no chart library, so nothing external has to load.
+  function chart(totals){
+    var W=760, H=210, PAD=34, n=totals.length;
+    var max=Math.max.apply(null,totals.map(function(t){return t.aum_cr||0;}))||1;
+    var bw=(W-PAD*2)/n*0.66, gap=(W-PAD*2)/n;
+    var bars=totals.map(function(t,i){
+      var h=(t.aum_cr||0)/max*(H-PAD*2), x=PAD+i*gap+(gap-bw)/2, y=H-PAD-h;
+      return '<g><title>'+esc(per(t.period))+': '+esc(cr(t.aum_cr))+'</title>'+
+        '<rect x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+Math.max(h,1).toFixed(1)+
+        '" rx="3" fill="var(--teal)"></rect>'+
+        '<text x="'+(x+bw/2).toFixed(1)+'" y="'+(y-5).toFixed(1)+'" text-anchor="middle" font-size="9.5" '+
+        'fill="var(--ink-faint)" font-family="monospace">'+n0(t.aum_cr)+'</text>'+
+        '<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-PAD+14).toFixed(1)+'" text-anchor="middle" font-size="9.5" '+
+        'fill="var(--ink-faint)" font-family="monospace">'+esc(per(t.period).replace(' ','\n'))+'</text></g>';
+    }).join('');
+    return '<div class="tablewrap"><svg viewBox="0 0 '+W+' '+H+'" width="100%" height="'+H+'" role="img" '+
+      'aria-label="SIF industry AUM by month"><line x1="'+PAD+'" y1="'+(H-PAD)+'" x2="'+(W-PAD)+'" y2="'+(H-PAD)+
+      '" stroke="var(--line2)"></line>'+bars+'</svg></div>';
+  }
+
+  function bars(rows,total){
+    var max=Math.max.apply(null,rows.map(function(r){return r.aum_cr||0;}))||1;
     return '<div class="bars">'+rows.map(function(r){
       return '<div class="barrow">'+
-        '<div class="barlabel">'+esc(r.name)+'<span>'+r.funds+' fund'+(r.funds===1?'':'s')+
-          (r.as_of_periods?' · '+r.as_of_periods.map(per).join(', '):'')+'</span></div>'+
-        '<div class="bartrack"><div class="barfill" style="width:'+(100*r.aum_cr/max).toFixed(1)+'%"></div></div>'+
-        '<div class="barval">'+cr(r.aum_cr)+'<span>'+r.share_pct.toFixed(1)+'%</span></div>'+
+        '<div class="barlabel">'+esc(r.category)+'<span>'+esc(r.group||'')+' · '+n0(r.schemes)+' scheme'+
+          (r.schemes===1?'':'s')+'</span></div>'+
+        '<div class="bartrack"><div class="barfill" style="width:'+(100*(r.aum_cr||0)/max).toFixed(1)+'%"></div></div>'+
+        '<div class="barval">'+cr(r.aum_cr)+'<span>'+(r.share_pct==null?'':r.share_pct.toFixed(1)+'%')+'</span></div>'+
       '</div>';
     }).join('')+'</div>';
   }
 
+  fetch('/industry_data.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+    var T=j.latest_total||{}, tots=j.totals||[], first=tots[0]||{};
+    META.textContent='AMFI official industry data · '+j.months.length+' months, '+per(j.months[0])+' to '+
+      per(j.latest);
+
+    STATS.innerHTML=
+      '<div class="stat"><b>'+n0(T.aum_cr)+' cr</b><span>industry AUM · '+per(j.latest)+'</span></div>'+
+      '<div class="stat"><b>'+n0(T.folios)+'</b><span>investor folios</span></div>'+
+      '<div class="stat"><b>'+n0(T.schemes)+'</b><span>live schemes</span></div>'+
+      '<div class="stat"><b>'+n0(T.net_flow_cr)+' cr</b><span>net inflow this month</span></div>';
+
+    CHART.innerHTML=chart(tots);
+    if(first.aum_cr && T.aum_cr){
+      GROWTH.textContent='Industry assets have gone from '+cr(first.aum_cr)+' in '+per(first.period)+' to '+
+        cr(T.aum_cr)+' in '+per(T.period)+' — '+(T.aum_cr/first.aum_cr).toFixed(1)+'× in '+
+        (tots.length-1)+' months. Folios over the same period: '+n0(first.folios)+' to '+n0(T.folios)+'.';
+    }
+
+    var cats=(j.latest_categories||[]).filter(function(c){return c.aum_cr;});
+    CAT.innerHTML=bars(cats);
+
+    CATT.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Strategy</th><th>Group</th>'+
+      '<th style="text-align:right">Schemes</th><th style="text-align:right">Folios</th>'+
+      '<th style="text-align:right">AUM</th><th style="text-align:right">Share</th>'+
+      '<th style="text-align:right">Change vs prev month</th></tr></thead><tbody>'+
+      cats.map(function(c){
+        return '<tr><td>'+esc(c.category)+'</td><td>'+esc(c.group||'—')+'</td>'+
+          '<td style="text-align:right">'+n0(c.schemes)+'</td>'+
+          '<td style="text-align:right">'+n0(c.folios)+'</td>'+
+          '<td style="text-align:right">'+cr(c.aum_cr)+'</td>'+
+          '<td style="text-align:right">'+(c.share_pct==null?'—':c.share_pct.toFixed(1)+'%')+'</td>'+
+          '<td style="text-align:right">'+(c.aum_change_cr==null?'—':
+             sign(c.aum_change_cr,function(v){return n0(v)+' cr';})+
+             (c.aum_change_pct==null?'':' <span class="pill">'+(c.aum_change_pct>=0?'+':'')+
+              c.aum_change_pct.toFixed(1)+'%</span>'))+'</td></tr>';
+      }).join('')+'</tbody></table></div>';
+
+    FLOW.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Month</th>'+
+      '<th style="text-align:right">Gross inflow</th><th style="text-align:right">Redemptions</th>'+
+      '<th style="text-align:right">Net flow</th><th style="text-align:right">Closing AUM</th>'+
+      '<th style="text-align:right">Folios</th></tr></thead><tbody>'+
+      tots.slice().reverse().map(function(t){
+        return '<tr><td>'+per(t.period)+'</td>'+
+          '<td style="text-align:right">'+cr(t.inflow_cr)+'</td>'+
+          '<td style="text-align:right">'+cr(t.redemption_cr)+'</td>'+
+          '<td style="text-align:right">'+sign(t.net_flow_cr,function(v){return n0(v)+' cr';})+'</td>'+
+          '<td style="text-align:right">'+cr(t.aum_cr)+'</td>'+
+          '<td style="text-align:right">'+n0(t.folios)+'</td></tr>';
+      }).join('')+'</tbody></table></div>';
+  }).catch(function(){ META.textContent='Industry data is temporarily unavailable — please try again shortly.'; });
+
+  // Fund-level detail is a separate, weaker source and is presented as such.
   fetch('/aum_data.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
-    var L=j.latest;
-    META.textContent = L.funds+' funds disclosed · '+cr(L.aum_cr)+' total · covering '+
-      L.periods_spanned.map(per).join(', ');
-
-    STATS.innerHTML =
-      '<div class="stat"><b>'+cr(L.aum_cr).replace('₹','')+'</b><span>total disclosed AUM</span></div>'+
-      '<div class="stat"><b>'+L.funds+'</b><span>funds with disclosures</span></div>'+
-      '<div class="stat"><b>'+L.by_house.length+'</b><span>fund houses</span></div>'+
-      '<div class="stat"><b>'+L.by_category.length+'</b><span>strategies</span></div>';
-
-    // Deliberately not echoing j.caveat — that wording is written for API consumers and names raw
-    // JSON fields. Readers get the same caution in plain English.
-    BASIS.innerHTML = '<b>What you are looking at.</b> Each fund at its most recent disclosure — which is not the '+
-      'same month for every house, so the period is shown against each one. Fund houses file on a staggered, '+
-      'roughly bi-monthly cycle, so this is the current picture of the funds that have disclosed, not an '+
-      'industry total, and the monthly totals further down are not comparable with one another.';
-
-    HOUSE.innerHTML = bars(L.by_house);
-    CAT.innerHTML = bars(L.by_category);
-
-    FUND.innerHTML = '<div class="tablewrap"><table class="data"><thead><tr><th>Fund</th><th>Fund house</th>'+
+    var L=j.latest; if(!L||!L.funds_detail) return;
+    FNOTE.textContent='AMFI\u2019s monthly report does not break AUM down by scheme, so these come from each fund '+
+      'house\u2019s own portfolio disclosure. Filing is staggered, so each fund shows the month its figure applies '+
+      'to and these do not add up to the industry total above.';
+    FUND.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Fund</th><th>Fund house</th>'+
       '<th>Strategy</th><th>Disclosed</th><th style="text-align:right">Net assets</th></tr></thead><tbody>'+
       L.funds_detail.map(function(f){
         return '<tr><td>'+esc(f.fund)+'</td><td>'+esc(f.house)+'</td><td>'+esc(f.category)+
                '</td><td>'+per(f.period)+'</td><td style="text-align:right">'+cr(f.aum_cr)+'</td></tr>';
       }).join('')+'</tbody></table></div>';
-
-    if(!j.fund_movers || !j.fund_movers.length){
-      MNOTE.textContent='No fund has disclosed twice yet in the data we hold, so there is no growth to report. '+
-        'The moment any fund files a second disclosure, its change appears here automatically.';
-      MOV.innerHTML='';
-    } else {
-      MNOTE.textContent='Each fund against its own previous disclosure. The gap is stated because it is not always one month.';
-      MOV.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Fund</th><th>Fund house</th>'+
-        '<th>Between</th><th style="text-align:right">Was</th><th style="text-align:right">Now</th>'+
-        '<th style="text-align:right">Change</th></tr></thead><tbody>'+
-        j.fund_movers.map(function(m){
-          var up=m.change_cr>=0;
-          return '<tr><td>'+esc(m.fund)+'</td><td>'+esc(m.house)+'</td><td>'+per(m.from_period)+' → '+per(m.to_period)+
-            ' <span class="pill">'+m.gap_months+'m</span></td>'+
-            '<td style="text-align:right">'+cr(m.from_cr)+'</td><td style="text-align:right">'+cr(m.to_cr)+'</td>'+
-            '<td style="text-align:right;color:'+(up?'var(--pos)':'#e5484d')+'">'+(up?'+':'')+cr(m.change_cr)+
-            (m.change_pct==null?'':' ('+(up?'+':'')+m.change_pct.toFixed(1)+'%)')+'</td></tr>';
-        }).join('')+'</tbody></table></div>';
-    }
-  }).catch(function(){ META.textContent='AUM data is temporarily unavailable — please try again shortly.'; });
+  }).catch(function(){});
 })();
 </script>
 </main>
