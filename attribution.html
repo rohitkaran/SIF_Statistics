@@ -59,8 +59,10 @@ because paying for a hedge fund structure to deliver index beta is the thing wor
 <div class="callout" id="attrmethod"></div>
 
 <h2>Market vs manager contribution</h2>
-<p class="meta">Each bar splits the fund's total return since launch into the part explained by its market exposure
-and the part that is not. Green to the left of zero means market exposure <em>cost</em> the fund return over the period.</p>
+<div class="newsbar">
+  <div class="chips" id="attrmodes"></div>
+</div>
+<p class="meta" id="attrwindow"></p>
 <div id="attrbars"></div>
 
 <h2>Full table</h2>
@@ -97,7 +99,8 @@ Consult a SEBI-registered adviser before investing.</div>
 (function(){
   var $=function(id){return document.getElementById(id);};
   var META=$('attrmeta'), METHOD=$('attrmethod'), BARS=$('attrbars'), TABLE=$('attrtable'),
-      CATS=$('attrcats'), PC=$('pchanges'), PCN=$('pcnote');
+      CATS=$('attrcats'), PC=$('pchanges'), PCN=$('pcnote'),
+      MODEBAR=$('attrmodes'), WIN=$('attrwindow');
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function pct(n){ return n==null?'—':(n>=0?'+':'')+n.toFixed(2)+'%'; }
@@ -108,15 +111,18 @@ Consult a SEBI-registered adviser before investing.</div>
   function shortName(s){ return String(s).replace(/\s*-\s*(direct|regular)\s+plan.*$/i,'')
     .replace(/\s*-\s*(growth|idcw)(\s+option)?.*$/i,''); }
 
-  fetch('/attribution_data.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
-    var F=j.funds_primary||[];
-    META.textContent=F.length+' funds analysed against '+j.benchmark+' · '+j.insufficient_history+
-      ' too new to measure · minimum '+j.min_observations+' trading days';
+  var DATA=null, MODE=0, MODES=[];
 
-    METHOD.innerHTML='<b>How to read this.</b> Market contribution is the fund\u2019s beta times the '+
-      esc(j.benchmark)+'\u2019s return over the same window. Manager contribution is everything else — '+
-      'selection, the short book, timing, cash and fees combined. A high manager contribution alongside a '+
-      'low R-squared is the signature of a fund genuinely doing something other than tracking the index.';
+  function renderMode(){
+    var m=MODES[MODE], F=m.rows, j=DATA;
+    WIN.innerHTML = m.comparable
+      ? 'Every fund below is measured over <strong>exactly the same dates</strong> — '+esc(m.from)+
+        ' to '+esc(m.to)+' — so these figures are directly comparable. '+F.length+' funds have full '+
+        'history for this window.'
+      : '<span class="warnspan"><b>Not comparable between funds.</b></span> Each fund is measured over its '+
+        'own life, so a fund trading for 10 months is shown against one trading for 3. Age is doing part of '+
+        'the ranking here. The "Ann. manager" column is a rate and is the only column that compares fairly '+
+        'across different windows — or switch to a fixed window above.';
 
     // Diverging bars around a zero axis: market contribution left/right, manager contribution stacked.
     var top=F.slice(0,18);
@@ -144,10 +150,12 @@ Consult a SEBI-registered adviser before investing.</div>
     TABLE.innerHTML='<div class="tablewrap"><table class="data"><thead><tr>'+
       '<th>Fund</th><th>Fund house</th><th style="text-align:right">Total</th>'+
       '<th style="text-align:right">Market</th><th style="text-align:right">Manager</th>'+
+      '<th style="text-align:right">Ann. manager</th>'+
       '<th style="text-align:right">Beta</th><th style="text-align:right">R²</th>'+
       '<th style="text-align:right">Up capt.</th><th style="text-align:right">Down capt.</th>'+
       '<th style="text-align:right">Vol</th><th style="text-align:right">Max DD</th>'+
-      '<th style="text-align:right">Days</th></tr></thead><tbody>'+
+      (m.comparable?'':'<th style="text-align:right">Window</th>')+
+      '</tr></thead><tbody>'+
       F.map(function(f){
         return '<tr><td>'+esc(shortName(f.name))+(f.variants>1?' <span class="pill">'+f.variants+
             ' plans</span>':'')+'</td>'+
@@ -155,16 +163,54 @@ Consult a SEBI-registered adviser before investing.</div>
           '<td style="text-align:right;color:'+col(f.total_return_pct)+'">'+pct(f.total_return_pct)+'</td>'+
           '<td style="text-align:right;color:'+col(f.market_contribution_pct)+'">'+pct(f.market_contribution_pct)+'</td>'+
           '<td style="text-align:right;color:'+col(f.manager_contribution_pct)+'">'+pct(f.manager_contribution_pct)+'</td>'+
+          '<td style="text-align:right;color:'+col(f.manager_contribution_annualised_pct)+'">'+
+            pct(f.manager_contribution_annualised_pct)+'</td>'+
           '<td style="text-align:right">'+num(f.beta)+'</td>'+
           '<td style="text-align:right">'+num(f.r_squared)+'</td>'+
           '<td style="text-align:right">'+(f.up_capture_pct==null?'—':f.up_capture_pct.toFixed(0)+'%')+'</td>'+
           '<td style="text-align:right">'+(f.down_capture_pct==null?'—':f.down_capture_pct.toFixed(0)+'%')+'</td>'+
           '<td style="text-align:right">'+num(f.volatility_annual_pct,1)+'%</td>'+
           '<td style="text-align:right">'+num(f.max_drawdown_pct,1)+'%</td>'+
-          '<td style="text-align:right">'+f.observations+'</td></tr>';
+          (m.comparable?'':'<td style="text-align:right">'+num(f.months,1)+'m</td>')+
+          '</tr>';
       }).join('')+'</tbody></table></div>';
+  }
 
-    CATS.innerHTML='<div class="tablewrap"><table class="data"><thead><tr><th>Strategy</th>'+
+  MODEBAR.addEventListener('click',function(e){
+    var b=e.target.closest('.chip'); if(!b) return;
+    MODE=+b.getAttribute('data-mode');
+    Array.prototype.forEach.call(MODEBAR.children,function(c){c.classList.toggle('on',c===b);});
+    renderMode();
+  });
+
+  fetch('/attribution_data.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+    DATA=j;
+    // Fixed windows first and selected by default: they are the only like-for-like comparison.
+    // Since-inception stays available because it is the fullest record of each fund, but it ranks
+    // age alongside performance, so it is never the default and is labelled every time.
+    MODES=(j.windows||[]).map(function(w){
+      return {label:'Last '+w.label, rows:w.rows, comparable:true, from:w.from, to:w.to};
+    });
+    MODES.push({label:'Since inception', rows:j.funds_primary||[], comparable:false});
+    MODE=0;
+
+    META.textContent=(j.funds_primary||[]).length+' funds analysed against '+j.benchmark+' · '+
+      j.insufficient_history+' too new to measure · minimum '+j.min_observations+' trading days';
+
+    METHOD.innerHTML='<b>How to read this.</b> Market contribution is the fund\u2019s beta times the '+
+      esc(j.benchmark)+'\u2019s return over the same window. Manager contribution is everything else — '+
+      'selection, the short book, timing, cash and fees combined. A high manager contribution alongside a '+
+      'low R-squared is the signature of a fund genuinely doing something other than tracking the index.';
+
+    MODEBAR.innerHTML=MODES.map(function(m,i){
+      return '<button class="chip'+(i===0?' on':'')+'" data-mode="'+i+'">'+esc(m.label)+
+        ' <b>'+m.rows.length+'</b></button>';
+    }).join('');
+    renderMode();
+
+    CATS.innerHTML='<p class="meta">Averages over each fund\u2019s full history, so they carry the same '+
+      'window caveat as the since-inception view above.</p>'+
+      '<div class="tablewrap"><table class="data"><thead><tr><th>Strategy</th>'+
       '<th style="text-align:right">Funds</th><th style="text-align:right">Avg total</th>'+
       '<th style="text-align:right">Avg market</th><th style="text-align:right">Avg manager</th>'+
       '<th style="text-align:right">Avg beta</th><th style="text-align:right">Avg R²</th>'+

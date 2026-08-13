@@ -97,9 +97,21 @@ def stdev(xs):
     return math.sqrt(sum((x - m) ** 2 for x in xs) / (n - 1))
 
 
-def analyse(fund_pts, bench_pts):
+def analyse(fund_pts, bench_pts, only_dates=None, min_obs=MIN_OBS):
+    """Attribution over the overlap of fund and benchmark dates.
+
+    `only_dates` restricts the analysis to an exact date window so that every fund is measured over
+    the SAME calendar span. Without it each fund is measured over its own life, and cumulative
+    figures from funds with different launch dates are not comparable with one another.
+    """
     common = sorted(set(fund_pts) & set(bench_pts))
-    if len(common) < MIN_OBS + 1:
+    if only_dates is not None:
+        common = [d for d in common if d in only_dates]
+        # Require near-full coverage, otherwise a fund that launched mid-window would be compared
+        # over a shorter span than everyone else — the exact problem this is here to prevent.
+        if len(common) < 0.9 * len(only_dates):
+            return None
+    if len(common) < min_obs + 1:
         return None
 
     fr = daily_returns(fund_pts, common)
@@ -151,10 +163,17 @@ def analyse(fund_pts, bench_pts):
     ann_f = (1 + tot_f) ** (1 / years) - 1 if years > 0 and tot_f > -1 else None
     ann_b = (1 + tot_b) ** (1 / years) - 1 if years > 0 and tot_b > -1 else None
 
+    months = n / (TRADING_DAYS / 12)
     return {
         "observations": n,
         "from": common[0],
         "to": common[-1],
+        "months": round(months, 1),
+        # A RATE, so it is comparable across funds with different histories — unlike the cumulative
+        # figures below, which only mean anything against an identical window.
+        "manager_contribution_annualised_pct": (
+            round(100 * ((1 + manager_contrib) ** (1 / (n / TRADING_DAYS)) - 1), 2)
+            if n > 0 and manager_contrib > -1 else None),
         "total_return_pct": round(100 * tot_f, 2),
         "benchmark_return_pct": round(100 * tot_b, 2),
         "market_contribution_pct": round(100 * market_contrib, 2),
@@ -238,6 +257,62 @@ def holdings_changes():
     return out
 
 
+# Plan/option words carry no information about which PORTFOLIO a row belongs to. Strip them as
+# tokens rather than splitting positionally: AMFI's naming is inconsistent about spacing and order
+# ("- Direct Plan - Growth", "- Growth Option - Direct Plan", "-Direct Plan-Growth"), and a
+# positional split silently fails on the variants it does not anticipate.
+_PLAN_WORDS = re.compile(
+    r"\b(direct|regular|plan|plans|growth|idcw|dividend|income|distribution|capital|withdrawal|"
+    r"option|options|payout|reinvestment|cum|plan-growth)\b", re.I)
+
+
+def _strategy_key(f):
+    base = _PLAN_WORDS.sub(" ", f["name"])
+    return (f.get("fund_house") or "", re.sub(r"[^a-z0-9]", "", base.lower()))
+
+
+def _variant_rank(f):
+    name = f["name"].lower()
+    return (0 if "direct" in name else 1, 0 if "growth" in name else 1)
+
+
+def dedupe(rows: list[dict]) -> list[dict]:
+    """One row per actual fund.
+
+    Direct/Regular x Growth/IDCW are four rows of the same portfolio and would otherwise dominate
+    any ranking, so the Direct Growth variant stands for the group. A second pass then merges by
+    return-series signature, because AMFI's own scheme names carry typos ("Actice Asset Allocator"
+    next to "Active Asset Allocator") that no name-based key can reconcile — and no two distinct
+    funds produce an identical daily return series over months.
+    """
+    groups = defaultdict(list)
+    for f in rows:
+        groups[_strategy_key(f)].append(f)
+
+    primary = []
+    for grp in groups.values():
+        grp.sort(key=_variant_rank)
+        head = dict(grp[0])
+        head["variants"] = len(grp)
+        head["variant_codes"] = [r["code"] for r in grp]
+        primary.append(head)
+
+    merged: dict[tuple, dict] = {}
+    for f in primary:
+        sig = (f.get("fund_house"), f.get("category"), f["observations"],
+               f["total_return_pct"], f["beta"], f["volatility_annual_pct"])
+        keep = merged.get(sig)
+        if keep is None:
+            merged[sig] = f
+        else:
+            keep["variants"] += f["variants"]
+            keep["variant_codes"] = sorted(set(keep["variant_codes"]) | set(f["variant_codes"]))
+            if _variant_rank(f) < _variant_rank(keep):
+                f["variants"], f["variant_codes"] = keep["variants"], keep["variant_codes"]
+                merged[sig] = f
+    return sorted(merged.values(), key=lambda f: -(f.get("manager_contribution_pct") or 0))
+
+
 def main() -> int:
     nav = load("nav_data.json")
     bench = load("benchmark_data.json")
@@ -258,48 +333,37 @@ def main() -> int:
             funds.append({**base, **res})
 
     funds.sort(key=lambda f: -(f.get("manager_contribution_pct") or 0))
+    primary = dedupe(funds)
 
-    # One row per actual fund. Direct/Regular x Growth/IDCW are four rows of the same portfolio and
-    # would otherwise dominate any ranking; keep the Direct Growth variant as representative and
-    # record how many variants it stands for.
-    def strategy_key(f):
-        base = re.split(r"\s+-\s+(direct|regular)\s+plan", f["name"], flags=re.I)[0]
-        base = re.sub(r"\s+-\s+(growth|idcw|income distribution).*$", "", base, flags=re.I)
-        return (f.get("fund_house") or "", re.sub(r"[^a-z0-9]", "", base.lower()))
-
-    def variant_rank(f):
-        name = f["name"].lower()
-        return (0 if "direct" in name else 1, 0 if "growth" in name else 1)
-
-    groups = defaultdict(list)
-    for f in funds:
-        groups[strategy_key(f)].append(f)
-    primary = []
-    for rows in groups.values():
-        rows.sort(key=variant_rank)
-        head = dict(rows[0])
-        head["variants"] = len(rows)
-        head["variant_codes"] = [r["code"] for r in rows]
-        primary.append(head)
-
-    # Second pass: AMFI's scheme names contain typos (e.g. "Actice Asset Allocator" alongside
-    # "Active Asset Allocator"), which name-based grouping cannot merge. Two entries from the same
-    # house, in the same category, with an identical return series are the same portfolio — no two
-    # distinct funds produce byte-identical daily returns over 100+ days.
-    merged: dict[tuple, dict] = {}
-    for f in primary:
-        sig = (f.get("fund_house"), f.get("category"), f["observations"],
-               f["total_return_pct"], f["beta"], f["volatility_annual_pct"])
-        keep = merged.get(sig)
-        if keep is None:
-            merged[sig] = f
-        else:
-            keep["variants"] += f["variants"]
-            keep["variant_codes"] = sorted(set(keep["variant_codes"]) | set(f["variant_codes"]))
-            if variant_rank(f) < variant_rank(keep):
-                f["variants"], f["variant_codes"] = keep["variants"], keep["variant_codes"]
-                merged[sig] = f
-    primary = sorted(merged.values(), key=lambda f: -(f.get("manager_contribution_pct") or 0))
+    # Common-window panels. Since-inception cumulative figures are NOT comparable between funds,
+    # because each fund's window is its own lifetime — a 10-month number next to a 3-month number
+    # ranks age as much as performance. These panels measure every qualifying fund over exactly the
+    # same trailing dates, which is the only like-for-like cumulative comparison available.
+    bench_dates = sorted(bench_pts)
+    windows = []
+    for label, w_days in (("3 months", 63), ("6 months", 126), ("12 months", 252)):
+        if len(bench_dates) < w_days:
+            continue
+        span = set(bench_dates[-w_days:])
+        rows = []
+        for s in nav.get("schemes", []):
+            pts = parse_series(s.get("series"))
+            res = analyse(pts, bench_pts, only_dates=span, min_obs=int(w_days * 0.9)) if pts else None
+            if res:
+                rows.append({"code": s.get("code"), "name": s.get("name"), "category": s.get("cat"),
+                             "fund_house": s.get("sif"), **res})
+        if not rows:
+            continue
+        rows.sort(key=lambda f: -(f.get("manager_contribution_pct") or 0))
+        deduped = dedupe(rows)
+        windows.append({
+            "label": label,
+            "trading_days": w_days,
+            "from": min(r["from"] for r in rows),
+            "to": max(r["to"] for r in rows),
+            "funds": len(deduped),
+            "rows": deduped,
+        })
 
     # Category averages, so a fund can be read against its own strategy rather than the whole market.
     cats = defaultdict(list)
@@ -329,10 +393,15 @@ def main() -> int:
         "not_brinson": ("This is returns-based, not a Brinson allocation/selection attribution. "
                         "Brinson requires benchmark sector weights at each date, which are not "
                         "published for this category."),
+        "comparability": ("Since-inception figures are measured over each fund's own life, so they "
+                          "are NOT comparable between funds of different ages. Use `windows` for "
+                          "like-for-like cumulative comparison over identical dates, or rank on "
+                          "manager_contribution_annualised_pct, which is a rate."),
         "min_observations": MIN_OBS,
         "analysed": len(funds),
         "distinct_funds": len(primary),
         "insufficient_history": len(skipped),
+        "windows": windows,
         "by_category": by_category,
         "funds_primary": primary,
         "funds": funds,
