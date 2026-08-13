@@ -30,15 +30,15 @@ const FEEDS = [
   { url: "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms", source: "ET Economy", region: "India" },
   { url: "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",  source: "ET Markets",     region: "India" },
   { url: "https://www.livemint.com/rss/economy",                                  source: "Mint Economy",   region: "India" },
-  // ---- broad macro sweep (fills in wires we can't read directly) ----
-  { url: "https://www.bing.com/news/search?q=%28federal+reserve+OR+ECB+OR+%22central+bank%22+OR+inflation+OR+%22interest+rates%22+OR+tariffs+OR+%22oil+prices%22%29&format=RSS",
-    source: "Bing News", region: "Global", bingNews: true },
 ];
 
-// NOT fetched from the edge: news.google.com (503) and business-standard.com (403) both block
-// Cloudflare's datacenter ranges — verified via /api/news?debug=1. They still work from GitHub
-// Actions, so fetch_news.py collects them into news_data.json and mergeSnapshot() folds that in
-// below. That keeps the Reuters/Bloomberg/WSJ-class wire coverage Google News provides.
+// NOT fetched from the edge — all verified via /api/news?debug=1:
+//   news.google.com        503   blocks Cloudflare's ranges
+//   business-standard.com  403   blocks Cloudflare's ranges
+//   bing.com/news …&format=RSS   answers with a non-RSS page (0 items parsed)
+// They all work from GitHub Actions, so fetch_news.py collects them into news_data.json and
+// mergeSnapshot() folds that in below — that is what keeps the Reuters/Bloomberg/WSJ-class wire
+// coverage on the page.
 const SNAPSHOT = "/news_data.json";
 
 // This page is about news that moves — or hints at — the financial world. Indian market feeds in
@@ -50,7 +50,11 @@ const NOISE = new RegExp(
   "board meeting|trade setup|technical (view|picks?)|top picks?|stocks? to buy|hot stocks?|" +
   "gmp|grey market premium|should you subscribe|listing gains?|dividend alert|last day to buy|" +
   "ex-dividend|smart talk|on tradingview|positive breakout|negative breakout|" +
-  "\\bdmas?\\b|moving averages?|muhurat|zodiac|horoscope)\\b", "i");
+  "\\bdmas?\\b|moving averages?|muhurat|zodiac|horoscope)\\b|" +
+  // insider-trade filings and single-stock clickbait — noise on a page about the world
+  "\\b(buys?|sold|sells?|purchases?) \\$[\\d.,]+[kmb]? (in|of) (stock|shares)|" +
+  "\\binsider (buying|selling|trades?)\\b|" +
+  "\\bwhy (is|are|did) .{2,40}\\b(stock|shares|share price)\\b", "i");
 
 // No single wire should dominate a page about the *world*. ET Markets alone can publish 30+ items
 // in a day; without this the feed reads like one newspaper's markets section.

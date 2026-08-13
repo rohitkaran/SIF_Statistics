@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13T03:07:03Z",
+ "generated": "2026-08-13T03:07:54Z",
  "refresh_seconds": 1800,
  "count": 140,
  "sources_ok": [
@@ -15,14 +15,13 @@
   "Investing.com",
   "MarketWatch",
   "Mint Economy",
+  "RBI",
   "SEBI",
   "The Guardian",
   "US Federal Reserve",
   "Yahoo Finance"
  ],
- "sources_failed": [
-  "RBI"
- ],
+ "sources_failed": [],
  "items": [
   {
    "title": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
@@ -48,18 +47,6 @@
     "Inflation & growth",
     "Markets",
     "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Australia central banker says rate risks are skewed higher",
-   "url": "https://www.investing.com/news/economy-news/australia-central-banker-says-rate-hikes-working-as-intended-4856496",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:48:45Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -101,30 +88,6 @@
    ]
   },
   {
-   "title": "ASX FY26 presentation: record revenue growth offset by technology costs",
-   "url": "https://www.investing.com/news/company-news/asx-fy26-presentation-record-revenue-growth-offset-by-technology-costs-93CH-4856552",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:41:08Z",
-   "summary": "",
-   "categories": [
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Procore Technologies chairman Craig Courtemanche sells $3.2m in shares",
-   "url": "https://www.investing.com/news/insider-trading-news/procore-technologies-chairman-craig-courtemanche-sells-32m-in-shares-93CH-4856551",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:35:03Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Goldman says Japan's $1 trillion of reserves leaves 'plenty of capacity' for further yen interventions",
    "url": "https://www.cnbc.com/2026/08/13/us-japan-dollar-yen-intervention-goldman.html",
    "source": "CNBC International",
@@ -134,66 +97,6 @@
    "summary": "Japan has enough cash at its disposal for a couple more rounds of yen-buying on the scale of last month's intervention, Goldman Sachs says.",
    "categories": [
     "Currencies"
-   ]
-  },
-  {
-   "title": "Aeva Technologies CTO Mina Rezk sells $2.4m in company shares",
-   "url": "https://www.investing.com/news/insider-trading-news/aeva-technologies-cto-mina-rezk-sells-24m-in-company-shares-93CH-4856550",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:31:11Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Sinclair EVP David Gibber sells $401,913 in company stock",
-   "url": "https://www.investing.com/news/insider-trading-news/sinclair-evp-david-gibber-sells-401913-in-company-stock-93CH-4856549",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:31:09Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "DC VGA LLC, Turtle Beach 10% owner, sells $3.6m in shares",
-   "url": "https://www.investing.com/news/insider-trading-news/dc-vga-llc-turtle-beach-10-owner-sells-36m-in-shares-93CH-4856547",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:31:08Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Aeva technologies CEO Soroush Dardashti sells $7.3m in company stock",
-   "url": "https://www.investing.com/news/insider-trading-news/aeva-technologies-ceo-soroush-dardashti-sells-73m-in-company-stock-93CH-4856548",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:31:08Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Earnings call transcript: CapitaLand Investment posts stronger H1 2026 growth",
-   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-capitaland-investment-posts-stronger-h1-2026-growth-93CH-4856546",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:30:55Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -207,31 +110,6 @@
    "categories": [
     "Markets",
     "India"
-   ]
-  },
-  {
-   "title": "Earnings call transcript: ASX H2 2026 profit rises, shares jump 11.9%",
-   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-asx-h2-2026-profit-rises-shares-jump-119-93CH-4856545",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:27:18Z",
-   "summary": "",
-   "categories": [
-    "Markets",
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Natera at Canaccord Genuity conference: Signatera drives growth",
-   "url": "https://www.investing.com/news/transcripts/natera-at-canaccord-genuity-conference-signatera-drives-growth-93CH-4856544",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-13T02:27:09Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -480,6 +358,18 @@
    ]
   },
   {
+   "title": "3.4% US inflation in July cools as gas prices fall",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNb0dPc2ZOSWZRd2ZrYV8xYjhuXzlCOXhVLXJ6NktLTVVoVmRjU3JKWW1jclF4c0Jkc2ZZbGFhcUxuRTlYRG9WMnk2VVFMTXdOMUJlTVdJNUo1anJ0SnV5RzZYcnU5VFBaeGFUVkRac200Z2EzaHAwNFV2MDY4MVpNa25OeUR3bmRhOUtwbTRKU24wWmdIVW82UHRjNXdoQWd3eXZlVGFIaENlTEVRVXBSQjVrdGk3cGxHVTdVcFB2OE5YQQ?oc=5",
+   "source": "ET EnergyWorld",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-13T01:14:59Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
    "title": "Stock Market Today: Gift Nifty, Inflation To MSCI Rejig — Five Key Factors That May Drive Sensex, Nifty 50 On August 13",
    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQTlE0bkRMS1BfNFF3RVYxSTZ6bHlsTFJ6S3Zsakx0Y2dGaFNuSmVfUVNpMTRCSGhmZmpUNG5YUEp1SVo4V2xpRDNuODJVSnkzbWxTZnZucXNwQ3lUZWhBTExyVTdYTGNNWXhvdmVaT3VDbmpkZllaNFR4QmtDd1FJZF9qMTB3eG5jdnZSaGhDajZFekxnU0JpWjR2VVdMdWgzVGxPb0ZaVDM3Z2RFeHNmYVBfeFlZUEo3bEYzUWtxYTdyem9vZTlkMlJnM29WbDZKYVRVSTlxaTZNbVBUMTR5dVFacW45UjhfU0NLMXpWc9IB9wFBVV95cUxQdEhBQ2dyS0lCMEtScEdfamtYTEV5YWNIUER0elV0ajEwTmF2bEhMclpmZWlBYjRxOU5MT2hac0h6TUNxTU1KTzNKV1lIdjQxWG5tUUQxOU9DT1lLODZTWWN3UlpHZ0ZobHhoQ3N4SlphTnpBWi1OaG84QWJ4TU1XVUpkU1p0SGVud2VucUQ5OEtwWEVqcmJhRE5odWRWcHNzZktNZDZlMHlFVXRrRU5FQ3Q4N291ZzcyN1VxU2ZnTncwR0ZKa1MtY0pYLUhmZXJRdThZMjd0ZTFoMzhSRUd5RnMxeDg0SzVQMTF0Z1J6WDNqM3ZDNVFR?oc=5",
    "source": "NDTV Profit",
@@ -674,7 +564,7 @@
   {
    "title": "Gold advances after tame US inflation data eases rate hike bets",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQnc5M1J6YlR1UXBjT1phV0ttVFdwcEZDZHl4bWMzR1ZtVWgxVjFOTjVZVXhMZkstbWhLZlVEYWd0ajFjZWx3cHgxZmFEX2QzNk1zVl9UZnZCcnVWaHdzcC1JemNOZXhGbnd6X0JHUkhNRlY1YUNpMVF3Mk5xYWF2em42QmxFLTJfZWlpd2ZEMUVsOTJlMWdQdTU2eDRmVTFWd1E3d0NaVHBWU2J1V0w5bVB1Zzl5NWVNWG1JSmpLMklzRzlBSEpKNmFwTWRYQQ?oc=5",
-   "source": "The Business Times",
+   "source": "businesstimes.com.sg",
    "region": "Global",
    "official": false,
    "published": "2026-08-12T23:53:00Z",
@@ -688,7 +578,7 @@
   {
    "title": "Gold rises to over two-month high as US inflation data dampens rate hike bets",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQT291cXM0bnV6ZldqWWxNX1BQRy0zd1V2UTVxc3RqQkZnVjVuSDRZUmM5Q05jb2l2dDRwanlyQTZLUURjcmg4bzlLWkJ4NTdwZy1VRm5rdnNfbUZDOHlObXY2YjlqQ1lLdXNzSXlCVXh4NjJoVFc0ZTdna1ZuNXFDX2RSemJsekJPMnFGaXcwbTBwSmx6cUNILS1GNklaWU9tX1VuMmtISzNBemN5b09uSU02QjVBVmdZOXBjU01XdFRrVWo3R2s0RnVNdlE5M29xOXQ3WDNxQmc?oc=5",
-   "source": "The Business Times",
+   "source": "businesstimes.com.sg",
    "region": "Global",
    "official": false,
    "published": "2026-08-12T23:53:00Z",
@@ -828,7 +718,7 @@
   {
    "title": "US inflation rises 0.1% in July, easing pressure on Fed",
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYVlvRzFkcDdHaEdlaUJNU0ZBbU04MVFkVFJoRlpnNzg2dXNlbEpfYV9lX2UwZzJDTWczLWVjWGdxUWs4Rzg1ekZFV0VoaW5NTndnWHJxRVZld0pMS2lqVFg0a2c1aG9vWjQ3Z3ZIc1NGUldSaGZ6LVBUYmQ5MjZGMTFpYmZDdw?oc=5",
-   "source": "semafor.com",
+   "source": "Semafor",
    "region": "Global",
    "official": false,
    "published": "2026-08-12T22:38:00Z",
@@ -964,6 +854,18 @@
    ]
   },
   {
+   "title": "Australia central banker says rate risks are skewed higher",
+   "url": "https://www.investing.com/news/economy-news/australia-central-banker-says-rate-hikes-working-as-intended-4856496",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T21:24:27Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
    "title": "Annual inflation cooled slightly in July despite renewed fighting in Iran",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbFZHaWU0VU9pU0RCRGFRSkRqdUgyV0QxUml5SHFEaklxam9YT2RULUZlNF85MUdkQWRjZXlkckNCcWRWWmZiZ08xMW9JZjRsTC1jZHotS3lKRjJXRVpBaTBHNzlGQi1DeUQ5ZXU5TlBJN2lEN1Z6dEVNVzFxU2l4QkZKZHp2d19UNHVwMHFhcHR1anZ3WGE1OXA1TGp2LXhsZG9XUThPTnd1YVljU0E0bFBrTzc3R0ZkMlln?oc=5",
    "source": "The Washington Post",
@@ -989,6 +891,18 @@
    ]
   },
   {
+   "title": "ASX FY26 presentation: record revenue growth offset by technology costs",
+   "url": "https://www.investing.com/news/company-news/asx-fy26-presentation-record-revenue-growth-offset-by-technology-costs-93CH-4856552",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T21:11:08Z",
+   "summary": "",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
    "title": "Saudi Arabia ramps up oil exports through Mediterranean pipeline to avoid attacks in Red Sea",
    "url": "https://www.cnbc.com/2026/08/12/saudi-arabia-iran-oil-red-sea-houthi-suez-canal-strait-hormuz.html",
    "source": "CNBC International",
@@ -998,6 +912,54 @@
    "summary": "Oil exports from Egypt's Mediterranean port of Sidi Kerir have more than doubled. The crude is mostly from Saudi Arabia, according to Kpler.",
    "categories": [
     "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Aeva Technologies CTO Mina Rezk sells $2.4m in company shares",
+   "url": "https://www.investing.com/news/insider-trading-news/aeva-technologies-cto-mina-rezk-sells-24m-in-company-shares-93CH-4856550",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T21:01:11Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Sinclair EVP David Gibber sells $401,913 in company stock",
+   "url": "https://www.investing.com/news/insider-trading-news/sinclair-evp-david-gibber-sells-401913-in-company-stock-93CH-4856549",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T21:01:09Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Aeva technologies CEO Soroush Dardashti sells $7.3m in company stock",
+   "url": "https://www.investing.com/news/insider-trading-news/aeva-technologies-ceo-soroush-dardashti-sells-73m-in-company-stock-93CH-4856548",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T21:01:08Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Earnings call transcript: CapitaLand Investment posts stronger H1 2026 growth",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-capitaland-investment-posts-stronger-h1-2026-growth-93CH-4856546",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T21:00:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
    ]
   },
   {
@@ -1012,6 +974,31 @@
     "Central banks & rates",
     "Inflation & growth",
     "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Earnings call transcript: ASX H2 2026 profit rises, shares jump 11.9%",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-asx-h2-2026-profit-rises-shares-jump-119-93CH-4856545",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T20:57:18Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Natera at Canaccord Genuity conference: Signatera drives growth",
+   "url": "https://www.investing.com/news/transcripts/natera-at-canaccord-genuity-conference-signatera-drives-growth-93CH-4856544",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-12T20:57:09Z",
+   "summary": "",
+   "categories": [
+    "Markets"
    ]
   },
   {
@@ -1126,6 +1113,19 @@
    ]
   },
   {
+   "title": "RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction under LAF on August 13, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63357",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-08-12T19:25:00Z",
+   "summary": "On a review of current and evolving liquidity conditions, it has been decided to conduct a Variable Rate Reverse Repo (VRRR) auction on Thursday, August 13, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Window Timing Date of",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
    "title": "Where gold price is headed next as Fed rate hike and inflation odds change direction",
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcE9EUXZra0w3S0ZDbGRzTHRDc1dyMEc0ZkpWVEFaeElqYVN5eWFFdzhPVE1qTDBPdnJPNHc0UlloNlhQem1KQUhhZTVOVTJWT1JCelRnUkpBLU9BaGs2blVNT2NZaUFlYUJpOVRBeVZndE9TaE5aOWxieHlwRFJsLVhRR3p3d9IBiwFBVV95cUxOV0ZZUWFRWEsyVGtkaFdSTGlYRi1BN290OEdpdFJ4dU8yVXFGbksxQmtZN0hfdTRuT05BUHQyR29Hdm5XdHhmOEhTUTNOSmFHTjB3cDRaVnlMTEtTUjJGa3hadFFmLVQ4SkRmbjdSNFJrVjd5cTVja2Q2OG1ZLTNGSTlrdTBiVmJnWUVJ?oc=5",
    "source": "CNBC",
@@ -1154,7 +1154,7 @@
   {
    "title": "Inflation Was Moderate in July, but Energy Prices Remain Elevated",
    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAyTVlwTmtFM0o1Sk84Wm1oUDhGYUNuWkxmVkRGSC0zZ1h6REVOQ0NoZjZ1aVU4OTYzMlJWaTN2dUxqNlhRZW50WFVvM3RXUW5Lc2pNQXFvMnExZm5FY3hLMjExVFF3a0ZYcUtjNlIwSVlhbFE2MWpySA?oc=5",
-   "source": "nytimes.com",
+   "source": "The New York Times",
    "region": "Global",
    "official": false,
    "published": "2026-08-12T19:10:20Z",
@@ -1254,9 +1254,21 @@
    ]
   },
   {
+   "title": "Conversion/Switch of Government of India Securities",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63356",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-08-12T18:25:00Z",
+   "summary": "Government of India announces the conversion/switch of its securities through auction for an aggregate amount of ₹30,000 crore (face value). The security-wise details of the conversion/switch are given as under: Date of Auction Source Secur",
+   "categories": [
+    "India"
+   ]
+  },
+  {
    "title": "Inflation Eased Slightly in July, but Prices Remain Elevated as War Drags On",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUTZTSmhxM2xUbG1WR1ctci1Dclh6cC1xOE5NQ2F6YmxOTWJYaU1hbDBfQ2thVnVEU1pZaEtDS3ozOVA1OTVTLTBBQmVwc0huWEhveXQzVEZZdUJyMjZXQVRGVlJLNnZacU41SXo3blprQk5pQ1hQUUREejRkajFMQWlMVmNBZkY4WHYyLWdKR2M?oc=5",
-   "source": "nytimes.com",
+   "source": "The New York Times",
    "region": "Global",
    "official": false,
    "published": "2026-08-12T18:04:27Z",
@@ -1366,18 +1378,6 @@
    ]
   },
   {
-   "title": "'Teflon' Inflation Won't Stick, JPMorgan's Kelly Says",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOT3hXUF85akNocGs3NXY5bDduMnZIMzRUR1ZXbzJGeTJMOWdKTGlCM1FUZkVPb09CVVlYanhQMjJWbUx6VkpMNVJIdjhMSUFSY1RPc2ZPZnRSTktNX21QMFJHRU1fT0plUXlQWS1sX0puck84emJLMWs1ZjE2NEpiMG5tWDVtQ0I4MFV2aWZtMXNfYTJNdVE0OTlLakNMSDZVcndFLUtfbUhJQQ?oc=5",
-   "source": "Bloomberg.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-12T17:15:35Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
    "title": "Why Trump will lose (again) on the new challenge to his tariffs - Peterson Institute for International Economics",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLW1sT0NqWktXVEJjcVpSVlBCdE1fa3ZHZWV3RldVQ2MxVnBFQVJFWXMwZFFzNFB6QXB2TV9OQXFuMFZkSzVKVThkTl9namU1STNQOXRjakFmWUNrc1FqYWNyUkFaUTVLR3Mzb0xmaUtCdXY2SGdTak5uaGprMlBOdmlaSElsVnFleFBzb3d5SWZ3aUQ0N0tucnhfcXp3QkZQWk1Zbg?oc=5",
    "source": "Google News",
@@ -1465,15 +1465,16 @@
    ]
   },
   {
-   "title": "CPI data shows easing inflation but weak jobs r...",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb2VoZlpSYW5Cc0NLbjFVSzJuRFFCOFdGVDNEdHIzOEVMT05nbE81V3FOSU9OLU5fZlg2U2lnYnY4V1o1TDJ3Q3RpcFlZbHBUSXFVYnlfM2VnZjduODl3R2pvcVVzazBBbnhLT0VwTnRPUTNKREVpMG41ZXRnRkRpeXNJaWJDS09fVVFMYS1SWXEya1hBQmF4RUtZZmliZ2hwRjBOWkZPVjUwZw?oc=5",
-   "source": "Pluang",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-12T17:00:38Z",
-   "summary": "",
+   "title": "RBI invites comments on the Draft “Reserve Bank of India (Interest Rates on Loans and Advances) Directions, 2026”",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63355",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-08-12T17:00:00Z",
+   "summary": "In pursuance of the announcement made in the Statement on Developmental and Regulatory Policies dated August 05, 2026 , the Reserve Bank of India has today issued the Draft Reserve Bank of India (Interest Rates on Loans and Advances) Direct",
    "categories": [
-    "Inflation & growth"
+    "Central banks & rates",
+    "India"
    ]
   },
   {
@@ -1577,6 +1578,18 @@
    ]
   },
   {
+   "title": "Scheduled Banks’ Statement of Position in India as on July 31, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63354",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-08-12T16:15:00Z",
+   "summary": "(Amount in ₹ crore) SCHEDULED COMMERCIAL BANKS (Including RRBs, SFBs and PBs) ALL SCHEDULED BANKS 25-Jul-2025# 15-Jul-2026 31-Jul-2026 25-Jul-2025# 15-Jul-2026 31-Jul-2026 I LIABILITIES TO THE BKG.SYSTEM (A) a) Demand & Time deposits from b",
+   "categories": [
+    "India"
+   ]
+  },
+  {
    "title": "FTSE 100 falls for third straight session; Balfour Beatty jumps to record high",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONjFPZk05R3FHTkVpTUNFYTBVcWd6N29mZjR1dUM4Sl9HWnJ1LVF0VEZ3bG9zMUxXQUlVVG1GaW1kRVllekZLNFB5dW9GSEE0YjFBOUhJcDJEcHRwQVFVV0tTV2ZpNVlYR3ZkVEFmSVRnNXdBbFNxQmVRdEhMd09Ub255YVZMNG1xMWdfbFAtcGtRcXRfU0k0bFR5OVR1UkRzU2pBcnlMUm12eTE2ZDE0cmJKTTQ1RmNCaVE?oc=5",
    "source": "Reuters",
@@ -1630,7 +1643,7 @@
   {
    "title": "July inflation met expectations, reducing chances of a Fed rate hike in September.",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOFV1SU1jT0tIb0I0RjRwU2U2a1Z0RWpJdzk0eDJtdmhUVncwV2lVRWRuZXRKdE5uZ1BHSWQ3RkVkMGRZUHp3czBHeGNJWXlSS3oxS0xCTkktOE1CQUwteEhsdjM1aEJ5XzF5eXZSUWhYMXFjUHZjbExwajBLcmd3b2xGWlZncUpUUUVxQjBNLXZBR0RxRkoyX2g1WVhZczlYU3gxM2J3?oc=5",
-   "source": "Pluang",
+   "source": "pluang.com",
    "region": "Global",
    "official": false,
    "published": "2026-08-12T15:48:38Z",
@@ -1776,19 +1789,6 @@
    "summary": "Restoring MDR for high-threshold transactions/merchants; or a tiered incentive structure",
    "categories": [
     "Markets"
-   ]
-  },
-  {
-   "title": "US inflation slowdown eases pressure on Fed for rate rise",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeUgtVW5QZFVJZHZGeS1tc1BkOVJNTDBpQ2N2UWZqNE8tazJCRzVLZ2cxQUJuVjRmeWtjQXotTk9SeExzWm1sM3l3LW53enlCaGRVOGxLdkdKZC1BV3Y4ZEhMWE4xRVk2RVozWU8xRWFxb2RaV0Y0bFVuSHFxZm9mOWNFUVZIM2NsTmdhQWRjekVDOEpGLVVkUC1INHZfa0NaVDFqNkZHSmozQ0x6M3ZzbVBRZXZQcDhmMlZz?oc=5",
-   "source": "The Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-12T15:00:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
    ]
   }
  ]

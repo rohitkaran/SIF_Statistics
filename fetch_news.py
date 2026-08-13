@@ -78,7 +78,11 @@ NOISE = re.compile(
     r"board meeting|trade setup|technical (view|picks?)|top picks?|stocks? to buy|hot stocks?|"
     r"gmp|grey market premium|should you subscribe|listing gains?|dividend alert|last day to buy|"
     r"ex-dividend|smart talk|on tradingview|positive breakout|negative breakout|"
-    r"\bdmas?\b|moving averages?|muhurat|zodiac|horoscope)\b", re.I)
+    r"\bdmas?\b|moving averages?|muhurat|zodiac|horoscope)\b|"
+    # insider-trade filings and single-stock clickbait — noise on a page about the world
+    r"\b(buys?|sold|sells?|purchases?) \$[\d.,]+[kmb]? (in|of) (stock|shares)|"
+    r"\binsider (buying|selling|trades?)\b|"
+    r"\bwhy (is|are|did) .{2,40}\b(stock|shares|share price)\b", re.I)
 
 # No single wire should dominate a page about the *world*. ET Markets alone can publish 30+ items
 # in a day; without this the feed reads like one newspaper's markets section.
