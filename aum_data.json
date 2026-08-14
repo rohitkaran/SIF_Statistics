@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T04:22:46Z",
+ "generated": "2026-08-14T15:14:44Z",
  "basis": "Disclosed net assets from each fund house's own portfolio disclosure. AMFI publishes no AUM API for SIFs.",
  "counting": "One portfolio file = one fund. Plan variants are never counted separately.",
  "caveat": "SIF portfolio disclosure is staggered and roughly bi-monthly: consecutive periods contain different fund houses (2026-05 and 2026-06 share no funds at all). Period totals are therefore NOT comparable to each other and NOT industry totals. Use `latest` for the current picture and `fund_movers` for genuine growth.",
@@ -162,7 +162,7 @@
     "share_pct": 1.76
    },
    {
-    "name": "Franklin Templeton Mutual Fund",
+    "name": "Sapphire SIF",
     "aum_cr": 1.53,
     "funds": 1,
     "share_pct": 0.26
@@ -194,7 +194,7 @@
     "share_pct": 6.58
    },
    {
-    "name": "Mirae Asset Mutual Fund",
+    "name": "Platinum SIF",
     "aum_cr": 201.38,
     "funds": 1,
     "share_pct": 3.97
@@ -301,7 +301,7 @@
     ]
    },
    {
-    "name": "Mirae Asset Mutual Fund",
+    "name": "Platinum SIF",
     "aum_cr": 201.38,
     "funds": 1,
     "share_pct": 2.9,
@@ -355,7 +355,7 @@
     ]
    },
    {
-    "name": "Franklin Templeton Mutual Fund",
+    "name": "Sapphire SIF",
     "aum_cr": 1.53,
     "funds": 1,
     "share_pct": 0.02,
@@ -545,7 +545,7 @@
     "period": "2026-06",
     "fund": "Platinum Hybrid Long-Short Fund",
     "amc": "platinum",
-    "house": "Mirae Asset Mutual Fund",
+    "house": "Platinum SIF",
     "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
     "as_of": "2026-06-30",
     "aum_cr": 201.38,
@@ -716,7 +716,7 @@
     "period": "2026-05",
     "fund": "Sapphire Equity Long-Short SIF",
     "amc": "sapphire",
-    "house": "Franklin Templeton Mutual Fund",
+    "house": "Sapphire SIF",
     "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
     "as_of": "2026-05-29",
     "aum_cr": 1.53,
@@ -1012,7 +1012,7 @@
    "period": "2026-05",
    "fund": "Sapphire Equity Long-Short SIF",
    "amc": "sapphire",
-   "house": "Franklin Templeton Mutual Fund",
+   "house": "Sapphire SIF",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "as_of": "2026-05-29",
    "aum_cr": 1.53,
@@ -1147,7 +1147,7 @@
    "period": "2026-06",
    "fund": "Platinum Hybrid Long-Short Fund",
    "amc": "platinum",
-   "house": "Mirae Asset Mutual Fund",
+   "house": "Platinum SIF",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "as_of": "2026-06-30",
    "aum_cr": 201.38,

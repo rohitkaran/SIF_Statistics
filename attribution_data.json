@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T04:22:46Z",
+ "generated": "2026-08-14T15:14:44Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -754,7 +754,7 @@
      "code": "SIF-95",
      "name": "Sapphire Equity Long-Short SIF - Direct - Growth",
      "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-     "fund_house": "Franklin Templeton Mutual Fund",
+     "fund_house": "Sapphire SIF",
      "observations": 61,
      "from": "2026-05-18",
      "to": "2026-08-13",
@@ -2130,7 +2130,7 @@
    "code": "SIF-95",
    "name": "Sapphire Equity Long-Short SIF - Direct - Growth",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "fund_house": "Franklin Templeton Mutual Fund",
+   "fund_house": "Sapphire SIF",
    "isin": "INF090I30048",
    "observations": 72,
    "from": "2026-04-29",
@@ -4046,7 +4046,7 @@
    "code": "SIF-95",
    "name": "Sapphire Equity Long-Short SIF - Direct - Growth",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "fund_house": "Franklin Templeton Mutual Fund",
+   "fund_house": "Sapphire SIF",
    "isin": "INF090I30048",
    "observations": 72,
    "from": "2026-04-29",
@@ -4076,7 +4076,7 @@
    "code": "SIF-94",
    "name": "Sapphire Equity Long-Short SIF - Direct- IDCW",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "fund_house": "Franklin Templeton Mutual Fund",
+   "fund_house": "Sapphire SIF",
    "isin": "INF090I30063",
    "observations": 72,
    "from": "2026-04-29",
@@ -4166,7 +4166,7 @@
    "code": "SIF-96",
    "name": "Sapphire Equity Long-Short SIF - Growth",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "fund_house": "Franklin Templeton Mutual Fund",
+   "fund_house": "Sapphire SIF",
    "isin": "INF090I30014",
    "observations": 72,
    "from": "2026-04-29",
@@ -4196,7 +4196,7 @@
    "code": "SIF-97",
    "name": "Sapphire Equity Long-Short SIF - IDCW",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "fund_house": "Franklin Templeton Mutual Fund",
+   "fund_house": "Sapphire SIF",
    "isin": "INF090I30030",
    "observations": 72,
    "from": "2026-04-29",
@@ -4536,7 +4536,7 @@
    "code": "SIF-134",
    "name": "Platinum Hybrid Long-Short Fund - Direct Plan - Growth",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-   "fund_house": "Mirae Asset Mutual Fund",
+   "fund_house": "Platinum SIF",
    "isin": "INF769K30043",
    "observations": 45
   },
@@ -4544,7 +4544,7 @@
    "code": "SIF-135",
    "name": "Platinum Hybrid Long-Short Fund - Direct Plan - IDCW",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-   "fund_house": "Mirae Asset Mutual Fund",
+   "fund_house": "Platinum SIF",
    "isin": "INF769K30068",
    "observations": 45
   },
@@ -4552,7 +4552,7 @@
    "code": "SIF-136",
    "name": "Platinum Hybrid Long-Short Fund - Regular Plan - Growth",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-   "fund_house": "Mirae Asset Mutual Fund",
+   "fund_house": "Platinum SIF",
    "isin": "INF769K30019",
    "observations": 45
   },
@@ -4560,7 +4560,7 @@
    "code": "SIF-137",
    "name": "Platinum Hybrid Long-Short Fund - Regular Plan - IDCW",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-   "fund_house": "Mirae Asset Mutual Fund",
+   "fund_house": "Platinum SIF",
    "isin": "INF769K30035",
    "observations": 45
   },
@@ -4746,9 +4746,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "cash_other": 0,
     "equity": 796.0,
-    "money_market": 610.0
+    "money_market": 610.0,
+    "cash_other": 0
    },
    "sector_shifts": [
     {
@@ -4821,9 +4821,9 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
-    "cash_other": -4.48,
     "equity": 3.96,
-    "money_market": 0.52
+    "money_market": 0.52,
+    "cash_other": -4.48
    },
    "sector_shifts": [
     {
@@ -4896,9 +4896,9 @@
     "cash_other": 0.91
    },
    "allocation_shift": {
-    "cash_other": -6.84,
+    "equity": -2.14,
     "debt": 8.98,
-    "equity": -2.14
+    "cash_other": -6.84
    },
    "sector_shifts": [
     {
@@ -4953,9 +4953,9 @@
     "cash_other": 17.63
    },
    "allocation_shift": {
-    "cash_other": 4.61,
     "equity": 7.81,
-    "money_market": -12.42
+    "money_market": -12.42,
+    "cash_other": 4.61
    },
    "sector_shifts": [
     {
@@ -5027,9 +5027,9 @@
     "cash_other": 15.36
    },
    "allocation_shift": {
-    "cash_other": -3.97,
     "equity": 18.11,
-    "money_market": -14.14
+    "money_market": -14.14,
+    "cash_other": -3.97
    },
    "sector_shifts": [
     {
@@ -5104,10 +5104,10 @@
     "cash_other": 18.85
    },
    "allocation_shift": {
-    "equity": 15.07,
-    "cash_other": -8.25,
     "debt": -4.15,
-    "money_market": -2.67
+    "money_market": -2.67,
+    "cash_other": -8.25,
+    "equity": 15.07
    },
    "sector_shifts": [
     {
@@ -5180,9 +5180,9 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
-    "cash_other": -2.92,
     "equity": 2.67,
-    "money_market": 0.25
+    "money_market": 0.25,
+    "cash_other": -2.92
    },
    "sector_shifts": [
     {
@@ -5253,8 +5253,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "equity": 9.43,
-    "cash_other": -9.43
+    "cash_other": -9.43,
+    "equity": 9.43
    },
    "sector_shifts": [
     {
@@ -5329,10 +5329,10 @@
     "cash_other": 9.71
    },
    "allocation_shift": {
-    "equity": -0.72,
-    "cash_other": 1.06,
     "debt": 0.34,
-    "money_market": -0.68
+    "money_market": -0.68,
+    "cash_other": 1.06,
+    "equity": -0.72
    },
    "sector_shifts": [
     {
