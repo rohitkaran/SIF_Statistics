@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T15:14:44Z",
+ "generated": "2026-08-14T18:24:10Z",
  "basis": "Disclosed net assets from each fund house's own portfolio disclosure. AMFI publishes no AUM API for SIFs.",
  "counting": "One portfolio file = one fund. Plan variants are never counted separately.",
  "caveat": "SIF portfolio disclosure is staggered and roughly bi-monthly: consecutive periods contain different fund houses (2026-05 and 2026-06 share no funds at all). Period totals are therefore NOT comparable to each other and NOT industry totals. Use `latest` for the current picture and `fund_movers` for genuine growth.",
@@ -150,7 +150,7 @@
     "share_pct": 12.8
    },
    {
-    "name": "The Wealth Company Mutual Fund",
+    "name": "WSIF",
     "aum_cr": 33.33,
     "funds": 2,
     "share_pct": 5.62
@@ -182,7 +182,7 @@
     "share_pct": 73.33
    },
    {
-    "name": "HSBC Mutual Fund",
+    "name": "RedHex SIF",
     "aum_cr": 581.18,
     "funds": 1,
     "share_pct": 11.45
@@ -220,7 +220,7 @@
     "share_pct": 78.95
    },
    {
-    "name": "HSBC Mutual Fund",
+    "name": "RedHex SIF",
     "aum_cr": 781.3,
     "funds": 1,
     "share_pct": 13.92
@@ -232,7 +232,7 @@
     "share_pct": 5.65
    },
    {
-    "name": "The Wealth Company Mutual Fund",
+    "name": "WSIF",
     "aum_cr": 82.18,
     "funds": 2,
     "share_pct": 1.46
@@ -265,7 +265,7 @@
     ]
    },
    {
-    "name": "HSBC Mutual Fund",
+    "name": "RedHex SIF",
     "aum_cr": 781.3,
     "funds": 1,
     "share_pct": 11.24,
@@ -319,7 +319,7 @@
     ]
    },
    {
-    "name": "The Wealth Company Mutual Fund",
+    "name": "WSIF",
     "aum_cr": 82.18,
     "funds": 2,
     "share_pct": 1.18,
@@ -454,7 +454,7 @@
     "period": "2026-07",
     "fund": "RedHex Hybrid Long-Short Fund",
     "amc": "redhex",
-    "house": "HSBC Mutual Fund",
+    "house": "RedHex SIF",
     "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
     "as_of": "2026-07-31",
     "aum_cr": 781.3,
@@ -625,7 +625,7 @@
     "period": "2026-07",
     "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
     "amc": "wsif",
-    "house": "The Wealth Company Mutual Fund",
+    "house": "WSIF",
     "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
     "as_of": "2026-07-31",
     "aum_cr": 48.45,
@@ -656,7 +656,7 @@
     "period": "2026-07",
     "fund": "WSIF Equity Long-Short Fund",
     "amc": "wsif",
-    "house": "The Wealth Company Mutual Fund",
+    "house": "WSIF",
     "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
     "as_of": "2026-07-31",
     "aum_cr": 33.73,
@@ -773,7 +773,7 @@
   },
   {
    "fund": "RedHex Hybrid Long-Short Fund",
-   "house": "HSBC Mutual Fund",
+   "house": "RedHex SIF",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "from_period": "2026-06",
    "to_period": "2026-07",
@@ -821,7 +821,7 @@
   },
   {
    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "house": "The Wealth Company Mutual Fund",
+   "house": "WSIF",
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "from_period": "2026-05",
    "to_period": "2026-07",
@@ -845,7 +845,7 @@
   },
   {
    "fund": "WSIF Equity Long-Short Fund",
-   "house": "The Wealth Company Mutual Fund",
+   "house": "WSIF",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "from_period": "2026-05",
    "to_period": "2026-07",
@@ -936,7 +936,7 @@
    "period": "2026-05",
    "fund": "WSIF Equity Long-Short Fund",
    "amc": "wsif",
-   "house": "The Wealth Company Mutual Fund",
+   "house": "WSIF",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "as_of": "2026-05-31",
    "aum_cr": 17.18,
@@ -951,7 +951,7 @@
    "period": "2026-05",
    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
    "amc": "wsif",
-   "house": "The Wealth Company Mutual Fund",
+   "house": "WSIF",
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "as_of": "2026-05-31",
    "aum_cr": 16.15,
@@ -1103,7 +1103,7 @@
    "period": "2026-06",
    "fund": "RedHex Hybrid Long-Short Fund",
    "amc": "redhex",
-   "house": "HSBC Mutual Fund",
+   "house": "RedHex SIF",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "as_of": "2026-06-30",
    "aum_cr": 581.18,
@@ -1242,7 +1242,7 @@
    "period": "2026-07",
    "fund": "RedHex Hybrid Long-Short Fund",
    "amc": "redhex",
-   "house": "HSBC Mutual Fund",
+   "house": "RedHex SIF",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "as_of": "2026-07-31",
    "aum_cr": 781.3,
@@ -1302,7 +1302,7 @@
    "period": "2026-07",
    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
    "amc": "wsif",
-   "house": "The Wealth Company Mutual Fund",
+   "house": "WSIF",
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "as_of": "2026-07-31",
    "aum_cr": 48.45,
@@ -1317,7 +1317,7 @@
    "period": "2026-07",
    "fund": "WSIF Equity Long-Short Fund",
    "amc": "wsif",
-   "house": "The Wealth Company Mutual Fund",
+   "house": "WSIF",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "as_of": "2026-07-31",
    "aum_cr": 33.73,
