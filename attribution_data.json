@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14T18:24:10Z",
+ "generated": "2026-08-15T03:12:49Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -409,29 +409,29 @@
      "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
      "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
      "fund_house": "DynaSIF SIF",
-     "observations": 61,
+     "observations": 62,
      "from": "2026-05-18",
-     "to": "2026-08-13",
-     "months": 2.9,
-     "manager_contribution_annualised_pct": 15.53,
-     "total_return_pct": 4.48,
-     "benchmark_return_pct": 3.15,
-     "market_contribution_pct": 0.92,
-     "manager_contribution_pct": 3.56,
-     "market_share_of_return_pct": 20.6,
+     "to": "2026-08-14",
+     "months": 3.0,
+     "manager_contribution_annualised_pct": 15.68,
+     "total_return_pct": 4.54,
+     "benchmark_return_pct": 3.03,
+     "market_contribution_pct": 0.89,
+     "manager_contribution_pct": 3.65,
+     "market_share_of_return_pct": 19.5,
      "beta": 0.293,
      "r_squared": 0.455,
-     "alpha_annual_pct": 15.36,
-     "volatility_annual_pct": 4.91,
-     "benchmark_volatility_annual_pct": 11.32,
-     "tracking_error_pct": 8.79,
-     "information_ratio": 0.7,
+     "alpha_annual_pct": 15.51,
+     "volatility_annual_pct": 4.87,
+     "benchmark_volatility_annual_pct": 11.23,
+     "tracking_error_pct": 8.72,
+     "information_ratio": 0.79,
      "up_capture_pct": 40.6,
-     "down_capture_pct": 19.1,
+     "down_capture_pct": 18.6,
      "up_days": 31,
-     "down_days": 30,
+     "down_days": 31,
      "max_drawdown_pct": -1.07,
-     "annualised_return_pct": 19.85,
+     "annualised_return_pct": 19.76,
      "variants": 4,
      "variant_codes": [
       "SIF-88",
@@ -1392,10 +1392,10 @@
    "funds": 8,
    "avg_beta": 0.349,
    "avg_r_squared": 0.39,
-   "avg_total_return_pct": 10.11,
-   "avg_market_contribution_pct": 1.6,
-   "avg_manager_contribution_pct": 8.5,
-   "avg_volatility_pct": 7.28
+   "avg_total_return_pct": 10.13,
+   "avg_market_contribution_pct": 1.58,
+   "avg_manager_contribution_pct": 8.55,
+   "avg_volatility_pct": 7.26
   },
   {
    "category": "Equity Oriented Investment Strategies - Sector Rotation Long-Short Fund",
@@ -2058,6 +2058,43 @@
    ]
   },
   {
+   "code": "SIF-88",
+   "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
+   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
+   "fund_house": "DynaSIF SIF",
+   "isin": "INF579M30109",
+   "observations": 92,
+   "from": "2026-03-30",
+   "to": "2026-08-14",
+   "months": 4.4,
+   "manager_contribution_annualised_pct": 9.03,
+   "total_return_pct": 5.5,
+   "benchmark_return_pct": 9.11,
+   "market_contribution_pct": 2.29,
+   "manager_contribution_pct": 3.2,
+   "market_share_of_return_pct": 41.7,
+   "beta": 0.252,
+   "r_squared": 0.468,
+   "alpha_annual_pct": 8.91,
+   "volatility_annual_pct": 5.1,
+   "benchmark_volatility_annual_pct": 13.87,
+   "tracking_error_pct": 11.03,
+   "information_ratio": -1.01,
+   "up_capture_pct": 30.9,
+   "down_capture_pct": 20.5,
+   "up_days": 47,
+   "down_days": 45,
+   "max_drawdown_pct": -1.12,
+   "annualised_return_pct": 15.79,
+   "variants": 4,
+   "variant_codes": [
+    "SIF-88",
+    "SIF-86",
+    "SIF-87",
+    "SIF-89"
+   ]
+  },
+  {
    "code": "SIF-61",
    "name": "Arudha Equity Long-Short Fund-Direct Plan-Growth",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
@@ -2090,43 +2127,6 @@
    "variant_codes": [
     "SIF-61",
     "SIF-62"
-   ]
-  },
-  {
-   "code": "SIF-88",
-   "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
-   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
-   "fund_house": "DynaSIF SIF",
-   "isin": "INF579M30109",
-   "observations": 91,
-   "from": "2026-03-30",
-   "to": "2026-08-13",
-   "months": 4.3,
-   "manager_contribution_annualised_pct": 8.86,
-   "total_return_pct": 5.44,
-   "benchmark_return_pct": 9.24,
-   "market_contribution_pct": 2.33,
-   "manager_contribution_pct": 3.11,
-   "market_share_of_return_pct": 42.8,
-   "beta": 0.252,
-   "r_squared": 0.468,
-   "alpha_annual_pct": 8.76,
-   "volatility_annual_pct": 5.13,
-   "benchmark_volatility_annual_pct": 13.94,
-   "tracking_error_pct": 11.08,
-   "information_ratio": -1.08,
-   "up_capture_pct": 30.9,
-   "down_capture_pct": 20.8,
-   "up_days": 47,
-   "down_days": 44,
-   "max_drawdown_pct": -1.12,
-   "annualised_return_pct": 15.8,
-   "variants": 4,
-   "variant_codes": [
-    "SIF-88",
-    "SIF-86",
-    "SIF-87",
-    "SIF-89"
    ]
   },
   {
@@ -3908,6 +3908,66 @@
    "annualised_return_pct": 25.21
   },
   {
+   "code": "SIF-88",
+   "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
+   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
+   "fund_house": "DynaSIF SIF",
+   "isin": "INF579M30109",
+   "observations": 92,
+   "from": "2026-03-30",
+   "to": "2026-08-14",
+   "months": 4.4,
+   "manager_contribution_annualised_pct": 9.03,
+   "total_return_pct": 5.5,
+   "benchmark_return_pct": 9.11,
+   "market_contribution_pct": 2.29,
+   "manager_contribution_pct": 3.2,
+   "market_share_of_return_pct": 41.7,
+   "beta": 0.252,
+   "r_squared": 0.468,
+   "alpha_annual_pct": 8.91,
+   "volatility_annual_pct": 5.1,
+   "benchmark_volatility_annual_pct": 13.87,
+   "tracking_error_pct": 11.03,
+   "information_ratio": -1.01,
+   "up_capture_pct": 30.9,
+   "down_capture_pct": 20.5,
+   "up_days": 47,
+   "down_days": 45,
+   "max_drawdown_pct": -1.12,
+   "annualised_return_pct": 15.79
+  },
+  {
+   "code": "SIF-86",
+   "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
+   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
+   "fund_house": "DynaSIF SIF",
+   "isin": "INF579M30117",
+   "observations": 92,
+   "from": "2026-03-30",
+   "to": "2026-08-14",
+   "months": 4.4,
+   "manager_contribution_annualised_pct": 9.03,
+   "total_return_pct": 5.5,
+   "benchmark_return_pct": 9.11,
+   "market_contribution_pct": 2.29,
+   "manager_contribution_pct": 3.2,
+   "market_share_of_return_pct": 41.7,
+   "beta": 0.252,
+   "r_squared": 0.468,
+   "alpha_annual_pct": 8.91,
+   "volatility_annual_pct": 5.1,
+   "benchmark_volatility_annual_pct": 13.87,
+   "tracking_error_pct": 11.03,
+   "information_ratio": -1.01,
+   "up_capture_pct": 30.9,
+   "down_capture_pct": 20.5,
+   "up_days": 47,
+   "down_days": 45,
+   "max_drawdown_pct": -1.12,
+   "annualised_return_pct": 15.79
+  },
+  {
    "code": "SIF-61",
    "name": "Arudha Equity Long-Short Fund-Direct Plan-Growth",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
@@ -3936,66 +3996,6 @@
    "down_days": 45,
    "max_drawdown_pct": -2.96,
    "annualised_return_pct": 22.53
-  },
-  {
-   "code": "SIF-88",
-   "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
-   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
-   "fund_house": "DynaSIF SIF",
-   "isin": "INF579M30109",
-   "observations": 91,
-   "from": "2026-03-30",
-   "to": "2026-08-13",
-   "months": 4.3,
-   "manager_contribution_annualised_pct": 8.86,
-   "total_return_pct": 5.44,
-   "benchmark_return_pct": 9.24,
-   "market_contribution_pct": 2.33,
-   "manager_contribution_pct": 3.11,
-   "market_share_of_return_pct": 42.8,
-   "beta": 0.252,
-   "r_squared": 0.468,
-   "alpha_annual_pct": 8.76,
-   "volatility_annual_pct": 5.13,
-   "benchmark_volatility_annual_pct": 13.94,
-   "tracking_error_pct": 11.08,
-   "information_ratio": -1.08,
-   "up_capture_pct": 30.9,
-   "down_capture_pct": 20.8,
-   "up_days": 47,
-   "down_days": 44,
-   "max_drawdown_pct": -1.12,
-   "annualised_return_pct": 15.8
-  },
-  {
-   "code": "SIF-86",
-   "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
-   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
-   "fund_house": "DynaSIF SIF",
-   "isin": "INF579M30117",
-   "observations": 91,
-   "from": "2026-03-30",
-   "to": "2026-08-13",
-   "months": 4.3,
-   "manager_contribution_annualised_pct": 8.86,
-   "total_return_pct": 5.44,
-   "benchmark_return_pct": 9.24,
-   "market_contribution_pct": 2.33,
-   "manager_contribution_pct": 3.11,
-   "market_share_of_return_pct": 42.8,
-   "beta": 0.252,
-   "r_squared": 0.468,
-   "alpha_annual_pct": 8.76,
-   "volatility_annual_pct": 5.13,
-   "benchmark_volatility_annual_pct": 13.94,
-   "tracking_error_pct": 11.08,
-   "information_ratio": -1.08,
-   "up_capture_pct": 30.9,
-   "down_capture_pct": 20.8,
-   "up_days": 47,
-   "down_days": 44,
-   "max_drawdown_pct": -1.12,
-   "annualised_return_pct": 15.8
   },
   {
    "code": "SIF-102",
@@ -4153,29 +4153,29 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "DynaSIF SIF",
    "isin": "INF579M30075",
-   "observations": 91,
+   "observations": 92,
    "from": "2026-03-30",
-   "to": "2026-08-13",
-   "months": 4.3,
-   "manager_contribution_annualised_pct": 7.4,
-   "total_return_pct": 4.93,
-   "benchmark_return_pct": 9.24,
-   "market_contribution_pct": 2.32,
-   "manager_contribution_pct": 2.61,
-   "market_share_of_return_pct": 47.1,
+   "to": "2026-08-14",
+   "months": 4.4,
+   "manager_contribution_annualised_pct": 7.57,
+   "total_return_pct": 4.99,
+   "benchmark_return_pct": 9.11,
+   "market_contribution_pct": 2.29,
+   "manager_contribution_pct": 2.7,
+   "market_share_of_return_pct": 45.9,
    "beta": 0.251,
    "r_squared": 0.466,
-   "alpha_annual_pct": 7.33,
-   "volatility_annual_pct": 5.13,
-   "benchmark_volatility_annual_pct": 13.94,
-   "tracking_error_pct": 11.09,
-   "information_ratio": -1.21,
+   "alpha_annual_pct": 7.49,
+   "volatility_annual_pct": 5.1,
+   "benchmark_volatility_annual_pct": 13.87,
+   "tracking_error_pct": 11.03,
+   "information_ratio": -1.15,
    "up_capture_pct": 30.1,
-   "down_capture_pct": 21.6,
+   "down_capture_pct": 21.3,
    "up_days": 47,
-   "down_days": 44,
+   "down_days": 45,
    "max_drawdown_pct": -1.24,
-   "annualised_return_pct": 14.27
+   "annualised_return_pct": 14.26
   },
   {
    "code": "SIF-89",
@@ -4183,29 +4183,29 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "DynaSIF SIF",
    "isin": "INF579M30083",
-   "observations": 91,
+   "observations": 92,
    "from": "2026-03-30",
-   "to": "2026-08-13",
-   "months": 4.3,
-   "manager_contribution_annualised_pct": 7.4,
-   "total_return_pct": 4.93,
-   "benchmark_return_pct": 9.24,
-   "market_contribution_pct": 2.32,
-   "manager_contribution_pct": 2.61,
-   "market_share_of_return_pct": 47.1,
+   "to": "2026-08-14",
+   "months": 4.4,
+   "manager_contribution_annualised_pct": 7.57,
+   "total_return_pct": 4.99,
+   "benchmark_return_pct": 9.11,
+   "market_contribution_pct": 2.29,
+   "manager_contribution_pct": 2.7,
+   "market_share_of_return_pct": 45.9,
    "beta": 0.251,
    "r_squared": 0.466,
-   "alpha_annual_pct": 7.33,
-   "volatility_annual_pct": 5.13,
-   "benchmark_volatility_annual_pct": 13.94,
-   "tracking_error_pct": 11.09,
-   "information_ratio": -1.21,
+   "alpha_annual_pct": 7.49,
+   "volatility_annual_pct": 5.1,
+   "benchmark_volatility_annual_pct": 13.87,
+   "tracking_error_pct": 11.03,
+   "information_ratio": -1.15,
    "up_capture_pct": 30.1,
-   "down_capture_pct": 21.6,
+   "down_capture_pct": 21.3,
    "up_days": 47,
-   "down_days": 44,
+   "down_days": 45,
    "max_drawdown_pct": -1.24,
-   "annualised_return_pct": 14.27
+   "annualised_return_pct": 14.26
   },
   {
    "code": "SIF-62",
@@ -4939,9 +4939,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
+    "money_market": 610.0,
     "cash_other": 0,
-    "equity": 796.0,
-    "money_market": 610.0
+    "equity": 796.0
    },
    "sector_shifts": [
     {
@@ -5014,9 +5014,9 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
+    "money_market": 0.52,
     "cash_other": -4.48,
-    "equity": 3.96,
-    "money_market": 0.52
+    "equity": 3.96
    },
    "sector_shifts": [
     {
@@ -5090,8 +5090,8 @@
    },
    "allocation_shift": {
     "cash_other": -6.84,
-    "equity": -2.14,
-    "debt": 8.98
+    "debt": 8.98,
+    "equity": -2.14
    },
    "sector_shifts": [
     {
@@ -5146,9 +5146,9 @@
     "cash_other": 17.63
    },
    "allocation_shift": {
+    "money_market": -12.42,
     "cash_other": 4.61,
-    "equity": 7.81,
-    "money_market": -12.42
+    "equity": 7.81
    },
    "sector_shifts": [
     {
@@ -5220,9 +5220,9 @@
     "cash_other": 15.36
    },
    "allocation_shift": {
+    "money_market": -14.14,
     "cash_other": -3.97,
-    "equity": 18.11,
-    "money_market": -14.14
+    "equity": 18.11
    },
    "sector_shifts": [
     {
@@ -5297,9 +5297,9 @@
     "cash_other": 18.85
    },
    "allocation_shift": {
-    "equity": 15.07,
     "money_market": -2.67,
     "debt": -4.15,
+    "equity": 15.07,
     "cash_other": -8.25
    },
    "sector_shifts": [
@@ -5328,16 +5328,16 @@
      "change_pct": 1.75
     },
     {
-     "sector": "It - Software",
-     "from_pct": 2.28,
-     "to_pct": 0.69,
-     "change_pct": -1.58
-    },
-    {
      "sector": "Automobiles",
      "from_pct": 8.29,
      "to_pct": 9.88,
      "change_pct": 1.58
+    },
+    {
+     "sector": "It - Software",
+     "from_pct": 2.28,
+     "to_pct": 0.69,
+     "change_pct": -1.58
     },
     {
      "sector": "Power",
@@ -5373,9 +5373,9 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
+    "money_market": 0.25,
     "cash_other": -2.92,
-    "equity": 2.67,
-    "money_market": 0.25
+    "equity": 2.67
    },
    "sector_shifts": [
     {
@@ -5522,9 +5522,9 @@
     "cash_other": 9.71
    },
    "allocation_shift": {
-    "equity": -0.72,
     "money_market": -0.68,
     "debt": 0.34,
+    "equity": -0.72,
     "cash_other": 1.06
    },
    "sector_shifts": [
