@@ -1,12 +1,12 @@
 {
  "amc": "sapphire",
  "fund_code": "SIELS",
- "fund_name": "Sapphire Equity Long-Short SIF",
+ "fund_name": "SIELS",
  "period": "2026-05",
  "as_of": "2026-05-29",
  "source_url": "https://www.franklintempletonindia.com/download/en-in/dis-portfolio-monthly/68250a43-8c48-4dc2-93d1-18bfce9c631b/Sapphire-Equity-Long-Short-SIF_May_26_Monthly.xlsx",
  "raw": "portfolios/raw/sapphire/2026-05/Sapphire-Equity-Long-Short-SIF_May_26_Monthly.xlsx",
- "fetched": "2026-08-13T16:38:32+00:00",
+ "fetched": "2026-08-17T15:36:48+00:00",
  "net_assets_cr": 1.53,
  "n_holdings": 110,
  "allocation": {
@@ -1368,12 +1368,7 @@
    "position": "Long"
   }
  ],
- "_codes": [
-  "SIF-95",
-  "SIF-94",
-  "SIF-96",
-  "SIF-97"
- ],
+ "_codes": [],
  "managers": "Arihant Jain",
  "strategy": "Buys large, mid and small Indian companies it expects to rise while placing limited bets (capped at 25%) against shares it expects to fall, using a rules-based quant model. Aims to make money in rising and falling markets while cushioning downturns.",
  "presentation": "https://www.franklintempletonindia.com/download/en-in/sif-open-end-dvsfd-equity-schemes/3ccdfa21-b19b-4a1c-9f19-eb2989a4ca17/Sapphire%20Equity%20Long-Short%20SIF%20_KIM.pdf"

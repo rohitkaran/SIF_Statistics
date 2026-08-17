@@ -1,12 +1,12 @@
 {
  "amc": "wsif",
  "fund_code": "WSXT",
- "fund_name": "WSIF Equity Ex-Top 100 Long-Short Fund",
+ "fund_name": "WSXT-WSIF Equity Ex Top 100 Long Short Fund",
  "period": "2026-05",
  "as_of": "2026-05-31",
  "source_url": "https://www.wealthcompanyamc.in/uploads/Monthly_Portfolio_Ex_Top_100_Long_Short_d85c8cdb77.xlsx",
  "raw": "portfolios/raw/wsif/unknown/Monthly_Portfolio_Ex_Top_100_Long_Short_d85c8cdb77.xlsx",
- "fetched": "2026-08-13T16:49:00+00:00",
+ "fetched": "2026-08-17T15:48:25+00:00",
  "net_assets_cr": 16.15,
  "n_holdings": 36,
  "allocation": {
@@ -565,12 +565,7 @@
    "position": "Long"
   }
  ],
- "_codes": [
-  "SIF-107",
-  "SIF-104",
-  "SIF-105",
-  "SIF-106"
- ],
+ "_codes": [],
  "managers": "Chinmay Sathe",
  "strategy": "Holds listed Indian stocks it expects to rise while taking limited short bets (via derivatives) against stocks it expects to fall; returns come from stock selection on both the long and short sides.",
  "presentation": "https://www.wealthcompanyamc.in/uploads/ISID_wsif_Equity_Long_Short_Fund_20d41ea013.pdf"

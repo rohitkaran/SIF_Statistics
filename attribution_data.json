@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17T14:52:33Z",
+ "generated": "2026-08-17T15:48:46Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -4940,8 +4940,8 @@
    },
    "allocation_shift": {
     "money_market": 610.0,
-    "cash_other": 0,
-    "equity": 796.0
+    "equity": 796.0,
+    "cash_other": 0
    },
    "sector_shifts": [
     {
@@ -5015,8 +5015,8 @@
    },
    "allocation_shift": {
     "money_market": 0.52,
-    "cash_other": -4.48,
-    "equity": 3.96
+    "equity": 3.96,
+    "cash_other": -4.48
    },
    "sector_shifts": [
     {
@@ -5070,212 +5070,6 @@
    ]
   },
   {
-   "fund": "RedHex Hybrid Long-Short Fund",
-   "amc": "redhex",
-   "from_period": "2026-06",
-   "to_period": "2026-07",
-   "net_assets_from_cr": 581.18,
-   "net_assets_to_cr": 781.3,
-   "holdings_from": 63,
-   "holdings_to": 70,
-   "allocation_from": {
-    "equity": 30.71,
-    "debt": 61.54,
-    "cash_other": 7.75
-   },
-   "allocation_to": {
-    "equity": 28.57,
-    "debt": 70.52,
-    "cash_other": 0.91
-   },
-   "allocation_shift": {
-    "debt": 8.98,
-    "cash_other": -6.84,
-    "equity": -2.14
-   },
-   "sector_shifts": [
-    {
-     "sector": "Power",
-     "from_pct": 0.12,
-     "to_pct": 1.61,
-     "change_pct": 1.49
-    },
-    {
-     "sector": "Telecom - Services",
-     "from_pct": 4.92,
-     "to_pct": 3.66,
-     "change_pct": -1.26
-    },
-    {
-     "sector": "Transport Services",
-     "from_pct": 0.0,
-     "to_pct": 0.7,
-     "change_pct": 0.7
-    },
-    {
-     "sector": "Financial Technology (Fintech)",
-     "from_pct": 0.71,
-     "to_pct": 1.34,
-     "change_pct": 0.63
-    },
-    {
-     "sector": "Realty",
-     "from_pct": 3.22,
-     "to_pct": 2.7,
-     "change_pct": -0.52
-    }
-   ]
-  },
-  {
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "amc": "wsif",
-   "from_period": "2026-05",
-   "to_period": "2026-07",
-   "net_assets_from_cr": 16.15,
-   "net_assets_to_cr": 48.45,
-   "holdings_from": 36,
-   "holdings_to": 46,
-   "allocation_from": {
-    "equity": 73.25,
-    "money_market": 13.73,
-    "cash_other": 13.02
-   },
-   "allocation_to": {
-    "equity": 81.06,
-    "money_market": 1.31,
-    "cash_other": 17.63
-   },
-   "allocation_shift": {
-    "money_market": -12.42,
-    "cash_other": 4.61,
-    "equity": 7.81
-   },
-   "sector_shifts": [
-    {
-     "sector": "Pharmaceuticals & Biotechnology",
-     "from_pct": 2.39,
-     "to_pct": 10.88,
-     "change_pct": 8.49
-    },
-    {
-     "sector": "Banks",
-     "from_pct": 12.36,
-     "to_pct": 4.48,
-     "change_pct": -7.88
-    },
-    {
-     "sector": "Insurance",
-     "from_pct": 3.06,
-     "to_pct": 9.46,
-     "change_pct": 6.39
-    },
-    {
-     "sector": "Chemicals & Petrochemicals",
-     "from_pct": 0.77,
-     "to_pct": 4.26,
-     "change_pct": 3.49
-    },
-    {
-     "sector": "Personal Products",
-     "from_pct": 3.23,
-     "to_pct": 0.0,
-     "change_pct": -3.23
-    },
-    {
-     "sector": "Auto Components",
-     "from_pct": 0.0,
-     "to_pct": 2.79,
-     "change_pct": 2.79
-    },
-    {
-     "sector": "Fertilizers & Agrochemicals",
-     "from_pct": 0.8,
-     "to_pct": 3.27,
-     "change_pct": 2.47
-    },
-    {
-     "sector": "Consumer Durables",
-     "from_pct": 8.11,
-     "to_pct": 5.76,
-     "change_pct": -2.35
-    }
-   ]
-  },
-  {
-   "fund": "WSIF Equity Long-Short Fund",
-   "amc": "wsif",
-   "from_period": "2026-05",
-   "to_period": "2026-07",
-   "net_assets_from_cr": 17.18,
-   "net_assets_to_cr": 33.73,
-   "holdings_from": 35,
-   "holdings_to": 45,
-   "allocation_from": {
-    "equity": 66.53,
-    "money_market": 14.14,
-    "cash_other": 19.33
-   },
-   "allocation_to": {
-    "equity": 84.64,
-    "cash_other": 15.36
-   },
-   "allocation_shift": {
-    "money_market": -14.14,
-    "cash_other": -3.97,
-    "equity": 18.11
-   },
-   "sector_shifts": [
-    {
-     "sector": "Automobiles",
-     "from_pct": 0.0,
-     "to_pct": 5.1,
-     "change_pct": 5.1
-    },
-    {
-     "sector": "IT - Software",
-     "from_pct": 0.0,
-     "to_pct": 4.98,
-     "change_pct": 4.98
-    },
-    {
-     "sector": "Retailing",
-     "from_pct": 5.48,
-     "to_pct": 0.97,
-     "change_pct": -4.51
-    },
-    {
-     "sector": "Insurance",
-     "from_pct": 3.41,
-     "to_pct": 7.64,
-     "change_pct": 4.23
-    },
-    {
-     "sector": "Banks",
-     "from_pct": 9.7,
-     "to_pct": 6.21,
-     "change_pct": -3.49
-    },
-    {
-     "sector": "Construction",
-     "from_pct": 0.0,
-     "to_pct": 3.27,
-     "change_pct": 3.27
-    },
-    {
-     "sector": "Healthcare Services",
-     "from_pct": 2.91,
-     "to_pct": 0.0,
-     "change_pct": -2.91
-    },
-    {
-     "sector": "Chemicals & Petrochemicals",
-     "from_pct": 0.85,
-     "to_pct": 3.69,
-     "change_pct": 2.84
-    }
-   ]
-  },
-  {
    "fund": "iSIF Active Asset Allocator Long-Short Fund",
    "amc": "isif",
    "from_period": "2026-06",
@@ -5297,10 +5091,10 @@
     "cash_other": 18.85
    },
    "allocation_shift": {
+    "equity": 15.07,
     "money_market": -2.67,
-    "cash_other": -8.25,
     "debt": -4.15,
-    "equity": 15.07
+    "cash_other": -8.25
    },
    "sector_shifts": [
     {
@@ -5374,8 +5168,8 @@
    },
    "allocation_shift": {
     "money_market": 0.25,
-    "cash_other": -2.92,
-    "equity": 2.67
+    "equity": 2.67,
+    "cash_other": -2.92
    },
    "sector_shifts": [
     {
@@ -5421,9 +5215,9 @@
      "change_pct": -1.24
     },
     {
-     "sector": "Personal Products",
-     "from_pct": 2.36,
-     "to_pct": 3.38,
+     "sector": "Petroleum Products",
+     "from_pct": 0.74,
+     "to_pct": 1.76,
      "change_pct": 1.02
     }
    ]
@@ -5446,8 +5240,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "cash_other": -9.43,
-    "equity": 9.43
+    "equity": 9.43,
+    "cash_other": -9.43
    },
    "sector_shifts": [
     {
@@ -5522,10 +5316,10 @@
     "cash_other": 9.71
    },
    "allocation_shift": {
+    "equity": -0.72,
     "money_market": -0.68,
-    "cash_other": 1.06,
     "debt": 0.34,
-    "equity": -0.72
+    "cash_other": 1.06
    },
    "sector_shifts": [
     {

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17T14:53:27+00:00",
+ "generated": "2026-08-17T15:49:41+00:00",
  "latest_nav": "2026-08-14",
  "schemes": {
   "SIF-120": {
@@ -775,18 +775,6 @@
   "SIF-8": [
    "2026-05"
   ],
-  "SIF-95": [
-   "2026-05"
-  ],
-  "SIF-94": [
-   "2026-05"
-  ],
-  "SIF-96": [
-   "2026-05"
-  ],
-  "SIF-97": [
-   "2026-05"
-  ],
   "SIF-99": [
    "2026-05"
   ],
@@ -822,34 +810,6 @@
   ],
   "SIF-27": [
    "2026-05"
-  ],
-  "SIF-108": [
-   "2026-05",
-   "2026-07"
-  ],
-  "SIF-111": [
-   "2026-05",
-   "2026-07"
-  ],
-  "SIF-110": [
-   "2026-05",
-   "2026-07"
-  ],
-  "SIF-107": [
-   "2026-05",
-   "2026-07"
-  ],
-  "SIF-104": [
-   "2026-05",
-   "2026-07"
-  ],
-  "SIF-105": [
-   "2026-05",
-   "2026-07"
-  ],
-  "SIF-106": [
-   "2026-05",
-   "2026-07"
   ],
   "SIF-51": [
    "2026-06"
@@ -941,29 +901,14 @@
   "SIF-16": [
    "2026-06"
   ],
-  "SIF-134": [
-   "2026-06"
-  ],
-  "SIF-135": [
-   "2026-06"
-  ],
-  "SIF-136": [
-   "2026-06"
-  ],
-  "SIF-137": [
-   "2026-06"
-  ],
   "SIF-129": [
-   "2026-06",
-   "2026-07"
+   "2026-06"
   ],
   "SIF-130": [
-   "2026-06",
-   "2026-07"
+   "2026-06"
   ],
   "SIF-128": [
-   "2026-06",
-   "2026-07"
+   "2026-06"
   ]
  },
  "managers": {
@@ -1001,10 +946,6 @@
   "SIF-7": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
   "SIF-6": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
   "SIF-8": "Sandeep Tandon, Ankit Pande, Sameer Kate, Sanjeev Sharma, Jignesh Shah",
-  "SIF-95": "Arihant Jain",
-  "SIF-94": "Arihant Jain",
-  "SIF-96": "Arihant Jain",
-  "SIF-97": "Arihant Jain",
   "SIF-99": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
   "SIF-100": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
   "SIF-103": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
@@ -1017,13 +958,6 @@
   "SIF-29": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
   "SIF-30": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
   "SIF-27": "Suraj Nanda, Akhil Mittal, Hasmukh Devji Vishariya",
-  "SIF-108": "Chinmay Sathe",
-  "SIF-111": "Chinmay Sathe",
-  "SIF-110": "Chinmay Sathe",
-  "SIF-107": "Chinmay Sathe",
-  "SIF-104": "Chinmay Sathe",
-  "SIF-105": "Chinmay Sathe",
-  "SIF-106": "Chinmay Sathe",
   "SIF-51": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
   "SIF-54": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
   "SIF-48": "Kapil Kankonkar, Nilesh Saha, Brijesh Shah, Debraj Lahiri",
@@ -1050,10 +984,6 @@
   "SIF-15": "Gaurav Mehta",
   "SIF-13": "Gaurav Mehta",
   "SIF-16": "Gaurav Mehta",
-  "SIF-134": "Gaurik Shah",
-  "SIF-135": "Gaurik Shah",
-  "SIF-136": "Gaurik Shah",
-  "SIF-137": "Gaurik Shah",
   "SIF-129": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi",
   "SIF-130": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi",
   "SIF-128": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi"

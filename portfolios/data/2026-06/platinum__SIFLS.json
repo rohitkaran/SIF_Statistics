@@ -6,7 +6,7 @@
  "as_of": "2026-06-30",
  "source_url": "https://miraeassetetf.co.in/wp-content/uploads/2026/07/SIF_MAMF_Monthly_Portfolio_Report_30.06.2026.xlsx",
  "raw": "portfolios/raw/platinum/2026-06/SIF_MAMF_Monthly_Portfolio_Report_30.06.2026.xlsx",
- "fetched": "2026-08-13T16:48:42+00:00",
+ "fetched": "2026-08-17T15:48:12+00:00",
  "net_assets_cr": 201.38,
  "n_holdings": 63,
  "allocation": {
@@ -868,12 +868,7 @@
    "position": "Long"
   }
  ],
- "_codes": [
-  "SIF-134",
-  "SIF-135",
-  "SIF-136",
-  "SIF-137"
- ],
+ "_codes": [],
  "managers": "Gaurik Shah",
  "strategy": "Spreads money across hedged arbitrage trades, high-quality bonds and a controlled slice of equity (using option collars and special situations that cap gains and losses). Returns come mainly from interest income and market-neutral arbitrage, with a limited hedged-equity portion.",
  "presentation": "https://miraeassetetf.co.in/wp-content/uploads/2026/05/Platinum-Hybrid-Long-Short-Fund-Four-Pager-1.pdf"

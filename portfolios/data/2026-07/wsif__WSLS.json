@@ -1,12 +1,12 @@
 {
  "amc": "wsif",
  "fund_code": "WSLS",
- "fund_name": "WSIF Equity Long-Short Fund",
+ "fund_name": "WSLS-WSIF Equity Long Short Fund",
  "period": "2026-07",
  "as_of": "2026-07-31",
  "source_url": "https://www.wealthcompanyamc.in/uploads/Monthly_Portfolio_Long_Short_Fund_cab8cd6b74.xlsx",
  "raw": "portfolios/raw/wsif/unknown/Monthly_Portfolio_Long_Short_Fund_cab8cd6b74.xlsx",
- "fetched": "2026-08-13T16:49:01+00:00",
+ "fetched": "2026-08-17T15:48:26+00:00",
  "net_assets_cr": 33.73,
  "n_holdings": 45,
  "allocation": {
@@ -674,11 +674,7 @@
    "position": "Long"
   }
  ],
- "_codes": [
-  "SIF-108",
-  "SIF-111",
-  "SIF-110"
- ],
+ "_codes": [],
  "managers": "Chinmay Sathe",
  "strategy": "Holds listed Indian stocks it expects to rise while taking limited short bets (via derivatives) against stocks it expects to fall; returns come from stock selection on both the long and short sides.",
  "presentation": "https://www.wealthcompanyamc.in/uploads/ISID_wsif_Equity_Long_Short_Fund_20d41ea013.pdf"

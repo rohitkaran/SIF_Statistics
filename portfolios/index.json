@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13T16:49:03+00:00",
+ "generated": "2026-08-17T15:48:32+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2025-10",
@@ -472,38 +472,6 @@
     "2026-05": "portfolios/data/2026-05/quant__qSIF_HYBRID_LONG-SHORT_FUND.json"
    }
   },
-  "SIF-95": {
-   "name": "Sapphire Equity Long-Short SIF",
-   "amc": "sapphire",
-   "fund": "Sapphire Equity Long-Short SIF",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
-   }
-  },
-  "SIF-94": {
-   "name": "Sapphire Equity Long-Short SIF",
-   "amc": "sapphire",
-   "fund": "Sapphire Equity Long-Short SIF",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
-   }
-  },
-  "SIF-96": {
-   "name": "Sapphire Equity Long-Short SIF",
-   "amc": "sapphire",
-   "fund": "Sapphire Equity Long-Short SIF",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
-   }
-  },
-  "SIF-97": {
-   "name": "Sapphire Equity Long-Short SIF",
-   "amc": "sapphire",
-   "fund": "Sapphire Equity Long-Short SIF",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/sapphire__SIELS.json"
-   }
-  },
   "SIF-99": {
    "name": "Titanium Equity Long-Short Fund Direct Growth",
    "amc": "titanium",
@@ -598,69 +566,6 @@
    "fund": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
    "periods": {
     "2026-05": "portfolios/data/2026-05/titanium__Titanium-Hybrid-Long-Short-Fund.json"
-   }
-  },
-  "SIF-108": {
-   "name": "WSIF Equity Long-Short Fund",
-   "amc": "wsif",
-   "fund": "WSIF Equity Long-Short Fund",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json",
-    "2026-07": "portfolios/data/2026-07/wsif__WSLS.json"
-   }
-  },
-  "SIF-111": {
-   "name": "WSIF Equity Long-Short Fund",
-   "amc": "wsif",
-   "fund": "WSIF Equity Long-Short Fund",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json",
-    "2026-07": "portfolios/data/2026-07/wsif__WSLS.json"
-   }
-  },
-  "SIF-110": {
-   "name": "WSIF Equity Long-Short Fund",
-   "amc": "wsif",
-   "fund": "WSIF Equity Long-Short Fund",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSLS.json",
-    "2026-07": "portfolios/data/2026-07/wsif__WSLS.json"
-   }
-  },
-  "SIF-107": {
-   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "amc": "wsif",
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
-    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
-   }
-  },
-  "SIF-104": {
-   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "amc": "wsif",
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
-    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
-   }
-  },
-  "SIF-105": {
-   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "amc": "wsif",
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
-    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
-   }
-  },
-  "SIF-106": {
-   "name": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "amc": "wsif",
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "periods": {
-    "2026-05": "portfolios/data/2026-05/wsif__WSXT.json",
-    "2026-07": "portfolios/data/2026-07/wsif__WSXT.json"
    }
   },
   "SIF-51": {
@@ -883,45 +788,12 @@
     "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
    }
   },
-  "SIF-134": {
-   "name": "Platinum Hybrid Long-Short Fund",
-   "amc": "platinum",
-   "fund": "Platinum Hybrid Long-Short Fund",
-   "periods": {
-    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
-   }
-  },
-  "SIF-135": {
-   "name": "Platinum Hybrid Long-Short Fund",
-   "amc": "platinum",
-   "fund": "Platinum Hybrid Long-Short Fund",
-   "periods": {
-    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
-   }
-  },
-  "SIF-136": {
-   "name": "Platinum Hybrid Long-Short Fund",
-   "amc": "platinum",
-   "fund": "Platinum Hybrid Long-Short Fund",
-   "periods": {
-    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
-   }
-  },
-  "SIF-137": {
-   "name": "Platinum Hybrid Long-Short Fund",
-   "amc": "platinum",
-   "fund": "Platinum Hybrid Long-Short Fund",
-   "periods": {
-    "2026-06": "portfolios/data/2026-06/platinum__SIFLS.json"
-   }
-  },
   "SIF-129": {
    "name": "RedHex Hybrid Long-Short Fund",
    "amc": "redhex",
    "fund": "RedHex Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json",
-    "2026-07": "portfolios/data/2026-07/redhex__RHSIFHY.json"
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
    }
   },
   "SIF-130": {
@@ -929,8 +801,7 @@
    "amc": "redhex",
    "fund": "RedHex Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json",
-    "2026-07": "portfolios/data/2026-07/redhex__RHSIFHY.json"
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
    }
   },
   "SIF-128": {
@@ -938,8 +809,7 @@
    "amc": "redhex",
    "fund": "RedHex Hybrid Long-Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json",
-    "2026-07": "portfolios/data/2026-07/redhex__RHSIFHY.json"
+    "2026-06": "portfolios/data/2026-06/redhex__RHSIFHY.json"
    }
   }
  }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17T14:52:33Z",
+ "generated": "2026-08-17T15:48:46Z",
  "basis": "Disclosed net assets from each fund house's own portfolio disclosure. AMFI publishes no AUM API for SIFs.",
  "counting": "One portfolio file = one fund. Plan variants are never counted separately.",
  "caveat": "SIF portfolio disclosure is staggered and roughly bi-monthly: consecutive periods contain different fund houses (2026-05 and 2026-06 share no funds at all). Period totals are therefore NOT comparable to each other and NOT industry totals. Use `latest` for the current picture and `fund_movers` for genuine growth.",
@@ -22,21 +22,21 @@
   },
   {
    "period": "2026-05",
-   "aum_cr": 593.53,
-   "funds": 11,
-   "amcs": 6
+   "aum_cr": 558.67,
+   "funds": 8,
+   "amcs": 4
   },
   {
    "period": "2026-06",
-   "aum_cr": 5076.01,
-   "funds": 10,
-   "amcs": 6
+   "aum_cr": 4874.63,
+   "funds": 9,
+   "amcs": 5
   },
   {
    "period": "2026-07",
-   "aum_cr": 5614.57,
-   "funds": 9,
-   "amcs": 5
+   "aum_cr": 4751.09,
+   "funds": 6,
+   "amcs": 3
   }
  ],
  "by_category": {
@@ -51,27 +51,27 @@
   "2026-05": [
    {
     "name": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-    "aum_cr": 302.31,
-    "funds": 5,
-    "share_pct": 50.93
+    "aum_cr": 283.6,
+    "funds": 3,
+    "share_pct": 50.76
    },
    {
     "name": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
     "aum_cr": 195.17,
     "funds": 2,
-    "share_pct": 32.88
+    "share_pct": 34.93
    },
    {
     "name": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
     "aum_cr": 77.57,
     "funds": 2,
-    "share_pct": 13.07
+    "share_pct": 13.88
    },
    {
     "name": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
-    "aum_cr": 18.48,
-    "funds": 2,
-    "share_pct": 3.11
+    "aum_cr": 2.33,
+    "funds": 1,
+    "share_pct": 0.42
    }
   ],
   "2026-06": [
@@ -79,51 +79,51 @@
     "name": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
     "aum_cr": 1913.34,
     "funds": 1,
-    "share_pct": 37.69
+    "share_pct": 39.25
    },
    {
     "name": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-    "aum_cr": 1855.74,
-    "funds": 5,
-    "share_pct": 36.56
+    "aum_cr": 1654.36,
+    "funds": 4,
+    "share_pct": 33.94
    },
    {
     "name": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
     "aum_cr": 699.52,
     "funds": 3,
-    "share_pct": 13.78
+    "share_pct": 14.35
    },
    {
     "name": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
     "aum_cr": 607.41,
     "funds": 1,
-    "share_pct": 11.97
+    "share_pct": 12.46
    }
   ],
   "2026-07": [
    {
     "name": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
-    "aum_cr": 2242.97,
-    "funds": 2,
-    "share_pct": 39.95
+    "aum_cr": 2194.52,
+    "funds": 1,
+    "share_pct": 46.19
    },
    {
     "name": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-    "aum_cr": 1861.12,
-    "funds": 2,
-    "share_pct": 33.15
+    "aum_cr": 1079.82,
+    "funds": 1,
+    "share_pct": 22.73
    },
    {
     "name": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
     "aum_cr": 758.74,
     "funds": 1,
-    "share_pct": 13.51
+    "share_pct": 15.97
    },
    {
     "name": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-    "aum_cr": 751.74,
-    "funds": 4,
-    "share_pct": 13.39
+    "aum_cr": 718.01,
+    "funds": 3,
+    "share_pct": 15.11
    }
   ]
  },
@@ -141,37 +141,25 @@
     "name": "DynaSIF SIF",
     "aum_cr": 471.04,
     "funds": 2,
-    "share_pct": 79.36
+    "share_pct": 84.31
    },
    {
     "name": "Apex SIF",
     "aum_cr": 75.99,
     "funds": 1,
-    "share_pct": 12.8
-   },
-   {
-    "name": "WSIF",
-    "aum_cr": 33.33,
-    "funds": 2,
-    "share_pct": 5.62
+    "share_pct": 13.6
    },
    {
     "name": "qsif SIF",
     "aum_cr": 10.47,
     "funds": 4,
-    "share_pct": 1.76
-   },
-   {
-    "name": "Sapphire SIF",
-    "aum_cr": 1.53,
-    "funds": 1,
-    "share_pct": 0.26
+    "share_pct": 1.87
    },
    {
     "name": "Arthaya SIF",
     "aum_cr": 1.17,
     "funds": 1,
-    "share_pct": 0.2
+    "share_pct": 0.21
    }
   ],
   "2026-06": [
@@ -179,37 +167,31 @@
     "name": "iSIF SIF",
     "aum_cr": 3722.49,
     "funds": 4,
-    "share_pct": 73.33
+    "share_pct": 76.36
    },
    {
     "name": "RedHex SIF",
     "aum_cr": 581.18,
     "funds": 1,
-    "share_pct": 11.45
+    "share_pct": 11.92
    },
    {
     "name": "Diviniti SIF",
     "aum_cr": 334.04,
     "funds": 1,
-    "share_pct": 6.58
-   },
-   {
-    "name": "Platinum SIF",
-    "aum_cr": 201.38,
-    "funds": 1,
-    "share_pct": 3.97
+    "share_pct": 6.85
    },
    {
     "name": "Arudha SIF",
     "aum_cr": 200.46,
     "funds": 2,
-    "share_pct": 3.95
+    "share_pct": 4.11
    },
    {
     "name": "Magnum SIF",
     "aum_cr": 36.46,
     "funds": 1,
-    "share_pct": 0.72
+    "share_pct": 0.75
    }
   ],
   "2026-07": [
@@ -217,37 +199,25 @@
     "name": "iSIF SIF",
     "aum_cr": 4432.78,
     "funds": 4,
-    "share_pct": 78.95
-   },
-   {
-    "name": "RedHex SIF",
-    "aum_cr": 781.3,
-    "funds": 1,
-    "share_pct": 13.92
+    "share_pct": 93.3
    },
    {
     "name": "Diviniti SIF",
     "aum_cr": 316.98,
     "funds": 1,
-    "share_pct": 5.65
-   },
-   {
-    "name": "WSIF",
-    "aum_cr": 82.18,
-    "funds": 2,
-    "share_pct": 1.46
+    "share_pct": 6.67
    },
    {
     "name": "Arthaya SIF",
     "aum_cr": 1.33,
     "funds": 1,
-    "share_pct": 0.02
+    "share_pct": 0.03
    }
   ]
  },
  "latest": {
-  "aum_cr": 6951.66,
-  "funds": 22,
+  "aum_cr": 6466.45,
+  "funds": 18,
   "periods_spanned": [
    "2025-10",
    "2026-05",
@@ -259,25 +229,25 @@
     "name": "iSIF SIF",
     "aum_cr": 4432.78,
     "funds": 4,
-    "share_pct": 63.77,
+    "share_pct": 68.55,
     "as_of_periods": [
      "2026-07"
     ]
    },
    {
     "name": "RedHex SIF",
-    "aum_cr": 781.3,
+    "aum_cr": 581.18,
     "funds": 1,
-    "share_pct": 11.24,
+    "share_pct": 8.99,
     "as_of_periods": [
-     "2026-07"
+     "2026-06"
     ]
    },
    {
     "name": "DynaSIF SIF",
     "aum_cr": 471.04,
     "funds": 2,
-    "share_pct": 6.78,
+    "share_pct": 7.28,
     "as_of_periods": [
      "2026-05"
     ]
@@ -286,7 +256,7 @@
     "name": "Altiva SIF",
     "aum_cr": 339.76,
     "funds": 1,
-    "share_pct": 4.89,
+    "share_pct": 5.25,
     "as_of_periods": [
      "2025-10"
     ]
@@ -295,43 +265,25 @@
     "name": "Diviniti SIF",
     "aum_cr": 316.98,
     "funds": 1,
-    "share_pct": 4.56,
+    "share_pct": 4.9,
     "as_of_periods": [
      "2026-07"
-    ]
-   },
-   {
-    "name": "Platinum SIF",
-    "aum_cr": 201.38,
-    "funds": 1,
-    "share_pct": 2.9,
-    "as_of_periods": [
-     "2026-06"
     ]
    },
    {
     "name": "Arudha SIF",
     "aum_cr": 200.46,
     "funds": 2,
-    "share_pct": 2.88,
+    "share_pct": 3.1,
     "as_of_periods": [
      "2026-06"
-    ]
-   },
-   {
-    "name": "WSIF",
-    "aum_cr": 82.18,
-    "funds": 2,
-    "share_pct": 1.18,
-    "as_of_periods": [
-     "2026-07"
     ]
    },
    {
     "name": "Apex SIF",
     "aum_cr": 75.99,
     "funds": 1,
-    "share_pct": 1.09,
+    "share_pct": 1.18,
     "as_of_periods": [
      "2026-05"
     ]
@@ -340,7 +292,7 @@
     "name": "Magnum SIF",
     "aum_cr": 36.46,
     "funds": 1,
-    "share_pct": 0.52,
+    "share_pct": 0.56,
     "as_of_periods": [
      "2026-06"
     ]
@@ -349,16 +301,7 @@
     "name": "qsif SIF",
     "aum_cr": 10.47,
     "funds": 4,
-    "share_pct": 0.15,
-    "as_of_periods": [
-     "2026-05"
-    ]
-   },
-   {
-    "name": "Sapphire SIF",
-    "aum_cr": 1.53,
-    "funds": 1,
-    "share_pct": 0.02,
+    "share_pct": 0.16,
     "as_of_periods": [
      "2026-05"
     ]
@@ -376,9 +319,9 @@
   "by_category": [
    {
     "name": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-    "aum_cr": 2625.66,
-    "funds": 8,
-    "share_pct": 37.77,
+    "aum_cr": 2224.16,
+    "funds": 7,
+    "share_pct": 34.4,
     "as_of_periods": [
      "2025-10",
      "2026-05",
@@ -388,9 +331,9 @@
    },
    {
     "name": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
-    "aum_cr": 2245.3,
-    "funds": 3,
-    "share_pct": 32.3,
+    "aum_cr": 2196.85,
+    "funds": 2,
+    "share_pct": 33.97,
     "as_of_periods": [
      "2026-05",
      "2026-07"
@@ -398,9 +341,9 @@
    },
    {
     "name": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-    "aum_cr": 1126.79,
-    "funds": 8,
-    "share_pct": 16.21,
+    "aum_cr": 1091.53,
+    "funds": 6,
+    "share_pct": 16.88,
     "as_of_periods": [
      "2026-05",
      "2026-06",
@@ -411,7 +354,7 @@
     "name": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
     "aum_cr": 953.91,
     "funds": 3,
-    "share_pct": 13.72,
+    "share_pct": 14.75,
     "as_of_periods": [
      "2026-05",
      "2026-07"
@@ -452,21 +395,6 @@
    },
    {
     "period": "2026-07",
-    "fund": "RedHex Hybrid Long-Short Fund",
-    "amc": "redhex",
-    "house": "RedHex SIF",
-    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-    "as_of": "2026-07-31",
-    "aum_cr": 781.3,
-    "n_holdings": 70,
-    "allocation": {
-     "equity": 28.57,
-     "debt": 70.52,
-     "cash_other": 0.91
-    }
-   },
-   {
-    "period": "2026-07",
     "fund": "iSIF Active Asset Allocator Long-Short Fund",
     "amc": "isif",
     "house": "iSIF SIF",
@@ -479,6 +407,21 @@
      "debt": 20.42,
      "money_market": 6.99,
      "cash_other": 18.85
+    }
+   },
+   {
+    "period": "2026-06",
+    "fund": "RedHex Hybrid Long-Short Fund",
+    "amc": "redhex",
+    "house": "RedHex SIF",
+    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
+    "as_of": "2026-06-30",
+    "aum_cr": 581.18,
+    "n_holdings": 63,
+    "allocation": {
+     "equity": 30.71,
+     "debt": 61.54,
+     "cash_other": 7.75
     }
    },
    {
@@ -539,22 +482,6 @@
      "equity": 72.07,
      "money_market": 16.23,
      "cash_other": 11.7
-    }
-   },
-   {
-    "period": "2026-06",
-    "fund": "Platinum Hybrid Long-Short Fund",
-    "amc": "platinum",
-    "house": "Platinum SIF",
-    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-    "as_of": "2026-06-30",
-    "aum_cr": 201.38,
-    "n_holdings": 63,
-    "allocation": {
-     "equity": 64.94,
-     "debt": 22.35,
-     "money_market": 4.92,
-     "cash_other": 7.79
     }
    },
    {
@@ -622,21 +549,6 @@
     }
    },
    {
-    "period": "2026-07",
-    "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-    "amc": "wsif",
-    "house": "WSIF",
-    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
-    "as_of": "2026-07-31",
-    "aum_cr": 48.45,
-    "n_holdings": 46,
-    "allocation": {
-     "equity": 81.06,
-     "money_market": 1.31,
-     "cash_other": 17.63
-    }
-   },
-   {
     "period": "2026-06",
     "fund": "Magnum Hybrid Long Short Fund",
     "amc": "magnum",
@@ -650,20 +562,6 @@
      "debt": 2063.0,
      "money_market": 857.0,
      "cash_other": 0.0
-    }
-   },
-   {
-    "period": "2026-07",
-    "fund": "WSIF Equity Long-Short Fund",
-    "amc": "wsif",
-    "house": "WSIF",
-    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-    "as_of": "2026-07-31",
-    "aum_cr": 33.73,
-    "n_holdings": 45,
-    "allocation": {
-     "equity": 84.64,
-     "cash_other": 15.36
     }
    },
    {
@@ -713,20 +611,6 @@
     }
    },
    {
-    "period": "2026-05",
-    "fund": "Sapphire Equity Long-Short SIF",
-    "amc": "sapphire",
-    "house": "Sapphire SIF",
-    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-    "as_of": "2026-05-29",
-    "aum_cr": 1.53,
-    "n_holdings": 110,
-    "allocation": {
-     "equity": 9644.09,
-     "cash_other": 0.0
-    }
-   },
-   {
     "period": "2026-07",
     "fund": "Arthaya Equity Long Short Fund",
     "amc": "arthaya",
@@ -772,18 +656,6 @@
    "change_pct": 14.7
   },
   {
-   "fund": "RedHex Hybrid Long-Short Fund",
-   "house": "RedHex SIF",
-   "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-   "from_period": "2026-06",
-   "to_period": "2026-07",
-   "gap_months": 1,
-   "from_cr": 581.18,
-   "to_cr": 781.3,
-   "change_cr": 200.12,
-   "change_pct": 34.43
-  },
-  {
    "fund": "iSIF Hybrid Long-Short Fund",
    "house": "iSIF SIF",
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
@@ -820,18 +692,6 @@
    "change_pct": 45.67
   },
   {
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "house": "WSIF",
-   "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
-   "from_period": "2026-05",
-   "to_period": "2026-07",
-   "gap_months": 2,
-   "from_cr": 16.15,
-   "to_cr": 48.45,
-   "change_cr": 32.3,
-   "change_pct": 200.0
-  },
-  {
    "fund": "Diviniti Equity Long Short Fund",
    "house": "Diviniti SIF",
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
@@ -842,18 +702,6 @@
    "to_cr": 316.98,
    "change_cr": -17.06,
    "change_pct": -5.11
-  },
-  {
-   "fund": "WSIF Equity Long-Short Fund",
-   "house": "WSIF",
-   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "from_period": "2026-05",
-   "to_period": "2026-07",
-   "gap_months": 2,
-   "from_cr": 17.18,
-   "to_cr": 33.73,
-   "change_cr": 16.55,
-   "change_pct": 96.33
   },
   {
    "fund": "Arthaya Equity Long Short Fund",
@@ -934,36 +782,6 @@
   },
   {
    "period": "2026-05",
-   "fund": "WSIF Equity Long-Short Fund",
-   "amc": "wsif",
-   "house": "WSIF",
-   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "as_of": "2026-05-31",
-   "aum_cr": 17.18,
-   "n_holdings": 35,
-   "allocation": {
-    "equity": 66.53,
-    "money_market": 14.14,
-    "cash_other": 19.33
-   }
-  },
-  {
-   "period": "2026-05",
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "amc": "wsif",
-   "house": "WSIF",
-   "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
-   "as_of": "2026-05-31",
-   "aum_cr": 16.15,
-   "n_holdings": 36,
-   "allocation": {
-    "equity": 73.25,
-    "money_market": 13.73,
-    "cash_other": 13.02
-   }
-  },
-  {
-   "period": "2026-05",
    "fund": "qsif Equity Long Short Fund - Growth Option",
    "amc": "quant",
    "house": "qsif SIF",
@@ -1005,20 +823,6 @@
     "equity": 4412.08,
     "debt": 613.72,
     "money_market": 5104.03,
-    "cash_other": 0.0
-   }
-  },
-  {
-   "period": "2026-05",
-   "fund": "Sapphire Equity Long-Short SIF",
-   "amc": "sapphire",
-   "house": "Sapphire SIF",
-   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "as_of": "2026-05-29",
-   "aum_cr": 1.53,
-   "n_holdings": 110,
-   "allocation": {
-    "equity": 9644.09,
     "cash_other": 0.0
    }
   },
@@ -1145,22 +949,6 @@
   },
   {
    "period": "2026-06",
-   "fund": "Platinum Hybrid Long-Short Fund",
-   "amc": "platinum",
-   "house": "Platinum SIF",
-   "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-   "as_of": "2026-06-30",
-   "aum_cr": 201.38,
-   "n_holdings": 63,
-   "allocation": {
-    "equity": 64.94,
-    "debt": 22.35,
-    "money_market": 4.92,
-    "cash_other": 7.79
-   }
-  },
-  {
-   "period": "2026-06",
    "fund": "Arudha Hybrid Long-Short Fund",
    "amc": "arudha",
    "house": "Arudha SIF",
@@ -1240,21 +1028,6 @@
   },
   {
    "period": "2026-07",
-   "fund": "RedHex Hybrid Long-Short Fund",
-   "amc": "redhex",
-   "house": "RedHex SIF",
-   "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
-   "as_of": "2026-07-31",
-   "aum_cr": 781.3,
-   "n_holdings": 70,
-   "allocation": {
-    "equity": 28.57,
-    "debt": 70.52,
-    "cash_other": 0.91
-   }
-  },
-  {
-   "period": "2026-07",
    "fund": "iSIF Active Asset Allocator Long-Short Fund",
    "amc": "isif",
    "house": "iSIF SIF",
@@ -1296,35 +1069,6 @@
     "equity": 77.12,
     "money_market": 9.41,
     "cash_other": 13.47
-   }
-  },
-  {
-   "period": "2026-07",
-   "fund": "WSIF Equity Ex-Top 100 Long-Short Fund",
-   "amc": "wsif",
-   "house": "WSIF",
-   "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
-   "as_of": "2026-07-31",
-   "aum_cr": 48.45,
-   "n_holdings": 46,
-   "allocation": {
-    "equity": 81.06,
-    "money_market": 1.31,
-    "cash_other": 17.63
-   }
-  },
-  {
-   "period": "2026-07",
-   "fund": "WSIF Equity Long-Short Fund",
-   "amc": "wsif",
-   "house": "WSIF",
-   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "as_of": "2026-07-31",
-   "aum_cr": 33.73,
-   "n_holdings": 45,
-   "allocation": {
-    "equity": 84.64,
-    "cash_other": 15.36
    }
   },
   {
