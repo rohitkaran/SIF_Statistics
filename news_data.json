@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-18T17:53:50Z",
+ "generated": "2026-08-19T03:25:34Z",
  "refresh_seconds": 1800,
  "count": 140,
  "sources_ok": [
@@ -11,6 +11,7 @@
   "ECB",
   "ET Economy",
   "ET Markets",
+  "Google News",
   "Investing.com",
   "MarketWatch",
   "Mint Economy",
@@ -20,10 +21,1119 @@
   "US Federal Reserve",
   "Yahoo Finance"
  ],
- "sources_failed": [
-  "Google News"
- ],
+ "sources_failed": [],
  "items": [
+  {
+   "title": "Trump says deal struck with Canada, temporarily pauses tariffs",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBGUGdCVFZwSnJkQjBDUWV0akRuSkk4cENmQjQ3a3F1SzdOYmQ4N2VTRy1hcjQ0NmpsMVhDWm84M0VQOGx4N0xXT3FsYzBwRnpC?oc=5",
+   "source": "theedgemalaysia.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:18:58Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump pauses 50% scheduled tariffs on Canada for three days, announces 'deal' with Ottawa",
+   "url": "https://www.cnbc.com/2026/08/18/trump-carney-canada-tariffs-dealine-talks.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:18:57Z",
+   "summary": "Trump has already imposed a variety of tariffs on Canada and its specific exports, including metals, lumber and auto parts.",
+   "categories": [
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Opinion | The $40 trillion national debt milestone shows America has a spending problem",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNXFTZW1TbkpMZmZQWm9Yc2l0RVZ3STZ5bmNvbElRcV9jMVV4UG9GR0dzd3dPOW9UR0kyc3BWLXN6MG4ydk41X0Rwdi1ac2piVEZ5ZmdiR3l4aWFudmRPLUVoQmNDNGs4Wkw0eHNBOVV3TXNDSXBtY2d3cFA3V2lKZWdzbm9JMndwN3dEZXRtWHRQamFOR3g5ZXhtVmY1NVE3cW5sUTFpeTllc1JEZlpKa0ltUDg2MENZUkRfQllEYw?oc=5",
+   "source": "The Washington Post",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:13:56Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Nvidia H200 chips reach China in small shipments, FT reports",
+   "url": "https://www.investing.com/news/stock-market-news/nvidia-h200-chips-reach-china-in-small-shipments-ft-reports-4866385",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:12:25Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "$4,400 back in sight: Gold bulls regain control ahead of FOMC Minutes",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWnVoU2xTWGtsTmNlQWhiMG1Tb1BQREV0dmFPYWQyWGpIVzN1YlhVZG5EOE04NWhVT3VPZ19lTEpvQmpTVlpYcjlhbDNPcXhwZ1p5M3U0YlJZZ1ZSUmNzM0Q1c1BTWDFVcGpSRi1qRzI4V29EdXFkM2RUMnNMb3FoUGplNWprdEpBVG02eDVsMGFfZ3ZSaXloUXJENmxaTzZaVGlGRS0zZkdJS2FvZGhDRDc2VEs?oc=5",
+   "source": "fxstreet.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:07:47Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Trump says US and Canada have reached last-minute deal to delay 50% US tariffs on Canadian imports",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbl9JNGxCeEUzV3FveVI0dmM1TGczaVFzem1RbDg5TWx6ck5naGlpQ0FWcmUyN0NQV2tqV2hZejNKWVVRUTNFRU9xWWJYWWJ2bGtGR3pnOEY2Uk1fSkFpazU0VVJfRWFBb0VmY3FISTJoNDBVU2g4N3F6NXl2YzJxOU4xenVOQTd0ZzFLNEEtUW5CLWJlUWQw?oc=5",
+   "source": "AP News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:04:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "RBA’s Hauser warns of rate hike if inflation risks crystallize",
+   "url": "https://www.investing.com/news/economy-news/rbas-hauser-warns-of-rate-hike-if-inflation-risks-crystallize-4866395",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:01:14Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Meta CFO Susan Li acquires shares, stock withheld for tax obligations",
+   "url": "https://www.investing.com/news/insider-trading-news/meta-cfo-susan-li-acquires-shares-stock-withheld-for-tax-obligations-93CH-4866394",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:01:10Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Bond selloff slows but stocks wobble",
+   "url": "https://www.investing.com/news/stock-market-news/bond-selloff-slows-but-stocks-wobble-4866392",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:00:54Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump pauses 50% tariffs on Canada, claims trade deal is close",
+   "url": "https://www.investing.com/news/economy-news/trump-pauses-50-tariffs-on-canada-claims-trade-deal-is-close-4866391",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:00:52Z",
+   "summary": "",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Credit Suisse High Yield Credit Fund approves reverse split",
+   "url": "https://www.investing.com/news/company-news/credit-suisse-high-yield-credit-fund-approves-reverse-split-93CH-4866390",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T03:00:33Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Tube Investments among 5 stocks showing bullish RSI upswing",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/tube-investments-among-5-stocks-showing-bullish-rsi-upswing/slideshow/133336078.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T02:59:34Z",
+   "summary": "On August 18, five Nifty500 stocks that gained over 3% were identified using the RSI Trending Up scan, based on data from StockEdge.com. An uptrend signal is generated when the RSI value crosses above 50 from below, indicating strengthening",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Who Governs the Fed? How Politics and Markets Limit Federal Reserve Independence",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPb2JfMUxXX1hGN1BLZnpDcEtPWHBoeVRhWFlLbEUtWlJOcmRkS3RaZzRGMWwwZmlTWFZQSFNLMkd6SThoTmE1eFJvS2VQQkxaTWFJVkNuRkRfcnMzeHlxcFVBQ0pYaUhWLWJmdHU1TEZpX2RuMFc1T0J5SzVNclhLQ2E0cHJJRlQzb0QzMVd6NDVpa2dtOWdtVUlmNDB3eWVtdG1WTW5JU1F3RTlCd2xIYnhRdnpidG5HMy1INHdJMldMOTVfSVZiYS1pTE02ZVpTQnYzQTg1WGpiY3JLMGc?oc=5",
+   "source": "KGOU",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:46:55Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump holds off on new 50% tariffs for Canadian goods",
+   "url": "https://www.marketwatch.com/story/trump-holds-off-on-new-50-tariffs-for-canadian-goods-71f75005?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-19T02:42:00Z",
+   "summary": "Here’s what’s going on with the Trump administration’s plan for new tariffs for some Canadian goods.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump pauses new tariffs on Canada and says countries close to a deal",
+   "url": "https://www.bbc.co.uk/news/articles/cy9wz79ze29o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:41:36Z",
+   "summary": "US President Donald Trump said he will delay imposing new tariffs on a wide array of Canadian goods for three days as the countries firm up a trade deal.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Canada averts fresh wave of US tariffs after Trump extends deadline",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1oX3hkLWRVc3hjLWFYRUctWEphbVB1ZFozMDY4XzFZLXVWaHlvSk9pLUxrMVBuN3REci00U2tvbnlQdGRaRzQ5UGJYZG1DakhBcUluT2FzWGFFcDFw?oc=5",
+   "source": "BBC",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:41:36Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "How Much Money Americans Keep in the Bank: Median Balances by Age, Family, and Education Level",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMkJZVVcyMFFOZTQyVWlhTkg2VURJYkZUME5jZmdzYkw4SjNfVGlsUTZ4TWdpVUk5bDZSN3NZQi1qcTRON0Fvd3B3Vl8weW9keVZmZE5veHhOdURTeWZBNWRJVmYtT2xaQVhjcDBFS2kzN0pETzJOempvZHpMVHI1S2VoazZfR2xwUFBWNDl1QjEtU2JLb0pWMWxoVkExdTNRdzJmdFVMbEJQM3JwLWktbFo0VTc3ZzBFSmxQU3JiV0FPN0tmS0JxZw?oc=5",
+   "source": "Investopedia",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:40:12Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Fed Chair Kevin Warsh Testified to Congress That the Fed Has \"Only a Target, and It's 2%,\" Rejecting Any Soft Inflation Goal. What Does That Mean for Rate-Sensitive Stocks?",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONGxhZjUyQm11M2VPYlBPNWk1TjVPa3lIckZsRUNSc2dhV1YxdC1sMllGNlRIbnQ0VnE5NHU1ZkdUV0lWR3hYOXdFOXR3eHVqeFNSazJTUWdSSmxRUHlaX2RCZWc3QmxEV2ptSUlaMjh5MTk5X3VEVFlERzk3eE5neEUwYkNZcF8yVl9LSHlKOHNLNTVncGNJVA?oc=5",
+   "source": "The Motley Fool",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:39:16Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth",
+    "Markets"
+   ]
+  },
+  {
+   "title": "US, Canada reach trade deal to avert steep tariffs, Trump says",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTHpyOHo0NDV3VjBvZHJxaDhKRURKNk9HZnMtVWdhVmlrY05jN2NQR2drUDNTUGJFUHJiTkpJY3ZXbmp2TXVPX0YybE5JdV9DWG0wZkU3dGpSNXRmTnRUYTJ6Yk8waXh5cnJSVUF1cTRBQ2dGZ3RfQkJQRE1tVzJwSlBPTGxpdHdnbjh3UWFDblFMeEFYUnZMQjFYb1BwbVpYdXZCN01RZ9IBrAFBVV95cUxOUmNra2JMM1EzYmxtdDNib1lDOGRXcHhqaHZhM2t4Q2tpajFIVWtwbWd5Y3R5NjZ0by1VdmU0UGYzdmg0TDRjV0NyczQ1SS1nYmluekxtRVgxNFNWMmJtWk1RTDMxSXlOYlFvUHZaQmxtdGtFN1FqajJqUWk1ZnJXN2Rvbm8tVUNvZ2I1cUFOQ2w2SWJVVHhMd25oalFFdmRNR1czNG9fWU85SUdP?oc=5",
+   "source": "Al Jazeera",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:37:28Z",
+   "summary": "",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Canadian Dollar Steadies Near 1.3900 Vs USD As Tariff Deadline And FOMC Minutes Loom",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMWw0ODhsQkkxb3FwcENxRzViZmVPZmFQd0xja2VUNGhONHlZUFI2dkwtRzlPNGhlQUlUSEV2THV6d1U4SWlTRkIySEhCSzNyaVFXNnFIVEp4RVpISzh0Tks5NEVjOUpjUE1uOVQ5M2Y4R18wZ09jRkRNaXdLTUZqamV1Y2tTWGVEWGg5cUtuUFN5aEJhMzdwWU5NRDY?oc=5",
+   "source": "Bitcoin World",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:35:12Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Currencies",
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Trump announces pause on US tariffs on Canadian goods",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE45eWN3V0QxY29iUjg0bDJVbzBEekRsaURURHdaeTZxeVZLc01nMGRnNlhoVG03SVJKU3pZajRDYlExNzhZeldqVDVzUUltak5NdG5pQnRCVFE4N3VfbzBJLTFpajNzUjMwcjJhRnhxNFdpSVNu?oc=5",
+   "source": "RTE.ie",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:31:33Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Indian shares set for muted start as higher oil prices, Treasury yields weigh",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWNtWG9kcFBGcENWOTI3QlhQMWtvaDhydE12OVJVbWJuN1Naclk1UGlGVWJHVEJjU2NLdXBCUThjNzlSRTd6MVBpLVFzUzVldlpRZkZWZ1dIeFJsVGdmMlQxZGFmRnBrM1JNTF9QSzBRV25wS2JNRDZ5ekw5eThjUmphYzMwQXdkeWxRV1MzWnBaWEhWZzItcDFSWFNZQjJLY0dJeUFST2VQY1BmTEx4SDJiVVY4UXI4?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:30:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "Trump pauses 50% tariffs on Canada for 3 days",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ0JmNE9BTlRBeUhlOURZanBDcTVvb1Z0VEc1elUtblkwMU9PS0JqREVqb2xNRnVGOThwUlZ4VGRtRV9PcURZSjZxZlJ6UU5zakJHa1A0OWU0WGVQMzQ4OW9raHBXcnlsV01ldGFRaEtJaWx4TFV0NF8xcEZHXy1fV1dEWmk5dw?oc=5",
+   "source": "NBC News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:22:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Chinese robotics giant Unitree soars in stock market debut",
+   "url": "https://www.bbc.co.uk/news/articles/c0qv4w9492zo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:09:46Z",
+   "summary": "Shares in the world's biggest humanoid robot maker started trading on Shanghai's Star market on Wednesday.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "The people v the datacentre? The fight for Brick Lane - podcast",
+   "url": "https://www.theguardian.com/news/audio/2026/aug/19/the-people-v-the-datacentre-the-fight-for-brick-lane-podcast",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T02:00:02Z",
+   "summary": "Annie Kelly heads to Brick Lane to hear from residents campaigning against a massive datacentre on one of London’s most famous streets Brick Lane is one of the most vibrant and best-known streets in London. Famous for its curry houses and 2",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Sensex Today | Nifty 50 | Stock Market LIVE Updates: GIFT Nifty signals a muted start; Asian shares trade lower",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-ongc-bpcl-share-price-19-august-2026/liveblog/133335256.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:59:17Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "Gold inches higher, focus on Fed minutes",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-inches-higher-focus-on-fed-minutes/articleshow/133335242.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:59:17Z",
+   "summary": "Gold prices edged up slightly during the early Asian trading session, buoyed by a retreat in U.S. Treasury yields from their recent highs. Market players are now looking ahead to the Federal Reserve's meeting minutes for guidance on upcomin",
+   "categories": [
+    "Central banks & rates",
+    "Commodities & energy",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Seoul, Washington to halve joint drills as Trump reportedly seeks summit with North Korea's Kim",
+   "url": "https://www.cnbc.com/2026/08/19/south-korea-trump-military-drills-exercise-north-korea-kim-jong-un-.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T01:57:05Z",
+   "summary": "Seoul, Washington to halve joint drills as Trump reportedly seeks summit with North Korea's Kim",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Dollar drifts near multi-month lows as Treasury yields ease; Fed minutes awaited",
+   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-drifts-near-multi-month-lows-as-treasury-yields-ease-fed-minutes-awaited/articleshow/133335227.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:56:21Z",
+   "summary": "The U.S. dollar slipped against leading currencies on Wednesday, influenced by a decline in treasury yields from their recent highs. Investors are keenly awaiting the Federal Reserve's minutes, anticipating guidance on interest rate trends.",
+   "categories": [
+    "Central banks & rates",
+    "Currencies",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "CCI approves Prudential’s stake acquisition in Bharti Life Insurance",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/cci-approves-prudential-corporations-acquisition-of-stake-in-bharti-life-insurance/articleshow/133335115.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:56:10Z",
+   "summary": "The Competition Commission of India has approved Prudential Corporation of India’s acquisition of certain equity shareholding in Bharti Life Insurance Company. The transaction is still subject to other applicable regulatory and statutory ap",
+   "categories": [
+    "Markets",
+    "India",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Oil edges up on uncertainty over exports through Hormuz",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-edges-up-on-uncertainty-over-exports-through-hormuz/articleshow/133335197.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:54:18Z",
+   "summary": "Oil prices climbed for a fourth day due to supply uncertainty. Investors weighed conflicting messages from Tehran and Washington on the Strait of Hormuz. Iraq approved new export routes to avoid the critical waterway amid the ongoing confli",
+   "categories": [
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "US stocks continue to fall! Rising bond yields and high oil prices weigh on the market. Attention is focused on the Federal Reserve's interest rate direction.",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HZmZCakotTEo0a1RxZVNoV0lCS1AyUVdUWmUxcmtBWmhoNm9Fekd5R05ldWFIWlRJMVJ4WFIxQjg1VE5hcEs3RWNORk9DbEpWVjdpSzU4dnY?oc=5",
+   "source": "วารสารการเงินธนาคาร",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T01:53:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "From Gift Nifty to Asian tech stocks, crude oil prices: 7 key things that changed for Indian stock market overnight",
+   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQdnVPX0VxM29uX2kxRjdnQW9Gb1N0SDdqTEpJWWFjb09XX1lWLWpnWkxNZFVwLXpYUVNKdXNXaDRZODgtYzFFS3pDVjlyZjJ3ZF9VZzBHYnV2aXY4TExpaEh6TkFveDdhSnVINjB1b2lJa0pDMHJzby0wd1RTeXRfRnhkTFhFYkJnYVVqQVdfdFRsN1FZZ0F1Uk9YV1J0NzB4eVF5R2ZmMGNSaFg5LWppTWVDMlJEMlRYUEFJSXlCLVJiLXZmYWduaVh3ZGxCX2RNODNrR29kakZUNVpaVkNjMnFPRHU3UjdDVFo5dHpQLXZMZURXM211SXVfS1l1d2RmTUp4RjZPeFZEWjBXZlROVNIBlgJBVV95cUxQLU9ZR2Z5Skw3LW5JOVY2MG44NGRiN3Y0UUZDdWhVTzZaamYyTEpvcFNQSVZoZ0xwMXd6UGRpQjY0SVRHY2tfZnYyT3lhZ0VvRHo4cVN3UzEzMGV3MDVGMm1FRHIwTmxqRndaZjdmaklQQjJoZmVNejFCeHFTaGJCOHhUUW1KUk4wVWc3WDExeWtiQy15aExwV3Qtall6R2dXRUVhQjZlSG1SNVFZeGtTY2s0VVIyNlRraGNfMXNkajRFdU1GVkFWNnB2SWJWS0p4em9vWjQzR2c2dExoeUNxTGJiVEZTMXlZUGY4eFVRYUhxbmhkOHNNWjZhbjl2Vm1VeGx0OWhvbnNXcnBWMmxILUZ2QmtzQQ?oc=5",
+   "source": "livemint.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T01:37:55Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "China’s backflipping robot maker Unitree pops 542% in Shanghai debut",
+   "url": "https://www.cnbc.com/2026/08/19/china-backflipping-robot-maker-unitree-jumps-shanghai-ipo.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T01:37:01Z",
+   "summary": "Unitree Robotics shares rise 542% on their first day of trading in Shanghai",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "California AG Bonta says case against Meta is about 'restitution and distortion,' not damages",
+   "url": "https://www.cnbc.com/2026/08/18/meta-attorneys-general-opening-arguments-california-bonta-restitution.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T01:34:22Z",
+   "summary": "Following opening arguments in the case against Meta, California Attorney General Bonta said the trial is not about extracting a massive payout.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "CNBC Daily Open: Trump puts 'open' sign on Hormuz. But traffic is barely trickling",
+   "url": "https://www.cnbc.com/2026/08/19/cnbc-daily-open-trump-hormuz-markets-attack.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T01:31:26Z",
+   "summary": "The reality in the Strait of Hormuz looks a bit different. U.S. President Donald Trump has claimed that the critical waterway is open, but no one is buying it.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "India-Japan trade at USD 27.5 billion in FY 2025-26 still a fraction of potential: Piyush Goyal",
+   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-japan-trade-at-usd-27-5-billion-in-fy-2025-26-still-a-fraction-of-potential-piyush-goyal/videoshow/133335018.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:28:11Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "Canadian Dollar holds near 1.3900 as higher US yields support USD",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOeXRpNi0wbXJUamh4cUxUZGNGUHNjd1RGRUZSOVYzdXhad3gwUmhKNmZRQ1BqRnJIMHR5aG9qbXZobFlqY0VnVC0yd0ZIaXFja2pkQ1NGTDE4WjdrUE42cmxjcFVMY1MxTFVENXBmZWh6OEY0WTJRSy1kbDNWQ3k0SVRSdEVOYTVPTXFpN0RXc21XUHZoTVNBTWpYcTZsZnNYY09lR2lsV2EzRjhpMFRlMUQ0UFgxNWxJNE5GNmJQMUhNTXJPcDlzQ3ZZQQ?oc=5",
+   "source": "fxstreet.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T01:16:10Z",
+   "summary": "",
+   "categories": [
+    "Currencies"
+   ]
+  },
+  {
+   "title": "Milky Mist Dairy Foods lists at 18% premium to issue price",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/milky-mist-dairy-foods-lists-at-18-premium-to-issue-price/articleshow/133334885.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:15:12Z",
+   "summary": "Mumbai-based Milky Mist Dairy Foods made a strong debut on the NSE, listing at ₹165—17.9% above its issue price of ₹140. The stock climbed further to close at the day’s high of ₹181.50, valuing the company at ₹13,972.66 crore at the close.",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "Can Gaja Alternative Asset Management IPO deliver long-term growth for high-risk investors?",
+   "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/returns-speak-a-lot-for-gaja-alternative-asset-management-as-funding-stays-a-risky-bet/articleshow/133334804.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T01:05:13Z",
+   "summary": "Gaja Alternative Asset Management plans a ₹450 crore IPO to fund investments and repay loans. The company's promoter stake will decrease to fifty-four percent after the offering. Its business model relies on fund performance and is subject",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Global Market Today: Asian equities decline as chip selloff extends",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-equities-decline-as-chip-selloff-extends/articleshow/133334774.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T00:54:07Z",
+   "summary": "Asian stock markets witnessed a downturn as semiconductor shares plummeted sharply. The rise in bond yields and escalating oil prices contributed to a bearish market sentiment. Investors pulled away from growth stocks, driven by concerns ov",
+   "categories": [
+    "Markets",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Retail trading in high-yield corporate bonds gains momentum",
+   "url": "https://economictimes.indiatimes.com/markets/bonds/rising-interest-in-retail-trading-of-high-yield-corporate-bonds-reflects-shifting-investor-strategies-in-a-changing-market/articleshow/133334749.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T00:52:43Z",
+   "summary": "Online platforms now offer retail investors access to corporate bonds. These securities provide mid-teen yields with low minimum investments. Retail investors are increasingly participating in the corporate bond market. This trend is driven",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Nifty falls for sixth straight session; oil surge, CAS volatility rattle markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/will-indian-markets-continue-their-six-day-losing-streak-as-oil-prices-and-geopolitical-tensions-rise/articleshow/133334664.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T00:42:37Z",
+   "summary": "Indian markets faced pressure as the Nifty declined for a sixth consecutive trading session. Rising oil prices and ongoing West Asia conflict kept traders cautious throughout the day. The Nifty closed lower, reflecting broader market weakne",
+   "categories": [
+    "Markets",
+    "Commodities & energy",
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "D-St set for a cautious opening as GIFT Nifty signals muted start",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/pre-market-action-heres-the-trade-setup-for-todays-session/articleshow/133328000.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T00:30:00Z",
+   "summary": "The Nifty index continued its decline for a sixth consecutive session this week. Elevated crude oil prices and global tensions are impacting market sentiment negatively. Analysts anticipate continued pressure on Indian equities in the immed",
+   "categories": [
+    "Markets",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "Why Treasury Yields Are Surging—and What It Means for Your Money",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ0hVdkRUS2NQLTlfMmRmZHpPeTBhOWQtUWg2Zk5kdHpCV2VuWXNRMnBEVHFrci1scElfMmNVeXFtV1NpOTdoQjdYN0Z1MXZHR3hyZjRmNkFzbUwtU1hPa1BpZS0tYk9lSzlfVUVIV2pZRXpEbEJsaXhIZWNWV05NcTRMMjdlVzFQNjN6Vmdrd3hyLVhuSEtHYzZXTmFTR2FrMkxIZQ?oc=5",
+   "source": "Investopedia",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-19T00:05:02Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Cerebras’s stock has been a post-IPO bust. Its comeback hinges on this new chip.",
+   "url": "https://www.marketwatch.com/story/cerebrass-stock-has-been-a-post-ipo-bust-its-comeback-hinges-on-this-new-chip-a25a7ca4?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-19T00:00:00Z",
+   "summary": "Cerebras is betting that its specialized chips will outpace traditional graphics processing units as AI agents become more widespread.",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "BRICS weighs Russia’s grain exchange plan; digital platform for farm produce trade mooted",
+   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/brics-weighs-russias-grain-exchange-plan-digital-platform-for-farm-produce-trade-mooted/articleshow/133330137.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-19T00:00:00Z",
+   "summary": "BRICS countries are considering a Russian-backed proposal to create a grain exchange that would allow producers and buyers to trade directly and reduce dependence on major global commodity exchanges. The proposal is expected to be discussed",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump, Carney talk as Canada seeks to hold off 50% US tariffs",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQUsySjZzd2VEVVdyM0JoRVRwSXdNektZblJlYWgxUVc0MlNuekwtSkdGTkZWbkM4OUkxTFRrVWRNZlJKSk43clB3UUZHbGluN0R1NVAxTTEybTEtUW0xNm9lYjdHMVE5UTBkOWVlRGpQX0hEaHB2MnpuU1VISlQ3X3AtQmdXd254cFdrVkgtQ21uVGxLNnRMWkduVTVxVUhsYktlMHVCdUhLYTAwM0NpV3ZaVjFJOGphaW1CbHpR0gG-AUFVX3lxTFBBSzJKNnN3ZURVV3IzQmhFVHBJd016S1luUmVhaDFRVzQyU256TC1KR0ZORlZuQzg5STFMVGtVZE1mUkpKTjdyUHdRRkdsaW43RHU1UDFNMTJtMS1RbTE2b2ViN0cxUTlRMGQ5ZWVEalBfSERocHYyem5TVUhKVDdfcC1CZ1d3bnhwV2tWSC1DbW5UbEs2dExaR25VNXFVSGxiS2UwdUJ1SEthMDAzQ2lXdlpWMUk4amFpbUJselE?oc=5",
+   "source": "Gulf News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:59:05Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "What Chinese liquor maker Moutai's slump says about the country's economy",
+   "url": "https://www.cnbc.com/2026/08/19/china-economy-moutai-ai-property.html",
+   "source": "CNBC Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:58:09Z",
+   "summary": "Kweichow Moutai's half-year report showed a rare drop in net profit, following the first annual drop on record.",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Baa-by's day out: two goats try to take the bus in Portland – video",
+   "url": "https://www.theguardian.com/us-news/video/2026/aug/18/portland-oregon-goats-bus",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:43:07Z",
+   "summary": "Two goats briefly boarded a bus in Portland, Oregon, on 11 August and then hopped off. Continue reading...",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Essex-area honey producers fear impact of new U.S. tariffs — even if they don't export their product",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlkyRUwzWjBSMEdZSDBxblJhaEdjNU8xOHpWcnRLSEhGNWhIOVU2QmdfcTlvcjZQeWZXTm5RclAyemVzdl9jaGhzN1FFdnZXSFEtSXhvdjM4YmRFUzhrejRlLWJWVFhWZW9KcGZNU0FuY0V4ZkdmLUtSbHdURzYyTXdn?oc=5",
+   "source": "CBC",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:40:42Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "‘We are committed Christians’: Our son and daughter-in-law cut us out of their lives after a political argument. Should we change our $3 million will?",
+   "url": "https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T23:30:00Z",
+   "summary": "“We are hurt and confused, but we have also tried to respect the boundaries they have established.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Nukes all around? A fraying U.S. nuclear umbrella is pushing allies to weigh defense options, raising risk of a proliferation cascade",
+   "url": "https://www.cnbc.com/2026/08/19/nuclear-proliferation-defense-risk-trump-umbrella-.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:25:38Z",
+   "summary": "As countries take more responsibility for their own defense and nuclear states step back from arms-control commitments, the question of proliferation arises.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "The critical tech staying safe by going underground",
+   "url": "https://www.bbc.co.uk/news/articles/c20ydrndr0wo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:25:21Z",
+   "summary": "The war in Ukraine has spurred people to consider putting vital infrastructure underground.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Carney and Trump Talk Again as Deadline Nears on New U.S. Tariffs",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYWpMc3loMXNZWDhzTVA5NkJvUkJrV0UxUDFHWGZfdGFlQlU3cV9TUVRnZHZrdk9SSGNhdGdXSk9iUTZzelRBWjRURXF2c0lUVGtqaGxCMjRlMXczNXpGc29waFZocy1NYk9hMzBkUGh5dnF2a3RYT2pfNTJOb1hmTkFqeHVOdw?oc=5",
+   "source": "The New York Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:19:12Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?",
+   "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T23:15:00Z",
+   "summary": "“I see people who have a lot of money but little or no taxable income who still qualify for ACA Marketplace subsidies.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "'Banned over a pair of £2 sandals': Why some sellers are complaining about Vinted",
+   "url": "https://www.bbc.co.uk/news/articles/cx2kwnrn5zpo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:14:49Z",
+   "summary": "Several thousands of Vinted users say they have been wrongly suspended or permanently banned from the preloved app.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Mobile payments on the rise but cash decline slows",
+   "url": "https://www.bbc.co.uk/news/articles/cd7l9en2qrjo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T23:04:53Z",
+   "summary": "Nine in 10 mobile wallet users have their debit card loaded as their default payment method, new data shows.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Canada faces deadline to stop US tariffs on $20bn of exports",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNenJGems0TmczT01URFFqeUFTOV9ncGJGOXdDLTdkQlM2SWl0Ty1Cc3o3aWlKV01wWkFnZkRObHYtSmJOOFFzeG52bEp5RzRCUmJIMktOM3JVS2pXR0ZmYXFNNFJhT0pxMm10VzRtZ1hiODdNNTFuWDJfaGY4OWFMX3NxLXE?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T22:58:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump and Carney speak ahead of US tariff deadline",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSzJEYlV1TDhDTmsyN2JHQWlqYWpIdDlfbUZMdUc5SEVESldmSktuOUFVanBUTm5MSEliQ1FfNWJwMUhIcDUwbTlaRERyRk5zR3ZKai1Lbk4ybWdwMHFtSkN0dmdBZXRsRm1lWi1Nb0F3bUUtYTBnQmVYcDZVakEzTmJfZFdiYjNUd00yMlFOeTFka291My1PUWdB0gGfAUFVX3lxTE5FaEVUZ1BxSmJYaXlaSXlFengxY28xUEREejg1bU04a1ZZbTNzam5XNElfb1FodUlQbEJKRlpUVVlQLTFjcmk4N1cxcUMzT2FFNkEybUhXVWhpUXlKTDVwV2hhZ3NEc0VpOXhiZGRwNFpISVFsdERERDd6NDJlOUc5YWpYdjZJSUR1TUdVUmxXS2syZjc3d19sRmZ3b3JiRQ?oc=5",
+   "source": "Al Jazeera",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T22:53:12Z",
+   "summary": "",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "‘This is very stressful’: My son’s roof was damaged in a storm, but his insurance won’t pay. Can he fight this?",
+   "url": "https://www.marketwatch.com/story/this-is-very-stressful-my-sons-insurance-company-wont-pay-for-his-damaged-roof-how-can-he-fight-this-22f3a821?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T22:45:00Z",
+   "summary": "“They’re saying the roof now needs to be completely replaced.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "‘Too many people go bankrupt’: Should Medicare provide catastrophic coverage?",
+   "url": "https://www.marketwatch.com/story/too-many-people-go-bankrupt-should-medicare-provide-catastrophic-coverage-f7c653da?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T22:31:00Z",
+   "summary": "“Such a system would help ensure that no one is financially devastated by a serious illness or injury.”",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Ulez led to better lung size and function among London children, study finds",
+   "url": "https://www.theguardian.com/environment/2026/aug/18/ulez-better-lung-size-function-london-children",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T22:30:02Z",
+   "summary": "Researchers find capacity stunted by pollution was restored after introduction of ultra-low emission zone Children’s lungs grew bigger and stronger after the most polluting vehicles were restricted from entering London, a study has found. E",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Introducing Ulez was my hardest decision as mayor of London – but now we know its astonishing impact | Sadiq Khan",
+   "url": "https://www.theguardian.com/commentisfree/2026/aug/18/ulez-hardest-decision-mayor-london-impact-sadiq-khan",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T22:30:02Z",
+   "summary": "Critics said I was attacking motorists. It’s more important for me that the city’s children are no longer breathing dangerous levels of pollution Ulez led to better lung size and function among London children, study finds When I introduced",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Poor sleep can cost over-50s nine months of career, study finds",
+   "url": "https://www.theguardian.com/money/2026/aug/18/poor-sleep-cost-over-50s-nine-months-career",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T22:30:02Z",
+   "summary": "Findings highlight importance of sleep health during middle age, particularly for those with lower socioeconomic status Sleep that is extremely disrupted or that goes on too long could mean a loss of nine months from working life after the",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Meta hooked children on Facebook and Instagram, US court hears",
+   "url": "https://www.bbc.co.uk/news/articles/cly5r7vr7q1o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T22:11:07Z",
+   "summary": "Meta argued social media addiction does not exist, as a trial stemming from a major lawsuit brought by US states started.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Canada braces for US tariffs threatening jobs",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaUZjcW9WdjRIb2gzaUxXYzdsSURKbHV6enc3MVVOVUVkenJ1eXp2VlZaYXB2cFZpNm9JZGUxNlE5WklTQUxmWHRUbHlnY2dFdFE2WDVtb09KYUk4bXF3d3FIZExzdUZQM01mRS1wRzVFSlJsa1l6c2cyVENkbV82MU0yS2RhcThseWdRWjZGS0lWclhseWhIVk9CVzhvQVlOS1RCaXlCNUg1UQ?oc=5",
+   "source": "thestar.com.my",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T22:04:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Meta is facing its ‘Big Tobacco’ moment — and investors can profit",
+   "url": "https://www.marketwatch.com/story/meta-is-facing-its-big-tobacco-moment-and-investors-can-profit-e0f27b2d?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T21:59:00Z",
+   "summary": "Even a loss in the landmark youth-safety trial would do little to hurt Mark Zuckerberg’s empire.",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Watch Gold Falls as Traders Weigh US Inflation",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQazZ0QldaUWdiUDVpcHBrTkZSSk5xRkd5NWhrQWdoOWxhSkFWYzA2bFBXOGtSeDBDS042emtQZDI5OE1IejU0eVhIZC1QS1JHU0FaOHllNzFHRzFheDhtYWNZb3JKejczVzlpNG10VTl0czhJSko3cGVENFI4SGc4XzdhVS0ydU5ORFZFYUh5anBTM0I1dW1LMGc2bw?oc=5",
+   "source": "Bloomberg",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T21:54:37Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "JLR turns to Stellantis to grow Defender brand as U.S. tariffs squeeze profits",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPa0FUT3gtMzlGbGpUeW5vRE9YZGpVbVRSYVI4SVQxMENBdlpfbUtSdktaOVU4eF85ZXg3UW1mTFRkSkdNa2xpYkpBeUhtTVlnRHp1V1g0a3ZqNmRRLXp4Q1lFd0hEaklublBmbkxfLUM3TEhRajgzZUJ2OXVVeEVJazhSZlo2SzFjTjliRk92M0UxRzkxZTJqWll1eERpWlB0ejVPRExJdjNZclVETjFj?oc=5",
+   "source": "Car Dealership Guy News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T21:52:36Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Global bond markets put governments on notice over fiscal, inflation risks",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeWxrV2hFeTRkQjZmS2pjcmpEM1VJd2tTc2lkT1NxVjJ3c0Jpa2ZNQzJ3eFlSa1BoV3pQN3VLNzZEUHM0SHZHMURHLUthd21TV0R6TkY5N0lfR1pKRnRGZGpFc1FzamJfT1l2Q1pYQXloZ25LYWdxOHhQcndkZ21xU1lXZFJwc0ZOcnVqWUkyejNUdVcyWWlORW9rdzZORlJCZjZHMWZNX0tKYU44bDJReUpMcVNlOFBNd0E?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T21:51:20Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "The Next Round of US Tariffs on Canada Could Be the Harbinger of Even More Chaotic Trade Policy",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTWVXMzZnVmNjdmozSENWX2ZrRGNEaU1aQWVyUXc2WWZlSWFGdWhJdEhmaklheVV2clROQWZJUk5DNC1uWnRHUGlhZlg4bUpndGhkU3hRRkZUU0lLOTNkeG55WXM1bGUxdUg1Vkxwa1oxdXd6MnpxaWloN2NmYWIzWk01QVdyMmhsVmd5Z0JtVWl6Qi1pMkJrSHlScEFFVXJLWlJzRFBWMA?oc=5",
+   "source": "Cato Institute",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T21:45:40Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Canada braces for 50 percent US tariffs amid last-minute talks",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONW9JWllXSHFsckk0bGRvdTNVWnBBdE5XdWk4TTNTX29RcmQzZHJNMERRRGRkUE50eHFhUGdCSHFNLUFKOXpaZzBublNGamo2eXVDU0pueGJZU2NiNnk1QlFNRXFzd3d1Zm92V2lRMkRnQWs5djg1RlA3UE1RUkx2c2xwRjZNdw?oc=5",
+   "source": "The Hill",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T21:32:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
+   "url": "https://www.cnbc.com/2026/08/17/jeanie-buss-opposes-sale-family-stake.html",
+   "source": "CNBC Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T21:29:03Z",
+   "summary": "Jeanie Buss's lawyer says she has not agreed to sell the team and that any vote suggesting the Buss family is selling \"would be and is void.\"",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "AI chip stocks were riding high. Here’s why Micron and others are now pulling back.",
+   "url": "https://www.marketwatch.com/story/ai-chip-stocks-were-riding-high-heres-why-micron-and-others-are-now-pulling-back-cb4fd5af?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T21:08:00Z",
+   "summary": "Analysts note high expectations, concerns about elevated Treasury yields and a potential letdown surrounding Anthropic’s financial progress,",
+   "categories": [
+    "Central banks & rates",
+    "Markets"
+   ]
+  },
+  {
+   "title": "Are central banks all hitting the brakes at once?",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQmsyNjJFblNxbS1HNlpLa2JOaWJhYURfbVZieURQcUhUMEEzcm9kX09zZUhQbFRXczBwRU5GMjFiVjRKWFJlT0x6MG9qUDdkelhDN1l1SjctM2ZRUE42WHhsRTM5QlUySUtnNXdHLU1sekxqbTBaWW1SM0N1bVQ5RTBTNUtTdnlyOVZteVFSRk5lZ0hlQmJacw?oc=5",
+   "source": "Daily Sabah",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T21:05:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "OpenAI announces slowing pace of development after hack by rogue agent",
+   "url": "https://www.theguardian.com/technology/2026/aug/18/open-ai-pause-hack",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T20:47:17Z",
+   "summary": "Amid race with Anthropic, firm plans to overhaul research and training and require more safety parameters after hack OpenAI on ⁠Tuesday said it had slowed down the ⁠pace of ⁠its ​AI development while it overhauled its ⁠research and training",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Hidden Valley Ranch dressing may be a victim of this summer’s salad scare",
+   "url": "https://www.marketwatch.com/story/hidden-valley-ranch-dressing-may-be-a-victim-of-this-summers-salad-scare-f8537cd5?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T20:46:00Z",
+   "summary": "As the cyclospora outbreak has made consumers more cautious about salad purchases, one analyst points to sales declines for Clorox’s Hidden Valley brand.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "After an Alzheimer’s diagnosis it’s not to late to get your finances in order",
+   "url": "https://www.marketwatch.com/story/getting-diagnosed-with-dementia-isnt-the-end-its-a-time-to-take-financial-action-f52769b6?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-08-18T20:44:00Z",
+   "summary": "Careful planning in the early stages of memory loss can prevent financial and estate-planning headaches later.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Disney and ABC sue Trump's media regulator to stop early licence renewal",
+   "url": "https://www.bbc.co.uk/news/articles/cx2rzr49vr2o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T20:39:36Z",
+   "summary": "The network accuses the administration of retaliating against ABC because it \"disapproves of what ABC broadcasts\".",
+   "categories": [
+    "Regulation"
+   ]
+  },
+  {
+   "title": "30-year Treasury yield tops 5.33%, new 19-year high, on inflation and spending concerns",
+   "url": "https://www.cnbc.com/2026/08/18/treasury-yields-.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T20:33:38Z",
+   "summary": "Long-dated fixed income hit their highest level in almost two decades amid a worsening U.S. fiscal situation and persistently higher inflation.",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "New 50% tariffs on Canadian goods are scheduled to take effect at midnight",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWDAyQU5Sd0p4RXBkRF9TQWdEVGY3QVl0RmpWVndSUEZYaFBJZVROWDlnVW9wZXJ2dzFNRHRtLUF6am92WWtIM2t2emNCcHhnb01LY2l4TWZodlpmS3BZOW02d3c1OWtBWHV5TTBPcmdyZW5sUVRDVlphNXcxVE16YVJsYmtxZ3FldmFWT19SUHpBLVpiTFV5Z1RnTUdUZDFpMjJDSVMyd1R4UmpkVjBZS0o3UzAzUlJ5VTNKSFBHeGV6OTJSTTVRdTFn?oc=5",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T20:20:24Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "American Airlines to bring back TV screens on US flights",
+   "url": "https://www.bbc.co.uk/news/articles/c70glp55y95o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T20:17:33Z",
+   "summary": "It is also adding more premium seats, with the changes aimed at improving the travel experience and boosting revenue.",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "US states accuse Meta of covering up research on teen social media addiction in pivotal trial",
+   "url": "https://www.theguardian.com/technology/2026/aug/18/meta-child-safety-addiction-lawsuit-states",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T20:15:55Z",
+   "summary": "State attorneys general claim tech company intentionally designed addictive products that harm young people Lawyers representing 29 US states have accused Meta of covering up internal research showing Instagram was addictive for teenagers.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Carney and Trump speak ahead of 50% US tariff deadline",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSWVEWnFoOWE1UkpnT21mczg5X2RiNUc0ZlBRYXlqeDNNdDE0TkNaQVFKM3hneXdpc20xdjZPVGpwWDdVR0l6NFRWQ0htTHhySHNpalFMeUV4NFZscEZweV9kZlVpNWVjOHoxR0FxcVkzWkRqNVctWkIxaWlJTEFrVVlYTHFPWWlGaWxudQ?oc=5",
+   "source": "WTVB",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T20:03:51Z",
+   "summary": "",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "US woman sentenced to six years in prison over plot to kill treasury secretary",
+   "url": "https://www.theguardian.com/us-news/2026/aug/18/riley-english-sentenced-scott-bessent",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T19:48:41Z",
+   "summary": "Riley English said she was in the grips of a mental health crisis and abusing drugs, and that she planned to kill Scott Bessent A Massachusetts woman who told police that she brought homemade firebombs to the US Capitol to kill Scott Bessen",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "What Is the Yield Curve, and What Does It Tell Us About the Economy?",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWDk4R2tzaGhWWWxlZWtadHRvckU2UlZNdGljX19zR3JkYjlPdlgzejZOQmU2dU5PMTZIWnloRVh0NkFDcEQ3ZEdLRndFTUl4clh1YXowYkwzUndfLVpEdkhFNWYxRmhOVVd1cTE5c0JGdDdhbFhVQmxkS0VYaFpKRVhTelB2ZGZfM1RITk9lVng1WjA4eVkzZmg4TWI?oc=5",
+   "source": "Peter G. Peterson Foundation",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T19:48:25Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Soaring diesel prices rip across US economy",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMGxxRzZkQ3pWOXpfTTc0Ymc4elRkakZZdDByNDRxZnJSdUpfRTBJbnI5ZXFENW1CQThsQVBIM21yeEEwREZndVJUMG1uYWhFMmdndXQycTU3bDM4SVRnQU5jTWVUNDJvTmtFYmU0Z0lHY0R2LVFNbU14V3hhSFhEb0xialE?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T19:33:02Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "CSI report: Midwest inflation eases in July, Iowa households still feel the pinch",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcmFZbUVmTVh3LWsyWDdQdHJtVk5rMHA3dTdOT1M5SnEyWGhsdzV6bHZPaktXX3hCdV9nTkpsUDAwUUFDUHJ1NTJ5TEMyb3ZCaXZVOVJTN0RhX3JhSTNPclFRWGtxRmkyd0JBQ0FjWlFpS2dJLTBZNFZLdEIyREk5Wmloc3pGTGptMmEtSDhVSGhseFFoc2lyRmg2RGpjblYxbko2TmtKLXhOSnNRTGc?oc=5",
+   "source": "Corridor Business Journal",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T19:31:32Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Trump, Carney hold talks as new U.S. tariffs on Canada loom",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaUxwcVJleXVCTmVqeGVQN2Z6MUVCeXN6R3ZGMkg4QjJXRFBhV3B0ZWloQldGaE1UNmxXRmxlcU1qS0cxQUxKdjl1THdRNHd4NktTUDdjMzdDVy1jZEhGZUM5VTNkX19wdUszTjVwS1duMjA5NEhNb0IxSVFPeGRzSjZkRmNuQ2xwYzFxR25LNUcxb2lpQWVOTWV1Wk1FVXNMdWxHUQ?oc=5",
+   "source": "Canadian Affairs",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T19:22:34Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
   {
    "title": "RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction under LAF on August 19, 2026",
    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63398",
@@ -38,98 +1148,197 @@
    ]
   },
   {
-   "title": "Etched secures $700M at doubled valuation to scale AI inference hardware",
-   "url": "https://www.investing.com/news/stock-market-news/etched-secures-700m-at-doubled-valuation-to-scale-ai-inference-hardware-4865827",
-   "source": "Investing.com",
+   "title": "Barnett, Peyton named to Federal Reserve industry councils",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQenJvM000S2huQzZ6N3R2dUJrOE9nN1hqOVg1ODd5c3h1dkFhUFZjMU94U1doMWVQS3FWTDZqOXk4bHdvZ0FqQ1BqMlY3X29NaWZTV3p2NUZuWUdUOWp2WjQ5WW4wbUtHdGdrN2UwVFI3V1RZTG4xSjhnOGZFVzlDbDR3RUJ2OGdkRGRWYVE0NUZHWVZyM3c?oc=5",
+   "source": "Talk Business & Politics",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:44:40Z",
+   "published": "2026-08-18T19:04:24Z",
    "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Jeff Bezos consortium could be majority Liverpool shareholder within a year",
+   "url": "https://www.theguardian.com/football/2026/aug/18/jeff-bezos-liverpool-1892-holdings-fenway-bid",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T18:49:29Z",
+   "summary": "1892 Holdings has first refusal if FSG opts to sell Group paid more than £2bn for initial 38% slice of club 1892 Holdings, the new investor in Liverpool, has first refusal to become the majority shareholder in the next 12 months should Fenw",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Halozyme Therapeutics stock hits all-time high of 104.86 USD",
-   "url": "https://www.investing.com/news/company-news/halozyme-therapeutics-stock-hits-alltime-high-of-10486-usd-93CH-4865826",
-   "source": "Investing.com",
+   "title": "Gold falls as traders weigh US inflation, rates amid bond rout",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTlFjNmw1c1JySm9laWRiRTFwY1l6WS1KSUF1eGNxUVo1MzV2Q2VsY2Z2d21ncTVJWkNiVXRXNTFLMi1wdmNqbTUybnhRS2VqMERnRGZ5cjllWEpBckVTX0dOaDRpRDFmVHNhRGtNaXF3S3A3VFJ3d2tIMzY2ZUViN0dsYV8tdzlrVmFhZl94MGxDYUs0OE10Y3hQZFlrS1lOcHR4aDBDekZLczRfOEpmLTE3c2RaYnQ4VUh3dGJxRdIBvwFBVV95cUxOTlFjNmw1c1JySm9laWRiRTFwY1l6WS1KSUF1eGNxUVo1MzV2Q2VsY2Z2d21ncTVJWkNiVXRXNTFLMi1wdmNqbTUybnhRS2VqMERnRGZ5cjllWEpBckVTX0dOaDRpRDFmVHNhRGtNaXF3S3A3VFJ3d2tIMzY2ZUViN0dsYV8tdzlrVmFhZl94MGxDYUs0OE10Y3hQZFlrS1lOcHR4aDBDekZLczRfOEpmLTE3c2RaYnQ4VUh3dGJxRQ?oc=5",
+   "source": "Moneycontrol.com",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:43:43Z",
+   "published": "2026-08-18T18:38:21Z",
    "summary": "",
    "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Meta targeted children to boost Facebook and Instagram use, lawyer says as landmark trial begins",
-   "url": "https://www.investing.com/news/stock-market-news/meta-faces-29state-trial-that-could-reshape-instagram-and-facebook-4864684",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:42:37Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "BAE Systems names Michael Loeffler supply chain chief",
-   "url": "https://www.investing.com/news/company-news/bae-systems-names-michael-loeffler-supply-chain-chief-93CH-4865825",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:36:29Z",
-   "summary": "",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Gold miners fall as bullion retreats on yield surge",
-   "url": "https://www.investing.com/news/stock-market-news/gold-miners-fall-as-bullion-retreats-on-yield-surge-93CH-4865824",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:35:57Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
+    "Inflation & growth",
     "Commodities & energy"
    ]
   },
   {
-   "title": "Stock Market Today: Nasdaq Weighed Down By Chip Names; Credo Plunges With Micron, Sandisk (Live Coverage)",
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-nvidia-stock-nvda/?src=A00220&yptr=yahoo",
-   "source": "Yahoo Finance",
+   "title": "Trump says no talks scheduled with Iran as he teases action in Hormuz Strait",
+   "url": "https://www.cnbc.com/2026/08/18/us-iran-war-trump-hormuz-trump-ceasefire-expires-extension-.html",
+   "source": "CNBC International",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:35:06Z",
+   "published": "2026-08-18T18:28:37Z",
+   "summary": "Trump insists the U.S., not Iran, is in control of the strait, even though transiting vessels continue to come under attack and few attempt the crossing.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Global borrowing costs hit fresh highs on oil, AI and inflation",
+   "url": "https://www.bbc.co.uk/news/articles/c1k1x1zdywdo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T18:20:08Z",
+   "summary": "Interest rates on long-term US, UK, German and Japanese government debt have soared.",
+   "categories": [
+    "Inflation & growth",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "The Fed minutes are coming —and they’re more crucial now as Warsh limits his communication",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNWZuSnZBNHFtc2NWUXVzZGUzaWd2cmp1OHNsWXV3ZWZTNU5BcXdEOVRUdmFreG5vaUJtR3VHcHZhMHBaa01KaVJMZERhRHQ2VlBuU0RrT2plaVVqZnpBaHBmaWNfWm9Remd6bFlsQUl2bWpqRHJvcURRWGRBenhkX2xPeURGakQ5ZTZoMWlqWjZHMlQ2NU9vdHpjbEU2X1FoM3R1WEFJQTBBd0RmOElNUThYdUZydHkxMTllM3lDT1ZVc28tR0tITjVqSQ?oc=5",
+   "source": "MarketWatch",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T18:19:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "India's outward FDI jumps 17% to $5.7 billion in July: RBI",
+   "url": "https://economictimes.indiatimes.com/news/economy/finance/indias-outward-fdi-jumps-17-to-5-7-billion-in-july-rbi/articleshow/133329971.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-18T18:14:24Z",
+   "summary": "India’s outward FDI rose 17% year-on-year to $5.70 billion in July from $4.88 billion a year earlier, according to provisional RBI data. It was also higher than the $3.14 billion recorded in June.",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
+   "title": "Govt organises awareness session on EU CBAM for exporters",
+   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/govt-organises-awareness-session-on-eu-cbam-for-exporters/articleshow/133329985.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-18T18:11:45Z",
+   "summary": "Indian exporters received an awareness session on the EU's Carbon Border Adjustment Mechanism regulations. This mechanism, effective January 1, imposes a carbon tax on specific imported goods. The session covered the framework, applicable p",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "What Is Driving the Canadian Dollar’s Rise Against the US Dollar?",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLWZGRjdhS08xUGsxNThkb3p6YzYwSjlKVU5fMTQ2RXBoU2VTSmJXSzY2Nk0tY05Wa1FhQ1ZwNEpsTDZUM2hBb092bktrVlhvRS0wMDZkVEhpUmY2V0lOWjQ2SWFIUUZnN0NoN1F5STVsb3NkYVVvNGhZTmRkMGo3ZGNIQXl5SzFTbzdyVm1ERHJoM1JCRWRlY0RCV3ZmRWhud1E?oc=5",
+   "source": "Morningstar",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T18:06:48Z",
+   "summary": "",
+   "categories": [
+    "Currencies"
+   ]
+  },
+  {
+   "title": "Canadian dollar weakens ahead of US deadline for new tariffs",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZk9uOEZMTFM1WTBJVi1pNHMxc3pOZ1VfS3Q4ZWJEMmdxSC1mVi1ib1JRQWxDNWI3Y1g5V3hhT3YwMldQTmE0RDIySkVwOWlRNzZvNW1maHVieGxKeGpBY0JJdG1jVXNrWUp6azc3TnItR0dsVW90b1ZzTG5XNHlvcjlpZXdkNkxEU0JpSG1mbmpwX2tIWWttbElGZE9XNm8?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T18:03:53Z",
+   "summary": "",
+   "categories": [
+    "Currencies"
+   ]
+  },
+  {
+   "title": "94 economists expect Fed to hold rates at 3.50%-3.75%",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSTNqcGNiRmw5Vi1WMmpKNGVyOXZlYWZqeGpvNGd4cHR2bnVNMHcwalZJOFlrTndEM2NpelQ0eExva1h2aVJzcEpxU0tfVTJlOHhwVGFxVV85S2xYY2tSQm5rNzRaMkJmV2poT25XekZMWVN5UTRwWEhKMVNmd2lKM3dZb1psRjZCcnkzTTRHVDJpREppZURN?oc=5",
+   "source": "idnfinancials.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T18:00:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "The Guardian view on global inequality: extreme wealth threatens democracy | Editorial",
+   "url": "https://www.theguardian.com/commentisfree/2026/aug/18/the-guardian-view-on-global-inequality-extreme-wealth-threatens-democracy",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T17:59:07Z",
+   "summary": "New York mayor Zohran Mamdani shows Britain’s Andy Burnham that confronting billionaires need not mean the end of cooperation with Donald Trump In November, Californians will vote on a one-off 5% levy on residents worth more than $1bn. The",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Finance Minister Nirmala Sitharaman urges PSBs to sharpen youth outreach, build ahead of demand",
+   "url": "https://economictimes.indiatimes.com/news/economy/finance/finance-minister-nirmala-sitharaman-urges-psbs-to-sharpen-youth-outreach-build-ahead-of-demand/articleshow/133329335.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-18T17:57:11Z",
+   "summary": "Finance Minister Nirmala Sitharaman urged public sector banks to attract young customers. She suggested a focused 'Banking for Youth' campaign starting October 2. Banks must also improve priority sector lending quality and reach. Credit for",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Ready-made food prices may stay high as input, packaging costs rise",
+   "url": "https://economictimes.indiatimes.com/news/economy/indicators/ready-made-food-prices-may-stay-high-as-input-packaging-costs-rise/articleshow/133329018.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-08-18T17:50:08Z",
+   "summary": "Ready-made food prices are likely to stay high due to increased input and packaging expenses. Inflation in these products accelerated to nine percent year-on-year in July. Key commodity prices like tomatoes and edible oil have seen signific",
+   "categories": [
+    "Inflation & growth",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Mitigating tariffs via USMCA may have limited 2025 price increases",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBXRjdSLWpPaEJaQnkybWdxeDE2Y1U1TG5SMkgzTVlOcl9kWjRGQzVZVHZGZlctVXNWT3c3bmNiZG54SEd2QVR6M21aMHl2cV9JNjlwTlNYMXl6R3k0VjFQazZKd1c?oc=5",
+   "source": "Federal Reserve Bank of Dallas",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T17:48:45Z",
    "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Rocket Companies Slips as Mortgage Stocks Struggle: Can RKT Catch Up With UWM and Radian?",
-   "url": "https://finance.yahoo.com/real-estate/articles/rocket-companies-slips-mortgage-stocks-173218449.html",
-   "source": "Yahoo Finance",
+   "title": "‘Can’t enjoy your pint’: Wetherspoons customers welcome ban on loud phones",
+   "url": "https://www.theguardian.com/business/2026/aug/18/wetherspoons-customers-welcome-ban-music-phone-calls-speaker",
+   "source": "The Guardian",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:32:18Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Euronext wheat rises as Black Sea disruptions offset weak demand",
-   "url": "https://www.investing.com/news/commodities-news/euronext-wheat-rises-as-black-sea-disruptions-offset-weak-demand-93CH-4865822",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:31:42Z",
-   "summary": "",
+   "published": "2026-08-18T17:32:31Z",
+   "summary": "Patrons at two of the chain’s London pubs were all for Tim Martin’s ban on playing music or taking calls on speaker The terrace of the Moon Under Water Wetherspoons pub in Leicester Square was full of people enjoying the warm weather and ch",
    "categories": [
     "Markets"
    ]
@@ -147,163 +1356,39 @@
    ]
   },
   {
-   "title": "ARM Stock: The $2 Billion AI Signal Investors Shouldn’t Ignore",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/arm-stock-2-billion-ai-173027890.html",
-   "source": "Yahoo Finance",
+   "title": "Trump and Carney hold urgent talks as steep 50% US tariffs on Canada loom",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSlI4TDFLNWVTdUpyQ3duNjE0MXhpelYzS2hpZzd5MENqbEZuTlVjbXRSb1RzOUNWVENHMnFEVVdBQXd6WlBpa1BtMERpZGpwUWk4dTBReGs4ZDNKRXZYVjJvTDUxaTNOb1QzeXpmQmlyY2JiZzBMZjFYZUZHcTlOcUFmaGxpX3lsa1NDY3BMdS1NenZzbVFsT3owMjBfc2xhVGxIQXNEeDNpdThRcTlsSVVrSEkzMHhsUmdNLUFOZk0zZWVkcHNPOXk3R0ZicHVs0gHQAUFVX3lxTE9xbFp6amNrZXNqdGtLVnBKQXQ5eVFCZjJRYWl3ckp1N1AySUhMMFg0V1drQWxPTFJfRDhJU3dWaXZWeVNqak56clQwUEZkN3J5eFFHODdkekxNdE5jVnhUNGFxVUtHaUVndm8tRGJMTWh3T3kwNXByQklhRE5iUXkwSGh2M0JDRGpScFFHNHpzc05jUllaUTZqbWpEa1RRUTd5Vjk5MTg1RzZ3TGdqamZhWHJKNHhmSWlzUWZ5TXh3ZGdqQm53MjZaMkY3U0ROTXQ?oc=5",
+   "source": "South China Morning Post",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:30:27Z",
+   "published": "2026-08-18T17:29:31Z",
    "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Nasdaq slides, yields elevated as Mideast conflict fears grow",
-   "url": "https://finance.yahoo.com/news/stocks-slide-yields-elevated-mideast-150928612.html",
-   "source": "Yahoo Finance",
+   "title": "U.S. government debt yields are surging at a bad time. Here's what's behind the move",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWFJ4QWF6ZXRKT3NEQzd5U1J5bi1JVGQwZnotbWZGeVNzZEdhdGVGQy00RnJDSUtVZE1VYVR5bFYzcDBKZktkX2xXNVJubmUtZ1VlZDR3RXNHQXVkcVNNVExodkNwcHRQVEV0UzMyZEZjS2Z6bkFQZ3I3Nm9kTTkxOFNaalhnN2FzQTRkcWpVdWpYMVFfa0J0Zi1xRTZHdDhyNVV5V0FtZFlrb0dxUkJ0ZDBKdkJPbGfSAbwBQVVfeXFMTWVadE82UFBkbndVWks0UzdhajNTZlhaVDdnLVhnTlpOQUJqWHBPbFRxMFpZSi1fOXp6em5NalBzSnNfMzY4MW1YVWdMLWwyMUxpNnV4YVd0V09kN1pCWEtYREI0dHMwN2NaQ2NjTm5zWFhNQi12MlZTLXdaLUU3SnRQUmFhbk1KaXpPNHpzNjFiZGk3M0dVOXNUQW1laWRxRXczRFBidW94NGpRbC1ZM01nMGhNSkdyMl84MTk?oc=5",
+   "source": "CNBC",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:30:21Z",
-   "summary": "",
-   "categories": [
-    "Markets",
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Realty Income Yields 5.2%. Here's Why the Payout Keeps Growing.",
-   "url": "https://finance.yahoo.com/real-estate/articles/realty-income-yields-5-2-172800610.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:28:00Z",
+   "published": "2026-08-18T17:25:20Z",
    "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "People Moves: Carson Hires Recruiter from Osaic for Indie Channel",
-   "url": "https://finance.yahoo.com/small-business/articles/people-moves-carson-hires-recruiter-172717129.html",
-   "source": "Yahoo Finance",
+   "title": "3 Utility Funds to Play Safe as Oil Prices Surge on Geopolitical Tensions",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNmhPbEljd1FONHZfaTNyV0hSRWZiY0M5SGVTLUw3QWE1eVh0ZkxGWklreXMyeURGa2hSYlMzZWZMdVI3bUJveU9kU0VJQ2d0X2NORVNWbmdiellFRm5MMDNRcXpZNGMtcXhNWkoxWFFxaThiUG96T3hiTWhBcWZsekxoMUhsSk9RNnhWVVpCSTJyRHlKSnhfcE44YUJTX2UxcnM3bk9nRkZuTHZYYUFzT0hnSHUxYVItNUFJd1EtT0taYkk3aHM5OQ?oc=5",
+   "source": "tradingview.com",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:27:17Z",
+   "published": "2026-08-18T17:24:00Z",
    "summary": "",
    "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Court upholds limits on immigration enforcement at houses of worship",
-   "url": "https://www.investing.com/news/economy-news/court-upholds-limits-on-immigration-enforcement-at-houses-of-worship-93CH-4865816",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:26:13Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Gorilla Technology Rises 3% as AI Infrastructure Momentum Builds: How GRRR Compares With Palantir",
-   "url": "https://finance.yahoo.com/technology/ai/articles/gorilla-technology-rises-3-ai-172605828.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:26:05Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Here’s the case for Nvidia’s stock to climb 55%, according to BofA",
-   "url": "https://www.marketwatch.com/story/heres-the-case-for-nvidias-stock-to-climb-55-from-here-according-to-bofa-f5483409?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T17:26:00Z",
-   "summary": "An analyst is looking past financing risks and noting that Nvidia could appeal to investors through its enhanced share buybacks.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Extract Profit From Starbucks Stock Swings With This Long Strangle Option Trade",
-   "url": "https://www.investors.com/research/options/starbucks-stock-sbux-coffee-trading-options-income-trade-strategy-markets/?src=A00220&yptr=yahoo",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:24:46Z",
-   "summary": "",
-   "categories": [
-    "Markets",
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Behind-the-Meter Energy Stocks Fall Tuesday: FTAI Aviation Down 7%, GE Vernova Down 6%, Caterpillar Down 4%",
-   "url": "https://finance.yahoo.com/energy/articles/behind-meter-energy-stocks-fall-172353733.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:23:53Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Quantexa considers listing in UK or US markets",
-   "url": "https://www.investing.com/news/stock-market-news/quantexa-considers-listing-in-uk-or-us-markets-93CH-4865814",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:22:40Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Nvidia vs. Micron: One Sells AI Chips, One Sells the Memory Next to Them. Here's Which Stock Actually Benefits More From the 2026 AI Infrastructure Buildout.",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-vs-micron-one-sells-172100661.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:21:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "What Does the Sale of Atlassian Stock Worth $1.2 Million by Its Chief Revenue Officer Mean for Investors?",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/does-sale-atlassian-stock-worth-172001265.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:20:01Z",
-   "summary": "",
-   "categories": [
-    "Markets",
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Beyond Oil: Record Revenue & U.S. Direct-Sales Expansion Fuel Scaling Phase – Quarterly Update Report",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-oil-record-revenue-u-171951108.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T17:19:51Z",
-   "summary": "",
-   "categories": [
-    "Commodities & energy",
-    "Corporate & deals"
+    "Commodities & energy"
    ]
   },
   {
@@ -331,27 +1416,66 @@
    ]
   },
   {
-   "title": "Trump says no talks scheduled with Iran as he teases action in Hormuz Strait",
-   "url": "https://www.cnbc.com/2026/08/18/us-iran-war-trump-hormuz-trump-ceasefire-expires-extension-.html",
-   "source": "CNBC International",
+   "title": "Blockchain Group Asks SCOTUS to Review Fed’s Denial of Crypto Bank’s Bid for Master Account",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRTBnMUJ4RFpwOUpOWXBJUDJNUm9Qbmd1NF9EcnZYQ3JvOXBPMmhnZjVTei1feE1UblliSU5NT0ZWampfWVZTdXZDRFhnWVVLUXNiNWdBWnplSnduR3lrNFFBYlRWV29sYmZFbHpfcGdIY2Z0dmtTUGxHR2VZNVdhX0dfTkotYXRXVDU1Y1FheHVlV0FKT2ZwQUNCaDY1bDBDQmZucU1GR25uN0J4SkFyc1FUemNCbEpqSmZVdXJneTNNOWI5YVR1ekhaZGJCZWtkcmM3UUNQaw?oc=5",
+   "source": "PYMNTS.com",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:00:33Z",
-   "summary": "Trump insists the U.S., not Iran, is in control of the strait, even though transiting vessels continue to come under attack and few attempt the crossing.",
+   "published": "2026-08-18T17:14:24Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Crypto"
+   ]
+  },
+  {
+   "title": "Costco launching Medicare Advantage plans with SCAN Group",
+   "url": "https://finance.yahoo.com/healthcare/articles/costco-launching-medicare-advantage-plans-171035001.html",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T17:10:35Z",
+   "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "‘I’m running out of time’: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
-   "url": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
+   "title": "The US dollar is awaiting the Federal Reserve's minutes What are the markets expecting",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeFA2Tk5KaE1TMWRwbHZWTXRkV1QzQVBnVEx6U2xEeTBtcjZ4YjJoRDJnd2YzNVJnV1NQeUtaUXFDSzlweDJBVm1PdWVZNmt3TERXT2RteWZ1UEFxOE9RZ3dhMGJ1TFVrNmVjNnJIVTBiZ0tZY0tyWC04OUIwZlRlY20tZEU3TGcybVBUNmIxRml4bVlUQmFtMkM2MTBSUUJMRjV0RGdnNzhZN0ZsUnVUenEzS1R0OVZBbk9VdFRRb2RPQndDcjVhcUd2OFRYQTIz?oc=5",
+   "source": "المتداول العربي",
+   "region": "Global",
    "official": false,
-   "published": "2026-08-18T17:00:00Z",
-   "summary": "“My CPA hasn’t gotten back to me.”",
+   "published": "2026-08-18T16:59:26Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Currencies"
+   ]
+  },
+  {
+   "title": "Bond yields are climbing. Here’s what that means for mortgages and other consumer borrowing",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY0RiRExxR2t5ZXExSk41NEpoSjh6OWoyakE1N2ZCTlFPcGlHV0dranFhNG1ZcXhma1d3TmJuOTYxZ3ZYRnMycnNFSDFWT3ZEd2N4TUJVVzhReF9COFFwbFdFeUpHbzh1dk5WWnFyNXplWFdhTUZtTnE5Z0x1SVQxM2h0LXd3MVF0VDl1OERISGHSAZYBQVVfeXFMTmI3RUx1bDhWcUFtVkdET2JJNlA2OEhqUy10NzhZRjlmQXRYSElIVEM5WExKa1h2ODJiWWc0OGVGaFRqb3poczF2M01lcmpCSVdzellJOTRXVTJCNVo1TXpSOXhpMEFUeXNMaUdxY041a0VoTWw5ZjRtc2otck1LMHBxNURpc0c0QVUtUDFyeXNHVElUODBB?oc=5",
+   "source": "CNBC",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T16:58:29Z",
+   "summary": "",
    "categories": [
     "Markets"
+   ]
+  },
+  {
+   "title": "Australian Dollar Momentum Builds on a Repriced Federal Reserve Path",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVTNkQzdtUFpaRW1tTUtodWg1bWN0WjNEUjBXaS1yUUZWQ3NRN3Q1cDZRN09YdGdnTGRRQmgzbGNlSmdMdExWSGY4Z21RWTVMX2VTMDhXRURlU2UyVk1fVGVPVHFobHFjNkJ6VEJ4T2ItbVQxU2FxQWFZU3FpSHdOQVcyYVR2M1ZIVFhJendadEJGUFp3Vk9lbXRoNVY2NTIwVGhBbVpSWQ?oc=5",
+   "source": "stonex.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T16:57:54Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Currencies"
    ]
   },
   {
@@ -367,15 +1491,15 @@
    ]
   },
   {
-   "title": "Soon you can buy Medicare Advantage plans at Costco. What you need to know.",
-   "url": "https://www.marketwatch.com/story/soon-you-can-buy-medicare-advantage-plans-at-costco-what-you-need-to-know-34e03242?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
+   "title": "How a secret 20,000-mile solar supply chain outplayed U.S. tariffs",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR1k2VWpfN1FWbmlfdmxHVTYwSmh0Zjh4MDE4cTMwb0xMVDAwZkVIclJhclhTMjVLU3N6aVRMLVdBbzhqR21KXzA0ZGE4OUh6eGM3SFEtTFphZV9YZk9ZQ3llZkF1MjhOcy1JTkptZFlXQnlRSnZxVm9aemxZTUt2RGFCYldXSlJzSmZDTl96UDRzQVdXbjZwYWZLZS03cUl2aWtQOHlSTjBYbkFMYW9hRGI4dw?oc=5",
+   "source": "Los Angeles Times",
+   "region": "Global",
    "official": false,
-   "published": "2026-08-18T16:54:00Z",
-   "summary": "The warehouse club becomes the latest consumer brand to offer health insurance.",
+   "published": "2026-08-18T16:56:00Z",
+   "summary": "",
    "categories": [
-    "Markets"
+    "Geopolitics & trade"
    ]
   },
   {
@@ -386,18 +1510,6 @@
    "official": false,
    "published": "2026-08-18T16:49:55Z",
    "summary": "The company is seeking to launch a \"US500\" perp tied to the MerQube U.S. Large Cap Index, according to a regulatory filing.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Wall Street wants to turn sports betting into ETFs. Critics call it dangerous ‘nonsense.’",
-   "url": "https://www.marketwatch.com/story/wall-street-wants-to-turn-sports-betting-into-etfs-critics-call-it-dangerous-nonsense-a83db946?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T16:48:00Z",
-   "summary": "The convergence of investing, trading and sports betting may be getting a major shot in the arm — or shot on goal — starting with 32 new exchange-traded funds.",
    "categories": [
     "Markets"
    ]
@@ -416,19 +1528,6 @@
    ]
   },
   {
-   "title": "AI chip stocks were riding high. Here’s why Micron and others are now pulling back.",
-   "url": "https://www.marketwatch.com/story/ai-chip-stocks-were-riding-high-heres-why-micron-and-others-are-now-pulling-back-cb4fd5af?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T16:45:00Z",
-   "summary": "Analysts note high expectations, concerns about elevated Treasury yields and a potential letdown surrounding Anthropic’s financial progress,",
-   "categories": [
-    "Central banks & rates",
-    "Markets"
-   ]
-  },
-  {
    "title": "State Government Securities - Full Auction Result",
    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63397",
    "source": "RBI",
@@ -441,55 +1540,6 @@
    ]
   },
   {
-   "title": "Gaja Alternative Asset Management mobilises Rs 165 crore from anchor investors",
-   "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/gaja-alternative-asset-management-mobilises-rs-165-crore-from-anchor-investors/articleshow/133327455.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T16:36:22Z",
-   "summary": "Gaja Alternative Asset Management secured Rs 165 crore from anchor investors on Tuesday. The company's Rs 550 crore initial public offering opens for subscription on Wednesday. The IPO includes a fresh issue of Rs 450 crore and an offer for",
-   "categories": [
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Disney and ABC sue Trump's media regulator to stop early licence renewal",
-   "url": "https://www.bbc.co.uk/news/articles/cx2rzr49vr2o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T16:22:54Z",
-   "summary": "The network accuses the administration of retaliating against ABC because it \"disapproves of what ABC broadcasts\".",
-   "categories": [
-    "Regulation"
-   ]
-  },
-  {
-   "title": "Can you get a piece of State Farm’s $5 billion cash-back dividend? Here’s how to check.",
-   "url": "https://www.marketwatch.com/story/can-you-get-a-piece-of-state-farms-5-billion-cash-back-dividend-heres-how-to-check-027d1c21?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T16:21:00Z",
-   "summary": "If your car was insured by State Farm in 2025, you’re in luck: You likely qualify for a dividend payment from the insurance giant.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "30-year Treasury yield tops 5.33%, new 19-year high on inflation, spending concerns",
-   "url": "https://www.cnbc.com/2026/08/18/treasury-yields-.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T16:13:23Z",
-   "summary": "Long-dated fixed income hit their highest level in almost two decades amid a worsening U.S. fiscal situation and persistently higher inflation.",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
    "title": "Nvidia's AI moat is shifting from chips to capital",
    "url": "https://www.cnbc.com/2026/08/18/nvidias-ai-moat-is-shifting-from-chips-to-capital.html",
    "source": "CNBC International",
@@ -497,70 +1547,6 @@
    "official": false,
    "published": "2026-08-18T16:13:21Z",
    "summary": "Nvidia still has dominant market share in AI chips, but with competition picking up steam, the company is taking greater advantage of another key asset.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Gambling is everywhere. How do financial advisers keep clients from going overboard?",
-   "url": "https://www.marketwatch.com/story/financial-advisers-tell-us-how-they-handle-clients-who-love-to-gamble-9438f239?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T16:11:00Z",
-   "summary": "Financial advisers tell us how they handle clients who love to gamble",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Kotak Mahindra Bank raises $650 million in debut dollar bond sale",
-   "url": "https://economictimes.indiatimes.com/markets/bonds/kotak-mahindra-bank-raises-650-million-in-debut-dollar-bond-sale/articleshow/133327166.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T16:10:42Z",
-   "summary": "Kotak Mahindra Bank raised $650 million through its debut five-year dollar bond, pricing notes at 108 basis points over US Treasuries. Strong demand from Asian and European investors helped tighten pricing from initial guidance, with orders",
-   "categories": [
-    "Central banks & rates",
-    "Currencies",
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Global borrowing costs hit fresh highs on oil, AI and inflation",
-   "url": "https://www.bbc.co.uk/news/articles/c1k1x1zdywdo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T16:09:45Z",
-   "summary": "Interest rates on long-term US, UK, German and Japanese government debt have soared.",
-   "categories": [
-    "Inflation & growth",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Sebi to soon float consultation paper on distribution framework for corporate bonds",
-   "url": "https://economictimes.indiatimes.com/markets/bonds/sebi-to-soon-float-consultation-paper-on-distribution-framework-for-corporate-bonds/articleshow/133327145.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T16:08:36Z",
-   "summary": "Sebi is preparing to unveil a consultation paper focused on the distribution of corporate bonds. This initiative aims to refine the framework governing corporate bond sales and is evaluating additional distributor categories to broaden debt",
-   "categories": [
-    "India",
-    "Regulation"
-   ]
-  },
-  {
-   "title": "Sakarni Plaster to invest Rs 450 cr on expansion; to set up 2 building material plants",
-   "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/sakarni-plaster-to-invest-rs-450-cr-on-expansion-to-set-up-2-building-material-plants/articleshow/133327030.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T16:07:04Z",
-   "summary": "Sakarni Plaster has announced an ambitious plan to invest Rs 450 crore over the next two years. This investment will focus on establishing new manufacturing facilities for gypsum boards and paints, while also expanding the capacities of exi",
    "categories": [
     "Markets"
    ]
@@ -580,101 +1566,16 @@
    ]
   },
   {
-   "title": "US single-family housing starts slide in July",
-   "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/us-single-family-housing-starts-slide-in-july/articleshow/133326995.cms",
-   "source": "ET Markets",
-   "region": "India",
+   "title": "Gold prices today, Tuesday, August 18, 2026: Gold falters as U.S. Treasury yields rise",
+   "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-18-2026-gold-falters-as-us-treasury-yields-rise-154856224.html",
+   "source": "Yahoo Finance",
+   "region": "Global",
    "official": false,
-   "published": "2026-08-18T16:01:04Z",
-   "summary": "The U.S. witnessed a notable decline in single-family homebuilding last month, primarily due to elevated mortgage rates. An increase in unsold new homes exacerbated this downturn. However, there was a slight uptick in permits for future con",
+   "published": "2026-08-18T15:48:56Z",
+   "summary": "",
    "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "‘It’s a double-edged sword’: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
-   "url": "https://www.marketwatch.com/story/its-a-double-edged-sword-my-husband-got-a-42-000-bonus-will-it-wipe-out-our-affordable-care-act-subsidy-32db285e?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T16:00:00Z",
-   "summary": "“We were advised to return the bonus and take out a home-equity loan.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Jimmy Kimmel infuriated Trump. Now Disney is suing the FCC over what it calls a ‘retaliatory campaign’ against ABC.",
-   "url": "https://www.marketwatch.com/story/disney-sues-fcc-over-broadcast-license-threat-9fb4745d?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T15:59:00Z",
-   "summary": "Disney says the Trump administration “has attacked ABC’s speech — the stories its journalists report and the viewpoints its network programs air.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Keralam Govt to lease land to CSL for Rs 5,000 cr ship block building project, says CM Satheesan",
-   "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/keralam-govt-to-lease-land-to-csl-for-rs-5000-cr-ship-block-building-project-says-cm-satheesan/articleshow/133326951.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T15:58:14Z",
-   "summary": "The Kerala government has made a significant move by leasing 18.16 acres of land to Cochin Shipyard. This new land allocation will facilitate a ship block building project with an impressive investment of Rs 5,000 crore. The initiative is a",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "German apartment building permits rise 14% in June as sector recovers",
-   "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/german-apartment-building-permits-rise-14-in-june-as-sector-recovers/articleshow/133326801.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T15:55:30Z",
-   "summary": "Germany's property sector demonstrated a positive trajectory in June, marked by a nearly fourteen percent rise in apartment building permits. The tally reached twenty-one thousand six hundred units, showcasing a robust recovery compared to",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Realty firms, PE funds commit Rs 13K cr investment since 2025 to build senior living homes: Colliers",
-   "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/realty-firms-pe-funds-commit-rs-13k-cr-investment-since-2025-to-build-senior-living-homes-colliers/articleshow/133326780.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T15:53:04Z",
-   "summary": "A staggering investment of over thirteen thousand crore rupees has been earmarked for the creation of senior living communities, enabling the construction of seventy-five thousand new units. The senior living sector is witnessing rapid grow",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Ahead of Market: 10 things that will decide stock market action on Wednesday",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-wednesday/articleshow/133326718.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T15:50:45Z",
-   "summary": "Indian equities extended losses as fading Middle East peace hopes, elevated crude prices, rising US yields and weak global cues intensified risk-off sentiment. Sensex fell 493 points and Nifty 133 points, while technical indicators pointed",
-   "categories": [
-    "Markets",
-    "Commodities & energy",
-    "India"
-   ]
-  },
-  {
-   "title": "Texas Stock Exchange lands first primary listing in milestone",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/texas-stock-exchange-lands-first-primary-listing-in-milestone/articleshow/133326685.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T15:48:01Z",
-   "summary": "Texas Stock Exchange secured its first primary listings as Texas Capital Bancshares plans to shift two ETFs from NYSE Arca. The milestone strengthens TXSE’s challenge to New York’s dominant exchanges as it expands trading operations and pre",
-   "categories": [
-    "Markets"
+    "Central banks & rates",
+    "Commodities & energy"
    ]
   },
   {
@@ -690,19 +1591,6 @@
    ]
   },
   {
-   "title": "Is SpaceX an AI play or a space stock? Two months after the IPO, investors still can’t decide.",
-   "url": "https://www.marketwatch.com/story/is-spacex-an-ai-play-or-a-space-stock-two-months-after-the-ipo-investors-still-cant-decide-eaf5fa92?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-08-18T15:44:00Z",
-   "summary": "Shares don’t trade like the “Big Tech” stocks, and their correlation to the space sector is “mixed,” according to a new analysis.",
-   "categories": [
-    "Markets",
-    "Corporate & deals"
-   ]
-  },
-  {
    "title": "Build relationship with youth: FM Nirmala Sitharaman to PSBs",
    "url": "https://www.business-standard.com/economy/news/fm-asks-psbs-to-boost-farm-credit-for-pulses-oilseeds-cut-imports-126081801411_1.html",
    "source": "Business Standard",
@@ -710,6 +1598,18 @@
    "official": false,
    "published": "2026-08-18T15:30:53Z",
    "summary": "Sitharaman also asks state-owned banks to strengthen priority-sector lending and launch a month-long 'Banking for Youth' campaign from October 2",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Canada seeks to avert new US tariffs as deadline looms",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbUhUQTY2SDZLVHFkbTdUbUFZYTBZdENmMDlPa1hSb0s3X29ObmZvUDdpR3paZkk1NVJTdF9qUkhnRjFfT1ozN255NGROVkxDMm5Yb1FweDZQX21CQXh2OTVvaWU5bVNpMFRiblNVX014NkVJYnFuNGlMdGxTZ0dRc1RPeWJMU3p0NV9BUVNwVEYxZlFEYVRIQ1Zn?oc=5",
+   "source": "Digital Journal",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T15:25:37Z",
+   "summary": "",
    "categories": [
     "Markets"
    ]
@@ -739,29 +1639,39 @@
    ]
   },
   {
-   "title": "Market Trading Guide: Aeroflex Industries among 2 stock recommendations for Wednesday",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-aeroflex-industries-among-2-stock-recommendations-for-wednesday/articleshow/133326175.cms",
-   "source": "ET Markets",
-   "region": "India",
+   "title": "Trump, Carney talk as Canada seeks to hold off new US tariffs",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObFlqeC1ralJaSVVZZUlVR241SUhNRkFBUEJKeUhFMUJ6bEpzNlE2ZmhBLS0yN2lyOHlPa3Vsd3dFRE1sM2daUkdmU1E2MXRKc0Q0MjgwRXNCRUd3VGNyYUZ6SGVDTll4ZHdWaVA4U0s2UGYySlFyZXRscnBRS1hxYmNhRVl2dVhieV9uZjRIQjNqeGtnWGlmazNodFNUcU5xMzlZ?oc=5",
+   "source": "France 24",
+   "region": "Global",
    "official": false,
-   "published": "2026-08-18T15:14:01Z",
-   "summary": "Crude prices, rising US yields and weak global cues kept Indian equities under pressure. Analysts remain bullish on Aeroflex Industries and JG Chemical, citing strong technical setups, key support levels and potential upside targets despite",
+   "published": "2026-08-18T15:23:12Z",
+   "summary": "",
    "categories": [
-    "Markets",
-    "Commodities & energy",
-    "India"
+    "Markets"
    ]
   },
   {
-   "title": "Ashok Leyland just had a record June quarter. So why did the margin fall a full point?",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/ashok-leyland-just-had-a-record-june-quarter-so-why-did-the-margin-fall-a-full-point/articleshow/133325764.cms",
-   "source": "ET Markets",
-   "region": "India",
+   "title": "Seller concession limits: How much can you ask for?",
+   "url": "https://finance.yahoo.com/personal-finance/mortgages/article/seller-concession-limits-151821985.html",
+   "source": "Yahoo Finance",
+   "region": "Global",
    "official": false,
-   "published": "2026-08-18T15:05:43Z",
-   "summary": "Ashok Leyland's June-quarter has an unusual contradiction. The company sold 48,763 commercial vehicles, its highest-ever first-quarter volume, and revenue from operations rose 10.43% to Rs. 9,634 crore. Yet, the operating EBITDA was Rs. 970",
+   "published": "2026-08-18T15:18:21Z",
+   "summary": "",
    "categories": [
-    "Corporate & deals"
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump says US and Canada strike deal, temporarily pauses tariffs",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa1BlNEtwMVJSSkVvQjRBMWRlanN4VUs0aEFKUjIyWU93N090cHl5MjN6Q0VCMWdvUVhseXI4N3Y2aUdXTy1oeHpQVE5TYjdiLVlOcFdaMWswRGVsZzZ0dG5HamdSeFdMSFc5bTZZVHNwaWp3SXRWT3IydFZnR3NSVm13bnEzbTdxajVkbFpzUUhwc01zQzFwWG8yT3RHZw?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T15:09:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
    ]
   },
   {
@@ -777,6 +1687,19 @@
    ]
   },
   {
+   "title": "Is AI driving inflation? The artificial intelligence boom adds pressure on the Fed",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQa0FWeWJVams5UjlNV2lUMXl4Q3N5ZVBvT3NEZDNLYnRaX2ExaFRsaW5TNXZFYTBOclA1UllwX01XOGw3bnZmdmxOdURxeHVkYzJVQWRGRzFmY3VFdEhIcU9jQnpNd2hDbjRCMno5WVg2eVhwUjRnSkNSa2RtMS1JcmQ5X1BnZEo3dGdYR0FJMGx0OWZXdTNVT2k5ZFJqOGU0RU1uN3JCa2lHaTBsZl9ISk9hb3hucnRHbUIxalVCYVZzVnVrZS1UN2R5Rmk?oc=5",
+   "source": "CMC Markets",
+   "region": "Global",
+   "official": false,
+   "published": "2026-08-18T14:43:38Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
    "title": "Result of Yield/Price Based Auction of State Government Securities",
    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63395",
    "source": "RBI",
@@ -789,956 +1712,40 @@
    ]
   },
   {
-   "title": "‘A feudal relationship’: Stonegate Pub Partners under scrutiny after complaints of tenant mistreatment",
-   "url": "https://www.theguardian.com/business/2026/aug/18/a-feudal-relationship-stonegate-pub-partners-scrutiny-complaints-tenant-mistreatment",
-   "source": "The Guardian",
+   "title": "US and Canada hold last-minute talks to stop Trump’s 50% tariffs",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUWtKOHR3WjctRjZQOGE1RmstdkpWWjBaNWdXYW1QUUo3bUFnZkpFZF90RmJiSW9tNGRURHR1OFowWndueXBWQnRnWnh4VG8xVXRMX052ZVB5cFhqNXRCRHkwbEo2NFlkOG82MUFxZkY2SG1GYVAwODkwekRDSG5wdVdQNk9vNU5aYV9IZGtQZ19jdmps?oc=5",
+   "source": "KOTA Territory News",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T14:22:25Z",
-   "summary": "UK’s largest pub company with the lowest satisfaction rating accused of entrapping landlords into financial loss situations “We’re pleased to welcome Stonegate Pub Partners as a sponsor for the Great British Pub Awards 2026” read a post on",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Global headwinds: $56.8 bn swap inflows lift ₹ just 0.1% vs 8.8% in 2013",
-   "url": "https://www.business-standard.com/economy/news/56-8-bn-inflows-lift-rupee-just-0-1-against-8-8-gain-in-2013-scheme-126081801275_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T14:14:20Z",
-   "summary": "Global factors weigh on the currency despite sizeable FCNR(B) inflows, as economists flag tight financial conditions, volatile energy markets and competition for capital",
-   "categories": [
-    "Currencies"
-   ]
-  },
-  {
-   "title": "Odisha govt unveils ₹1,000 crore relief package for flood-hit districts",
-   "url": "https://www.business-standard.com/economy/news/odisha-govt-unveils-1-000-crore-relief-package-for-flood-hit-districts-126081801262_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T14:07:45Z",
-   "summary": "Package covers crop, housing, livelihood and infrastructure losses as floods across five river systems affect more than 18 lakh people in 22 districts and claim 13 lives",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Ikea to take on eBay and Vinted with UK online secondhand site",
-   "url": "https://www.theguardian.com/business/2026/aug/18/ikea-to-take-on-ebay-and-vinted-with-uk-online-secondhand-site",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:49:21Z",
-   "summary": "Platform set to launch later this year will enable loyalty card members to sell preloved Billy bookcases and Poäng chairs Business live – latest updates Ikea is taking on eBay, Facebook Marketplace and Vinted with its own secondhand selling",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Home Depot reaffirms guidance amid 'frozen housing market conditions'",
-   "url": "https://www.cnbc.com/2026/08/18/home-depot-hd-q2-2026-earnings.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:43:28Z",
-   "summary": "Home Depot reported second fiscal quarter results that beat Wall Street expectations on the top and bottom lines.",
-   "categories": [
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Income-tax dept checks 394 entities over suspicious foreign remittances",
-   "url": "https://www.business-standard.com/economy/news/i-t-department-checks-394-entities-over-suspicious-foreign-remittances-126081801204_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T13:43:12Z",
-   "summary": "The exercise covers entities that sent large sums abroad despite reporting little business activity or not filing returns, along with professionals who certified payments.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "ABC sues Trump’s media regulator over demand for TV license renewals",
-   "url": "https://www.theguardian.com/us-news/2026/aug/18/abc-sues-trump-federal-communications-commission",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:38:23Z",
-   "summary": "Network alleges FCC is trying to send ‘chilling message’ in retaliation for content the administration disapproves of ABC has sued the Federal Communications Commission (FCC), arguing that it is being retaliated against for content-based re",
-   "categories": [
-    "Regulation"
-   ]
-  },
-  {
-   "title": "UK risks running out of gas by 2030s, ministers told",
-   "url": "https://www.theguardian.com/business/2026/aug/18/uk-risks-running-out-of-gas-2030s",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:34:12Z",
-   "summary": "Government assessment warns of supply shock that could leave homes and businesses without gas within a decade Ministers are waking up to Britain’s gas supply risks. It’s time for decisions Great Britain risks running out of gas in the 2030s",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Labour urges Gambling Commission to investigate firms linked to Reform UK donors",
-   "url": "https://www.theguardian.com/politics/2026/aug/18/labour-gambling-commission-investigate-firms-linked-reform-uk-donors",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:30:49Z",
-   "summary": "Bridget Phillipson writes to watchdog asking it to look into claims Tether.bet and Fispay operated without a licence The Gambling Commission has been urged to investigate claims that companies linked to Reform UK donors and allies of Nigel",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "El Nino impact on kharif production unlikely to be significant, says Union Agriculture Minister Shivraj Singh Chouhan",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/el-nino-impact-on-kharif-production-unlikely-to-be-significant-says-union-agriculture-minister-shivraj-singh-chouhan-vulnerable-districts-fall-to-100/articleshow/133323987.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T13:28:28Z",
-   "summary": "Union Agriculture Minister Shivraj Singh Chouhan stated El Nino's impact on kharif production is unlikely to be significant. Rainfall has been adequate for crops across most of the country this year. The shortfall in kharif sowing has narro",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Ind-Ra lifts India's FY27 economic growth forecast by 10 bps to 6.8%",
-   "url": "https://www.business-standard.com/india-news/ind-ra-raises-fy27-growth-forecast-to-6-8-flags-el-nino-west-asia-risks-126081801158_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T13:18:20Z",
-   "summary": "But warns El Niño, geopolitical woes may weigh on momentum",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Contrarian vs. the crowd: One trader made a massive bet against chip stocks",
-   "url": "https://www.cnbc.com/2026/08/18/contrarian-vs-the-crowd-one-trader-made-a-massive-bet-against-chip-stocks.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:13:13Z",
-   "summary": "The biggest single options trade in the entire market Monday was a $129 million bet against the VanEck Semiconductor ETF.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "'Worrisome': AI is driving a looming market correction, European central bank economists warn",
-   "url": "https://www.cnbc.com/2026/08/18/ai-tech-rally-correction-economists.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:04:04Z",
-   "summary": "History suggests valuations will tumble even if they are a fair reflection of the transformative power of AI, according to a European Central Bank analysis.",
-   "categories": [
-    "Central banks & rates",
-    "Markets"
-   ]
-  },
-  {
-   "title": "Reel-ing it in: Meta is paying influencers to promote teen accounts",
-   "url": "https://www.theguardian.com/technology/2026/aug/18/meta-pays-influencers-teen-social-media-ban",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T13:00:47Z",
-   "summary": "Tech Transparency Project’s report shows whenever governments mull platform regulations, company recruits influencers to promote its safety features In July 2025, Meta gathered parenting influencers from all over Australia at a waterfront v",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Ferguson shipyard to cut a quarter of its workforce",
-   "url": "https://www.bbc.co.uk/news/articles/c20e2qe1lqpo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T12:56:34Z",
-   "summary": "The state-owned yard on the Clyde will lose 70 of its 283 staff through a voluntary redundancy process as it awaits confirmation of promised new orders.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Job vacancies at five-year low as smaller firms scale back recruitment",
-   "url": "https://www.bbc.co.uk/news/articles/cn9nwx090v9o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T12:52:26Z",
-   "summary": "Small firms cite labour and operating costs as reasons for scaling back hiring, the UK's statistics body says.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Result of the second Overnight Variable Rate Reverse Repo (VRRR) auction held on August 18, 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63394",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-08-18T12:50:00Z",
-   "summary": "Tenor 1-day Notified Amount (in ₹ crore) 75,000 Total amount of offers received (in ₹ crore) 36,595 Amount accepted (in ₹ crore) 36,595 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers received at",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Suspicious foreign remittances under income tax department scanner",
-   "url": "https://www.business-standard.com/economy/news/suspicious-foreign-remittances-under-income-tax-department-scanner-126081801066_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T12:34:12Z",
-   "summary": "The income tax department has launched a drive to verify \"suspicious\" foreign remittances by entities with little or no reported business activity, the persons behind them, and the chartered accountants who issued tax determination certific",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Carney's final chance to convince Trump as US-Canada trade deadline looms",
-   "url": "https://www.bbc.co.uk/news/articles/crl7600rpnko?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T12:27:47Z",
-   "summary": "Negotiators want a deal to avoid fresh US tariffs - though Canadians are not in the mood to offer many concessions.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Ind-Ra raises India’s FY27 GDP growth estimate to 6.8%",
-   "url": "https://www.livemint.com/economy/indra-raises-india-fy27-gdp-growth-estimate-6-8-west-asia-war-high-headline-inflation-depreciating-currency-capex-risk-11787051160811.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T12:26:21Z",
-   "summary": "The West Asia war, high headline inflation, a depreciating currency, and weaker-than-expected capex remain downside risks.",
-   "categories": [
-    "Inflation & growth",
-    "Currencies",
-    "Geopolitics & trade",
-    "India"
-   ]
-  },
-  {
-   "title": "China unveils new measures to boost consumption in counties, smaller cities",
-   "url": "https://www.business-standard.com/world-news/china-unveils-new-measures-to-boost-consumption-in-counties-smaller-cities-126081800961_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T12:03:09Z",
-   "summary": "China on Tuesday rolled out a series of measures to boost consumption in its counties and smaller cities to revive sluggish domestic demand, which has become a major source of its economic slowdown. The measures herald a policy shift to boo",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Russia says its economy is strong. It just fired a top economist who warned otherwise",
-   "url": "https://www.cnbc.com/2026/08/18/ukraine-war-russia-economy-klepach.html",
-   "source": "CNBC Economy",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T11:51:15Z",
-   "summary": "Andrei Klepach was reportedly fired from his role after presenting a report warning that Russia could not win a prolonged war of attrition with Ukraine.",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "India challenges US tariffs on quartz products with WTO consultation bid",
-   "url": "https://www.business-standard.com/economy/news/india-challenges-us-tariffs-on-quartz-products-with-wto-consultation-bid-126081800973_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T11:44:17Z",
-   "summary": "Under WTO rules, the US has to enter into consultation within 30 days of receiving the request. If the dispute isn't resolved within 60 days, India can request the establishment of a panel",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "From jumpers to slug pellets - how British wool is back in demand",
-   "url": "https://www.bbc.co.uk/news/articles/c8xnkjwdn5wo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T11:18:39Z",
-   "summary": "An increased demand in wool has meant prices have increased more than 70% in the last year.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "India resumes rail coach exports to Bangladesh with custom 19-coach LHB rake from RCF Kapurthala",
-   "url": "https://economictimes.indiatimes.com/news/economy/infrastructure/india-resumes-rail-coach-exports-to-bangladesh-with-custom-19-coach-lhb-rake-from-rcf-kapurthala/videoshow/133320171.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T11:05:56Z",
+   "published": "2026-08-18T14:40:00Z",
    "summary": "",
    "categories": [
-    "India"
+    "Markets"
    ]
   },
   {
-   "title": "The startup using AI to help rare disease families develop custom treatments",
-   "url": "https://www.cnbc.com/2026/08/18/the-startup-using-ai-to-help-build-custom-treatments-for-rare-diseases.html",
-   "source": "CNBC International",
+   "title": "Monetary Policy and Financial Conditions - Atlanta",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSE1GZlhQcm1pUk9Ga3ZIOG5RVmhLTzZTRnlQTHpnVkhLU19pX0pjcnowSkQxMkxqbGNBN2dMV1poc3BPd2hGNDRpY2FEbGpZRThHeVJwSEVBekZDVlBIMjF0SU1DSHdkZk5haFFpNXo3UzBYbUEwb0c5enBnRElvbkx0cERNQ0V6b1lmSjBYZ0JzQko3N1ZlQ1BQSlFFU0M4U3FVTVF4VUN6cC1GSzhrYjVleWswSm4taXJtVXFLNzJHbVFkV0FucnppOEQ4Z0tJcUhB?oc=5",
+   "source": "Federal Reserve Bank",
    "region": "Global",
    "official": false,
-   "published": "2026-08-18T11:00:01Z",
-   "summary": "Nome uses AI and drug-development expertise to help rare disease families turn genetic diagnoses into potential paths toward treatment.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Governments’ borrowing costs hit further multi-decade highs as US-Iran peace hopes fade",
-   "url": "https://www.theguardian.com/business/2026/aug/18/governments-borrowing-costs-us-iran-bond-yields-trump",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T10:54:43Z",
-   "summary": "Bond yields in US, UK, Germany France and Japan rise after ceasefire ends and Trump threatens to bomb Oman Business live – latest updates Government borrowing costs in several advanced economies continued to rise to levels not seen in decad",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
-   "url": "https://www.cnbc.com/2026/08/17/jeanie-buss-opposes-sale-family-stake.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T10:53:25Z",
-   "summary": "Jeanie Buss's lawyer says she has not agreed to sell the team and that any vote suggesting the Buss family is selling \"would be and is void.\"",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "RBI to conduct Second Overnight Variable Rate Reverse Repo (VRRR) auction under LAF on August 18, 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63393",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-08-18T10:45:00Z",
-   "summary": "On a review of current and evolving liquidity conditions, it has been decided to conduct a Second Variable Rate Reverse Repo (VRRR) auction on Tuesday, August 18, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Window Timing D",
-   "categories": [
-    "Central banks & rates",
-    "India"
-   ]
-  },
-  {
-   "title": "BIRC 2026 to Showcase 200 Rice Varieties, 50 Global Cuisines Across 9 Experience Zones",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/birc-2026-to-showcase-200-rice-varieties-50-global-cuisines-across-9-experience-zones/articleshow/133319045.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T10:30:31Z",
-   "summary": "The Bharat International Rice Conference 2026 will showcase 200 rice varieties and 50 global cuisines. This event will be held in New Delhi from October 23 to 25. Nine experience zones will highlight rice through culture, technology, and nu",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "‘Picky bits’ on the menu as British shoppers snap up picnic food in heatwave",
-   "url": "https://www.theguardian.com/business/2026/aug/18/picky-bits-british-shoppers-picnic-food-supermarket-deals-grocery-price-inflation",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T10:29:58Z",
-   "summary": "Consumers also turn to supermarket deals to save money, helping slow grocery price inflation Business live – latest updates Shopping baskets took on a decidedly summery complexion during last month’s heatwaves as consumers filled up on a Br",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on August 18, 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63392",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-08-18T10:15:00Z",
-   "summary": "Tenor 1-day Notified Amount (in ₹ crore) 1,50,000 Total amount of offers received (in ₹ crore) 82,788 Amount accepted (in ₹ crore) 82,788 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers received",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "India's tanker exports surge over six-fold to USD 1.36 billion in Q1 FY27; UAE leads",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-tanker-exports-surge-over-six-fold-to-usd-1-36-billion-in-q1-fy27-uae-leads/articleshow/133318178.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T10:01:56Z",
-   "summary": "India's tanker exports surged dramatically in the June quarter, soaring six times compared to previous figures. The UAE emerged as the top importer, while Singapore and various Middle Eastern nations also boosted their purchases of Indian t",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "India imposes minimum import price on clear float glass to curb cheaper imports",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-imposes-minimum-import-price-on-clear-float-glass-to-curb-cheaper-imports/articleshow/133318172.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T09:58:07Z",
-   "summary": "To safeguard its local glass industry, India has enacted a minimum import price for clear float glass, directly benefiting manufacturers like Saint-Gobain. This policy, announced by the Directorate General of Foreign Trade, will restrict im",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "RBI finds cash demand harder to predict as digital payments grow",
-   "url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-finds-cash-demand-harder-to-predict-as-digital-payments-grow/articleshow/133317778.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T09:34:08Z",
-   "summary": "RBI faces challenges forecasting demand for banknotes as currency in circulation continues to grow at double-digit rates despite rising digital payments. Deputy Governor SC Murmu said cash remains widely used, particularly in rural areas, a",
-   "categories": [
-    "Central banks & rates",
-    "Currencies",
-    "India"
-   ]
-  },
-  {
-   "title": "Govt frontloads farm spending as El Nino risks cloud rural outlook",
-   "url": "https://www.livemint.com/economy/govt-farm-spending-agriculture-fertilizer-subsidy-el-nino-monsoon-rural-consumption-11787025202172.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T09:30:10Z",
-   "summary": "The Centre is front-loading farm spending to cushion rural incomes and consumption from El Nino and a weak monsoon. Agriculture spending has more than doubled its pace from a year ago, alongside the higher outgo on fertilizers.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Explained: Why a super El Niño leaves tropical commodities acutely exposed",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/explained-why-a-super-el-nio-leaves-tropical-commodities-acutely-exposed/articleshow/133317721.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T09:29:25Z",
-   "summary": "A strengthening El Niño could disrupt global supplies of cocoa, coffee and sugar through drought, heat and excessive rainfall. Forecasters see a greater than 90% chance of a very strong event, posing fresh risks to major producing regions.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "AI to help planes avoid climate-warming 'sky graffiti'",
-   "url": "https://www.bbc.co.uk/news/articles/c62em5lpvnjo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T09:26:41Z",
-   "summary": "A new UK trial hopes to reduce the condensation trails from planes, which can trap heat in the Earth's atmosphere.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "How investors profit from soccer even as Premier League club losses skyrocket",
-   "url": "https://www.cnbc.com/2026/08/18/soccer-premier-league-club-losses-liverpool.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T09:09:19Z",
-   "summary": "While English football clubs are gaining popularity with investors across the globe, teams remain risky and often unprofitable ventures.",
-   "categories": [
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "India's tanker exports surge over six-fold to $1.36 bn in Q1, UAE leads",
-   "url": "https://www.business-standard.com/economy/news/india-s-tanker-exports-surge-over-six-fold-to-1-36-bn-in-q1-uae-leads-126081800589_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T09:02:22Z",
-   "summary": "India's tanker exports surged more than six-fold to USD 1.36 billion in the June quarter from USD 221.1 million a year earlier, signalling the country's growing shipbuilding and maritime engineering capabilities, with the UAE emerging as th",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "US states call for big changes to Instagram and Facebook as Meta child privacy trial begins",
-   "url": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T09:00:33Z",
-   "summary": "US states are suing the social media giant to force an overhaul of its platforms for young users.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Govt weighs cutting sugar import duty to curb record local prices",
-   "url": "https://www.business-standard.com/economy/news/govt-weighs-cutting-sugar-import-duty-to-curb-record-local-prices-126081800660_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T09:00:30Z",
-   "summary": "Officials are weighing proposals to lower or scrap the 100% tax on inbound shipments in an effort to boost local supplies",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Dickovers, baggravation and botiquette: 18 new words to describe our tech hellscape",
-   "url": "https://www.theguardian.com/technology/2026/aug/18/dickovers-baggravation-botiquette-18-new-words-tech-hellscape",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T09:00:20Z",
-   "summary": "There are many tech irritants that are a scourge of modern life, yet we have lacked the vocabulary to describe them ... until now The “dickover” is the scourge of the modern age. Coined in May by John Gruber, a tech writer, it is defined as",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Money Market Operations as on August 17, 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63391",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-08-18T09:00:00Z",
-   "summary": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS @ --> Money Markets @ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 6,31,721.60 5.04 4.00-6.50 I. Call Money 13,126.53 5.18 4.00-5.25 II. Triparty Repo 4,",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "$57 billion pours in, another $30 billion may follow: Indian economy eyes massive $50 billion surplus",
-   "url": "https://www.livemint.com/economy/57-billion-pours-in-another-30-billion-may-follow-indian-economy-eyes-massive-50-billion-surplus-11787042346670.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T08:53:22Z",
-   "summary": "SBI Research anticipates a $50 billion surplus in India's balance of payments for FY27, supported by robust foreign currency inflows.",
-   "categories": [
-    "Currencies",
-    "India"
-   ]
-  },
-  {
-   "title": "India weighs sugar import duty cut to curb record local prices",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/india-weighs-sugar-import-duty-cut-to-curb-record-local-prices/articleshow/133316298.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T08:20:41Z",
-   "summary": "In an effort to reign in soaring domestic sugar prices, India is thinking about lowering its sugar import duty. This response is geared toward boosting local supply ahead of the upcoming festival demand spike. Concerns regarding El Niño and",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Median Indian firm grew in size after Covid-19 pandemic, EAC-PM paper finds",
-   "url": "https://www.business-standard.com/economy/news/median-indian-firm-size-rise-post-pandemic-corporate-profits-investment-126081800548_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T08:13:44Z",
-   "summary": "The paper found corporate profits rebounded sharply after the Covid-19 pandemic, but investment growth remained slower",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "India seeks WTO consultations with US over duty on quartz surface products",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-seeks-wto-consultations-with-us-over-duty-on-quartz-surface-products/articleshow/133315875.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T07:58:09Z",
-   "summary": "India has requested World Trade Organisation consultations with the United States. This action concerns tariffs imposed on quartz surface products by America. The US measure will impose steep duties on imports starting August 15, 2026. Indi",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "India's economic growth to slow to 6.8% in FY27 amid West Asia crisis, El Nino impact: Ind-Ra",
-   "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-economic-growth-to-slow-to-6-8-in-fy27-amid-west-asia-crisis-el-nino-impact/articleshow/133315404.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T07:54:57Z",
-   "summary": "India Ratings and Research has raised its FY27 GDP growth forecast to 6.8% from 6.7%, but expects growth to slow from 7.6% in FY26 amid inflation, rupee weakness and El Nino risks.",
-   "categories": [
-    "Inflation & growth",
-    "Currencies",
-    "India"
-   ]
-  },
-  {
-   "title": "'I'm in Barbados': The dos and don'ts of writing an out-of-office reply",
-   "url": "https://www.bbc.co.uk/news/articles/c934xy32919o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T07:52:24Z",
-   "summary": "As we hit peak holiday season, the BBC looks at the dos and don'ts of composing a good out-of-office message.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "India's growth to slow to 6.8% in FY27 amid West Asia crisis, El Nino risks",
-   "url": "https://www.business-standard.com/economy/news/india-s-growth-to-slow-to-6-8-in-fy27-amid-west-asia-crisis-el-nino-risks-126081800519_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T07:46:24Z",
-   "summary": "India Ratings & Research on Tuesday projected India's GDP growth to slow down to 6.8 per cent in the current fiscal year, as against 7.6 per cent in the previous year, citing risks from fuel and food inflation stemming from West Asia confli",
-   "categories": [
-    "Inflation & growth",
-    "India"
-   ]
-  },
-  {
-   "title": "The 30-year Treasury yield just hit a 19-year high. Three things could drive it even higher",
-   "url": "https://www.cnbc.com/2026/08/18/30-year-treasury-yield-three-things-that-could-drive-it-even-higher.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T06:11:52Z",
-   "summary": "The yield on the 30-year U.S. Treasury has surged to its highest level in 19 years, and some strategists see scope for the move to go further.",
+   "published": "2026-08-18T14:36:50Z",
+   "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "Disabled people in England to get 24-hour free bus travel",
-   "url": "https://www.bbc.co.uk/news/articles/cjwx5vx21y2o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T06:11:30Z",
-   "summary": "The change, which has been welcomed by campaign groups, will come into effect in England from April.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Student bank accounts: don’t be swayed by the freebies, freshers told",
-   "url": "https://www.theguardian.com/money/2026/aug/18/student-bank-accounts-freebies-perks-overdraft",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T06:00:16Z",
-   "summary": "Sign-up perks may capture the attention but should the focus be on the interest-free overdraft? The best student deals and discounts An insider’s tips on student money In the scramble to sort out university accommodation, join freshers grou",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Burnham is choosing jobs over climate security. That’s a big risk | Gaby Hinsliff",
-   "url": "https://www.theguardian.com/commentisfree/2026/aug/18/andy-burnham-climate-security-net-zero-jobs",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T05:00:16Z",
-   "summary": "The PM’s net zero pragmatism may please some voters, but as parts of the country go up in flames, it’s an increasingly hard sell When the siren sounded on Friday night, my first thought was fire. Weeks of unrelenting sun in the normally sog",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Credit card issuer Synchrony announces partnership with OpenAI",
-   "url": "https://www.cnbc.com/2026/08/17/synchrony-openai.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-18T02:48:33Z",
-   "summary": "The collaboration, which is in its early stages, is a step toward enabling Synchrony customers to have smoother online shopping experiences.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Patchy progress, masked extremes: how the Southwest Monsoon has played out so far",
-   "url": "https://www.livemint.com/economy/patchy-progress-masked-extremes-how-the-southwest-monsoon-has-played-out-so-far-11786971002094.html",
-   "source": "Mint Economy",
+   "title": "Global headwinds: Robust swap inflows lift rupee just 0.1% vs 8.8% in 2013",
+   "url": "https://www.business-standard.com/economy/news/56-8-bn-inflows-lift-rupee-just-0-1-against-8-8-gain-in-2013-scheme-126081801275_1.html",
+   "source": "Business Standard",
    "region": "India",
    "official": false,
-   "published": "2026-08-18T01:00:24Z",
-   "summary": "The cumulative rainfall deficit has narrowed to 13%, but erratic swings between intense deluges and prolonged dry spells hide severe regional imbalances.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Govt weighs scrapping performance bank guarantees for MSME contracts",
-   "url": "https://www.livemint.com/economy/govt-weighs-scrapping-performance-bank-guarantees-for-msme-contracts-11786962863217.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-18T00:30:24Z",
-   "summary": "The development assumes significance as MSMEs accounted for 50% of the central government’s ₹2.30 trillion procurement of goods and services in FY26. As per rules, MSMEs that get a government order valued at over ₹1,00,000 must furnish a pe",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Auction of Government of India Dated Securities",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63389",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-08-17T18:50:00Z",
-   "summary": "Government of India (GoI) has announced the sale (re-issue) of two dated securities for a notified amount of ₹28,000 crore as per the following details: Sr No Security Date of Repayment Notified Amount (₹ Crore) GoI specific Notification Au",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Prediction market traders see roughly 1-in-4 odds Paramount’s bid to buy Warner Bros. Discovery fails",
-   "url": "https://www.cnbc.com/2026/08/17/pskys-wbd-bid-has-1-in-4-odds-of-falling-through-kalshi-traders-say.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-17T17:43:40Z",
-   "summary": "The odds are higher than they were before 12 states sued to block the merger, but lower than after Paramount delayed the acquisition in late July.",
-   "categories": [
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "India’s overall unemployment rate falls in July; joblessness rises in urban centres but eases in rural areas",
-   "url": "https://www.livemint.com/economy/india-overall-unemployment-rate-falls-in-july-urban-joblessness-rise-but-eases-in-rural-areas-plfs-m-lfpr-wpr-cws-11786949021767.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-17T11:51:35Z",
-   "summary": "The PLFS is the primary source of data on activity participation and employment and unemployment conditions of the population.",
-   "categories": [
-    "Inflation & growth",
-    "India"
-   ]
-  },
-  {
-   "title": "Philip R. Lane: The rise in defence spending and the euro area economy",
-   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260817~1f9f7149c9.en.pdf",
-   "source": "ECB",
-   "region": "Europe",
-   "official": true,
-   "published": "2026-08-17T09:30:00Z",
-   "summary": "",
-   "categories": [
-    "Currencies"
-   ]
-  },
-  {
-   "title": "Mint Explainer | Indian consumers are spending again. Can it last?",
-   "url": "https://www.livemint.com/economy/india-consumers-consumption-q1fy27-rural-demand-fmcg-quick-commerce-11786950756096.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-17T09:12:12Z",
-   "summary": "Rural demand, premium products and quick commerce drove Q1 growth, but higher input costs and food inflation could test consumer recovery",
-   "categories": [
-    "Inflation & growth",
-    "India"
-   ]
-  },
-  {
-   "title": "Currency in circulation, ATM withdrawals, 10 countries, hinterland India… How UPI made a dent in the financial universe",
-   "url": "https://www.livemint.com/economy/upi-transactions-growth-india-cash-digital-payments-11786935934320.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-17T05:32:34Z",
-   "summary": "UPI has grown exponentially in India, with transaction value now equivalent to 70% of currency in circulation as adoption spreads beyond the country’s major economic hubs.",
+   "published": "2026-08-18T14:14:47Z",
+   "summary": "Global factors weigh on the currency despite sizeable FCNR(B) inflows, as economists flag tight financial conditions, volatile energy markets and competition for capital",
    "categories": [
     "Currencies",
     "India"
-   ]
-  },
-  {
-   "title": "India’s $20 trillion economy by 2036: The 5 growth engines that could unlock its next leap",
-   "url": "https://www.livemint.com/economy/india-20-trillion-economy-2036-five-engines-reform-human-capital-markets-services-governance-rupee-growth-equirus-report-11786892254309.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-16T17:04:08Z",
-   "summary": "India's road to becoming a $20 trillion economy by 2036 can be achieved by adapting five growth engines — human capital, markets, services, governance and currency, according to an Equirus policy report.&nbsp;",
-   "categories": [
-    "Currencies",
-    "India"
-   ]
-  },
-  {
-   "title": "The week in charts: Price pressures, youth unemployment, chairman exit",
-   "url": "https://www.livemint.com/economy/india-inflation-cpi-rbi-natarajan-chandrasekaran-tata-sons-youth-unemployment-fuel-demand-school-enrolment-11786608180840.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-08-15T01:01:05Z",
-   "summary": "In this weekly Plain Facts compilation, we present to you data-based insights, with easy-to-read charts, to help you delve deeper into the stories reported by Mint in the week gone by.",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Berkshire Hathaway boosts Alphabet to a top three holding, ups Delta and housing bets",
-   "url": "https://www.cnbc.com/2026/08/14/berkshire-hathaway-boosts-alphabet-to-a-top-three-holding-ups-delta-and-housing-bets.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-14T21:06:48Z",
-   "summary": "Berkshire owned about 106 million shares in the parent of Google, worth $37.9 billion at the end of June, according to a regulatory filing released Friday.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Goldman’s latest cash cow is all about funding the AI infrastructure boom",
-   "url": "https://www.cnbc.com/2026/08/14/goldmans-latest-cash-cow-is-all-about-funding-the-ai-infrastructure-boom.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-14T20:05:57Z",
-   "summary": "Nvidia and Intel recently tapped the bank to help them meeting soaring demand for compute.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Regulators and banks step up scrutiny of prediction markets",
-   "url": "https://www.cnbc.com/2026/08/14/prediction-markets-scrutiny-mounts-from-regulators-and-banks.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-08-14T19:21:49Z",
-   "summary": "The CFTC is reviewing prediction betting platforms' so-called mention markets, people familiar with the matter confirmed to CNBC.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Certificate No. RC9282 of 2026 Notice of Demand in respect of Atit Commercial Company Private Limited (Transferee company of Ashirwad Tie Up Pvt. Ltd.) (PAN: AACCA5249E) in the matter of Illiquid Stock Options",
-   "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/aug-2026/certificate-no-rc9282-of-2026-notice-of-demand-in-respect-of-atit-commercial-company-private-limited-transferee-company-of-ashirwad-tie-up-pvt-ltd-pan-aacca5249e-in-the-matter-of-illiquid-stoc-_103728.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "Certificate No. RC9282 of 2026 Notice of Demand in respect of Atit Commercial Company Private Limited (Transferee company of Ashirwad Tie Up Pvt. Ltd.) (PAN: AACCA5249E) in the matter of Illiquid Stock Options",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "General Remittance Order dated August 18, 2026 issued under RC No. 9174 of 2026 drawn against Amit Kumar Agarwal HUF in the matter of dealing in Illiquid Stocks Options at BSE",
-   "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/aug-2026/general-remittance-order-dated-august-18-2026-issued-under-rc-no-9174-of-2026-drawn-against-amit-kumar-agarwal-huf-in-the-matter-of-dealing-in-illiquid-stocks-options-at-bse_103726.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "General Remittance Order dated August 18, 2026 issued under RC No. 9174 of 2026 drawn against Amit Kumar Agarwal HUF in the matter of dealing in Illiquid Stocks Options at BSE",
-   "categories": [
-    "Markets",
-    "India"
-   ]
-  },
-  {
-   "title": "General Remittance Advice against: Sunil Singh (Proprietor of Alfa Finsec) [Defaulter] (PAN: BDGPS0774K) in the matter of trading activities of certain entities in the scrip of Delta Leasing and Finance Ltd.: under Recovery Certificate No. 9156 of 2026.",
-   "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/aug-2026/general-remittance-advice-against-sunil-singh-proprietor-of-alfa-finsec-defaulter-pan-bdgps0774k-in-the-matter-of-trading-activities-of-certain-entities-in-the-scrip-of-delta-leasing-and-finan-_103724.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "General Remittance Advice against: Sunil Singh (Proprietor of Alfa Finsec) [Defaulter] (PAN: BDGPS0774K) in the matter of trading activities of certain entities in the scrip of Delta Leasing and Finance Ltd.: under Recovery Certificate No.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Final Order in the matter of Alliance Research - Proprietor Mr. Mudassir Hasan",
-   "url": "https://www.sebi.gov.in/enforcement/orders/aug-2026/final-order-in-the-matter-of-alliance-research-proprietor-mr-mudassir-hasan_103720.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "Final Order in the matter of Alliance Research - Proprietor Mr. Mudassir Hasan",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Order in Enquiry Proceedings respect of Corporate Capital Ventures Private Limited",
-   "url": "https://www.sebi.gov.in/enforcement/orders/aug-2026/order-in-enquiry-proceedings-respect-of-corporate-capital-ventures-private-limited_103718.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "Order in Enquiry Proceedings respect of Corporate Capital Ventures Private Limited",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "SEBI releases Handbook of Statistics 2025-26",
-   "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/aug-2026/sebi-releases-handbook-of-statistics-2025-26_103706.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "SEBI releases Handbook of Statistics 2025-26",
-   "categories": [
-    "India",
-    "Regulation"
-   ]
-  },
-  {
-   "title": "General Remittance Order dated 14.08.2026 in Recovery Certificate No. 9172 of 2026 issued against Dhaval Girishbhai Parmar (PAN : EPZPP2397F) in the matter of trading activities of certain entities in the scrip of DU Digital Technologies Limited.",
-   "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/aug-2026/general-remittance-order-dated-14-08-2026-in-recovery-certificate-no-9172-of-2026-issued-against-dhaval-girishbhai-parmar-pan-epzpp2397f-in-the-matter-of-trading-activities-of-certain-entities-in-_103691.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "General Remittance Order dated 14.08.2026 in Recovery Certificate No. 9172 of 2026 issued against Dhaval Girishbhai Parmar (PAN : EPZPP2397F) in the matter of trading activities of certain entities in the scrip of DU Digital Technologies Li",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Relaxations in Know Your Client (KYC) norms for individual Persons Resident Outside India (i.e. Non-Resident Indians, Overseas Citizens of India and foreign nationals)",
-   "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/aug-2026/relaxations-in-know-your-client-kyc-norms-for-individual-persons-resident-outside-india-i-e-non-resident-indians-overseas-citizens-of-india-and-foreign-nationals-_103683.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "Relaxations in Know Your Client (KYC) norms for individual Persons Resident Outside India (i.e. Non-Resident Indians, Overseas Citizens of India and foreign nationals)",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Release Order - Certificate No. RC7967 of 2024 in respect of Adhunik Contractors Private Limited (PAN: AAGCA9909H) in the matter of Illiquid Stock Options",
-   "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/aug-2026/release-order-certificate-no-rc7967-of-2024-in-respect-of-adhunik-contractors-private-limited-pan-aagca9909h-in-the-matter-of-illiquid-stock-options_103682.html",
-   "source": "SEBI",
-   "region": "India",
-   "official": true,
-   "published": null,
-   "summary": "Release Order - Certificate No. RC7967 of 2024 in respect of Adhunik Contractors Private Limited (PAN: AAGCA9909H) in the matter of Illiquid Stock Options",
-   "categories": [
-    "Markets"
    ]
   }
  ]
