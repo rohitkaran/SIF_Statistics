@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17T15:48:32+00:00",
+ "generated": "2026-08-24T16:02:41+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2025-10",
@@ -585,6 +585,14 @@
    }
   },
   "SIF-48": {
+   "name": "Arudha Hybrid Long-Short Fund",
+   "amc": "arudha",
+   "fund": "Arudha Hybrid Long-Short Fund",
+   "periods": {
+    "2026-06": "portfolios/data/2026-06/arudha__Portfolio-ASIF01.json"
+   }
+  },
+  "SIF-43": {
    "name": "Arudha Hybrid Long-Short Fund",
    "amc": "arudha",
    "fund": "Arudha Hybrid Long-Short Fund",
