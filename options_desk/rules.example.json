@@ -1,0 +1,11 @@
+{
+  "_comment": "Copy, edit, and pass with --rules. Every rule also accepts severity (info|warn|alert), cooldown_s, and symbols (empty = all underlyings).",
+  "rules": [
+    {"type": "spot_move", "window_s": 300, "threshold": 0.004, "severity": "warn"},
+    {"type": "iv_spike", "window_s": 300, "threshold": 0.02, "severity": "alert"},
+    {"type": "iv_rank", "threshold": 0.9, "side": "both", "cooldown_s": 900},
+    {"type": "skew_shift", "window_s": 600, "threshold": 0.015},
+    {"type": "credit_target", "delta": 0.20, "right": "P", "min_credit": 0.80,
+     "min_dte": 1, "max_spread_pct": 0.08, "min_oi": 250, "symbols": ["SPY"]}
+  ]
+}
