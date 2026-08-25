@@ -126,7 +126,12 @@ def render(checks, url=None, https_url=None):
                 lines.append(f"         {fixline}")
     lines.append("")
     if url:
-        lines.append(f"  Open this on the phone, INCLUDING the http:// prefix:")
+        from . import qr
+        try:
+            lines.append(qr.render(url, color=sys.stderr.isatty()))
+        except (ValueError, OSError):
+            pass
+        lines.append(f"  Scan that, or type it -- INCLUDING the http:// prefix:")
         lines.append(f"      {url}")
         lines.append("")
         lines.append("  Chrome on a phone, specifically:")

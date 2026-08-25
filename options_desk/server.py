@@ -263,6 +263,15 @@ def serve(cfg, symbols, port=8787, host="127.0.0.1", interval=None, bar_interval
     sys.stderr.write("[serve] data and signals only -- this dashboard never places orders.\n")
     for line in netbind.advise(host, port):
         sys.stderr.write(line + "\n")
+    if netbind.classify(host) != "loopback":
+        # Scanning beats typing a CGNAT literal into a phone keyboard, and the encoded URL
+        # carries the http:// scheme so the browser cannot mistake it for a search.
+        from . import qr
+        try:
+            sys.stderr.write("\n" + qr.render(url, color=sys.stderr.isatty()) + "\n")
+            sys.stderr.write(f"  scan this, or type it:  {url}\n\n")
+        except (ValueError, OSError):
+            pass
     if netbind.classify(host) == "tailnet":
         # Offer the certificate-backed route too: a browser that dislikes plain HTTP to a
         # CGNAT literal has no complaint about a real ts.net hostname.

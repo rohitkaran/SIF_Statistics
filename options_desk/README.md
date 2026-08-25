@@ -45,8 +45,16 @@ python -m options_desk serve SPY QQQ --tailscale
 ```
 
 This finds the machine's own tailnet address (`tailscale ip -4`, falling back to reading the
-interface list) and binds there, then prints the URL to open on your phone. Tailscale must be
+interface list), binds there, and **prints a QR code in the terminal — scan it with the phone
+camera and Chrome opens straight to the dashboard.** No typing a CGNAT literal into a phone
+keyboard, and the encoded URL carries its `http://` scheme so the browser cannot mistake it for
+a search. The URL is printed underneath if you would rather type it. Tailscale must be
 connected on the phone too.
+
+The QR encoder is written into the tree (`qr.py`, stdlib only, byte mode, EC level M, versions
+1–10). It was developed against the `qrcode` package and verified **byte-identical across
+1,971 symbols** — every version, every mask — but that library is not a dependency; a golden
+matrix captured from the verified state guards it in CI.
 
 The page is built for it: it stacks to one column, charts respond to touch (tap to inspect,
 tap elsewhere to dismiss — there is no hover on a phone), tap targets are thumb-sized, it
@@ -177,7 +185,7 @@ python -m options_desk backtest --symbol SPY
 | Command | What it does |
 |---|---|
 | `serve [SYMS]` | **Local web dashboard** — chain, levels, analytics, signals (`--tailscale` for phone access) |
-| `doctor` | Diagnose why the dashboard is not reachable from another device |
+| `doctor` | Diagnose why the dashboard is not reachable from another device (prints a QR too) |
 | `providers` | List adapters and the credentials each needs |
 | `config` | Show resolved settings, secrets redacted |
 | `rules [--kind bars]` | List rule types and the active set |
@@ -295,7 +303,7 @@ Subclass `Provider` and implement `snapshot()` (chains) and/or `bars()` + `daily
 ## Tests
 
 ```bash
-python -m unittest discover -s tests -v      # 153 tests, no network, no credentials
+python -m unittest discover -s tests -v      # 170 tests, no network, no credentials
 ```
 
 Vendor adapters are tested against captured payload shapes with HTTP patched out. Every scalping rule is tested twice — once on data that must trigger it, once on data that must not. The dashboard's HTTP layer is tested against a real server on an ephemeral loopback port.
