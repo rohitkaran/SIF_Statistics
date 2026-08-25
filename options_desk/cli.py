@@ -249,9 +249,10 @@ def cmd_serve(a):
     cfg = _cfg(a)
     rules = _rules(a, "chain") if a.rules else rules_mod.build(
         rules_mod.default_specs("chain") + rules_mod.default_specs("bars"))
+    host = "tailscale" if a.tailscale else a.host
     return serve(cfg, _symbols(a, cfg),
                  port=a.port or cfg.int("OPTIONS_SERVE_PORT", 8787),
-                 host=a.host, interval=a.interval, bar_interval=a.bar_interval,
+                 host=host, interval=a.interval, bar_interval=a.bar_interval,
                  rules=rules, open_browser=a.open)
 
 
@@ -323,7 +324,10 @@ def build_parser():
     sv.add_argument("symbols", nargs="*", help="underlyings (default: OPTIONS_UNDERLYINGS)")
     sv.add_argument("--port", type=int, help="listen port (default 8787)")
     sv.add_argument("--host", default="127.0.0.1",
-                    help="bind address; keep on loopback unless you mean otherwise")
+                    help="bind address; keep on loopback unless you mean otherwise. "
+                         "Accepts 'tailscale' to auto-detect this machine's tailnet IP")
+    sv.add_argument("--tailscale", action="store_true",
+                    help="bind to this machine's Tailscale address so your phone can reach it")
     sv.add_argument("--interval", type=float, help="seconds between provider polls")
     sv.add_argument("--bar-interval", dest="bar_interval", help="bar size, e.g. 1m/5m/15m")
     sv.add_argument("--exchange", help="NSE | BSE | US")

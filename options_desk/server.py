@@ -25,7 +25,7 @@ import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-from . import alerts, analytics, providers, rules as rules_mod
+from . import alerts, analytics, netbind, providers, rules as rules_mod
 from .engine import Engine
 from .history import History
 
@@ -253,19 +253,21 @@ def serve(cfg, symbols, port=8787, host="127.0.0.1", interval=None, bar_interval
                     rules, interval, bar_interval, stop)
     worker.start()
 
+    # 'tailscale' resolves to this machine's tailnet address; anything else is taken as given.
+    host = netbind.resolve(host)
     httpd = ThreadingHTTPServer((host, port), make_handler(state))
     url = f"http://{host}:{port}/"
-    sys.stderr.write(f"[serve] dashboard on {url}\n")
     sys.stderr.write(f"[serve] chains={_pname(chain_provider)} bars={_pname(bar_provider)} "
                      f"exchange={cfg.str('OPTIONS_EXCHANGE')} symbols={','.join(symbols)} "
                      f"refresh={interval:g}s\n")
     sys.stderr.write("[serve] data and signals only -- this dashboard never places orders.\n")
-    if host not in ("127.0.0.1", "localhost", "::1"):
-        sys.stderr.write(f"[serve] WARNING: bound to {host}, not loopback -- anyone who can "
-                         "reach this port sees your market data.\n")
+    for line in netbind.advise(host, port):
+        sys.stderr.write(line + "\n")
     if open_browser:
         import webbrowser
-        threading.Timer(0.5, lambda: webbrowser.open(url)).start()
+        # A wildcard/tailnet bind is not a URL this machine's browser should open.
+        local = url if netbind.classify(host) == "loopback" else f"http://127.0.0.1:{port}/"
+        threading.Timer(0.5, lambda: webbrowser.open(local)).start()
 
     try:
         httpd.serve_forever(poll_interval=0.5)

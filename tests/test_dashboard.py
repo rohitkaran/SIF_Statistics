@@ -19,7 +19,7 @@ from http.server import ThreadingHTTPServer
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from options_desk import analytics, config  # noqa: E402
+from options_desk import analytics, config, netbind  # noqa: E402
 from options_desk.bars import Bar, BarSeries, get_session  # noqa: E402
 from options_desk.levels import Levels, Vwap  # noqa: E402
 from options_desk.models import BarSnapshot, ChainSnapshot, Contract, Quote  # noqa: E402
@@ -242,6 +242,78 @@ class TestHttp(unittest.TestCase):
         with self.assertRaises(urllib.error.HTTPError) as e:
             self._get("/nope")
         self.assertEqual(e.exception.code, 404)
+
+
+class TestNetBind(unittest.TestCase):
+    """Where the dashboard binds IS its security boundary -- it has no login by design."""
+
+    def test_tailnet_range_boundaries(self):
+        for inside in ("100.64.0.0", "100.101.102.103", "100.127.255.255"):
+            self.assertTrue(netbind.is_tailnet(inside), inside)
+        for outside in ("100.63.255.255", "100.128.0.0", "10.0.0.5",
+                        "192.168.1.1", "127.0.0.1", "not-an-ip", ""):
+            self.assertFalse(netbind.is_tailnet(outside), outside)
+
+    def test_picks_tailnet_address_out_of_iproute_output(self):
+        lines = [
+            "1: lo    inet 127.0.0.1/8 scope host lo",
+            "2: eth0    inet 10.0.0.5/24 brd 10.0.0.255 scope global eth0",
+            "5: tailscale0    inet 100.101.102.103/32 scope global tailscale0",
+        ]
+        self.assertEqual(netbind.pick_tailnet_ip(lines), "100.101.102.103")
+
+    def test_picks_tailnet_address_out_of_ifconfig_output(self):
+        self.assertEqual(
+            netbind.pick_tailnet_ip(["\tinet 100.88.7.9 --> 100.88.7.9 netmask 0xff000000"]),
+            "100.88.7.9")
+
+    def test_returns_none_when_no_tailnet_address(self):
+        self.assertIsNone(netbind.pick_tailnet_ip(["inet 192.168.0.2/24", "inet 10.1.2.3/8"]))
+
+    def test_classify(self):
+        self.assertEqual(netbind.classify("127.0.0.1"), "loopback")
+        self.assertEqual(netbind.classify("localhost"), "loopback")
+        self.assertEqual(netbind.classify("100.101.102.103"), "tailnet")
+        self.assertEqual(netbind.classify("0.0.0.0"), "wildcard")
+        self.assertEqual(netbind.classify("192.168.1.50"), "other")
+
+    def test_resolve_passes_explicit_addresses_through(self):
+        self.assertEqual(netbind.resolve("127.0.0.1"), "127.0.0.1")
+        self.assertEqual(netbind.resolve("100.101.2.3"), "100.101.2.3")
+
+    def test_resolve_fails_loudly_without_tailscale(self):
+        """Must never quietly fall back to a wider bind when the tailnet is unavailable."""
+        orig = netbind.detect_tailnet_ip
+        netbind.detect_tailnet_ip = lambda: None
+        self.addCleanup(lambda: setattr(netbind, "detect_tailnet_ip", orig))
+        with self.assertRaises(SystemExit) as e:
+            netbind.resolve("tailscale")
+        msg = str(e.exception)
+        self.assertIn("tailscale status", msg)
+        self.assertIn("--host 100.x.y.z", msg)
+
+    def test_resolve_uses_detected_address(self):
+        orig = netbind.detect_tailnet_ip
+        netbind.detect_tailnet_ip = lambda: "100.9.9.9"
+        self.addCleanup(lambda: setattr(netbind, "detect_tailnet_ip", orig))
+        for alias in ("tailscale", "ts", "TAILNET"):
+            self.assertEqual(netbind.resolve(alias), "100.9.9.9")
+
+    def test_advice_warns_appropriately(self):
+        loop = " ".join(netbind.advise("127.0.0.1", 8787))
+        self.assertIn("this machine only", loop)
+        self.assertNotIn("WARNING", loop)
+
+        tail = " ".join(netbind.advise("100.101.2.3", 8787))   # inside 100.64.0.0/10
+        self.assertIn("tailnet", tail)
+        self.assertIn("funnel", tail)               # the one way to leak it publicly
+
+        wild = " ".join(netbind.advise("0.0.0.0", 8787))
+        self.assertIn("WARNING", wild)
+        self.assertIn("ALL interfaces", wild)
+
+        other = " ".join(netbind.advise("192.168.1.50", 8787))
+        self.assertIn("WARNING", other)
 
 
 class TestWorkerIntegration(unittest.TestCase):

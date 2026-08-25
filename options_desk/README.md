@@ -38,6 +38,44 @@ Serves a single self-contained page on `http://127.0.0.1:8787/`. It runs **on yo
 against your credentials — nothing is hosted, and no market data or key leaves the box. Binds
 to loopback by default; `--host` overrides it and warns.
 
+### On your phone, over Tailscale
+
+```bash
+python -m options_desk serve SPY QQQ --tailscale
+```
+
+This finds the machine's own tailnet address (`tailscale ip -4`, falling back to reading the
+interface list) and binds there, then prints the URL to open on your phone. Tailscale must be
+connected on the phone too.
+
+The page is built for it: it stacks to one column, charts respond to touch (tap to inspect,
+tap elsewhere to dismiss — there is no hover on a phone), tap targets are thumb-sized, it
+respects notch and home-indicator safe areas, and **polling stops whenever the page is
+hidden**, so a backgrounded tab does not sit there pulling a 50KB payload every three seconds
+all afternoon. On iOS, Share → Add to Home Screen gives it a standalone window.
+
+**The dashboard has no login, and that is deliberate.** On a tailnet the authentication has
+already happened at the network layer — only devices you enrolled can route to the address at
+all — and a password on a page you open twenty times a session adds friction without adding
+protection. The corollary is that *where it binds is the entire security boundary*:
+
+| Bind | Reachable by | How |
+|---|---|---|
+| `127.0.0.1` | this machine only | default |
+| `100.64.0.0/10` | every device on your tailnet | `--tailscale` |
+| `0.0.0.0` | **every network you join**, café wifi included | `--host 0.0.0.0` — warned, never chosen for you |
+
+Two things to avoid:
+
+- **Never `tailscale funnel` this port.** Funnel publishes to the open internet; Serve and a
+  plain tailnet bind do not. A funnelled dashboard with no login is world-readable.
+- If `--tailscale` cannot find an address it **fails with instructions** rather than quietly
+  falling back to a wider bind.
+
+Prefer HTTPS and a real hostname? `tailscale serve --bg 8787` puts it on
+`https://<machine>.<tailnet>.ts.net` with a valid certificate, still tailnet-only — run the
+desk on loopback and let Serve front it.
+
 What's on it, and why each panel earns its place:
 
 | Panel | What it tells you |
@@ -102,7 +140,7 @@ python -m options_desk backtest --symbol SPY
 
 | Command | What it does |
 |---|---|
-| `serve [SYMS]` | **Local web dashboard** — chain, levels, analytics, signals |
+| `serve [SYMS]` | **Local web dashboard** — chain, levels, analytics, signals (`--tailscale` for phone access) |
 | `providers` | List adapters and the credentials each needs |
 | `config` | Show resolved settings, secrets redacted |
 | `rules [--kind bars]` | List rule types and the active set |
@@ -220,13 +258,15 @@ Subclass `Provider` and implement `snapshot()` (chains) and/or `bars()` + `daily
 ## Tests
 
 ```bash
-python -m unittest discover -s tests -v      # 133 tests, no network, no credentials
+python -m unittest discover -s tests -v      # 142 tests, no network, no credentials
 ```
 
 Vendor adapters are tested against captured payload shapes with HTTP patched out. Every scalping rule is tested twice — once on data that must trigger it, once on data that must not. The dashboard's HTTP layer is tested against a real server on an ephemeral loopback port.
 
-The page was rendered and inspected in light, dark and 430px-wide viewports: zero horizontal
-overflow, no console errors, and its categorical palette passes the colourblind-separation and
+The page was rendered and inspected in light, dark, 430px and an emulated touch phone
+(390×844, `has_touch`): zero horizontal overflow, no console errors, no tap target under 30px,
+tap-to-inspect latches and dismisses correctly, and polling verifiably stops while hidden and
+resumes on return. Its categorical palette passes the colourblind-separation and
 contrast gates in both modes. Direction is never carried by colour alone — every bullish or
 bearish mark ships an arrow and a word, and the bull/bear pair is blue/red rather than the
 conventional green/red, which is precisely the red-green confusion case.
