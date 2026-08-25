@@ -424,11 +424,6 @@ class TestBarProviders(unittest.TestCase):
         with self.assertRaises(ProviderError):
             y.YahooProvider(cfg()).bars("SPY", "3m")
 
-    def test_yahoo_has_no_option_chain(self):
-        from options_desk.providers import yahoo as y
-        with self.assertRaises(ProviderError):
-            y.YahooProvider(cfg()).snapshot("SPY")
-
     def test_polygon_parses_aggregates(self):
         from options_desk.providers import polygon as poly
         t0 = int(get_session("US").open_utc(DAY).timestamp() * 1000)
@@ -454,6 +449,107 @@ class TestBarProviders(unittest.TestCase):
                                       TRADIER_ENV="production")).bars("SPY", "5m", 2)
         self.assertEqual(len(bars), 1)
         self.assertAlmostEqual(bars[0].volume, 900)
+
+
+class TestYahooOptionChain(unittest.TestCase):
+    """
+    Parser coverage for /v7/finance/options against the documented payload shape.
+
+    NOTE: this was NOT verified against the live endpoint -- Yahoo is blocked by the egress
+    policy of the environment this was written in. The GitHub Actions run is the first thing
+    that talks to the real API, and it reports parse failures rather than hiding them.
+    """
+
+    EXP1 = int(dt.datetime(2026, 8, 28, 20, 0, tzinfo=UTC).timestamp())
+    EXP2 = int(dt.datetime(2026, 9, 4, 20, 0, tzinfo=UTC).timestamp())
+
+    def _contract(self, k, right, bid, ask, oi, vol, iv, expiration):
+        return {"contractSymbol": f"SPY_{right}_{int(k)}", "strike": k,
+                "lastPrice": (bid + ask) / 2, "bid": bid, "ask": ask,
+                "volume": vol, "openInterest": oi, "impliedVolatility": iv,
+                "expiration": expiration, "inTheMoney": False}
+
+    def _payload(self, expiration):
+        c = self._contract
+        return {"optionChain": {"error": None, "result": [{
+            "underlyingSymbol": "SPY",
+            "expirationDates": [self.EXP1, self.EXP2],
+            "quote": {"symbol": "SPY", "regularMarketPrice": 640.35},
+            "options": [{
+                "expirationDate": expiration,
+                "calls": [c(635.0, "C", 7.10, 7.20, 5000, 900, 0.21, expiration),
+                          c(640.0, "C", 4.10, 4.20, 12000, 3100, 0.19, expiration)],
+                "puts": [c(635.0, "P", 2.00, 2.10, 9000, 1200, 0.22, expiration),
+                         c(640.0, "P", 3.95, 4.05, 15000, 2800, 0.19, expiration)],
+            }]}]}}
+
+    def _patch(self, fn):
+        from options_desk.providers import yahoo as y
+        orig = y._http.get_json
+        y._http.get_json = fn
+        self.addCleanup(lambda: setattr(y._http, "get_json", orig))
+        return y
+
+    def test_parses_two_expiries(self):
+        seen = []
+
+        def fake(url, params=None, headers=None, **kw):
+            epoch = (params or {}).get("date")
+            seen.append(epoch)
+            return self._payload(epoch or self.EXP1)
+
+        y = self._patch(fake)
+        snap = y.YahooProvider(cfg()).snapshot("SPY", expiry_limit=2, strike_window=0)
+        self.assertEqual(len(seen), 2)                      # 1 default + 1 explicit expiry
+        self.assertEqual(len(snap.expiries()), 2)
+        self.assertEqual(snap.spot, 640.35)
+        self.assertEqual(len(snap.quotes), 8)
+
+    def test_greeks_are_solved_locally_not_copied(self):
+        y = self._patch(lambda url, params=None, headers=None, **kw:
+                        self._payload((params or {}).get("date") or self.EXP1))
+        snap = y.YahooProvider(cfg()).snapshot("SPY", expiry_limit=1, strike_window=0)
+        q = snap.get(snap.nearest_expiry(), 640.0, "C")
+        self.assertAlmostEqual(q.vendor_iv, 0.19)           # kept for comparison
+        self.assertIsNotNone(q.iv)
+        self.assertIsNotNone(q.delta)
+        self.assertGreater(q.delta, 0)
+
+    def test_zero_quotes_are_absent_not_zero(self):
+        """Yahoo writes 0 for 'no quote'; treating that as a price fabricates a mid."""
+        from options_desk.providers.yahoo import _f
+        self.assertIsNone(_f(0))
+        self.assertIsNone(_f(0.0))
+        self.assertIsNone(_f(None))
+        self.assertEqual(_f(1.5), 1.5)
+
+    def test_reports_api_error(self):
+        y = self._patch(lambda *a, **k: {"optionChain": {
+            "error": {"description": "Not Found"}, "result": None}})
+        with self.assertRaises(ProviderError) as e:
+            y.YahooProvider(cfg()).snapshot("NOPE")
+        self.assertIn("Not Found", str(e.exception))
+
+    def test_reports_symbol_without_options(self):
+        y = self._patch(lambda *a, **k: {"optionChain": {"error": None, "result": []}})
+        with self.assertRaises(ProviderError) as e:
+            y.YahooProvider(cfg()).snapshot("RELIANCE.NS")
+        self.assertIn("listed options", str(e.exception))
+
+    def test_missing_spot_is_an_error_not_a_guess(self):
+        payload = self._payload(self.EXP1)
+        payload["optionChain"]["result"][0]["quote"] = {}
+        y = self._patch(lambda *a, **k: payload)
+        with self.assertRaises(ProviderError):
+            y.YahooProvider(cfg()).snapshot("SPY")
+
+    def test_malformed_rows_are_skipped(self):
+        payload = self._payload(self.EXP1)
+        payload["optionChain"]["result"][0]["options"][0]["calls"].append(
+            {"strike": "not-a-number", "expiration": self.EXP1})
+        y = self._patch(lambda *a, **k: payload)
+        snap = y.YahooProvider(cfg()).snapshot("SPY", expiry_limit=1, strike_window=0)
+        self.assertEqual(len(snap.quotes), 4)
 
 
 class TestScalpEngineIntegration(unittest.TestCase):

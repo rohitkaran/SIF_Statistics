@@ -6,8 +6,8 @@ This is the zero-setup path for the scalping side, and the only bundled adapter 
 NSE/BSE symbols (suffix `.NS` / `.BO`, e.g. RELIANCE.NS) as well as US tickers. The same
 endpoint is already used by fetch_benchmark.py elsewhere in this repo.
 
-Equities only -- there is no option chain here, so `snapshot()` stays unimplemented and this
-adapter is for `scalp` / `levels`, not `watch`.
+Covers BOTH sides: `/v8/finance/chart` for intraday bars and `/v7/finance/options` for option
+chains, so the whole desk runs with no credentials at all.
 
 Caveats worth knowing before trading off it:
   * Quotes are delayed for many exchanges (commonly ~15 min on NSE) and Yahoo publishes no SLA.
@@ -17,12 +17,14 @@ For anything that has to be dependable, use polygon or tradier and keep this for
 """
 
 import datetime as dt
+import sys
 
 from . import _http
 from .base import Provider, ProviderError
 from ..bars import Bar
 
 BASE = "https://query1.finance.yahoo.com/v8/finance/chart/"
+OPTIONS = "https://query1.finance.yahoo.com/v7/finance/options/"
 
 # Yahoo's accepted interval strings, and the widest range each one supports.
 _INTERVALS = {"1m": "7d", "2m": "60d", "5m": "60d", "15m": "60d",
@@ -89,3 +91,99 @@ class YahooProvider(Provider):
         if not out:
             raise ProviderError(f"{symbol}: chart returned no usable bars for {interval}/{rng}")
         return out
+
+
+    # -- option chains -------------------------------------------------------------
+
+    def snapshot(self, underlying, expiry_limit=3, strike_window=10):
+        """
+        Build a ChainSnapshot from /v7/finance/options.
+
+        Yahoo returns one expiry per call plus the full list of expiration dates, so this is
+        1 + (expiry_limit - 1) requests. The first response also carries the underlying quote,
+        which saves a separate lookup for spot.
+        """
+        from ..models import ChainSnapshot, Contract, Quote
+
+        underlying = underlying.upper()
+        first = self._chain_call(underlying)
+        spot = self._spot_from(first, underlying)
+
+        expiries = [e for e in (first.get("expirationDates") or [])]
+        quotes = list(self._contracts(first, underlying))
+
+        # The first payload already contains the nearest expiry; fetch any others we still want.
+        for epoch in expiries[1:max(1, expiry_limit)]:
+            try:
+                more = self._chain_call(underlying, epoch)
+            except ProviderError as e:
+                sys.stderr.write(f"[yahoo] {underlying}: skipping one expiry: {e}\n")
+                continue
+            quotes.extend(self._contracts(more, underlying))
+
+        if not quotes:
+            raise ProviderError(f"{underlying}: option chain came back empty")
+
+        snap = ChainSnapshot(underlying, spot, dt.datetime.now(dt.timezone.utc),
+                             self._window(quotes, spot, strike_window), self.name,
+                             self.rate, self.dividend)
+        return snap.enrich()
+
+    def _chain_call(self, underlying, epoch=None):
+        j = _http.get_json(OPTIONS + underlying, {"date": epoch} if epoch else None)
+        chain = j.get("optionChain") or {}
+        if chain.get("error"):
+            err = chain["error"]
+            raise ProviderError(f"{underlying}: {err.get('description') or err.get('code')}")
+        results = chain.get("result") or []
+        if not results:
+            raise ProviderError(f"{underlying}: no option chain "
+                                "(does this symbol have listed options?)")
+        return results[0]
+
+    def _spot_from(self, result, underlying):
+        q = result.get("quote") or {}
+        for key in ("regularMarketPrice", "postMarketPrice", "preMarketPrice",
+                    "regularMarketPreviousClose"):
+            px = q.get(key)
+            if px:
+                return float(px)
+        raise ProviderError(f"{underlying}: no underlying price in the option chain payload")
+
+    def _contracts(self, result, underlying):
+        from ..models import Contract, Quote
+
+        for block in (result.get("options") or []):
+            for side, right in (("calls", "C"), ("puts", "P")):
+                for o in (block.get(side) or []):
+                    try:
+                        strike = float(o["strike"])
+                        expiry = dt.datetime.fromtimestamp(
+                            float(o["expiration"]), dt.timezone.utc).date()
+                    except (KeyError, TypeError, ValueError, OSError):
+                        continue                     # malformed row; skip, never guess
+                    yield Quote(
+                        contract=Contract(underlying, expiry, strike, right,
+                                          o.get("contractSymbol", "")),
+                        bid=_f(o.get("bid")), ask=_f(o.get("ask")),
+                        last=_f(o.get("lastPrice")),
+                        volume=_i(o.get("volume")),
+                        open_interest=_i(o.get("openInterest")),
+                        vendor_iv=_f(o.get("impliedVolatility")))
+
+
+def _f(v):
+    try:
+        f = float(v)
+    except (TypeError, ValueError):
+        return None
+    # Yahoo uses 0 for "no quote" on illiquid contracts; a real bid of exactly 0.00 and an
+    # absent one are indistinguishable here, and treating absent as 0 would fabricate a mid.
+    return f if f else None
+
+
+def _i(v):
+    try:
+        return int(v) if v is not None else None
+    except (TypeError, ValueError):
+        return None

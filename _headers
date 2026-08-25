@@ -30,3 +30,12 @@
 # Long-lived, content-hashed brand assets can cache hard.
 /brand/*
   Cache-Control: public, max-age=86400
+
+# Options desk: the page shell is static, the snapshot must always revalidate so a fresh
+# scheduled publish is visible immediately rather than after a browser/edge cache expires.
+/desk.html
+  Cache-Control: public, max-age=0, must-revalidate
+/desk_data.json
+  Cache-Control: public, max-age=0, must-revalidate
+/desk-preview.html
+  Cache-Control: public, max-age=0, must-revalidate

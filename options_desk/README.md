@@ -204,9 +204,48 @@ python -m options_desk backtest --symbol SPY
 | `synthetic` | none | ✓ | ✓ | Generated data. Default, so everything runs before you have a key. **Never trade off it.** |
 | `polygon` | `POLYGON_API_KEY` | ✓ | ✓ | Real-time OPRA chains + aggregates. Free tier omits NBBO — falls back to daily closes and warns once. |
 | `tradier` | `TRADIER_ACCESS_TOKEN`, `TRADIER_ENV` | ✓ | ✓ | `sandbox` is ~15 min delayed; `production` needs a funded brokerage token. |
-| `yahoo` | none | — | ✓ | **Only bundled adapter covering NSE/BSE** (`RELIANCE.NS`). Delayed, undocumented, no SLA — convenience, not dependability. |
+| `yahoo` | none | ✓ | ✓ | **No credentials, both sides.** US option chains via `/v7/finance/options`, intraday bars via `/v8/finance/chart`, and the only bundled adapter covering NSE/BSE bars (`RELIANCE.NS`). Delayed and undocumented — see the caveat below. |
 
-> The Yahoo adapter is parser-tested against captured payloads but **was not verified against the live endpoint**, because Yahoo is blocked by this environment's egress proxy. Sanity-check its first output against your broker's chart before trusting it.
+> **Yahoo caveat.** The adapter is parser-tested against captured payloads but **was never run
+> against the live endpoint** — Yahoo is blocked by the egress policy of the environment it was
+> written in. The first real call happens on your machine or on the GitHub runner, and both
+> report parse failures rather than hiding them. Sanity-check the first output against your
+> broker's chart. Yahoo is delayed (commonly ~15 min), undocumented, and can change without
+> notice; it also serves option chains for **US-listed options only** — NSE symbols get bars,
+> pivots, CPR and VWAP, but no chain.
+
+## Publishing it publicly
+
+`.github/workflows/desk-refresh.yml` (a **separate** workflow — the existing
+`refresh-and-deploy.yml` is untouched) fetches live data on a schedule, computes greeks,
+pivots, CPR and VWAP, and commits `desk_data.json`. Cloudflare Pages auto-deploys on push, so
+`/desk.html` picks it up within a minute. No credentials: Yahoo needs none, so nothing secret
+ever enters the repo or the page.
+
+```bash
+# same thing locally
+python -m options_desk.build_preview SPY QQQ --provider yahoo     --json-out desk_data.json --page-out desk.html
+```
+
+Three artifacts, three jobs:
+
+| File | What it is |
+|---|---|
+| `desk.html` | The dashboard, fetching `desk_data.json` beside it. Deploy both to any static host. |
+| `desk_data.json` | The snapshot. Refreshed on its own schedule without redeploying the page. |
+| `desk-preview.html` | Everything in one file, payload baked in. Openable from `file://`, no server. |
+
+Cadence is set by the Cloudflare build budget, not by taste: every commit triggers a Pages
+build and the free plan allows 500/month. The schedule is 14 runs per trading day (~294),
+leaving room alongside the ~70 the NAV workflow uses. Widen the cron to hourly if you hit the
+cap — it is one line.
+
+**A published snapshot is not live.** The page says so in a banner, with the time it was taken.
+A dashboard that looks live and is half an hour stale is worse than no dashboard.
+
+**Before you publish market data publicly:** vendor terms generally restrict redistributing
+their feed. Yahoo's are no exception. Derived levels (pivots, CPR, VWAP) are a far easier
+argument than a republished option chain, and `OPTIONS_STRIKE_WINDOW` trims what goes out.
 
 ---
 
@@ -303,7 +342,7 @@ Subclass `Provider` and implement `snapshot()` (chains) and/or `bars()` + `daily
 ## Tests
 
 ```bash
-python -m unittest discover -s tests -v      # 170 tests, no network, no credentials
+python -m unittest discover -s tests -v      # 176 tests, no network, no credentials
 ```
 
 Vendor adapters are tested against captured payload shapes with HTTP patched out. Every scalping rule is tested twice — once on data that must trigger it, once on data that must not. The dashboard's HTTP layer is tested against a real server on an ephemeral loopback port.

@@ -85,7 +85,12 @@ def main(argv=None):
         description="Export the dashboard as one self-contained HTML file.")
     p.add_argument("symbols", nargs="*", default=None,
                    help="underlyings (default: OPTIONS_UNDERLYINGS)")
-    p.add_argument("--out", default="desk-preview.html")
+    p.add_argument("--out", default="desk-preview.html",
+                   help="self-contained page with the payload baked in")
+    p.add_argument("--json-out",
+                   help="also write the payload as standalone JSON (for a static host)")
+    p.add_argument("--page-out",
+                   help="also write the dashboard page that FETCHES that JSON")
     p.add_argument("--provider", help="override OPTIONS_PROVIDER")
     p.add_argument("--exchange", help="NSE | BSE | US")
     p.add_argument("--warmup", type=int, default=78,
@@ -116,6 +121,24 @@ def main(argv=None):
         if provider == "synthetic" else
         f"Frozen snapshot from {provider}, taken {payload['generated']}. "
         "Not live — re-export to refresh.")
+
+    payload_out = dict(payload)
+    payload_out["snapshot"] = note
+
+    if a.json_out:
+        # Separate JSON + page: the page is cached hard, the data is refreshed on its own
+        # schedule. Baking the payload in would mean redeploying the page for every tick.
+        with open(a.json_out, "w", encoding="utf-8") as f:
+            json.dump(payload_out, f, default=str, separators=(",", ":"))
+        sys.stderr.write(f"[preview] {a.json_out}  "
+                         f"{os.path.getsize(a.json_out)/1024:.0f} KB\n")
+    if a.page_out:
+        with open(PAGE, encoding="utf-8") as f:
+            shell = f.read()
+        with open(a.page_out, "w", encoding="utf-8") as f:
+            f.write(shell)
+        sys.stderr.write(f"[preview] {a.page_out}  "
+                         f"{os.path.getsize(a.page_out)/1024:.0f} KB (fetches desk_data.json)\n")
 
     html = render_page(payload, note)
     with open(a.out, "w", encoding="utf-8") as f:

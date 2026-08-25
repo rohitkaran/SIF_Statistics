@@ -435,19 +435,35 @@ class TestWorkerIntegration(unittest.TestCase):
         self.assertGreater(len(payload["bars"]["series"]), 0)
         json.dumps(payload, default=str)
 
-    def test_bar_only_provider_yields_no_chain(self):
+    def test_chainless_provider_reports_rather_than_fails_silently(self):
+        """A provider with no option chain must surface the gap, not drop it."""
         from options_desk import rules as rules_mod
+        from options_desk.providers.base import Provider
         from options_desk.server import Worker
-        from options_desk.providers.yahoo import YahooProvider
+
+        session = get_session("US")
+
+        class BarsOnly(Provider):
+            name = "barsonly"
+
+            def bars(self, symbol, interval="5m", lookback_days=5):
+                out = []
+                for day in (dt.date(2026, 8, 24), DAY):
+                    for i in range(4):
+                        out.append(Bar(session.open_utc(day) + dt.timedelta(minutes=5 * i),
+                                       100, 102, 98, 101, 500))
+                return out
 
         c = cfg(OPTIONS_EXCHANGE="US")
         errors = []
-        w = Worker(c, DeskState(), ["SPY"], YahooProvider(c), None,
-                   rules_mod.build(rules_mod.default_specs("chain")),
+        w = Worker(c, DeskState(), ["SPY"], BarsOnly(c), BarsOnly(c),
+                   rules_mod.build(rules_mod.default_specs("bars")),
                    interval=1, bar_interval="5m", stop=threading.Event())
         payload = w._one("SPY", errors)
-        self.assertNotIn("chain", payload)          # yahoo has no chains
-        self.assertTrue(errors)                     # and says so rather than failing silently
+        self.assertNotIn("chain", payload)
+        self.assertIn("bars", payload)
+        self.assertTrue(errors)
+        self.assertIn("no option chains", errors[0])
 
 
 if __name__ == "__main__":
