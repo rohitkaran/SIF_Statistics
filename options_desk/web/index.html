@@ -254,6 +254,13 @@ summary:hover { color: var(--text-secondary); }
 .sev.warn  { background: rgba(237,161,0,.20); color: var(--text-primary); }
 .sev.alert { background: rgba(227,73,72,.20); color: var(--text-primary); }
 .empty { color: var(--text-muted); font-size: 12.5px; padding: 10px 0; }
+.banner {
+  border-left: 3px solid var(--warn); padding: 10px 13px; background: var(--surface-1);
+  border-radius: 0 9px 9px 0; font-size: 13px; margin-bottom: 14px;
+  color: var(--text-secondary); border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.banner b { color: var(--text-primary); }
 .errbox { border-left: 3px solid var(--bear); padding: 8px 12px; background: var(--surface-2); border-radius: 0 8px 8px 0; font-size: 12.5px; margin-bottom: 12px; }
 
 @media (max-width: 620px) {
@@ -283,6 +290,7 @@ summary:hover { color: var(--text-secondary); }
 </header>
 
 <main>
+  <div id="snapshot-banner"></div>
   <div id="errors"></div>
   <div class="tiles" id="tiles"></div>
 
@@ -421,6 +429,19 @@ function frame(svg, height) {
 
 /* ===================== polling ===================== */
 async function poll() {
+  // Static mode: a published snapshot bakes its payload into the page, so there is no
+  // /api/state to reach. One page serves both -- live when a desk is running behind it,
+  // frozen when it was exported.
+  if (window.__DESK_STATE__) {
+    S.data = window.__DESK_STATE__;
+    if (!S.symbol || !S.data.symbols.includes(S.symbol)) S.symbol = S.data.symbols[0] || null;
+    $("dot").className = "dot";
+    $("stat").textContent = "snapshot · " + hhmm(S.data.generated);
+    $("meta").textContent = (S.data.providers && S.data.providers.chain ? S.data.providers.chain : "")
+      + " · " + (S.data.exchange || "");
+    render();
+    return;
+  }
   try {
     const r = await fetch("/api/state", { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
@@ -441,6 +462,7 @@ async function poll() {
 /* ===================== render ===================== */
 function render() {
   const d = S.data; if (!d) return;
+  renderBanner(d);
   scrubbers.length = 0;          // charts are rebuilt below; drop the previous nodes' handles
   renderTabs(d);
   const sym = d.data[S.symbol];
@@ -454,6 +476,13 @@ function render() {
   renderSmile(sym.analytics, sym.chain);
   renderChain(sym.chain);
   renderSignals(sym.signals);
+}
+
+function renderBanner(d) {
+  const box = $("snapshot-banner");
+  if (!d.snapshot) { box.innerHTML = ""; return; }
+  box.innerHTML = '<div class="banner"><b>Static preview.</b> ' +
+    String(d.snapshot).replace(/[<>&]/g, "") + '</div>';
 }
 
 function renderTabs(d) {
@@ -912,6 +941,7 @@ let pollTimer = null;
 function startPolling() {
   stopPolling();
   poll();
+  if (window.__DESK_STATE__) return;      // nothing to poll; the data is already in the page
   pollTimer = setInterval(poll, 3000);
 }
 function stopPolling() { if (pollTimer) { clearInterval(pollTimer); pollTimer = null; } }
