@@ -36,6 +36,8 @@ def _cfg(a):
         over["OPTIONS_RECORD_DIR"] = a.record_dir
     if getattr(a, "exchange", None):
         over["OPTIONS_EXCHANGE"] = a.exchange
+    if getattr(a, "bar_provider", None):
+        over["OPTIONS_BAR_PROVIDER"] = a.bar_provider
     return config.load(env_path=getattr(a, "env", None) or None, overrides=over)
 
 
@@ -241,6 +243,18 @@ def cmd_scalp(a):
     return 0
 
 
+def cmd_serve(a):
+    """Local web dashboard: chain, intraday levels, analytics and the long/short read."""
+    from .server import serve
+    cfg = _cfg(a)
+    rules = _rules(a, "chain") if a.rules else rules_mod.build(
+        rules_mod.default_specs("chain") + rules_mod.default_specs("bars"))
+    return serve(cfg, _symbols(a, cfg),
+                 port=a.port or cfg.int("OPTIONS_SERVE_PORT", 8787),
+                 host=a.host, interval=a.interval, bar_interval=a.bar_interval,
+                 rules=rules, open_browser=a.open)
+
+
 # -- wiring ------------------------------------------------------------------------
 
 def build_parser():
@@ -304,6 +318,19 @@ def build_parser():
     sc.add_argument("--record-dir", dest="record_dir")
     sc.add_argument("--no-dashboard", action="store_true", dest="no_dashboard")
     sc.set_defaults(fn=cmd_scalp)
+
+    sv = sub.add_parser("serve", help="local web dashboard (chain + levels + analytics)")
+    sv.add_argument("symbols", nargs="*", help="underlyings (default: OPTIONS_UNDERLYINGS)")
+    sv.add_argument("--port", type=int, help="listen port (default 8787)")
+    sv.add_argument("--host", default="127.0.0.1",
+                    help="bind address; keep on loopback unless you mean otherwise")
+    sv.add_argument("--interval", type=float, help="seconds between provider polls")
+    sv.add_argument("--bar-interval", dest="bar_interval", help="bar size, e.g. 1m/5m/15m")
+    sv.add_argument("--exchange", help="NSE | BSE | US")
+    sv.add_argument("--bar-provider", dest="bar_provider",
+                    help="use a different adapter for bars (e.g. yahoo) than for chains")
+    sv.add_argument("--open", action="store_true", help="open a browser window")
+    sv.set_defaults(fn=cmd_serve)
 
     d = sub.add_parser("data", help="summarise recorded chains")
     d.add_argument("--record-dir", dest="record_dir")

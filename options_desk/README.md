@@ -2,11 +2,12 @@
 
 Real-time market data, signal rules, and replay backtesting. Python 3.9+, **standard library only** — no pip install required.
 
-Two sides, one engine:
+One engine, three ways in:
 
 ```bash
-python -m options_desk watch SPY                          # option chains, greeks, IV signals
-python -m options_desk scalp RELIANCE.NS --exchange NSE   # pivots, CPR, VWAP scalping signals
+python -m options_desk serve SPY QQQ --open               # web dashboard (start here)
+python -m options_desk watch SPY                          # terminal: chains, greeks, IV signals
+python -m options_desk scalp RELIANCE.NS --exchange NSE   # terminal: pivots, CPR, VWAP
 ```
 
 Both run with **no credentials** on a synthetic feed. The package keeps its original name; the scalping side works on any stock, on NSE/BSE or US.
@@ -26,6 +27,59 @@ I could not read either site directly — both domains are blocked by this envir
 **So this package does the part that is actually buildable.** It is **data and signals only** — nothing here places, routes, modifies, or cancels an order, and no adapter holds brokerage trading credentials. You act on the signals yourself, in whatever platform you trade.
 
 ---
+
+## The dashboard
+
+```bash
+python -m options_desk serve SPY QQQ --open
+```
+
+Serves a single self-contained page on `http://127.0.0.1:8787/`. It runs **on your machine**,
+against your credentials — nothing is hosted, and no market data or key leaves the box. Binds
+to loopback by default; `--host` overrides it and warns.
+
+What's on it, and why each panel earns its place:
+
+| Panel | What it tells you |
+|---|---|
+| **Stat row** | Price vs previous close, VWAP + z-score, CPR position, ATM IV, expected move, ATM straddle, max pain, put/call ratio, relative volume |
+| **Intraday chart** | Price and VWAP on one axis, VWAP ±1σ/±2σ envelope, the CPR band, and every pivot near the day's range |
+| **Long / short read** | A weighted score with **every component shown** — CPR position, VWAP side, VWAP stretch, move vs previous close, 25d skew, PCR |
+| **Levels ladder** | Every level price-sorted with spot slotted in, nearest one highlighted |
+| **Open interest by strike** | Back-to-back calls/puts — the walls that act like pivots |
+| **IV smile** | Call and put IV by strike; the shape *is* your skew |
+| **Option chain** | Bid/ask/IV/Δ/OI/volume both sides, ATM highlighted, OI magnitude bars inline |
+| **Signals** | Fired rules, newest first |
+
+Beyond what you asked for, four reads I'd want on screen:
+
+- **Expected move** — two estimates: the ATM straddle (what the move actually costs) and
+  `spot × IV × √T` (the model's 1σ). When the straddle is much richer than the sigma
+  estimate, the market is paying for an event plain vol doesn't capture. Also the fastest
+  sanity check on a scalp target: if your CPR target sits outside the day's expected move,
+  you are counting on an outlier.
+- **Max pain** — where the most open contracts expire worthless. One crowded reference point,
+  not a forecast; the pull is weak until the last day or two.
+- **Put/call ratio** on both OI and volume. They diverge when a crowded book starts unwinding,
+  which is the part worth noticing.
+- **OI walls** — the biggest call/put OI strikes, shown next to the pivots because they act
+  the same way and deserve one mental model, not two.
+
+Use a different feed for each side when it helps — Tradier chains with Yahoo bars, say:
+
+```bash
+python -m options_desk serve RELIANCE.NS --exchange NSE --bar-provider yahoo
+```
+
+> **On the long/short read:** it is a weighted sum of readings already on the screen, with the
+> weights chosen by hand. It is not backtested as a strategy, has no edge of its own, and
+> ignores spread, slippage, position size and risk. Its components are all displayed precisely
+> so you can disagree with it. Treat it as a summary, never as a trigger.
+
+> **NSE options:** the bundled chain adapters (Polygon, Tradier) cover **US options via OPRA**.
+> For NSE option chains you need an Indian broker API — Zerodha Kite, Upstox, Dhan, Fyers or
+> Angel One SmartAPI. That is one adapter file (see *Adding a provider*); the intraday side
+> already works for NSE today through the Yahoo adapter.
 
 ## Quick start
 
@@ -48,6 +102,7 @@ python -m options_desk backtest --symbol SPY
 
 | Command | What it does |
 |---|---|
+| `serve [SYMS]` | **Local web dashboard** — chain, levels, analytics, signals |
 | `providers` | List adapters and the credentials each needs |
 | `config` | Show resolved settings, secrets redacted |
 | `rules [--kind bars]` | List rule types and the active set |
@@ -165,7 +220,13 @@ Subclass `Provider` and implement `snapshot()` (chains) and/or `bars()` + `daily
 ## Tests
 
 ```bash
-python -m unittest discover -s tests -v      # 103 tests, no network, no credentials
+python -m unittest discover -s tests -v      # 133 tests, no network, no credentials
 ```
 
-Vendor adapters are tested against captured payload shapes with HTTP patched out. Every scalping rule is tested twice — once on data that must trigger it, once on data that must not.
+Vendor adapters are tested against captured payload shapes with HTTP patched out. Every scalping rule is tested twice — once on data that must trigger it, once on data that must not. The dashboard's HTTP layer is tested against a real server on an ephemeral loopback port.
+
+The page was rendered and inspected in light, dark and 430px-wide viewports: zero horizontal
+overflow, no console errors, and its categorical palette passes the colourblind-separation and
+contrast gates in both modes. Direction is never carried by colour alone — every bullish or
+bearish mark ships an arrow and a word, and the bull/bear pair is blue/red rather than the
+conventional green/red, which is precisely the red-green confusion case.

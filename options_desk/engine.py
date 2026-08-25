@@ -45,8 +45,11 @@ class Engine:
         self.stats["first_ts"] = self.stats["first_ts"] or snap.ts
         self.stats["last_ts"] = snap.ts
 
+        kind = getattr(snap, "kind", "chain")
         fired = []
         for rule in self.rules:
+            if kind not in getattr(rule, "kinds", ("chain",)):
+                continue                      # option rule on a bar snapshot, or vice versa
             if not rule.applies_to(snap.underlying):
                 continue
             try:

@@ -38,6 +38,10 @@ DEFAULTS = {
     # Scalping side: which exchange's session defines VWAP anchoring and regular hours.
     "OPTIONS_EXCHANGE": "US",
     "OPTIONS_BAR_INTERVAL": "5m",
+    # Optional: use a different adapter for bars than for chains, e.g. tradier
+    # chains + yahoo bars. Empty = same provider for both.
+    "OPTIONS_BAR_PROVIDER": "",
+    "OPTIONS_SERVE_PORT": "8787",
     "OPTIONS_BAR_LOOKBACK_DAYS": "5",
     "OPTIONS_ALERT_WEBHOOK": "",
     # Synthetic provider only: seconds of virtual time per snapshot (0 = real time).

@@ -24,6 +24,7 @@ class ScalpRule(Rule):
     better than a stderr flood every tick.
     """
     default_severity = "info"
+    kinds = ("bars",)
     min_bars = 2
 
     def applies_to_snapshot(self, snap):

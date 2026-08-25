@@ -50,6 +50,9 @@ class Rule:
     type = "base"
     default_severity = "info"
     default_cooldown_s = 300
+    #: Snapshot kinds this rule understands. The engine skips it for anything else, so one
+    #: rule set can hold both option-chain and intraday rules and each sees only its own data.
+    kinds = ("chain",)
 
     def __init__(self, **params):
         self.params = params
