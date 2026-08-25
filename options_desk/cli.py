@@ -243,6 +243,15 @@ def cmd_scalp(a):
     return 0
 
 
+def cmd_doctor(a):
+    """Diagnose why the dashboard is not reachable from another device."""
+    from .doctor import main as doctor_main
+    argv = ["--port", str(a.port or 8787)]
+    if a.host:
+        argv += ["--host", a.host]
+    return doctor_main(argv)
+
+
 def cmd_serve(a):
     """Local web dashboard: chain, intraday levels, analytics and the long/short read."""
     from .server import serve
@@ -335,6 +344,11 @@ def build_parser():
                     help="use a different adapter for bars (e.g. yahoo) than for chains")
     sv.add_argument("--open", action="store_true", help="open a browser window")
     sv.set_defaults(fn=cmd_serve)
+
+    dr = sub.add_parser("doctor", help="diagnose phone / tailnet access to the dashboard")
+    dr.add_argument("--port", type=int, help="port the desk serves on (default 8787)")
+    dr.add_argument("--host", help="check a specific address instead of auto-detecting")
+    dr.set_defaults(fn=cmd_doctor)
 
     d = sub.add_parser("data", help="summarise recorded chains")
     d.add_argument("--record-dir", dest="record_dir")

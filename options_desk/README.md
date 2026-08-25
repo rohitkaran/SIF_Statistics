@@ -72,9 +72,45 @@ Two things to avoid:
 - If `--tailscale` cannot find an address it **fails with instructions** rather than quietly
   falling back to a wider bind.
 
-Prefer HTTPS and a real hostname? `tailscale serve --bg 8787` puts it on
-`https://<machine>.<tailnet>.ts.net` with a valid certificate, still tailnet-only — run the
-desk on loopback and let Serve front it.
+### Not opening on the phone?
+
+```bash
+python -m options_desk doctor
+```
+
+"It doesn't open" has several causes that look identical from the phone — the desk bound to
+loopback, Tailscale down on one end, a host firewall, the wrong port, or the browser never
+issuing the request at all. `doctor` checks each from the serving machine and names the fix,
+then prints the exact URL to open.
+
+Working through it by hand, in the order things actually go wrong:
+
+1. **Is it bound to the tailnet at all?** Plain `serve` binds to `127.0.0.1`, which no other
+   device can reach. The startup line says which; you want `--tailscale`.
+2. **Is Tailscale connected on the phone?** Look for the VPN key icon, and check the phone
+   appears in `tailscale status` on the desktop.
+3. **Type the scheme.** `http://100.x.y.z:8787/` — without `http://`, Chrome's omnibox may
+   treat `100.x.y.z:8787` as a search rather than an address.
+4. **Host firewall.** macOS prompts per-application; Windows Defender prompts once and
+   remembers a dismissal; Linux may have `ufw` active. `doctor` prints the right incantation
+   for your OS.
+
+**If Chrome specifically objects to the plain-HTTP address, stop fighting it and use HTTPS:**
+
+```bash
+tailscale serve --bg 8787          # desk stays on its default loopback bind
+```
+
+That publishes it at `https://<machine>.<tailnet>.ts.net` with a real certificate, still
+tailnet-only. It removes the whole category at once — no HTTPS-First warning, no mixed-content
+question, no local-network permission prompt, and a hostname the omnibox always treats as a
+URL. Chrome documents an HTTPS-First exemption for RFC1918 addresses (`192.168.x`, `10.x`,
+`172.16–31.x`), but Tailscale hands out `100.64.0.0/10` **CGNAT** addresses, which are not
+RFC1918 — I could not confirm Chrome treats them the same way, so the certificate-backed route
+is the reliable one.
+
+Still: `tailscale serve` is tailnet-only and fine. **`tailscale funnel` is not** — that
+publishes to the open internet, and this dashboard has no login.
 
 What's on it, and why each panel earns its place:
 
@@ -141,6 +177,7 @@ python -m options_desk backtest --symbol SPY
 | Command | What it does |
 |---|---|
 | `serve [SYMS]` | **Local web dashboard** — chain, levels, analytics, signals (`--tailscale` for phone access) |
+| `doctor` | Diagnose why the dashboard is not reachable from another device |
 | `providers` | List adapters and the credentials each needs |
 | `config` | Show resolved settings, secrets redacted |
 | `rules [--kind bars]` | List rule types and the active set |
@@ -258,7 +295,7 @@ Subclass `Provider` and implement `snapshot()` (chains) and/or `bars()` + `daily
 ## Tests
 
 ```bash
-python -m unittest discover -s tests -v      # 142 tests, no network, no credentials
+python -m unittest discover -s tests -v      # 153 tests, no network, no credentials
 ```
 
 Vendor adapters are tested against captured payload shapes with HTTP patched out. Every scalping rule is tested twice — once on data that must trigger it, once on data that must not. The dashboard's HTTP layer is tested against a real server on an ephemeral loopback port.

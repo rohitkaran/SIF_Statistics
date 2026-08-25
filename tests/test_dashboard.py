@@ -19,7 +19,7 @@ from http.server import ThreadingHTTPServer
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from options_desk import analytics, config, netbind  # noqa: E402
+from options_desk import analytics, config, doctor, netbind  # noqa: E402
 from options_desk.bars import Bar, BarSeries, get_session  # noqa: E402
 from options_desk.levels import Levels, Vwap  # noqa: E402
 from options_desk.models import BarSnapshot, ChainSnapshot, Contract, Quote  # noqa: E402
@@ -314,6 +314,102 @@ class TestNetBind(unittest.TestCase):
 
         other = " ".join(netbind.advise("192.168.1.50", 8787))
         self.assertIn("WARNING", other)
+
+
+class TestDoctor(unittest.TestCase):
+    """"It doesn't open on my phone" has several identical-looking causes; these separate them."""
+
+    STATUS = ('{"BackendState":"Running","Self":{"DNSName":"mac.tail9f2c.ts.net.",'
+              '"TailscaleIPs":["100.101.102.103","fd7a:115c::1"]},"Peer":{"a":{},"b":{}}}')
+
+    def test_parse_status(self):
+        got = doctor.parse_status(self.STATUS)
+        self.assertEqual(got["backend_state"], "Running")
+        self.assertEqual(got["dns_name"], "mac.tail9f2c.ts.net")     # trailing dot stripped
+        self.assertEqual(got["ips"], ["100.101.102.103"])            # v6 filtered out
+        self.assertEqual(got["peers"], 2)
+
+    def test_parse_status_degrades(self):
+        for bad in ("", "not json", "{}", None):
+            self.assertIsInstance(doctor.parse_status(bad), dict)
+        self.assertEqual(doctor.parse_status("{}").get("ips"), [])
+
+    def test_backend_states_map_to_remedies(self):
+        self.assertEqual(doctor.backend_check("Running").status, doctor.PASS)
+        for stopped in ("NeedsLogin", "Stopped"):
+            c = doctor.backend_check(stopped)
+            self.assertEqual(c.status, doctor.FAIL)
+            self.assertIn("tailscale up", c.fix)
+        self.assertEqual(doctor.backend_check("").status, doctor.WARN)
+
+    def test_port_check_free_and_occupied(self):
+        free = doctor.port_check("127.0.0.1", _free_port())
+        self.assertEqual(free.status, doctor.PASS)
+
+        srv = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(DeskState()))
+        t = threading.Thread(target=srv.serve_forever, daemon=True)
+        t.start()
+        self.addCleanup(srv.server_close)
+        self.addCleanup(srv.shutdown)
+        busy = doctor.port_check("127.0.0.1", srv.server_address[1])
+        self.assertEqual(busy.status, doctor.INFO)
+        self.assertIn("already in use", busy.detail)
+
+    def test_port_check_on_impossible_address(self):
+        c = doctor.port_check("100.101.102.103", 8787)     # not an address on this machine
+        self.assertEqual(c.status, doctor.FAIL)
+        self.assertIn("tailscale ip", c.fix)
+
+    def test_http_check_against_live_and_dead(self):
+        st = DeskState()
+        srv = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(st))
+        threading.Thread(target=srv.serve_forever, daemon=True).start()
+        self.addCleanup(srv.server_close)
+        self.addCleanup(srv.shutdown)
+        alive = doctor.http_check("127.0.0.1", srv.server_address[1])
+        self.assertEqual(alive.status, doctor.PASS)
+
+        dead = doctor.http_check("127.0.0.1", _free_port())
+        self.assertEqual(dead.status, doctor.FAIL)
+        self.assertIn("serve", dead.fix)
+
+    def test_firewall_hint_uses_the_real_port(self):
+        self.assertIn("9999", doctor.firewall_hint(9999) + doctor.firewall_hint(9999))
+
+    def test_loopback_host_is_flagged_as_unreachable_from_a_phone(self):
+        checks, url, _https = doctor.run(port=_free_port(), host="127.0.0.1")
+        names = {c.name: c for c in checks}
+        self.assertIn("reachable from a phone", names)
+        self.assertEqual(names["reachable from a phone"].status, doctor.FAIL)
+        self.assertIn("--tailscale", names["reachable from a phone"].fix)
+        self.assertIsNone(url)          # never hand out a loopback URL as the phone URL
+
+    def test_explicit_non_tailnet_host_skips_tailscale_checks(self):
+        checks, _u, _h = doctor.run(port=_free_port(), host="127.0.0.1")
+        self.assertNotIn("tailscale CLI", {c.name for c in checks})
+        self.assertIn("tailscale", {c.name for c in checks})    # reported as context instead
+
+    def test_render_carries_the_chrome_guidance(self):
+        out = doctor.render([doctor.Check("x", doctor.PASS)],
+                            url="http://100.101.102.103:8787/",
+                            https_url="https://mac.tail9f2c.ts.net/")
+        self.assertIn("INCLUDING the http:// prefix", out)
+        self.assertIn("omnibox", out)              # the search-instead-of-navigate trap
+        self.assertIn("Tailscale must be CONNECTED on the phone", out)
+        self.assertIn("tailscale serve --bg", out)
+        self.assertIn("Do NOT use `tailscale funnel`", out)
+
+    def test_render_without_a_url_omits_phone_section(self):
+        out = doctor.render([doctor.Check("x", doctor.FAIL, "nope", "do this")])
+        self.assertIn("do this", out)
+        self.assertNotIn("Open this on the phone", out)
+
+
+def _free_port():
+    import socket as _s
+    with _s.socket() as sock:
+        sock.bind(("127.0.0.1", 0))
+        return sock.getsockname()[1]
 
 
 class TestWorkerIntegration(unittest.TestCase):

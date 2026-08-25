@@ -263,6 +263,17 @@ def serve(cfg, symbols, port=8787, host="127.0.0.1", interval=None, bar_interval
     sys.stderr.write("[serve] data and signals only -- this dashboard never places orders.\n")
     for line in netbind.advise(host, port):
         sys.stderr.write(line + "\n")
+    if netbind.classify(host) == "tailnet":
+        # Offer the certificate-backed route too: a browser that dislikes plain HTTP to a
+        # CGNAT literal has no complaint about a real ts.net hostname.
+        from .doctor import _tailscale_status_json, parse_status
+        raw, _exe = _tailscale_status_json()
+        dns = parse_status(raw or "").get("dns_name")
+        if dns:
+            sys.stderr.write(f"[serve] for HTTPS instead:  tailscale serve --bg {port}  "
+                             f"-> https://{dns}/\n")
+        sys.stderr.write("[serve] not reachable from the phone? run:  "
+                         "python -m options_desk doctor\n")
     if open_browser:
         import webbrowser
         # A wildcard/tailnet bind is not a URL this machine's browser should open.
