@@ -18,6 +18,7 @@ import sys
 
 from . import _http
 from .base import Provider, ProviderError
+from ..bars import Bar
 from ..models import ChainSnapshot, Contract, Quote
 
 HOSTS = {"production": "https://api.tradier.com", "sandbox": "https://sandbox.tradier.com"}
@@ -101,6 +102,65 @@ class TradierProvider(Provider):
                 vendor_iv=_f(g.get("mid_iv") or g.get("smv_vol")),
             ))
         return out
+
+
+class _TradierBars:
+    """Bar half of the Tradier adapter (mixed into TradierProvider below)."""
+
+    #: Tradier names its intraday intervals differently from everyone else.
+    _IV = {"1m": "1min", "5m": "5min", "15m": "15min"}
+
+    def bars(self, symbol, interval="5m", lookback_days=5):
+        iv = self._IV.get(str(interval).strip().lower())
+        if iv is None:
+            raise ProviderError(f"tradier serves only {', '.join(self._IV)}; got {interval!r}")
+        start = dt.date.today() - dt.timedelta(days=max(1, lookback_days))
+        j = _http.get_json(f"{self.base}/v1/markets/timesales",
+                           {"symbol": symbol.upper(), "interval": iv,
+                            "start": start.isoformat(),
+                            "end": dt.date.today().isoformat(),
+                            "session_filter": "open"}, self._headers)
+        rows = (j.get("series") or {}).get("data") or []
+        if isinstance(rows, dict):
+            rows = [rows]
+        out = []
+        for r in rows:
+            try:
+                # `timestamp` is epoch seconds; the `time` field is exchange-local and naive,
+                # so it is deliberately ignored.
+                out.append(Bar(dt.datetime.fromtimestamp(float(r["timestamp"]), dt.timezone.utc),
+                               float(r["open"]), float(r["high"]), float(r["low"]),
+                               float(r["close"]), float(r.get("volume") or 0.0)))
+            except (KeyError, TypeError, ValueError):
+                continue
+        if not out:
+            raise ProviderError(f"no {interval} bars for {symbol}")
+        return out
+
+    def daily_bars(self, symbol, days=10):
+        start = dt.date.today() - dt.timedelta(days=days * 2 + 5)
+        j = _http.get_json(f"{self.base}/v1/markets/history",
+                           {"symbol": symbol.upper(), "interval": "daily",
+                            "start": start.isoformat(),
+                            "end": dt.date.today().isoformat()}, self._headers)
+        rows = (j.get("history") or {}).get("day") or []
+        if isinstance(rows, dict):
+            rows = [rows]
+        out = []
+        for r in rows:
+            try:
+                day = dt.date.fromisoformat(r["date"])
+                out.append(Bar(dt.datetime(day.year, day.month, day.day, tzinfo=dt.timezone.utc),
+                               float(r["open"]), float(r["high"]), float(r["low"]),
+                               float(r["close"]), float(r.get("volume") or 0.0)))
+            except (KeyError, TypeError, ValueError):
+                continue
+        if not out:
+            raise ProviderError(f"no daily bars for {symbol}")
+        return out[-days:]
+
+
+TradierProvider.__bases__ = (_TradierBars,) + TradierProvider.__bases__
 
 
 def _one(v):

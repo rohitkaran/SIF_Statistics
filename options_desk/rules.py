@@ -195,6 +195,17 @@ class CreditTargetRule(Rule):
 
 _TYPES = {c.type: c for c in (SpotMoveRule, IVSpikeRule, IVRankRule, SkewShiftRule, CreditTargetRule)}
 
+
+def _all_types():
+    """
+    Options rules plus the intraday scalping rules.
+
+    Imported lazily: scalp.py needs `Rule` from this module, so a module-level import here
+    would be circular.
+    """
+    from . import scalp
+    return {**_TYPES, **scalp.TYPES}
+
 #: A sane starting desk. Override with --rules rules.json.
 DEFAULT_RULES = [
     {"type": "spot_move", "window_s": 300, "threshold": 0.004},
@@ -211,13 +222,22 @@ def build(specs):
     for i, spec in enumerate(specs):
         if not isinstance(spec, dict) or "type" not in spec:
             raise SystemExit(f"[rules] entry {i}: each rule needs a 'type' key, got {spec!r}")
-        cls = _TYPES.get(spec["type"])
+        types = _all_types()
+        cls = types.get(spec["type"])
         if cls is None:
             raise SystemExit(f"[rules] entry {i}: unknown rule type {spec['type']!r}; "
-                             f"available: {', '.join(sorted(_TYPES))}")
+                             f"available: {', '.join(sorted(types))}")
         out.append(cls(**{k: v for k, v in spec.items() if k != "type"}))
     return out
 
 
 def available():
-    return sorted(_TYPES)
+    return sorted(_all_types())
+
+
+def default_specs(kind="chain"):
+    """Built-in rule set for a snapshot kind: 'chain' (options) or 'bars' (scalping)."""
+    if kind == "bars":
+        from .scalp import DEFAULT_SCALP_RULES
+        return list(DEFAULT_SCALP_RULES)
+    return list(DEFAULT_RULES)

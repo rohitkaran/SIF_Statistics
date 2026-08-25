@@ -14,7 +14,8 @@ import datetime as dt
 import math
 import random
 
-from .base import Provider
+from .base import Provider, ProviderError
+from ..bars import Bar, get_session
 from ..models import ChainSnapshot, Contract, Quote
 
 
@@ -35,6 +36,7 @@ class SyntheticProvider(Provider):
         # multi-minute windows can never be covered in a test run, and nothing ever fires.
         self.step_s = cfg.float("OPTIONS_SYNTH_STEP_S", 0.0)
         self._clock = None
+        self._bar_state = {}          # (symbol, interval) -> accumulated bar history
 
     def _now(self):
         if self.step_s <= 0:
@@ -136,3 +138,115 @@ def _weekly_expiries(today, count):
         if d.weekday() == 4:
             out.append(d)
     return out
+
+
+# --- intraday bars ------------------------------------------------------------------
+
+def parse_interval(interval):
+    """'1m' / '5m' / '15m' / '1h' -> minutes."""
+    txt = str(interval).strip().lower()
+    try:
+        if txt.endswith("m"):
+            return max(1, int(txt[:-1]))
+        if txt.endswith("h"):
+            return max(1, int(txt[:-1]) * 60)
+        return max(1, int(txt))
+    except ValueError:
+        raise ProviderError(f"unrecognised bar interval {interval!r} (use 1m, 5m, 15m, 1h)")
+
+
+def next_trading_day(day):
+    """Next weekday. No holiday calendar -- synthetic data does not need one."""
+    d = day + dt.timedelta(days=1)
+    while d.weekday() >= 5:
+        d += dt.timedelta(days=1)
+    return d
+
+
+def prev_trading_day(day):
+    d = day - dt.timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= dt.timedelta(days=1)
+    return d
+
+
+def _intraday_volume_shape(frac):
+    """
+    Classic U-shape: heavy at the open, thin midday, heavy into the close.
+
+    Without this every bar carries the same volume, VWAP degenerates into a plain average of
+    typical prices, and the relative-volume rule has nothing to detect.
+    """
+    return 0.4 + 2.2 * math.exp(-((frac - 0.02) / 0.10) ** 2) + 1.3 * math.exp(-((frac - 1.0) / 0.12) ** 2)
+
+
+class _SyntheticBars:
+    """Mixin holding the bar-generation half of SyntheticProvider."""
+
+    def bars(self, symbol, interval="5m", lookback_days=5):
+        symbol = symbol.upper()
+        session = get_session(self.exchange)
+        step = parse_interval(interval)
+        now = self._now()
+        key = (symbol, interval)
+
+        st = self._bar_state.get(key)
+        if st is None:
+            day = session.key(now)
+            for _ in range(max(1, lookback_days) - 1):
+                day = prev_trading_day(day)
+            st = {"bars": [], "cursor": session.open_utc(day),
+                  "px": self.SPOTS.get(symbol, 100.0)}
+            self._bar_state[key] = st
+
+        # Extend the history up to `now`, one bar at a time, rolling into the next session
+        # when the cursor passes the close. Bars accumulate rather than being regenerated, so
+        # a streaming caller sees a VWAP that builds through the session exactly as a real
+        # feed would.
+        guard = 0
+        while st["cursor"] + dt.timedelta(minutes=step) <= now and guard < 20_000:
+            guard += 1
+            day = session.key(st["cursor"])
+            if st["cursor"] >= session.close_utc(day):
+                nxt = next_trading_day(day)
+                st["cursor"] = session.open_utc(nxt)
+                st["px"] *= math.exp(0.004 * self._rng.gauss(0, 1))     # overnight gap
+                continue
+            st["bars"].append(self._make_bar(st, session, day, step))
+
+        if not st["bars"]:
+            raise ProviderError(f"{symbol}: no bars generated (virtual clock has not advanced "
+                                "past one bar interval yet)")
+        return list(st["bars"])
+
+    def _make_bar(self, st, session, day, step):
+        o = st["px"]
+        sigma = 0.0009 * math.sqrt(step)
+        c = o * math.exp(-0.5 * sigma ** 2 + sigma * self._rng.gauss(0, 1))
+        wick = abs(o) * sigma * abs(self._rng.gauss(0, 1)) * 0.8
+        hi, lo = max(o, c) + wick, min(o, c) - wick
+        opened = session.open_utc(day)
+        span = (session.close_utc(day) - opened).total_seconds() / 60.0
+        frac = max(0.0, min(1.0, (st["cursor"] - opened).total_seconds() / 60.0 / span))
+        vol = _intraday_volume_shape(frac) * self._rng.uniform(6_000, 14_000) * step
+        bar = Bar(st["cursor"], round(o, 2), round(hi, 2), round(lo, 2), round(c, 2), round(vol))
+        st["px"] = c
+        st["cursor"] += dt.timedelta(minutes=step)
+        return bar
+
+    def daily_bars(self, symbol, days=10):
+        """Aggregate completed synthetic sessions into daily bars."""
+        from ..bars import BarSeries
+        session = get_session(self.exchange)
+        series = BarSeries(self.bars(symbol, "5m", max(days, 3)), session)
+        out = []
+        for day in series.session_dates():
+            agg = BarSeries.ohlc(series.session_bars(day))
+            if agg:
+                o, h, l, c, v = agg
+                out.append(Bar(session.open_utc(day), o, h, l, c, v))
+        return out[-days:]
+
+
+# Fold the bar half into the provider.
+SyntheticProvider.__bases__ = (_SyntheticBars,) + SyntheticProvider.__bases__

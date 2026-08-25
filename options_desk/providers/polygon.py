@@ -19,6 +19,7 @@ import sys
 
 from . import _http
 from .base import Provider, ProviderError
+from ..bars import Bar
 from ..models import ChainSnapshot, Contract, Quote
 
 BASE = "https://api.polygon.io"
@@ -149,3 +150,55 @@ def _i(v):
         return int(v) if v is not None else None
     except (TypeError, ValueError):
         return None
+
+
+class _PolygonBars:
+    """Bar half of the Polygon adapter (mixed into PolygonProvider below)."""
+
+    def bars(self, symbol, interval="5m", lookback_days=5):
+        mult, span = _timespan(interval)
+        return self._aggs(symbol, mult, span, lookback_days)
+
+    def daily_bars(self, symbol, days=10):
+        # Calendar days, widened for weekends and holidays so `days` sessions actually land.
+        return self._aggs(symbol, 1, "day", days * 2 + 5)[-days:]
+
+    def _aggs(self, symbol, mult, span, lookback_days):
+        end = dt.date.today()
+        start = end - dt.timedelta(days=max(1, lookback_days))
+        url = (f"{BASE}/v2/aggs/ticker/{symbol.upper()}/range/{mult}/{span}"
+               f"/{start.isoformat()}/{end.isoformat()}")
+        j = _http.get_json(url, {"adjusted": "true", "sort": "asc",
+                                 "limit": 50_000, "apiKey": self.api_key})
+        if j.get("status") == "ERROR":
+            raise ProviderError(j.get("error") or j.get("message") or "polygon error")
+        rows = j.get("results") or []
+        if not rows:
+            raise ProviderError(f"no {mult}{span} bars for {symbol}")
+        out = []
+        for r in rows:
+            try:
+                out.append(Bar(dt.datetime.fromtimestamp(r["t"] / 1000.0, dt.timezone.utc),
+                               float(r["o"]), float(r["h"]), float(r["l"]), float(r["c"]),
+                               float(r.get("v") or 0.0)))
+            except (KeyError, TypeError, ValueError):
+                continue
+        return out
+
+
+PolygonProvider.__bases__ = (_PolygonBars,) + PolygonProvider.__bases__
+
+
+def _timespan(interval):
+    """'5m' -> (5, 'minute'); '1h' -> (1, 'hour')."""
+    txt = str(interval).strip().lower()
+    try:
+        if txt.endswith("m"):
+            return max(1, int(txt[:-1])), "minute"
+        if txt.endswith("h"):
+            return max(1, int(txt[:-1])), "hour"
+        if txt.endswith("d"):
+            return max(1, int(txt[:-1])), "day"
+    except ValueError:
+        pass
+    raise ProviderError(f"unrecognised bar interval {interval!r} (use 1m, 5m, 15m, 1h)")

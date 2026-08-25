@@ -16,6 +16,7 @@ credentials; set OPTIONS_PROVIDER (or --provider) once a real key is in .env.
 
 import argparse
 import datetime as dt
+import itertools
 import json
 import os
 import sys
@@ -23,7 +24,7 @@ import threading
 
 from . import alerts, config, providers, rules as rules_mod, store
 from .backtest import Backtest
-from .dashboard import Dashboard
+from .dashboard import Dashboard, ScalpDashboard
 from .engine import Engine, install_sigint
 
 
@@ -33,17 +34,20 @@ def _cfg(a):
         over["OPTIONS_PROVIDER"] = a.provider
     if getattr(a, "record_dir", None):
         over["OPTIONS_RECORD_DIR"] = a.record_dir
+    if getattr(a, "exchange", None):
+        over["OPTIONS_EXCHANGE"] = a.exchange
     return config.load(env_path=getattr(a, "env", None) or None, overrides=over)
 
 
-def _rules(a):
+def _rules(a, kind="chain"):
+    """Rules from --rules if given, else the built-in set for this snapshot kind."""
     if getattr(a, "rules", None):
         with open(a.rules, encoding="utf-8") as f:
             spec = json.load(f)
         if isinstance(spec, dict):
             spec = spec.get("rules", [])
         return rules_mod.build(spec)
-    return rules_mod.build(rules_mod.DEFAULT_RULES)
+    return rules_mod.build(rules_mod.default_specs(kind))
 
 
 def _symbols(a, cfg):
@@ -70,8 +74,8 @@ def cmd_config(a):
 
 def cmd_rules(a):
     sys.stderr.write("[rules] available types: " + ", ".join(rules_mod.available()) + "\n")
-    sys.stderr.write("[rules] active set:\n")
-    for r in _rules(a):
+    sys.stderr.write(f"[rules] active set ({a.kind}):\n")
+    for r in _rules(a, a.kind):
         sys.stderr.write(f"  {r.describe()}  cooldown={r.cooldown_s:g}s severity={r.severity}\n")
     return 0
 
@@ -161,7 +165,15 @@ def cmd_backtest(a):
     end = dt.date.fromisoformat(a.end) if a.end else None
     snaps = store.replay(root, a.symbol, start, end, limit=a.limit)
 
-    bt = Backtest(_rules(a), horizons_s=[int(h) for h in a.horizons.split(",")])
+    # Peek one snapshot to pick the right default rule set, then put it back -- an options
+    # recording and a scalping recording need completely different rules.
+    kind = a.kind
+    if kind == "auto":
+        first = next(snaps, None)
+        kind = getattr(first, "kind", "chain") if first is not None else "chain"
+        snaps = itertools.chain([first], snaps) if first is not None else iter(())
+
+    bt = Backtest(_rules(a, kind), horizons_s=[int(h) for h in a.horizons.split(",")])
     disp = alerts.build(cfg, console=a.verbose, jsonl_path=None, webhook=None)
     stats = bt.run(snaps, dispatcher=disp)
 
@@ -172,6 +184,60 @@ def cmd_backtest(a):
         return 1
     sys.stderr.write(f"[backtest] replayed {stats['ticks']} snapshots\n")
     sys.stderr.write(bt.report() + "\n")
+    return 0
+
+
+def cmd_levels(a):
+    """One-shot pivots / CPR / VWAP for a symbol."""
+    cfg = _cfg(a)
+    prov = providers.get(cfg.str("OPTIONS_PROVIDER"), cfg)
+    snap = prov.bar_snapshot(a.symbol, a.interval or cfg.str("OPTIONS_BAR_INTERVAL", "5m"),
+                             cfg.int("OPTIONS_BAR_LOOKBACK_DAYS", 5))
+    if a.json:
+        json.dump(snap.to_dict(), sys.stdout, ensure_ascii=False, indent=2)
+        sys.stdout.write("\n")
+        return 0
+    from .history import History
+    h = History()
+    h.update(snap)
+    ScalpDashboard().update(snap, h, [])
+    return 0
+
+
+def cmd_scalp(a):
+    """Live intraday levels dashboard + scalping signals."""
+    cfg = _cfg(a)
+    prov = providers.get(cfg.str("OPTIONS_PROVIDER"), cfg)
+    syms = _symbols(a, cfg)
+    rules = _rules(a, "bars")
+    bar_interval = a.interval or cfg.str("OPTIONS_BAR_INTERVAL", "5m")
+    lookback = cfg.int("OPTIONS_BAR_LOOKBACK_DAYS", 5)
+
+    rec = store.Recorder(cfg.str("OPTIONS_RECORD_DIR")) if a.record else None
+    if rec:
+        sys.stderr.write(f"[scalp] recording bar snapshots to {cfg.str('OPTIONS_RECORD_DIR')}\n")
+
+    show = not a.no_dashboard
+    disp = alerts.build(cfg, console=not show, jsonl_path=a.alert_log, webhook=a.webhook)
+    engine = Engine(prov, rules, disp, recorder=rec)
+    dash = ScalpDashboard() if show else None
+
+    poll = a.poll if a.poll is not None else cfg.float("OPTIONS_POLL_SECONDS", 5.0)
+    stop = install_sigint(threading.Event())
+    if a.hours:
+        threading.Timer(a.hours * 3600, stop.set).start()
+
+    sys.stderr.write(f"[scalp] provider={prov.name} exchange={cfg.str('OPTIONS_EXCHANGE')} "
+                     f"symbols={','.join(syms)} bars={bar_interval} poll={poll:g}s "
+                     f"rules={len(rules)}\n")
+    sys.stderr.write("[scalp] levels and signals only -- this tool never places orders.\n")
+
+    source = prov.stream_bars(syms, bar_interval, poll, stop)
+    on_tick = (lambda snap, fired: dash.update(snap, engine.history, fired)) if dash else None
+    engine.run(syms, stop=stop, on_tick=on_tick, max_ticks=a.max_ticks, source=source)
+    sys.stderr.write("\n" + engine.report() + "\n")
+    if rec:
+        sys.stderr.write(f"[scalp] recorded {rec.written} snapshots\n")
     return 0
 
 
@@ -190,7 +256,10 @@ def build_parser():
 
     sub.add_parser("providers", help="list data adapters").set_defaults(fn=cmd_providers)
     sub.add_parser("config", help="show resolved settings (secrets redacted)").set_defaults(fn=cmd_config)
-    sub.add_parser("rules", help="list rule types and the active set").set_defaults(fn=cmd_rules)
+    r = sub.add_parser("rules", help="list rule types and the active set")
+    r.add_argument("--kind", choices=("chain", "bars"), default="chain",
+                   help="which built-in set to show: chain (options) or bars (scalping)")
+    r.set_defaults(fn=cmd_rules)
 
     c = sub.add_parser("chain", help="print one chain snapshot")
     c.add_argument("symbol")
@@ -215,6 +284,27 @@ def build_parser():
                            help="plain log lines instead of the ladder")
         w.set_defaults(fn=fn)
 
+    lv = sub.add_parser("levels", help="one-shot pivots / CPR / VWAP for a symbol")
+    lv.add_argument("symbol")
+    lv.add_argument("--interval", help="bar interval (default OPTIONS_BAR_INTERVAL, e.g. 5m)")
+    lv.add_argument("--exchange", help="NSE | BSE | US (sets session hours and VWAP anchor)")
+    lv.add_argument("--json", action="store_true")
+    lv.set_defaults(fn=cmd_levels)
+
+    sc = sub.add_parser("scalp", help="live pivots / CPR / VWAP dashboard + scalping signals")
+    sc.add_argument("symbols", nargs="*", help="stocks (default: OPTIONS_UNDERLYINGS)")
+    sc.add_argument("--interval", help="bar interval, e.g. 1m/5m/15m")
+    sc.add_argument("--poll", type=float, help="seconds between refreshes")
+    sc.add_argument("--exchange", help="NSE | BSE | US")
+    sc.add_argument("--hours", type=float, help="stop automatically after N hours")
+    sc.add_argument("--max-ticks", type=int, dest="max_ticks")
+    sc.add_argument("--alert-log", dest="alert_log", help="append fired signals as JSONL")
+    sc.add_argument("--webhook", help="POST signals to this URL")
+    sc.add_argument("--record", action="store_true", help="record snapshots for backtesting")
+    sc.add_argument("--record-dir", dest="record_dir")
+    sc.add_argument("--no-dashboard", action="store_true", dest="no_dashboard")
+    sc.set_defaults(fn=cmd_scalp)
+
     d = sub.add_parser("data", help="summarise recorded chains")
     d.add_argument("--record-dir", dest="record_dir")
     d.set_defaults(fn=cmd_data)
@@ -226,6 +316,8 @@ def build_parser():
     b.add_argument("--limit", type=int, help="max snapshots to replay")
     b.add_argument("--horizons", default="60,300,900", help="forward horizons in seconds")
     b.add_argument("--record-dir", dest="record_dir")
+    b.add_argument("--kind", choices=("auto", "chain", "bars"), default="auto",
+                   help="which default rule set to replay with (auto-detects from the data)")
     b.add_argument("--verbose", action="store_true", help="print every signal as it fires")
     b.set_defaults(fn=cmd_backtest)
     return p

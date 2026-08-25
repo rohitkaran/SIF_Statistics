@@ -19,6 +19,11 @@ ENV_PATH = os.path.join(ROOT, ".env")
 # Keys whose values must never reach a log line, a JSON dump or the terminal.
 _SECRET_HINTS = ("KEY", "SECRET", "TOKEN", "PASSWORD", "PASS", "CREDENTIAL")
 
+# Vendor settings that are not OPTIONS_-prefixed but must still be settable from the real
+# environment, so CI/systemd can inject them without writing a .env to disk.
+_VENDOR_KEYS = ("POLYGON_API_KEY", "TRADIER_ACCESS_TOKEN", "TRADIER_ENV")
+_CREDENTIAL_SUFFIXES = ("_API_KEY", "_ACCESS_TOKEN", "_TOKEN", "_SECRET", "_KEY")
+
 DEFAULTS = {
     "OPTIONS_PROVIDER": "synthetic",
     "OPTIONS_UNDERLYINGS": "SPY",
@@ -30,6 +35,10 @@ DEFAULTS = {
     "OPTIONS_EXPIRY_LIMIT": "3",
     "OPTIONS_STRIKE_WINDOW": "10",
     "OPTIONS_RECORD_DIR": os.path.join(ROOT, ".options_data"),
+    # Scalping side: which exchange's session defines VWAP anchoring and regular hours.
+    "OPTIONS_EXCHANGE": "US",
+    "OPTIONS_BAR_INTERVAL": "5m",
+    "OPTIONS_BAR_LOOKBACK_DAYS": "5",
     "OPTIONS_ALERT_WEBHOOK": "",
     # Synthetic provider only: seconds of virtual time per snapshot (0 = real time).
     "OPTIONS_SYNTH_STEP_S": "0",
@@ -112,12 +121,19 @@ def load(env_path=None, overrides=None):
     """Precedence: explicit overrides > real environment > .env file > DEFAULTS."""
     cfg = Config(DEFAULTS)
     cfg.update(parse_env_file(env_path or ENV_PATH))
-    for k in list(cfg) + [k for k in os.environ if k.startswith("OPTIONS_") or "_API_" in k]:
-        if k in os.environ:
-            cfg[k] = os.environ[k]
+    for k, v in os.environ.items():
+        if _from_environment(k) or k in cfg:
+            cfg[k] = v
     if overrides:
         cfg.update({k: v for k, v in overrides.items() if v is not None})
     return cfg
+
+
+def _from_environment(key):
+    """Whether a real environment variable should be adopted as a setting."""
+    return (key.startswith("OPTIONS_")
+            or key in _VENDOR_KEYS
+            or key.endswith(_CREDENTIAL_SUFFIXES))
 
 
 def main(argv=None):

@@ -362,6 +362,24 @@ class TestConfig(unittest.TestCase):
             cfg().require("MISSING_ONE", "MISSING_TWO")
         self.assertIn("MISSING_ONE", str(e.exception))
 
+    def test_environment_overrides_vendor_credentials(self):
+        """Regression: non-OPTIONS_-prefixed vendor keys were ignored in the real environment."""
+        import os
+        for key, val in (("TRADIER_ACCESS_TOKEN", "tok"), ("TRADIER_ENV", "production"),
+                         ("POLYGON_API_KEY", "pk")):
+            os.environ[key] = val
+            self.addCleanup(os.environ.pop, key, None)
+        c = config.load(env_path="/nonexistent")
+        self.assertEqual(c.str("TRADIER_ACCESS_TOKEN"), "tok")
+        self.assertEqual(c.str("TRADIER_ENV"), "production")
+        self.assertEqual(c.str("POLYGON_API_KEY"), "pk")
+
+    def test_unrelated_environment_is_not_adopted(self):
+        import os
+        os.environ["TOTALLY_UNRELATED_VAR"] = "x"
+        self.addCleanup(os.environ.pop, "TOTALLY_UNRELATED_VAR", None)
+        self.assertNotIn("TOTALLY_UNRELATED_VAR", config.load(env_path="/nonexistent"))
+
     def test_typed_accessors(self):
         c = cfg(OPTIONS_UNDERLYINGS="spy, qqq;iwm")
         self.assertEqual(c.list("OPTIONS_UNDERLYINGS"), ["SPY", "QQQ", "IWM"])

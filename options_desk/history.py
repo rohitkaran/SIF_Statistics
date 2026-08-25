@@ -117,8 +117,6 @@ class Series:
 class History:
     """Per-underlying bundle of the series the built-in rules need."""
 
-    TRACKED = ("spot", "atm_iv", "skew")
-
     def __init__(self, retention_s=DEFAULT_RETENTION_S):
         self.retention_s = retention_s
         self._by_symbol = {}
@@ -130,10 +128,14 @@ class History:
         return d[field]
 
     def update(self, snap):
-        """Fold one snapshot into the tracked series. Called once per tick by the engine."""
-        self.series(snap.underlying, "spot").append(snap.ts, snap.spot)
-        self.series(snap.underlying, "atm_iv").append(snap.ts, snap.atm_iv())
-        self.series(snap.underlying, "skew").append(snap.ts, skew_25d(snap))
+        """
+        Fold one snapshot into the tracked series. Called once per tick by the engine.
+
+        The snapshot declares which scalars it contributes (see `series_values`), so an option
+        chain and an intraday bar snapshot both flow through unchanged.
+        """
+        for field, value in snap.series_values().items():
+            self.series(snap.underlying, field).append(snap.ts, value)
 
     def symbols(self):
         return sorted(self._by_symbol)

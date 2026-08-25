@@ -19,7 +19,7 @@ import json
 import os
 import sys
 
-from .models import ChainSnapshot
+from .models import snapshot_from_dict
 
 
 class Recorder:
@@ -99,7 +99,7 @@ def replay(root, underlying=None, start=None, end=None, limit=None):
                 if not line:
                     continue
                 try:
-                    yield ChainSnapshot.from_dict(json.loads(line))
+                    yield snapshot_from_dict(json.loads(line))
                 except (json.JSONDecodeError, KeyError, TypeError, ValueError) as e:
                     sys.stderr.write(f"[store] skipping {os.path.basename(path)}:{lineno}: {e}\n")
                     continue

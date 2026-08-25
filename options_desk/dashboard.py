@@ -137,3 +137,118 @@ class Dashboard:
         rows.append(self._c("  Ctrl-C to stop.  Data is informational only -- no orders are placed.",
                             DIM))
         return "\n".join(rows)
+
+
+class ScalpDashboard:
+    """
+    Intraday levels view: price against VWAP, the CPR, and the pivot ladder.
+
+    Levels are drawn as a single price-sorted ladder with a marker on the row price is
+    nearest, because what matters when scalping is not any one level's value but which one you
+    are standing on and what is directly above and below.
+    """
+
+    def __init__(self, stream=None, max_signals=8):
+        self.stream = stream or sys.stderr
+        self.tty = self.stream.isatty()
+        self.max_signals = max_signals
+        self.recent = []
+        self.frames = 0
+
+    def _c(self, text, colour):
+        return f"{colour}{text}{RESET}" if self.tty else text
+
+    def update(self, snap, hist, signals=()):
+        self.recent.extend(signals)
+        self.recent = self.recent[-self.max_signals:]
+        self.frames += 1
+        if self.tty:
+            self.stream.write(HOME_CLEAR)
+        self.stream.write(self.render(snap, hist) + "\n")
+        self.stream.flush()
+
+    def render(self, snap, hist):
+        width = min(shutil.get_terminal_size((100, 30)).columns, 96)
+        out = [self._header(snap, hist, width)]
+        if snap.levels is None:
+            out.append("  (no previous session in the data yet -- pivots/CPR unavailable)")
+        else:
+            out.append(self._ladder(snap, width))
+        out.append(self._footer(snap, width))
+        return "\n".join(out)
+
+    def _header(self, snap, hist, width):
+        chg = hist.series(snap.underlying, "price").pct_change(300)
+        chg_s = "  n/a" if chg is None else f"{chg*100:+.2f}%"
+        col = GREEN if (chg or 0) > 0 else RED if (chg or 0) < 0 else DIM
+
+        vwap, z = snap.vwap_value, snap.vwap_z
+        vwap_s = f"VWAP {vwap:.2f}" if vwap is not None else "VWAP    n/a"
+        z_s = f"{z:+.2f}σ" if z is not None else "  n/a"
+        rvol = snap.relative_volume()
+        session = snap.bars.session
+        left = session.minutes_left(snap.ts)
+
+        title = f"{BOLD}{snap.underlying}{RESET}" if self.tty else snap.underlying
+        line1 = (f"  {title}  {snap.price:>10,.2f}  " + self._c(f"{chg_s} (5m)", col) +
+                 f"   {vwap_s}  {z_s}" +
+                 (f"   rvol {rvol:.2f}x" if rvol else ""))
+        pos = snap.cpr_position
+        pos_col = GREEN if pos == "above" else RED if pos == "below" else YELLOW
+        line2 = (f"  {snap.provider} · {snap.exchange} · {snap.interval} · "
+                 f"{len(snap.bars)} bars · {left:.0f}m to close · " +
+                 self._c(f"{pos} CPR" if pos else "no CPR", pos_col))
+        if not self.tty:
+            line2 = line2.replace(RESET, "")
+        return "\n".join(["=" * width, line1,
+                          self._c(line2, DIM) if self.tty else line2, "=" * width])
+
+    def _ladder(self, snap, width):
+        rows = ["", f"  {'LEVEL':<8}{'PRICE':>12}   {'DIST':>9}  {'':<4}"]
+        rows.append("  " + "-" * (width - 4))
+        levels = dict(snap.levels.named())
+        if snap.vwap_value is not None:
+            levels["VWAP"] = snap.vwap_value
+
+        nearest = min(levels.items(), key=lambda kv: abs(kv[1] - snap.price))[0]
+        cpr_names = {"TC", "BC"}
+        placed = False
+        for name, value in sorted(levels.items(), key=lambda kv: -kv[1]):
+            # Drop a marker row the moment we cross below the live price.
+            if not placed and value < snap.price:
+                rows.append(self._c(f"  {'>>>':<8}{snap.price:>12,.2f}   "
+                                    f"{'  spot':>9}", BOLD if self.tty else ""))
+                placed = True
+            dist = value - snap.price
+            tag = "  <<" if name == nearest else ""
+            colour = (CYAN if name == "VWAP" else
+                      YELLOW if name in cpr_names else
+                      GREEN if dist > 0 else RED)
+            row = f"  {name:<8}{value:>12,.2f}   {dist:>+9,.2f}{tag}"
+            rows.append(self._c(row, colour))
+        if not placed:
+            rows.append(self._c(f"  {'>>>':<8}{snap.price:>12,.2f}   {'  spot':>9}",
+                                BOLD if self.tty else ""))
+        return "\n".join(rows)
+
+    def _footer(self, snap, width):
+        rows = ["  " + "-" * (width - 4)]
+        if snap.levels:
+            cpr = snap.levels.cpr
+            w = snap.levels.width_pct or 0
+            kind = "NARROW (trend day)" if w <= 0.0025 else "wide (range day)" if w >= 0.006 else "normal"
+            rows.append(f"  CPR width {cpr['width']:.2f} ({w*100:.3f}% of pivot) -- {kind}")
+            rows.append(f"  prev session  H {snap.levels.prev_high:,.2f}  "
+                        f"L {snap.levels.prev_low:,.2f}  C {snap.levels.prev_close:,.2f}")
+        if snap.vwap_value is not None and snap.vwap.stdev:
+            lo1, hi1 = snap.vwap.band(1)
+            lo2, hi2 = snap.vwap.band(2)
+            rows.append(f"  VWAP bands    1σ {lo1:,.2f} / {hi1:,.2f}    2σ {lo2:,.2f} / {hi2:,.2f}")
+        rows.append("")
+        rows.append(f"  SIGNALS " + (f"(last {len(self.recent)})" if self.recent else "(none yet)"))
+        for s in self.recent:
+            rows.append("  " + self._c(s.line(), _SEV.get(s.severity, "")))
+        rows.append("")
+        rows.append(self._c("  Ctrl-C to stop.  Levels and signals only -- no orders are placed.",
+                            DIM))
+        return "\n".join(rows)

@@ -82,11 +82,18 @@ class Engine:
 
     # -- live -----------------------------------------------------------------------
 
-    def run(self, underlyings, interval=5.0, stop=None, on_tick=None, max_ticks=None):
-        """Drive the provider stream until stopped. Returns the stats dict."""
+    def run(self, underlyings, interval=5.0, stop=None, on_tick=None, max_ticks=None,
+            source=None):
+        """
+        Drive a stream of (symbol, snapshot) until stopped. Returns the stats dict.
+
+        `source` overrides the default option-chain stream -- that is how the scalping side
+        feeds bar snapshots through this same loop.
+        """
         stop = stop or threading.Event()
+        src = source if source is not None else self.provider.stream(underlyings, interval, stop)
         try:
-            for _sym, snap in self.provider.stream(underlyings, interval, stop):
+            for _sym, snap in src:
                 fired = self.tick(snap)
                 if on_tick:
                     on_tick(snap, fired)

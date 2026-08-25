@@ -21,10 +21,13 @@ def _load(name):
     if name == "tradier":
         from .tradier import TradierProvider
         return TradierProvider
+    if name == "yahoo":
+        from .yahoo import YahooProvider
+        return YahooProvider
     return None
 
 
-AVAILABLE = ("synthetic", "polygon", "tradier")
+AVAILABLE = ("synthetic", "polygon", "tradier", "yahoo")
 
 
 def get(name, cfg):

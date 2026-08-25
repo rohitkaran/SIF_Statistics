@@ -87,6 +87,7 @@ class Quote:
 @dataclass
 class ChainSnapshot:
     """The full option chain for one underlying at one instant -- the engine's unit of work."""
+    kind = "chain"
     underlying: str
     spot: float
     ts: dt.datetime                      # timezone-aware UTC
@@ -182,10 +183,33 @@ class ChainSnapshot:
         ivs = [q.iv for q in (self.get(e, k, "C"), self.get(e, k, "P")) if q and q.iv]
         return sum(ivs) / len(ivs) if ivs else None
 
+    #: How the backtester reads this snapshot: the price forward returns are measured on,
+    #: plus a secondary metric with a label and display scale.
+    VOL_LABEL = "iv"
+    VOL_SCALE = 100.0            # fractions -> vol points
+
+    @property
+    def mark_price(self):
+        return self.spot
+
+    @property
+    def vol_metric(self):
+        return self.atm_iv()
+
+    def series_values(self):
+        """
+        The scalars History tracks for this snapshot type.
+
+        Declared by the snapshot rather than hard-coded in History, so an options chain and an
+        intraday bar snapshot can share one engine, one recorder and one backtester.
+        """
+        return {"spot": self.spot, "atm_iv": self.atm_iv(), "skew": _skew(self)}
+
     # ---- serialisation (JSONL for the recorder / backtester) ---------------------
 
     def to_dict(self):
         return {
+            "kind": self.kind,
             "underlying": self.underlying, "spot": self.spot,
             "ts": self.ts.isoformat(), "provider": self.provider,
             "rate": self.rate, "dividend": self.dividend,
@@ -227,3 +251,125 @@ def expiry_utc(day):
     and it avoids a tzdata dependency in a stdlib-only tree.
     """
     return dt.datetime(day.year, day.month, day.day, 20, 0, tzinfo=dt.timezone.utc)
+
+
+def _skew(snap):
+    """Deferred import: history imports models, so this cannot be a module-level import."""
+    from .history import skew_25d
+    return skew_25d(snap)
+
+
+@dataclass
+class BarSnapshot:
+    """
+    One intraday moment for a stock: latest price, the session's bars so far, the static
+    levels derived from yesterday, and the live VWAP.
+
+    Same shape of contract as ChainSnapshot -- `underlying`, `ts`, `series_values()`,
+    `to_dict()` -- so the engine, recorder, alerting and backtester take either without
+    knowing which it has.
+    """
+    kind = "bars"
+
+    underlying: str
+    price: float
+    ts: dt.datetime
+    bars: object = None                 # BarSeries for the CURRENT session (regular hours)
+    levels: object = None               # Levels, from the previous session
+    vwap: object = None                 # Vwap, anchored to this session
+    provider: str = ""
+    exchange: str = "US"
+    interval: str = "5m"
+
+    @property
+    def symbol(self):
+        return self.underlying
+
+    # ---- derived reads the rules use ---------------------------------------------
+
+    @property
+    def vwap_value(self):
+        return self.vwap.value if self.vwap else None
+
+    @property
+    def vwap_z(self):
+        return self.vwap.z(self.price) if self.vwap else None
+
+    @property
+    def cpr_position(self):
+        return self.levels.position(self.price) if self.levels else None
+
+    def session_volume(self):
+        return sum(b.volume for b in self.bars) if self.bars else 0.0
+
+    def relative_volume(self, lookback=20):
+        """
+        Latest bar's volume against the median of the preceding `lookback` bars.
+
+        Median, not mean: one opening bar routinely carries 10x a midday bar, and a mean is
+        dragged so far by it that nothing ever looks like a volume surge afterwards.
+        """
+        bars = list(self.bars or [])
+        if len(bars) < 3:
+            return None
+        prior = [b.volume for b in bars[-(lookback + 1):-1] if b.volume > 0]
+        if not prior:
+            return None
+        import statistics
+        med = statistics.median(prior)
+        return (bars[-1].volume / med) if med > 0 else None
+
+    #: For scalping the useful secondary is the VWAP z-score: after a stretch signal, did
+    #: price actually revert toward the anchor or keep going?
+    VOL_LABEL = "z"
+    VOL_SCALE = 1.0
+
+    @property
+    def mark_price(self):
+        return self.price
+
+    @property
+    def vol_metric(self):
+        return self.vwap_z
+
+    def series_values(self):
+        return {"price": self.price, "vwap": self.vwap_value, "vwap_z": self.vwap_z}
+
+    # ---- serialisation ------------------------------------------------------------
+
+    def to_dict(self):
+        return {
+            "kind": self.kind,
+            "underlying": self.underlying, "price": self.price, "ts": self.ts.isoformat(),
+            "provider": self.provider, "exchange": self.exchange, "interval": self.interval,
+            "levels": self.levels.to_dict() if self.levels else None,
+            "bars": [b.to_dict() for b in (self.bars or [])],
+        }
+
+    @staticmethod
+    def from_dict(d):
+        from .bars import Bar, BarSeries, get_session
+        from .levels import Levels, Vwap
+        session = get_session(d.get("exchange", "US"))
+        series = BarSeries([Bar.from_dict(b) for b in d.get("bars", [])], session)
+        # VWAP is rebuilt from the bars rather than serialised. Replaying the accumulation is
+        # what guarantees a backtest sees the identical anchor the live desk had.
+        vwap = Vwap(session).feed(series)
+        return BarSnapshot(
+            underlying=d["underlying"], price=d["price"],
+            ts=dt.datetime.fromisoformat(d["ts"]),
+            bars=series, levels=Levels.from_dict(d["levels"]) if d.get("levels") else None,
+            vwap=vwap, provider=d.get("provider", ""),
+            exchange=d.get("exchange", "US"), interval=d.get("interval", "5m"))
+
+
+#: Snapshot kinds the recorder can replay.
+_KINDS = {"chain": ChainSnapshot, "bars": BarSnapshot}
+
+
+def snapshot_from_dict(d):
+    """Rebuild whichever snapshot type a recorded line holds."""
+    cls = _KINDS.get(d.get("kind", "chain"))   # untagged lines predate BarSnapshot
+    if cls is None:
+        raise ValueError(f"unknown snapshot kind {d.get('kind')!r}")
+    return cls.from_dict(d)

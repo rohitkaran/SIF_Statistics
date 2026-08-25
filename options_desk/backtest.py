@@ -24,8 +24,12 @@ class Backtest:
     def __init__(self, rules, horizons_s=(60, 300, 900)):
         self.rules = rules
         self.horizons = tuple(sorted(horizons_s))
-        self.timeline = defaultdict(list)      # underlying -> [(ts, spot, atm_iv)]
+        self.timeline = defaultdict(list)      # underlying -> [(ts, mark_price, vol_metric)]
         self.signals = []
+        # Labels come from the snapshots themselves, so an options recording reports IV points
+        # and a scalping recording reports VWAP z-scores, through one code path.
+        self.vol_label = "vol"
+        self.vol_scale = 1.0
 
     def run(self, snapshots, dispatcher=None):
         from .alerts import Dispatcher
@@ -33,7 +37,8 @@ class Backtest:
                         dispatcher=dispatcher or Dispatcher(), history=History())
 
         def _on_tick(snap, fired):
-            self.timeline[snap.underlying].append((snap.ts, snap.spot, snap.atm_iv()))
+            self.vol_label, self.vol_scale = snap.VOL_LABEL, snap.VOL_SCALE
+            self.timeline[snap.underlying].append((snap.ts, snap.mark_price, snap.vol_metric))
             self.signals.extend(fired)
 
         stats = engine.replay(snapshots, on_tick=_on_tick)
@@ -43,7 +48,7 @@ class Backtest:
     # -- scoring --------------------------------------------------------------------
 
     def _forward(self, underlying, ts, horizon_s):
-        """(spot_return, iv_change) `horizon_s` after ts, or None if the recording ends first."""
+        """(price_return, vol_change) `horizon_s` after ts, or None if the recording ends."""
         series = self.timeline.get(underlying) or []
         base = next(((s, v) for t, s, v in series if t >= ts), None)
         if base is None:
@@ -81,7 +86,7 @@ class Backtest:
                     "mean_abs_spot_bp": statistics.fmean(abs(r) for r in rets) * 10_000,
                     "median_spot_bp": statistics.median(rets) * 10_000,
                     "up_rate": sum(1 for r in rets if r > 0) / len(rets),
-                    "mean_iv_pts": (statistics.fmean(ivs) * 100) if ivs else None,
+                    "mean_vol": (statistics.fmean(ivs) * self.vol_scale) if ivs else None,
                 }
             out[rule] = {"fired": e["n"], "horizons": hs}
         return out
@@ -90,7 +95,7 @@ class Backtest:
         lines = ["", "=" * 78,
                  "BACKTEST -- forward behaviour after each signal",
                  "  Not a P&L. No fills, slippage, assignment or margin are modelled.",
-                 "  'spot bp' = basis points the underlying moved after the signal.",
+                 "  'spot bp' = basis points the instrument moved after the signal.",
                  "=" * 78]
         scored = self.score()
         if not scored:
@@ -105,7 +110,8 @@ class Backtest:
                 lines.append("      (no horizon had enough recording left to score)")
             for h in sorted(e["horizons"]):
                 s = e["horizons"][h]
-                iv = f"  iv {s['mean_iv_pts']:+.2f}pts" if s["mean_iv_pts"] is not None else ""
+                iv = (f"  {self.vol_label} {s['mean_vol']:+.2f}"
+                      if s["mean_vol"] is not None else "")
                 lines.append(
                     f"      +{h:>4}s  n={s['scored']:<4d} "
                     f"mean {s['mean_spot_bp']:+7.2f}bp  "
