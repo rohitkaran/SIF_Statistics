@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24T16:02:41+00:00",
+ "generated": "2026-08-31T21:09:55+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2025-10",
@@ -289,6 +289,14 @@
    }
   },
   "SIF-57": {
+   "name": "DynaSIF Equity Long - Short Fund",
+   "amc": "dynasif",
+   "fund": "DynaSIF Equity Long - Short Fund",
+   "periods": {
+    "2026-05": "portfolios/data/2026-05/dynasif__DS01.json"
+   }
+  },
+  "SIF-60": {
    "name": "DynaSIF Equity Long - Short Fund",
    "amc": "dynasif",
    "fund": "DynaSIF Equity Long - Short Fund",
