@@ -1,7 +1,7 @@
 ---
 title: The NIFTY fell 3.5% in a month. Every long-short SIF fell less.
 date: 2026-09-04
-summary: Between 3 August and 2 September 2026 the NIFTY 50 lost 3.47%. Across the 30 Indian SIF schemes with a full month of published NAVs, not one lost that much — and 18 of them finished the month higher.
+summary: Between 3 August and 2 September 2026 the NIFTY 50 lost 3.47%. Across the 30 Indian SIF schemes with a full month of published NAVs, not one lost that much — and 18 of them finished the month higher. Includes the full month-by-month return record for every scheme against the NIFTY.
 author: SIFintel Research
 tags: performance, long-short, india, nav
 ---
@@ -77,6 +77,64 @@ The Ex-Top 100 category is the interesting exception. It sits between the two on
 by far the widest range — 6.1 percentage points separating DynaSIF's +4.38% from WSIF's -1.73% inside
 what is nominally the same strategy. Beyond the top 100 names, the opportunity set is wide enough that
 two managers with the same mandate can end up in genuinely different portfolios.
+
+## Every month, every scheme
+
+The month above is one observation. Here is the whole record — calendar-month NAV returns for all 30
+schemes with at least one complete month, against the NIFTY 50 over the same months. A dash means the
+scheme had not yet completed that calendar month. September is excluded; it is two sessions old.
+
+| Scheme | Nov 25 | Dec 25 | Jan 26 | Feb 26 | Mar 26 | Apr 26 | May 26 | Jun 26 | Jul 26 | Aug 26 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| qsif Equity L/S | -0.23 | -0.58 | -3.32 | +0.82 | -8.95 | +13.68 | +2.07 | +2.57 | +4.23 | +1.23 |
+| qsif Hybrid L/S | -0.38 | -0.08 | -1.29 | +0.48 | -0.91 | +6.94 | -1.02 | +1.63 | +3.26 | +1.73 |
+| Altiva Hybrid L/S | +1.01 | +1.71 | +0.13 | +0.71 | -1.53 | +3.17 | +1.14 | +1.37 | +1.77 | +1.14 |
+| Magnum Hybrid L/S | +1.24 | +0.95 | -0.83 | +0.77 | -2.16 | +2.28 | +0.68 | +1.36 | +0.93 | +0.92 |
+| qsif Ex-Top 100 L/S | — | -1.49 | -4.69 | -0.90 | -7.60 | +15.38 | +1.45 | +4.28 | +7.70 | +2.28 |
+| Diviniti Equity L/S | — | — | -1.23 | -1.37 | -2.99 | +0.71 | -3.92 | +2.40 | +0.34 | -0.24 |
+| Titanium Hybrid L/S | — | — | -1.02 | +1.42 | -6.87 | +5.51 | +0.55 | +1.77 | +0.73 | +0.70 |
+| Arudha Hybrid L/S | — | — | — | — | +0.12 | +0.38 | +0.22 | +1.60 | +0.47 | +0.20 |
+| iSIF Ex-Top 100 L/S | — | — | — | — | -8.61 | +8.87 | +1.32 | +1.41 | +3.07 | +0.58 |
+| iSIF Hybrid L/S | — | — | — | — | -7.31 | +7.45 | +0.02 | +3.00 | +3.22 | +2.08 |
+| DynaSIF Equity L/S | — | — | — | — | -4.39 | +6.59 | +1.29 | +1.77 | +2.17 | -0.04 |
+| Apex Hybrid L/S | — | — | — | — | — | +0.40 | +0.50 | +1.91 | +2.61 | +2.09 |
+| Arudha Equity L/S | — | — | — | — | — | +3.42 | -0.85 | +2.15 | +2.41 | +0.36 |
+| DynaSIF Asset Allocator L/S | — | — | — | — | — | +1.02 | +0.58 | +1.47 | +1.00 | +1.28 |
+| qsif Asset Allocator L/S | — | — | — | — | — | — | +2.77 | +2.57 | +8.26 | +1.02 |
+| Sapphire Equity L/S | — | — | — | — | — | — | -0.83 | +1.17 | +1.07 | +0.39 |
+| WSIF Equity L/S | — | — | — | — | — | — | — | +5.05 | +2.57 | -0.54 |
+| WSIF Ex-Top 100 L/S | — | — | — | — | — | — | — | +6.07 | +2.15 | +0.73 |
+| qsif Sector Rotation L/S | — | — | — | — | — | — | — | +1.42 | -0.87 | +1.73 |
+| Titanium Equity L/S | — | — | — | — | — | — | — | +1.28 | +3.37 | +1.44 |
+| Arthaya Equity L/S | — | — | — | — | — | — | — | +0.94 | +0.71 | -1.04 |
+| iSIF Asset Allocator L/S | — | — | — | — | — | — | — | — | +2.30 | +1.32 |
+| iSIF Equity L/S | — | — | — | — | — | — | — | — | +3.05 | +4.10 |
+| Altiva Ex-Top 100 L/S | — | — | — | — | — | — | — | — | +2.25 | +3.60 |
+| Platinum Hybrid L/S | — | — | — | — | — | — | — | — | +1.01 | +0.47 |
+| RedHex Hybrid L/S | — | — | — | — | — | — | — | — | +0.72 | +0.87 |
+| DynaSIF Ex-Top 100 L/S | — | — | — | — | — | — | — | — | +4.40 | +6.40 |
+| Infinity Hybrid L/S | — | — | — | — | — | — | — | — | — | +1.61 |
+| Prism Hybrid L/S | — | — | — | — | — | — | — | — | — | +1.41 |
+| Summit Equity L/S | — | — | — | — | — | — | — | — | — | +3.62 |
+| **NIFTY 50** | **+1.87** | **-0.28** | **-3.10** | **-0.56** | **-11.31** | **+7.46** | **-1.87** | **+1.35** | **+2.17** | **-1.24** |
+| *Schemes ahead of NIFTY* | 0 of 4 | 3 of 5 | 5 of 7 | 5 of 7 | 11 of 11 | 3 of 14 | 15 of 16 | 18 of 21 | 14 of 27 | 30 of 30 |
+
+Two months carry most of the information in that grid.
+
+**March 2026** was the real test: the NIFTY lost 11.31%, and all eleven schemes then live beat it — by
+a median of roughly 7 percentage points. Only one, Arudha Hybrid Long-Short, finished the month
+positive, at +0.12%. Whatever else the category has or has not proved, it did not fall with the index
+when the index fell hardest.
+
+**April 2026** is the bill for that. The NIFTY rebounded 7.46% and only 3 of 14 schemes kept up — qsif
+Ex-Top 100 (+15.38%), qsif Equity Long-Short (+13.68%) and iSIF Ex-Top 100 (+8.87%). The other eleven
+captured part of the move and no more. A book that is hedged going into a crash is, by construction,
+hedged going into the recovery too.
+
+The bottom row makes the asymmetry plain. In the four months the NIFTY fell more than 1% — January,
+March, May and August — SIFs ahead of the index numbered 5 of 7, 11 of 11, 15 of 16 and 30 of 30. In
+the two strongest up months, April and July, they numbered 3 of 14 and 14 of 27. That is the trade
+these funds are structurally making, visible in ten rows of arithmetic.
 
 ## Read the numbers with the caveats attached
 
