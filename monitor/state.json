@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04T02:26:23+00:00",
+ "generated": "2026-09-04T07:23:52+00:00",
  "latest_nav": "2026-09-03",
  "schemes": {
   "SIF-120": {
@@ -414,25 +414,25 @@
    "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-02"
+   "last": "2026-09-03"
   },
   "SIF-86": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-02"
+   "last": "2026-09-03"
   },
   "SIF-87": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-02"
+   "last": "2026-09-03"
   },
   "SIF-89": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-02"
+   "last": "2026-09-03"
   },
   "SIF-125": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
@@ -1087,8 +1087,8 @@
   "https://www.qsif.com/statutory-disclosures": true,
   "https://summitsif.invescomutualfund.com/docs/siflibraries/default-document-library/summit-sif---isid---summit-equity-long-short-fund-(1).pdf?sfvrsn=20cd9fc2_3": true,
   "https://summitsif.invescomutualfund.com/statutory-disclosures": true,
-  "https://www.kotakmf.com/documents/Infinity_Hybrid_Long_Short_NFO_PPT_V8": true,
-  "https://www.kotakmf.com/sif/": true,
+  "https://www.kotakmf.com/documents/Infinity_Hybrid_Long_Short_NFO_PPT_V8": false,
+  "https://www.kotakmf.com/sif/": false,
   "https://cdnstorage-ddh3hqhvg3gyedd9.a02.azurefd.net/brcms/prismhybri-mpux8hz1-faf798.pdf": true,
   "https://www.jioblackrockamc.com/prismsif/statutory-disclosure/fund-document/portfolio-insights": true
  },
