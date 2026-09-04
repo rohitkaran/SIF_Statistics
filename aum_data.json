@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04T07:22:20Z",
+ "generated": "2026-09-04T17:42:01Z",
  "basis": "Disclosed net assets from each fund house's own portfolio disclosure. AMFI publishes no AUM API for SIFs.",
  "counting": "One portfolio file = one fund. Plan variants are never counted separately.",
  "caveat": "SIF portfolio disclosure is staggered and roughly bi-monthly: consecutive periods contain different fund houses (2026-05 and 2026-06 share no funds at all). Period totals are therefore NOT comparable to each other and NOT industry totals. Use `latest` for the current picture and `fund_movers` for genuine growth.",
