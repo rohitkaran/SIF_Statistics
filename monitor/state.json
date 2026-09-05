@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04T19:47:33+00:00",
+ "generated": "2026-09-05T07:05:15+00:00",
  "latest_nav": "2026-09-04",
  "schemes": {
   "SIF-120": {
@@ -414,25 +414,25 @@
    "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-03"
+   "last": "2026-09-04"
   },
   "SIF-86": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-03"
+   "last": "2026-09-04"
   },
   "SIF-87": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-03"
+   "last": "2026-09-04"
   },
   "SIF-89": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-03"
+   "last": "2026-09-04"
   },
   "SIF-125": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
@@ -1057,7 +1057,7 @@
   "SIF-128": "Shriram Ramanathan, Venugopal Manghat, Praveen Ayathan, Mayank Chaturvedi"
  },
  "link_health": {
-  "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf": true,
+  "https://nsearchives.nseindia.com/trading_security/mf/pdf/Aditya_25032026155946_InvestmentStrategySummaryDocumentApexHybridLongShortFund.pdf": false,
   "https://apexsif.adityabirlacapital.com/": true,
   "https://www.tatamutualfund.com/system/files/2025-11/Titanium%20Hybrid%20Long%20Short%20Fund%20-%20SIF.pdf": true,
   "https://www.tatamutualfund.com/titanium-sif/schemes-related": true,
