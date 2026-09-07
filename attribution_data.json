@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-05T07:04:05Z",
+ "generated": "2026-09-07T18:48:27Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -5410,7 +5410,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "Arudha SIF",
    "isin": "INF194K30424",
-   "observations": 53
+   "observations": 54
   },
   {
    "code": "SIF-129",
@@ -5418,7 +5418,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "RedHex SIF",
    "isin": "INF336L30049",
-   "observations": 51
+   "observations": 52
   },
   {
    "code": "SIF-130",
@@ -5426,7 +5426,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "RedHex SIF",
    "isin": "INF336L30064",
-   "observations": 51
+   "observations": 52
   },
   {
    "code": "SIF-128",
@@ -5434,7 +5434,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "RedHex SIF",
    "isin": "INF336L30015",
-   "observations": 51
+   "observations": 52
   },
   {
    "code": "SIF-140",
@@ -5442,7 +5442,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "DynaSIF SIF",
    "isin": "INF579M30166",
-   "observations": 50
+   "observations": 51
   },
   {
    "code": "SIF-143",
@@ -5450,7 +5450,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "DynaSIF SIF",
    "isin": "INF579M30133",
-   "observations": 50
+   "observations": 51
   },
   {
    "code": "SIF-144",
@@ -5458,7 +5458,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "DynaSIF SIF",
    "isin": "INF579M30141",
-   "observations": 50
+   "observations": 51
   },
   {
    "code": "SIF-81",
@@ -5466,7 +5466,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Apex SIF",
    "isin": "INF209K30057",
-   "observations": 49
+   "observations": 50
   },
   {
    "code": "SIF-145",
@@ -5474,7 +5474,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30012",
-   "observations": 42
+   "observations": 43
   },
   {
    "code": "SIF-148",
@@ -5482,7 +5482,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30020",
-   "observations": 42
+   "observations": 43
   },
   {
    "code": "SIF-146",
@@ -5490,7 +5490,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30046",
-   "observations": 42
+   "observations": 43
   },
   {
    "code": "SIF-147",
@@ -5498,7 +5498,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30053",
-   "observations": 42
+   "observations": 43
   },
   {
    "code": "SIF-139",
@@ -5506,7 +5506,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Prism SIF",
    "isin": "INF22M030027",
-   "observations": 32
+   "observations": 33
   },
   {
    "code": "SIF-138",
@@ -5514,7 +5514,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Prism SIF",
    "isin": "INF22M030019",
-   "observations": 32
+   "observations": 33
   },
   {
    "code": "SIF-149",
@@ -5522,7 +5522,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30048",
-   "observations": 31
+   "observations": 32
   },
   {
    "code": "SIF-151",
@@ -5530,7 +5530,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30055",
-   "observations": 31
+   "observations": 32
   },
   {
    "code": "SIF-150",
@@ -5538,7 +5538,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30014",
-   "observations": 31
+   "observations": 32
   },
   {
    "code": "SIF-152",
@@ -5546,7 +5546,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30022",
-   "observations": 31
+   "observations": 32
   },
   {
    "code": "SIF-100",
@@ -5554,7 +5554,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "INF277K30120",
-   "observations": 16
+   "observations": 17
   },
   {
    "code": "SIF-103",
@@ -5562,7 +5562,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "",
-   "observations": 16
+   "observations": 17
   },
   {
    "code": "SIF-43",
@@ -5570,7 +5570,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Arudha SIF",
    "isin": "INF194K30044",
-   "observations": 12
+   "observations": 13
   },
   {
    "code": "SIF-60",
@@ -5578,7 +5578,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "DynaSIF SIF",
    "isin": "INF579M30059",
-   "observations": 5
+   "observations": 6
   },
   {
    "code": "SIF-155",
@@ -5586,7 +5586,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Apex SIF",
    "isin": "INF209K30073",
-   "observations": 4
+   "observations": 5
   },
   {
    "code": "SIF-156",
@@ -5594,7 +5594,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Apex SIF",
    "isin": "INF209K30081",
-   "observations": 4
+   "observations": 5
   },
   {
    "code": "SIF-153",
@@ -5602,7 +5602,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "Apex SIF",
    "isin": "INF209K30099",
-   "observations": 4
+   "observations": 5
   },
   {
    "code": "SIF-154",
@@ -5610,7 +5610,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
    "fund_house": "Apex SIF",
    "isin": "INF209K30107",
-   "observations": 4
+   "observations": 5
   },
   {
    "code": "SIF-159",
@@ -5618,7 +5618,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Magnum SIF",
    "isin": "INF200K30106",
-   "observations": 3
+   "observations": 4
   },
   {
    "code": "SIF-160",
@@ -5626,7 +5626,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Magnum SIF",
    "isin": "INF200K30114",
-   "observations": 3
+   "observations": 4
   },
   {
    "code": "SIF-157",
@@ -5634,7 +5634,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Magnum SIF",
    "isin": "INF200K30072",
-   "observations": 3
+   "observations": 4
   },
   {
    "code": "SIF-158",
@@ -5642,7 +5642,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Magnum SIF",
    "isin": "INF200K30080",
-   "observations": 3
+   "observations": 4
   }
  ],
  "portfolio_changes": [
@@ -5666,9 +5666,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
+    "equity": 796.0,
     "cash_other": 0,
-    "money_market": 610.0,
-    "equity": 796.0
+    "money_market": 610.0
    },
    "sector_shifts": [
     {
@@ -5741,9 +5741,9 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
+    "equity": 3.96,
     "cash_other": -4.48,
-    "money_market": 0.52,
-    "equity": 3.96
+    "money_market": 0.52
    },
    "sector_shifts": [
     {
@@ -5819,9 +5819,9 @@
    },
    "allocation_shift": {
     "equity": 15.07,
-    "debt": -4.15,
     "cash_other": -8.25,
-    "money_market": -2.67
+    "money_market": -2.67,
+    "debt": -4.15
    },
    "sector_shifts": [
     {
@@ -5849,16 +5849,16 @@
      "change_pct": 1.75
     },
     {
-     "sector": "It - Software",
-     "from_pct": 2.28,
-     "to_pct": 0.69,
-     "change_pct": -1.58
-    },
-    {
      "sector": "Automobiles",
      "from_pct": 8.29,
      "to_pct": 9.88,
      "change_pct": 1.58
+    },
+    {
+     "sector": "It - Software",
+     "from_pct": 2.28,
+     "to_pct": 0.69,
+     "change_pct": -1.58
     },
     {
      "sector": "Power",
@@ -5894,9 +5894,9 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
+    "equity": 2.67,
     "cash_other": -2.92,
-    "money_market": 0.25,
-    "equity": 2.67
+    "money_market": 0.25
    },
    "sector_shifts": [
     {
@@ -5967,8 +5967,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "cash_other": -9.43,
-    "equity": 9.43
+    "equity": 9.43,
+    "cash_other": -9.43
    },
    "sector_shifts": [
     {
@@ -6044,9 +6044,9 @@
    },
    "allocation_shift": {
     "equity": -0.72,
-    "debt": 0.34,
     "cash_other": 1.06,
-    "money_market": -0.68
+    "money_market": -0.68,
+    "debt": 0.34
    },
    "sector_shifts": [
     {
