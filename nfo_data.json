@@ -1,10 +1,21 @@
 {
- "generated": "2026-09-09T17:54:09Z",
+ "generated": "2026-09-09T19:56:51Z",
  "source": "https://www.amfiindia.com/api/sif-nfo",
  "note": "AMFI publishes the open-NFO list without dates. first_seen/last_seen are the dates SIFintel observed each offer on that list; launched_on is the scheme's first published NAV.",
- "open_count": 0,
- "total_tracked": 3,
+ "open_count": 1,
+ "total_tracked": 4,
  "nfos": [
+  {
+   "key": "altiva-sif__altiva-equity-long-short-fund",
+   "fund_house": "Altiva SIF",
+   "strategy": "Altiva Equity Long-Short Fund",
+   "scheme_id": "S-34",
+   "sif_id": "47",
+   "first_seen": "2026-09-09",
+   "last_seen": "2026-09-09",
+   "status": "open",
+   "launched_on": null
+  },
   {
    "key": "apex-sif__apex-equity-ex-top-100-long-short-fund",
    "fund_house": "Apex SIF",
