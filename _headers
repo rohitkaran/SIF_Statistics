@@ -30,3 +30,20 @@
 # Long-lived, content-hashed brand assets can cache hard.
 /brand/*
   Cache-Control: public, max-age=86400
+
+# Account pages: never cache. /auth and /unsubscribe carry one-time tokens, and /account
+# renders whoever is signed in — a cached copy of any of them is a bug, and a shared cached
+# copy would be a privacy leak.
+/account
+  Cache-Control: no-store
+  X-Robots-Tag: noindex
+/auth
+  Cache-Control: no-store
+  X-Robots-Tag: noindex
+  Referrer-Policy: no-referrer
+/unsubscribe
+  Cache-Control: no-store
+  X-Robots-Tag: noindex
+  Referrer-Policy: no-referrer
+/subscribe
+  Cache-Control: public, max-age=0, must-revalidate

@@ -7,4 +7,11 @@ Disallow: /monitor/
 Disallow: /publish/
 Disallow: /content/
 
+# Account pages carry single-use tokens in the URL — an indexed token is a leaked one.
+# /subscribe is deliberately NOT listed here: it is a landing page and should rank.
+Disallow: /account
+Disallow: /auth
+Disallow: /unsubscribe
+Disallow: /api/
+
 Sitemap: https://www.sifintel.com/sitemap.xml

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your preferences | SIFintel</title>
+<meta name="description" content="Manage which SIFintel newsletters you receive.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.sifintel.com/account">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SIFintel">
+<meta property="og:title" content="Your preferences | SIFintel">
+<meta property="og:description" content="Manage which SIFintel newsletters you receive.">
+<meta property="og:url" content="https://www.sifintel.com/account">
+<meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="theme-color" content="#5b5bf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/logo-mark.svg">
+<script>try{if(localStorage.getItem('sif-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Preferences","inLanguage":"en-IN"}</script>
+</head>
+<body>
+<header class="site">
+  <div class="navwrap">
+    <a href="/" style="text-decoration:none"><h1 class="wm">SIF<span class="in">intel<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1></a>
+    <nav class="main">
+      <a href="/" class="active">Dashboard</a>
+      <a href="/news">News</a>
+      <a href="/nfo">NFOs</a>
+      <a href="/aum">AUM</a>
+      <a href="/attribution">Attribution</a>
+      <a href="/commentary/">Commentary</a>
+      <a href="/learn/">Learn</a>
+      <a href="/distributors">For distributors</a>
+      <a href="/data">Data &amp; API</a>
+      <a href="/about">About</a>
+    </nav>
+    <span class="navspace"></span>
+    <a class="navmini" href="/contact">Contact</a>
+    <a class="navmini" href="/account">Sign in</a>
+    <a class="navcta" href="/subscribe">Subscribe</a>
+    <button class="themebtn" onclick="(function(){var d=document.documentElement;var n=d.getAttribute('data-theme')==='dark'?'':'dark';if(n)d.setAttribute('data-theme','dark');else d.removeAttribute('data-theme');try{localStorage.setItem('sif-theme',n)}catch(e){}})()">◐</button>
+  </div>
+</header>
+<main class="wrap">
+<div class="crumb"><a href="/">Home</a> / Preferences</div>
+<article class="doc">
+<h1>Your SIFintel preferences</h1>
+<p class="lede">Choose what we send you. Changes take effect from the next edition.</p>
+
+<div class="alert" id="acc-flash" hidden></div>
+
+<!-- Signed out: ask for a link. -->
+<div id="acc-signin" hidden>
+  <div class="authbox">
+    <h3 style="margin:0 0 4px">Sign in</h3>
+    <p style="margin:0 0 14px;color:var(--ink-dim);font-size:14.5px">Enter your email and we will send
+    you a one-time sign-in link. There is no password.</p>
+    <form id="signinform" novalidate>
+      <div class="field"><label for="acc-email">Email</label>
+        <input id="acc-email" name="email" type="email" autocomplete="email" required
+               placeholder="you@company.com"></div>
+      <div style="position:absolute;left:-5000px" aria-hidden="true">
+        <input name="company" tabindex="-1" autocomplete="off"></div>
+      <button class="btn" type="submit" id="acc-go">Email me a link</button>
+      <div class="alert" id="acc-msg" hidden></div>
+    </form>
+    <p class="meta" style="margin:14px 0 0">Not subscribed yet? <a href="/subscribe">Start here</a>.</p>
+  </div>
+</div>
+
+<!-- Signed in: the actual preferences. -->
+<div id="acc-prefs" hidden>
+  <div class="authbox">
+    <p class="whoami">Signed in as <b id="acc-who"></b></p>
+    <div class="optlist">
+<label class="opt" id="acc-opt-sif_weekly"><input type="checkbox" name="sif_weekly" id="acc-sif_weekly" checked><span><span class="cadence">Every Monday</span><h3>SIF Weekly</h3><p>What every Indian Specialized Investment Fund did last week — the movers, how they fared against NIFTY 50, newly disclosed portfolios and any open NFOs. Built from the same data as the dashboard, so it is numbers, never tips.</p></span></label>
+<label class="opt" id="acc-opt-news_daily"><input type="checkbox" name="news_daily" id="acc-news_daily"><span><span class="cadence">Weekday mornings, 7am IST</span><h3>Morning Brief</h3><p>The overnight financial news that actually matters — central banks and regulators first, then India, then the world. Single-stock noise is filtered out.</p><span class="subopt" id="acc-scope" hidden><label><input type="radio" name="acc-news_scope" value="weekdays" checked> Weekdays only</label><label><input type="radio" name="acc-news_scope" value="everyday"> Every day</label></span></span></label>
+    </div>
+    <button class="btn" id="acc-save">Save preferences</button>
+    <button class="btn ghost" id="acc-out" style="margin-left:8px">Sign out</button>
+    <div class="alert" id="acc-saved" hidden></div>
+    <p class="meta" style="margin:16px 0 0">Want out entirely? Untick both and save — or
+    <a href="#" id="acc-unsub">unsubscribe from everything</a>.</p>
+  </div>
+</div>
+
+<div id="acc-loading"><p class="meta">Loading your preferences…</p></div>
+</article>
+
+<script>
+window.SIF = (function(){
+  function el(id){ return document.getElementById(id); }
+  function say(node, kind, msg){
+    if(!node) return;
+    node.className = 'alert ' + kind;
+    node.innerHTML = msg;
+    node.hidden = false;
+  }
+  function hide(node){ if(node) node.hidden = true; }
+  async function api(url, opts){
+    var res = await fetch(url, Object.assign({headers:{'Content-Type':'application/json'}}, opts||{}));
+    var body = await res.json().catch(function(){ return {}; });
+    return { ok: res.ok && body.ok !== false, status: res.status, body: body };
+  }
+  // Reflect checkbox state onto the card so the whole tile looks selected, and reveal the
+  // weekday/everyday choice only when the daily brief is actually ticked.
+  function wireCards(prefix){
+    ['sif_weekly','news_daily'].forEach(function(key){
+      var box = el(prefix + '-' + key), card = el(prefix + '-opt-' + key);
+      if(!box || !card) return;
+      function sync(){
+        card.classList.toggle('on', box.checked);
+        if(key === 'news_daily'){
+          var scope = el(prefix + '-scope');
+          if(scope) scope.hidden = !box.checked;
+        }
+      }
+      box.addEventListener('change', sync);
+      sync();
+    });
+  }
+  function scope(prefix){
+    var picked = document.querySelector('input[name="' + prefix + '-news_scope"]:checked');
+    return picked ? picked.value : 'weekdays';
+  }
+  return { el: el, say: say, hide: hide, api: api, wireCards: wireCards, scope: scope };
+})();
+</script>
+
+<script>
+(function(){
+  var S = window.SIF;
+  var params = new URLSearchParams(location.search);
+
+  // Explain how we got here. `e` comes from a failed magic-link redemption; `welcome` from a
+  // successful one. "used" is the common, benign case — mail scanners follow links first.
+  var REASONS = {
+    missing:'That link was incomplete. Request a fresh one below.',
+    unknown:'That sign-in link is not valid. Request a fresh one below.',
+    used:'That sign-in link had already been used. They work once — here is a new one.',
+    expired:'That sign-in link expired. Links last 15 minutes — request another below.'
+  };
+  var flash = S.el('acc-flash');
+  if(params.get('e')) S.say(flash,'warn', REASONS[params.get('e')] || REASONS.unknown);
+  else if(params.get('welcome')) S.say(flash,'ok','<b>You are in.</b> Set what you would like to receive below.');
+
+  function show(which){
+    ['acc-signin','acc-prefs','acc-loading'].forEach(function(id){ S.el(id).hidden = (id !== which); });
+  }
+
+  function fill(user){
+    S.el('acc-who').textContent = user.email;
+    S.el('acc-sif_weekly').checked = !!user.prefs.sif_weekly;
+    S.el('acc-news_daily').checked = !!user.prefs.news_daily;
+    var radio = document.querySelector('input[name="acc-news_scope"][value="' + user.prefs.news_scope + '"]');
+    if(radio) radio.checked = true;
+    S.wireCards('acc');
+  }
+
+  async function load(){
+    var r = await S.api('/api/account');
+    if(r.ok && r.body.user){ fill(r.body.user); show('acc-prefs'); }
+    else { show('acc-signin'); }
+  }
+
+  // --- signed out: request a link
+  var form = S.el('signinform'), msg = S.el('acc-msg'), go = S.el('acc-go');
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var email = S.el('acc-email').value.trim();
+    if(!email){ S.say(msg,'err','Please enter your email address.'); return; }
+    go.disabled = true; S.say(msg,'','Sending…');
+    var r = await S.api('/api/auth/request', { method:'POST',
+      body: JSON.stringify({ email: email, source:'account', company: form.company.value }) });
+    go.disabled = false;
+    if(r.ok) S.say(msg,'ok','<b>Check your inbox.</b> We sent a sign-in link to ' +
+      email.replace(/[<>&]/g,'') + '. It is valid for 15 minutes.');
+    else S.say(msg,'err',(r.body && r.body.error) || 'Could not send the link. Please try again.');
+  });
+
+  // --- signed in: save
+  S.el('acc-save').addEventListener('click', async function(){
+    var btn = this, saved = S.el('acc-saved');
+    btn.disabled = true; S.say(saved,'','Saving…');
+    var r = await S.api('/api/account', { method:'POST', body: JSON.stringify({
+      sif_weekly: S.el('acc-sif_weekly').checked,
+      news_daily: S.el('acc-news_daily').checked,
+      news_scope: S.scope('acc')
+    })});
+    btn.disabled = false;
+    if(r.ok){
+      var none = !S.el('acc-sif_weekly').checked && !S.el('acc-news_daily').checked;
+      S.say(saved,'ok', none
+        ? '<b>Saved.</b> You are unsubscribed from everything. Tick a box and save to start again.'
+        : '<b>Saved.</b> Your preferences are updated.');
+    } else {
+      S.say(saved,'err',(r.body && r.body.error) || 'Could not save. Please try again.');
+    }
+  });
+
+  S.el('acc-out').addEventListener('click', async function(){
+    await fetch('/api/auth/logout', { method:'POST' });
+    location.href = '/account';
+  });
+
+  S.el('acc-unsub').addEventListener('click', async function(e){
+    e.preventDefault();
+    var r = await S.api('/api/account');
+    location.href = (r.ok && r.body.unsubscribe_url) ? r.body.unsubscribe_url : '/unsubscribe';
+  });
+
+  load();
+})();
+</script>
+</main>
+<footer class="site">
+  <div class="footwrap">
+    <div class="footcol">
+      <h4>SIFintel</h4>
+      <a href="/">SIF comparison dashboard</a>
+      <a href="/news">World financial news</a>
+      <a href="/nfo">SIF new fund offers</a>
+      <a href="/aum">AUM &amp; market share</a>
+      <a href="/attribution">Return attribution</a>
+      <a href="/commentary/">Market commentary</a>
+      <a href="/learn/">Learn about SIFs</a>
+      <a href="/videos">Videos</a>
+    </div>
+    <div class="footcol">
+      <h4>Learn</h4>
+      <a href="/learn/what-is-a-sif">What is a SIF?</a>
+      <a href="/learn/sif-categories">The SIF categories</a>
+      <a href="/learn/sif-regulatory-framework">SEBI regulatory framework</a>
+    </div>
+    <div class="footcol">
+      <h4>For distributors</h4>
+      <a href="/distributors">Distributor guide</a>
+      <a href="/learn/sif-certification-study-guide">Certification study guide</a>
+      <a href="/learn/sif-tax-suitability-guide">Tax &amp; suitability primer</a>
+    </div>
+    <div class="footcol">
+      <h4>For business</h4>
+      <a href="/data">SIF data &amp; API</a>
+      <a href="/services">Build with us</a>
+      <a href="/api/v1/meta">API reference</a>
+    </div>
+    <div class="footcol">
+      <h4>Newsletters</h4>
+      <a href="/subscribe">Subscribe free</a>
+      <a href="/account">Sign in / preferences</a>
+      <a href="/unsubscribe">Unsubscribe</a>
+    </div>
+    <div class="footcol">
+      <h4>Company</h4>
+      <a href="/about">About us</a>
+      <a href="/contact">Contact</a>
+      <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>
+    </div>
+  </div>
+  <div class="legal">
+    <p>SIFintel is an independent data &amp; education platform for India's Specialized Investment Funds (SIFs),
+    built to help investors and distributors understand this new asset class. We are not a SEBI-registered
+    investment adviser, research analyst or distributor. Content is for education only and is not investment,
+    legal or tax advice; no fund is recommended, ranked or promoted. SIFs carry higher risk — read scheme
+    documents and consult a SEBI-registered adviser before investing.</p>
+    <p>© 2026 Lume Software Private Limited. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

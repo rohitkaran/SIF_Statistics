@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unsubscribe | SIFintel</title>
+<meta name="description" content="Unsubscribe from SIFintel newsletters.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.sifintel.com/unsubscribe">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SIFintel">
+<meta property="og:title" content="Unsubscribe | SIFintel">
+<meta property="og:description" content="Unsubscribe from SIFintel newsletters.">
+<meta property="og:url" content="https://www.sifintel.com/unsubscribe">
+<meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="theme-color" content="#5b5bf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/logo-mark.svg">
+<script>try{if(localStorage.getItem('sif-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Unsubscribe","inLanguage":"en-IN"}</script>
+</head>
+<body>
+<header class="site">
+  <div class="navwrap">
+    <a href="/" style="text-decoration:none"><h1 class="wm">SIF<span class="in">intel<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1></a>
+    <nav class="main">
+      <a href="/" class="active">Dashboard</a>
+      <a href="/news">News</a>
+      <a href="/nfo">NFOs</a>
+      <a href="/aum">AUM</a>
+      <a href="/attribution">Attribution</a>
+      <a href="/commentary/">Commentary</a>
+      <a href="/learn/">Learn</a>
+      <a href="/distributors">For distributors</a>
+      <a href="/data">Data &amp; API</a>
+      <a href="/about">About</a>
+    </nav>
+    <span class="navspace"></span>
+    <a class="navmini" href="/contact">Contact</a>
+    <a class="navmini" href="/account">Sign in</a>
+    <a class="navcta" href="/subscribe">Subscribe</a>
+    <button class="themebtn" onclick="(function(){var d=document.documentElement;var n=d.getAttribute('data-theme')==='dark'?'':'dark';if(n)d.setAttribute('data-theme','dark');else d.removeAttribute('data-theme');try{localStorage.setItem('sif-theme',n)}catch(e){}})()">◐</button>
+  </div>
+</header>
+<main class="wrap">
+<div class="crumb"><a href="/">Home</a> / Unsubscribe</div>
+<article class="doc">
+<h1>Unsubscribe</h1>
+<div id="un-body">
+  <div class="authbox" id="un-card">
+    <div class="alert" id="un-msg">Checking your link…</div>
+    <div id="un-actions" hidden>
+      <p class="whoami">Subscription for <b id="un-email"></b></p>
+      <p style="color:var(--ink-dim);font-size:14.5px;margin:10px 0 16px">
+        You can stop everything, or keep the one you still want.</p>
+      <button class="btn" id="un-all">Unsubscribe from everything</button>
+      <a class="btn ghost" href="/account" style="margin-left:8px;text-decoration:none">Choose what to keep</a>
+    </div>
+  </div>
+</div>
+<p class="meta">Changed your mind later? You can <a href="/subscribe">resubscribe</a> at any time.</p>
+</article>
+
+<script>
+window.SIF = (function(){
+  function el(id){ return document.getElementById(id); }
+  function say(node, kind, msg){
+    if(!node) return;
+    node.className = 'alert ' + kind;
+    node.innerHTML = msg;
+    node.hidden = false;
+  }
+  function hide(node){ if(node) node.hidden = true; }
+  async function api(url, opts){
+    var res = await fetch(url, Object.assign({headers:{'Content-Type':'application/json'}}, opts||{}));
+    var body = await res.json().catch(function(){ return {}; });
+    return { ok: res.ok && body.ok !== false, status: res.status, body: body };
+  }
+  // Reflect checkbox state onto the card so the whole tile looks selected, and reveal the
+  // weekday/everyday choice only when the daily brief is actually ticked.
+  function wireCards(prefix){
+    ['sif_weekly','news_daily'].forEach(function(key){
+      var box = el(prefix + '-' + key), card = el(prefix + '-opt-' + key);
+      if(!box || !card) return;
+      function sync(){
+        card.classList.toggle('on', box.checked);
+        if(key === 'news_daily'){
+          var scope = el(prefix + '-scope');
+          if(scope) scope.hidden = !box.checked;
+        }
+      }
+      box.addEventListener('change', sync);
+      sync();
+    });
+  }
+  function scope(prefix){
+    var picked = document.querySelector('input[name="' + prefix + '-news_scope"]:checked');
+    return picked ? picked.value : 'weekdays';
+  }
+  return { el: el, say: say, hide: hide, api: api, wireCards: wireCards, scope: scope };
+})();
+</script>
+
+<script>
+(function(){
+  var S = window.SIF;
+  var msg = S.el('un-msg'), actions = S.el('un-actions');
+  var token = new URLSearchParams(location.search).get('u');
+  var list  = new URLSearchParams(location.search).get('l');
+
+  if(!token){
+    S.say(msg,'warn','This page needs the unsubscribe link from one of our emails. ' +
+      'You can also <a href="/account">sign in and change your preferences</a>.');
+    return;
+  }
+
+  (async function(){
+    // Deliberately does NOT unsubscribe on load — a mail scanner prefetching the link would
+    // otherwise opt people out without them ever clicking. Confirmation happens on the POST.
+    var r = await S.api('/api/unsubscribe?u=' + encodeURIComponent(token));
+    if(!r.ok){
+      S.say(msg,'err',(r.body && r.body.error) || 'That unsubscribe link is not valid.');
+      return;
+    }
+    S.el('un-email').textContent = r.body.email;
+    S.hide(msg);
+    actions.hidden = false;
+
+    // If the email named a specific list, offer to leave just that one first.
+    if(list && r.body.lists && r.body.lists[list]){
+      var only = document.createElement('button');
+      only.className = 'btn';
+      only.textContent = 'Stop only ' + r.body.lists[list];
+      only.addEventListener('click', function(){ go(list); });
+      var all = S.el('un-all');
+      all.className = 'btn ghost';
+      all.parentNode.insertBefore(only, all);
+    }
+  })();
+
+  async function go(which){
+    var r = await S.api('/api/unsubscribe', { method:'POST',
+      body: JSON.stringify({ u: token, l: which || '' }) });
+    S.el('un-card').innerHTML = r.ok
+      ? '<h3 style="margin:0 0 6px">Done</h3><p style="margin:0;color:var(--ink-dim)">' +
+        (r.body.message || 'You have been unsubscribed.') +
+        ' Sorry to see you go — you can <a href="/subscribe">come back</a> whenever you like.</p>'
+      : '<div class="alert err">Could not complete that. Please email ' +
+        '<a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a> and we will remove you by hand.</div>';
+  }
+
+  S.el('un-all').addEventListener('click', function(){ go(''); });
+})();
+</script>
+</main>
+<footer class="site">
+  <div class="footwrap">
+    <div class="footcol">
+      <h4>SIFintel</h4>
+      <a href="/">SIF comparison dashboard</a>
+      <a href="/news">World financial news</a>
+      <a href="/nfo">SIF new fund offers</a>
+      <a href="/aum">AUM &amp; market share</a>
+      <a href="/attribution">Return attribution</a>
+      <a href="/commentary/">Market commentary</a>
+      <a href="/learn/">Learn about SIFs</a>
+      <a href="/videos">Videos</a>
+    </div>
+    <div class="footcol">
+      <h4>Learn</h4>
+      <a href="/learn/what-is-a-sif">What is a SIF?</a>
+      <a href="/learn/sif-categories">The SIF categories</a>
+      <a href="/learn/sif-regulatory-framework">SEBI regulatory framework</a>
+    </div>
+    <div class="footcol">
+      <h4>For distributors</h4>
+      <a href="/distributors">Distributor guide</a>
+      <a href="/learn/sif-certification-study-guide">Certification study guide</a>
+      <a href="/learn/sif-tax-suitability-guide">Tax &amp; suitability primer</a>
+    </div>
+    <div class="footcol">
+      <h4>For business</h4>
+      <a href="/data">SIF data &amp; API</a>
+      <a href="/services">Build with us</a>
+      <a href="/api/v1/meta">API reference</a>
+    </div>
+    <div class="footcol">
+      <h4>Newsletters</h4>
+      <a href="/subscribe">Subscribe free</a>
+      <a href="/account">Sign in / preferences</a>
+      <a href="/unsubscribe">Unsubscribe</a>
+    </div>
+    <div class="footcol">
+      <h4>Company</h4>
+      <a href="/about">About us</a>
+      <a href="/contact">Contact</a>
+      <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>
+    </div>
+  </div>
+  <div class="legal">
+    <p>SIFintel is an independent data &amp; education platform for India's Specialized Investment Funds (SIFs),
+    built to help investors and distributors understand this new asset class. We are not a SEBI-registered
+    investment adviser, research analyst or distributor. Content is for education only and is not investment,
+    legal or tax advice; no fund is recommended, ranked or promoted. SIFs carry higher risk — read scheme
+    documents and consult a SEBI-registered adviser before investing.</p>
+    <p>© 2026 Lume Software Private Limited. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

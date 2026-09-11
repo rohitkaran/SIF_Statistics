@@ -16,6 +16,9 @@
   --navy:#9fbcff; --teal:#4fe0d8; --accent:#9a9aff; --accent2:#4fe0d8;
 }
 html{-webkit-text-size-adjust:100%}
+/* Any explicit `display` (the .subopt flex row, for one) outranks the UA stylesheet's
+   [hidden]{display:none}, so elements toggled via el.hidden stay visible. Settle it once. */
+[hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
   font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--accent2);text-decoration:none} a:hover{text-decoration:underline}
@@ -23,18 +26,24 @@ a{color:var(--accent2);text-decoration:none} a:hover{text-decoration:underline}
 /* ---- site header / nav ---- */
 header.site{position:sticky;top:0;z-index:20;background:var(--panel);
   border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(6px)}
-.navwrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:22px;
+/* 1180, not 1100: the header carries ten nav links plus Contact / Sign in / Subscribe, which
+   needs ~1185px of run. The gaps below are tightened for the same reason. Content stays at
+   --maxw (820px) — a header bar wider than its column is normal, a wrapping one is not. */
+.navwrap{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:14px;
   padding:11px 18px;flex-wrap:wrap}
 .wm{font-family:var(--sans);font-weight:700;font-size:20px;letter-spacing:-.5px;
   color:var(--navy);margin:0;display:inline-flex;align-items:baseline;line-height:1}
 .wm .in{position:relative;color:var(--teal)}
 .wm .star{position:absolute;left:-.10em;top:-.42em;width:.5em;height:.5em;fill:var(--teal)}
-nav.main{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px;font-weight:500}
+nav.main{display:flex;gap:14px;flex-wrap:wrap;font-size:14.5px;font-weight:500}
 nav.main a{color:var(--ink-dim)} nav.main a:hover{color:var(--ink);text-decoration:none}
 nav.main a.active{color:var(--teal)}
 .navspace{flex:1}
 .navcta{font-size:13px;font-weight:600;color:#fff;background:var(--accent);
   padding:7px 13px;border-radius:8px} .navcta:hover{filter:brightness(1.08);text-decoration:none}
+/* Secondary header links (Contact, Sign in) — present but quieter than the Subscribe CTA. */
+.navmini{font-size:13px;font-weight:500;color:var(--ink-dim);white-space:nowrap}
+.navmini:hover{color:var(--ink);text-decoration:none}
 
 /* ---- layout ---- */
 main.wrap{max-width:var(--maxw);margin:0 auto;padding:26px 20px 60px}
@@ -134,6 +143,36 @@ article.doc hr{border:0;border-top:1px solid var(--line);margin:22px 0}
   background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:15px}
 .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;border:0;
   padding:10px 18px;border-radius:8px;cursor:pointer;font-size:15px} .btn:hover{filter:brightness(1.08)}
+.btn[disabled]{opacity:.55;cursor:default;filter:none}
+.btn.ghost{background:none;border:1px solid var(--line2);color:var(--ink-dim);font-weight:500}
+.btn.ghost:hover{color:var(--ink);filter:none;border-color:var(--ink-faint)}
+
+/* ---- accounts: subscribe / sign-in / preferences ---- */
+/* Each newsletter is a whole clickable card, not a bare checkbox — the choice is the entire
+   point of the page, so it gets the tap target and the explanation to match. */
+.optlist{display:grid;gap:12px;margin:18px 0}
+.opt{display:flex;gap:13px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);
+  border-radius:10px;padding:15px 16px;cursor:pointer;transition:border-color .12s}
+.opt:hover{border-color:var(--line2)}
+.opt input[type=checkbox]{margin:2px 0 0;width:18px;height:18px;accent-color:var(--accent);flex:0 0 auto;cursor:pointer}
+.opt.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.opt h3{margin:0 0 3px;font-size:15.5px;color:var(--ink);font-weight:600}
+.opt p{margin:0;font-size:13.5px;color:var(--ink-dim);line-height:1.55}
+.opt .cadence{font-family:var(--mono);font-size:11px;color:var(--teal);text-transform:uppercase;
+  letter-spacing:.5px;display:block;margin-bottom:4px}
+.subopt{margin:10px 0 0 0;font-size:13.5px;color:var(--ink-dim);display:flex;gap:16px;flex-wrap:wrap}
+.subopt label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.subopt input[type=radio]{accent-color:var(--accent);cursor:pointer}
+.alert{border-radius:9px;padding:12px 14px;margin:16px 0;font-size:14.5px;line-height:1.55;
+  border:1px solid var(--line);background:var(--panel2);color:var(--ink-dim)}
+.alert.ok{border-left:3px solid var(--teal)}
+.alert.err{border-left:3px solid #e5484d}
+.alert.warn{border-left:3px solid var(--amber)}
+.alert b{color:var(--ink)}
+.authbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 22px 24px;
+  margin:20px 0;max-width:540px}
+.whoami{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);margin:0 0 2px}
+.whoami b{color:var(--ink);font-weight:500}
 
 /* footer */
 footer.site{border-top:1px solid var(--line);background:var(--panel);margin-top:30px}
@@ -145,5 +184,6 @@ footer.site{border-top:1px solid var(--line);background:var(--panel);margin-top:
 .legal{max-width:1100px;margin:0 auto;padding:0 20px 26px;font-size:12px;color:var(--ink-faint);line-height:1.6}
 .themebtn{background:none;border:1px solid var(--line2);color:var(--ink-dim);border-radius:7px;
   padding:5px 10px;font-size:12px;cursor:pointer;font-family:var(--mono)}
+@media(max-width:1150px){ .navmini{display:none} }
 @media(max-width:640px){ article.doc h1{font-size:25px} .navwrap{gap:12px} nav.main{gap:13px;font-size:14px}
   .newssearch{flex:1 1 100%} .chips{min-width:100%} .nhead{font-size:16px} }

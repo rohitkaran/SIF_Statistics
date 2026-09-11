@@ -351,6 +351,10 @@
       border-bottom:1px solid var(--line)}
     .topnav a{color:var(--ink-dim);text-decoration:none} .topnav a:hover{color:var(--ink)}
     .topnav .sp{flex:1}
+    /* Subscribe pill — the dashboard is the highest-traffic page, so the newsletter CTA
+       lives here too, not only on the content pages' shared header. */
+    .topnav a.cta{background:var(--accent);color:#fff;font-weight:600;padding:5px 11px;
+      border-radius:7px} .topnav a.cta:hover{filter:brightness(1.08);color:#fff}
   </style>
   <nav class="topnav">
     <span class="sp"></span>
@@ -365,6 +369,8 @@
     <a href="/videos">Videos</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
+    <a href="/account">Sign in</a>
+    <a href="/subscribe" class="cta">Subscribe</a>
   </nav>
   <div class="topstrip">
     <span id="liveclock" class="live"><span class="livedot"></span> Live · —</span>
@@ -491,6 +497,11 @@
     <div class="col"><h4>For business</h4>
       <a href="/data">SIF data &amp; API</a>
       <a href="/services">Build with us</a>
+    </div>
+    <div class="col"><h4>Newsletters</h4>
+      <a href="/subscribe">Subscribe free</a>
+      <a href="/account">Sign in / preferences</a>
+      <a href="/unsubscribe">Unsubscribe</a>
     </div>
     <div class="col"><h4>Company</h4>
       <a href="/about">About us</a>

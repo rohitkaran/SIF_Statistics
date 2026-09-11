@@ -43,6 +43,13 @@ newest funds not yet disclosed (Summit/Invesco, Infinity/Kotak, Prism/Jio — fi
 | `portfolios/raw/<amc>/<period>/…` | Original Excel/zip saved verbatim (committed). |
 | `portfolios/data/<period>/<amc>__<fund>.json` | Normalised holdings (committed). |
 | `.github/workflows/refresh-and-deploy.yml` | Daily NAV + monthly portfolio refresh → commits data back → deploys Pages. |
+| `db/schema.sql` | **D1 schema** for accounts + newsletters. Apply once with wrangler; bind as `DB`. |
+| `functions/_lib/*.js` | Shared edge modules (session/HMAC, SQL, Resend, digest builder). No handler export ⇒ no route. |
+| `functions/api/auth/*`, `account.js`, `unsubscribe.js` | Magic-link sign-in, preferences, opt-out. |
+| `functions/api/cron/send.js` | The newsletter sender. Idempotent, resumable, daily-capped. |
+| `build_accounts.py` | Generates `/subscribe`, `/account`, `/auth`, `/unsubscribe` (root-level, committed). |
+| `newsletter_note.py` | Writes `newsletter_note.json` — the editor's note leading the next SIF Weekly. |
+| `.github/workflows/newsletter.yml` | Clock only: POSTs `/api/cron/send`. All logic lives at the edge. |
 
 ### Portfolio pipeline design
 - **Discovery methods** (registry `discovery.method`): `http_listing` (regex a page for the file URL),
@@ -113,6 +120,47 @@ to a browser-based fetch (see deferred). The workflow's portfolio step is best-e
 - Note: rows whose nav `sif` is already a full AMC name (Kotak/Mirae/Jio/HSBC/Franklin/Invesco) show a
   slightly redundant brand+parent (e.g. "Kotak Mahindra Mutual Fund" / "Kotak Mahindra"). Cosmetic;
   could special-case later. The SIF-branded ones (Apex SIF / Aditya Birla) read perfectly.
+
+## Accounts & newsletters (2026-09) — SEE `NEWSLETTER.md`
+
+Logins + two free newsletters. **`NEWSLETTER.md` is the runbook** (setup, secrets, gotchas);
+this is only the orientation.
+
+- **Auth is magic-link only.** No password column exists anywhere. The emailed link points at
+  `/auth` (a static page) and redemption happens on a **POST** — mail scanners prefetch every URL
+  in an incoming email, and a GET-redeemed link would be burned before the human clicked it.
+  Do not "simplify" this back to a GET.
+- **Sessions are HMAC-signed cookies**, not a table — zero D1 reads per request, at the cost of
+  not being individually revocable inside 30 days.
+- **Unsubscribe tokens are stateless HMACs** with an `unsub:` domain separator, so a link in a
+  two-year-old email still works and one-click (RFC 8058) succeeds without a session. Rotating
+  `SESSION_SECRET` invalidates every unsubscribe link ever sent.
+- **The sender is the careful part.** `sends(user_id, edition)` composite PK ⇒ idempotent
+  (re-running sends nothing twice) and resumable (each call takes the next unsent slice). Capped
+  by `RESEND_DAILY_CAP` (Resend free = 100/day — the binding constraint until you upgrade).
+- **Editions build once per run, not per recipient** — only the unsubscribe URL differs. That is
+  what keeps Worker CPU flat as the list grows.
+- **Content comes from the site's own JSON**, so there is no second content store to keep in
+  sync: SIF Weekly from `nav_data.json`/`benchmark_data.json`/`nfo_data.json`/`portfolios/index.json`,
+  Morning Brief from the `/api/news` edge aggregator (falling back to `news_data.json`).
+
+**Fund dedupe (`functions/_lib/digest.js`) — the subtle bit.** 121 scheme codes are ~33 funds.
+AMFI naming is wildly inconsistent (`- Direct Growth`, `- Growth Option - Direct Plan`,
+`-RegularPlan`, `Fund-Direct Growth`, plan omitted entirely, plus Annual/Monthly/Quarterly IDCW
+variants), so anything that splits on a separator gets it wrong somewhere. Instead the plan/option
+vocabulary is deleted wherever it appears and what remains is the key, then groups are
+union-merged by `portfolios/index.json` scheme→fund — which also repairs AMC typos (qsif ships
+both "Actice" and "Active Asset Allocator"). Verified: 33 groups, all single-fund-house, max NAV
+spread 5.9%.
+
+**Tested offline** (no D1/Resend needed) — recreate these if you touch the logic:
+- both editions rendered from the real repo data, with assertions on placeholders/undefined/NaN
+- 21 session-crypto tests (tamper, wrong secret, expiry, domain separation)
+- 21 SQL tests against SQLite (D1 *is* SQLite): idempotency, resume, weekend filtering,
+  failed-send retry, daily cap
+
+**Not built, deliberately:** payments, bounce handling, admin UI, per-user personalisation.
+API keys are still the hand-edited `API_KEYS` env var.
 
 ## Deferred / next session (with design notes)
 1. **CI robustness / auto-discovery**: for WAF AMCs, add a headless-browser fetch (Playwright) step, or a

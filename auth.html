@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact SIFintel | SIFintel</title>
-<meta name="description" content="Get in touch with SIFintel, a service of Lume Software Private Limited. Email ceo@lumesoftai.com with questions about SIFs, corrections or partnership ideas.">
-<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel, contact SIFintel">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://www.sifintel.com/contact">
+<title>Signing in | SIFintel</title>
+<meta name="description" content="Completing your SIFintel sign-in.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.sifintel.com/auth">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SIFintel">
-<meta property="og:title" content="Contact SIFintel | SIFintel">
-<meta property="og:description" content="Get in touch with SIFintel, a service of Lume Software Private Limited. Email ceo@lumesoftai.com with questions about SIFs, corrections or partnership ideas.">
-<meta property="og:url" content="https://www.sifintel.com/contact">
+<meta property="og:title" content="Signing in | SIFintel">
+<meta property="og:description" content="Completing your SIFintel sign-in.">
+<meta property="og:url" content="https://www.sifintel.com/auth">
 <meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.sifintel.com/brand/og-image.png">
@@ -24,14 +24,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact SIFintel","inLanguage":"en-IN","mainEntity":{"@type":"Organization","name":"SIFintel","email":"ceo@lumesoftai.com","parentOrganization":{"@type":"Organization","name":"Lume Software Private Limited"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Sign in","inLanguage":"en-IN"}</script>
 </head>
 <body>
 <header class="site">
   <div class="navwrap">
     <a href="/" style="text-decoration:none"><h1 class="wm">SIF<span class="in">intel<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1></a>
     <nav class="main">
-      <a href="/">Dashboard</a>
+      <a href="/" class="active">Dashboard</a>
       <a href="/news">News</a>
       <a href="/nfo">NFOs</a>
       <a href="/aum">AUM</a>
@@ -50,50 +50,84 @@
   </div>
 </header>
 <main class="wrap">
-<div class="crumb"><a href="/">Home</a> / Contact</div>
+<div class="crumb"><a href="/">Home</a> / Sign in</div>
 <article class="doc">
-<h1>Contact SIFintel</h1>
-<p class="lede">Questions about SIFs, a correction to something we've published, or a partnership idea? We'd love to hear from you.</p>
-<p class="meta">SIFintel · Contact</p>
-<h2>Email us</h2>
-<p>The fastest way to reach us is by email. We read every message and typically reply within a couple of working days.</p>
-<p style="font-size:19px"><a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a></p>
-<h2>Send a message</h2>
-<p>Fill this in and we'll get it straight to our inbox — no email app needed.</p>
-<form id="cform" novalidate>
-  <div class="field"><label>Your name</label><input name="name" required></div>
-  <div class="field"><label>Your email</label><input name="email" type="email" required></div>
-  <div class="field"><label>Subject</label><input name="subject"></div>
-  <div class="field"><label>Message</label><textarea name="message" rows="5" required></textarea></div>
-  <!-- honeypot: hidden from humans; bots fill it and get silently dropped -->
-  <div style="position:absolute;left:-5000px" aria-hidden="true"><input name="company" tabindex="-1" autocomplete="off"></div>
-  <button class="btn" type="submit">Send message</button>
-  <span id="cstatus" style="margin-left:12px;font-size:14px"></span>
-</form>
+<h1>Signing you in…</h1>
+<div class="authbox">
+  <div class="alert" id="auth-msg">Checking your link…</div>
+  <!-- No-JS fallback. Also the reason redemption is a POST: mail scanners and link-preview
+       bots issue GETs and never run scripts, so they cannot burn a one-time token. -->
+  <noscript>
+    <form method="post" action="/api/auth/verify" id="auth-form">
+      <input type="hidden" name="t" id="auth-t-nojs">
+      <p style="color:var(--ink-dim)">JavaScript is off. Press the button to finish signing in.</p>
+      <button class="btn" type="submit">Complete sign-in</button>
+    </form>
+  </noscript>
+</div>
+</article>
+
 <script>
-(function(){
-  var f=document.getElementById('cform'), s=document.getElementById('cstatus');
-  f.addEventListener('submit', async function(e){
-    e.preventDefault();
-    var btn=f.querySelector('button[type=submit]');
-    var d={name:f.name.value,email:f.email.value,subject:f.subject.value,message:f.message.value,company:f.company.value};
-    if(!d.name.trim()||!d.email.trim()||!d.message.trim()){ s.style.color='#d9820b'; s.textContent='Please fill in your name, email and message.'; return; }
-    btn.disabled=true; s.style.color='#5a6485'; s.textContent='Sending…';
-    try{
-      var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
-      var j=await r.json().catch(function(){return {};});
-      if(r.ok && j.ok){ s.style.color='#12a150'; s.textContent='Thanks — your message has been sent.'; f.reset(); }
-      else { s.style.color='#e5484d'; s.textContent=(j&&j.error)||'Could not send. Please email ceo@lumesoftai.com.'; }
-    }catch(err){ s.style.color='#e5484d'; s.textContent='Network error. Please email ceo@lumesoftai.com.'; }
-    btn.disabled=false;
-  });
+window.SIF = (function(){
+  function el(id){ return document.getElementById(id); }
+  function say(node, kind, msg){
+    if(!node) return;
+    node.className = 'alert ' + kind;
+    node.innerHTML = msg;
+    node.hidden = false;
+  }
+  function hide(node){ if(node) node.hidden = true; }
+  async function api(url, opts){
+    var res = await fetch(url, Object.assign({headers:{'Content-Type':'application/json'}}, opts||{}));
+    var body = await res.json().catch(function(){ return {}; });
+    return { ok: res.ok && body.ok !== false, status: res.status, body: body };
+  }
+  // Reflect checkbox state onto the card so the whole tile looks selected, and reveal the
+  // weekday/everyday choice only when the daily brief is actually ticked.
+  function wireCards(prefix){
+    ['sif_weekly','news_daily'].forEach(function(key){
+      var box = el(prefix + '-' + key), card = el(prefix + '-opt-' + key);
+      if(!box || !card) return;
+      function sync(){
+        card.classList.toggle('on', box.checked);
+        if(key === 'news_daily'){
+          var scope = el(prefix + '-scope');
+          if(scope) scope.hidden = !box.checked;
+        }
+      }
+      box.addEventListener('change', sync);
+      sync();
+    });
+  }
+  function scope(prefix){
+    var picked = document.querySelector('input[name="' + prefix + '-news_scope"]:checked');
+    return picked ? picked.value : 'weekdays';
+  }
+  return { el: el, say: say, hide: hide, api: api, wireCards: wireCards, scope: scope };
 })();
 </script>
-<h2>Company</h2>
-<p><strong>Lume Software Private Limited</strong><br>Email: <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a></p>
-<div class="callout">SIFintel is an education and data platform. We cannot give personal investment advice or execute
-transactions. For advice specific to your situation, please consult a SEBI-registered investment adviser.</div>
-</article>
+
+<script>
+(function(){
+  var S = window.SIF;
+  var msg = S.el('auth-msg');
+  var token = new URLSearchParams(location.search).get('t');
+  if(!token){
+    S.say(msg,'err','That link is incomplete. <a href="/account">Request a new sign-in link</a>.');
+    return;
+  }
+  (async function(){
+    var r = await S.api('/api/auth/verify', { method:'POST', body: JSON.stringify({ t: token }) });
+    if(r.ok){
+      // Replace the history entry so the token is not left in the back button or in a shared URL.
+      location.replace(r.body.next || '/account?welcome=1');
+    } else {
+      S.say(msg,'err',(r.body && r.body.error) ||
+        'That link could not be used. <a href="/account">Request a new one</a>.');
+    }
+  })();
+})();
+</script>
 </main>
 <footer class="site">
   <div class="footwrap">

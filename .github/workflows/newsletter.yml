@@ -1,0 +1,115 @@
+name: Send newsletters
+
+# This workflow is ONLY a clock. Every piece of logic — building the edition, picking
+# recipients, batching, capping, recording what was sent — lives in the Cloudflare Pages
+# Function at functions/api/cron/send.js, because that is where the D1 binding and the Resend
+# key already are. Moving the send here would mean handing GitHub a database credential and a
+# mail credential for no benefit.
+#
+# Cloudflare Pages Functions cannot have cron triggers of their own (that is a Workers
+# feature, and this project is a Git-connected Pages site with no build step), so an external
+# clock is required. GitHub Actions is the one this repo already runs on.
+#
+# TIMING CAVEAT: GitHub's scheduler is best-effort and routinely runs 5-20 minutes late at
+# popular times (:00 especially). The crons below sit at :25 and :05 to avoid the worst of it,
+# but "7am IST" means "shortly after 7am IST". If exact timing ever matters, move this to a
+# Cloudflare Worker with a real cron trigger — send.js itself would not change.
+
+on:
+  schedule:
+    # 01:25 UTC = 06:55 IST, daily — the morning brief. Recipients who chose "weekdays only"
+    # are filtered inside the function by IST weekday, so this can run every day safely.
+    - cron: '25 1 * * *'
+    # 02:05 UTC Monday = 07:35 IST Monday — the weekly SIF digest.
+    - cron: '5 2 * * 1'
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: 'Which newsletter to send'
+        type: choice
+        options: [news, sif]
+        default: news
+      dry:
+        description: 'Dry run (build and count, send nothing)'
+        type: boolean
+        default: true
+
+permissions: {}          # this workflow needs no repository access at all
+
+concurrency:
+  # Never let two sends overlap. The endpoint is idempotent so an overlap would not double-send,
+  # but serialising keeps the daily-cap arithmetic honest.
+  group: newsletter-send
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Decide which edition this run is for
+        id: pick
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "kind=${{ inputs.kind }}" >> "$GITHUB_OUTPUT"
+            echo "dry=${{ inputs.dry }}"   >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "5 2 * * 1" ]; then
+            echo "kind=sif"   >> "$GITHUB_OUTPUT"
+            echo "dry=false"  >> "$GITHUB_OUTPUT"
+          else
+            echo "kind=news"  >> "$GITHUB_OUTPUT"
+            echo "dry=false"  >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Send
+        env:
+          SITE: ${{ vars.NEWSLETTER_SITE || 'https://www.sifintel.com' }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          KIND: ${{ steps.pick.outputs.kind }}
+          DRY: ${{ steps.pick.outputs.dry }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CRON_SECRET}" ]; then
+            echo "::error::CRON_SECRET is not set. Add it under Settings -> Secrets -> Actions."
+            exit 1
+          fi
+
+          QS="kind=${KIND}"
+          [ "${DRY}" = "true" ] && QS="${QS}&dry=1"
+
+          # The endpoint sends one batch (<=100) per call and reports how many recipients are
+          # still pending, so we loop until it reports zero. The cap of 30 iterations is a
+          # runaway guard: 30 x 100 = 3,000 emails, far beyond any single edition today.
+          total_sent=0
+          for i in $(seq 1 30); do
+            echo "--- pass $i ---"
+            body=$(curl -sS --fail-with-body -X POST \
+              -H "Authorization: Bearer ${CRON_SECRET}" \
+              "${SITE}/api/cron/send?${QS}&limit=100") || {
+                echo "::error::Send request failed: ${body}"
+                exit 1
+              }
+            echo "${body}"
+
+            sent=$(echo "${body}"      | python3 -c "import sys,json;print(json.load(sys.stdin).get('sent',0))")
+            remaining=$(echo "${body}" | python3 -c "import sys,json;print(json.load(sys.stdin).get('remaining',0))")
+            capped=$(echo "${body}"    | python3 -c "import sys,json;print(json.load(sys.stdin).get('capped',False))")
+            total_sent=$((total_sent + sent))
+
+            if [ "${DRY}" = "true" ]; then echo "Dry run — stopping after one pass."; break; fi
+            if [ "${capped}" = "True" ]; then
+              echo "::warning::Daily send cap reached with ${remaining} recipient(s) still pending."
+              echo "::warning::Raise RESEND_DAILY_CAP in Cloudflare Pages once you are on a paid Resend plan."
+              break
+            fi
+            if [ "${remaining}" -eq 0 ]; then echo "All recipients processed."; break; fi
+            # Failed recipients stay pending so a transient error is retried — but if a whole
+            # pass delivered nothing, retrying will not help (bad address, Resend down, key
+            # revoked). Stop rather than burn 30 passes against the same failure.
+            if [ "${sent}" -eq 0 ]; then
+              echo "::warning::A full pass sent nothing; ${remaining} recipient(s) still pending. Stopping."
+              echo "::warning::Check the failures array in the response above."
+              break
+            fi
+          done
+
+          echo "### ${KIND} newsletter: ${total_sent} sent" >> "$GITHUB_STEP_SUMMARY"

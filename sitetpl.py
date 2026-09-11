@@ -52,7 +52,9 @@ def header(active):
       {nav_html(active)}
     </nav>
     <span class="navspace"></span>
-    <a class="navcta" href="/contact">Contact</a>
+    <a class="navmini" href="/contact">Contact</a>
+    <a class="navmini" href="/account">Sign in</a>
+    <a class="navcta" href="/subscribe">Subscribe</a>
     <button class="themebtn" onclick="(function(){{var d=document.documentElement;var n=d.getAttribute('data-theme')==='dark'?'':'dark';if(n)d.setAttribute('data-theme','dark');else d.removeAttribute('data-theme');try{{localStorage.setItem('sif-theme',n)}}catch(e){{}}}})()">◐</button>
   </div>
 </header>'''
@@ -88,6 +90,12 @@ FOOTER = f'''<footer class="site">
       <a href="/data">SIF data &amp; API</a>
       <a href="/services">Build with us</a>
       <a href="/api/v1/meta">API reference</a>
+    </div>
+    <div class="footcol">
+      <h4>Newsletters</h4>
+      <a href="/subscribe">Subscribe free</a>
+      <a href="/account">Sign in / preferences</a>
+      <a href="/unsubscribe">Unsubscribe</a>
     </div>
     <div class="footcol">
       <h4>Company</h4>
