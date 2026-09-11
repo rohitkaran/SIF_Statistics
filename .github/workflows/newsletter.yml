@@ -49,9 +49,10 @@ jobs:
           python-version: '3.12'
 
       - name: Check the builder still behaves
-        # The tests are stdlib-only and take about two seconds. Mailing a list is not something
-        # to do on untested code.
-        run: python -m unittest discover -s tests -q
+        # Scoped to the newsletter's own tests on purpose. Running the whole suite here meant an
+        # unrelated failure elsewhere in the repo could block the weekly send, which is backwards:
+        # nothing outside this pipeline should be able to stop the newsletter going out.
+        run: python -m unittest tests.test_newsletter -v
 
       - name: Build the issue
         run: python build_newsletter.py
