@@ -1,0 +1,95 @@
+name: Weekly newsletter
+
+# Builds the weekly SIF digest from the JSON the data workflow already commits, publishes it to
+# the archive, and sends it to confirmed subscribers via Resend.
+#
+# SEPARATE from refresh-and-deploy.yml, which it does not touch. It only READS the data files;
+# it writes the newsletter/ directory and the landing page.
+#
+# Sending is gated on secrets: with none set, the job still builds and commits the archive issue
+# and simply reports that it cannot send. That way the archive keeps working while the email
+# side is still being set up.
+#
+# Secrets (Settings → Secrets and variables → Actions):
+#   RESEND_API_KEY          the same key the contact form uses
+#   NEWSLETTER_SECRET       long random string; MUST equal the Pages env var of the same name,
+#                           or the unsubscribe links in sent mail will not verify
+#   NEWSLETTER_AUDIENCE_ID  Resend audience holding confirmed subscribers
+# Optional variable: NEWSLETTER_FROM
+
+on:
+  schedule:
+    - cron: '30 3 * * 1'        # Mondays 09:00 IST
+  workflow_dispatch:
+    inputs:
+      send:
+        description: 'Actually send it? Leave false for a dry run.'
+        type: boolean
+        default: false
+      test_to:
+        description: 'Send only to this address (a rehearsal before the real send)'
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  # Two overlapping runs would mail the list twice.
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check the builder still behaves
+        # The tests are stdlib-only and take about two seconds. Mailing a list is not something
+        # to do on untested code.
+        run: python -m unittest discover -s tests -q
+
+      - name: Build the issue
+        run: python build_newsletter.py
+
+      - name: Publish it to the archive
+        # The archive commit is what gives every issue a public permalink, and it happens
+        # whether or not the send below is configured.
+        continue-on-error: true
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add newsletter/ newsletter.html 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No newsletter changes to publish."
+          else
+            git commit -m "newsletter: publish weekly issue"
+            git pull --rebase --autostash origin main || true
+            git push || echo "::warning::newsletter archive push failed — will retry next week"
+          fi
+
+      - name: Send to subscribers
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NEWSLETTER_SECRET: ${{ secrets.NEWSLETTER_SECRET }}
+          NEWSLETTER_AUDIENCE_ID: ${{ secrets.NEWSLETTER_AUDIENCE_ID }}
+          NEWSLETTER_FROM: ${{ vars.NEWSLETTER_FROM }}
+        run: |
+          if [ -z "$NEWSLETTER_SECRET" ] || [ -z "$RESEND_API_KEY" ]; then
+            echo "::warning::Newsletter secrets not set — built and archived, but not sent."
+            exit 0
+          fi
+          ARGS=""
+          # A manual run is a dry run unless you tick the box, so the schedule is the only
+          # thing that mails the list by default.
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.send }}" = "true" ]; then
+            ARGS="--send"
+          fi
+          if [ -n "${{ github.event.inputs.test_to }}" ]; then
+            ARGS="$ARGS --test-to ${{ github.event.inputs.test_to }}"
+          fi
+          python send_newsletter.py $ARGS

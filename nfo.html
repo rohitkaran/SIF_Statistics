@@ -104,6 +104,48 @@ investment of ₹10 lakh — read the scheme documents and consult a SEBI-regist
 })();
 </script>
 </main>
+<section class="subwrap" id="subscribe">
+  <div class="subinner">
+    <div class="subcopy">
+      <h4>The week in Indian SIFs</h4>
+      <p>One email a week: new launches and NFOs, fresh portfolio disclosures, AUM and flows,
+      and how the category performed. Free, and you can leave in one click.</p>
+    </div>
+    <form class="subform" id="subform" novalidate>
+      <label class="sr" for="subemail">Your email</label>
+      <input id="subemail" name="email" type="email" inputmode="email" autocomplete="email"
+             placeholder="you@example.com" required>
+      <div style="position:absolute;left:-5000px" aria-hidden="true">
+        <input name="company" tabindex="-1" autocomplete="off"></div>
+      <button class="btn" type="submit">Subscribe</button>
+      <p class="substatus" id="substatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+<script>
+(function(){
+  var f=document.getElementById('subform'); if(!f) return;
+  var s=document.getElementById('substatus');
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit]');
+    var email=(f.email.value||'').trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){
+      s.className='substatus warn'; s.textContent='Please enter a valid email address.'; return; }
+    btn.disabled=true; s.className='substatus'; s.textContent='Sending…';
+    try{
+      var r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({email:email,company:f.company.value})});
+      var j=await r.json().catch(function(){return {};});
+      if(r.ok&&j.ok){ s.className='substatus good';
+        s.textContent='Check your inbox — click the link to confirm.'; f.reset(); }
+      else { s.className='substatus warn';
+        s.textContent=(j&&j.error)||'Could not subscribe. Please try again.'; }
+    }catch(err){ s.className='substatus warn'; s.textContent='Network error. Please try again.'; }
+    btn.disabled=false;
+  });
+})();
+</script>
 <footer class="site">
   <div class="footwrap">
     <div class="footcol">
@@ -138,6 +180,7 @@ investment of ₹10 lakh — read the scheme documents and consult a SEBI-regist
     <div class="footcol">
       <h4>Company</h4>
       <a href="/about">About us</a>
+      <a href="/newsletter">Newsletter</a>
       <a href="/contact">Contact</a>
       <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>
     </div>

@@ -39,3 +39,12 @@
   Cache-Control: public, max-age=0, must-revalidate
 /desk-preview.html
   Cache-Control: public, max-age=0, must-revalidate
+
+# Newsletter: the landing page and archive index change whenever an issue ships, so they must
+# revalidate. Individual issues never change once sent and can be cached hard.
+/newsletter.html
+  Cache-Control: public, max-age=0, must-revalidate
+/newsletter/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/newsletter/*
+  Cache-Control: public, max-age=86400

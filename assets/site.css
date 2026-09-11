@@ -147,3 +147,23 @@ footer.site{border-top:1px solid var(--line);background:var(--panel);margin-top:
   padding:5px 10px;font-size:12px;cursor:pointer;font-family:var(--mono)}
 @media(max-width:640px){ article.doc h1{font-size:25px} .navwrap{gap:12px} nav.main{gap:13px;font-size:14px}
   .newssearch{flex:1 1 100%} .chips{min-width:100%} .nhead{font-size:16px} }
+
+/* --- newsletter signup (shared chrome, above the footer) ------------------------- */
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.subwrap{border-top:1px solid var(--line);background:var(--panel2)}
+.subinner{max-width:1100px;margin:0 auto;padding:26px 20px;display:flex;gap:28px;
+  flex-wrap:wrap;align-items:center;justify-content:space-between}
+.subcopy{flex:1 1 340px;min-width:0}
+.subcopy h4{margin:0 0 5px;font-size:16px;color:var(--ink)}
+.subcopy p{margin:0;font-size:14px;color:var(--ink-dim);max-width:62ch;line-height:1.6}
+.subform{flex:0 1 380px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:relative}
+.subform input[type=email]{flex:1 1 200px;min-width:0;padding:10px 12px;
+  border:1px solid var(--line2);border-radius:8px;background:var(--panel);color:var(--ink);
+  font:inherit;font-size:14px}
+.subform input[type=email]:focus{outline:2px solid var(--accent);outline-offset:1px}
+.subform .btn{flex:0 0 auto}
+.substatus{flex:1 1 100%;margin:2px 0 0;font-size:13px;color:var(--ink-dim);min-height:1.2em}
+.substatus.good{color:#12a150}
+.substatus.warn{color:#d9820b}
+@media (max-width:640px){.subform{flex:1 1 100%}.subform input[type=email]{flex:1 1 100%}}

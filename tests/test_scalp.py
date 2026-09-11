@@ -460,8 +460,12 @@ class TestYahooOptionChain(unittest.TestCase):
     that talks to the real API, and it reports parse failures rather than hiding them.
     """
 
-    EXP1 = int(dt.datetime(2026, 8, 28, 20, 0, tzinfo=UTC).timestamp())
-    EXP2 = int(dt.datetime(2026, 9, 4, 20, 0, tzinfo=UTC).timestamp())
+    # Relative to today, not pinned dates: nearest_expiry() ignores expiries in the past, so a
+    # hardcoded 2026-08-28 quietly stopped matching once the calendar moved past it and the
+    # test failed months after it was written.
+    _T = dt.datetime.now(UTC).replace(hour=20, minute=0, second=0, microsecond=0)
+    EXP1 = int((_T + dt.timedelta(days=3)).timestamp())
+    EXP2 = int((_T + dt.timedelta(days=10)).timestamp())
 
     def _contract(self, k, right, bid, ask, oi, vol, iv, expiration):
         return {"contractSymbol": f"SPY_{right}_{int(k)}", "strike": k,
