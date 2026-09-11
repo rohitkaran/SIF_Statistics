@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T07:25:56Z",
+ "generated": "2026-09-11T16:12:23Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -5738,9 +5738,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
+    "money_market": 610.0,
     "equity": 796.0,
-    "cash_other": 0,
-    "money_market": 610.0
+    "cash_other": 0
    },
    "sector_shifts": [
     {
@@ -5813,9 +5813,9 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
+    "money_market": 0.52,
     "equity": 3.96,
-    "cash_other": -4.48,
-    "money_market": 0.52
+    "cash_other": -4.48
    },
    "sector_shifts": [
     {
@@ -5890,10 +5890,10 @@
     "cash_other": 18.85
    },
    "allocation_shift": {
-    "cash_other": -8.25,
     "money_market": -2.67,
     "debt": -4.15,
-    "equity": 15.07
+    "equity": 15.07,
+    "cash_other": -8.25
    },
    "sector_shifts": [
     {
@@ -5921,16 +5921,16 @@
      "change_pct": 1.75
     },
     {
-     "sector": "Automobiles",
-     "from_pct": 8.29,
-     "to_pct": 9.88,
-     "change_pct": 1.58
-    },
-    {
      "sector": "It - Software",
      "from_pct": 2.28,
      "to_pct": 0.69,
      "change_pct": -1.58
+    },
+    {
+     "sector": "Automobiles",
+     "from_pct": 8.29,
+     "to_pct": 9.88,
+     "change_pct": 1.58
     },
     {
      "sector": "Power",
@@ -5966,9 +5966,9 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
+    "money_market": 0.25,
     "equity": 2.67,
-    "cash_other": -2.92,
-    "money_market": 0.25
+    "cash_other": -2.92
    },
    "sector_shifts": [
     {
@@ -6014,9 +6014,9 @@
      "change_pct": -1.24
     },
     {
-     "sector": "Personal Products",
-     "from_pct": 2.36,
-     "to_pct": 3.38,
+     "sector": "Petroleum Products",
+     "from_pct": 0.74,
+     "to_pct": 1.76,
      "change_pct": 1.02
     }
    ]
@@ -6115,10 +6115,10 @@
     "cash_other": 9.71
    },
    "allocation_shift": {
-    "cash_other": 1.06,
     "money_market": -0.68,
     "debt": 0.34,
-    "equity": -0.72
+    "equity": -0.72,
+    "cash_other": 1.06
    },
    "sector_shifts": [
     {
