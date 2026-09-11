@@ -1,0 +1,77 @@
+name: Refresh options desk
+
+# Publishes a PUBLIC snapshot of the options desk: fetches live data, computes greeks, pivots,
+# CPR and VWAP, and commits desk_data.json. Cloudflare Pages auto-deploys on push, so the
+# dashboard at /desk.html picks it up within a minute.
+#
+# This workflow is SEPARATE from refresh-and-deploy.yml and touches none of its files. Every
+# step is best-effort: a failed fetch keeps the last committed snapshot rather than breaking
+# the site.
+#
+# BUILD BUDGET — each commit here triggers a Cloudflare Pages build, and the free plan allows
+# 500/month. The schedule below is 14 runs per trading day (~294/month), which leaves room
+# alongside the ~70 the NAV workflow uses. If you hit the cap, widen the cron to hourly
+# ('0 13-20 * * 1-5', ~168/month) — it is a one-line change.
+
+on:
+  schedule:
+    # Every 30 minutes through the US cash session (13:30–20:00 UTC), weekdays only.
+    - cron: '*/30 13-20 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: 'Symbols to publish (space separated)'
+        default: 'SPY QQQ'
+      provider:
+        description: 'Data provider (yahoo needs no credentials)'
+        default: 'yahoo'
+
+permissions:
+  contents: write          # commit desk_data.json back to main
+
+concurrency:
+  # A slow run must never overlap the next tick and race the commit.
+  group: desk-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build the desk snapshot
+        # stdlib only — nothing to install. On failure the last committed snapshot stands,
+        # and the dashboard keeps showing it with its own timestamp, so a stale panel is
+        # visibly stale rather than silently wrong.
+        env:
+          OPTIONS_PROVIDER: ${{ github.event.inputs.provider || 'yahoo' }}
+          OPTIONS_EXCHANGE: US
+          OPTIONS_EXPIRY_LIMIT: '2'
+          OPTIONS_STRIKE_WINDOW: '12'
+          OPTIONS_BAR_INTERVAL: 5m
+        run: |
+          python -m options_desk.build_preview ${{ github.event.inputs.symbols || 'SPY QQQ' }} \
+            --json-out desk_data.json \
+            --page-out desk.html \
+            --out desk-preview.html \
+            --ticks 1 \
+          || echo "::warning::desk snapshot failed — keeping the last committed desk_data.json"
+
+      - name: Commit the snapshot
+        continue-on-error: true
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add desk_data.json desk.html desk-preview.html 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No change to publish."
+          else
+            git commit -m "desk: refresh snapshot"
+            git pull --rebase --autostash origin main || true
+            git push || echo "::warning::desk push failed — will retry next run"
+          fi

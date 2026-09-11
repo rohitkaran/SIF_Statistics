@@ -1,0 +1,26 @@
+{
+  "_comment": "Intraday scalping rules over pivots, CPR and VWAP. Pass with --rules. Every rule also accepts severity (info|warn|alert), cooldown_s, and symbols (empty = all).",
+  "rules": [
+    {"type": "narrow_cpr", "threshold_pct": 0.0025, "severity": "info",
+     "_note": "CPR narrower than 0.25% of the pivot -- classic trending-day precondition. Fires once per session."},
+
+    {"type": "cpr_breakout", "min_rvol": 1.2, "max_width_pct": 0.004, "severity": "alert",
+     "_note": "Closed outside TC/BC having been inside, on >1.2x median bar volume, on a narrow-ish CPR day."},
+
+    {"type": "cpr_reject", "min_wick_frac": 0.4, "severity": "warn",
+     "_note": "Pierced TC/BC intrabar but closed back inside leaving a 40%+ wick -- the fade."},
+
+    {"type": "vwap_cross", "min_rvol": 1.0, "severity": "warn",
+     "_note": "Price reclaimed or lost session VWAP with volume behind it."},
+
+    {"type": "vwap_band", "threshold": 2.0, "min_samples": 10,
+     "_note": "Stretched 2 sigma from VWAP -- mean-reversion fade back toward the anchor."},
+
+    {"type": "confluence", "tolerance_pct": 0.002, "severity": "alert",
+     "_note": "A pivot or CPR edge sits on VWAP and price is there too. The highest-conviction zone."},
+
+    {"type": "level_test", "tolerance_pct": 0.0015,
+     "levels": ["TC", "BC", "P", "R1", "S1", "PDH", "PDL"],
+     "_note": "Price reached one of the named levels. Keyed per level so each announces itself once."}
+  ]
+}

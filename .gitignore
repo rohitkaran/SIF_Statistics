@@ -30,3 +30,11 @@ monitor/changed.flag
 
 # local page-generation scratch
 .build/
+
+# options_desk: credentials and recorded market data (never commit either)
+.env
+.env.*
+!.env.example
+.options_data/
+*.jsonl
+*.jsonl.gz

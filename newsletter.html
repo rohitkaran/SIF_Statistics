@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIF newsletter — the week in Indian SIFs | SIFintel</title>
+<meta name="description" content="One email a week on India's Specialized Investment Funds: new launches and NFOs, portfolio disclosures, AUM and flows, and weekly performance.">
+<meta name="keywords" content="SIF, Specialized Investment Fund, SIF India, long-short fund, SIF NAV, SIF comparison, SIF categories, SEBI SIF, SIF distributor, NISM SIF, SIF taxation, SIFintel">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.sifintel.com/newsletter">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SIFintel">
+<meta property="og:title" content="SIF newsletter — the week in Indian SIFs | SIFintel">
+<meta property="og:description" content="One email a week on India's Specialized Investment Funds: new launches and NFOs, portfolio disclosures, AUM and flows, and weekly performance.">
+<meta property="og:url" content="https://www.sifintel.com/newsletter">
+<meta property="og:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.sifintel.com/brand/og-image.png">
+<meta name="theme-color" content="#5b5bf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/logo-mark.svg">
+<script>try{if(localStorage.getItem('sif-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"SIFintel weekly newsletter","description":"The week in Indian Specialized Investment Funds.","author":{"@type":"Organization","name":"SIFintel"},"publisher":{"@type":"Organization","name":"SIFintel","logo":{"@type":"ImageObject","url":"https://www.sifintel.com/brand/logo-mark.svg"}},"inLanguage":"en-IN","isAccessibleForFree":true,"mainEntityOfPage":"https://www.sifintel.com/newsletter"}</script>
+</head>
+<body>
+<header class="site">
+  <div class="navwrap">
+    <a href="/" style="text-decoration:none"><h1 class="wm">SIF<span class="in">intel<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L14.3 9.7 L22.5 12 L14.3 14.3 L12 22.5 L9.7 14.3 L1.5 12 L9.7 9.7 Z"/></svg></span></h1></a>
+    <nav class="main">
+      <a href="/">Dashboard</a>
+      <a href="/news">News</a>
+      <a href="/nfo">NFOs</a>
+      <a href="/aum">AUM</a>
+      <a href="/attribution">Attribution</a>
+      <a href="/commentary/">Commentary</a>
+      <a href="/learn/">Learn</a>
+      <a href="/distributors">For distributors</a>
+      <a href="/data">Data &amp; API</a>
+      <a href="/about">About</a>
+    </nav>
+    <span class="navspace"></span>
+    <a class="navcta" href="/contact">Contact</a>
+    <button class="themebtn" onclick="(function(){var d=document.documentElement;var n=d.getAttribute('data-theme')==='dark'?'':'dark';if(n)d.setAttribute('data-theme','dark');else d.removeAttribute('data-theme');try{localStorage.setItem('sif-theme',n)}catch(e){}})()">◐</button>
+  </div>
+</header>
+<main class="wrap">
+<div class="crumb"><a href="/">Home</a> / Newsletter</div>
+<p class="meta">SIFintel · Newsletter</p>
+<h2>The week in Indian SIFs</h2>
+<p>One email a week. It covers what actually changed in India's Specialized Investment Fund
+category — not commentary, not picks.</p>
+
+<h3>What's in it</h3>
+<ul>
+  <li><strong>Industry figures</strong> — AUM, net flows, folios and scheme count from AMFI's
+      official month-end filings, with the month-on-month move.</li>
+  <li><strong>The week's movers</strong> — every SIF's NAV change over the week, one row per
+      strategy rather than four rows of the same fund's plan variants.</li>
+  <li><strong>New launches and open NFOs</strong> — as soon as a scheme's first NAV appears.</li>
+  <li><strong>Fresh portfolio disclosures</strong> — which houses filed, and for which month.</li>
+</ul>
+<p>Every figure is the same one on the dashboard, from the same AMFI and AMC sources. If a
+number here disagrees with the site, the site is wrong and we want to know.</p>
+
+<h3>Subscribe</h3>
+<p>Enter your email in the box at the foot of any page, or here:</p>
+<form class="subform" id="subform2" novalidate style="max-width:420px">
+  <label class="sr" for="subemail2">Your email</label>
+  <input id="subemail2" name="email" type="email" inputmode="email" autocomplete="email"
+         placeholder="you@example.com" required>
+  <div style="position:absolute;left:-5000px" aria-hidden="true">
+    <input name="company" tabindex="-1" autocomplete="off"></div>
+  <button class="btn" type="submit">Subscribe</button>
+  <p class="substatus" id="substatus2" role="status" aria-live="polite"></p>
+</form>
+<script>
+(function(){
+  var f=document.getElementById('subform2'); if(!f) return;
+  var s=document.getElementById('substatus2');
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit]');
+    var email=(f.email.value||'').trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){
+      s.className='substatus warn'; s.textContent='Please enter a valid email address.'; return; }
+    btn.disabled=true; s.className='substatus'; s.textContent='Sending…';
+    try{
+      var r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({email:email,company:f.company.value})});
+      var j=await r.json().catch(function(){return {};});
+      if(r.ok&&j.ok){ s.className='substatus good';
+        s.textContent='Check your inbox — click the link to confirm.'; f.reset(); }
+      else { s.className='substatus warn';
+        s.textContent=(j&&j.error)||'Could not subscribe. Please try again.'; }
+    }catch(err){ s.className='substatus warn'; s.textContent='Network error. Please try again.'; }
+    btn.disabled=false;
+  });
+})();
+</script>
+
+<h3>The small print</h3>
+<p>We send a confirmation email first — nothing is added to any list until you click the link in
+it, so nobody can sign up an address that isn't theirs. Your address is used for this newsletter
+and nothing else: it is never sold, rented or shared, and every issue carries a one-click
+unsubscribe. Ask us to delete it at any time at
+<a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>.</p>
+
+<div class="callout">SIFintel is an independent data and education platform. We are not a
+SEBI-registered investment adviser, research analyst or distributor. The newsletter reports
+published data — it does not recommend, rank or promote any fund, and it is not investment,
+legal or tax advice.</div>
+
+<h3>Past issues</h3>
+<ul><li><a href="/newsletter/2026-08-21">Week ending 21 August 2026</a></li></ul>
+
+</main>
+<section class="subwrap" id="subscribe">
+  <div class="subinner">
+    <div class="subcopy">
+      <h4>The week in Indian SIFs</h4>
+      <p>One email a week: new launches and NFOs, fresh portfolio disclosures, AUM and flows,
+      and how the category performed. Free, and you can leave in one click.</p>
+    </div>
+    <form class="subform" id="subform" novalidate>
+      <label class="sr" for="subemail">Your email</label>
+      <input id="subemail" name="email" type="email" inputmode="email" autocomplete="email"
+             placeholder="you@example.com" required>
+      <div style="position:absolute;left:-5000px" aria-hidden="true">
+        <input name="company" tabindex="-1" autocomplete="off"></div>
+      <button class="btn" type="submit">Subscribe</button>
+      <p class="substatus" id="substatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+<script>
+(function(){
+  var f=document.getElementById('subform'); if(!f) return;
+  var s=document.getElementById('substatus');
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit]');
+    var email=(f.email.value||'').trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){
+      s.className='substatus warn'; s.textContent='Please enter a valid email address.'; return; }
+    btn.disabled=true; s.className='substatus'; s.textContent='Sending…';
+    try{
+      var r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({email:email,company:f.company.value})});
+      var j=await r.json().catch(function(){return {};});
+      if(r.ok&&j.ok){ s.className='substatus good';
+        s.textContent='Check your inbox — click the link to confirm.'; f.reset(); }
+      else { s.className='substatus warn';
+        s.textContent=(j&&j.error)||'Could not subscribe. Please try again.'; }
+    }catch(err){ s.className='substatus warn'; s.textContent='Network error. Please try again.'; }
+    btn.disabled=false;
+  });
+})();
+</script>
+<footer class="site">
+  <div class="footwrap">
+    <div class="footcol">
+      <h4>SIFintel</h4>
+      <a href="/">SIF comparison dashboard</a>
+      <a href="/news">World financial news</a>
+      <a href="/nfo">SIF new fund offers</a>
+      <a href="/aum">AUM &amp; market share</a>
+      <a href="/attribution">Return attribution</a>
+      <a href="/commentary/">Market commentary</a>
+      <a href="/learn/">Learn about SIFs</a>
+      <a href="/videos">Videos</a>
+    </div>
+    <div class="footcol">
+      <h4>Learn</h4>
+      <a href="/learn/what-is-a-sif">What is a SIF?</a>
+      <a href="/learn/sif-categories">The SIF categories</a>
+      <a href="/learn/sif-regulatory-framework">SEBI regulatory framework</a>
+    </div>
+    <div class="footcol">
+      <h4>For distributors</h4>
+      <a href="/distributors">Distributor guide</a>
+      <a href="/learn/sif-certification-study-guide">Certification study guide</a>
+      <a href="/learn/sif-tax-suitability-guide">Tax &amp; suitability primer</a>
+    </div>
+    <div class="footcol">
+      <h4>For business</h4>
+      <a href="/data">SIF data &amp; API</a>
+      <a href="/services">Build with us</a>
+      <a href="/api/v1/meta">API reference</a>
+    </div>
+    <div class="footcol">
+      <h4>Company</h4>
+      <a href="/about">About us</a>
+      <a href="/newsletter">Newsletter</a>
+      <a href="/contact">Contact</a>
+      <a href="mailto:ceo@lumesoftai.com">ceo@lumesoftai.com</a>
+    </div>
+  </div>
+  <div class="legal">
+    <p>SIFintel is an independent data &amp; education platform for India's Specialized Investment Funds (SIFs),
+    built to help investors and distributors understand this new asset class. We are not a SEBI-registered
+    investment adviser, research analyst or distributor. Content is for education only and is not investment,
+    legal or tax advice; no fund is recommended, ranked or promoted. SIFs carry higher risk — read scheme
+    documents and consult a SEBI-registered adviser before investing.</p>
+    <p>© 2026 Lume Software Private Limited. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
