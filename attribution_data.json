@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14T20:05:16Z",
+ "generated": "2026-09-14T21:00:47Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -5874,8 +5874,8 @@
    },
    "allocation_shift": {
     "cash_other": 0,
-    "money_market": 610.0,
-    "equity": 796.0
+    "equity": 796.0,
+    "money_market": 610.0
    },
    "sector_shifts": [
     {
@@ -5949,8 +5949,8 @@
    },
    "allocation_shift": {
     "cash_other": -4.48,
-    "money_market": 0.52,
-    "equity": 3.96
+    "equity": 3.96,
+    "money_market": 0.52
    },
    "sector_shifts": [
     {
@@ -6026,9 +6026,9 @@
    },
    "allocation_shift": {
     "debt": -4.15,
-    "cash_other": -8.25,
+    "equity": 15.07,
     "money_market": -2.67,
-    "equity": 15.07
+    "cash_other": -8.25
    },
    "sector_shifts": [
     {
@@ -6056,16 +6056,16 @@
      "change_pct": 1.75
     },
     {
-     "sector": "It - Software",
-     "from_pct": 2.28,
-     "to_pct": 0.69,
-     "change_pct": -1.58
-    },
-    {
      "sector": "Automobiles",
      "from_pct": 8.29,
      "to_pct": 9.88,
      "change_pct": 1.58
+    },
+    {
+     "sector": "It - Software",
+     "from_pct": 2.28,
+     "to_pct": 0.69,
+     "change_pct": -1.58
     },
     {
      "sector": "Power",
@@ -6102,8 +6102,8 @@
    },
    "allocation_shift": {
     "cash_other": -2.92,
-    "money_market": 0.25,
-    "equity": 2.67
+    "equity": 2.67,
+    "money_market": 0.25
    },
    "sector_shifts": [
     {
@@ -6174,8 +6174,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "equity": 9.43,
-    "cash_other": -9.43
+    "cash_other": -9.43,
+    "equity": 9.43
    },
    "sector_shifts": [
     {
@@ -6251,9 +6251,9 @@
    },
    "allocation_shift": {
     "debt": 0.34,
-    "cash_other": 1.06,
+    "equity": -0.72,
     "money_market": -0.68,
-    "equity": -0.72
+    "cash_other": 1.06
    },
    "sector_shifts": [
     {
@@ -6327,8 +6327,8 @@
    },
    "allocation_shift": {
     "cash_other": -5.82,
-    "money_market": 0.86,
-    "equity": 4.96
+    "equity": 4.96,
+    "money_market": 0.86
    },
    "sector_shifts": [
     {
@@ -6404,9 +6404,9 @@
    },
    "allocation_shift": {
     "debt": -164.0,
-    "cash_other": 0,
+    "equity": -81.0,
     "money_market": 129.0,
-    "equity": -81.0
+    "cash_other": 0
    },
    "sector_shifts": [
     {
