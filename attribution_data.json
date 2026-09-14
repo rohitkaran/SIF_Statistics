@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14T19:31:40Z",
+ "generated": "2026-09-14T20:05:16Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -5873,8 +5873,8 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "money_market": 610.0,
     "cash_other": 0,
+    "money_market": 610.0,
     "equity": 796.0
    },
    "sector_shifts": [
@@ -5948,8 +5948,8 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
-    "money_market": 0.52,
     "cash_other": -4.48,
+    "money_market": 0.52,
     "equity": 3.96
    },
    "sector_shifts": [
@@ -6027,8 +6027,8 @@
    "allocation_shift": {
     "debt": -4.15,
     "cash_other": -8.25,
-    "equity": 15.07,
-    "money_market": -2.67
+    "money_market": -2.67,
+    "equity": 15.07
    },
    "sector_shifts": [
     {
@@ -6056,16 +6056,16 @@
      "change_pct": 1.75
     },
     {
-     "sector": "Automobiles",
-     "from_pct": 8.29,
-     "to_pct": 9.88,
-     "change_pct": 1.58
-    },
-    {
      "sector": "It - Software",
      "from_pct": 2.28,
      "to_pct": 0.69,
      "change_pct": -1.58
+    },
+    {
+     "sector": "Automobiles",
+     "from_pct": 8.29,
+     "to_pct": 9.88,
+     "change_pct": 1.58
     },
     {
      "sector": "Power",
@@ -6101,8 +6101,8 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
-    "money_market": 0.25,
     "cash_other": -2.92,
+    "money_market": 0.25,
     "equity": 2.67
    },
    "sector_shifts": [
@@ -6174,8 +6174,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "cash_other": -9.43,
-    "equity": 9.43
+    "equity": 9.43,
+    "cash_other": -9.43
    },
    "sector_shifts": [
     {
@@ -6252,8 +6252,8 @@
    "allocation_shift": {
     "debt": 0.34,
     "cash_other": 1.06,
-    "equity": -0.72,
-    "money_market": -0.68
+    "money_market": -0.68,
+    "equity": -0.72
    },
    "sector_shifts": [
     {
@@ -6303,6 +6303,159 @@
      "from_pct": 1.51,
      "to_pct": 0.95,
      "change_pct": -0.56
+    }
+   ]
+  },
+  {
+   "fund": "Diviniti Equity Long Short Fund",
+   "amc": "diviniti",
+   "from_period": "2026-07",
+   "to_period": "2026-08",
+   "net_assets_from_cr": 316.98,
+   "net_assets_to_cr": 291.54,
+   "holdings_from": 31,
+   "holdings_to": 44,
+   "allocation_from": {
+    "equity": 77.12,
+    "money_market": 9.41,
+    "cash_other": 13.47
+   },
+   "allocation_to": {
+    "equity": 82.08,
+    "money_market": 10.27,
+    "cash_other": 7.65
+   },
+   "allocation_shift": {
+    "cash_other": -5.82,
+    "money_market": 0.86,
+    "equity": 4.96
+   },
+   "sector_shifts": [
+    {
+     "sector": "Healthcare Services",
+     "from_pct": 0.0,
+     "to_pct": 5.12,
+     "change_pct": 5.12
+    },
+    {
+     "sector": "Ferrous Metals",
+     "from_pct": 5.48,
+     "to_pct": 1.21,
+     "change_pct": -4.27
+    },
+    {
+     "sector": "Insurance",
+     "from_pct": 0.0,
+     "to_pct": 3.9,
+     "change_pct": 3.9
+    },
+    {
+     "sector": "Realty",
+     "from_pct": 0.0,
+     "to_pct": 3.81,
+     "change_pct": 3.81
+    },
+    {
+     "sector": "IT - Software",
+     "from_pct": 8.94,
+     "to_pct": 5.23,
+     "change_pct": -3.71
+    },
+    {
+     "sector": "Banks",
+     "from_pct": 22.19,
+     "to_pct": 25.48,
+     "change_pct": 3.29
+    },
+    {
+     "sector": "Non - Ferrous Metals",
+     "from_pct": 4.01,
+     "to_pct": 1.55,
+     "change_pct": -2.46
+    },
+    {
+     "sector": "Electrical Equipment",
+     "from_pct": 7.51,
+     "to_pct": 5.36,
+     "change_pct": -2.15
+    }
+   ]
+  },
+  {
+   "fund": "Magnum Hybrid Long Short Fund",
+   "amc": "magnum",
+   "from_period": "2026-06",
+   "to_period": "2026-08",
+   "net_assets_from_cr": 36.46,
+   "net_assets_to_cr": 40.03,
+   "holdings_from": 59,
+   "holdings_to": 63,
+   "allocation_from": {
+    "equity": 6758.0,
+    "debt": 2063.0,
+    "money_market": 857.0,
+    "cash_other": 0.0
+   },
+   "allocation_to": {
+    "equity": 6677.0,
+    "debt": 1899.0,
+    "money_market": 986.0,
+    "cash_other": 0.0
+   },
+   "allocation_shift": {
+    "debt": -164.0,
+    "cash_other": 0,
+    "money_market": 129.0,
+    "equity": -81.0
+   },
+   "sector_shifts": [
+    {
+     "sector": "Transport Services",
+     "from_pct": 0.0,
+     "to_pct": 329.0,
+     "change_pct": 329.0
+    },
+    {
+     "sector": "Pharmaceuticals & Biotechnology",
+     "from_pct": 884.0,
+     "to_pct": 592.0,
+     "change_pct": -292.0
+    },
+    {
+     "sector": "Transport Infrastructure",
+     "from_pct": 417.0,
+     "to_pct": 214.0,
+     "change_pct": -203.0
+    },
+    {
+     "sector": "Retailing",
+     "from_pct": 218.0,
+     "to_pct": 408.0,
+     "change_pct": 190.0
+    },
+    {
+     "sector": "Banks",
+     "from_pct": 1736.0,
+     "to_pct": 1600.0,
+     "change_pct": -136.0
+    },
+    {
+     "sector": "Capital Markets",
+     "from_pct": 0.0,
+     "to_pct": 134.0,
+     "change_pct": 134.0
+    },
+    {
+     "sector": "Metals & Minerals Trading",
+     "from_pct": 201.0,
+     "to_pct": 86.0,
+     "change_pct": -115.0
+    },
+    {
+     "sector": "Insurance",
+     "from_pct": 277.0,
+     "to_pct": 384.0,
+     "change_pct": 107.0
     }
    ]
   }

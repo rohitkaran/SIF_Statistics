@@ -1,11 +1,12 @@
 {
- "generated": "2026-09-07T19:22:02+00:00",
+ "generated": "2026-09-14T20:04:58+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2025-10",
   "2026-05",
   "2026-06",
-  "2026-07"
+  "2026-07",
+  "2026-08"
  ],
  "amcs": {
   "apex": {
@@ -670,7 +671,8 @@
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
-    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
+    "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json"
    }
   },
   "SIF-20": {
@@ -679,7 +681,8 @@
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
-    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
+    "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json"
    }
   },
   "SIF-21": {
@@ -688,7 +691,8 @@
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
-    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
+    "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json"
    }
   },
   "SIF-22": {
@@ -697,7 +701,8 @@
    "fund": "Diviniti Equity Long Short Fund",
    "periods": {
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
-    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json"
+    "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
+    "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json"
    }
   },
   "SIF-125": {
@@ -777,7 +782,8 @@
    "amc": "magnum",
    "fund": "Magnum Hybrid Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json",
+    "2026-08": "portfolios/data/2026-08/magnum__SIFMHLSF.json"
    }
   },
   "SIF-15": {
@@ -785,7 +791,8 @@
    "amc": "magnum",
    "fund": "Magnum Hybrid Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json",
+    "2026-08": "portfolios/data/2026-08/magnum__SIFMHLSF.json"
    }
   },
   "SIF-13": {
@@ -793,7 +800,8 @@
    "amc": "magnum",
    "fund": "Magnum Hybrid Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json",
+    "2026-08": "portfolios/data/2026-08/magnum__SIFMHLSF.json"
    }
   },
   "SIF-16": {
@@ -801,7 +809,8 @@
    "amc": "magnum",
    "fund": "Magnum Hybrid Long Short Fund",
    "periods": {
-    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json"
+    "2026-06": "portfolios/data/2026-06/magnum__SIFMHLSF.json",
+    "2026-08": "portfolios/data/2026-08/magnum__SIFMHLSF.json"
    }
   },
   "SIF-129": {
