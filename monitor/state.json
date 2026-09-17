@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T20:21:23+00:00",
+ "generated": "2026-09-17T07:56:31+00:00",
  "latest_nav": "2026-09-16",
  "schemes": {
   "SIF-120": {
@@ -420,37 +420,37 @@
    "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-15"
+   "last": "2026-09-16"
   },
   "SIF-86": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-15"
+   "last": "2026-09-16"
   },
   "SIF-87": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-15"
+   "last": "2026-09-16"
   },
   "SIF-89": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-09-15"
+   "last": "2026-09-16"
   },
   "SIF-125": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
    "sif": "iSIF SIF",
    "first": "2026-06-08",
-   "last": "2026-09-15"
+   "last": "2026-09-16"
   },
   "SIF-124": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
    "sif": "iSIF SIF",
    "first": "2026-06-08",
-   "last": "2026-09-15"
+   "last": "2026-09-16"
   },
   "SIF-92": {
    "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option - Direct Plan",
@@ -1099,7 +1099,7 @@
   "https://www.wealthcompanyamc.in/wsif/downloads/portfolio-holdings/monthly/": true,
   "https://www.qsif.com/Admin/Pdf/qsif_Equity_Long-Short_Fund_Presentation.pdf": true,
   "https://www.qsif.com/statutory-disclosures": true,
-  "https://summitsif.invescomutualfund.com/docs/siflibraries/default-document-library/summit-sif---isid---summit-equity-long-short-fund-(1).pdf?sfvrsn=20cd9fc2_3": false,
+  "https://summitsif.invescomutualfund.com/docs/siflibraries/default-document-library/summit-sif---isid---summit-equity-long-short-fund-(1).pdf?sfvrsn=20cd9fc2_3": true,
   "https://summitsif.invescomutualfund.com/statutory-disclosures": true,
   "https://www.kotakmf.com/documents/Infinity_Hybrid_Long_Short_NFO_PPT_V8": true,
   "https://www.kotakmf.com/sif/": true,

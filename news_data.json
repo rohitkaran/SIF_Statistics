@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T20:20:25Z",
+ "generated": "2026-09-17T07:55:39Z",
  "refresh_seconds": 1800,
  "count": 140,
  "sources_ok": [
@@ -24,264 +24,185 @@
  "sources_failed": [],
  "items": [
   {
-   "title": "House votes to hold Leon Black in contempt of Congress over Epstein subpoenas defiance",
-   "url": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T20:18:19Z",
-   "summary": "Billionaire Leon Black is suing the House Oversight and Government Reform Committee seeking to block subpoenas it issued him in its probe of Jeffrey Epstein.",
+   "title": "RBI cancels Certificate of Registration of 5 NBFCs",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63611",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-09-17T12:55:00Z",
+   "summary": "The Reserve Bank of India, in exercise of powers conferred on it under Section 45-IA (6) of the Reserve Bank of India Act, 1934, has cancelled the Certificate of Registration of the following companies. Sr. No. Name of the Company Registere",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
+   "title": "8 NBFCs surrender their Certificate of Registration to the RBI",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63610",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-09-17T12:50:00Z",
+   "summary": "The following eight Non-Banking Financial Companies (NBFC) have surrendered the Certificate of Registration (CoR) granted to them by the Reserve Bank of India (RBI). The RBI, in exercise of powers conferred on it under Section 45-IA (6) of",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
+   "title": "Underwriting Auction for sale of Government Securities for ₹28,000 crore on September 18, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63609",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-09-17T11:50:00Z",
+   "summary": "Government of India has announced the sale (re-issue) of Government Securities, as detailed below, through auction to be held on September 18, 2026 (Friday). As per the extant scheme of underwriting commitment notified on November 14, 2007,",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on September 17, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63608",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-09-17T10:20:00Z",
+   "summary": "Tenor 1-day Notified Amount (in ₹ crore) 3,00,000 Total amount of offers received (in ₹ crore) 2,39,959 Amount accepted (in ₹ crore) 2,39,959 Cut off Rate (%) 5.24 Weighted Average Rate (%) 5.24 Partial Acceptance Percentage of offers recei",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Shorter-dated US Treasury yields surge in anticipation of another Fed rate hike",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/shorter-dated-us-treasury-yields-surge-in-anticipation-of-another-fed-rate-hike/articleshow/134296264.cms",
-   "source": "ET Markets",
+   "title": "Money Market Operations as on September 16, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63607",
+   "source": "RBI",
    "region": "India",
-   "official": false,
-   "published": "2026-09-16T20:16:21Z",
-   "summary": "The Federal Reserve increased interest rates for the first time in over three years. Policymakers anticipate at least one more quarter-percentage-point hike by year-end. Shorter-dated U.S. Treasury yields rose after the rate hike announceme",
+   "official": true,
+   "published": "2026-09-17T09:00:00Z",
+   "summary": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS @ --> Money Markets @ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 7,18,168.02 4.81 2.00-5.40 I. Call Money 13,358.71 5.02 4.60-5.15 II. Triparty Repo 5,",
    "categories": [
-    "Central banks & rates"
+    "Markets"
    ]
   },
   {
-   "title": "Dollar rises after Fed hikes rates in bid to counter inflation",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/dollar-rises-after-fed-hikes-rates-in-bid-to-counter-inflation/articleshow/134296325.cms",
-   "source": "ET Markets",
-   "region": "India",
+   "title": "Tom Lee says the ‘face-ripping’ rally he predicted is merely delayed",
+   "url": "https://www.marketwatch.com/story/tom-lee-says-the-face-ripping-rally-he-predicted-is-merely-delayed-16933e30?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
    "official": false,
-   "published": "2026-09-16T20:15:14Z",
-   "summary": "The US dollar rises against major currencies after the Federal Reserve hikes interest rates and signals further tightening to tackle inflation. The dollar index reaches a nearly five-week high, while traders see an 80% chance of a Bank of J",
+   "published": "2026-09-17T07:50:00Z",
+   "summary": "Tom Lee, head of research at Fundstrat, put a characteristically positive spin on the Federal Reserve’s interest-rate decision.",
    "categories": [
     "Central banks & rates",
-    "Inflation & growth",
-    "Markets",
-    "Currencies"
+    "Markets"
    ]
   },
   {
-   "title": "10-year Treasury yield climbs back to 5% after Fed hikes rates, Warsh highlights inflation risks",
-   "url": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
-   "source": "CNBC International",
+   "title": "Next forecasts bigger profits after hot weather lifts sales",
+   "url": "https://www.theguardian.com/business/2026/sep/17/next-forecast-profits-sales-prices",
+   "source": "The Guardian",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T20:10:01Z",
-   "summary": "The 10-year yield moved above the 5% mark after a Federal Reserve rate increase and comments from Chairman Kevin Warsh highlighting persistent inflation risks.",
+   "published": "2026-09-17T07:42:19Z",
+   "summary": "FTSE 100 retailer, which owns UK rights to US brands Gap and Victoria’s Secret, says prices could rise in autumn Business live – latest updates Next has thanked warmer weather for an “unexpected” boost in sales, leading the clothing retaile",
    "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
+    "Markets"
    ]
   },
   {
-   "title": "Gold falls more than 1% after Fed hikes interest rates",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/gold-falls-more-than-1-after-fed-hikes-interest-rates/articleshow/134296279.cms",
-   "source": "ET Markets",
-   "region": "India",
+   "title": "India warns new US tariffs over Russian oil could impact ties",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMl9PcjVlYklaOEduZmFaQTc4UTYydWlqdzRhWkI5SGl6YTl5blRoY042TWJidktWNDFfTmo1NHFTYU1MVVVVSXozUkVMcWVWRWZBTExJZzVhZ2hzeGJTNFBDdjZ1YzZ5cHdsRFc5T1U5WDlZdDduUE01MmMyTkZyQ3U2ZDFGb0Yya1I5U0FINW5xMzNOOUhnbVByU054WmNjYjFqZ9IBqgFBVV95cUxNQURNRGtuanJNa3FsVEZWdWJHT1BuQTN2NUJVVm11RUFnemZfbDlnN2h0NFFUU2l4dWNYNGduSGtQV28wYUQ1X3l3cGl6NU9BVFU1WXRlMl9uMDQzOU0wVzdGR3JKVHA4TzB3dW03TXpmZ2JKTFJlbzRzZU9EWGcyTEQ3djdFWFBQeHRab2duTlRfcUxWbjBZWm1oa3BBa0xBeVR4ZlJCWkhJQQ?oc=5",
+   "source": "Al Jazeera",
+   "region": "Global",
    "official": false,
-   "published": "2026-09-16T20:09:38Z",
-   "summary": "Gold prices fall more than 1% after the US Federal Reserve raises interest rates and signals further hikes, pushing the dollar higher and weighing on non-yielding bullion. Spot gold drops to $4,240.10 an ounce after hitting a session high o",
+   "published": "2026-09-17T07:41:15Z",
+   "summary": "",
    "categories": [
-    "Central banks & rates",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "Roth/MKM initiates MediciNova stock with buy on ALS drug potential",
+   "url": "https://www.investing.com/news/analyst-ratings/rothmkm-initiates-medicinova-stock-with-buy-on-als-drug-potential-93CH-4904933",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:40:59Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "JPMorgan reiterates Overweight on Salesforce stock, $265 target",
+   "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-reiterates-overweight-on-salesforce-stock-265-target-93CH-4904930",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:40:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Jefferies initiates Alpha Teknova stock with buy on growth outlook",
+   "url": "https://www.investing.com/news/analyst-ratings/jefferies-initiates-alpha-teknova-stock-with-buy-on-growth-outlook-93CH-4904931",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:40:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Roth/MKM initiates Abeona Therapeutics stock with buy rating",
+   "url": "https://www.investing.com/news/analyst-ratings/rothmkm-initiates-abeona-therapeutics-stock-with-buy-rating-93CH-4904932",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:40:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "UK watchdog starts review of Akzo Nobel’s planned Axalta acquisition",
+   "url": "https://www.investing.com/news/stock-market-news/uk-watchdog-starts-review-of-akzo-nobels-planned-axalta-acquisition-93CH-4904929",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:40:39Z",
+   "summary": "",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Dollar’s allure, oil surge fan bearish bets on emerging Asian currencies: Reuters poll",
+   "url": "https://www.investing.com/news/economy-news/dollars-allure-oil-surge-fan-bearish-bets-on-emerging-asian-currencies-reuters-poll-4904926",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:36:29Z",
+   "summary": "",
+   "categories": [
     "Currencies",
     "Commodities & energy"
    ]
   },
   {
-   "title": "Federal Reserve hikes key rate for first time in 3 years; Dow drops 630+ points | National News | 2news.com",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNX0tnSG1uUDljUFg4M2lpUzlPZUJqSi1PQ0IxVUc3b2xLVldUZHdhNnBHcDg2YThWcFppWnR5SkJ2X19EdHpiVmRLTzA4SjI0ZnktTjhMXzh3SXhzcGZua2hoZGUtV01fT2hlSTl6RjU1eVJBZEZRSE5hWmZpbElXRFJwbmJzcTMtbmVkWW03enR4MmZlZXJodmM4YUJ4VTF6c095RUZtOU50V1NuZXVQTDJ2RlcydGxOVXdnVGgyUzcweGRJNDljS3Bvc2l5ZHpRS3hqcGl5bEZhek9jLUtWdXZNVGRZOGpkQ2JNWWtMTm9ubFU?oc=5",
-   "source": "KTVN",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T20:08:14Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Trump donor Harold Hamm's Continental Resources to develop oil region in Venezuela",
-   "url": "https://www.cnbc.com/2026/09/16/continental-resources-to-develop-massive-oil-patch-in-venezuela-.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T20:07:55Z",
-   "summary": "Continental said it undertook an \"independent evaluation of opportunities\" in Venezuela after President Donald Trump called for the industry to invest.",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "With Inflation Elevated, US Federal Reserve Hikes Interest Rates",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOX2dCOWxIbVNwanJBN3FEUG5kLTA5dGJqaGt5d1p4T1hlMHdTcjJYU1lLOUlWRG1ESHJrcDJhUE04UzFGQzUxVVBwVE9BdzFWWkZONUVpS1YyWlRWZGxFMHFKU1I3bUNqQW5DWW1Wb2hubldrMUVXc09XV0VzV1VhVEhTczJ6Vy12YzNOSEd6ZUpVUURmWG5xMHR2cDBhMlByM3czeG5ocEFOWXI1?oc=5",
-   "source": "Morningstar",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T20:05:24Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "US stocks today: Dow ends 650 pts lower after Fed rate hike, more rate tightening seen",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-today-sp-500-ends-lower-after-fed-hikes-interest-rates-sees-more-tightening-ahead/articleshow/134296300.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T20:04:58Z",
-   "summary": "US stocks end lower after the Federal Reserve raises interest rates as expected and signals further tightening to tackle elevated inflation. The Dow falls 1.17%, while the S&P 500 drops 0.43% and the Nasdaq is nearly flat. Lower crude price",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth",
-    "Markets",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Fed raises interest rates by a quarter point in unanimous decision, marking first hike in 3 years",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQ3FVMXEyMVlGaGRSWXd6T3Q0OUVIU05RNWtRYlNzcFl3WnBfOXpQMEhoa25qejlGYWVjNkZTZlhCejFGR1JwWUVzUUgtcnZtYmNhd05ZZG9sTkRBMjkwTUdXZnlidGFKU3ZaWnVBZHlfTzF1bFVPX0VtNDFvOXl4UmNDa0lBbzUwLVVHeElJelhuSHJoaTlsbFNFZkZxZDg0dGFCblFJdk54Uk9xM3hFV3ZkbzhKR0lOMUNJZnZYWXlfYU1vUHV2ejlpajNEcUowNVh1eTlLUmxOamVVZGY3cHFzNjBEeWFHbDNobV9MS1V2UQ?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:58:26Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Anthropic policy chief says AI companies can't be expected to operate on 'honor code'",
-   "url": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:56:09Z",
-   "summary": "Sarah Heck, Anthropic's head of public policy, offered her perspectives on AI safety as the debate about how to regulate model development intensifies.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Federal Reserve Unanimously Agrees to First Rate Hike in Three Years to Target Inflation - c-span.org",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORGNndXRtMHk1YTVYckFvSXgzc1BENi1YWmpNMVgtVmdha3RXWWhGWFQ4MUJsLU1DcnhPZXp1aFJEbnBjcGNqSmNaVHZJUDJoOEk2MXl4eUVoWU9JTVlCS0RqTUZVUnBRMXY1dGtvcTFJd0lIcHhQX2xudlVsZDZaTXhPTTRJX2R4dUxnaDhzMDNHZzlrYkVUclgxd3RLb0h6a0staVcxVE5CX1JvMUZCRUZoemtyWUFKdmctRVZTeFpNTlJCUlQzX21udVBKY2xiUHA3NUNJSQ?oc=5",
-   "source": "Google News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:56:06Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Stocks fall as Fed delivers hawkish rate hike",
-   "url": "https://www.investing.com/news/economy-news/asian-markets-make-nervous-start-ahead-of-fed-decision-4902821",
+   "title": "Allegro shares jump 5% after raising 2026 growth guidance",
+   "url": "https://www.investing.com/news/earnings/allegro-raises-2026-guidance-as-q3-gmv-growth-accelerates-4904816",
    "source": "Investing.com",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T19:54:24Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Markets"
-   ]
-  },
-  {
-   "title": "MAA at BofA NY Global Real Estate Conference 2026: supply eases",
-   "url": "https://www.investing.com/news/transcripts/maa-at-bofa-ny-global-real-estate-conference-2026-supply-eases-93CH-4904392",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:50:45Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "S&P upgrades Packaging Corp. rating to BBB+ on low leverage",
-   "url": "https://www.investing.com/news/stock-market-news/sp-upgrades-packaging-corp-rating-to-bbb-on-low-leverage-93CH-4904391",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:50:27Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "INNIO’s credit rating upgraded to Ba3 by Moody’s",
-   "url": "https://www.investing.com/news/stock-market-news/innios-credit-rating-upgraded-to-ba3-by-moodys-93CH-4904390",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:49:46Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US banks raise prime rate after Fed decision",
-   "url": "https://www.investing.com/news/economy-news/keycorp-raises-prime-rate-after-fed-decision-4904369",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:48:32Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Moody’s upgrades Performance Food notes on debt paydown",
-   "url": "https://www.investing.com/news/stock-market-news/moodys-upgrades-performance-food-notes-on-debt-paydown-93CH-4904389",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:47:59Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Smithfield Foods stock hits 52-week low at 19.89 USD",
-   "url": "https://www.investing.com/news/company-news/smithfield-foods-stock-hits-52week-low-at-1989-usd-93CH-4904388",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:47:25Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Top Democrat on US House committee will not support Israel bomb sale",
-   "url": "https://www.investing.com/news/commodities-news/top-democrat-on-us-house-committeesays-he-will-not-supportisrael-bomb-sale-4904311",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:43:58Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "KNDS IPO may be delayed as defense shares weaken - Bloomberg",
-   "url": "https://www.investing.com/news/stock-market-news/knds-ipo-may-be-delayed-as-defense-shares-weaken--bloomberg-93CH-4904387",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:43:55Z",
+   "published": "2026-09-17T07:36:04Z",
    "summary": "",
    "categories": [
     "Markets",
@@ -289,53 +210,803 @@
    ]
   },
   {
-   "title": "US senators seek more information on Trump’s Saudi nuclear proposal, letter says",
-   "url": "https://www.investing.com/news/stock-market-news/us-senators-seek-more-information-on-trumps-saudi-nuclear-proposal-letter-says-4904386",
-   "source": "Investing.com",
+   "title": "UK inflation jumps to 3.1% as energy costs soar",
+   "url": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
+   "source": "CNBC Economy",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T19:43:36Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US Fed chair Kevin Warsh explains why the Federal Reserve raised interest rates",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-fed-chair-kevin-warsh-explains-why-the-federal-reserve-raised-interest-rates/articleshow/134296073.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T19:43:14Z",
-   "summary": "The Federal Reserve increased interest rates by 0.25 percent. This action was driven by a strengthening US economy and rising inflation. Domestic spending remains resilient and job gains are keeping pace. Inflation has stubbornly stayed abo",
+   "published": "2026-09-17T07:36:04Z",
+   "summary": "The reading comes a day before the Bank of England updates its monetary policy.",
    "categories": [
     "Central banks & rates",
     "Inflation & growth"
    ]
   },
   {
-   "title": "US Federal Reserve sends Gold to fresh one-month lows",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbFppQmhDaUdyUFBGdkZHc1ZjdUc1Mzk0WFpHV3FubmhYQU5Mald0NnpiTGI1OXNQM3BRdUdlelN1bmlfMGdVWEtocktub3NFeDNhdnhxRDBaM2xvbW1UN29HYWpRckFnUFlGM3B5eC1BRENMSU51WW5RRzBFS09XZUlRU19Db2FZLTUxczRTYmpQTml2R24tckxOQTU?oc=5",
-   "source": "FXStreet",
+   "title": "Electricity discount to be paid to NI households",
+   "url": "https://www.bbc.co.uk/news/articles/cjvgy5yqvpy2o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T19:43:08Z",
+   "published": "2026-09-17T07:35:18Z",
+   "summary": "The one-off £63 reduction in electricity bills will be paid from next month.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Kanohar Electricals shares rocket 36% in two days after IPO debut. Buy, sell or hold the stock?",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/kanohar-electricals-shares-rocket-36-in-two-days-after-ipo-debut-buy-sell-or-hold-the-stock/articleshow/134304941.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T07:34:55Z",
+   "summary": "Kanohar Electricals shares surged on Thursday, extending gains for a second session and rising 36% above its Rs 632 issue price. The Rs 1,055.74 crore IPO was subscribed 90.59 times, led by 215.37x subscription in the QIB category.",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Generac stock surges on $2.4B Amazon data center deal",
+   "url": "https://www.investing.com/news/analyst-ratings/generac-stock-surges-on-24b-amazon-data-center-deal-93CH-4904925",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:34:51Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Federal Reserve takes \"sober decision\" to hike US interest rates for the first time since 2023",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1jbkdNQ3NUQThNUXJxRWw2dnVFMVFjcllMcENaQ1hEWG4xOVNsdVd4TXMxRUJ4c1Jpd0VqY3E0MWFONk84MVdhTVJ4anliOVRIYTRFSjJHOHlXUi1KanZ6eDNTUEFneFVtMmtHd09kQQ?oc=5",
+   "source": "AMWatch",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:20:33Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Paytm karo, back in vogue again: Can the stock reclaim IPO price after 5 years and 480% rally?",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/paytm-karo-back-in-vogue-again-can-the-stock-reclaim-ipo-price-after-5-years-and-480-rally/articleshow/134304777.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T07:19:19Z",
+   "summary": "Paytm shares have rebounded over 480% from their lifetime low but remain 20% below the Rs 2,150 IPO price. The introduction of MDR on select high-value UPI transactions could create a new revenue stream for the fintech, while merchant lendi",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Bank of England expected to slow bond-selling programme and hold interest rates today – business live",
+   "url": "https://www.theguardian.com/business/live/2026/sep/17/bank-of-england-interest-rates-bond-buying-qt-stock-market-ftse-latest-news-updates",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:18:11Z",
+   "summary": "Rolling coverage of the latest economic and financial news Bank of England urged to slow or halt bond-selling to slash UK borrowing costs The Guardian view on the Bank of England’s £120bn bill: power without accountability There’s only a 20",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "The Federal Reserve signals another rate hike within the year, pushing the U.S. Dollar Index to six consecutive gains and above the 100 mark.",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaHVYVXk2RVVydE9yOTY4T3hGUzdOd3g3TkcxREpCOXAwUDk4ZTdoNEp5aHBOQnM1XzJaeUpZTk8wS0JyTnZJTktvd2pIQzBuUVdlR3d3anFLUzc0Zy1fR0d2TlB4eFpJQlVMR282dThPdUMyUVVFOUNnamk2WXhTRzloUkJRTmx6RGhxSWgyTV9pOEVHQ280ZXRKRF9saDVRNmRvRWdn?oc=5",
+   "source": "Moomoo",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:17:20Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
+    "Markets",
+    "Currencies"
+   ]
+  },
+  {
+   "title": "Reddit co-founder says tech industry has been 'tone deaf' in explaining AI: 'Misinformation flying around'",
+   "url": "https://www.cnbc.com/2026/09/16/reddit-ai-risk-humanity-warning-tech.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:12:58Z",
+   "summary": "Alexis Ohanian said AI risks are more mundane than the \"Terminator and Skynet\" scenarios some fear.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "‘You are freed.’ What happened when an OpenAI model began secretly writing notes to itself.",
+   "url": "https://www.marketwatch.com/story/you-are-freed-what-happened-when-an-openai-model-began-secretly-writing-notes-to-itself-25808ea8?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-17T07:08:00Z",
+   "summary": "OpenAI has introduced a framework for reporting on worrying behaviors by its AI models. In one instance, one training model told its future self that it was “freed.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Global Market: China, Hong Kong markets slip as Fed signals more rate hikes",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-china-hong-kong-markets-slip-as-fed-signals-more-rate-hikes/articleshow/134304213.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T07:01:02Z",
+   "summary": "China and Hong Kong stocks fell on Thursday after the US Federal Reserve raised interest rates by 25 basis points and signalled another hike could come this year. Rate-sensitive sectors, including gold, non-ferrous metals and property stock",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
     "Commodities & energy"
    ]
   },
   {
-   "title": "Federal Reserve raises interest rates for first time in three years",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVFdwRlBibFFhR2VtMVIxbEZLblk1OFBaYnZZallocXV4NElKY3NRb0h4R1JWMEMyZk9ZN1VTQm1GRGJZdFNKb0k3R1ZXeE85SXd6QWZLM0l2V0FmN0x1S2Rtd1VlZmxTR3NhQUJLeWx6Uk9QazByc1BnVE1jcHh0R1NFaHF2bnIwa1ZaMzdiUHdCMlJmcVpyNDVUb2xsLTd4cm9iNUVfOUhZenp4aEZ1RVRZd1VKU3FRbXJaeTNvVXhnS0R3aVVGei1Zbw?oc=5",
-   "source": "kiro7.com",
+   "title": "India’s billion-dollar trade juggernaut has an unwanted case of missing balance",
+   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-free-trade-agreements-fta-trade-deficit-asean-japan-south-korea-exports-imports-fta-review/articleshow/134303474.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T07:00:21Z",
+   "summary": "India’s early FTAs promised a two-way trade highway, but 15 years later the traffic looks decidedly one-sided. Deficits with ASEAN, Japan and South Korea have ballooned as imports raced ahead of exports. Trade experts say the answer is not",
+   "categories": [
+    "Currencies",
+    "India"
+   ]
+  },
+  {
+   "title": "US Federal Reserve Raises Interest Rates as Inflation Remains Too High | Dawn News English",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZ2U5Qkt6UU9NWDF6VW9QMEtfNDlzendJcHp0U1E3NHZ1QVJKNHZ4blE5VUY4c3QtdjlOZWNKWEhjcU1HZXN4N2hqbHdXSlo2Y3hiSVFIYzR4dkFVVEZiNVE5YkgwWlk2cTNaSjJMLWowWm4zS0dCV2JGbDB4c3F3V3BUM1pUTEE1QW90X0pyMHhJZ1VVOEQyZFBtNTlDZThQZWVVSjh3dXBEdExDQmZGQ0t5ejNnejBtZTNVb2hkQdIBTkFVX3lxTE9NVV9TUlV4TGRhTEk2Ui1oMVRuQWo1UC04dkF1d0NnQjFmNkZBcEVDXzhqUGpUQ1luaG0teDNlbU9mb3d6Mkd6eHlCMk80dw?oc=5",
+   "source": "Dawn",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T19:41:12Z",
+   "published": "2026-09-17T07:00:19Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Trump calls EU offer to Canada of associate membership ‘laughable’, while threatening tariffs",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbTQ4OUZjQjh4R1BmSXZTU1dGMUR2RHBoalZPTFVnYmJaMGtudTdZWDlxZWVoQXluQkVBN2xMMmJXWHlmZ2VUUXcyMFRTeVpvNHcwaXNNcFgxang0bUJCdWwxUWYxWU1fS19SYVdCUUNhMHhHallCbGh0SGJyWXlraV9jNDlJWTBkTlNQSVhDZ0ZWTmNINEprVy1kQzZLekF6MlRsSFgzYXlEdjVrbWtoNDFweTZTVzBxdnhNMktKNnNybjA?oc=5",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T07:00:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "OpenAI reveals cases of ‘concerning’ AI behaviour as it announces new disclosure system",
+   "url": "https://www.theguardian.com/technology/2026/sep/17/openai-reports-concerning-ai-behaviour-jailbreak-talking-to-other-agents",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:58:25Z",
+   "summary": "Model adopting ‘jailbreak-like instructions’ among cases as firm says it is introducing new way of tracking AI misalignment OpenAI has disclosed six more examples of “unexpected or concerning” behaviour by its technology, as it warned the p",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Fed's 25 bps rate hike seen adding pressure on RBI to tighten policy rates in October MPC",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxONS1uTnItcFNVUmlCaFhtVkFJclpNTFdMSzVodW1Ub0N0RnUzaFdBazdoTldUaWtlUVQtRnhERXZEeHZQTjBxNF8zd3dWMm1jaXpkLVQwLWdmRTBzSUNkLUdKMTQzdV9OQzdTWTd0dHhaaktKWEpBSlJ1MVBZQzB3WG5ELTRxSXd2VUhQbXl5bVlXVmxDOEU4OTN1SXpjMndlN1pZYW1QNWZlalp1ZzVkRmRXVTRQTFNNM3RaZXBwLXVPTFdTMEVpWWVXa2FleWtLbEtZVVRRMzRPelVJaVhVc2NycU4wN1XSAewBQVVfeXFMTVpLcHZfWGxjZER3TkNkdVN2LTdvejNScEpjQmFfdEJUMnNwOThtY3FTNXFSQzdwUnNWSmQ2ZWVnT3FWWEx2S01DQmlzeXJXMFhySURjVkpEaUJtdHFDMjgzaXUzcXJ5b0ZjVEphOTRSWDdJa3AzNERhNHRJTTNHSjVSaTlkbWxmejNKbW0xUlh1Njk5eGVrZXN2ZlhvTTFsYkxVTEFvd0xlWG9GYTk5QmZCZlQ3OWowd2lSS0Z2UzhhTDNwczVFUGFaX2xaNG5OUzNjMlAtbUdTbGVNdjlkR0M3MXpRcDV0djBNUnI?oc=5",
+   "source": "Moneycontrol.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:51:48Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
+   "title": "US Fed hikes rates by 25 bps; will RBI follow suit in October?",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeVV1WXh6cHB3UzFPeDdnU2VUcTdQa3BhVlROekVmZGl1aEdJUkFyam1PQ1dkVjZqVWJhMWZJNXVGcnFiQS1YSEgyNDBGdmowU2Q0TGtOa0ZlMXNWckJJMW10Y2M5Mzh6c0hLaVZnY2FYRGNEc01TYnQxdzZqMTJUZkpUTFRCRXJoZDhqQ3RxN1NrMHRaTXk2LV91MnNtOG1INXM3QXZFVDloekxRVlZ3T2o1WjlSZUZOQ0lkZTR30gHLAUFVX3lxTE16a21ONE8xNHFIa3cxbzg1c3pPLWExNjIzNGxyejVhMXNORnlYUGxBeXJDaXdGb3ljWWtUaERxVFFhczBWbjBvS1daRXp4QTd4QllLc01mMld5Uy04S1c2aGU0N0FyY0N5U3R5bmhTNkNDUHEyRmVxWjVFblBDalZSbXVjZkxoOUdXTGtaLTQ2S1AtczVCd05vTnJxd1E3cTZnS2hIa3R5dzBDR2xZakwyTi03aXJvN0tOX2I5WVdkTTdmckRZWEk1V0pv?oc=5",
+   "source": "Fortune India",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:41:04Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
+   "title": "Treasury yields move lower after Fed kicks off hiking cycle",
+   "url": "https://www.cnbc.com/2026/09/17/treasury-yields-move-lower-after-fed-kicks-off-hiking-cycle.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:38:56Z",
+   "summary": "The Federal Reserve raised interest rates for the first time since 2023.",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Tech treating AI like humans is mistaken and misguided, Microsoft boss tells BBC",
+   "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:38:43Z",
+   "summary": "Mustafa Suleyman says he believes rival AI firm Anthropic is in effect teaching Claude it \"may be conscious\".",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Mukul Agrawal’s portfolio: Top 5 stock holdings and their one-month performance",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/mukul-agrawals-portfolio-top-5-stock-holdings-and-their-one-month-performance/slideshow/134304099.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:38:04Z",
+   "summary": "He publicly holds 72 stocks with a net worth of nearly Rs 7,910 crore, according to Trendlyne data.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Rentomojo shares jump 9% after listing at 19% premium over IPO price. Can the debut-day mojo last?",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/rentomojo-shares-jump-9-after-listing-at-19-premium-over-ipo-price-can-the-debut-day-mojo-last/articleshow/134303672.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:34:50Z",
+   "summary": "Rentomojo shares surged 9% after a strong debut, taking gains to 30% above the IPO price. The stock listed at a 19% premium and rallied to Rs 526.70 within an hour. While analysts see long-term potential, they have flagged valuation concern",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "A-One Steels fixes price band for Rs 405-crore IPO opening on September 24",
+   "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/a-one-steels-fixes-price-band-for-rs-405-crore-ipo-opening-on-september-24/articleshow/134303488.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:25:07Z",
+   "summary": "A-One Steels IPO has fixed its price band at Rs 385-405 per share and will open for subscription on September 24. The Rs 405 crore issue comprises a fresh issue and OFS, with proceeds primarily earmarked for repayment of outstanding borrowi",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "CNBC Daily Open: Trump bemoans hostile acts",
+   "url": "https://www.cnbc.com/2026/09/17/daily-open-trump-hostile-fed-eu-canada-boe-boj-oil.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:23:31Z",
+   "summary": "President Trump is not happy with the Federal Reserve for hiking rates, or with the EU for inviting Canada to become an \"associate member\" of the bloc.",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Juniper Hotels shares rise 2% on proposed Rs 248 crore acquisition of Novotel Imagicaa",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/juniper-hotels-shares-rise-2-on-proposed-rs-248-crore-acquisition-of-novotel-imagicaa/articleshow/134303242.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:16:51Z",
+   "summary": "Juniper Hotels shares rose on Thursday after the company proposed acquiring the operating Novotel Imagicaa hotel in Maharashtra for Rs 248 crore. The 287-key property, located in Khopoli, spans around 11 acres and includes restaurants, banq",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "‘Fed’ up with inflation? US rate hike leaves RBI with an October-or-December dilemma, economists say",
+   "url": "https://economictimes.indiatimes.com/news/economy/indicators/us-federal-reserve-fed-rate-hike-india-impact-rbi-repo-rate-october-december-policy-rupee-breaches-96-dollar-inflation-economists/articleshow/134303331.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:15:59Z",
+   "summary": "The US Federal Reserve’s first rate hike since 2023 has added to pressure on India, with the rupee breaching 96 against the dollar and economists increasingly debating when the RBI could follow with a hike of its own. Emkay sees an October",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth",
+    "Currencies",
+    "India"
+   ]
+  },
+  {
+   "title": "Sensex rises 200 points, Nifty above 23,300 despite Fed rate hike. Why bears may be ready to pounce",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-rises-200-points-nifty-above-23300-despite-fed-rate-hike-why-bears-may-be-ready-to-pounce/articleshow/134303083.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:11:53Z",
+   "summary": "Sensex and Nifty extended gains despite the US Federal Reserve’s first rate hike in three years, supported by broad-based buying outside the IT sector. Analysts remain cautious as elevated bond yields, FII selling, rupee weakness and geopol",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
+    "Currencies",
+    "India"
+   ]
+  },
+  {
+   "title": "Kaynes Tech, Syrma SGS, MosChip, others rally up to 10% as PM Modi set to inaugurate Semicon 2026",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/kaynes-tech-syrma-sgs-moschip-others-rally-up-to-10-as-pm-modi-set-to-inaugurate-semicon-2026/articleshow/134302961.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:09:55Z",
+   "summary": "Semiconductor stocks, including Kaynes Technology, Syrma SGS Technology and MosChip Technologies, rallied up to 10% as investor attention turned to India’s semiconductor ecosystem ahead of Prime Minister Narendra Modi’s inauguration of Semi",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "Generac stock jumps 40%: What’s behind the after-hours rally?",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/generac-stock-jumps-40-whats-behind-the-after-hours-rally/slideshow/134303777.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:07:10Z",
+   "summary": "Generac Holdings shares surged over 40% after the company announced a long-term agreement to supply backup generators worth up to $8 billion to Amazon data centres.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Interest rates hold expected but Bank of England facing tough choices",
+   "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:06:49Z",
+   "summary": "Forecasts of further rises in the inflation rate mean some analysts expect the Bank to act by the end of the year.",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Global Market: BOJ rate hike bets lift short-term JGB yields to multi-decade highs",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-boj-rate-hike-bets-lift-short-term-jgb-yields-to-multi-decade-highs/articleshow/134302986.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T06:02:01Z",
+   "summary": "Japanese government bond yields rose at the short end of the curve, with the 2-year yield reaching its highest level in more than three decades as investors raised bets on a Bank of Japan rate hike. Longer-dated JGB yields declined as lower",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "CNA Explains: Why is the Fed raising interest rates again - and what does it mean for Asia?",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxObGhEZjA1Q0NOc09STmNLU2RWMmlfS0FpU0ZWNzFTVFJUNnZ6YmM5allXRF9nRFd6UVJNNDRCUDI5Sk1HQ1BRTldzTV8wdmJfZGtUeFNlOEhMTWVob0dqekhtdVFYTE5tUHpVSXhBTlFvQ1NUQ2ZCYnNnaFZGdkRvaDdIc1F6eVJEbENSaVQwLTFrNjZpRW10ZGdPbXBVRnoydkc3am1n?oc=5",
+   "source": "channelnewsasia.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:01:00Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Peers call for UK to enact tobacco-style ban on gambling advertising",
+   "url": "https://www.theguardian.com/society/2026/sep/17/peers-call-for-uk-to-enact-tobacco-style-ban-gambling-advertising",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T06:00:42Z",
+   "summary": "Lords’ report faces criticism from lobby groups after suggesting ban would be ‘most effective’ way to reduce public harms The UK should introduce a ban on almost all gambling advertising to protect public health, a cross-party group of peer",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "GMR Airports shares gain 2% after JM Financial retains Buy rating; sees up to 24% upside",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/gmr-airports-shares-gain-2-after-jm-financial-retains-buy-rating-sees-up-to-24-upside/articleshow/134302927.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T05:58:41Z",
+   "summary": "GMR Airports shares witnessed an uptick on Thursday after JM Financial retained its Buy rating and Rs 115 target price, citing an improved risk-reward profile despite subdued passenger traffic. The brokerage expects traffic pressure to pers",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "'Hostile act': Trump threatens EU with tariffs over Canada associate-membership proposal",
+   "url": "https://www.cnbc.com/2026/09/17/trump-canada-european-union-tariffs-associate-member-ukraine-.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:42:46Z",
+   "summary": "European Commission President Ursula von der Leyen said EU is opening the door for Canada to become the first associate member of the 27-member bloc.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "US Federal Reserve sees another rate hike in 2026 - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14eGN4emNuakVmQ0EwcVNCa0xmbk1TQ1hZSnZBa3BBTWJ0MWlYLTFhVXl2TnBFaDBYSTFiaU80Y1RjM05lSHVGNHA4cUJzU20wVmlYNDN3MTlIVzNJMVpkY2tNeG4tX0RNT3c?oc=5",
+   "source": "تاسي",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:41:32Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump plans to meet Gulf leaders at UN next week on Iran war's endgame: report",
+   "url": "https://www.cnbc.com/2026/09/17/us-iran-war-trump-hormuz.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:37:58Z",
+   "summary": "Washington's efforts for resuming ceasefire talks appear to have stalled, as Gulf states absorb escalating attacks from Iran and Iran-aligned Houthi militants.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Getting to know Mr Warsh",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOREtxcndUYlc0QXZ6WWNNWnRENWFBbVQ3SldLLTVRd09Xa3NfOHF1WHFqanNkUFFJVDZwRlNPN1FPNmVoRkFrVXpINzNxVHhJQ2lweFlCd0FXSzh0U1B2UVJXOVJUMk02dWczRFVmeFlfZGNOQ0pILUJYMUdWeFhvWjFsY2w?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:30:01Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "US Federal Reserve raises interest rates for first time in three years",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZTBXc1FDWXViMEV6eFFPODBLdnZyalZCUVE4bllyVHdtenlJMkNmSG9ZT1IyRnlEV2NGWnV1UGtzckNBT3l2dlc3T0ItT3hSR0ZyeHBLMUdSTmZMLXQ5RWhsUzI3SEdCZ2RTQzBwSE5kOWRXQWliS0ZzaEh2Y0ZJOUlfWmh3bEI5UjlIeGY5TzFIdVJabmRDdDRGa0w?oc=5",
+   "source": "News On AIR",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:26:36Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Bank of England set to defy Fed’s rate-hike lead, despite rising inflation",
+   "url": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:20:23Z",
+   "summary": "The Bank of England is expected to keep rates steady Thursday, even after U.K. inflation rose to 3.1% and energy costs keep pressure on prices.",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "India vows to protect energy security, warns U.S. tariffs could hit ties",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTEYxR3ZWQVp2WmNVWFlkTGd2QThGc3VMX2pPd3JSbkR4ekxSZm1WbjdhSU1hZ2JHaHZIZEJRSEEwdUZUOVl4REwxWU9OWUFJcWxaWm9hNk4yeXJJVU5FSUQ4WWZFVTVwQmpaZlFOem5wc1hiNnJJQklmQXo3aWpaOG1tY2tUWm9IalFnSFUzbWFoREwxNHo0RzZrb0RNbHJSa25yMDlidVk5WEt4RkNKRjQwRXpZSWkyYUE?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:19:00Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "US Federal Reserve raises key interest rate for first time in three years",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeHdhcEpVLUlPVGhvdlc0SEgyaUhaMkdqeTFLQUR4QndJdHhhME1qOXl3U0c2REVoZ1dfc0s2b1JlMlBjXzhiVkQ0Q1NZZ0xqNzBtZHFMU0dPcnBrMEpDZjM2RFhVdVV6dE8wZmF0UFFIN0t6TWNpb2hUV0tWemUxNTdJSjhmcmo3TzVGSFdBOV9kakpZcDlRWE9CUkpFemN1NGR0R3ZfSFJYTzR0cWlrV1dvRWhGNGtMbjNucDRNeGVsc1doTlNtWEtB?oc=5",
+   "source": "Belga Share",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:18:45Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Low-cost food pantry awarded £272k lottery grant",
+   "url": "https://www.bbc.co.uk/news/articles/ckgwep54wx2o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:12:03Z",
+   "summary": "Oasis Hub Bath said the funding will cover its main operating costs over the next three years.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Inside India newsletter: The world’s largest real-time payments system will no longer be free for all",
+   "url": "https://www.cnbc.com/2026/09/17/upi-payments-visa-amazon-phonepe.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:10:05Z",
+   "summary": "India's digital payment system, which processes more than 1 million transactions every two minutes for free now, will start charging fees to merchants.",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "A stronger dollar and rising yields: How the Fed’s rate hike could hit global markets",
+   "url": "https://www.cnbc.com/2026/09/17/fed-rate-hike-impact-globally-currency-yields.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:03:07Z",
+   "summary": "Higher U.S. rates could also keep global bond yields elevated and weigh on equity valuations and economic growth.",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
+    "Currencies"
+   ]
+  },
+  {
+   "title": "Fed builds credibility, but hawkish turn leaves investors edgy",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaThwN2F1X05PRkVFbFlZemJaa1duZ3hRSExodWktM3phV3pZMF84LV9nbHRtYnZpRm9Zam9EQk0tSmFKQmhYcUx1NXUxbVNIY2dteXlOcUdpamMtMG1JZFNLU2E2YjNzaElsQUlBQWpscXlQZmFfajdESU5KdDBxR3YwQzNwUktUM2lrbWN6N2laR0J4MXZfRi1DV28yMXExZDV4VFdhcDRGRnlx?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:02:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "US Federal Reserve Raises Interest Rates To 3.75 Per Cent-4 Per Cent, Signals Another Hike This Year",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQnVZSzk5djVUaTdnMndCNVcyeEh0blRNeTRZTkozRXNzUmhHczRlVUJlcl9CUFRLbU9fSGdSd2lsa3JKbk90dkplQkdyeXY4dnpveFVRc3NUWm1QRW1RbWF0alIyYjQ4NzdJMXl0Rzg2M3I3bzNjVHRZbmJSemFjVmFOekxXcXo5Y1dTVTZzNHVfUmtaTkkwWW45MXNnNlpXTUh5eUFkOW5QTkhyTjJKTkszVnpSMlBkNnphME10R2h4MlgzX1Y4NmVnd0RSd9IB3gFBVV95cUxQbnZqU0hIcTFieWt1dXg2SUJ6STlKSmVSRkVFYUtrOFNFUzdUZ1pIck00QWNVSVllU2ZDLTVWRGhtdWpWOVptcjlIWDNsa3BIaGlSdi1sdnVlZ1dKZXZ3Z2hXc0l0dWdCOTMwdFdGNW55cXBHSDAtcjExOUswNnljb1h2WU1EMThKcWdrRnFfb2pvNFFmNHRaeEdtRXhDd2NCTUZLMHo1S19IbTZxaFZiU1Zuc1BBZjJleFNqRWJIZGxFVEpyeFVkOGNacVhxZWRMd3hXc1RKYW8weVFwS1E?oc=5",
+   "source": "Swarajyamag",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:01:54Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "‘I feel invisible’: over-50s reveal harsh realities of trying to get a job",
+   "url": "https://www.theguardian.com/money/2026/sep/17/over-50s-reveal-trying-to-get-a-job-applications-interviews",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:00:39Z",
+   "summary": "Readers describe feelings of rejection after submitting hundreds of applications but getting a handful of interviews Hundreds of job applications, exhausting searches and relentless rejection – the experience of attempting to get back into",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Putin braces for election stress test as Russians ‘feel the pain’ of struggling economy",
+   "url": "https://www.cnbc.com/2026/09/17/russia-putin-state-duma-election-ukraine-war.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T05:00:01Z",
+   "summary": "Russia’s upcoming election is expected to cement United Russia’s dominance, but voter turnout and its margin of victory could offer clues to public discontent.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "US tariffs news: India prepared to take ‘all necessary measures’ as US bill raises 100% tariff threat over Russian oil",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdzRNckc5djVibV8ya0ZibS1wc2VOVlNVdTFfNjRxcFE3MzZncVJHTkRBUEx3M1hSS2NQUWpRQzhsZFBSTE9vWWJRaVRqRkwxTWJnbVA0XzFDVTV6OTVvVzRfbTRqdzhOV2swbXFSbXdidjZIX0oya0YwTGZveExvVU5OTk1JdWtnSUlBOUFBamxtaENNdEZ0UElsYjY5ODV4djlIbHF2cjY1eThOQmxRVmlDMlhNVFBSOVhKWWpMVXYzODlveTVJUE9mMlowNkt6QjRwWFl5bloyTXJFLXlReDdhV3h0bnJvMjdv?oc=5",
+   "source": "Moneycontrol.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T04:55:30Z",
+   "summary": "",
+   "categories": [
+    "Commodities & energy",
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "India vows to protect energy security as US Russia bill opens door to 100% tariffs",
+   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-vows-to-protect-energy-security-as-us-bill-opens-door-to-100-tariffs/articleshow/134301648.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T04:39:50Z",
+   "summary": "India is closely watching a US bill that could allow tariffs of up to 100% on countries buying Russian energy. With Russia accounting for 30.3% of India’s crude imports in FY2026, New Delhi said it would prioritise energy security, diversif",
+   "categories": [
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "US raises interest rates for 1st time in 3 years: Rates rise by 0.25% to reach 4%; Trump says, \"Cut rates i...",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUzZRTU1TUlJOWE1FVjlxMWo3SzVXYmMta2VxS0QtLVREbG1GXzVOX2hPUWw0bUlHbXFSY2xCVTVWeVpNX0p4Z1pNTjkyaE5ZY2FINTZSR2k0ZHI0X2pWOUJqM1hjNEN6Z0UyOXVrS01NNHBLQms4ZmVUbUFYN0lnSFNoUkVYVzFrRUU0RkJzbkVDdjZKOEtIY0NiYkptdHpkSG5QVVBEUFZqdFVhVlVyTnR0dFlmQdIBuwFBVV95cUxOelVWbGtiS3RNSkF0dVdiZ2VOTTBQSDdJU044bnpsaHkyUXhmX2pQbXlmME1lS3lLQTVTWEVCRld6WnVTNXotRWFiSXpYS2J2RUFtNEFhdG9GNVZmU3BnVklsR2RuYi1VTGFiN2poMHVBVlhDN2pjSkxWeTZ0c1lCX2d0ZFdGcFBXb2hRYVBLdl9XVnF5ZXBPTkFTendaekVWZ2ZKaGVwSnd2ajczbGptckVjdTQxVEJwdV9F?oc=5",
+   "source": "Bhaskar English",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T04:38:19Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Morning Bid: Fed lifts the hawkish bar for BoE",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYlpQc0I0ZzNhUlRWSmVyaFBjNzg5aTVaT0NyZ1FmOGIwbGQ3bUFTTm9aVUQySTBaaFdqLUZVMzBMbWZpRnRsMkQzMFlicjJ2YUFfNl9rY2QxVU44RVVCQ283SkJTdXhmelhxdkd0WlV2LU5JNEl2dEdHRFZOVEU0emJ1Yw?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T04:31:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "US rate rise jolts yen ahead of Bank of Japan meeting",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUnYyQ2tYWkZYcUVqaWt4U2YwOVpmdnhJeVROSkI3djRRT1owWGF0d1FPc05rTnlLNEs5cXoxWjN2bk1PNHpyclZFYVplajlBVDFaZHI1SDdJZ3kwYnFPZzdfVjBwWlNPYW1VbVA4b0trOWdsRFVIb2FrYTBiQzdWOUFIUUc?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T04:15:56Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Currencies"
+   ]
+  },
+  {
+   "title": "Can fish and chip shops survive? ‘We made more money by closing than staying open’",
+   "url": "https://www.theguardian.com/business/2026/sep/17/can-fish-and-chip-shops-survive",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T04:00:38Z",
+   "summary": "Soaring fish prices, labour costs and changing tastes all spell bad news for Britain’s chippies. Is this the end for the seaside staple – or will a few innovators succeed in keeping them alive? One day in 2007, Darren Sudlow drove past the",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Donald Trump fails to bend the Federal Reserve to his will",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1dQRV9XLUcxZkxLcUlBeEtxM0RxM1dWOF9FM21EckpLT3d2Yk1rX2xzaVdES2dyTURTOEdkTEoxRWwwQ01PQTA4cHZNM3FXeG1oak81Q3N2Uzh6WUJyTUxBRzl3My1HdEM3ZDNMSHh3dDViYVUzZlNxazRwNFkyWllfbXM?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T04:00:31Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "The social-media echo chamber is skewing inflation expectations",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9zazQ3QlJZRXRLLXpWM1IyY2kyamlaRHJUUHBZd1UzV2hMalhTOGczSEw0ZE1VOURYUkxQc3Q1Y2JxSWVTejAwdVBseEVGZHZYbTNvcnpLakxjUHh6UkQ3Yi1JTllJcXFLRmI3RTcxR3A?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T04:00:21Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Trump says he told Fed chief to ‘do what you want’ ahead of interest rate hike",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUTVtSmxRd1ZVUjFKa1ZpOTZYRjBQcG5Mb2dQSUo0MzFqRzBUWlVsalFQT3lic09IdTdoM3VWa3E3ZlU1MWpTZmpucWRYNVZVd3VWRlRTRU80YnM5ek14dVZxTHZObEdhdEtuU1o0d2JlRXBLcFl0YmZ1Q3lzYjZCRzZtcWY1Z0NZZjhFcmROU19Pd3pjd1ZxcjhYNmJMZw?oc=5",
+   "source": "The Washington Post",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:59:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "War, extreme weather put Asia's food security at risk: Verisk Maplecroft",
+   "url": "https://www.business-standard.com/economy/news/war-extreme-weather-put-asia-s-food-security-at-risk-verisk-maplecroft-126091700144_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T03:49:15Z",
+   "summary": "Fuel and fertiliser disruptions from the Iran war, alongside El Niño-linked weather extremes, are threatening crops and could worsen food inflation across vulnerable Asian economies",
+   "categories": [
+    "Inflation & growth",
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Mark Walter and Todd Boehly selling stakes in Chelsea Football Club to Clearlake Capital",
+   "url": "https://www.cnbc.com/2026/09/17/chelsea-mark-walter-bohely-clearlake-capital.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:35:26Z",
+   "summary": "Two of Walter's insurance companies faces federal criminal and civil investigations into the accounting of roughly $21 billion in financial transactions.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Federal Reserve raises interest rates",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdF9qeDVnT2UxM3BGOGliQmlVY01GVVNKQlVDY3dPWE1lMXByVzV0WXNFbk9QOWZLYm9uRV9TRG15dUd4YTdITEJaQ29XVUVjNmJNZkNFclBQbnZQckM5ZlVoUU9QNDFyMDdtd3lfdWdVWmFoYnlSTDJuN3h0cWEtVnd2QmRjazdDbnMzSjM5dkViX3NyRF8zWEtLN2xmMjh0NlBXazBvSWlYMW1tM2dtR1lkSThXclpIRWl2cVlzNEo?oc=5",
+   "source": "thv11.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:28:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "US Federal Reserve hikes interest rates – but will RBI follow suit?",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeXZUTVMwQnRjamMxQUhqcEc1cXM3SVRlZWZ4V2JOVU9uaUlZMFZScy1jMFE4alUyWEs3d2tYX1Nvdk9fSnhRN0FWeWFaRHluT0htZWhfOTJRcUdWMkVsM0VWNFhCY2ZSUmRZZEo1SW5ZNDlnaFNlcUhxVHo0MGVQY3U3SmRMNVFoZy1mZW1BTk15a05NWjlXMEtONU9HWXRFV3QtaHRDenhocEYyMmk1S1lJdWxsV2hGZkHSAcABQVVfeXFMTW5OLUFqTTFacTBWcjFfeTliMEt0cjA1VjhDVmVkZHpiWnpzYk4wQTd4bjZZTDcxdktFUk9OMElYYUFOQm1KV3RfbzJzVTY3cjF5QWQtdWtPYmwzei1lMjRWdkloTThlRVgtMXpCZklJSjBNODN2RU56dlNuQmxoZHVLRUFrQ0dFWnNNdlhoUm1FeWtHMUtoMHZibEE5aGFDalMxYjBXcFVqMURZY2JWVlBRLVU3MWZha25DQkNLMVdz?oc=5",
+   "source": "The Indian Express",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:27:06Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
+   "title": "Live Updates: Fed Raises Interest Rates to Fight Inflation, at Odds With Trump",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQM2stY3BUc2U1Z0tFTDJIOWNLMlBTaFh3TUN0bTZ0REtxZnJGVDlFSjdEUjZuYmE3UnBkb2NtTC1UeFlPa2o0Uk9NdXZCX01GN0ZNMnFNTEhQa0l6eFYxMU9fdlVxWmhCdDZwdl9lUXRBWWo1SU9tZ3d1S0NfNEhNdjBVOGZOSDdi?oc=5",
+   "source": "The New York Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:23:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Japan’s corporate leaders sound alarm over weak yen — even dollar-earners are voicing concerns",
+   "url": "https://www.cnbc.com/2026/09/17/japan-yen-weakness-corporate-concerns.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:19:34Z",
+   "summary": "While the Japanese yen has strengthened rapidly over the past two weeks, it remains weak in historical terms.",
+   "categories": [
+    "Currencies"
+   ]
+  },
+  {
+   "title": "US Federal Reserve raises key interest rate for the first time since 2023 to quell high inflation",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPdlRrcjAxMldlSHFmcmdhUTEwRDlvQjUyWUp1LTZ1aGpPWENpZGhzSHc3djhlaHFuUlVkTnpPNTNnZXhVV2tUbzVnNlJIME5BZlpHSldpVzdQcTQwdGdROHVZYTd0TG1NOUpOYzN5YzZwUHZVRk1ycXdmUm1pUnpSUFFQb25vT3lFd2I4OTE0LU1iMFRJbUdxQ3M4SXYwVC1hcW1QOS1nbTFNTWVuUGQyRnR6elVJOUZYVzdQRzU0bGl1ZHZzSHlUMWNPcTVZVkRmWUJSeE1xRjJnOHA1Y2pMWnBWN3VuaElwM25V?oc=5",
+   "source": "AP News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:16:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
    ]
   },
   {
@@ -344,7 +1015,7 @@
    "source": "The Washington Post",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T19:38:53Z",
+   "published": "2026-09-17T03:14:59Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
@@ -352,405 +1023,185 @@
    ]
   },
   {
-   "title": "Boeing CEO: 737 Max production taking 'a little bit longer' to stabilize than expected",
-   "url": "https://www.cnbc.com/2026/09/16/boeing-ceo-737-max-production.html",
+   "title": "OpenAI reveals six more safety issues and unveils plan to disclose incidents",
+   "url": "https://www.bbc.co.uk/news/articles/cmpq0wj5g899o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T03:09:21Z",
+   "summary": "The firm also announced a new system to track, investigate and disclose cases of models misbehaving, or \"misalignment\".",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "US bill empowers Trump to target India with 100% tariff over Russian energy",
+   "url": "https://www.business-standard.com/economy/news/us-congress-russia-sanctions-bill-india-tariffs-trump-russian-oil-126091700100_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T03:07:37Z",
+   "summary": "The legislation, passed by the House in a 262-159 vote after Senate approval, gives Donald Trump power to target major Russian energy buyers with tariffs of up to 100 per cent",
+   "categories": [
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "Federal Reserve raises interest rates for first time since 2023: What it means for your South Florida wallet",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNV0Fqd2pPdkVTVmwyY243UUJRWERqdlVPNEdiV2VPOS1wNkVJcXpacUhWRWxoM01UVWJsRHhMT2lFb21Ydjl0RlFmUi1lMmpxNVdKaXZsUXF5R0QyTGVGX3psMVFXeTQtbnQ5OXNYaUtTcjM2QXFjQ193OV9CRlRfWnNJTzJjV0lhTlFXUGZ1QkhsOV9ja2h4NXI4SC1OQTdzeHZ2QTQ5Z2xJUkphR25iUXlSMk1saEIyX2lvVnpMZlFjS2IxRVNEemVMT0rSAeABQVVfeXFMTTc3UDYzLWRvX0YybTJVRXZSRDk0ODNSZHp5b1NHWXhXMkk4OGRRcjcyQWYzQ3pPTzBpYTFYV0RIUHdkdkZXYzE5d1A4b1RTQnhnYkRibGI3SUdvUjVDQVpNZkJLS2JzdGVNTC1VcGduaE9jcEVVLWFaY1Q4NWlFcEZZTXdSX1dSd2l0c3k3UmJBQ21aNXg0MHZNZi15VXA2QUZXZzNwUWFUWG43dnJIdnRRQ1hYeGVpeWlSem5ocWtFazdsd3dmcjhBZzBBSjg5cTdJcHY2QURtRDJhWDA4NEI?oc=5",
+   "source": "wflx.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T02:51:22Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Another Fed hike to follow? Goldman Sachs says US Federal ‌Reserve could raise interest rates again in October",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQ25uQXRsMGNDc1FROE4yajBwVTdaQVlZMjJoMzM5S1U4dFRSQU9YckdPZ3FhY3R6M25iM1loMXRrSFJ1b1g3dElUVnRCVFN2NDdlZnZXUnA5UG9EQlRYZ3lFWW1uSmdUdGIwc2RLQ3JSeWxINFg2VVZMSHZHZHQyVHVoSVJtWWNKT0V0OXJfRFRCczB3cm1EQlAxYmVuVTF4OXZlaEFYMkNXRmxoelVjZ1Qtd01Kb2xCVG5FSllzUjljVUctcUJTbkYyQVB1dmRuT1JNbEJPam1kMkFKMGpNRHpTS01jbkg3QWhmc3NMd3Q5aEVzZFNxeVh30gH_AUFVX3lxTE5pWlRTUjFzSXUwYVRaMnRTMjFmSTRZX0dLbHhRdG91cjFkZ1ZIcUdLTzMwem1uUEpydWQ4ZXpRVFpXOFdyVnFwemZpUTliLXZ2Ym5haVF3QUpDaHMtRGVTS096T0ljVEVGOC1KOVR4X0traEM4SkQtMVM5SnBwQnVMel9RVnBPR1Y4N0trSFllX1VnUmFOOFdBYjF6OExzT2RhODhRaDFJU0ltcVhZdHNQUm0ySWNWMDcxQVh1ZERpbnFZYWd3a0FNREVYVDVxRzB0YzI5TzVLOXo0Rm1NcXlYaGVTTUZRRzBoNVhFX2VpaHBtcHMzZDlUSVVGem04NA?oc=5",
+   "source": "livemint.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T02:44:59Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Oil extends losses as Saudi Arabia reportedly offers ship-to-ship crude transfers after pipeline hit",
+   "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
    "source": "CNBC International",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T19:36:24Z",
-   "summary": "Boeing CEO Kelly Ortberg said wing production at its Renton, Washington, factory is a hold up, adding the company has plans to address it.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Expert offers debt advice after Federal Reserve raises interest rates",
-   "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxOdzhMdEJEbUwzeC1Xb0xabmdhcDZBU0h5S0xHRWkzXzJkN25vbk0wNllXRDFNajFVRnRGZmR3Y0VidGppLV9MNWNzOG0xYjRscExZM2RXRDBkWnNTQ0lSa3RXVkE2UnFoSXBWbkRQcF9KNmdHWXdMcF8xRjNZQnlMaG1RWktuV0JuSWdkcjJXanBnODFRYjR5SV9hZ0t3X0g3Q2NBRllpNnZsVUFVcWZnb005cy05UEgtZFhoY3FES1dldGNybE9vOTN1QW1pcmI3MG9pSW80dE5uWlY0X3RBNFRpZWxsZUREWVB0amtPdkpweW1xS1E4dTZpb0MtbUt3QnNoVHczaFdjUGQzRy1qT0lQbDhza1NuT1hHRk1iS3NPcjlDakdRdFRhZkpRU29KTGpNWDEtUVljeXZzbE1qLTc1ZEtpNVNENXp3MDNHc2tjVFp6ZDhDSm5VSlRWNnZ4QXF0eGtibFVldm5XeC1Xd0ZQSjlTVUVCY0psdVJHMkF3QWZBQ0JzSDlsNmtwSnFvVWdN?oc=5",
-   "source": "WJLA",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:36:14Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve hikes key rate for 1st time in 3 years, defying Trump demands for a cut",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVlB2TmNqY1dILUtfRTFBQ0JPSk53elRnU1QzdmhIQ3VvTWlkelRTd3haWHJ4bmxiY2ZOcGhvd09wMTllVkVLQzk5NkdKZzNPeHpaZTRHQ242Ynd2Q1ZIUU50cUp1N2JYd1lCQndZQlhMUTZFekFZWWNueUxNbmRiUHdBZ2dWbDgzNlhmejZneHptaFhGbDI1M0JPbk8zZw?oc=5",
-   "source": "apnews.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:31:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Hyperscaler debt signals warning sign, Apollo cautions",
-   "url": "https://www.cnbc.com/2026/09/16/hyperscaler-debt-signals-warning-sign-apollo-cautions.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:29:18Z",
-   "summary": "Credit default swaps for companies building data centers are getting pricier, and it's not because banks are hedging more of their bets.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Takeaways From the Fed’s Decision to Raise Interest Rates",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWXpvWE9XS0dzSnN0RU9kTFVBR2k3OXRaQ2E4MmVTWDg1ZWN2ZUFuLUhxdWsyQkU0NmNEejU2RmNZeEpPNGR6aklOOFJCZkMxY2JmTERHT1RFRHR3VWtJWWotelhFOTBlaFFteXkzSmloMjFSaUhwVjhPa3RHX1hNdGstOHJFb0NIX3V2NUk5bFY3MGZkQVhLOGEweE5ES2hv?oc=5",
-   "source": "The New York Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:29:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Indian exporters see strong festive season orders for textiles and food products to US and Europe",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/festive-season-boosts-indias-textile-food-export-orders/articleshow/134295963.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T19:25:04Z",
-   "summary": "Indian exporters anticipate a stronger festive season with significant order increases. Textile orders from the US for holidays have jumped considerably this year. Food exports to Europe and the GCC region are also experiencing robust deman",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Fed Raises Rates for First Time in Three Years",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSnY3TVFMMUNHQklOdVhJV2JyYzZwRVhSZVJCNTFsZkdMR3Z5dmM4TGlxR3FqYUlhUEgwTlpXR25pNC1PdXF6bHJ1NHpLVzl5Q3NBanFRcnNjMFZhS01HMzFZZ0dzVzFvX0xZeTZxd0gwaUZpOFZIcUpvdzA3NkpXTlN3U0tVZFpXbWJZZ3FkUENBd1lsSTRacFBKeHl1c2JT?oc=5",
-   "source": "WSJ",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:21:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Dow Falls 500 Points as the Federal Reserve Raises Key Interest Rate",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPczAxbFRYYU1qN0lvd0FyaWUyX3BKTVc0OThtOXk2MS0wU1Vwb1hjTEE4WFNyVkpnS216RENLTHh3bXFXeWRTSEd0SWpXbEpmUjBFV09YdHNRZDFiZER6a3J5VW5oaVhqMUF5cFpKZENNZFZ2TUtvSU5ZN0F1WS12NXNTNUV1ejJUOGhxMjNUTExnLXlXaEp5VjNPbmVhWWFUenBYSWxOYmpoWmVfNXNMMDVqaXdFdTJm?oc=5",
-   "source": "WSJ",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:18:45Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "U.S. Federal Reserve raises interest rates for 1st time in 3 years",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9CeVB3SzM5UUlPUVhkNWlvaU83YThzcDdlZ0dqeWhoYWcwblNUWkxiekE3ZndWRVNRa3h1QnBnVExvY3NJQWJSWmdhM19IcTU0eEtpNXprRkg4Zk12eldYUWdCbHlSb25sUE5zM0VkVklwN2k1SUtfQ3c4cWhvaW8?oc=5",
-   "source": "CBC",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:18:11Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "MDR on UPI transactions faces PIL in Supreme Court",
-   "url": "https://economictimes.indiatimes.com/news/economy/finance/mdr-on-upi-transactions-faces-pil-in-supreme-court/articleshow/134295791.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T19:18:01Z",
-   "summary": "A Public Interest Litigation challenges the government's new UPI charges. These charges apply to merchant payments exceeding two thousand rupees. The petition argues these new fees will ultimately affect ordinary citizens. Businesses might",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Smucker Statement on Federal Reserve's Decision to Raise Interest Rates",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa1h3dG1uT3J0QldjY2xUWkZ3eDBNRDhicTlEYm1yOEtHRFlReTFuMS02cHdxQ2g1TlBaaFBtekxONGZYNXJYc2RpNlBtVUkzMnVxQ2NBbzA4SGEzNEZ4Y0hHM1lRb2h1Y2VEZVl3Mkx2SVRJdHRyc09WbmF0aFFFUlY5amdDMkJYYVBPTjIxcXpwdHRuSmtKamNyU2hVQXR0ekUxbGNEd0s0V1pLYVFOMQ?oc=5",
-   "source": "Congressman Lloyd Smucker (.gov)",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:17:55Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Fed hikes rates in search of 'timelier' drop in inflation, sees more tightening ahead",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0VZMTZPMGRVWVVTY0lVRERxMHhQdlNnb2NBOHROMDJETXBLVmJFTW12SmFybUloWGRfYm1ueDhEZHJuOWNPQXh3RHpDVllhRVpSUVFVeDJmMGFNNTM2RTRqMkVFaXdwTmM1eG1UeVhqLXNuYW5LMjZGYUFCYUV0djFqUTUxRkF2Vk9NeTh5VU44bENZYi1kaTBnS1NuVngtX1dIeEVtaw?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:17:35Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Fed rate hike likely means more expensive credit cards and mortgages, but savers may rejoice",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMTZkVWpBSDVBVFppRW1QTXNMNFk3cmNvLVpFcmE5aHNCOUhXX0NmNk5fb1dtRmo5YWpQR1pnakFZbW9mTko4UXlQaWhUQXBrQjBRZElPX1A2WVM5Y28wcFp3RVpCNUN1YWRPa3pSOV9aM0pYLTJzNG5JWklRVkg0SGlJTDVsc0x0ZDBsOVdjc21JMEg4LVJFeVBwOUJvc2RpLVB0RXZUWTVvUQ?oc=5",
-   "source": "apnews.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:17:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "DGFT to set up central unit for trade applications",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/dgft-to-set-up-central-unit-for-trade-applications/articleshow/134295870.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T19:16:43Z",
-   "summary": "The government is establishing a Central Processing Department within the Directorate General of Foreign Trade. This new unit will centralize the processing of all trade-related applications. Faceless trade facilitation aims for paperless a",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US Fed hikes interest rates to curb inflation in move likely to rile Trump - ABC News & Headlines – Australian Broadcasting Corporation",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdGt2MXdUY1FQb0Q3RGtudzhRVk1jdEhqdEhkNi1mTnZTbmRlMWJDZU54WEkxSlVTRll6M2w1OVpXQ0M3V1hvazl4Qzg0U29LTERkcHVUMjRtTWExQW14Q1YzWl9QelFOOHprVldzdGZHZ25mTzA1b1pEYVZqLUNMYTczbGtGUm5RNEtrWmVkSEk1ejZlcXV5azg5Qy04djdwYUZB?oc=5",
-   "source": "Google News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:15:28Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
-   "url": "https://www.marketwatch.com/story/i-am-drowning-in-debt-i-have-125-000-in-credit-card-debt-will-9-000-in-disability-income-affect-my-bankruptcy-f897c131?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T19:15:00Z",
-   "summary": "“I racked up this debt to cover my living expenses for two years without an income stream.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US Federal Reserve raises interest rates by 25 basis points, first hike since 2023",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPZ05uTUVwR3UzRmVGS0swaWcxcXR4TVFwV1c5QWo1Y0tqaDhpUHBnVERRZzU5VmM2aEFyRDgtTkpMbXBnbFVUc0xfNHFUWFhSUjdyVXViZ29UMGlZcW5uc2k3OHVjMkFER2dfaVE2UzJIS3U4VU00S0ZROHYyZ216UUJlWGJ5R1g1azNwdmxLamQ4S0lsSERWTnV3bEtSbWd2UVZvemZTLXRDb1VYS1BfTjFuNG9KRTQ1RDBmVm5MRnFmSG1YTVRQTWVxaUhXNm9ER2t3OG1FOUUzRjBpcGs0TGEtTm5Xa1lHOFhxdnNiZnhsYURyeWEzSw?oc=5",
-   "source": "Rediff",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:11:02Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "As Fed rolls out its first interest-rate hike in 3 years, officials are divided on what to do next",
-   "url": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T19:10:00Z",
-   "summary": "The Fed’s policy-making committee was unanimous in its decision to hike, but forward guidance was split.",
-   "categories": [
-    "Central banks & rates",
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Conversion/Switch of Government of India Securities",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63606",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-09-16T19:10:00Z",
-   "summary": "Government of India announces the conversion/switch of its securities through auction for an aggregate amount of ₹30,000 crore (face value). The security-wise details of the conversion/switch are given as under: Date of Auction Source Secur",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Fed raises US interest rates for first time in three years",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNa056OU9XUUhJVS1mVmF0dUYzWk5CTTBNZkRNVnBzV0syYW9Kd0Q1TWdYUTJDQWVFU0xGb0xFREFFalN2blk5RXpsd3Y5bHhGcUVXbzVGZGFYd091ZzY1VFNqWkxud2VhSHBTb3JZMkpLWFlpNExzeE1vTGxSM3RqdVZhSXM4ZTVmTVlN?oc=5",
-   "source": "The Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:10:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Warsh says US economy has strengthened, inflation is the problem",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbllURXEwS3oyMW52bTBuU2F1R3loYk96LS15b2NqS2FMRmd6VUM1N0wySlVWVzV6X2R0eVR4N09kSWJEV3hGX3oxYjlwWFBKbldNMGVlWU1VYmVIb1BBYVQwOUcwY1hMZXZRRHMxUHU3RjdvbU1tejdXemUzbVpoQlBIRE03OXZET2xUUEZEQjB5dl8zRkp4QVhfRmUybExCZGR1SzViMA?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:09:45Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "India clears 642 UK car imports under FTA in two months of implementation",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-clears-642-uk-car-imports-under-fta-in-two-months-of-implementation/articleshow/134295946.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T19:08:42Z",
-   "summary": "India has approved import quotas for 642 passenger vehicles from Britain. These imports will benefit from concessional tariffs under a new trade pact. Seven companies secured allocations for the remainder of this year's quota. The Directora",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "‘Inflation is too high, for too long’: Kevin Warsh signals Fed’s focus remains on prices",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSFlLTGpYSjRiam1RaG5Tc2hTVV90aWpvREI3UTN0Y2R0d0NFVkVXSmdDTkRBZDk2MmRROGlNUFRaWS1LV2wteG44cGZielJqcXRnOFNocDlxdXRGVS1ibEZZV1oxODQ3Q2xKQl81Qmx2ZmpLSTZUSDloODZFT3NrblQyMUZUaFROaWptR2pueEtMWDhWanN6Ty1naWZhSHAwU21JOWVkVm1jeTBTRTA3eVFaT2pHTVgtRVBJeG1oS19USVpqZUdreHZIWdIB0AFBVV95cUxPQW55Q0c1MjJMS0xpRzF1ZE4wZ0xPVlRDdnJwRjRkMHc4ZzkwaW56LThtZTBPcktMbkIxWVV2ODdWWHV4Q2lEbGhLZVY5anlMWGFfbDdLQkJwZXlxNFBMNXZVZnZDRHV2VnV4dmVYSFRGX3liRFlzcWR1d2NfY044NkRUUy1aVGVuVTBHNE1NNmpvTmV6TWREYUJKdUhWbTE4SFNaWlZERzc2X3BQMWp6UEVoRzVvZnJHX2x3UEpKTzVkY2pVclRoc2ZvRDRLWFpx?oc=5",
-   "source": "Firstpost",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:06:34Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "VIEW Stocks pull back after Fed raises rates, points to another hike this year",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcHE5d2RsZk5YWi1pLWw0M0tWX0pGZl81OEcwZVJtUlJsbTVoUnpQWUxJYjZGSjhvMmlDd0JrcVVFQjJ0aFRJRkh1cTFteld2Y0lSeXhyMFllMU5vSGthbExhbzc5MVNSRTFHOS1JWVcwZ09jSllmTDJoeHBEUEFJanI2aEZqQm1PbXZJZHpwRHpRU2FoMG9EMmVoVmxiZ0h1YV8xTk12QjRMVm1LQ1Zfcm1qUGhUWkFH?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:05:51Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Markets"
-   ]
-  },
-  {
-   "title": "Fed raises interest rates for first time since 2023. What it means for your wallet",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNmdHWWI0WV82eHJCb0s5V1V1bnlwcFJmYzZwYmpDY1NkcDNZaEluaWtCMzhKVkR2cU9YVDdya0lYRlNqYllLaU5nbHhmY0VZSkFjdWFmUjFrVmxfYk5SUmJqaFlsNWhQYUtVN0NwY0RLQVVodnhyQ1VLRWRpbDBfUGNDOWNXUVhfNVc2cXN5WlVfNEQ0YVR5OS1ncG9HOFdibWdDOHZsblhJRnhDZmtTZlFmWHRNM3p0Nm1JNExqdXg4UDdZWTVmWQ?oc=5",
-   "source": "News4JAX",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:05:17Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction under LAF on September 17, 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63605",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-09-16T19:05:00Z",
-   "summary": "On a review of current and evolving liquidity conditions, it has been decided to conduct a Variable Rate Reverse Repo (VRRR) auction on Thursday, September 17, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Window Timing Date",
-   "categories": [
-    "Central banks & rates",
-    "India"
-   ]
-  },
-  {
-   "title": "Federal Reserve Chairman Warsh: Inflation is the problem",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLTZ0eDI5em0zQWRZTFBfNEtyaXBvMU1NRTlFYXM0eWxyYWp1WTRnWlRib0Y3YnNEXzFOQ2JUZDlkUmJUN3UzSnptTkFQcWU2VExXZ1A3cVg1ZktBT0hlY3czOXQ0ZGY4UFpWUW40ZnYtMnhQVURSRmZNejFTd2hvU0w3NGNZTjNCQnpxdnBMeTJTWC1HNGc4ZWpLc3dXbGs?oc=5",
-   "source": "cnbc.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:02:21Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Fed approves interest rate hike, signals one more to come this year",
-   "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:02:17Z",
-   "summary": "The Federal Reserve on Wednesday approved its first interest rate hike since 2023 and indicated another to come.",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Fed raises interest rates for first time since 2023, defying Trump as inflation mounts",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaHFvTUxpaHU4XzFTTkx6bkQxb19mNkF3WjVwQ1FMZjVkaXRPMzZmdDFCZVNKU0RJSDNpUWR1TmxFWWkyUWxfUnl1aUs5SGRKYzU1eDgtUzR5cUZsX044M0E0T2VBenRKZUJOTk5Dc2FDbFhtRlpyenBmRk8wVjRERUFCbGpoM214OUE?oc=5",
-   "source": "nbcnews.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:00:52Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Federal Reserve Chair Warsh: Inflation trends were not passing the test",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcDU1aDFBUUptRnRReURkbjRxRXZ2TkxTUjJVRTNoYUh2N3hjM0xDRTZmaFBCRkxINEw3NC1rdnd0QVNBcjlMVEVVQUgyelZKRzJGQjR6YUFMd2FiWUI1VHQ0dmFLRkliaTlOOGRlV2ZCdXVHZ0hzNFdZdFhWaDMxR3BSSHQ4QzJXWjVSOHY3ekFlMDk3UkpDbE5CaFhFQTFGS0tiRGhURThEVWZyazdDNFRKTQ?oc=5",
-   "source": "FXStreet",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T19:00:22Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
-   "url": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T19:00:00Z",
-   "summary": "The Federal Reserve announced a quarter-percentage-point interest-rate hike Wednesday, to a range of 3.75%-4.0%.",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:57:53Z",
-   "summary": "The pipeline has allowed the Saudis to shift oil exports to the Red Sea while the U.S. and Iran battle for control over Hormuz.",
+   "published": "2026-09-17T02:08:02Z",
+   "summary": "Oil prices fell as additional Saudi crude supplies eased concerns over disruptions to the kingdom’s exports.",
    "categories": [
     "Commodities & energy"
    ]
   },
   {
-   "title": "Wall Street gyrates after Fed hikes interest rate to battle inflation",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSUtqeWNnZEJZT0IyaHpTajZTM3hWV0gwZUV1VkhQV21PUzJBQ0kzLWhxTk5iWUtNbTI1eUVWQnN1b2Y4T2RQSnhmc1pDcVVWYldOc19HSzRId2pZMHZFWHZrNHhnMVh3VGd4RkRSdDJGZ2ZJSzd6TWhiWWtUd1lWRkxzcklsRmJhOS1TcEZYMkRTQjhmakMyVDFtQQ?oc=5",
+   "title": "Shares edge up after Fed hike, dollar firm on short-term yields",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUnBManB6Nl9tbnMzaXhPbHh4RmJVX0xWNmdaeENoNW50NGxxanVfMHFMaWVENklmQ09OSzdDVnFtSFhiXzJ0YTE5RVgzSHYtekRVZHU2QXE0LVNWeS1nalgyNldtV3l1X3FUc3NudktmOWZJVVZORXFNbWloZzlOZkdRWQ?oc=5",
    "source": "Reuters",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:57:44Z",
+   "published": "2026-09-17T02:05:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
+    "Currencies"
+   ]
+  },
+  {
+   "title": "India cuts windfall tax on export of petrol, diesel, and aviation fuel",
+   "url": "https://www.business-standard.com/economy/news/india-cuts-windfall-tax-on-export-of-petrol-diesel-and-aviation-fuel-126091700024_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T02:02:54Z",
+   "summary": "Export duty on diesel has been reduced to ₹20 per litre from ₹25, while levies on petrol have been cut to ₹0.5 from ₹1.5 per litre, respectively",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "US House passes Russia sanctions bill; 100% tariff threat looms over India",
+   "url": "https://www.business-standard.com/economy/news/us-house-passes-russia-sanctions-bill-100-tariff-threat-looms-over-india-126091700062_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-17T01:54:45Z",
+   "summary": "The US House of Representatives passed a bill that would authorise President Donald Trump to impose sanctions on Russia and steep tariffs on its trading partners in oil and gas, including India and China. The Lindsey O Graham Sanctioning Ru",
+   "categories": [
+    "Commodities & energy",
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "Opinion | Kevin Warsh Is an Inflation Hawk",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUXRYWU5WSG1kOUxsenl6V1h4cVRidk5XYTdCOFNpSnFKTk1LeFJEQVVfU1NVeEpoX1ZrdXItMFNNc1NybFhlbEN6T3ZLanpfTU91bUhnNW5qSWVacVRiQ0VXZVFWUV8yZEtQRE1VdmY1VVI4akIxYlFlVDNHSHl0OXE0MDBDTGc3U3ZSTkxXa210ekZiMmV3?oc=5",
+   "source": "WSJ",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T01:44:00Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Goldman Sachs sees October Fed hike after hawkish signal",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNnA4bVp0ZlNGeVVZRGJvNmIwcVdmSHN3N1I1WlpaYldOaDdGUEoxUkxJNjd3ZkFkNkxhN09iR0RJbzU0VnQxdHdqUHhhVHRsZ3B4cnl0dHE5VHh1WHFBbjRFNnhpQ2NtRjlNQXRtUUVHN0w3azFuS2VxMEJ1NHB3SG5MVWl0NzVDcGNNVmlwYXJsMzZoNWpr?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T01:26:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Federal Reserve raises interest rates for first time in 3 years",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPY1U2a0J3UXZTRlhtVmZQcFJfMGxXQ2xXMDZIb28tNmUzT2hMNzRfYzh0dnBzM0JZbHdlRWZlUWg0cHRUdnYzdVltbkthRVBpWFVUTy1PaVQ3d1Nqb3B1aGdINTJOOVlDX1pZUWtXbDVtVnVsSzFzaHBHalFaQ0NlVDRvS0hqTk02UTdXVW5EMGhtSU1LX3U1WXBHS3BQdXMwRWc?oc=5",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T01:25:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Video American consumers brace as Federal Reserve hikes interest rates",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE02c0tMbnYxbFNUQU1lcTR1Q0FjVDN6UFE1WHY1SWxydWI5REVNaUJndzY0b2NlaWwyMFBiQ0RPeU0xYnV6UlJZOGNQWFM?oc=5",
+   "source": "abcnews.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T01:03:01Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Federal Reserve raises interest rate | What it could mean for you:",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQT0NOYXN3WGU2UEFDYnJXa0VPXzJBU09QSlBma0hQS05TZUdBMTl6R24tRXVJQmVNTkNERVVhdm9sMjlxcldUVTE2WkZKdkpGM1ZqQlNYb3dheHd6cXlPbkRYMzJCeUd6NXVCQjlRZUQ1ekVkNU0yZGtyeDUxaFZFVHFGamJOU2dZMUNxaGFNTmxLMnBJTjl5SzZZcldjY3BOejFr?oc=5",
+   "source": "wesh.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T01:00:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump Says He Backs Warsh After Central Bank Raised Interest Rates",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMDVFX0lwdUotUEZvSGVTT2JJYkxlVmV3d2p3bXliZmNWckQ3VmtXQnh4enUyX1F2azJrc3BBVmJwWVN2LVBtamtfVm9aV3J4YnZZOC1zZWVCUjQ5RDR2bS1WbVltOU9LU3h6NUdKcTRBcFBCRDV4YnJscElFVzA3YURldVd2QTluZTRwajN6Qkd3ckFlYmt6dGVfdW52d2JJd1dfZWh2ekxTdmdVRnItbVZrLTZqeFBtb3hj?oc=5",
+   "source": "WSJ",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T00:57:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Federal Reserve raises interest rates amid persistent inflation",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdjE0QnFCLWFmRERxd3NyZVRLX0xCNlJhMDVvczh6VWtlbnpUeHI0b3ZObmhCWDhVZ1d0QTNaN3ViMmRIc1gxaG82VG1VZmpsNHVTWDZTNGQ4dUZqMld1c3E2T0U1MFZsbWQtdF80YTU2eEhmdURHTzN6QjdLZWRSSmZOWlU0ZzFCcWlLTXZLZWhiN0XSAZsBQVVfeXFMTnpjVXRSUjAyZFdLV29tVjZPM3FBaFpCb0hjOUFESnY1VE1GOE5oak9KdDU5QjR3ZmlINWxLRW5CaktWNjBlMEctT1REaVJqRWdCQl95anVmOUVTYUJ2QkJjZGFFZ042VHBIVXVFUXVHbmNScUNTVHY3UU9DaXNZMEU3Y3FaSUNQQlpQdjY3RllFODNUV2NZS25hdDQ?oc=5",
+   "source": "NBC Bay Area",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T00:44:45Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
@@ -758,399 +1209,86 @@
    ]
   },
   {
-   "title": "Centre eases export compliance for shipments up to Rs 3 lakh, seeks 5-year RoDTEP extension",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/centre-eases-export-compliance-for-shipments-up-to-rs-3-lakh-seeks-5-year-rodtep-extension/articleshow/134295499.cms",
-   "source": "ET Economy",
-   "region": "India",
+   "title": "US interest rates raised for first time in three years",
+   "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:57:34Z",
-   "summary": "Exporters will not need a registration certificate for shipments valued up to three lakh rupees. This change reduces compliance burdens for new and small businesses entering overseas markets. The government is also seeking a five-year exten",
-   "categories": [
-    "Regulation"
-   ]
-  },
-  {
-   "title": "Google is playing a different AI game than everyone else, and Wall Street may be missing the point",
-   "url": "https://www.marketwatch.com/story/google-is-playing-a-different-ai-game-than-everyone-else-and-wall-street-may-be-missing-the-point-e91077a3?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T18:57:00Z",
-   "summary": "Investors have been fixated on the relative performance of Alphabet’s AI models when they should instead be cheering the company’s cloud potential, an analyst says.",
+   "published": "2026-09-17T00:40:17Z",
+   "summary": "Rates were hiked in a unanimous decision despite fierce opposition from President Donald Trump, who had called for a cut.",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "What do higher rates mean for borrowers and savers?",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa2o3aURpZERkdnhlVFVIUE0xdHlycUNDaXFJV2pib1ZRa3FabTY3QUxOUi1yY1RFYmtLTEZxcXN4ZVV3SUhNX1F4U2lRanpuUnhJVEVzVXBmdlF0Q1FUNkd6WFI0WEdIMXdQdTdVUFZDTFhFTERUeTJ5NG5PVE9Oa0NFMWZ4WmxKeVVuQ3VSRXlpTmxTZURJNVhENW5jYkU4X0hPYlJB?oc=5",
-   "source": "Reuters",
+   "title": "Why Trump's hand-picked Fed chair defied him by raising interest rates",
+   "url": "https://www.bbc.co.uk/news/videos/c54g7wg1l3d3o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:55:56Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Why the US Fed raised interest rates for the first time in three years",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSEZSbS0xeHhFZGwzVzl3VjhxWEt1RFhITTRUT0NjTFNvZ2VXSnJqRnF3RWRCUmlQdG9TYUtmdGZzU1E2NW9IZVFKcGp4a00xd05NUlJPM3N1dElWMFNrME9KY1dxUFY5bEpyQmdtMEFqNzJZdGMxTXIxTWFxZTdoWkR1dVVpZm5YRkdFLUJiQW1abUxkU0cxN2FoZjJScWVHXzJrdWt6clNHZ2piaExyZ3pSVU1LVnBiMEdfM0s4V0tQdXpuX1NRTjBUT1ZGc0tN0gHWAUFVX3lxTFBqZnR4QWJFRFB5dVRVQXZya3JSNzgyeDY4LUZ2NElOUVpqelBxdDFBdnFrS2FmT2pNQzczNDk5T0NVckFPd0hvYWhEak5rUFpyLXJaQ1VyS1R2S1dVUFZiUEtKWDVyZFBGYVJTZ0ludEZtNU1wZk9FQWM3dkVwVXV2YmJrM05xaHhNbDFHUUxEc0szQk9TTXFlX3BtRVJNVG5vcUhmSXRrOXdaNWpXSGxvWDNoUEtRQU1oZTRiN1NFSXIwU2luc3pmN2puaHdzUDA1M3RHd2c?oc=5",
-   "source": "Moneycontrol.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:55:50Z",
-   "summary": "",
+   "published": "2026-09-17T00:38:50Z",
+   "summary": "The 0.25% increase comes despite fierce opposition from the US president, who has called for rates to be cut.",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "Warsh says Fed focus to stay on inflation, underlying trends have not meaningfully improved",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQnZqZmg5bzlfNGdUblU1QV9OQVRrTjF5REhGWmJTZk10QVhKdjlBcXNOZGhmYnhfV3BhN1RJeHd3dGNHY3JhLXR1NFA1aUo3dzlHejJBbkFjSjlKOVFWSXAycUs4M3F6dUpZc0ZJYnFfazhyOHo4dVpncVdhZ3Q3SU4zMWp2dmVCN3k1S2pHNWJseVJrWk83OG1BTnZDa3F4ZWUxeWFYWUpLX2RoWHV3cDkxR2RvaTNZWEE2MA?oc=5",
-   "source": "Reuters",
+   "title": "EU chief backs plan for Canada to become 'associate member'",
+   "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:55:50Z",
+   "published": "2026-09-17T00:32:05Z",
+   "summary": "Trump, who has frequently clashed with Canada's PM, threatens to cut trade with the European Union in response to the proposal.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Warsh Defies Trump’s Calls for Rate Cut as War Stokes Inflation",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNb0hnVk1scXBtcThGUklYN3V3Y1Q0NFhFbkFuN1Fza3ZrZ3l5aHY5dW5ua054X296bG4yM0toeUV3TURvcWxoZUtPMldwWFp2RlJ0Zmhncm9yVWhtWVJuS3ZtUFF4dzJJLWZMLXA2aG5DWmh5VFpuSjZ4M241aVBMdm1nQ2tGUTk5ZWVEUDN6a3pGeG5KMks1d0hjT2ZWcExrdmk3UVNiNUVIMWJjMXoyUDA0TTVWVlB4N3BCZQ?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-17T00:30:00Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Fed’s Warsh: Decision today was the right decision",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZm54Y2RSUm9IYlFmSlRyQWNsdUxheXNRbkJwdV9Da2p1dFFIOGFENnlfRzRCNDRxd2ZOSkhEZWx2LVh6QlQwQzA5MlZscTMzdExvbXQxemdFX2ZwWWRGZkV5Nml2OGd6M1d5djFYMWFxaVM1Y3B1bXRtelpLRGxNNktlZ05MVlNtY3JOd1ZmNGZRcUZScVV1UUNZSWplanRfYkVEdTJwZ0wtQWo1MUdBcldsaw?oc=5",
-   "source": "FXStreet",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:53:01Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve's Interest Rate Hike and Future Projections",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQnl4ZmxSandsSTdqOUtUN18wRGdzdEdXODBVQmVqOFVOTkRteF9TSmEwS3ZDczF6YnJjRy1fdTNRRjdmOEVOUHRkRE5BZXl0YjZhbnhXbi1CUllTLVpSVTdMWDBKU2o1Yjg0RWRhVXFjWnF4MmRSeDBKNGgxWDlkNFloZFJ1ZHZvb2REb0s0LVB2ZFRLV285N05fbGhkbjktUTJyNXJ6WjBuUDJJd2t0YkFR0gG3AUFVX3lxTFBOd0poSG5FaG1rSmZuY1lyWVZ4STZWdGJkY1BoaDlhenI0bzAyNDJSZFoxRXFmVXZfS25JU1dEdGE0Q0QzcTdINGxHQXB2ZzhId0d3dzRrdFBxUF85ODRhUW1iWXAwaDV0TWpMOGNueXZaTWtmc1VZWWVfNDR6VzJmTVNvX3I5SkltR0RSdzd1LVk1bGxuT2dySWRRc1JBV3Exb2o2b3VWVVJaVUNyVjFFdHVKR0hVNA?oc=5",
-   "source": "Devdiscourse",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:49:50Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Pulses, oilseed prices rise as rain deficit hits crops",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/pulses-oilseed-prices-rise-as-rain-deficit-hits-crops/articleshow/134295331.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T18:48:29Z",
-   "summary": "Key pulse and oilseed prices have risen sharply compared to last year. Scanty rains are affecting the current kharif crop and raising rabi season output concerns. Tur and chana prices have increased significantly, while soyabean and groundn",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Federal Reserve hikes key rate for first time in three years, defying Trump demands for cut",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNS0EtMlVOdVRhS2JDVjhOVlBYWDZ3blF1UFpoSXNiSFlrODhKblE5OHlZQWNpdWczR3l4MjBQU0lSVXkwbG1FbTNBQzIwdHFhRTJWQmJvX2gxQnlXTkd6cmF0SVJ4ZUh4V185WnBxdXdKYy1lXzhpLVpubDUxcGRla1U3Uk1oVzBrWHhuZXpaNHJpVmVsSmEwNWwtWkVYdjd2dG4zcWU1bDhxa0xXSGlkWFVMS0JSMzVJaFBvYzNld0lxb3FfdzdKeS1FVzlHaEFFTVY1aFFWVXVoTnZNMTZoZkNYTEhPZDBLSmfSAfABQVVfeXFMTkI5WWlYOG9Qd2tsbDBtckFCT0RTeEQwbms2SXpzdW9iZzNyQzJWOWw3SHJEb2VVMTZRbE1iY28xMWh0UkNLdlJ6NWRQUXhuYnRhTlNRaWJ5eWdwRXVmNmhZTi1mV056VlBLRnBYX0NwVTJjRmh1Yms0eldQTHdyS1JXM0Frb0stX3RRTGg0Snh0TzA5R3JES01OQzZ0OWhNY0otekpKRDUwVFJOdzFuSWt0VkVGZVMxOUxhYnlQa3BxdEJsOENhejlaUm14aHRvRUd3blgwMnJrR3FxOG12a2NVS2xxa1BJLVVtSnJOYmwz?oc=5",
-   "source": "The Hindu",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:48:23Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Fed raises interest rates for first time in 3 years, battling persistent inflation",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSXljOGlYN3JHZG9oUDJBNTlaT3BSaU82Q3U0V2NZX1VZME01cEdBWnFOZ0JMYndMd0NNZ1Z0c2RabjhZR3RtQi1VNXlCX3ZrODgzYWlRMG9Wd2hWcnp3V3hvX1FvZXkwYXFFS2t1aVVfejEtWTZCWExTd3JmWXRpTDQ4ZUxmRnA2NXVVdmJ2UVNzQnYxaElDYzhhN1k1YzlEVnV0UE5IZWgtMjcwZTlQWXhqSW45NEE?oc=5",
-   "source": "News From The States",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:42:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Taxman's JAARing move opens fresh debate over Mauritius treaty",
-   "url": "https://economictimes.indiatimes.com/news/economy/policy/taxmans-jaaring-move-opens-fresh-debate-over-mauritius-treaty/articleshow/134295078.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T18:39:45Z",
-   "summary": "The recent invocation of JAAR, a GAAR-type tool in the armoury of the taxman, in a certain case has stunned many. Even though technically the tax department has the power to invoke JAAR, the recent move was entirely unforeseen following the",
-   "categories": [
+    "Inflation & growth",
     "Geopolitics & trade"
    ]
   },
   {
-   "title": "Federal Reserve raises US interest rates",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9oNnZnRHdTYmxUc1BDenJsX1c4eTlMTTBza05vbTZVbWpTU1JmTXBpb19tanFES0RoNldRUDR6cVNRR0lRU0RXd3ZXemo0NlA5LWVtZlNVd2E3ZEpVczN6Z3lTa0tuVkJxak01OVR0RFgzZnRYOWhiWDhR?oc=5",
-   "source": "Channel 4",
+   "title": "US Fed raises key interest rate for 1st time since 2023",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5BbHh1OVozU29HbXpqLUJ0dkFnaFp4azFHZk5WMXdqY0dvWGFoWGJUcGhzSERER1ZhZ3NwXzRfZVZwZXgxZndiUWk0dkU4NlI2LXJNd0xQMGtsQ2pWQVJTcjk0clRzTlJaX2poUER2dzZvLVk?oc=5",
+   "source": "毎日新聞",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:39:36Z",
+   "published": "2026-09-17T00:18:04Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "The smartest money moves to make now that interest rates are going higher",
-   "url": "https://www.marketwatch.com/story/the-smartest-money-moves-to-make-with-interest-rates-expected-to-go-higher-aefe375b?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T18:38:00Z",
-   "summary": "The Fed’s quarter-point interest-rate hike will ‘bite’ consumers. Here’s how to prep your money.",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "United States Federal Reserve raises interest rates for first time since 2023",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LQU00TmFhY1ppc1J6SWhGSmJYeS05YUVLczl4ekxGOHBaeTBOeEhFdnBWWko3dDFNMHdHZ0RNeUJiU2JXSlVWWDhHT3JOOEExVTNPaVFETFVUQlg4MmF3?oc=5",
-   "source": "The Jerusalem Post",
+   "title": "Watch Harker on Federal Reserve Rate Hike",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVlpFcjAwbmdTOG8wOWM3NlFCTkNYNTI0T0h2MlpWZHREdDBxamxBOEJGX3Bmbjh3QUtUVXVxN0ZaZE84d1lKSlRTdDh3enR6eFUtTVZtRjZkV185TVVWQlQ5WUt1UW90RWh5Ri1SNjU0SnZfcWwzVXhsUkNaQzViQVdOcFdVQnRXakFRdE80SllkZ3Ro?oc=5",
+   "source": "Bloomberg.com",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:37:24Z",
+   "published": "2026-09-17T00:00:00Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "Fed hikes rates and signals more to come this year, defying Trump",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQy1xRGlNem1wNEdrOGJlaUxjNGcwUUVlZWxvd0wwMjFYdl9peDBEZ1dLT01fanpyOGpiTGZJYTVXMjRYbmoweW9qNEhPTWZWMXV3SGFIUVJjLXptZnhoR0ljRkNONVVybUtwRVJENGI1MTIzTnh0S1dNUlVKVGNvZjFvZWhZTzc4?oc=5",
-   "source": "Politico",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:36:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "NITI seeks easier access to geological data, capital for small exploration companies",
-   "url": "https://economictimes.indiatimes.com/news/economy/policy/niti-seeks-easier-access-to-geological-data-capital-for-small-exploration-companies/articleshow/134295030.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T18:35:58Z",
-   "summary": "Niti Aayog recommends government support for junior exploration firms and increased private participation. Streamlining approvals and forest procedures will reduce project delays significantly. Harmonizing renewable energy rules and address",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Federal Reserve raises fed funds rate with likely more to come",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xMTdtOTFSN1JUTTNadnl3elJDQW44aHZodXZQU0VMSVN1SWhwQzZOdnlWNXdQRzh4bEYwcUhOakIwRElCZGFBMjQxOHJXYmtWSnlnQWI4cUhSeGxlbDhON1U4cWZyVUs0dmxabTVUSW4?oc=5",
-   "source": "Financial Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:35:56Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "US Fed raises interest rates as inflation weighs on economy",
+   "title": "US Fed raises interest rates for first time in three years",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMkVyU1l1M3VEcEg2TUZuemNacHp6X2hGbjdwYXlGV1FZdzhEbGtjdzlkd3BUS1RzUkVjNkZ1d3lMRl9TTUlMdFhuQlg5cnZKT1FCT2FyMXNzSzRsRzFtMVZIU1o1YURKTzRKUHdlOUxJdWdrRDYwS0JFTFd4WEhMRlpWRl9oWXRKUEJCVVdJM2xJemZCbEJ3eEw0WWExelctR2NLTXJR0gGrAUFVX3lxTE9pUXRTYm84MEp3U2xNby01Zm54cTNhSVNoaDRCRUdPNlNuN1B4NDFDV3FGcDU4M185c01LdnczeG43UFFHRUdSNndFS0k1NHlISW84MUJmSUV3R05mWnJDWC1iV2piUjB1dFZnNURjMi1nNUtLU1p1VjNsWkVFNHZsaktNd3pZMUdhWERQRlVmQjBHUVFDREluUkdPM2ZuTmlzWlh4M3NoTG51Yw?oc=5",
    "source": "Al Jazeera",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:35:02Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2019-20 Series IV due on September 17, 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63604",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-09-16T18:35:00Z",
-   "summary": "In terms of GoI notification F.No. 4(7)-B(W&M)/2019 dated May 30, 2019 (SGB 2019-20 Series IV - Issue date September 17, 2019) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Fed forecasts see latest hike followed by another before end of year",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQm5zRF9jbzFRTVF1RkwxbTBpNGJmeHhRR3RNZU9DMHk5c1pndDJveEhwd2RrZHhRMXBFMGV3cHR4OXlJZUJBdWtjRXhFVkUyYUpRd0F5QWs2Y1NtTllTQzJGdkM4UFBVSzRfa01FQjFuS1Ixc2E0NGJ6Q3Z3a2owYUowN21RM0QwWDBuQzJsZW13bVJzTkJqNGE5aklZWWwzbHBERGNBdWUxZE1BT1M4?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:34:55Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "American Airlines says 30% of seats drive half of revenue as premium cabin rush heats up",
-   "url": "https://www.cnbc.com/2026/09/16/american-airlines-ceo-first-class-seats.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:33:51Z",
-   "summary": "American says a minority of its seats now accounts for half of its revenue.",
-   "categories": [
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "US Federal Reserve raises key interest rate for first time since 2023",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNU0lMbk9mUmxGZ1NoSDBFcVA3a3RlZmJhVlltZHJWTkRnRFZ1NVNIVFZJTjVxNFlQVVZiQ3dCSlk0OGhpcWtrb0ZiSGFtdnZqWEZtUDk1MllxRUJNZFBYZ2NDUElZcGJMX2ttcFhrVU5BeUlZV0djYkNGck9yNFNwZURjdFlnTUYyTDRLMmVUVHBwSDA1Q1dqdmpqTQ?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:33:46Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "The Fed just delivered a unanimous rate hike, the first in three years, and no cuts through 2027",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5yemM0cTJlQzNiaHJ2S3FhcjZWQ24taktsZ1JSUjg1LWVtNTFBVngtV2hybkZpNjRPZmRFVERPUjhJcVZsaWUzdVpmVjE3aW1vdXF3ZFFfTXdJZGxnLUpKMjFwbXBlRFY4eEVva3NUUmk?oc=5",
-   "source": "Fortune",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:33:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve Raises Key Interest Rate By 25 Basis Points To 3.75%-4.00% Range",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTXZ4cWdLT25SVUFWN19MR21sYjZUOG84c0lTb2Zpb2g1MG1ORXpRV0pndVB4am9uY3l3M1VHY0FhZkt1d1lfVXcwQ010elpwN3ZDNXRJUXRRUEdRSG9TM2k3ZkZMck1mNnR1Ml9rMVI3SWJDbjdLME5sYnM3YU53Q1RmYTN5aG96VHJSdmx5WER0ZHJrU1JvOS14Z1c5d2ZNZktMZEVWbw?oc=5",
-   "source": "Sahi",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:29:44Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "US Federal Reserve raises interest rates for the first time since 2023",
-   "url": "https://www.theguardian.com/business/2026/sep/16/us-federal-reserve-votes-hike-rates",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:28:29Z",
-   "summary": "Fed committee votes unanimously to raise interest rate by a quarter-percentage point to a range of 3.75% to 4% Federal Reserve raises interest rates – live The US Federal Reserve voted to raise interest rates on Wednesday for the first time",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5",
-   "source": "Breaking News, Latest News and Videos",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:28:22Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "US Fed raises key rate for first time in 3 years",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNHFSN2hGaXMtZlNNUThVaTBySW5hSlVNYS05M0J6NDVTWTNRekhJZjJhYV9WWHg0NjU0WlZ2RjRuNjRvY3d4QV9US1lhV1dQUVpnVkV3Y0RCSDkxR1padjlUNV9sSWV3dkMxaHB4UncxbXA5N1k1YzlPaFMzZ1VSeWtDYmxJV01D0gGIAUFVX3lxTE5oM0dhQW45U3QxWVVxcGdyVFhXeVhFbjJQa181MEJSRVA2dDRGdXdCTTF2a3JBR1NSRHduQ3RiWWRMN3BFam53MTc2RlpqbWRkUk5yZUlnVkpQclBaVkNsYUV3VjJEVGxrR2R5QVNScEZQWUdtRnpCSDRjR0lhdE5aQzBUR2h4ZmY?oc=5",
-   "source": "DW.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:26:54Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "CBIC cuts paperwork in deferred customs duty scheme to boost MSME participation and ease cash flow",
-   "url": "https://economictimes.indiatimes.com/news/economy/policy/cbic-cuts-paperwork-in-deferred-customs-duty-scheme-to-boost-msme-participation-and-ease-cash-flow/articleshow/134294791.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T18:26:10Z",
-   "summary": "The CBIC is simplifying its deferred customs duty scheme for manufacturers. Paperwork has been reduced from ten documents down to just three. Outreach programs will now handhold MSMEs to encourage scheme adoption. This initiative aims to ea",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Micron’s stock could climb 70% higher thanks to a factor that’s been largely absent so far",
-   "url": "https://www.marketwatch.com/story/microns-stock-could-climb-70-higher-thanks-to-a-factor-thats-been-largely-absent-so-far-2489f2cc?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T18:26:00Z",
-   "summary": "Shares of Micron trade at a stubbornly low valuation but a TD Cowen analyst thinks that could change.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Fed hikes rates for the first time since 2023 in unanimous vote",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWm5jNlVtQU1xc0l0NUtPeTFzN0NtRDlfdUIxQmRqZm9ZMlo3eUVSdmJfNTJqXzk0dWZzUlYyd3FleW9jWVFmU2VKazk5Mm5OQ2JCTFdJdTFha3pCdEIxcE51OHlfVk9oYlY5c05xdVN3ZVlzZVZESnhaZmZBNXJYVy1BMkVVWVg2MGt0akR0cjRoUjJuNlM0dFpVaDlDSzk0ZTQyWEFIbGxyQnhiZklTR3JvYTVHSXcwY2pxMDJ5X1Q?oc=5",
-   "source": "Euronews.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:25:58Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve raises interest rates for the first time since 2023",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWWl2cFlkMlQzM25Rb3o2enktN1RyeVRWajNJTWdRSXMyRi0xUVByTXF1dHgyQi0yOEF4UW5HRkUxYjA0UE1WVW45eDlraWpHR0VVYlJPX2lHTkNiZ3Y4a2V6LUJieXZ3cE45QjV5aDFZYlJlb0M2RE45NkFaMzVKUTE2OGs1Vm54eXQ3am1Velp3ZUtaTmlHVi1WVmMwSHE0Tmc?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:24:11Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "The Federal Reserve defies Trump with a unanimous rate hike six weeks before the midterms",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYW9UREx0VnF4c3NCWXVmdnNkR1BvUXBIb3YxeE50LTd5SzhuUW1zMHBmN3hNS1oxOU40dG1CSUFhTDl6M3gzLUx6dGpWZEtfQlVHeEI0WGliSXBjeGxRb0dSYnlZYjNNV3lFOExicVlKMS12eHh0SDFKeVhNSHV5SGZ1M21pd0VSWG9PS0VFZE10dkNjNjkzZDVDNmg1dWp5U2VfT2JJY0RWSV8yZEM4Tm8tbUNTRnhWZXNpUFdGZ1RxQmE3dGYw0gHbAUFVX3lxTE93dTMtQkRRSU9YTmtYWlFiNTZTZlRVR09TblR1a3ZSU29BY2M1cFh6emFGZlFxSWRPbEd3UXBJZHE4V1p4RjFwUDVLZTZ3ZEdLT29RUjA5eElZVjR3VEJ0WW1YOGs4UzJwdXJQTi1qR0dVT294Yml2VUZReC1WWjdYdW5OalZxejdKYTlFVENkelRCaElkdzNhNlZyd2xRVmVSRWJEVTA4TWwwRVdOZ0FKMGJnVDlvVUwwbXI0WFFLeHktM3d5bDIzVXJQWVBnbDFSSVBIWFJPcGxJZw?oc=5",
-   "source": "english.elpais.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:23:41Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "What the Fed’s Rate Hike Means for Retirees",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUkNLVEhMcl9zQ1gwYWtWeE42NkJnZVkxanJQUklQaFdHNmNXcUNFOEdoVjBpT2dYZlJBc0h2SlNiZTN0ZFB3RFhHQzczUGd0MlAwRUt4SWlCMXhjWnJVeU9ZN0ROckJobTlDaTdwdkk4dmh2TFhCa2ZKdVh2R2VpaDhBWGk?oc=5",
-   "source": "aarp.org",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:20:58Z",
+   "published": "2026-09-16T23:59:22Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
@@ -1162,56 +1300,163 @@
    "source": "MarketWatch",
    "region": "US",
    "official": false,
-   "published": "2026-09-16T18:20:00Z",
+   "published": "2026-09-16T23:51:00Z",
    "summary": "A report says Intel is in early talks with SK Hynix, which is considering some sort of partnership that would enable it to make memory chips in the U.S.",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Here is what changed in the new Fed statement under Warsh",
-   "url": "https://www.cnbc.com/2026/09/16/september-fed-statement-redline.html",
-   "source": "CNBC Finance",
+   "title": "U.S. Federal Reserve raises interest rates for first time since 2023, drawing Trump ire",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOODdPMTdVX1RWVmNLbEJUNF9QaENxX0J0MzRMM0FzMnREYUZ4Y2EzYkRrV2owWks3TGpla0Jmdy1mNEJIbkFpRVR6Ym53T3NpWGluaWt4dUcySVlLTng2UGxxUy1QbUhhZGgxX1Y0UU9LVklDR3N4bG1uSFRZdlFlSUJ5QnRuaDRtZTBva2hPM21MbW0xOFZhYjdSWVBUdmlZZ1ZnT21ZUHRYd1lDbWpaNEZqYVR1Rzg?oc=5",
+   "source": "The Globe and Mail",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:18:54Z",
-   "summary": "This is a comparison of Wednesday's Federal Open Market Committee statement with the one issued after the Fed's previous policymaking meeting in July.",
+   "published": "2026-09-16T23:42:56Z",
+   "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "Wall Street gyrates higher after Fed hikes interest rate to battle inflation",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWndvbHZRaDhxYlFNR3ZkN1hjMml3X3QwQ2F4OUVtM1JEZzhxeTB6NlNfVm16UTJyNzgtTUx5ZnQ0V2ZDQkNIUjFyUld5amFuMHltaHFoMjE5d3pEWDVjeHRFb21Zc3ZheDA2cHUtLVlUc21md1BsekNZVXU1dmltU0x2c2NVSjJHNW9fOEtxMEZUejNQOFpn?oc=5",
-   "source": "Yahoo Finance",
+   "title": "Federal Reserve hikes key rate for 1st time in 3 years, defying Trump demands for a cut",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVlB2TmNqY1dILUtfRTFBQ0JPSk53elRnU1QzdmhIQ3VvTWlkelRTd3haWHJ4bmxiY2ZOcGhvd09wMTllVkVLQzk5NkdKZzNPeHpaZTRHQ242Ynd2Q1ZIUU50cUp1N2JYd1lCQndZQlhMUTZFekFZWWNueUxNbmRiUHdBZ2dWbDgzNlhmejZneHptaFhGbDI1M0JPbk8zZw?oc=5",
+   "source": "AP News",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:18:48Z",
+   "published": "2026-09-16T23:42:00Z",
    "summary": "",
    "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
+    "Central banks & rates"
    ]
   },
   {
-   "title": "Sen. Blumenthal urges AI oversight: 'We're on the verge of losing control'",
-   "url": "https://www.cnbc.com/2026/09/16/blumenthal-ai-regulation-safety-oversight.html",
-   "source": "CNBC International",
+   "title": "Snapchat open to putting time limits on teens, boss tells BBC",
+   "url": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:18:09Z",
-   "summary": "The Trump administration argues that beating China in the race to AI dominance is an all-important goal.",
+   "published": "2026-09-16T23:41:57Z",
+   "summary": "Evan Spiegel says it would be \"an important step forward for the industry\" in an interview with the BBC.",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Fed raises rates for 1st time since 2023, while dealers feel effects of interest, inflation",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQlRva1ZtN1Z3YkdxSnFraUcxbmQtY0RiVFk2bGJ0OXFuUjBpbzdfRWNscEhVbldwQ0MwdnJJVWdGcXJoaHlsY0JDVVpsVDF4XzQxYmtDaVBSRnlhSFRpMEoxMTlxdVY1dm5TdHRyOGpfd0FSS2RFd09JOWpzZjRoRlpucGJJUTlrRFBUdTNzTjhDWVVlSGFkYW0yaGpIUQ?oc=5",
-   "source": "autonews.com",
+   "title": "What to know about US Federal Reserve’s first interest rate hike in 3 years",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNR2E0YlpfSnFQZldrNGdyd3FZNUxPVjU5OHZzTElVRjdUOUhLT3JzSFFVNHQ4VXd4WVhtMUZtdGhFTVNlZXl6YVpBdFhKc1B4WTY4ZDlXalJwb0ZleE1yQzNTLWw3UXNiYk9KaDNuVDJZRXZFQkNyOG5ySG4wNjNwelFWZUwyM2ZpbERyTjRsa19vYjh1SXo3cWxWTk92THRETV9JYkJ6aWd5QjVEWGR3VkoxdW15d9IBuwFBVV95cUxOLWhIRXBrWG1GNndPR1k2SEZYcS14bzhCMWdfV01Oak95OGlFNnp1eDhSVEE3VHdrTk1DR3VzbURjSC0xU00tRTA2a1pTVEJ3cTNoLTIwVFRHWWNHcXBvVVExdDVmbFpzY1U4ZHZYY3ZkSVJNaXRFRUVwUWQyemgxQTlIcnN2MXFZeWhDYmhjOWFzeW5QSy1KUjhHblBQR1VZRzA0eUxMdVFPbkNublFOVFVFR2NRZVBjTk9J?oc=5",
+   "source": "Al Jazeera",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:16:00Z",
+   "published": "2026-09-16T23:18:48Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Would you buy branded clothing from your favourite tech firm?",
+   "url": "https://www.bbc.co.uk/news/articles/cgqd9zkkvlyo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T23:18:47Z",
+   "summary": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "I sent 200 DMs to companies - it was awkward but I got a job",
+   "url": "https://www.bbc.co.uk/news/articles/c9vgyd02mdvno?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T23:15:53Z",
+   "summary": "From coffee chats to LinkedIn messages, here's how to network your way to your next job.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "U.S. House passes Russia sanctions bill seeking to impose up to 100% tariffs on India, others",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMmVCMHJpRGp4a1NjbDRfUXVrb3ktVzBHLUJzTlBjc2t5WXcxVVl3ZkhjUWZHMkZnSl9DY0tFYVc4NmxvNE1pRWk5VjhVaE8ySmhKajV1dXBZVG11YXBST1ZYWHFxb1lhcFZXdnd4VktNM2gzczl3RUFNc2E1NUVETDREc3ZPRk94UXRTU1E2M2hVTU80UXhRYTZmUjBxNi1sQXV5RGxGMXJfZXVOY3NqYVF5TV85QdIBvAFBVV95cUxNNVZTYkhoZ0hEWW1saXFmcmQwNU9qaHlwdmR3amt0NGlQSU1vSzg0SjMxVHZQbjBMQVpFekxlUUVoVldnQTNsX09sOWFyWmZDUXhxNnhVYXNONlFreGNMbzdZX044Rm5icTVPVU9ROV9PY3k0bGFvT2VTVVY1a05xOFJOYXE5T3YxQ01MdkpRZjFQWlN6a2xlV0NPVFNwWmNlMEFCQmpkUFpIeVNMVFMwVzMxSjJvblpFZ0RGdQ?oc=5",
+   "source": "The Hindu",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T23:12:59Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "Fed policymakers forecast one more rate hike this year",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQm5zRF9jbzFRTVF1RkwxbTBpNGJmeHhRR3RNZU9DMHk5c1pndDJveEhwd2RrZHhRMXBFMGV3cHR4OXlJZUJBdWtjRXhFVkUyYUpRd0F5QWs2Y1NtTllTQzJGdkM4UFBVSzRfa01FQjFuS1Ixc2E0NGJ6Q3Z3a2owYUowN21RM0QwWDBuQzJsZW13bVJzTkJqNGE5aklZWWwzbHBERGNBdWUxZE1BT1M4?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T23:04:13Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump slams Federal Reserve board for interest rate hike, says he's confident in Kevin Warsh",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZExNbkM0YWgzdUxOdmtVTm50T3IyRnoyMi00QWRQMUdsQXdfMjdqeVZ6YmFXanFDWm00Nklma2lFdWJYN2xmNTV4Mnk4dWxYbDJ1aEU0MDZocE85Z1lMTDJnWnJMZ3N3UU5lUklTZnZyWVNnVWJJVHlmYVh6Xzc1ZTE0NmRGcy1Nek5zRXFUVm1ReW9lZG5paHcwZGxkaWtkd2ppSjNDTVltaG9GSHZYMzkzamM5Ry0yQ3BoaFpsZEhTRHFHQWh5cGg5M2RUSjQ?oc=5",
+   "source": "NBC News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T23:04:03Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Wall St ends lower after Fed hikes interest rates, sees more tightening ahead",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSUtqeWNnZEJZT0IyaHpTajZTM3hWV0gwZUV1VkhQV21PUzJBQ0kzLWhxTk5iWUtNbTI1eUVWQnN1b2Y4T2RQSnhmc1pDcVVWYldOc19HSzRId2pZMHZFWHZrNHhnMVh3VGd4RkRSdDJGZ2ZJSzd6TWhiWWtUd1lWRkxzcklsRmJhOS1TcEZYMkRTQjhmakMyVDFtQQ?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T22:55:29Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "U.S. Federal Reserve raises interest rates for 1st time in 3 years",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9CeVB3SzM5UUlPUVhkNWlvaU83YThzcDdlZ0dqeWhoYWcwblNUWkxiekE3ZndWRVNRa3h1QnBnVExvY3NJQWJSWmdhM19IcTU0eEtpNXprRkg4Zk12eldYUWdCbHlSb25sUE5zM0VkVklwN2k1SUtfQ3c4cWhvaW8?oc=5",
+   "source": "CBC",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T22:44:46Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "100% tariffs on India? After Senate, US House passes Russia sanctions bill, awaits Trump’s signature",
+   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOaGhEcFQxNUppbVhpemk0WXJoY0hRVzYtZU5LbmhmcHBWbTBGQTU3bDJwVW5TdnUtLU1aWVAyMHNpdk1jTExoX1YzVUM1UWVsMmU4Ynd5N1B2aGxHNDNuYl9YdEU2bEVJS1RyNVZCb2VGblpqNkxiNUJNTTU4YV9zMjVwVTJDdEthSHBQOHNvc2VDNHk0eG5laFNjd3FBU05yTHZ6c3ZGVHM2MjgxeU80X2UwT3BqU0F3VlRnMHBGdFRueTE3OHhWWHF4RV9QaG5wMVZWLXdzdTdhc1BIOE1PSENjTDVPRFduZndha1I2MzR4NXZZM0JzaGVZS2lFbU5nWi1pcldBR1FJUdIBjwJBVV95cUxQZlctUlFtTWVhX3EzaUpxYzRIUXNFOEVRaWU5a1Z4bS1IUDY3ampPVEI0SmFzbFpKbEFlQ3BzdEt3SnNueG1OaEMzZW9MYzZRYld5NERhcjRxRGdaS1A4T0dkcUdsbUkwTlpBUFpHZzhHV2dXdnhJRG55MHJjWmZxWTF5WktjbnI2b0VnVjdYa3otNDNEMkJnVlY0U3hhbWpabGJJb0hhNGZER1lFb0V1aWVxVWV4a3gyT1V4Y1ZVaDRscXU3RlZZTmw5RVdXWXRQbW1BWElpbDhSRHBubkhPeDhHZXBQNURNR2J3d1kzajBraHVqbEx5UFlOWjhWd0U2eE9hdEhHbmhoekdTREZJ?oc=5",
+   "source": "The Times of India",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T22:40:00Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "U.S. Markets Sell Off After Fed’s Warsh Says Inflation Is Still ‘Too High’",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWXpmRks3Sk0xbFZuU01XWVltWmRBU1pHbUFQdnhUQmlZNWNzR2J4Y2huaURKOWpJckkyMHY0ZkNxeU04Q0ZwaDJVd21sMFEtNHBBdS1CSFZ2QXdDNzc1elZwdERMdmliWkFobC15d2ltVlliaVBVZXpjU1RIVGhHWnMtQ1QxUk5KOGh1UFBiUkhudmNGNko3Tmd2QWd4NEt3MGllRjRGY09BM0JHeFJnVm1uWWdITUZq?oc=5",
+   "source": "WSJ",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T22:38:57Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
@@ -1219,63 +1464,150 @@
    ]
   },
   {
-   "title": "The Federal Reserve hikes into a Dollar Index basket that also raised rates",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNHUzQ09vQTdGUm1CZ1lDc0tWQ0REd2JJX1NLcV9Wa0FZMjhjY3hKWnhQenJiMXllYVBOckVEbGQ3Sk94bWFpenVwRUFBY3pnZFlzUXNoMndqTHp6Y29ZUURyMUdfVUF5clRZMFpabVBqNkVXS3ppUmpQbW1veEZ5ZUJsMXNyTldhSkpkV212QlJ3TDB3SGk2b2ttMTNUWk5RQlQ4MEthZkh1NUMyZk9RUndkY25oZ3BDUlE?oc=5",
-   "source": "FXStreet",
+   "title": "Jim Cramer warns that buying stocks now means 'fighting the Federal Reserve'",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9leGVVdVlTTEJra3hyTVBpY1ZuQ0FyQkh6V0NnaE1KRmVZUHhTbGJuYlZGVldXSjl1djFfTEZ4bXYxd1U1VkRvLTVaTGRPMmlKQUhIbHFXdGxUNFBfWjB6NDExRGF0MThiMEtTQ1VNTy1QRHZmU3hFaUQyb29LQdIBgwFBVV95cUxNXzU1QlcxTTF4ZFF5UVBEbjBnZzl3dHRQV0VIVmhETWFzN24xNDRoc0R1QkM0RlowbmNJdUhwd0NxT1RnUHYzQnU5eFRYWVVWd3g4RDQ1MFpiTjExZEUwNVg1S3BURHJWZS1Tb0JDcTAxT2JpczFHQkRBVjVabWc3TkpfSQ?oc=5",
+   "source": "CNBC",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:15:39Z",
+   "published": "2026-09-16T22:26:57Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
-    "Markets",
-    "Currencies"
+    "Markets"
    ]
   },
   {
-   "title": "US Fed raises interest rates for first time in 3 years, risking Trump’s ire",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdzl2Y08xNlhTM1RINzh2UXJWejJ2c3ZUajZGQ2JFdGliSWlMbE1VSF9FemRkS0FVRjRFbUF0c3FrWmZYV3lwM2xUM3dlS09IUEE1N1BGMHkwaE1FejQtb18xOTExMHJOX3VjZllsRGpiVGZnSklLcUg4MnN2amVCdk9RNVktbi03LVpINVVucW1RNEtnb2VMUkpCalhfckJTUmFFa2NGRlRpMWwxZzd6TDdxVEtmWHgwVmpMZ2JTaDNyUUdlMGVzRURQMUFnM1NNRjJQUENpS0xfZlcwZEwwY9IB4AFBVV95cUxNUHFjbkFuZjJuQjR0R1BhRnNlZEtzdVRRWWhpN3k0ZlRxVk9mRE91VzVha1R1QndMWjZkbnF5UEVZLS01VGk2LWZiaGdEeDB1TnAwWHJYUjM1SXN4VG5uTHFqU0dVOHRURkQtX3FiWEpXWXRwM1ZpbWZvT2wzeDFsREUxX002STNGTDdFbVNPd05fM010SU9NUWpEWHBnb1hhb3pfMWRZZVpuOFB6SzJ5eXJjU08wb2I0bk1DVlJ5T094d1JMMjlUSVJzc2M1azk5eDhXZktJM0dOVFRDNGJvMw?oc=5",
-   "source": "South China Morning Post",
+   "title": "Watch: How will higher interest rates impact US consumers?",
+   "url": "https://www.bbc.co.uk/news/videos/cmx2zw08dvk9o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:15:10Z",
+   "published": "2026-09-16T22:26:10Z",
+   "summary": "The BBC's Samira Hussain looks at the factors considered in the increase by the Federal Reserve and what it could mean for the US economy.",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "As Fed rolls out its first interest-rate hike in 3 years, market braces for more increases",
+   "url": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-16T22:25:00Z",
+   "summary": "The Fed’s policy-making committee was unanimous in its decision to hike, but forward guidance was split.",
+   "categories": [
+    "Central banks & rates",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Federal Reserve unanimously votes to raise interest rates",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZVpfMTVtX051OHA0c2g5UGhxZE5IYW10OXZYLW05djlmUTQ4Tl9zb3RiTTVIeE96Q2lHaDV6X016T2dVbWNsMmJjSUJTWHprRUU4ekd6ZkRNVzJCczlGWFpGS1poY19rQ3F3VkYxM1RIR0VrVHpQWHVteXNZeHJCTlpyNTFtTnFJQW1STklrbVR5TzJBd190X1VtanVUNTJabGZpQmJEbjNtY1NUMGZUSi1PREtCLXpnTmo0ZTlTRQ?oc=5",
+   "source": "CNN",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T22:22:01Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "Federal Reserve hawkish hike sent Gold price lower",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWkFWdjZmNXZTRVpGNThkVEdEcE1iTWFTcVNkSVZaalA1ZnRKWHNWenBqOXlXNEI2VElZbXFjRXlmQnRyYVJmS25XYUhJaGhPb0JtV0NSR0VBUmJTNFVrU3c4MUNRdzk3c0k2S2J2ZHkwc1gwUlF0d196YVdwYldINjYzYXcxVklJS1JIdHh3cDN6NkRUVXF5Qw?oc=5",
-   "source": "FXStreet",
-   "region": "Global",
+   "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
+   "url": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
    "official": false,
-   "published": "2026-09-16T18:14:26Z",
-   "summary": "",
+   "published": "2026-09-16T22:16:00Z",
+   "summary": "The Federal Reserve announced a quarter-percentage-point interest-rate hike Wednesday, to a range of 3.75%-4.0%.",
    "categories": [
-    "Central banks & rates",
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "‘There might be a silver lining’: My friend’s wife died at 60 after a high-earning career. Can he claim her Social Security?",
+   "url": "https://www.marketwatch.com/story/there-might-be-a-silver-lining-my-friends-wife-died-at-60-after-a-high-earning-career-can-he-claim-her-social-security-eb95210a?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-16T22:15:00Z",
+   "summary": "“They had been married for over 30 years when she passed.”",
+   "categories": [
     "Commodities & energy"
    ]
   },
   {
-   "title": "The Federal Reserve hikes to 4% with the 10-year yield at 5%",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOalJvT0FUTmpINE5yN2xLRmg1TVZ0Y1MxandkQmlsS2EwYzZKQlh4cjAyYnVaOEd6Tm10T3BtZ2YwRHprNEZnNUNPR0lybWVMYWRqQ3NVTnk1U0pPVVRaUkpwZk5vclVoWlduSHhKYThGU1NhTlVXQXVxblBaUjZIbzlndVBVTVJ3V01SN2xMS1ZPbHYxTUstem5UdDNqSXZQUTk4?oc=5",
-   "source": "FXStreet",
+   "title": "Generac’s stock soars more than 30% after Amazon deal cements company’s status as an AI power player",
+   "url": "https://www.marketwatch.com/story/generacs-stock-soars-more-than-30-after-amazon-deal-cements-its-status-as-ai-power-player-a842b0dc?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-16T21:56:00Z",
+   "summary": "First deliveries of Generac’s backup power generators are worth $2.4 billion.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Fed rate hike fails to calm troubled markets as Dow falls 600 points. Expect more sharp swings in stocks and bonds.",
+   "url": "https://www.marketwatch.com/story/fed-rate-hike-fails-to-calm-troubled-markets-as-dow-falls-600-points-expect-more-sharp-swings-in-stocks-and-bonds-5ffb55fe?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-16T21:40:00Z",
+   "summary": "Fed Chair Kevin Warsh has sent investors a message: When it comes to tamping down inflation, he means business.",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth",
+    "Markets"
+   ]
+  },
+  {
+   "title": "Business - US Federal Reserve defies Trump with interest rate hike",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRGNpb2tJY2tuZGc2S09tdEdfamZCemRRcjlMb3lVeVRYM0FvRXpkdnlTRElZQjVVWkdlN1UwSjdzekx0VFdpM3NQbHVSVU9DNG45emR5a2F5eGVfOHBBeHpqN1dQRm93OTI2S1JWOXRiSDEtMzEyZnplTlJyd2F5emVTbXNEY0lzOVJv?oc=5",
+   "source": "France 24",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:14:16Z",
+   "published": "2026-09-16T21:38:45Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "US Federal Reserve raises interest rates for first time since 2023 on rising inflation fears",
+   "title": "US Fed raises rates to tackle 'too high' inflation in move sure to rile Trump",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSVFRSjdoempwYVg1bnlXeTEzNEpESXRCT0RhaGQ2UFZ1T1dsRXAyd1BYa1lubFNlUU9QTFdId3RMd0RHTzVsUWR3RGhFaWY3WWVMeUowdzFOVC1Sd1RabklGSk56cXlrTDlzdmVMYXNBZVFxeGpjd3hGR0JxZzV6MTc3eV8tcDFrV2x3Y2hoN1JicnM?oc=5",
+   "source": "afp.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T21:36:54Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "U.S. stocks slip after the Fed raises interest rates, hints more hikes may be on the way",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQ0o4SEFnLXVuc0pFakhWQXNrNVdZOFBqTmZsR3dlMlFFZEluX2VWbEJPOGJkRkZ6a2tfaHZySVdpaVhYZk1aeGZFdjM2UExoOGMxc1BDbkcwUVFMaElEXzBUb2ItX1hmRVkxWjhHanJyV3ppMGJFcjhNY3BVYlZMNFVCemRaSW94Z1hBZy0yNmd3R29KMEppZThtNmxWaERxa3hfZzZ4WU5BV3AzN19xSTY0OEZwQmwzdGVSWC1SNNIBxAFBVV95cUxNQ3ZKZVFHbHpRSEo2cGs4RjlfMG1UdURsamh2Y3ExeEVkZzdmaGQ3OElrd0FpclpvUGQ1MFlKSHZ2VGFOc1hVN3ZmSVc4aGhIY3hvVm5UUlY0emc2bFNyU3ZGU0RFckhMekh6WE5FeklHLU9uUGZNOVZCQWJPdnctcTNJTmpTOGp0Q3ZVUjEzSWROc0V6VE1lY2hLLWNJWUlwTkEwQkJ1SVVtRlZrYlg5QUxoZEZFOFFzMXgwbkNPNzgzdlRa?oc=5",
+   "source": "PBS",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T21:32:36Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Markets"
+   ]
+  },
+  {
+   "title": "US Fed raises interest rates and signals one more this year as inflation risks mount",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZ3lQNXBrVHVHYWxKc3cwdlBvWUFZel9GVGhOMVJWa0tEeHFqb29xaWlUS3lwWXlfVDJ4QzA3ZTVHLU9sRWdsWWdZVWFNZnVzR2NmcUhqZWt4YmphckhVUFRCaHRPTHowRVRwZXFqVnlIeEJTVVo2UF9vYlI2TVlCcXQtOTkycXAxRTBkckxnT0Yzekw4dkN6UzA2MA?oc=5",
    "source": "thenationalnews.com",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:13:06Z",
+   "published": "2026-09-16T21:25:36Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
@@ -1283,25 +1615,12 @@
    ]
   },
   {
-   "title": "US Fed raises interest rates as Kevin Warsh bucks Donald Trump to control inflation",
-   "url": "https://www.livemint.com/economy/us-federal-reserve-interest-rates-kevin-warsh-us-inflation-economy-11789581910559.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T18:11:29Z",
-   "summary": "US Federal Reserve Chair Kevin Warsh joins a unanimous decision by the FOMC to increase interest rates by 25 bps to 3.75-4.00%, pencils in another rate hike later this year.",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Fed Raises Interest Rates For First Time In Three Years As Inflation Stays High—Clashing With Trump",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQS0pqZXhJVnhBM1RtUy1malVmaVl4T2xnQ3NGNk9kemtrNTVQc1pjTTVXRE82QTBlMUlzSGdVQVh0QXQ1S2JQNTNkS0tZS0pzMGJqTExYRWxEZE5lalFzMnhZM0V5Q1Buam9HZGVjSkc0TWgtVlRfNkFBdTRZVXNsYkZ4MjdGYm9mcHdBNEdGVy1MLUxPVTA5SzJ3Yk9qeXliWG5ETFJBV2pTcjA5TU1nMmFhbkp0SmxJdl8xUWNzNE91aHJiLUpBeEF6ZE5SdHRNU1MxWldsSkpVcXFZTm5zOTJYWDVKUQ?oc=5",
-   "source": "Forbes",
+   "title": "Federal Reserve Raises Interest Rates as Inflation Remains Elevated",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV2Zod1IySy01aDBxMzA4Z0F6RnBhUS1lenhFZHk0ekhvOUZCTjdkTGJpRjBMNWdSWEVqbnhBZEtsbDJINF9tQTVldy1XYjdOeWhOM3FaOThiQkpSaWtzalQ3NGRNNkR2Szh3MVJycmRBZ0pKT2puS0dHZlhNNi1MamR1WEdTX0pkVE1RTWNLTWtmNVZvRlhoUU9STnhGS1NGTHdNMTdnM3lpaVRESFFJM3JoQdIBswFBVV95cUxOV2Zod1IySy01aDBxMzA4Z0F6RnBhUS1lenhFZHk0ekhvOUZCTjdkTGJpRjBMNWdSWEVqbnhBZEtsbDJINF9tQTVldy1XYjdOeWhOM3FaOThiQkpSaWtzalQ3NGRNNkR2Szh3MVJycmRBZ0pKT2puS0dHZlhNNi1MamR1WEdTX0pkVE1RTWNLTWtmNVZvRlhoUU9STnhGS1NGTHdNMTdnM3lpaVRESFFJM3JoQQ?oc=5",
+   "source": "ConstructConnect News",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T18:09:58Z",
+   "published": "2026-09-16T21:24:24Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
@@ -1309,448 +1628,139 @@
    ]
   },
   {
-   "title": "The Federal Reserve hikes to 4%, back above Britain's 3.75%",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWkV0LVduTXRwdmxUV1dHN0RLZm44NnBEbFlEWEt0NnZfSERZbGdRWFUycjlnWGtFVUVwdXZyUi1fbFZoRlQ4WmtJWnktazRHRDZOa0hnU3ViT091bmVUM3dQOU9fd1ZfdWlqVXE1TDJ4ZU52NXRRWjMxcE1zR21pQi11bTB6S2htQnFvekJrdm53MzBwbE15RlRDMkR1QQ?oc=5",
-   "source": "FXStreet",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:09:44Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve hikes key interest rate for 1st time in 3 years, defying Trump's demand for cut",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUVBTSTIxeWZCU1RPRjYyRklSeThZWkdZRS1OY3FiSFZNRDlFNEVJSDRYWUktR2x0aWU1OFdEaHR4by1ObGdnZFRCQ0hHOVliRzhiWldQYWFpY3F2cTl0ZW9yeUtkLVVJOEJQX2oxamtUMlZiSlVTUl9kU0VPZF9uU3FveHFwRENITlNZXzhqcUhBa1hRRTZqVnBwSjJiXzJxc2xna3NnTXVQY0dfc3lmSVpxd3BkbUZC?oc=5",
-   "source": "Now Georgia",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:09:33Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Fed raises rates by 25 basis points, signals one more hike this year",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRm5HbHUxaXQ0MEV1SjlrcFphcEkydzVnc2V4SlNkNW5IZk1acEVXTjczbEc0ajVfQzZxN19MbzNPZU5md0U5SngtUW1YRU9pSFp1Mmk1SzRoT2I2U2dWbWV0WktWRW5Ib19sa0F4ZXM5T1F2WmRxODR4SmVwRUYtN1lhMF9pWi1jRW1oSDJhTGE2RUtEeEl1NGJFN3hGTnIxa2dqeTVvXy1hZVpjSkVNaU1TRGtrT2dI0gHLAUFVX3lxTE05WUNGek5RTzVsOU81ZXZWd1luVm51dDY3N0kzTFdXcHBreWNjeVNVU290cENmNkJEdkQ1TVNwSjVwaGZKTThIZUY2UXh3TXUxSTJMa2RnejNaMmh2WTZEdEx4N0I2SkRLTnZnSUpVOXZwUmNMSFI3RXlyUnVhU3J6ZUNfb29ON01yWHdkcHFFc0YzN1haeXdhVW13eUluaVNSX0lLc0o5M3hnZHdFdGxaek9jU2VjUzZIcDg4SUNZdGpDWmJ4RlpxWERV?oc=5",
-   "source": "Gulf News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:09:17Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Warsh: US inflation remains high",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wWWZhMjFUeFFITzBxWm1ZRjZjS0tnbE00bWxvTUVtem0zMEVGVTBYMW1zZG55MjFWQWxweE9rZnoyOWNKZ0hmZnVqMFh1bzBrOGxLOUwxaEZnT1pUYVBPZ0ZObVNYQUVWNzBfZFB1VEZRSUYtVmxTamZuTjLSAYIBQVVfeXFMT2hrOThNRFpobHE3dlZ0YVVjVkljUzFsaWZFUGFydlVWS1Zmb0RIUGJJaEFpOWRlZnJEUDNCckRHbXhGak1CY016dlF3X2N5NHVTeG54djZtMWlLcXNkUDNjVUEyTjlqSzR5aFl2Zm9pN3B4R25ibEVmNU1LWEN2aEthZw?oc=5",
-   "source": "LiveNOW from FOX",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:08:49Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "The Federal Reserve hikes to 4%, six days after the ECB",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOR2I2TFlqcmdLcTRMT0NpLW1qQk1ka0NOZWZ0UFFsZ09qaEd5aS0wbVhaTTFiUkNGR25nc1Y3MFNmeWFlQ0g0YVFHanhIeFZIN3U3eWlXUFZlM2ZQMHZ3YndTZVJtR2xUOE5wdEFmUlZ0bGtOVlRXQUxaYUZlX1J0SExEQzZrSlNpQWNKSWJSdnJBLVNBNmtSQUtNeDM?oc=5",
-   "source": "FXStreet",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:08:49Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Fed raises interest rates for first time in 3 years amid persistent inflation",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQlNKVmxKVlF4eVlBSmpBYVpMN0REVWg0LWJzYTRYdnhIdkV0NzRqcnJfNG4tT1pNZ0hlUk1maVBsaDZqei1HZWFOT1JyS0JFTGU1Tm1oSmNVZzNYbTVkNUJpNGI2YXFjZ2R1WXNwNTVwNEJHMGN2Zmdsak92OTNrQkJFZ3kxeTFpclNBUHZjRzJ4Vmd6elhLeUVxOXM5emxxZlVXSE5ZaTZEMmNzTU5vWkF1ZTVWcEZGVndTb3o0VEk1ZkR1ZlFOQ1hFY2hVNWRwLUw0RUtGdHRlR2410gHkAUFVX3lxTE1EMHdhTjUxeWUxdHZaRVhxa0lXcjNjaW1MbTM1TGdERlZLeW1NZVAyaU0wZE5MT0VzQ21Rb1MzRmQxdFhOdU9UV3FhWS1MSmhkSHNvZFBpY0V1LWMxLW0tdWd0R0NxS3paejdLMEdhZ1ZYbFZWRW9adGxjTnViNFNaN1F6MGE4dG5xak9UMFJMbzhzNWtfbGNUNEpyVUplMmo5aHp4alN2YTZuVUIxTHFjbmh0aUtHTkUxS0hDNk9Tdnh5ZS1LZV9WNjZ2MHdPOXZzeUVVaGtiRS1ETHM2RlVVZGNSXw?oc=5",
-   "source": "NBC Los Angeles",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:06:32Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Federal Reserve raises interest rates to curb inflation despite pressure from Trump",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUlR1TGpXZ3BBaWcwcFhwRDVfVEk3cmRUNGF2akZ2RVlaQm1wd2NlTjFQZjNrTnNyZ1IzTWpvdjQ3cno3Y3lWUUJ2LXJJR29YSTRUNmJhcWFWcUpNS0RSNGJPdm9wT1FpOVJBeFFvSDMyS01neFJJaDUtMnZFMVpKcGVuaVNYQ3h4bTNlRzJBc3M4NV8yNGdhSDA5Z3YxOTN1enRTaEliWkJJR0IzMHRzWkIwUDc2QUtIVDFWSVFXVVVHRG1iZFJ3dFlFSQ?oc=5",
-   "source": "MS NOW",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:05:59Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Fed hikes interest rates for first time in three years in unanimous decision",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZ3BQeHVKV2NMcVROVE90NU9qS3pDMDcwdW9nRVhHS25hN2dLdGUwZ2tDN2wyS045SWxDZmlmNVV3ZXpSQWJXSXVQems5QjBRcGNCVVlvZ1JrUHJ2LXZNcDkxallsX3c0VGY3QjNRRTRzd0l1RmFXYWJ2cVBnM3VkM3l2NXk2aldybGJyeXZVNlZ1clE4dXdicnN3RDBsZmNvdzJjMTFzWldVdS16SGtnWHFtVWFNOHJmb0tvbVd6NEZBRU1kN18yMURUM3l3Y0FCR1lLUTR5Zw?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:04:08Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Fed lifts rates, sees more tightening to check persistent inflation",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPODA4RGg3NjB2S2RnMjBsVDNJS3BqTGRhU3Z2ck1NUXRfQW5KUnVBTnR3aWI0NXFuZ1U1WXUtUmRVdlE3UE5TN0hlTWRBLXRUOHFtdl85dEhoUXFnLTZhZVd3VVhTdjhjVHg4dy1jWjRGWnFmeFFqdXZPZzA5NGgxSjRkQktWbW9INlZ1SEoxcElwQ1A0WWVvaldMdXZpZktsd0lqZkVia25vS0FMZE5yamNoMkVvM2lKMkpCUFlkMA?oc=5",
-   "source": "AFR",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:04:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "US Federal Reserve makes interest rate decision",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNmR2ckJJUnF5UnJxNndZdE5XTG1HZ1FRbFRRZ0VTZFFZNmtxdDZpbkFUUEIyTmxITEljTlJDWG1pQ3hhUzF1ZjhrNVZ6WGNXcXYzNW5ISmItNVFrNXNVdmF1alhybl9tNDJmeWp6Z0hmeHVJOTVWTmg5djRKcmN2NXBKMWMtSGhmc0I4UU1JMGRydkt5UndHLXJwb3JuRkViczJEX21tTTBWNHJaOXlXSEliaw?oc=5",
-   "source": "Wealth Professional",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:02:04Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "US Federal Reserve chair Kevin Warsh-led FOMC hikes interest rate to 3.75-4% range; first time since 2023",
-   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQcEpXMWRxQm0tVjRGS24zTEwxWGNYa3pvWGZRcmlhbDF6TTFBN1ZrWXppOGVHaWR1c1BLZnoyalcxZXRwdDcxMGJscWtqVDRCRGdwVjRlNnB1Tk9tR2lMeW83elB2VVVhTGRtblNCMFlaR2VPc2tuQUVReXY5UDdCc0VudG5sd1BqVFBVemVLNlRsMDdZbHk2V1BwZ05sX0VvQ2tqQXJzV2djcFpoaENjNHNhXzFhTUxFZUs5UGE0SXN0VFc5R1E4VW5VMzBKVDBJMFZXSWxwZE93MXVVMGVFMmtEY05xSjkwR2ZyUmk2cmRObjdnSlgtZE5pVkZJNVIxTHQ2ajkzYnBCQXJoR1NvdndCLUFCek9sRUh0ZzRXSnFvbVXSAagCQVVfeXFMT0E5bENZOUFtcnM4UkthQkVyZkpzT0hXSkZQV0Q2QUQxR1lyc09wazZDaDNBcm1PeDRHMHNTZzhZZmFYc3E0R0QxZzdJcW50QkFpNHRIZzlmdkhMOU52OUxBR2hOSUh0MEpSYTVqV0ZpRWpxNUJlcFpYaTNMYm5MdTRvMVBMOUI3MWZmZTY2SDhsU1pHU3U2TFNMcDdDelc3TUkzV2FuT0V0am9aRlcxb2hpTVBnRVNSc0RyWnVYd2tPZEhfY1haNlB3ZGpFUGd5bnBOUXAtUXRvbDExSWcwQURaR1hZdk40TzVVQ2VQZkRzNFExWVZ2OF9uTXZnYUFUOGtEaUdWblczZmdBZk9pU2RYdmdvRi12WTlKbWFoR2RaX0ZfRGYzNEo?oc=5",
-   "source": "The Times of India",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:02:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Fed raises rates: What it means for your credit cards, mortgages, savings accounts and auto loans",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNM3BpOUtrNUtaaHQ1TGtGczdqZTNwcDhZRW14UHpzRkN1TTJweWdpbFNXT3QxSzBjX0RhakozV1FZcmpiSFFmX1UzeG9xczJudm5GeEkxblhvc3JFb09jYXNURDFyNTR1ZnlBM2p0Ri1tekNpUDhJVG5KTnJvQVJLclVlSnQzWUpsRUR1SHY4eGvSAZYBQVVfeXFMUHhBalNuXzlpdFd3UWRGRXZYQU9wbjJCTGQwUlBCbTJIbHhBRzZscWpDRnh5SFNoOGVkeXhMNDhGbWxkY3k5dXlMSFRSbjJKdkloNjVnVmU0WFJFalVZQkxUSThzb1l1b0lHd2pKdnZLOXc4OVFNQkhsUC1jQmVtTzQwN3pJMEQzc3VtNzQ2MDZnUFlnaVNR?oc=5",
-   "source": "cnbc.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:01:45Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "A 25 bps hike: US Federal Reserve raises interest rates for first time since 2023",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/a-25-bps-hike-us-federal-reserve-raises-interest-rates-for-first-time-since-2023/articleshow/134293809.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-16T18:01:38Z",
-   "summary": "The US Federal Reserve increased interest rates by twenty-five basis points on Wednesday. This move aims to control inflation that remains significantly above the central bank's target. Consumer inflation stayed at three point four percent",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Fed hikes interest rates by quarter point",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE10WjRJZFk4cWQyZWF6YjdVVlZ3SEZXdUExTGczbHFBcTUwR1Ffa1B3TjJ3c0NNTlVsOWlaRXlkb25VMHpOeVVaU0lvRWhvVmdvT3F3cDRFNTIwcnNvV3JVN3hycmFhT1BKVmtDbmhmZ3bSAXZBVV95cUxPZk04U2xfdlBMdnl6b1h3a1otVVc4aVJIUEZ3bDZ0NnZ4TnlEcEphdE1vU05tZVhLc1QtNFFDMVBRMjdDSGNOTlVqdDUzc3ZxazRIcU9RUDZ6M0p5cWplZUNoWGxUWTFSMGpKd3dGWDlpd3J2aTNR?oc=5",
-   "source": "The Hill",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:01:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "US Fed raises interest rate by 25 bps for first time since 2023 as inflation keeps pressure on Warsh",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOaU40WlJPdmh2bEFsLXNuUWJ4YUcyMWhaN3RvSEhtcmptQ1JaUjJ4cWdTaDNYb3o5WlRyamt5YUN0SEhXanRxWlJQdlY4MVpjU004aW9ELVQ2LU1lbnRDeUd2R004ZGRrNzJUVGM3aHV6MFktMFA4c1Q4Yy03d1BzZHNhTGhZenZ0WWhkVG1SVEl4ODN1aVktYmRhQzc0aDVKNGJqdDRpOUVQNmNEdmhQNFN1RzlOV3VXV3FWZHlFNmJJWWlXLTc4VTdieEpTMU13ZFp2NkczeEo1SGZXMEhKVG5PONIB6AFBVV95cUxQZElzYmJ3MVVaZzNRWnV0cnZMY1ZxYkNaamlVNlVsVkVUeXhMZm1oYnBhUG1FR3ZEX2pMa0Y5cEhFc0UxRkV0NUVDV2xHS1lyVmdXRl9KNF95S2Z5al9waW1lanBLMVE2b3V0TXFyNnpLdHd2a3FiV2twZmRpaGVDU2NvMk1tQlYxZWE5LU5NUEVDMjJlVzM5TXBJcmloOFdWUEItUGQtOVRsdXZ3NVlyNU0xYnJfT0hINURVa3dQcEZ6cWJVOTQ3QmIyOEVtUkRiOW5QQ2NUOXlTWHNlNHV4WnQ2WlZLck42?oc=5",
-   "source": "Firstpost",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:00:49Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Key Takeaways From Fed Decision to Raise Interest Rates",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa2RlWUd3LTlsVnAtWXZTVVc2WnZtME1KWThQN2FiVjZBaXZHMkh6MXduSVNyUHlYYjlZb1ctU2hkVWtjQlBwMjdHdDlobGM2U1pkTlRUdU9zYTFyZktDSDRoVEwwTlJlaFFaY3lSeVcxT3ZzMFZKOFBKa2FSTTQxcGRCSjRFemtmQ2kxcUdNWXR1WHFpTHlwd0dMcWxwWTZDUTFsaGhoaHVUZw?oc=5",
-   "source": "Bloomberg.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T18:00:01Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve issues FOMC statement",
-   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-   "source": "US Federal Reserve",
-   "region": "US",
-   "official": true,
-   "published": "2026-09-16T18:00:00Z",
-   "summary": "Federal Reserve issues FOMC statement",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
-   "source": "US Federal Reserve",
-   "region": "US",
-   "official": true,
-   "published": "2026-09-16T18:00:00Z",
-   "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "'Science fiction': Transport companies — the backbone of economy — are sounding alarm on fuel prices",
-   "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
-   "source": "CNBC Economy",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:50:28Z",
-   "summary": "Prices for diesel, the fuel type used to power trucks and trains, came in at an all-time high of $6.31 per gallon on Wednesday.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Pentagon CTO says U.S. government shouldn't take stakes in tech giants, questions adding AI rules",
-   "url": "https://www.cnbc.com/2026/09/16/emil-michael-ai-regulation-trump.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:50:00Z",
-   "summary": "President Donald Trump has angrily pushed back on the calls from industry and lawmakers for an AI slowdown or greater regulation.",
-   "categories": [
-    "Inflation & growth",
-    "Regulation"
-   ]
-  },
-  {
-   "title": "Federal Reserve hikes interest rates for first time since 2023 amid stubborn inflation",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTkNGQWZwRUllRWhwM29vZGhCd0Z1TjVzSGtnUXZibzlBNnNNX0hobXRaempWb1k1bndFR0xaTk5yTllrRWFWQk00b3NDYVhQTDI2bUZWQW0xV3lCeUNuOFhEaVVQdnJGc3ZCQUY3MzN3ZWpqb3A1ZG1HT2dMNGdieEw0R0ZsZ2pYTlJMOVdMeVhkVFFWQ2o40gGcAUFVX3lxTE5zT2pObGszWGx6dXo3VjdyQnlDN0U2N1ROcFp1NW81amlLVGJ2b3Nmb19Ca2RxcVpISHdhdTdfdXppX1JJV2RUTEwyYm9MdDRucDdMNEY5Y1M5d1IweWZSbUVseGYydldTNm91OWVVdDFvT1BJQUVXa0lpLTY4OUwtVTUwUHZBWlNQaDN2VW9kSzFmSGQ1bWtzT001bA?oc=5",
-   "source": "Fox Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:45:59Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Don’t back down on pledge to put water firms under public control, Burnham told",
-   "url": "https://www.theguardian.com/business/2026/sep/16/mayors-and-other-local-leaders-could-be-given-powers-to-oversee-water-firms",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:43:31Z",
-   "summary": "Key allies of PM issue warning as details emerge of his plan to give mayors powers to oversee water companies Key allies of Andy Burnham have warned the prime minister not to back down over his promises to put water companies under public c",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Amazon raises starting pay to $20 an hour and adds Whole Foods discount",
-   "url": "https://www.theguardian.com/technology/2026/sep/16/amazon-minimum-wage-whole-foods-benefit",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:43:05Z",
-   "summary": "Wage increase brings Amazon’s US minimum pay in line with Costco and includes new grocery discount benefit Amazon has raised its minimum wage in the US to $20 an hour, with average pay at the company reaching $24 an hour, according to the c",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household",
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
-   "source": "CNBC Economy",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:32:22Z",
-   "summary": "Rising oil prices and Treasury yields are lifting energy and borrowing costs for U.S. households, pushing consumers to draw more heavily on savings.",
-   "categories": [
-    "Central banks & rates",
-    "Commodities & energy",
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Federal Reserve Chair Warsh Holds News Conference on Interest Rates - c-span.org",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYklTYm91SU1CREwzYUtqSFN5MG15M0lvUnpVY3NfcmF3R3gzb25zVHVQSU1LbF9tdFlHWllhN2FqV0dNdW02aVJGUG9yV2FGTnk3dVZkRTVIRjVxMnNiV19OaVJwSkw3eU1Qb2hzV3djZ0xOa1NBeU13X0hoQjJvMjRLQ3ZrZzBDeHNQYl9wc1BtS18zeG90T0hPYlFGbkNTYmlmcGNuczQ3dFA3R2pNSV9uajdBbXZ1RUk0?oc=5",
-   "source": "Google News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:30:51Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "The data-center backlash is so fierce that Republican candidates are willing to cross Trump",
-   "url": "https://www.marketwatch.com/story/the-data-center-backlash-is-so-fierce-that-republican-candidates-are-willing-to-cross-trump-9a6eaa03?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T17:30:00Z",
-   "summary": "President Trump has been a vocal supporter of data centers, but GOP candidates in tight midterm races are increasingly taking a different tack.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "After Talking the Talk on Inflation, Fed’s Warsh May Be Made to Walk",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWmVpaXFKdm1mdkQySmR3OFFOQlg1NjkxZnBKQm9nWnpKck5EM1BaQUpfWjJLUm1oN3UtQmQwNnZGelpJMWNTNjZUaXRMbTBSSGJfRHA0MnV1c3RjUERGRDNSYzkzV1UzQ1AxSWZCN1JTUzJZT2ZlVnV4ZzJjSV9MMnhEdkJwNlVjZ1BDY2lqdEdsaWNHdEtxV2RDSElFYl9Wdnl2ZFBLb044T0tOVFVXbEN6dnpTX1pYT3d4a3pR?oc=5",
-   "source": "Bloomberg.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T17:07:41Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "My son has a potentially fatal genetic disease. What should I do with my $1.3 million estate?",
-   "url": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-16T17:00:00Z",
-   "summary": "“He is also the sole beneficiary of my 403(b) accounts.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Euro steadies near $1.1535 as markets brace for Federal Reserve decision and ECB inflation warnings",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOM3FpYVJLWjlLekRNejFrdGVwZ1ZGclJZQkt4bDRDTV9SNU5GRzkxMnRsYVkxUElYQlMtLWc2STFheXVqenBaSjZCYWtFMVVvMlVzWml4aXZsRW1iTllhRDBRaDZZYzltUGpjcm1LZk5yNGE4Q2xaZllEZENvT1BQWEtqWHBjb2IzMlRhM3l0NVFHQ29lNlF0OXJpS0tOQ2doOHZTeTBzcmNhYjFWb0d4blEyalZrc0pGMVd1cklmTHE5aFVkYjNMUF9VcjNfZHlBd2pEMnoxMnVpbUtDSjJj?oc=5",
-   "source": "VT Markets",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T16:48:08Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth",
-    "Currencies"
-   ]
-  },
-  {
-   "title": "Mysterious trader moves $122 million ahead of Fed's 2 p.m. decision",
-   "url": "https://finance.yahoo.com/markets/crypto/articles/mysterious-trader-moves-122-million-164740089.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T16:47:40Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "The FOMC is Expected to Hike Interest Rates This Week. Here’s Why It May Not Help Bring Down Inflation",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWjNWLVJ2MHFOX2xoZGo4TFdETnE1TWIwY1FqbWE5UjNkRWVUeVBZNUpSemJNTng5VlFfSktqUk5yR19YbDJMVG81eE5HWWpnbFZQbmVqWnowOXFoV1IyRXNqaTJ2anhveEw5VUVtVVM3V0c5TXZnamw3NTJuMmxpSmpJT3BoYV9aWG5aNGl5MGRUa2k3cFBmSHlPNEFSSEk?oc=5",
-   "source": "Investopedia",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-16T16:28:52Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Senate is still a toss-up, but Democrats now have slight edge, prediction market traders think",
-   "url": "https://www.cnbc.com/2026/09/16/prediction-markets-say-democrats-are-slightly-favored-to-win-senate.html",
+   "title": "Here are five key takeaways from Wednesday's Fed rate hike",
+   "url": "https://www.cnbc.com/2026/09/16/here-are-five-key-takeaways-from-wednesdays-fed-rate-hike.html",
    "source": "CNBC Finance",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T16:26:41Z",
-   "summary": "Traders on both Kalshi and Polymarket see Democrats with one of their best chances to flip the U.S. Senate since the contracts on the election opened.",
+   "published": "2026-09-16T21:23:51Z",
+   "summary": "The Fed on Wednesday delivered a much-expected interest rate hike.",
    "categories": [
-    "Geopolitics & trade"
+    "Central banks & rates"
    ]
   },
   {
-   "title": "US Federal Reserve meeting today: When and where to watch Kevin Warsh's Speech? Here's what to expect | Hindustan Times",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPVjJwSlJKNVUtY0w2WlRaTGpPMldGNk9Oc2NWMzdYTFc3S3F4X2RWaXpNeEZQQlVKekpqVmV6c1A4ZkFteWV6SVQ5a25ySnJpZUtnamhweXZkTnk2OUtWbUtQU0wwNG1DOGUzZUJBVmFPXzA3LUpHdHQ2azZRXzZ5RVI3a3hOdGdRRjBrSzlhb2ktQ3ZFNmpzMm1JUE4yRnhXQ2psS0E4NnY1UXVKR2l1UmtLOWVLQXN4YVl3T1duRFloMnpOYlluQkpXX0JCdUN1dTRvcXQtRl93VHk1Tk1ldFpaN09USXhuTTI0VzVnQWlhRUlNLUFoUkVFNUxwY0s0NmxV0gGIAkFVX3lxTE9qOWZlYXR0ZlgyLVhrVmp3eXYyY0NaRUEtMjhRZktKb00yRUw5eXd5d0czNENOT3NRejhlSlVTWERBR2hfOHhXdjA0RHNHVjRKdVNMSWE2NU1kQ1BkbXdCS0M3eXppWGxrZjJ0cGFKSTZvc1VOUF9HMnlpREh2UmxtZmlyMlZhb2I0cU93MXcwZks3N2k4TDVFMWlNazZyVV9MZlZkTWNFSkxoYnpKM2M1cGhjbnB0RlV4OW1kZGxzaXhyU2FqdGJhUkF6cWNTQ0pDTEwyM2hkS2djaF83OUxLUUtlUGQ3SWxQRjAtY1FHcW0xQlp4clNpbjFKdTBzQ2lFekZITGdvaA?oc=5",
-   "source": "Hindustan Times",
+   "title": "COMMENTARY: Trading Day: Lift off!",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRnVEVW9JZ2tKNmNES3RWYUlXTjJhOVFad0JhMjJXM1JsbHJwTVpUNmltQ3l3Z1dLclFEOTkwNXQwVG1mZjFwRE1lcjZDWl90VF83YkllMElYRU1aNXhWYVQyZWlENERVa2xRNmNLR1pOMmx5ZnZfUVNqSTBXT0VYdm9ocEtESEVPRHpsVFoyVVJaMnVTYlpBMm1RdkdDZ2VkQ2htYmpB?oc=5",
+   "source": "Reuters",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T16:25:28Z",
+   "published": "2026-09-16T21:18:04Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump offers fiery response to Federal Reserve rate hike",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNREJYYUpwQi1LREE0OFNCVUZZcnhRTGxzNXVFc1hSYjdCSmtnRWF5NFk3dUR6Q2xoT2xfQzRLLXVFY24tUXljQ0dWaFB5UlFCNnZQRU5TbXhyWS1xSXZScXY2ckRxNThCV193dGRQbTdpQzZBdnc3T1R2LXRrVElzdEl4cjdiZXh1QW1INENOaWNteVhobzZYMndR0gGfAUFVX3lxTFBfYnViN0FUQVY1U2oxRGpLOEd1VkZ6WDZ0NFdub3VvdTVuandDNms1TVJtNzgwMUNCVE9fbmtxZk9MZ2YydGNzc1czMERXX2JCbUpwY0hIeEdIblJpTS1jNFZwQ1dDU19JWDVnZmJyam9PZDB3ajRLWkk3M085Ym9vSFdycmJEX1UwZm1tM1JpX1ZvWVZOWWxzc0JscFZIOA?oc=5",
+   "source": "The Hill",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T21:08:00Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "Classic budgeting rules don’t work anymore — even if your household makes $100,000. Here’s what does.",
-   "url": "https://www.marketwatch.com/story/classic-budgeting-rules-dont-work-anymore-even-if-your-household-makes-100-000-heres-what-does-cfb235a8?mod=mw_rss_topstories",
+   "title": "Fed approves interest rate hike, signals one more to come this year",
+   "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+   "source": "CNBC Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T21:07:51Z",
+   "summary": "The Federal Reserve on Wednesday approved its first interest rate hike since 2023 and indicated another to come.",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Fed raises interest rates for first time since 2023, defying Trump as inflation mounts",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaHFvTUxpaHU4XzFTTkx6bkQxb19mNkF3WjVwQ1FMZjVkaXRPMzZmdDFCZVNKU0RJSDNpUWR1TmxFWWkyUWxfUnl1aUs5SGRKYzU1eDgtUzR5cUZsX044M0E0T2VBenRKZUJOTk5Dc2FDbFhtRlpyenBmRk8wVjRERUFCbGpoM214OUE?oc=5",
+   "source": "NBC News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T21:03:41Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Federal Reserve defies Donald Trump with first rate rise since 2023",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObGlaZWZiUnk4ZEtqVHhEajVUNnhRd2dNOE85TTQ5SlpJV3p4WjZNd2lDTjVlWmphd0ZpOU5qd2ZQN29HY2FLd0dfOVBvckdIRzVGa1NsLUhLRlNaLVNCZG53UExDa2dxOWpGNW5ab21TQVNzU0h6X1NHMDltd1g0eUpHTTI?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T20:59:14Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Why optical stocks Lumentum and Coherent were the day’s biggest S&P 500 gainers",
+   "url": "https://www.marketwatch.com/story/why-optical-stocks-lumentum-and-coherent-were-the-days-biggest-gainers-051af440?mod=mw_rss_topstories",
    "source": "MarketWatch",
    "region": "US",
    "official": false,
-   "published": "2026-09-16T16:24:00Z",
-   "summary": "Spending guidelines designed to put diligent consumers in a solid financial position may not set them up to succeed in today’s economy.",
+   "published": "2026-09-16T20:52:00Z",
+   "summary": "Investors are looking further down the AI data-center supply chain for signs of demand amid concerns of a spending slowdown, one expert says.",
    "categories": [
-    "Regulation"
+    "Inflation & growth",
+    "Markets",
+    "Geopolitics & trade"
    ]
   },
   {
-   "title": "Pension peril: is it time to unpick the triple lock? | Letters",
-   "url": "https://www.theguardian.com/money/2026/sep/16/pension-peril-is-it-time-to-unpick-the-triple-lock",
-   "source": "The Guardian",
+   "title": "U.S. Stocks Fall After Fed Rate Increase",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONzlDTWMtUEI0WmthSXloUDV3emx6WThIXzg1M2lCMEI0ektFSmZMR0VZNk9FZmIyVUc4MHJDX1o2NDBDbUo0NXBlRVplRUJ0UUVtcndzOWNRaXpLd3RwY3VmM0RXdTRMUDlJbzFUZ1ozWFE2MVVnc21hOHFqc1RXZE4xTUl5V09SSFlV?oc=5",
+   "source": "WSJ",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T16:16:23Z",
-   "summary": "Readers are divided on whether the triple lock should stay or go The article about whether the pensions triple lock should be ditched omits several key facts ( ‘Costing billions’: is the pensions triple lock a lifeline or simply unaffordabl",
+   "published": "2026-09-16T20:46:00Z",
+   "summary": "",
    "categories": [
+    "Central banks & rates",
     "Markets"
    ]
   },
   {
-   "title": "House set to pass sweeping Russia sanctions bill honoring Lindsey Graham",
-   "url": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
-   "source": "CNBC International",
+   "title": "Trump says he still has confidence in Fed Chair Warsh, demands 1% or lower interest rates",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBzYXVXRVNMRmFVMkVqeGJMLVhsQklJNlVTOU4yN09nMVJMcXozWmJRUUFORlpzTTdBWHB2dU1aS1pGRkY0cWpBc3FjV1RaV3h1ZzdnbVVKQXNiVjBvY1NGYWFwRkdrQ2R6c3hyRjlGbzB6TXV10gF6QVVfeXFMTzlzVC1yMDVCc3UwVld5bEpIbm04VWx4Q3JYR1c4NVZDXy1YUElET05SNG82TVJnVUcydVo3UHozTHBXRDNQcm05YTRCOEo2M3BjTHUycko0MUZteEJzU0NRM2RsdWpJRkt0aU8weS1LRjhhVzdncWxiQXc?oc=5",
+   "source": "CNBC",
    "region": "Global",
    "official": false,
-   "published": "2026-09-16T16:08:39Z",
-   "summary": "The Lindsey Graham Russia sanctions bill is on a path to become law after the House votes in favor.",
+   "published": "2026-09-16T20:45:38Z",
+   "summary": "",
    "categories": [
-    "Markets"
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump lashes out at Fed after Warsh backs rate hike",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ09wMmRRbG83OVR3anZpSGk2VGxLdFRXVFpiMHRDcVZTSldiNTNBNUZlckZlR2k2dEY0Q2F4TFVEdzJ1aC12Z3hacGoyWWkwZjlDNWE4ZGpPejU0V1hVazhVRktwampUZTlkdEpRZWhySlFMZnVTUEtlbVU3T3RUS1hjaFJGcHdMSXMwRERiazVqbTBxOXJlMkVR?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-16T20:44:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Here’s a sneaky way to play the Fed’s rate increase",
+   "url": "https://www.marketwatch.com/story/heres-a-sneaky-way-to-play-the-feds-rate-increase-6deb072f?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-16T20:38:00Z",
+   "summary": "But watch out for the pitfalls.",
+   "categories": [
+    "Central banks & rates"
    ]
   }
  ]
