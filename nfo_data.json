@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-17T20:29:13Z",
+ "generated": "2026-09-18T07:33:45Z",
  "source": "https://www.amfiindia.com/api/sif-nfo",
  "note": "AMFI publishes the open-NFO list without dates. first_seen/last_seen are the dates SIFintel observed each offer on that list; launched_on is the scheme's first published NAV.",
  "open_count": 1,
@@ -12,7 +12,7 @@
    "scheme_id": "S-34",
    "sif_id": "47",
    "first_seen": "2026-09-09",
-   "last_seen": "2026-09-17",
+   "last_seen": "2026-09-18",
    "status": "open",
    "launched_on": null
   },
