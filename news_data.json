@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T20:14:55Z",
+ "generated": "2026-09-21T21:10:53Z",
  "refresh_seconds": 1800,
  "count": 140,
  "sources_ok": [
@@ -24,13 +24,74 @@
  "sources_failed": [],
  "items": [
   {
-   "title": "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally",
-   "url": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html",
+   "title": "Meta's Muse personal AI agent tops ChatGPT, Grok and Claude for post-launch downloads",
+   "url": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
    "source": "CNBC International",
    "region": "Global",
    "official": false,
-   "published": "2026-09-21T20:04:45Z",
-   "summary": "AMD has had a monster 2026 with the stock up more than 180% so far.",
+   "published": "2026-09-21T21:06:53Z",
+   "summary": "Meta's Muse AI personal agent tool had 730,000 downloads over the roughly five days after its launch.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Paramount settles lawsuit with US states, clearing way for $110bn merger with Warner Bros",
+   "url": "https://www.bbc.co.uk/news/articles/cm4gjr1qepr8o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T21:06:26Z",
+   "summary": "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company.",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "These beaten-down stocks could bounce back in January, if history is any guide",
+   "url": "https://www.marketwatch.com/story/these-beaten-down-stocks-could-bounce-back-in-january-if-history-is-any-guide-865a3f6b?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-21T21:06:00Z",
+   "summary": "Tax-loss selling is likely to lead these 20 stocks to become artificially depressed in the fourth quarter — and therefore good bets to bounce back in the new year",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Fed official warns inflation is still too high",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOemZaRF94RUxqaGVkSHhxTjRENERhMTlsTWgwX21ZLUUwcmVscHZpNnM2MmFzWWtlVjJsWF9RZ2N4NEpqSWVLeGZqTTZybEpRM1BXeFFUakhHLWE2QnBHLW5YZTRsaFB4cWYzVHdldlZZYlFQRHM1TWF1TGxxdU1FM25sMDFKT0c1M1NVdGt0YXpqdF9JTERjQ1VsR001bnNTQVN30gGoAUFVX3lxTE81N3FPcDBDaGNjcU5uWUdpeHdqaUY3b2hUd2c1SHM4YWVMYnBmVENYWFl0VUlGNU5Bc2k3TXY1VFVfOUZSMUdGMExzNms5dTZ4YmJyVzVEOTEtLUJsSFNlalJVSVEtWmhfaFFtSEJvcTFwYWhnanl6bnJpZktsWldfc0luQzI0b2Y5Ul91UWpIbFpUVVVxMkQ5WGluSzlnMmNTWm9lQXUweA?oc=5",
+   "source": "The Hill",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T21:02:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "‘She says it’s just money’: My friend pays for everything. I should be grateful, but I can’t stand her anymore.",
+   "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-21T21:00:00Z",
+   "summary": "“On each of these weekends away, she’s probably spending $500.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Georgia Power, Google strike nuclear uprate deal worth $900M",
+   "url": "https://www.investing.com/news/company-news/georgia-power-google-strike-nuclear-uprate-deal-worth-900m-93CH-4909647",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:56:30Z",
+   "summary": "",
    "categories": [
     "Markets"
    ]
@@ -41,10 +102,204 @@
    "source": "CNBC International",
    "region": "Global",
    "official": false,
-   "published": "2026-09-21T20:02:48Z",
+   "published": "2026-09-21T20:55:06Z",
    "summary": "Treasury yields were lower on Monday following last week's interest rate bonanza.",
    "categories": [
     "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Nasdaq hits record high as chipmakers fuel stock gains",
+   "url": "https://www.investing.com/news/stock-market-news/tech-leads-shares-higher-in-asia-oil-eases-4908206",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:54:46Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump administration proposes $5 billion to kickstart investment fund to rebuild gulf energy sites, WSJ reports",
+   "url": "https://www.investing.com/news/stock-market-news/trump-administration-proposes-5-billion-to-kickstart-investment-fund-to-rebuild-gulf-energy-sites-wsj-reports-4909556",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:54:46Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Texas Gov. Abbott halts all state-issued permits for data centers until grid audit is complete",
+   "url": "https://www.investing.com/news/commodities-news/texas-gov-abbott-halts-all-stateissued-permits-for-data-centers-until-grid-audit-is-complete-4909646",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:54:30Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Stifel initiates Rush Street Interactive stock with buy rating",
+   "url": "https://www.investing.com/news/analyst-ratings/stifel-initiates-rush-street-interactive-stock-with-buy-rating-93CH-4909644",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:52:42Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Travere Therapeutics stock falls amid CEO transition news",
+   "url": "https://www.investing.com/news/stock-market-news/travere-therapeutics-stock-falls-amid-ceo-transition-news-93CH-4909642",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:51:49Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "OpenAI proposes development of global AI standards to guide alignment, RSI",
+   "url": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:51:11Z",
+   "summary": "Jacob Coxon's post nearly two weeks ago that Anthropic and OpenAI were \"gambling with our lives\" set off a global debate about AI safety.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "First Internet Bancorp declares $0.06 quarterly dividend",
+   "url": "https://www.investing.com/news/company-news/first-internet-bancorp-declares-006-quarterly-dividend-93CH-4909640",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:48:34Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Texas halts data center permits pending grid audit",
+   "url": "https://www.investing.com/news/economy-news/texas-halts-data-center-permits-pending-grid-audit-93CH-4909639",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:48:30Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "PACS Group stock rises amid legal chief appointment",
+   "url": "https://www.investing.com/news/stock-market-news/pacs-group-stock-rises-amid-legal-chief-appointment-93CH-4909638",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:47:51Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Airlines urge action after UK flights delayed and cancelled again",
+   "url": "https://www.theguardian.com/world/2026/sep/21/uk-airports-air-traffic-control-flights-cancelled-delays-nats-prestwick",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:45:05Z",
+   "summary": "Nats says fault at Prestwick has been ‘fixed’ after airports in Scotland, northern England and Northern Ireland are hit Airlines have called for “action and accountability” over the UK’s air traffic control services after a technical issue",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Federal Reserve official says fighting inflation likely to be 'painful'",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQ1BTdWtDc1BvWk9vN2lqZ2VfUlhQYzNmU3lGa3EyR3NURmlKenNuRmd4WkdiZUJ3cC1DbHA2NGh6RUN2Z2Z1NmtLU2Z1bHhOUGVzVUsxM1hSVVBhdWg5cWNHYVlUX3ZWUjU5NkZBNlJiNC1KVGZtQUV4TjBTVVBqUHgwYXVvUk9pRS00TEVKSDFrbjNkOXd4bXpMMGI0RzlVaG82aUFyMG5lN1RqbnNraFU5NnpaRWZIQldMLQ?oc=5",
+   "source": "livingstonenterprise.net",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:44:11Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Higher interest rates hit your bottom line: What farmers need to know",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSW1NbEl0cjdoamJzZlpZN0xPZ1NjTV9DQ2t5cEpXdGh6M3dSSmNKMHpMdl9CRGRGV2Z2ZXVDQTR6NnMwUWl4cTdpRHlTM3NTdDZ2aEN5OWRweWFvTXlKUEI3b3BrN2NCc2RCdGRTcUUxbmVpRHhGX2VtY1NqZElvLU44c0pwMndaMnlteVBMYVpodTFuSWhlanhxZlMzZmpyUUVxU0ZBak1Ea0t6TW9mUg?oc=5",
+   "source": "Farm Progress",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:35:37Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Federal Reserve official says Iran war pushed her toward supporting rate hike",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPRVpNY2tFR2J4SmxzeXFBUWRQZ3dTelhBd1c1NmszSjJmcGZkNjlUOXNGUnFtazhFY09VYmxkTE1TSjhqcFV5Zlc2YXFRUEx4aG1PdGExSEdLZW9fYnowdzlyYjNBdGkzZTJrOFFIY3JoTU8zRG1IcmZqNFNya3U4N1BqTllZMm1ndjRWdlZVZTdGMWFCTFhMT1BRaXVtM040blFyaGROVERPck9ZRFU5MlhENnJIRkIwUGNHYmMyOGFDN3JWekxfOVRWUmxQM1FsRkJFNW44UkNndmJEc0gwd1VjSWdkalhjMDNHTkhNVUo0M2pPSFJ0U3BQS2ZkdTZBSlZF?oc=5",
+   "source": "Goshen News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:26:55Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Trump media ban lawsuit set for Wednesday court hearing",
+   "url": "https://www.cnbc.com/2026/09/21/trump-lawsuit-white-house-ban-ms-now-cnn-politico.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:24:40Z",
+   "summary": "President Donald Trump said he banned the three media outlets because of what he called \"cumulative stories,\" saying, \"You get sick of it.\"",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Novo Nordisk’s stock tumbles as doubts persist about Ozempic maker’s strategy",
+   "url": "https://www.marketwatch.com/story/novo-nordisk-stock-tumbles-as-ozempic-maker-sets-out-2030-goals-8a5a8d2d?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-21T20:23:00Z",
+   "summary": "The drugmaker, best known for developing weight-loss and diabetes drugs, failed to excite investors hoping for a turnaround.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Amazon and Shopify make starkly different moves in the brewing battle over AI shopping",
+   "url": "https://www.marketwatch.com/story/amazon-and-shopify-make-starkly-different-moves-in-the-brewing-battle-over-ai-shopping-4e00618b?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-21T20:22:00Z",
+   "summary": "While Amazon is shutting out Meta’s Muse, Shopify is partnering on payment technology with the buzzy AI assistant.",
+   "categories": [
+    "Markets"
    ]
   },
   {
@@ -53,8 +308,94 @@
    "source": "BBC Business",
    "region": "Global",
    "official": false,
-   "published": "2026-09-21T20:02:24Z",
+   "published": "2026-09-21T20:21:18Z",
    "summary": "Prime Minister Andy Burnham said further issues today \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "AMD hits a major milestone as AI stocks blaze higher",
+   "url": "https://www.marketwatch.com/story/amd-hits-with-a-major-milestone-as-ai-stocks-blaze-higher-7bb366df?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-21T20:19:00Z",
+   "summary": "On an intraday basis, AMD became the 14th U.S. company to see its market capitalization top $1 trillion.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "As the S&P 500 nears a new record high, there are cracks below the surface",
+   "url": "https://www.marketwatch.com/story/as-the-s-p-500-nears-a-new-record-high-there-are-cracks-below-the-surface-6df3e90d?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-21T20:19:00Z",
+   "summary": "About 60% of the stocks in the S&P 500 are down more than 20% from their all-time highs.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Moderna will reveal the data for its mRNA cancer vaccine next month. Here’s why it matters.",
+   "url": "https://www.marketwatch.com/story/moderna-will-reveal-the-data-for-its-mrna-cancer-vaccine-next-month-heres-why-it-matters-4470a558?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-09-21T20:19:00Z",
+   "summary": "One reason that analysts and doctors want to see the data is to better understand how well the personalized treatment works.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "White House TV pool suspends coverage of Trump after ban of CNN",
+   "url": "https://www.cnbc.com/2026/09/21/trump-white-house-press-pool-cnn-ban.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:18:22Z",
+   "summary": "The decision comes as CNN, MS NOW and Politico sued Trump, asking a court to overturn his new ban of those three media outlets from the White House.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "The Fed Moved. The Borrowing Math Changed for Businesses.",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5WbDEyS0psdWQ5OVNPZjZnX2ZxRGRydlplYzdHMzllS2luMUlhNWxSM3R3aDZyY1d2QzJyWjBwSEdKaVMtVG83TXV2VWlHRWo3QUtBQzlRUkZfcmJNc1p3eGp1bDlFZkUzUXV6UzdnMlE1UG5Vc2J4elA5VVEydw?oc=5",
+   "source": "observer.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:16:59Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "US stocks: US market ends sharply higher as AI optimism reignites and Treasury yields retreat",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-us-market-ends-sharply-higher-as-ai-optimism-reignites-and-treasury-yields-retreat/articleshow/134397491.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-09-21T20:14:34Z",
+   "summary": "Stock markets surged on Monday, driven by impressive gains from leading AI companies such as Advanced Micro Devices. Meanwhile, Treasury yields pulled back from their recent highs and crude oil prices fell to an eleven-day low. Meta's share",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally",
+   "url": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:04:45Z",
+   "summary": "AMD has had a monster 2026 with the stock up more than 180% so far.",
    "categories": [
     "Markets"
    ]
@@ -72,6 +413,18 @@
    ]
   },
   {
+   "title": "Wall Street ends sharply higher as AI optimism reignites and Treasury yields retreat",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbUY0bG1IQkExN3pxSFZoX1VGN0hTNkluZ1hFd1F6VzZwdWtPRExzOXRnS0prRjV1M0I3U2tfUnhZcmJSQkV6STFKbUo2YXB6S1RhNUkycUFJUXg3UXA0WW9CWkRYaVVVUGRqRmRtUERCU1I4M3ZMYXhETmY1Q3FZQU9Ob1MtMzRONFc3NVFrNzVpcTQySVRzd1dENmcxdw?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T20:01:13Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
    "title": "Special swaps rake in $143.5 billion in forex inflows: FCNR(B) scheme leads with $133 billion",
    "url": "https://economictimes.indiatimes.com/news/economy/policy/special-swaps-rake-in-143-5-billion-in-forex-inflows-fcnrb-scheme-leads-with-133-billion/articleshow/134397419.cms",
    "source": "ET Economy",
@@ -86,51 +439,15 @@
    ]
   },
   {
-   "title": "CNN, MS NOW and Politico sue Trump, challenging White House ban",
-   "url": "https://www.investing.com/news/stock-market-news/cnn-ms-now-and-politico-file-lawsuit-against-trump-administration-over-white-house-access-4908656",
-   "source": "Investing.com",
+   "title": "U.S. Diesel Prices Rise Above $6.50/Gallon for First Time as WTI Falls Below $100",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNFh1NENMZ0JpWWFBUUVaZHRwVWVXRXNZSlNWTFJjbWVYYlIxVm5OR0J3V0cycHhsc20wTnloSmkzZXdLSEJfZFYzY2ZWcUxlNjM3NHdaRDMzVFNDaDBOLXhqdUdqclF5THhYcVd0a3lSU2d2Q2lsTFZWOTc4T2xzREp6cDdIRUJaSHM0Z0swb3ZhWEVmUHhYV0dwR05hNWo1LW1Na29kSQ?oc=5",
+   "source": "Sahi",
    "region": "Global",
    "official": false,
-   "published": "2026-09-21T19:54:46Z",
+   "published": "2026-09-21T19:51:44Z",
    "summary": "",
    "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "California governor signs broad data center oversight bill package",
-   "url": "https://www.investing.com/news/commodities-news/california-governor-signs-broad-data-center-oversight-bill-package-4909524",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:54:28Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "H.B. Fuller launches Kōfinity insulating glass product line",
-   "url": "https://www.investing.com/news/company-news/hb-fuller-launches-kofinity-insulating-glass-product-line-93CH-4909562",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:52:30Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Xcel Energy stock hits 52-week low at $71.75",
-   "url": "https://www.investing.com/news/company-news/xcel-energy-stock-hits-52week-low-at-7175-93CH-4909561",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:52:09Z",
-   "summary": "",
-   "categories": [
-    "Markets"
+    "Commodities & energy"
    ]
   },
   {
@@ -144,18 +461,6 @@
    "categories": [
     "Geopolitics & trade",
     "India"
-   ]
-  },
-  {
-   "title": "Paramount wins Warner Bros takeover after settling states, union lawsuits",
-   "url": "https://www.investing.com/news/stock-market-news/paramountsettles-with-california-other-states-clearing-major-hurdle-for-warner-bros-merger-source-says-4909370",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:49:21Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -173,7 +478,7 @@
   {
    "title": "The Federal Reserve Is Shadowboxing Inflation",
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbng5MXVVSUt5cVBNWW45TlotU1kySGFNTlBrbjF4MEZPN21EWU9hVjVtUW1DY19zZ29oVHV5Q2gyYzlFeHU4QUFHWWY3a1g1cUJub1d4dDUzVkIxZUljVDFwTFZBZG9BTl9maWN2ZWlLRkhpRjN5elY4d0xWZ3RfTmhTQnJNX1hXSnlINnd4bFpnUQ?oc=5",
-   "source": "linkedin.com",
+   "source": "LinkedIn",
    "region": "Global",
    "official": false,
    "published": "2026-09-21T19:48:19Z",
@@ -208,66 +513,6 @@
    ]
   },
   {
-   "title": "Bank of Canada governor says Atlantic Canada is less exposed to U.S. tariffs",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM0Q2QVM2QXRPX2tIVTF3aUk5elh5ZnRBWmw1V0JTbm14Y1ZwZ3l0SmFud3MwZ1JzUUJ4NUtwRU9raG0wRGl0TmpMbDFsdkZZYTNkYjY5S2lzRWpFV1RoWHFmeV9QMFNLVHk4UFZGaDlleHJnMW5SMmV0SGJSUWN4NVZGNFJ3bTN3NDBJZU1vcWlOR2p0dFNXd3laV25vWUtBN24zdjFGMFZ0dXNDbzJLSVVja1lIUQ?oc=5",
-   "source": "CTV News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:44:03Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Saudi’s Ceer unveils first EVs in bid to build regional auto powerhouse",
-   "url": "https://www.investing.com/news/economy-news/saudis-ceer-unveils-first-evs-in-bid-to-build-regional-auto-powerhouse-4909554",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:43:17Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Moderna will reveal the data for its mRNA cancer vaccine next month. Here’s why it matters.",
-   "url": "https://www.marketwatch.com/story/moderna-will-reveal-the-data-for-its-mrna-cancer-vaccine-next-month-heres-why-it-matters-4470a558?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-21T19:43:00Z",
-   "summary": "One reason that analysts and doctors want to see the data is to better understand how well the personalized treatment works.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Oil price dips to $100 on hopes of US-Iran diplomacy, partial recovery in Saudi exports",
-   "url": "https://www.investing.com/news/commodities-news/oil-rises-after-houthi-attack-on-saudi-capital-4908199",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:42:57Z",
-   "summary": "",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Nasdaq set for first record close since June as AI stocks rally, led by Meta surge",
-   "url": "https://www.investing.com/news/stock-market-news/us-stock-index-futures-rise-with-china-summit-iran-escalation-in-focus-4908205",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:37:40Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Eli Lilly CEO says 700,000 new seniors have started GLP-1s after Medicare coverage, and 70% are on Lilly drugs",
    "url": "https://www.cnbc.com/2026/09/21/eli-lilly-ceo-david-ricks-glp-1s-medicare-coverage.html",
    "source": "CNBC International",
@@ -275,18 +520,6 @@
    "official": false,
    "published": "2026-09-21T19:37:01Z",
    "summary": "They're the latest metrics on how much the new Medicare coverage is expanding access to GLP-1 medicines since it launched in July.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Trump administration proposes $5 billion to kickstart investment fund to rebuild gulf energy sites, WSJ reports",
-   "url": "https://www.investing.com/news/stock-market-news/trump-administration-proposes-5-billion-to-kickstart-investment-fund-to-rebuild-gulf-energy-sites-wsj-reports-4909556",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:36:10Z",
-   "summary": "",
    "categories": [
     "Markets"
    ]
@@ -317,18 +550,6 @@
    ]
   },
   {
-   "title": "Zorion Adds Virtual USD Card Issuance to Its Wallet Platform",
-   "url": "https://www.investing.com/news/press-releases/zorion-adds-virtual-usd-card-issuance-to-its-wallet-platform-4909555",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:33:42Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "‘My total balance should be $20 million’: I invested $1.1 million in a crypto platform. Have I lost it all?",
    "url": "https://www.marketwatch.com/story/my-total-balance-should-be-worth-20-million-i-invested-1-1-million-in-a-crypto-platform-have-i-lost-it-all-d22da562?mod=mw_rss_topstories",
    "source": "MarketWatch",
@@ -338,18 +559,6 @@
    "summary": "“I invested on the recommendation of an executive vice president of a major New York investment bank.”",
    "categories": [
     "Crypto"
-   ]
-  },
-  {
-   "title": "White House TV pool suspends coverage of Trump after ban of CNN",
-   "url": "https://www.cnbc.com/2026/09/21/trump-white-house-press-pool-cnn-ban.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:26:10Z",
-   "summary": "The decision comes as CNN, MS NOW and Politico sued Trump, asking a court to overturn his new ban of those three media outlets from the White House.",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -365,33 +574,9 @@
    ]
   },
   {
-   "title": "The hottest part of the AI trade could be turning into its biggest weakness",
-   "url": "https://www.marketwatch.com/story/the-hottest-part-of-the-ai-trade-could-be-turning-into-its-biggest-weakness-099f2c09?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-21T19:24:00Z",
-   "summary": "While stock investors celebrate booming demand for chips and servers, credit markets are flagging risky contracts and rising debt costs.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Forget Elon Musk and Jeff Bezos: The ‘everywhere millionaires’ created the blueprint for regular people to get rich in America",
-   "url": "https://www.marketwatch.com/story/forget-elon-musk-and-jeff-bezos-the-everywhere-millionaires-created-the-blueprint-for-regular-people-to-get-rich-in-america-df543f9c?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-21T19:23:00Z",
-   "summary": "Owen Zidar and Eric Zwick spent a decade mining tax data to identify an under-the-radar class of American wealth.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "2026 Agricultural Economic Summit",
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY3puVHk3SXhwcFE2dzE5c0x3SkhpLTZTdHpTUkczYUJHMTktVWZFaXR5LUVabFMzT2xHNDVLbHVuVzVhZWczSTUxVlcxRHR4OU1xeG9uOGtyU2Nrb0JCWFNTSU1teUZsbFNReW00SGVtWE42a1FJY3BvOHNwMS1Sb3RB?oc=5",
-   "source": "Kansas City Fed",
+   "source": "kansascityfed.org",
    "region": "Global",
    "official": false,
    "published": "2026-09-21T19:22:26Z",
@@ -425,18 +610,6 @@
    ]
   },
   {
-   "title": "Meta's Muse personal AI agent tops ChatGPT, Grok and Claude for post-launch downloads",
-   "url": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T19:14:21Z",
-   "summary": "Meta's Muse AI personal agent tool had 730,000 downloads over the roughly five days after its launch.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "August core sector growth hits 3-month low as energy sectors lose steam",
    "url": "https://economictimes.indiatimes.com/news/economy/infrastructure/august-core-sector-growth-hits-3-month-low-as-energy-sectors-lose-steam/articleshow/134397084.cms",
    "source": "ET Economy",
@@ -449,13 +622,13 @@
    ]
   },
   {
-   "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
-   "url": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
+   "title": "Fed’s Musalem Says More Rate Hikes Likely Needed to Cool Prices",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNEVfRmI5akcwdDFQb1EzOTFSdUJ3NzZnblhocWI0T2xJbVBJR1RUaWx5bnVfMnNDZHlpSnVXSnRXSk1ZRjlVZEtuSmVyUFBfU3pocWdZWHNxUTBQcE9fTk14TDVrQWxmWUwzZW55dkNLaEZRNllCVUdHaWM1dzVQS29SZ2NibEpmaFd0dXNPemxzOG54MWNzRmcxTXBYN21UWmtkMlVGTnVzbmJZWGl1SEUzcVc?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
    "official": false,
-   "published": "2026-09-21T19:00:00Z",
-   "summary": "The Federal Reserve announced a quarter-percentage-point interest-rate hike Wednesday, to a range of 3.75%-4.0%.",
+   "published": "2026-09-21T19:02:46Z",
+   "summary": "",
    "categories": [
     "Central banks & rates"
    ]
@@ -471,18 +644,6 @@
    "categories": [
     "Central banks & rates",
     "India"
-   ]
-  },
-  {
-   "title": "Trump media ban lawsuit set for Wednesday court hearing",
-   "url": "https://www.cnbc.com/2026/09/21/trump-lawsuit-white-house-ban-ms-now-cnn-politico.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T18:56:39Z",
-   "summary": "President Donald Trump said he banned the three media outlets because of what he called \"cumulative stories,\" saying, \"You get sick of it.\"",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -508,42 +669,6 @@
    "summary": "India will study the US sanctions act and its potential trade impact. Exports are growing at a healthy rate despite global complications. India and Canada aim to fast-track their economic partnership negotiations. The India-EU trade pact is",
    "categories": [
     "India"
-   ]
-  },
-  {
-   "title": "Paramount settles lawsuit with US states, helping clear way for $110bn merger with Warner Bros",
-   "url": "https://www.bbc.co.uk/news/articles/cm4gjr1qepr8o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T18:42:44Z",
-   "summary": "Paramount has reached a settlement with the US states in a lawsuit challenging its $110bn merger with Warner Bros",
-   "categories": [
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "My husband and I are in our 50s and have no kids. We have $2 million in IRAs and 401(k)s. Do we really need a will?",
-   "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-21T18:30:00Z",
-   "summary": "“We have no debt and own our primary home, a vacation home, as well as my mother’s home in another state.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Wall Street rallies as AI optimism reignites and Treasury yields retreat",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbUY0bG1IQkExN3pxSFZoX1VGN0hTNkluZ1hFd1F6VzZwdWtPRExzOXRnS0prRjV1M0I3U2tfUnhZcmJSQkV6STFKbUo2YXB6S1RhNUkycUFJUXg3UXA0WW9CWkRYaVVVUGRqRmRtUERCU1I4M3ZMYXhETmY1Q3FZQU9Ob1MtMzRONFc3NVFrNzVpcTQySVRzd1dENmcxdw?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T18:27:54Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
    ]
   },
   {
@@ -574,19 +699,6 @@
    ]
   },
   {
-   "title": "Federal Reserve official says fighting inflation likely to be 'painful' | Associated Press | syndication news",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZzA5by1oWDlLVU5Lb1pNT0lqTlp5MW5ELXVraDF3M1JEc2JITHZBZjY5OTFwTXlGb202RTJyNG1rNWRGM1A2bWZGYUFUa1l4bE9XNGE2OGZ6Ym5DX3RzMF9QUDJRRTFTVVQ0T2xLaU56cTcydHJ2RDJrM2U3NkNXaUx3NWFpbTJRMm1OaGpsMGZDWW9zUFI4UXJDZ3V4M0N6WEg0WWNlVGlkMlRhNGlIRHdJZ3I3dTdWNFBDNkZPMnBrczhPeks3U3BKQWJDQ3R3alZlamgxbjFRQzhaR050ZXpxTHNGUQ?oc=5",
-   "source": "Enidnews.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T18:17:43Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
    "title": "Landmark NSE IPO threatens to hollow out Dalal Street’s shadow market",
    "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/landmark-nse-ipo-threatens-to-hollow-out-dalal-streets-shadow-market/articleshow/134396017.cms",
    "source": "ET Markets",
@@ -608,18 +720,6 @@
    "official": false,
    "published": "2026-09-21T18:01:36Z",
    "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "‘She says it’s just money’: My friend pays for everything. I should be grateful, but I can’t stand her anymore.",
-   "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-21T18:00:00Z",
-   "summary": "“On each of these weekends away, she’s probably spending $500.”",
    "categories": [
     "Markets"
    ]
@@ -652,18 +752,6 @@
    ]
   },
   {
-   "title": "Meta’s stock is enjoying its best month in 13 years thanks to the company’s hot new AI assistant",
-   "url": "https://www.marketwatch.com/story/metas-stock-is-enjoying-its-best-month-in-more-than-two-years-thanks-to-the-companys-hot-new-ai-assistant-bf106291?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-09-21T17:45:00Z",
-   "summary": "Muse is gaining popularity and helping convince investors that Meta’s AI bets are paying off.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Rate of interest on Government of India Floating Rate Bond 2033",
    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63637",
    "source": "RBI",
@@ -686,6 +774,19 @@
    "categories": [
     "Markets",
     "Crypto"
+   ]
+  },
+  {
+   "title": "Fighting inflation likely to be 'painful,' Chicago Fed president says",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQVR1azg4WmktY0lXSExsMzBsSVpRVzhqR2pFTUN2YkNRNVNDeFgxU0VfdzFzbHRJMHdHd1ZPWDdxdWl0eXdFRVoxdTNUQ0xISHI3Y1ZlTm8tQzZvLXZDR1EwOFVUNE9WdWhNYWFPMVB0cHFXU2szS2l0TzVPM08xNXRYMHdCN2lXdXBIdGNoTEhDWk1aYVZvaUJjcmxpRDlFUUllRGRR?oc=5",
+   "source": "PBS",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T17:36:10Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
    ]
   },
   {
@@ -717,7 +818,7 @@
   {
    "title": "Fed official contradicts Warsh and warns fighting inflation ‘is going to be painful’",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObjlvbkdDbmg4MGM1NGw0aFdMbElSd09VUFo5dWFObDdabG42a1hHdXZBVXQzMmttX1diTHJDcXllamNvb2Y1N292SXZHcEVZQzdFN01LaDRaMFRHcDVjbURPemlNWGRFUHRFNXpfdDBmaHFrU0k3bUY1cHhUbk9MUlFPVm5sXzFQMEhRNVJSc1gybGxqel9xc1Z1VUZnb05SMm9wX19jRk9kTGFuWU1KUVl3?oc=5",
-   "source": "independent.co.uk",
+   "source": "The Independent",
    "region": "Global",
    "official": false,
    "published": "2026-09-21T17:08:00Z",
@@ -762,6 +863,20 @@
    "categories": [
     "Central banks & rates",
     "India"
+   ]
+  },
+  {
+   "title": "Gold Steadies as Traders Weigh Inflation and Fed Hike Outlook",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM2REa3hXVWU5cXFtbTZYS2xfaGUtc2lLVUEtdzdNNGdHT0lfRGpFZXRGYUhqZUh3ZGg4V29GdEswUUpaand5VG1ZSVE2aWV2OWdfeEgxRU5YVk9JUExZcXB5a2FQdWhmSUg3d0R2aW5qREVlYlFLX1VObE1BY2J2R1c0dmllU3NaLURKNDVHM09GbkcwWXJJTTRtcWdESmo2ckVyak1BZ1VPdThvdVhBOEJR?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T16:43:15Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth",
+    "Commodities & energy"
    ]
   },
   {
@@ -838,6 +953,18 @@
    ]
   },
   {
+   "title": "Bank of Canada says new US tariffs could slash fourth quarter growth",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMEhRT0NHV1hIcElfc0ZNTkd6MmFBb0I1bFZaaGsyTXNfbUF3c2JsZ0gtbnJiS1BNVmF6ZGdmeDhjeG9HeFp6TmRmcUo4c1NPYVNORXR5T0FjengySmhmbndCODZmUVJlWWx4dHU3SE5odjc1cDFXamRuT1FCX1hSTHBkZHdoSXFNcEcyYy1rYWJzcUVhT3dmSkdJcXFmVjNUSXNNcnJYTjlGZVlSa3Zr?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T16:11:51Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
    "title": "Rupee gains for third day as crude eases, but volatility persists",
    "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-gains-for-third-day-as-crude-eases-but-volatility-persists/articleshow/134393258.cms",
    "source": "ET Markets",
@@ -891,9 +1018,21 @@
    ]
   },
   {
+   "title": "Uncertainty from U.S. trade policy could halve fourth-quarter growth, Macklem says",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb3VkbGNSZElDQlphUkM0b1UtZ1hkZ20zYTJpWFZheHh2SnBmNEktSktjZUJKRVl4RDloelE3T0d5SEQzMll1dHFNVjg0aldWTlVDS0JPbGFzZnhtdUt6N3d2enlGcmFIc2Jic3hQc080U0Mtd3lDU0Fia2k4Sk9WUy1UUU9XWjhQRVIybGkyY1F6WExldkNRZDgzQklBdHUyZENGMWxWY2J5WXBhcWVrLWtRZmJXZXVpNm5TTFRn?oc=5",
+   "source": "The Globe and Mail",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T15:27:39Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
    "title": "Federal Reserve may need more aggressive rate response as inflation risks broaden",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLVZzU1dzRERiZjRNV2VjNFdmTVVUMThLMmwxZmNHTEJYN3NsUjEyWlVVbVpEY0xpZ3kxLWRadDB0UUQxVUlWTGY3Smt0dWszRDVZcjNGNkFJZnNuV29qN05pT1hySF9kUjc3VnJsRmJlcmY2eUFuNWQ2QW1uWGI4ZEx4N3J1OWY5SGFSUkQwelVDdDJJbVFyUF9GSU5PRzQ?oc=5",
-   "source": "tradersunion.com",
+   "source": "Traders Union",
    "region": "Global",
    "official": false,
    "published": "2026-09-21T15:26:43Z",
@@ -901,18 +1040,6 @@
    "categories": [
     "Central banks & rates",
     "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Bank of Canada says new US tariffs could slash fourth quarter growth By Reuters",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcVYzYmh4TlFOOEFxblBwWGNWTEpVYmxVeFBqUUxleEVqWHZaWHYwdWFNR2pBOHYzMmhZOE1DX2FZdFZtNFBJaWNiZm1PVW5zSWs0cXZvOEd1QlRPa3c2ZnFnY182XzdET2g2M05wTDlyRlIxbF9QRFJZZHhxWjRNeDJkREl5MklvczdzT1BQZEVQSE51VmFWX2tueUFGbUZWSkR2UC1hd3lkWkp6VEZlOEk3eHNOWmp4QWhrQg?oc=5",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T15:22:35Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -942,18 +1069,6 @@
    ]
   },
   {
-   "title": "Bank of Canada’s Macklem: US tariffs could roughly halve fourth-quarter growth to below 1%",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ2ktUEVsR2N1Z3drcmNBTU1PWkp3bzNISnhoNnpTRkZNWlhQLXExVmdvU3VFT3dPa1VWS1VscE1DTlNDemZma0tUdjNlYkt4X04xVFI0RkkxUklPcDBoZTljeW1PWkp6MlRJTXZCaVpIS0VfNWpkbUhaV08zVVZadnpNZXd4b1piRlFtLXFaRmxaVHdfN0d4S3ZPdnJYUmFFRXoxZTNZdDRTdnR1ZlB3ZWxMbkZ3X0tKTENISg?oc=5",
-   "source": "investingLive",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T15:17:16Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Trump admin won't give AI leaders a 'liability shield,' Bessent tells CNBC",
    "url": "https://www.cnbc.com/2026/09/21/treasury-bessent-cnbc-squawk-trump-bond-affordabilty.html",
    "source": "CNBC International",
@@ -963,18 +1078,6 @@
    "summary": "Bessent spoke with CNBC's \"Squawk Box\" about AI safety concerns and this week's summit between Chinese President Xi Jinping and President Donald Trump.",
    "categories": [
     "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Novo shares slide as drugmaker lays out post-Wegovy growth strategy",
-   "url": "https://www.cnbc.com/2026/09/21/novo-nordisk-stock-sales-target-obesity-drugs.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T15:12:12Z",
-   "summary": "The Danish company seeks to convince investors it can compete in an increasingly crowded field it helped pioneer.",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -988,6 +1091,19 @@
    "categories": [
     "Central banks & rates",
     "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Don’t give up your gold: disciplined monetary policy can’t fix fiscal risk - Axel Merk",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcTlScVc0LVl6YjRvTGlJOTgwck5KaFhXM2JsaVd1Z1BnWnhnU3BxV3lDUFNqbElMcUZnMnU3U2tyQTU1ck84a2p3dGlTVXc4SXZ3SmZZQjlicHhlWVJYNEd5VjRzQk9BSWRCMHZ6X21odmxEZEh2RnR3VGdYUGtOMlFEVGg2Q1NXT0tNRTVXWXdPUzRXdWNDd2NDNS16TkJ5VW11TUNxNkNTTWZUdmZxdWdlNEZOb0RXTUpN?oc=5",
+   "source": "KITCO",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T15:07:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Commodities & energy"
    ]
   },
   {
@@ -1015,16 +1131,15 @@
    ]
   },
   {
-   "title": "Fed’s Kashkari: Inflation still too high in ‘all aspects’ of economy",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zN25BZ3V2NjRBckJGZERYbEppUFZocHpXTmxCZk5iWDlycEJub2luVG9UOWtzTVlOS1dJbFJ6cjloWkhvdXg1cnR0aDJndUp5VFNmSENUbno5Unk2czQwYzAyYW0wTGVmSmpINjUzVXMyeDjSAXhBVV95cUxONThsUnVTRFBvaWdDTjdHYkR1Y2lJNE9DNDA0UGZTaFlURFpJdGNxc2Q4X2pzX1VsQUhYTDVieVhfaGt5S0ZfNjYzWjQ5SUdMaWZ6dm85QlhwSmZkV05vekgtbXd1b2dUSS1yMWIyM1Yzd0JvS0lUWmo?oc=5",
-   "source": "The Hill",
+   "title": "Bank of Canada’s Macklem: US tariffs could roughly halve fourth-quarter growth to below 1%",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ2ktUEVsR2N1Z3drcmNBTU1PWkp3bzNISnhoNnpTRkZNWlhQLXExVmdvU3VFT3dPa1VWS1VscE1DTlNDemZma0tUdjNlYkt4X04xVFI0RkkxUklPcDBoZTljeW1PWkp6MlRJTXZCaVpIS0VfNWpkbUhaV08zVVZadnpNZXd4b1piRlFtLXFaRmxaVHdfN0d4S3ZPdnJYUmFFRXoxZTNZdDRTdnR1ZlB3ZWxMbkZ3X0tKTENISg?oc=5",
+   "source": "investingLive",
    "region": "Global",
    "official": false,
-   "published": "2026-09-21T15:00:00Z",
+   "published": "2026-09-21T14:45:47Z",
    "summary": "",
    "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
+    "Markets"
    ]
   },
   {
@@ -1112,18 +1227,6 @@
    "categories": [
     "Central banks & rates",
     "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Airlines urge action after UK flights delayed and cancelled again",
-   "url": "https://www.theguardian.com/world/2026/sep/21/uk-airports-air-traffic-control-flights-cancelled-delays-nats-prestwick",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T14:15:34Z",
-   "summary": "Nats says fault at Prestwick has been ‘fixed’ after airports in Scotland, northern England and Northern Ireland are hit Airlines have called for “action and accountability” over the UK’s air traffic control services after a technical issue",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -1290,18 +1393,6 @@
    "summary": "Real-world asset tokenization is shifting from issuance toward utility, with RWA AUM reaching $34.18 billion by September 15, 2026. Binance Research highlights rising utilization, as liquidity, lending and collateral applications increasing",
    "categories": [
     "Crypto"
-   ]
-  },
-  {
-   "title": "Gulshan Group, Ourika Estates to invest Rs 750 cr on 2 new housing projects",
-   "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/gulshan-group-ourika-estates-to-invest-rs-750-cr-on-2-new-housing-projects/articleshow/134389610.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-21T12:26:16Z",
-   "summary": "Gulshan Nagpal, Promoter of Gulshan Group, said the association with Ourika Estates is a step towards creating a larger portfolio of premium, future-ready residential projects.",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -1476,20 +1567,6 @@
    ]
   },
   {
-   "title": "Gold Steadies as Traders Weigh Inflation and Fed Hike Outlook",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM2REa3hXVWU5cXFtbTZYS2xfaGUtc2lLVUEtdzdNNGdHT0lfRGpFZXRGYUhqZUh3ZGg4V29GdEswUUpaand5VG1ZSVE2aWV2OWdfeEgxRU5YVk9JUExZcXB5a2FQdWhmSUg3d0R2aW5qREVlYlFLX1VObE1BY2J2R1c0dmllU3NaLURKNDVHM09GbkcwWXJJTTRtcWdESmo2ckVyak1BZ1VPdThvdVhBOEJR?oc=5",
-   "source": "Bloomberg.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T10:24:51Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth",
-    "Commodities & energy"
-   ]
-  },
-  {
    "title": "Fed policymaker Goolsbee warns strong demand may be fueling US inflation as rate hike outlook hardens",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcnVXOHNuc0lScm1BczVkVnZSc3hSU0wyT19MYlFBN3hjLWtCbkR6ZG1lQVZISXpXTjl0b1lVM0NIQUpqT0hwalNiSVVHUGlrRV9RQlZBMHNKc1Q3Um5IUy12cUpPdTZVWnJuR1lST1ZWV3I5d3czaE9CeDhfTlV4eDV3Z2FZc195a0E2LXhaR3ZXWkZ4SVFjVm9ZOWVMdGNRZUh0XzNQVURBbTFKYTFtMnY0b05tQ0t3a1p1YXdfVExWblBtUE80TXRkZlBSb1ExZ0xJcllzNEVvQQ?oc=5",
    "source": "investingLive",
@@ -1517,32 +1594,20 @@
    ]
   },
   {
-   "title": "HELOC and home equity loan rates today, Monday, September 21, 2026: A 33-basis-point differential",
-   "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-and-home-equity-loan-rates-today-monday-september-21-2026-a-33-basis-point-differential-100000210.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T10:00:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Mortgage and refinance interest rates today, Monday, September 21, 2026: Refinance rates mostly lower",
-   "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-monday-september-21-2026-refinance-rates-mostly-lower-100000495.html",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T10:00:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Best CD rates today, Monday, September 21, 2026: Lock in up to 4.40% APY",
    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-monday-september-21-2026-lock-in-up-to-440-apy-100000956.html",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T10:00:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "HELOC and home equity loan rates today, Monday, September 21, 2026: A 33-basis-point differential",
+   "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-and-home-equity-loan-rates-today-monday-september-21-2026-a-33-basis-point-differential-100000210.html",
    "source": "Yahoo Finance",
    "region": "Global",
    "official": false,
@@ -1562,6 +1627,30 @@
    "summary": "",
    "categories": [
     "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Mortgage and refinance interest rates today, Monday, September 21, 2026: Refinance rates mostly lower",
+   "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-monday-september-21-2026-refinance-rates-mostly-lower-100000495.html",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T10:00:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "How U.S. tariffs are driving Canadian brewers toward Chinese aluminum cans",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRnhQdjcwV01uZTBncW1nU091a1BrWS01dVZkaTBmYkVCNFdTR29wSTJvUVJIM0laN0I4dTZ4cG0xamdoV0hHbjc1X18tLXVkamtHdVdiSWVLUEN0VGUxRnNDcWRvTWxwWEF4X2ZqVVlKUjNGUFRBLWp0YmdCdXY4TTRRQ3ZSaktmT1NYY3MzYVE2NmVvVDczTW5fTUlPbWM2UWRfLUMzUFVmd2NtTXdzUllwZ1ZiSGl3?oc=5",
+   "source": "The Globe and Mail",
+   "region": "Global",
+   "official": false,
+   "published": "2026-09-21T10:00:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
    ]
   },
   {
@@ -1586,18 +1675,6 @@
    "summary": "",
    "categories": [
     "Central banks & rates"
-   ]
-  },
-  {
-   "title": "How U.S. tariffs are driving Canadian brewers toward Chinese aluminum cans",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRnhQdjcwV01uZTBncW1nU091a1BrWS01dVZkaTBmYkVCNFdTR29wSTJvUVJIM0laN0I4dTZ4cG0xamdoV0hHbjc1X18tLXVkamtHdVdiSWVLUEN0VGUxRnNDcWRvTWxwWEF4X2ZqVVlKUjNGUFRBLWp0YmdCdXY4TTRRQ3ZSaktmT1NYY3MzYVE2NmVvVDczTW5fTUlPbWM2UWRfLUMzUFVmd2NtTXdzUllwZ1ZiSGl3?oc=5",
-   "source": "The Globe and Mail",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T10:00:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -1637,18 +1714,6 @@
    "categories": [
     "Commodities & energy",
     "India"
-   ]
-  },
-  {
-   "title": "Government Bond Yields Fall as Risk Sentiment Tentatively Improves",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOclRMVXQyTkZiLThMRF9OSG9ZLVNBWE1DUkpoQUdRNDQ0akx4ZlNJZElBY2lRazk2ZlNKeE5IQU9fN2Vpc09ZRlR6RDhqV0VUcFNHSFpyTnk2V1ppbU5HcGRCMTZhZjhXV056a1RKMHUxa1daemlqZjhJcXpYdURUQmhqNU1KY3pYaDBneUc5eFp1YUVhbWhxXzFtVFozZ2xYTmxvd2xVZ3V0SlNaUllXQjMyNkRUYWYyZ1dV?oc=5",
-   "source": "WSJ",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T08:50:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -1698,66 +1763,6 @@
    "summary": "",
    "categories": [
     "Markets"
-   ]
-  },
-  {
-   "title": "Uttar Pradesh Film Policy, 2023: Key features, subsidies, eligibility and implementation",
-   "url": "https://www.business-standard.com/economy/uttar-pradesh/uttar-pradesh-film-policy-2023-key-features-subsidies-eligibility-and-implementation-126092100284_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-09-21T07:18:24Z",
-   "summary": "The policy provides financial assistance and administrative facilitation to eligible producers who shoot films or digital audiovisual productions in Uttar Pradesh",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Will the Reserve Bank hike rates?",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNEkzM25XdWVnOG9zYldEajkxX05hS3VPZ3Z3Z0V5NS1JYURZUWloal9NWEtWT2VhZDB4cGNVZ0JPd1M5aC00dUpPMHNDcVdSeVhJb1NKUjFHQXVKaEhKVW1kVDRvZTJzU2VDT0Z2b3RhbHlzdHJ1QzlmV1JheEVkeUZKTQ?oc=5",
-   "source": "eNCA",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T07:05:04Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "All the signs say another financial crisis is coming. Here’s why we need to prepare for it now | Larry Elliott",
-   "url": "https://www.theguardian.com/commentisfree/2026/sep/21/financial-crisis-ai-oil-market-2008-crash-disruption",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T07:00:38Z",
-   "summary": "War, AI disruption and markets in turmoil: the warnings are all there. But lessons from the 2008 crash could help us Continue reading...",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Nvidia boss rejects AI extinction fears as 'doomsday narratives'",
-   "url": "https://www.bbc.co.uk/news/articles/cr5ye7p13jg7o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T06:25:43Z",
-   "summary": "Jensen Huang's comments come after warnings from AI researchers that the technology could lead to human extinction.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Why gold prices could keep rising despite high US yields and interest rates",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUFpJU19NUTdpZDNNVWd0ZW5rb0dMVmFTSWZKNmdtd1NBWXVuTk5DRlJJOU4wbXhndFo3b1MtYXMtamFuQmlmeVFSdWg1THhkMDR2ZWd5a1oyZE80RHBKWHhRdWd1ZWZoUnJ2WnJKaWhfZkk0R2QzZ3Z1Q1VOODlYSHpFeHJoeWxfOWowWDdmdEx0a3dNOGtwQWxGY3IydGNOb2Z1aFQ4REVsRW83UzRmb1BobU03NjNuakM4bXR5cC1HSHBrY0s5UF9xWQ?oc=5",
-   "source": "The Straits Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-09-21T06:15:00Z",
-   "summary": "",
-   "categories": [
-    "Commodities & energy"
    ]
   }
  ]
