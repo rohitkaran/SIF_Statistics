@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-22T18:12:13Z",
+ "generated": "2026-09-22T20:21:01Z",
  "source": "https://www.amfiindia.com/api/sif-nfo",
  "note": "AMFI publishes the open-NFO list without dates. first_seen/last_seen are the dates SIFintel observed each offer on that list; launched_on is the scheme's first published NAV.",
- "open_count": 1,
- "total_tracked": 4,
+ "open_count": 2,
+ "total_tracked": 5,
  "nfos": [
   {
    "key": "altiva-sif__altiva-equity-long-short-fund",
@@ -12,6 +12,17 @@
    "scheme_id": "S-34",
    "sif_id": "47",
    "first_seen": "2026-09-09",
+   "last_seen": "2026-09-22",
+   "status": "open",
+   "launched_on": null
+  },
+  {
+   "key": "titanium-sif__titanium-active-asset-allocator-long-short-fund",
+   "fund_house": "Titanium SIF",
+   "strategy": "Titanium Active Asset Allocator Long-Short Fund",
+   "scheme_id": "S-35",
+   "sif_id": "25",
+   "first_seen": "2026-09-22",
    "last_seen": "2026-09-22",
    "status": "open",
    "launched_on": null
