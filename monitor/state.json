@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T19:33:36+00:00",
+ "generated": "2026-09-29T21:31:17+00:00",
  "latest_nav": "2026-09-29",
  "schemes": {
   "SIF-120": {
@@ -612,25 +612,25 @@
    "name": "Platinum Hybrid Long-Short Fund - Direct Plan - Growth",
    "sif": "Platinum SIF",
    "first": "2026-06-11",
-   "last": "2026-09-28"
+   "last": "2026-09-29"
   },
   "SIF-135": {
    "name": "Platinum Hybrid Long-Short Fund - Direct Plan - IDCW",
    "sif": "Platinum SIF",
    "first": "2026-06-11",
-   "last": "2026-09-28"
+   "last": "2026-09-29"
   },
   "SIF-136": {
    "name": "Platinum Hybrid Long-Short Fund - Regular Plan - Growth",
    "sif": "Platinum SIF",
    "first": "2026-06-11",
-   "last": "2026-09-28"
+   "last": "2026-09-29"
   },
   "SIF-137": {
    "name": "Platinum Hybrid Long-Short Fund - Regular Plan - IDCW",
    "sif": "Platinum SIF",
    "first": "2026-06-11",
-   "last": "2026-09-28"
+   "last": "2026-09-29"
   },
   "SIF-139": {
    "name": "Prism Hybrid Long-Short Fund - Direct Plan - Growth Option",
@@ -1077,9 +1077,9 @@
   "https://www.tatamutualfund.com/titanium-sif/schemes-related": true,
   "https://s3.ap-south-1.amazonaws.com/x-web-s3.360.one/Dyna_SIF_Equity_Long_Short_Fund_Presentation_d42634825b.pdf": true,
   "https://www.360.one/dyna-sif/mandatory-disclosures": true,
-  "https://arudhasif.com/downloads/assest/file/downloads/NFO%20Deck-%20Arudha%20Equity%20Long%20Short%20Fund.pdf": true,
-  "https://arudhasif.com/downloads/": true,
-  "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/April/Filing%20date%2017-04-2026/Release%20date%2014-04-2026/Advertisements/Annexure%206%20-%20iSIF%20Factsheet.PDF": true,
+  "https://arudhasif.com/downloads/assest/file/downloads/NFO%20Deck-%20Arudha%20Equity%20Long%20Short%20Fund.pdf": false,
+  "https://arudhasif.com/downloads/": false,
+  "https://www.icicipruamc.com/blob/sebi-repo/Advertisements/2026/April/Filing%20date%2017-04-2026/Release%20date%2014-04-2026/Advertisements/Annexure%206%20-%20iSIF%20Factsheet.PDF": false,
   "https://www.isif.icicipruamc.com/media-center/downloads": false,
   "https://www.edelweissmf.com/altivaSIF/docs/Altiva-Hybrid-Long-Short-Fund-presentation.pdf": false,
   "https://www.edelweissmf.com/altivasif/statutory/disclosures": false,
