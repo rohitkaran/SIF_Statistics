@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T19:33:15Z",
+ "generated": "2026-09-30T21:30:02Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -6546,9 +6546,9 @@
    },
    "allocation_shift": {
     "debt": -4.15,
-    "money_market": -2.67,
     "cash_other": -8.25,
-    "equity": 15.07
+    "equity": 15.07,
+    "money_market": -2.67
    },
    "sector_shifts": [
     {
@@ -6771,9 +6771,9 @@
    },
    "allocation_shift": {
     "debt": 0.34,
-    "money_market": -0.68,
     "cash_other": 1.06,
-    "equity": -0.72
+    "equity": -0.72,
+    "money_market": -0.68
    },
    "sector_shifts": [
     {
@@ -6924,9 +6924,9 @@
    },
    "allocation_shift": {
     "debt": -164.0,
-    "money_market": 129.0,
     "cash_other": 0,
-    "equity": -81.0
+    "equity": -81.0,
+    "money_market": 129.0
    },
    "sector_shifts": [
     {
