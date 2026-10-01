@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T21:30:01Z",
+ "generated": "2026-10-01T09:18:06Z",
  "source": "AMFI SIF Monthly Report — https://www.amfiindia.com/sif/sif-monthly",
  "basis": "Official AMFI industry figures. Every month is a whole-industry snapshot at the same month-end, so month-on-month comparisons are valid.",
  "units": "INR crore",
@@ -17,7 +17,8 @@
   "2026-08"
  ],
  "months_missing": [
-  "2026-09"
+  "2026-09",
+  "2026-10"
  ],
  "latest": "2026-08",
  "latest_total": {
