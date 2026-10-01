@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T19:41:05Z",
+ "generated": "2026-10-01T21:55:13Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -6128,7 +6128,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30012",
-   "observations": 59
+   "observations": 60
   },
   {
    "code": "SIF-148",
@@ -6136,7 +6136,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30020",
-   "observations": 59
+   "observations": 60
   },
   {
    "code": "SIF-146",
@@ -6144,7 +6144,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30046",
-   "observations": 59
+   "observations": 60
   },
   {
    "code": "SIF-147",
@@ -6152,7 +6152,7 @@
    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
    "fund_house": "Infinity SIF",
    "isin": "INF174K30053",
-   "observations": 59
+   "observations": 60
   },
   {
    "code": "SIF-139",
@@ -6240,7 +6240,7 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Apex SIF",
    "isin": "INF209K30073",
-   "observations": 21
+   "observations": 22
   },
   {
    "code": "SIF-156",
@@ -6248,7 +6248,23 @@
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
    "fund_house": "Apex SIF",
    "isin": "INF209K30081",
-   "observations": 21
+   "observations": 22
+  },
+  {
+   "code": "SIF-153",
+   "name": "Apex Equity Long-short Fund-Direct Growth",
+   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+   "fund_house": "Apex SIF",
+   "isin": "INF209K30099",
+   "observations": 22
+  },
+  {
+   "code": "SIF-154",
+   "name": "Apex Equity Long-short Fund-Regular Growth",
+   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+   "fund_house": "Apex SIF",
+   "isin": "INF209K30107",
+   "observations": 22
   },
   {
    "code": "SIF-159",
@@ -6283,22 +6299,6 @@
    "observations": 21
   },
   {
-   "code": "SIF-153",
-   "name": "Apex Equity Long-short Fund-Direct Growth",
-   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "fund_house": "Apex SIF",
-   "isin": "INF209K30099",
-   "observations": 21
-  },
-  {
-   "code": "SIF-154",
-   "name": "Apex Equity Long-short Fund-Regular Growth",
-   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-   "fund_house": "Apex SIF",
-   "isin": "INF209K30107",
-   "observations": 21
-  },
-  {
    "code": "SIF-141",
    "name": "DynaSIF Equity Ex-Top 100 Long - Short Fund - Direct Plan - IDCW Option",
    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
@@ -6328,9 +6328,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "money_market": 610.0,
+    "equity": 796.0,
     "cash_other": 0,
-    "equity": 796.0
+    "money_market": 610.0
    },
    "sector_shifts": [
     {
@@ -6403,9 +6403,9 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
-    "money_market": 0.52,
+    "equity": 3.96,
     "cash_other": -4.48,
-    "equity": 3.96
+    "money_market": 0.52
    },
    "sector_shifts": [
     {
@@ -6480,10 +6480,10 @@
     "cash_other": 18.85
    },
    "allocation_shift": {
-    "money_market": -2.67,
-    "cash_other": -8.25,
     "debt": -4.15,
-    "equity": 15.07
+    "equity": 15.07,
+    "cash_other": -8.25,
+    "money_market": -2.67
    },
    "sector_shifts": [
     {
@@ -6556,9 +6556,9 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
-    "money_market": 0.25,
+    "equity": 2.67,
     "cash_other": -2.92,
-    "equity": 2.67
+    "money_market": 0.25
    },
    "sector_shifts": [
     {
@@ -6604,9 +6604,9 @@
      "change_pct": -1.24
     },
     {
-     "sector": "Personal Products",
-     "from_pct": 2.36,
-     "to_pct": 3.38,
+     "sector": "Petroleum Products",
+     "from_pct": 0.74,
+     "to_pct": 1.76,
      "change_pct": 1.02
     }
    ]
@@ -6705,10 +6705,10 @@
     "cash_other": 9.71
    },
    "allocation_shift": {
-    "money_market": -0.68,
-    "cash_other": 1.06,
     "debt": 0.34,
-    "equity": -0.72
+    "equity": -0.72,
+    "cash_other": 1.06,
+    "money_market": -0.68
    },
    "sector_shifts": [
     {
@@ -6781,9 +6781,9 @@
     "cash_other": 7.65
    },
    "allocation_shift": {
-    "money_market": 0.86,
+    "equity": 4.96,
     "cash_other": -5.82,
-    "equity": 4.96
+    "money_market": 0.86
    },
    "sector_shifts": [
     {
@@ -6858,10 +6858,10 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "money_market": 129.0,
-    "cash_other": 0,
     "debt": -164.0,
-    "equity": -81.0
+    "equity": -81.0,
+    "cash_other": 0,
+    "money_market": 129.0
    },
    "sector_shifts": [
     {
