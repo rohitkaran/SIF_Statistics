@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T20:04:02Z",
+ "generated": "2026-10-07T22:11:03Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -6674,8 +6674,8 @@
    },
    "allocation_shift": {
     "cash_other": 0,
-    "money_market": 610.0,
-    "equity": 796.0
+    "equity": 796.0,
+    "money_market": 610.0
    },
    "sector_shifts": [
     {
@@ -6749,8 +6749,8 @@
    },
    "allocation_shift": {
     "cash_other": -4.48,
-    "money_market": 0.52,
-    "equity": 3.96
+    "equity": 3.96,
+    "money_market": 0.52
    },
    "sector_shifts": [
     {
@@ -6826,9 +6826,9 @@
    },
    "allocation_shift": {
     "debt": -4.15,
-    "equity": 15.07,
     "cash_other": -8.25,
-    "money_market": -2.67
+    "money_market": -2.67,
+    "equity": 15.07
    },
    "sector_shifts": [
     {
@@ -6902,8 +6902,8 @@
    },
    "allocation_shift": {
     "cash_other": -2.92,
-    "money_market": 0.25,
-    "equity": 2.67
+    "equity": 2.67,
+    "money_market": 0.25
    },
    "sector_shifts": [
     {
@@ -6949,9 +6949,9 @@
      "change_pct": -1.24
     },
     {
-     "sector": "Personal Products",
-     "from_pct": 2.36,
-     "to_pct": 3.38,
+     "sector": "Petroleum Products",
+     "from_pct": 0.74,
+     "to_pct": 1.76,
      "change_pct": 1.02
     }
    ]
@@ -6974,8 +6974,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "cash_other": -9.43,
-    "equity": 9.43
+    "equity": 9.43,
+    "cash_other": -9.43
    },
    "sector_shifts": [
     {
@@ -7051,9 +7051,9 @@
    },
    "allocation_shift": {
     "debt": 0.34,
-    "equity": -0.72,
     "cash_other": 1.06,
-    "money_market": -0.68
+    "money_market": -0.68,
+    "equity": -0.72
    },
    "sector_shifts": [
     {
@@ -7127,8 +7127,8 @@
    },
    "allocation_shift": {
     "cash_other": -5.82,
-    "money_market": 0.86,
-    "equity": 4.96
+    "equity": 4.96,
+    "money_market": 0.86
    },
    "sector_shifts": [
     {
@@ -7204,9 +7204,9 @@
    },
    "allocation_shift": {
     "debt": -164.0,
-    "equity": -81.0,
     "cash_other": 0,
-    "money_market": 129.0
+    "money_market": 129.0,
+    "equity": -81.0
    },
    "sector_shifts": [
     {
