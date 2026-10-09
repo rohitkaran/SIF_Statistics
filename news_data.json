@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09T19:37:26Z",
+ "generated": "2026-10-09T21:49:40Z",
  "refresh_seconds": 1800,
  "count": 140,
  "sources_ok": [
@@ -25,52 +25,467 @@
  ],
  "items": [
   {
+   "title": "RBI announces special window for Public Sector Oil Marketing Companies to meet dollar requirements",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63784",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-10-10T01:25:00Z",
+   "summary": "On the basis of assessment of current market conditions, Reserve Bank of India has decided to open a special window to meet the entire daily dollar requirements of three public sector oil marketing companies (OMCs), viz. Indian Oil Corporat",
+   "categories": [
+    "Central banks & rates",
+    "Currencies",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "RBI Announces Regulatory Measures for the Foreign Exchange Market",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63783",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-10-10T01:20:00Z",
+   "summary": "In view of the evolving conditions and to ensure orderly functioning of the foreign exchange market, the Reserve Bank of India has today issued two circulars - A.P. (DIR Series) Circular No. 25 and A.P. (DIR Series) Circular No. 26 announci",
+   "categories": [
+    "Central banks & rates",
+    "India",
+    "Regulation"
+   ]
+  },
+  {
+   "title": "Trump escalates effort to fire Federal Reserve governor Lisa Cook",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYjlOZTQ4TndWWU5vZlFJRXZmTWpHemhxVnlsWi1RVE1aalh6MEhhRTNzU1Vvc2lpb050STlEWFJ5OVE1a0tjWnZGZkxtbnpUVWZocHBOSTR3MnREUXBmbTJpN2pRb0s1LXByRkRjekxYdXVxaVFGdlNib0JQUnptYndHUkplMURQUG5mcnFkbzY2QV9mRE44Z2dnUTZVUGVTbFBsQXJieHR5NG9lR2NFZk43enU?oc=5",
+   "source": "The Washington Post",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:42:15Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "China SXT Pharmaceuticals closes $12 million registered offering",
+   "url": "https://www.investing.com/news/company-news/china-sxt-pharmaceuticals-closes-12-million-registered-offering-93CH-4941758",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:36:30Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Amazon shuffles Alexa leadership following high-end tablet release",
+   "url": "https://www.investing.com/news/stock-market-news/amazon-shufflesalexa-leadership-following-highend-tablet-release-4941757",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:36:19Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "FEDERAL RESERVE SYSTEM—Trump launches Cook removal inquiry at Fed over mortgage allegations",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOb0NweGl4dmxVclF5VEVqZk9vdUFOemZuZDFOQXZsOWV4S0NXUlVlOVR4WlFpUFNEX3BocVBlQXVEeGthUmhnQUhtUi1YVTlreUppMS1fVUo2Wmh1cHBDdDVDekRBRFBXSkZUVkFNN3pBcWo0QlFKRVhBdXRWZlFUbk9ybV94OEJXNUZsWmpGdXJJSkxmSEcxdUdoc0pEaWI4YUFtTEs3UGlaSzhKb2pMQ3pKWmpnc0QzYTNra1g2TXFac0dNMkVyNThkTnNpX3p4T1pHWDNJNkZTc2E4S216TS1ZRU5XXzVTdmFmazYzZjA?oc=5",
+   "source": "VitalLaw.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:34:52Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Elton Resources announces private placement for up to C$5 million",
+   "url": "https://www.investing.com/news/company-news/elton-resources-announces-private-placement-for-up-to-c5-million-93CH-4941756",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:32:33Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Lockheed Martin unveils PAC-3 Edge interceptor designed to counter hypersonic threats",
+   "url": "https://www.investing.com/news/stock-market-news/lockheed-martin-unveils-pac3-edge-interceptor-designed-to-counter-hypersonic-threats-4941753",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:30:25Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Mexico stocks higher at close of trade; S&P/BMV IPC up 1.63%",
+   "url": "https://www.investing.com/news/stock-market-news/mexico-stocks-higher-at-close-of-trade-spbmv-ipc-up-163-4941749",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:30:04Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Is iPhone 18 demand cooling off? Here’s how deep Apple reportedly is cutting component orders.",
+   "url": "https://www.marketwatch.com/story/is-iphone-18-demand-cooling-off-heres-how-deep-apple-reportedly-is-cutting-component-orders-a44244ee?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T21:30:00Z",
+   "summary": "Component orders for the iPhone 18 Pro and the iPhone 18 Pro Max are down about 15% in October, according to Nikkei Asia.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump establishes committee to investigate Federal Reserve's Lisa Cook in latest effort to fire her",
+   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOcVB3d2RlLUc0QXE1d2xHZFFTdmdiTC1rZkRGZkRrb0VOLW1Kel9GTTRLN1hJZXFaMERtWnQwMU9ZVlk2ODkybEQtNE9MUmpXQTVibUs2aFVxQnZ2eHFVRURTejF5VDh1dUI4eS16cDBYRWhlMF9rQnFsS0tNTnU2c1pxcHVtbklGMnhIRW5QSUNocThZNjBlQklPSDFuY1FPdGJzUzViRWNpRm5yS1lsR0pyZjRKZExrNnVFcWJVUmNGS2dEekVmY0JpdVFpenNLWGlGcmZoeVdydFZQUXQ1Z3lBVURaU0FCTDltcVVBWmdKbm42dWcwWVEtdFRTWmluQ3J1NVFxc0ItTWx5RV9maHpDUklDZFBnUGZlNQ?oc=5",
+   "source": "WQOW",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:30:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Integra LifeSciences prices $450M senior secured notes at 9.5%",
+   "url": "https://www.investing.com/news/company-news/integra-lifesciences-prices-450m-senior-secured-notes-at-95-93CH-4941747",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:28:38Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue",
+   "url": "https://www.marketwatch.com/story/nvidia-and-micron-shares-bounce-as-investors-get-clarity-on-a-key-openai-matter-ba76ed20?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T21:27:00Z",
+   "summary": "A new report paints OpenAI’s financial picture in a more optimistic light.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Colombia stocks higher at close of trade; COLCAP up 0.21%",
+   "url": "https://www.investing.com/news/stock-market-news/colombia-stocks-higher-at-close-of-trade-colcap-up-021-4941745",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:25:03Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Microsoft is nearing a big milestone that solidifies its revival",
+   "url": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T21:24:00Z",
+   "summary": "Microsoft is close to reclaiming a $4 trillion market cap — and fresh records are also in sight.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Russia stocks higher at close of trade; MOEX Russia Index up 0.38%",
+   "url": "https://www.investing.com/news/stock-market-news/russia-stocks-higher-at-close-of-trade-moex-russia-index-up-038-4941742",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:20:03Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump established a committee to investigate the activities of a Federal Reserve official whom he had previously attempted to fire",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNSlZzSGZUc3pxQUxnZUJoSWFLcWlzVXZXTFllVjMxVnFwanoxMG9EZDJOb2Vici1NN2xfa2xfVWRxbjFxVGRfV0Y3TWUwUDJyak5LczFuaFVUTVlTTGk1VXJET2sxQUtzbXVidkhJZ1htMHRva2pETWR3WHpHZ3NVWkw4UzRid3lUdDdVUUpzT01kVFF1UlNJelM3OTYyOVZtcUhPa2pKS1pFdDRHOXRHTkZGRzRJQ1dRclZKWnhoaTV0eHE3aGJXblY4dTZQY0FNSFZKRWNURlp4Z2tMUFgyeEdNRHNsN0RC0gHnAUFVX3lxTE5ZazNYc0pFTC1VRDJhVjBQejl4U1VPQTVhNlZEdVlKQmluUXZLZHQtSGVTaGFtcURRZU1ncXFWTXEtYXFoSVFQYXJfQmF4T1Y0VWt6bWNtWWYyWHplYy14cVpCWUVEWlloNVBoRG5JVks1QnBFUm1LSDVIcHR0UlNkWkhlbXNRendERE1HQnB1cjE1Y2FZWTBrb2dDRGg0TEk2S2xqMHVhaGpuZ3dtRUEtTFp4UW5KbElLTFpMeUUya19sWURiM3hzN1BMRWc3QWFKVTJBemg0c2xMQmxMSDVMR1JESmljMA?oc=5",
+   "source": "Українські Національні Новини (УНН)",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:17:55Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
+   "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:16:49Z",
+   "summary": "Ukraine's president said allowing Russia to sell petroleum products would prolong a war that must be ended.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Super Micro Computer CEO Charles Liang sells $4.5 million in shares",
+   "url": "https://www.investing.com/news/insider-trading-news/super-micro-computer-ceo-charles-liang-sells-45-million-in-shares-93CH-4941739",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:16:01Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Super Micro director Sara Liu sells $4.5 million in shares",
+   "url": "https://www.investing.com/news/insider-trading-news/super-micro-director-sara-liu-sells-45-million-in-shares-93CH-4941738",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:16:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Americans 75 and older are wealthiest age group, Fed survey finds - NBC 5 Dallas-Fort Worth",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONFQ0LWllaWxSZ3VBNHNfUjR6UUw2MG0yandzQi1aV2hUdTlTWmdldkxyQVZUcndXUlhlMVZncDhRZjF6bVJtRGVONy1uMlZvTlVLNVhMZjFHdUh5TUEwT0xTV3JhaVB2MThPY3NOVzJkUGEwUy1rTnBiaDdMdl8wV3o1NGtLc1BIZjZtUUZ1M2VMRjRJUUt1VHJXaFFKNWFNQ0HSAaoBQVVfeXFMTndSX0VRNTQ1SWJzUlBEQ1BIQXU1Qm1SYUw2RUtYT3RGVThtWWgySHVhLTVhUHBmVnR0VGlkYUszU2lWTlpJYnF5V1oyUlI3VjVZcXcteDRiTDRfOVRKd2VtX2NCbUptT2lCbVRjOXFYRUhoQVdrdktidWpTamdiTTU2bm8xaVFFNFpPc21uU0FQOFQzLTVlRFRpWV9iTFZTNG9jWm5ZUkk1enc?oc=5",
+   "source": "Google News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:15:06Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Should I be worried?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T21:15:00Z",
+   "summary": "“I presume these are sophisticated investors taking a profit.”",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "As AT&T, Verizon and T-Mobile shares fall, Wall Street assesses the growing SpaceX threat",
+   "url": "https://www.marketwatch.com/story/as-at-t-verizon-and-t-mobile-shares-fall-wall-street-assesses-the-growing-spacex-threat-e869ef9e?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T21:07:00Z",
+   "summary": "Telecommunications stocks saw their worst daily drops in over a decade.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Federal Reserve Cook",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNm9LQm5QdGl6OGE5ZWVHdlVKRkhyd0k5VTdBajhaNUs2b2VIX1A1a1hVaGxraVVGWUZBeEdFVEtUS2Qtb3hsanl6eVlmYnJjWllCNklBTEg2aFNwTk5tbWRKY3ViQUFtVy11VFc5ZjhReUM5SEtTclNRLVVMaTIxbGxrbVlxUjVwalBER19Dek1wbGhkNUZoYQ?oc=5",
+   "source": "TelegraphHerald.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T21:05:21Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "I’m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
+   "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T21:00:00Z",
+   "summary": "“I also have $310,000 in an IRA and $46,000 in savings. My house is paid off.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump taps Russia to boost global diesel supplies ahead of midterms. It may be ‘too little, too late,’ says strategist.",
+   "url": "https://www.marketwatch.com/story/trump-taps-russia-to-boost-global-diesel-supplies-ahead-of-midterms-it-may-be-too-little-too-late-says-strategist-8c789030?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T20:51:00Z",
+   "summary": "The Trump administration has enlisted Russia to help boost U.S. and global diesel supplies in an effort to lower prices for the fuel ahead of the U.S. midterm elections in November.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump Is Renewing His Effort to Oust the Federal Reserve’s Lisa Cook",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZnJmWmFTaXVZSTdJNXQyWlpFMGxqRVc2NFFBVHlJamZXLWhzLU5QSnZIUmxIQjd2RkJweW5BOVE0MW9yNFdPVVlTY3dwUVJVRWI2OHBFRktKU1BIWklXU1FNVzFyTXlPZ0tRSWRZUGc1V1JaTFFYY2dTOWxoeWN5SnZBWHZ4QXpZUWtZMkJwY29EaGMwWUpOYVl3?oc=5",
+   "source": "NOTUS",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T20:43:07Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Inflation dominates headlines, but not Wall Street",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQW5LM0RrdEd5ZHg0NExYcmpjbnd2azgtZzd6Zm9tMDB3U2lnWHo0WTJaT3J2SnhpZ0M4NWlHSGpEYkJ5QURUN2NHODZxV3Q2VWdPNk9MWHM0TG9IRklpR0ZtMnRsQnRsMklreHhOMmRHb1piSEVrTmVlZHN4UDZUSk55S2NjRjND?oc=5",
+   "source": "Courthouse News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T20:24:27Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Tariffs pushed up consumer goods prices by 2.9 percentage points: NY Fed",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR0NJbXg0VW80eHY3QXIwUndTZko0bWlCSHFTS3ZiQjJ6VVVUOTBzTHNwelRkejZMeUMxa3F5QkxBVUdKLWVGTTlmdHZrbDc1aWF6V1hydzRfLWdvOWlIbndySWp1UThQaXkycHZIcFhoRWdwR2pscTR6bmNGNGZtMGRlQXVNdEE0QXk5akFkOW9JbjBxdF9SNHBZZ3NndWFhbU03RFZ5N2JTVUo3QkhOcUt1OA?oc=5",
+   "source": "CFO Dive",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T20:23:49Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
    "title": "Trump strikes deal with Putin to supply Russian diesel to U.S. and global markets",
    "url": "https://www.cnbc.com/2026/10/09/trump-putin-russian-diesel-us-global-markets.html",
    "source": "CNBC International",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T19:35:09Z",
-   "summary": "",
+   "published": "2026-10-09T20:20:57Z",
+   "summary": "President Donald Trump has few options to reduce diesel prices given the destruction done to refineries by the wars in Eastern Europe and the Middle East.",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Gold holds above $4,100 amid inflation worries but faces resistance near $4,200 ahead of key US inflation data.",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVHBiMmRxRXRtSkViQnNJVDZsWG5wT0thTVRSNmlRMzA2QmFIQTI2ZldXbVpFaUZ6YnNuWnVZM3FxcnlFTVNxVHVya2loVDU5eWVmdE9EWWhkSEVSbThlUG9uVHZfWWJqcE44Z255QUp4QlR5NGNnS1BUa0xiZ0I4UXZfSkIwTXhlMFZLbDdRendLVVdXcS1jTmN5VndvNHo5bHhBVXdBMDVOUXRWY3F3?oc=5",
-   "source": "Pluang",
+   "title": "Ticker: EU and China strike interim trade deal; Trump aims at Cook, again",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTXE2bUZkcjZTclVNLUFRTHN6cFdBeS1QeHNjTGpJNm5EYTZCYnEyVnJENHU5Mm1DSVMtRE85ZUFvNGxxZEpQYnRheTZHRjdjSk94RkxRUTlSU01ob3BVR3dDX0tXb0ZOdUtodzk0Vko1dzBuQTFXVVhnY1V5b2Q0eE5jNVNablpndUFyZ0YwUUY2RE9ucDNlZ2hwZXNxM3BGb3NxOFh4ejdXcFctX2ZZeQ?oc=5",
+   "source": "Boston Herald",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T19:35:04Z",
+   "published": "2026-10-09T20:18:09Z",
+   "summary": "",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Verizon posts worst day since 2002 as SpaceX U.S. network plans whack cell provider stocks",
+   "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T20:16:58Z",
+   "summary": "SpaceX announced the spectrum deal Thursday, as the company aims to push deeper into the telecom market through its Starlink service.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Wall Street posts weekly gains with earnings, inflation data on tap",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNY0hWbFNBUlE5SFJjLVpMMnIwZzFpN2hVNEd2YkxlalYyVDRKTDZxcGJ0REJLUERXb0tlVVVreVZLMHFodlAtZlY0eDhuN2xiOHcybjM1c3gxMlBNTmZMWWdrdkhQOG9Pc2JRdTEwYXM5N181QmttRVEyRkdXTy1LT2J0ZVA4d2FXdjZZeGZwaGRaSUtDUXJUZXFjSU94cnprbTVUSXRpXzFtQzV2TWtpR1dNSjdaWVplUlE?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T20:16:44Z",
    "summary": "",
    "categories": [
     "Inflation & growth",
-    "Commodities & energy"
+    "Markets"
    ]
   },
   {
-   "title": "Visa stock reaches all-time high at 385.57 USD",
-   "url": "https://www.investing.com/news/company-news/visa-stock-reaches-alltime-high-at-38557-usd-93CH-4941625",
-   "source": "Investing.com",
-   "region": "Global",
+   "title": "‘I have no children’: My aunt gave me $50,000 for a down payment. Now she wants me to leave my home to her two children.",
+   "url": "https://www.marketwatch.com/story/i-have-no-children-my-aunt-gave-me-50-000-for-a-down-payment-she-wants-me-to-leave-my-home-to-her-two-children-24fad94c?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
    "official": false,
-   "published": "2026-10-09T19:34:29Z",
-   "summary": "",
+   "published": "2026-10-09T20:15:00Z",
+   "summary": "“The house cost $385,000. With my savings, her $50,000 and a small mortgage, I was able to close.”",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Fed’s Musalem says more rate hikes needed to reach 2% target",
-   "url": "https://www.investing.com/news/economy-news/feds-musalem-says-more-rate-hikes-needed-to-reach-2-target-93CH-4941624",
-   "source": "Investing.com",
+   "title": "US stocks: US market posts weekly gains with earnings, inflation data on tap",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-market-posts-weekly-gains-with-earnings-inflation-data-on-tap/articleshow/134842368.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-10-09T20:09:34Z",
+   "summary": "Wall Street finished strong on Friday, fueled by optimism ahead of the third-quarter earnings reports from major players like Wells Fargo and Goldman Sachs. Analysts predict a notable growth in S&P 500 earnings year-over-year, even as worri",
+   "categories": [
+    "Inflation & growth",
+    "Markets"
+   ]
+  },
+  {
+   "title": "Here’s how Treasury yields could rise to 6% — even without market upheaval",
+   "url": "https://www.marketwatch.com/story/heres-how-treasury-yields-could-rise-to-6-even-without-market-upheaval-7d9fac9c?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T20:03:00Z",
+   "summary": "The bond market will be closed on Monday for Columbus Day, but the stock market will operate normally.",
+   "categories": [
+    "Central banks & rates",
+    "Markets"
+   ]
+  },
+  {
+   "title": "Oklahoma part of energy growth in KC Federal Reserve Bank district",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNakhpSnpuZXRURnkwbzRHMktjcjNlQ0NYWFdyd09icHlwMUk4dWpIR1QxSTFTUzZEV1ljbTB3dkQtY2FFbDkyT0s2QnhzUVphazdEVklUOGdKdWUtaFZSSlkzanFoU0FpTU9FZUh3QWZtQWlabW93aVVLd3BuRmM0QjgzX2VpY3ZGTVRLRThEdlliLVdCeGRJMWFLeVp2cGRhS0pN?oc=5",
+   "source": "Oklahoma Energy Today",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T19:33:28Z",
+   "published": "2026-10-09T20:00:02Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Country music star Zach Bryan buys $18 million, 40-acre Tennessee estate after getting married",
+   "url": "https://www.marketwatch.com/story/country-music-star-zach-bryan-buys-18-million-40-acre-tennessee-estate-after-getting-married-cb4d20eb?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-10-09T19:48:00Z",
+   "summary": "Country star Zach Bryan has reportedly forked over $18.25 million for a sprawling estate in Franklin, Tenn.—months after tying the knot with Samantha Leonard.",
+   "categories": [
+    "Markets"
    ]
   },
   {
@@ -86,74 +501,27 @@
    ]
   },
   {
-   "title": "Trump announces deal with Putin to release Russian diesel",
-   "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
+   "title": "The surprising post-pandemic drop in income inequality",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NWTFZTkRXS0MxYzdHVVpCQTg4dXNfS2RTM1lyckRQemFhWkFQRGl2Y3NUVkQ1dHVnNWwxLXRUcFJNTFJJZklrbzlhUlA0OVh4U0lZY3VPM0JDaDEwSHNEdEcxWFBTcXZhMnlnblpVUFB2dw?oc=5",
+   "source": "Axios",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T19:32:07Z",
-   "summary": "Diesel prices in the US have doubled since the war with Iran began in February, putting pressure on Republicans ahead of the midterms.",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Moody’s revises Crescent Energy outlook to positive following Eagle Ford deal",
-   "url": "https://www.investing.com/news/stock-market-news/moodys-revises-crescent-energy-outlook-to-positive-following-eagle-ford-deal-4941623",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:31:09Z",
+   "published": "2026-10-09T19:32:34Z",
    "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Farm equipment stocks fall on regulatory probe and falling crop prices",
-   "url": "https://www.investing.com/news/stock-market-news/farm-equipment-stocks-fall-on-regulatory-probe-and-falling-crop-prices-4941615",
-   "source": "Investing.com",
+   "title": "Gold price holds critical $4,100 support, but can it break $4,200 as inflation risks loom?",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOU1A5V2Nxa1JkRlRFNlFCcExoMTVmckhkOHVKeHF5THdEMkFpMlRIbklpM2NBMHROWnllalFaSGFLS0JnR19iaDh1UnYxOFY4MERrUVlVZVI1ZmI4djN5dFZrQ2hVY0gxWkNkMVk0ZDY0Ml9lNlhjUHZHWXFOQTZVM19EZjM3TE1zNHJhM3N3RWlRZnpZUVNGOUdObzBNZFNNZWRCaDlqQmI3YXN6YTlHeHcxQmtBYnlhalE?oc=5",
+   "source": "Kitco",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T19:28:45Z",
+   "published": "2026-10-09T19:25:55Z",
    "summary": "",
    "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "S&P Global upgrades United Rentals to investment grade on leverage cushion",
-   "url": "https://www.investing.com/news/stock-market-news/sp-global-upgrades-united-rentals-to-investment-grade-on-leverage-cushion-4941616",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:27:28Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Nutanix stock hits 52-week high at 74.43 USD",
-   "url": "https://www.investing.com/news/company-news/nutanix-stock-hits-52week-high-at-7443-usd-93CH-4941617",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:27:28Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Saudi Aramco reportedly restores full crude oil supply to Europe for November",
-   "url": "https://www.investing.com/news/commodities-news/saudi-aramco-reportedly-restores-full-crude-oil-supply-to-europe-for-november-4941614",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:25:17Z",
-   "summary": "",
-   "categories": [
+    "Inflation & growth",
     "Commodities & energy"
    ]
   },
@@ -170,18 +538,6 @@
    ]
   },
   {
-   "title": "Repole buys 1.4% Churchill Downs stake, driving stock up 6% in Friday trade",
-   "url": "https://www.investing.com/news/stock-market-news/repole-buys-14-churchill-downs-stake-driving-stock-up-6-in-friday-trade-4941612",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:21:12Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "RBI to conduct 3-day Variable Rate Reverse Repo (VRRR) auction under LAF on October 12, 2026",
    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63782",
    "source": "RBI",
@@ -192,30 +548,6 @@
    "categories": [
     "Central banks & rates",
     "India"
-   ]
-  },
-  {
-   "title": "US plans Alaska offshore oil lease sale for March 2027",
-   "url": "https://www.investing.com/news/commodities-news/us-plans-alaska-offshore-oil-lease-sale-for-march-2027-93CH-4941611",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:19:46Z",
-   "summary": "",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Bitcoin clings to $81,121 macro support on 5h chart: Live levels",
-   "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-tests-87363-resistance-with-fading-momentum-live-levels-93CH-4931135",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:18:52Z",
-   "summary": "",
-   "categories": [
-    "Crypto"
    ]
   },
   {
@@ -243,63 +575,27 @@
    ]
   },
   {
-   "title": "Trump orders mortgage fraud probe, hearing into Lisa Cook",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUWZjYjZCWWNIMkNaZHZ6SjRKYkdod1p4ZzZsb01tX1hmSVUtZWYtU3BmdnFiSlJKVTVRN3RXRXlfRl9qRWw5LVYzS0JKVW41a0l5VFpsbzA2ZXdNdmp6cmpfSDlMVzl1QzFVTVYyZENpZFF4WEtteS02eDVkZWZfb1NJdVF0bVhtbzB3RW1VTENsa2xEdS02NUZ3?oc=5",
-   "source": "The Real Deal",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:15:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "White House Sets Hearing on Fed Governor Lisa Cook’s Mortgage Allegations",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaS1lM29sYzNUY2FQaFFmMU55a0wwU1pnTjc3LThPRjE2WnVNWTdRTzk3dWk3aU8zNlBrQkV4VG52eld0SnktMTNwNGt2LUxGYno3b2o3UjRoSkg2Wkw3dFJMc1Y5eXF5OFhiczljenpNaU9zT2thTHc2RFgxdnctSnI0MWdjY0YyakRjQXlndUJJWWpsZGdpelVQZzY?oc=5",
-   "source": "Barron's",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T19:13:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
    "title": "Trump announces committee investigation of Fed Governor Lisa Cook",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSzEteVpBaXpTZ1dVcFFoejBFNDh6d1I2b0t1RzZWRTgtUTBJaGFfbWNEMS1xdEZYcUhuQkI2ZHFGSFJ6ZnFZMEVoODV3VllUQmp4Y3owMVhfcU1vR1JLN1F5Q1pvT1J2TlpoTGMzb0VUR0tpQzNnWVliUUhMM1AxM0U5UjNNb29ZaW5jZ01oZE1sQ3BFTFJQek4tZVNsYVlXVUpv?oc=5",
    "source": "SCOTUSblog",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T19:04:43Z",
+   "published": "2026-10-09T19:12:57Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
    ]
   },
   {
-   "title": "Elon Musk is now richer than any American ever — and it’s not even close",
-   "url": "https://www.marketwatch.com/story/elon-musk-is-now-richer-than-any-american-ever-and-its-not-even-close-58f31401?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
+   "title": "Trump Announces White House Inquiry Into Fed Governor Lisa Cook",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00c05fZUF5M2NfeElKZDZPSWkxcHJpM21Qd29XV0xyZU1JNDItU1F6WjJ4czJ5ay11ZW5nY1dZTUU3SE5CS210bWNtSnR5VXVSdXdZMW95TTk3dTRrV29WN0ZwMkpMVXV5VTlCdVFwS0FhZFR2dHBz?oc=5",
+   "source": "The New York Times",
+   "region": "Global",
    "official": false,
-   "published": "2026-10-09T19:04:00Z",
-   "summary": "Musk’s trillioniare status means he’s wealthier than his next three contemporaries combined — and also worth more than historical tycoons like John D. Rockefeller.",
+   "published": "2026-10-09T19:12:08Z",
+   "summary": "",
    "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "My husband inherited $3 million. He wants a vacation home, but I want to save for retirement. Who’s right?",
-   "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T19:00:00Z",
-   "summary": "“I keep thinking about giving each child $750,000 toward a house.”",
-   "categories": [
-    "Markets"
+    "Central banks & rates"
    ]
   },
   {
@@ -309,6 +605,18 @@
    "region": "Global",
    "official": false,
    "published": "2026-10-09T18:56:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "The Federal Reserve monitors the rise of American households burdened with debt to 8.6%",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPcmo3czBpUkpsSDB1enJPbUlZS1d4eHFYaE1qa2U3NDRIZW1jMHdwREMxLXphdkl1eS1YOHFvR2V1d09FMlVXZm1acXVkSmFLc0FocVZOcklWT0FaLWZab1pfY0M5UXF2TGFTamlwSGoxWTc4QUxyREpJaDllZFlvSm1XZHA5SGdCc0FQTU5BaVBZR2syS3dTQXJKUmtQTTUweWp6Vi1XcVdwOV9ZSGNPYTVIN0RpcWlsTE12S0FRT3UwMUVaSnRRWU4zY2xCNGYtV1VEeTFqZTdoaE0?oc=5",
+   "source": "المتداول العربي",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T18:53:01Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
@@ -340,36 +648,12 @@
    ]
   },
   {
-   "title": "Hurricane Isaias to ‘stress test’ oil markets already hobbled by tight fuel supplies",
-   "url": "https://www.marketwatch.com/story/hurricane-isaias-to-stress-test-oil-markets-already-hobbled-by-tight-fuel-supplies-ca90d4a5?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T18:44:00Z",
-   "summary": "Supply disruptions during the Atlantic hurricane season usually end up being a blip. This year could be very different.",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Trump establishes committee to investigate Federal Reserve’s Lisa Cook in latest effort to fire her",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQOWV4aUNzVjVSdFU1cUZfbDBMYUhfdVdCd3A4S21TWWM1X1M5V1YzQlVmVUI4bVhVU0tRRmxMMER1M25ydWxfRVRIUmhyd1NBUmsxRzZxR1NvdTV4aGx2TWxhV3kyYXE1QTJKcEZwZkd5cjJlelpsZHB1aWVXbk9tN2pjS2FlYmFHQkZ5S2Fra0N6T2Zmd3FabHB1OFlPNFhVNm1ka2FJYk1XX2ZWTHBSUHNLdEhoVDZEckExS0tGdUxBVkl5SDBnR1VhdkxrVE9HMG13?oc=5",
-   "source": "The Seattle Times",
+   "title": "Americans 75 and older are wealthiest age group, Fed survey finds",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQzNsYUdfUFNiWklpZGRxTHNLRlB5TVNjLUV3bWZ6cmhMMG9EU2VyTGwteHJpcjRyS1dMYUUxTnF6ZE1zQlBQU0FsLUJBMG5hNkp4UTFaTTIxQXM1V3JXeTdLbk9qZExsajNIal9VbEVNTERDSkxZT3liNHQxelVRWktQcy1Lbk1mN3FZUGZTSllFQWdpNU91TlgyQkVpMEFxcnlVQXhsRQ?oc=5",
+   "source": "Magnolia Tribune",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T18:43:43Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Trump escalates effort to fire Federal Reserve governor Lisa Cook",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYjlOZTQ4TndWWU5vZlFJRXZmTWpHemhxVnlsWi1RVE1aalh6MEhhRTNzU1Vvc2lpb050STlEWFJ5OVE1a0tjWnZGZkxtbnpUVWZocHBOSTR3MnREUXBmbTJpN2pRb0s1LXByRkRjekxYdXVxaVFGdlNib0JQUnptYndHUkplMURQUG5mcnFkbzY2QV9mRE44Z2dnUTZVUGVTbFBsQXJieHR5NG9lR2NFZk43enU?oc=5",
-   "source": "The Washington Post",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T18:42:52Z",
+   "published": "2026-10-09T18:45:00Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
@@ -381,7 +665,7 @@
    "source": "Punch Newspapers",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T18:42:26Z",
+   "published": "2026-10-09T18:42:34Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
@@ -414,19 +698,6 @@
    ]
   },
   {
-   "title": "Wall Street set for weekly gains with earnings, inflation data on tap",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNY0hWbFNBUlE5SFJjLVpMMnIwZzFpN2hVNEd2YkxlalYyVDRKTDZxcGJ0REJLUERXb0tlVVVreVZLMHFodlAtZlY0eDhuN2xiOHcybjM1c3gxMlBNTmZMWWdrdkhQOG9Pc2JRdTEwYXM5N181QmttRVEyRkdXTy1LT2J0ZVA4d2FXdjZZeGZwaGRaSUtDUXJUZXFjSU94cnprbTVUSXRpXzFtQzV2TWtpR1dNSjdaWVplUlE?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T18:34:21Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Markets"
-   ]
-  },
-  {
    "title": "GST Council proposes 2% TDS on scrap deals",
    "url": "https://economictimes.indiatimes.com/news/economy/policy/gst-council-proposes-2-tds-on-scrap-deals/articleshow/134840930.cms",
    "source": "ET Economy",
@@ -440,15 +711,15 @@
    ]
   },
   {
-   "title": "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Should I be worried?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
+   "title": "Trump renews push to oust Federal Reserve Governor Lisa Cook",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUWhDVXBONW54UU8yY3V6TnE1LW9CQVl2M1lLVkUwZ3R4dFNlOXhxLWZpXzVmaEpTM0lUTWJLNGJBUlN0WnRoTzNKaG9hS3REcHpHYXpRZURKVy1BVHVxOUlsRnhvbmR6TXhxUGlEQ3k2bm1lVTZqc0wwQXpzOVhtVGxCNTlUbW01Y25OM1RJYkNsaWxHQ205QTVpS2M2T1V2MmxnLURFY9IBrAFBVV95cUxOU2tNaURGamZZNzFqSXdzeG9uU2RsajRmYllEZ1FGUjJYdmlFekY2QngzUkhhbDR6eHpYLUQ3dTJBa3NFVVdkRmdHYklEMW5fcXhORWRnTVZHRVJtdEN2UW16c3RsRVg0WVhtV0JfdGowT193LV81THg0YXNvSG1TOUh2TGpQRzBXTVd3YmRjOHBaa25WMzF2UmtWNV9TY0RpTVcxbERnUTY2SWlX?oc=5",
+   "source": "ANews",
+   "region": "Global",
    "official": false,
-   "published": "2026-10-09T18:30:00Z",
-   "summary": "“I presume these are sophisticated investors taking a profit.”",
+   "published": "2026-10-09T18:28:19Z",
+   "summary": "",
    "categories": [
-    "Corporate & deals"
+    "Central banks & rates"
    ]
   },
   {
@@ -464,18 +735,6 @@
    ]
   },
   {
-   "title": "As AT&T, Verizon and T-Mobile shares fall, Wall Street assesses the growing SpaceX threat",
-   "url": "https://www.marketwatch.com/story/as-at-t-verizon-and-t-mobile-shares-fall-wall-street-assesses-the-growing-spacex-threat-e869ef9e?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T18:16:00Z",
-   "summary": "Telecommunications stocks were seeing their worst daily drops in over a decade.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Forecasting the upcoming week: US inflation data steal the show",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY2ZqMjZ5cVBaY0NMZE5ZY0I4cWdBZndkTXRQUGtEQUV4Wmc0MWpHY19ObkgxdlN5NnRkb2RwQlpoUWRpUld3Z3FtYmtCTXRDMlhfaXBCbTM2M0tuY3oxc0pZR3o5ME0tSlJ4amZMMHNXdlFqV0tGbEVpWFBLVko2WkM2MzE5dWg3Vm9ad296aWh1Y3JIR0xqellaakVDOFFzajJfbGNmUFFaMW05Ync?oc=5",
    "source": "FXStreet",
@@ -488,12 +747,12 @@
    ]
   },
   {
-   "title": "Americans 75 and older are wealthiest age group, Fed survey finds",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQzNsYUdfUFNiWklpZGRxTHNLRlB5TVNjLUV3bWZ6cmhMMG9EU2VyTGwteHJpcjRyS1dMYUUxTnF6ZE1zQlBQU0FsLUJBMG5hNkp4UTFaTTIxQXM1V3JXeTdLbk9qZExsajNIal9VbEVNTERDSkxZT3liNHQxelVRWktQcy1Lbk1mN3FZUGZTSllFQWdpNU91TlgyQkVpMEFxcnlVQXhsRQ?oc=5",
-   "source": "Magnolia Tribune",
+   "title": "Trump Appoints Committee to Investigate Federal Reserve Governor",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQXzU1T3RvbW1RcjBpc2o2dDRGSG96b2dhNTBkdXRYa2kwZmNudXgwd0xrUnA4d0FCTFo2T0NsQVlkTnZYMGhrVG8yOUFLc0VkRXQ4Y0xyMlIxS0ZOTnNEQlZWbUNzRlI2cFZma0tSdEx1N1o5N05tdHYtb3dOMWkxVGpOaml5SEl3djByOWJjXzJUQ0ZiZ3d0Y3BHcFAteWtsMnVMZlVoR0w?oc=5",
+   "source": "themortgagepoint.com",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T18:11:15Z",
+   "published": "2026-10-09T18:09:11Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
@@ -512,18 +771,6 @@
    ]
   },
   {
-   "title": "Microsoft is nearing a big milestone that solidifies its revival",
-   "url": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T18:06:00Z",
-   "summary": "Microsoft is close to reclaiming a $4 trillion market cap — and fresh records are also in sight.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Trump establishes committee to investigate Fed governor Lisa Cook",
    "url": "https://www.theguardian.com/business/2026/oct/09/trump-investigate-lisa-cook-fed-governor",
    "source": "The Guardian",
@@ -536,19 +783,6 @@
    ]
   },
   {
-   "title": "Why you need to take a closer look at your favorite stock index",
-   "url": "https://www.marketwatch.com/story/why-you-need-to-take-a-closer-look-at-your-favorite-stock-index-479fb494?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T18:04:00Z",
-   "summary": "Also in Weekend Reads: A positive case for the bond market, how prediction markets can pull you in, and a warning to those who benefit from GLP-1s.",
-   "categories": [
-    "Central banks & rates",
-    "Markets"
-   ]
-  },
-  {
    "title": "Statistics ministry proposes common framework to calculate state GDP",
    "url": "https://economictimes.indiatimes.com/news/economy/policy/statistics-ministry-proposes-common-framework-to-calculate-state-gdp/articleshow/134840540.cms",
    "source": "ET Economy",
@@ -558,30 +792,6 @@
    "summary": "The statistics ministry has proposed a common framework for estimating state gross domestic product. This framework uses an expenditure approach under the revised 2022-23 base year. Currently, no state compiles estimates of private final co",
    "categories": [
     "Inflation & growth"
-   ]
-  },
-  {
-   "title": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
-   "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T18:00:00Z",
-   "summary": "“Both properties will be solely in his name.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "I’m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
-   "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T18:00:00Z",
-   "summary": "“I also have $310,000 in an IRA and $46,000 in savings. My house is paid off.”",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -605,6 +815,18 @@
    "official": false,
    "published": "2026-10-09T17:56:24Z",
    "summary": "Trump tried to fire Cook, a nominee of former President Joe Biden, but the Supreme Court blocked his first attempt.",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump orders new investigation of Fed's Lisa Cook",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaTFduakwwLUdRVWF1SzQ0YTdjX3NTWHFFVEdPeTA1VEkzaVpQclBtLTBMcTFnbFpmVFN4Z0w2N2U0X3pFVzJJZE56LVdGZUhkZndzSFpESXdFc1IwZjM4R3ln?oc=5",
+   "source": "Axios",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T17:56:08Z",
+   "summary": "",
    "categories": [
     "Central banks & rates"
    ]
@@ -659,42 +881,6 @@
    ]
   },
   {
-   "title": "Trump ramps up battle to fire Fed’s Lisa Cook. Her lawyers say there’s no basis to remove her.",
-   "url": "https://www.marketwatch.com/story/trump-ramps-up-battle-to-fire-feds-lisa-cook-her-lawyers-say-theres-no-basis-to-remove-her-3a62c5cd?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-10-09T17:50:00Z",
-   "summary": "Trump wants the committee to report on whether there are grounds for Cook’s removal from office. She hasn’t been charged with a crime.",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Trump orders new investigation of Fed's Lisa Cook",
-   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaTFduakwwLUdRVWF1SzQ0YTdjX3NTWHFFVEdPeTA1VEkzaVpQclBtLTBMcTFnbFpmVFN4Z0w2N2U0X3pFVzJJZE56LVdGZUhkZndzSFpESXdFc1IwZjM4R3ln?oc=5",
-   "source": "Axios",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T17:48:45Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Trump announces White House probe into Federal Reserve governor Lisa D. Cook",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSl9WUEZNN0FYaTl3cmE3eF9NdC16SWxNazJwX2pFcExqQ0d6dk85ZVJIZ1N1T1NEc1BFaDhBd0xLeHZEcDhzSXNRNk1RU21wNW1tZVpNY0xjNGlSeThHS1dMdGhaaVNVMHh3bF84Ri1fNlVubHpnd1IzZGNPNnRocEZRNV9HSHV3TlBLTTJmT0g2TkpNZnhRTE9DcXh6aURUVS1vX1NEYlRJNlpoXzVYNG84OGlTM0tRcHhzdEtTbjZWWExSQjJfYTc5V0VKbTlU?oc=5",
-   "source": "KOKH",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T17:48:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
    "title": "RBI announces OMO Sale of Government of India Securities",
    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63779",
    "source": "RBI",
@@ -705,6 +891,18 @@
    "categories": [
     "Central banks & rates",
     "India"
+   ]
+  },
+  {
+   "title": "Trump announces White House probe into Federal Reserve governor Lisa D. Cook",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSklQMFR5THIxRWNIVGktQXRaTGRiYmc3VEUyLTRGWU1SVjctenZkNF9UNEpvZ1AzalRqU2RmdHQ5bUozOWN4YU1tM1B3cGpfREJSUVBGWjVoSkFoSTFncTAzcEJuTy0zTWxEZlB3LUM4REJLOXQ1Skpjb2VpV29ydDlQaXZsZ1JrU0N4Y3hCUXlDMDVWaUZZZnBqanR5SWRPU2JWb05XVmNTZnJhRG1URUJvSzJlQkZZQjM4RWZXTkwtSDNOelNxR0RPRWQ2Zw?oc=5",
+   "source": "KATU",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T17:24:14Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
    ]
   },
   {
@@ -793,6 +991,18 @@
    ]
   },
   {
+   "title": "President Donald Trump establishes committee to investigate Federal Reserve's Lisa Cook in latest effort to fire her",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPOVVkenZva1ZvMy1MZ2JuX0tOclZ6dzVVT1BBdnFCQXc4S2tLbWFQQmNhWWhRWm9ldTUwRDNHTVJUbS1wQnYwdmJGajAzR25kTmhXWlVMblVxZktCWEN1eVBINkRRbmJQX1c4bVN4LVlXY1VmY1ZzXzZYMGFjcVVTUnVhaGtHWlRZdVVNblp4Q0ktZVpqeV9TN1l1T0NSUlFmNnZtYW9DM01ILUJuYlB6dVVncEFEMm80b1VSZEtSODZUYVA0dWM4eUNwYXAzbmRiaUh5NzJsdzJLTGVIUldFX0ZoQVJtRkFYWnhENUR2MV9adk5Jb0R4WGZZZEZ6eGdkYzNFOVA4MVBmZENjN3lwSm9oc2FUSGU4UkxGS0ZDMVF0Zw?oc=5",
+   "source": "The Journal Gazette",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T16:44:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
    "title": "Fed says household income, wealth, debt stress increased from 2022 to 2025",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLWpCcDBIZElDdktNOUtwQ2NHVVh0WHZkYkJhV0t1T0sxWS1ON0Frb1pqUFFEbWtnWWI0d0IzYVBqck1MSExMc0ExNHozUEdUMHV2MDV5YjE0U0FVbnVFd01tdXFZakpxYnZ2MFZjTEdGWENyNkxaRlZNVWUtUEFhRmM1OFcwblktYVdzTTFpYjQ2bFhybGMyNlpLUndSdkZod2VoX3Ryc0stNVBRQnhpeERR?oc=5",
    "source": "Reuters",
@@ -828,18 +1038,6 @@
    "summary": "",
    "categories": [
     "Markets"
-   ]
-  },
-  {
-   "title": "Trump sets up committee to investigate, potentially remove the Fed's Lisa Cook",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdUxOZXh5bm9ERlh0ckdRLUx4bFo2QTNpbHFKcmNHRzJiWE1hME8ydkVyd3hwS01IN1pFeWdYaXh2ZnVxc1BBNHZaMlBnWGZGQjhKeVlGb0x1MmhxZEhmanZTLVBnNUJUNXAtZVdabW1xWTNGWEJtYkxpcjBvRUZHYm13TEtpd2h4eXgxUlBUNUZvODk5?oc=5",
-   "source": "Politico",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T16:21:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
    ]
   },
   {
@@ -941,18 +1139,6 @@
    ]
   },
   {
-   "title": "Trump renews push to oust Federal Reserve Governor Lisa Cook",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQkJNX2xZVEJsOEh5ZmRialdfdGFGQU5oZDN6dHMtQnE0ZS1obTU3YnRjNzJrV01reDREaXQtcS1ibkd5dG9kLVJydk15QU9ESW9UU2J1cU5TNGRlRjlUcTZVQXJuX3JTM092X2tNZWVKMWlVdUE5RnJ0cUVYblF3aUtMbnhJaHZ4eWFIYkp1djhBdk9t?oc=5",
-   "source": "Yahoo",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T16:03:43Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
    "title": "No automatic GST refund if earlier claim under appeal, says FinMin",
    "url": "https://www.business-standard.com/economy/news/no-automatic-gst-refund-if-earlier-claim-under-appeal-says-finmin-126100901362_1.html",
    "source": "Business Standard",
@@ -1022,6 +1208,18 @@
    "region": "Global",
    "official": false,
    "published": "2026-10-09T15:38:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Trump intensifies campaign against Fed’s Lisa Cook, establishes new inquiry panel",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLS1nQ2ZGSjJ0TC1Tei1kN0lHd1FWeTZQOTJJNEs4MWpjYk5mR1JLWDdOZ21PcXhHa3JJaDJFZ2J0dzlRUU5ENTNteGxJRUtta21ZUU9Sem95R1N2QmZHcjFfMWJTVHRhNjVrd1ZKenBic1hzTjNBRU1uOXhvRF9LRk96OW9uSjBnSWk4b29TVzR0QzNPT2U5azc1eHRRNXVDQUZ6QmZMTnZQeFpFVEdN?oc=5",
+   "source": "MS NOW",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T15:34:32Z",
    "summary": "",
    "categories": [
     "Central banks & rates"
@@ -1100,6 +1298,18 @@
    ]
   },
   {
+   "title": "Trump sets up committee to investigate, potentially remove the Fed's Lisa Cook",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdUxOZXh5bm9ERlh0ckdRLUx4bFo2QTNpbHFKcmNHRzJiWE1hME8ydkVyd3hwS01IN1pFeWdYaXh2ZnVxc1BBNHZaMlBnWGZGQjhKeVlGb0x1MmhxZEhmanZTLVBnNUJUNXAtZVdabW1xWTNGWEJtYkxpcjBvRUZHYm13TEtpd2h4eXgxUlBUNUZvODk5?oc=5",
+   "source": "Politico",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T15:07:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
    "title": "China agrees to ‘halve’ hybrid car exports to EU in landmark deal",
    "url": "https://www.theguardian.com/business/2026/oct/09/china-agrees-to-curb-hybrid-car-exports-to-eu-in-landmark-deal",
    "source": "The Guardian",
@@ -1160,18 +1370,6 @@
    ]
   },
   {
-   "title": "Trump Is Renewing His Effort to Oust the Federal Reserve’s Lisa Cook",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZnJmWmFTaXVZSTdJNXQyWlpFMGxqRVc2NFFBVHlJamZXLWhzLU5QSnZIUmxIQjd2RkJweW5BOVE0MW9yNFdPVVlTY3dwUVJVRWI2OHBFRktKU1BIWklXU1FNVzFyTXlPZ0tRSWRZUGc1V1JaTFFYY2dTOWxoeWN5SnZBWHZ4QXpZUWtZMkJwY29EaGMwWUpOYVl3?oc=5",
-   "source": "NOTUS",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T15:00:30Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
    "title": "FM Nirmala Sitharaman meets Singapore President, PM; discuss strengthening bilateral cooperation",
    "url": "https://economictimes.indiatimes.com/news/economy/policy/fm-nirmala-sitharaman-meets-singapore-president-pm-discuss-strengthening-bilateral-cooperation/articleshow/134836830.cms",
    "source": "ET Economy",
@@ -1196,18 +1394,6 @@
    ]
   },
   {
-   "title": "Trump Announces White House Inquiry Into Fed Governor Cook",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00c05fZUF5M2NfeElKZDZPSWkxcHJpM21Qd29XV0xyZU1JNDItU1F6WjJ4czJ5ay11ZW5nY1dZTUU3SE5CS210bWNtSnR5VXVSdXdZMW95TTk3dTRrV29WN0ZwMkpMVXV5VTlCdVFwS0FhZFR2dHBz?oc=5",
-   "source": "The New York Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T14:34:04Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
    "title": "Government Stock - Full Auction Results",
    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63775",
    "source": "RBI",
@@ -1221,12 +1407,24 @@
    ]
   },
   {
-   "title": "New York Federal Reserve says inflation on everyday items is because of tariffs",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMGE2X0hHemVfbHgyRUZxaVRpWjZ4YXdtLU5yUkxsVlNDWTltajg3TmZpMEVObkpoQmZEOHFlMm1HQnJrR3c5R0tma0Q1dGluM1VLY3lJc1RoY2UyTXNQdkNSNmxIZ3Y1Nmp4UTlkNnlfcVViWVFkdE9weHQ2ZUNuV1FDNy05ajgyTERYdzFLUVFLUjhCOUhoNnhvSEstamZ1Nlp6cEZ0Uk42c0gyM09mWXVGX2FFSkxDeW9Oa015TDZGa2lxR2xxeDlnMjQ1WGM?oc=5",
-   "source": "KTUL",
+   "title": "Trump launches new effort to oust Fed Governor Lisa Cook",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTjFBN0hzaFotYnFvNUpWbkE3TzNkemdXSG9aZVd1Y3VMM2hCQnc1UUZSRkhwSlg3ODVWTFFyUE5tenpkM1dGVXJWQ2U3S0dyN2JFU1UwN2F6RndPaUQ5Q2pRU1FiYjFsSnFQY0ktR29XOWhSY3BzeGprNE5SUk4wWEt0cTk?oc=5",
+   "source": "CNN",
    "region": "Global",
    "official": false,
-   "published": "2026-10-09T14:14:59Z",
+   "published": "2026-10-09T14:26:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "New York Federal Reserve says inflation on everyday items is because of tariffs",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdkFlSWZ1RmFfOEF4VGFWSDlBc19YVUU2UEZidXRXalhiODhGVmYwaVItaHZPTGNrWXNUTlJvY1Q1SGRrcjU1QUNHYzJLakxhWERyS09ZT2J2amNTbTFmZjBEM0syNEVpbDNfdTRNLW5DcG9WaGgySHB6andoODRtVG1qLW95WExZbTM3OTNuWUhud0tBLVY0ZWpmVjJ4eDFrOWEyZWVLNEFubzNOcjYtSnZaanRWWEVGTnl2dWw3Y2xVRnlZR3dMWDYzNXp3aUwxMmVsZW1R?oc=5",
+   "source": "WSMH",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T14:18:38Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
@@ -1304,19 +1502,6 @@
    "summary": "",
    "categories": [
     "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Government Stock - Auction Results: Cut-off",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63774",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-10-09T13:50:00Z",
-   "summary": "7.06% GS 2041 7.43% GS 2076 I. Notified Amount ₹23,000 crore ₹13,000 crore II. Cut off Price (₹) / Implicit Yield at cut-off 96.18/7.4898% 95.33/7.8015% III. Amount accepted in the auction ₹23,000 crore ₹13,000 crore IV. Devolvement on Prim",
-   "categories": [
-    "Central banks & rates",
-    "Markets"
    ]
   },
   {
@@ -1458,6 +1643,18 @@
    ]
   },
   {
+   "title": "The Fed's going to take its time with rate hikes",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBRbjZBYktnZmU3Y3pEZGtCQUprVkUtTk95YVVobXBfRjdXeXVna3ZUSks5VVRLN3dTdDAtMlhiR2xyRGdkOVpQSFRmYUJ6R1hKTGlZRjJMdTZhLThSMHZZYmc5V1l0c011LUc4ZXZkd1E?oc=5",
+   "source": "Axios",
+   "region": "Global",
+   "official": false,
+   "published": "2026-10-09T12:41:15Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
    "title": "Anthropic bans users from being 'cruel' to its AI systems",
    "url": "https://www.bbc.co.uk/news/articles/c6j9k1l72wkgo?at_medium=RSS&at_campaign=rss",
    "source": "BBC Business",
@@ -1484,19 +1681,6 @@
    ]
   },
   {
-   "title": "RBI cancels Certificate of Registration of 13 NBFCs",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63773",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-10-09T12:25:00Z",
-   "summary": "The Reserve Bank of India, in exercise of powers conferred on it under Section 45-IA (6) of the Reserve Bank of India Act, 1934, has cancelled the Certificate of Registration of the following companies. Sr. No. Name of the Company Registere",
-   "categories": [
-    "Central banks & rates",
-    "India"
-   ]
-  },
-  {
    "title": "Bitcoin falls to $82,000 as OpenAI revenue concerns and geopolitical tensions trigger nearly $1 billion in crypto liquidations",
    "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-falls-to-82000-as-openai-revenue-concerns-and-geopolitical-tensions-trigger-nearly-1-billion-in-crypto-liquidations/articleshow/134833622.cms",
    "source": "ET Markets",
@@ -1511,20 +1695,6 @@
    ]
   },
   {
-   "title": "India bonds extend weekly slide; struggle to shake off RBI hike, hawkish stance shift",
-   "url": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-extend-weekly-slide-struggle-to-shake-off-rbi-hike-hawkish-stance-shift/articleshow/134833317.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-10-09T12:21:30Z",
-   "summary": "Indian government bonds have faced a downturn for the eighth consecutive week, primarily influenced by soaring oil prices and a more aggressive stance from the central bank. The yield on benchmark bonds has surged, signaling a drop in inves",
-   "categories": [
-    "Central banks & rates",
-    "Commodities & energy",
-    "India"
-   ]
-  },
-  {
    "title": "Blockchain.com seeks U.S. approval for prediction markets, crypto derivatives trading",
    "url": "https://www.cnbc.com/2026/10/09/blockchain-com-cftc-prediction-markets.html",
    "source": "CNBC Finance",
@@ -1534,31 +1704,6 @@
    "summary": "Blockchain.com is seeking CFTC designation and registration to offer U.S. event contracts and cryptocurrency derivatives.",
    "categories": [
     "Crypto"
-   ]
-  },
-  {
-   "title": "Fed minutes: Another rate hike likely this year to combat inflation",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdkpUUi1rc3RiU0cybUNiZ24yOE1XcXRxZDJUaWUzS2g2TGgyYnlwNktyOGczR3AxUk9KVkU0alZQTTY0WkdTREpmZEkxUm0wLVdiaEhfNmd6cFJHM1JrY3dlRzFoMDNOdEtkNkhhdUxQaTR2bDVuVHczMEVNX0JnZDRaVklHLW01TWVHcEs1TDNZRUp6dlpxSWpQcnNLblNWbm5OaEduRGpNOUtONFhCYXMzQVpmR3A1cmMtVUxWM2Y?oc=5",
-   "source": "| Florida Realtors",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T12:00:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Ferrari’s chairman is bullish on AI. He’s less certain how businesses will cash in",
-   "url": "https://www.cnbc.com/2026/10/09/john-elkann-ferrari-ai-technology.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T11:54:21Z",
-   "summary": "Ferrari chair John Elkann played down AI bubble fears, but acknowledged investment in the technology could outpace revenue generation.",
-   "categories": [
-    "Corporate & deals"
    ]
   },
   {
@@ -1595,152 +1740,6 @@
    "official": false,
    "published": "2026-10-09T11:38:47Z",
    "summary": "An IIM study shows monthly incomes of 'lakhpati didi' households rose by 61 per cent in the past year, says Amit Shukla, joint secretary in the rural development ministry.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "UP govt to deploy 1,725 electric buses in 18 cities under GCC model",
-   "url": "https://www.business-standard.com/economy/uttar-pradesh/up-govt-to-deploy-1-725-electric-buses-in-18-cities-under-gcc-model-126100900884_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-10-09T11:34:24Z",
-   "summary": "Private operators will procure and run the buses under 12-year contracts, with government subsidies of ₹35 lakh to ₹40 lakh per bus and free land for depots provided",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Send us your questions for economist Isabella Weber on inflation and affordability",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTGJKMHFWU2pITFNBRy11Y2FtZFh2eFhoTHJxbTIxVjRiSGVZZHJnc1NoUmc2dUE0VTQyQmt0MTNEOHRUVkxXeFk5T0Y4X1hYMnBOaWVIQ2k1OFk2YXJaUlJ5UlVOak1zVzRFZXRfVnY3Q3VPMVE0dE1RRzczYkRGS2FCdHUyZ0VHbE5jQTJ4WDd6azVLU2tlSk5sV0JLZDhiM2pSNFkyUnoybmRPLWU5bzA4ZDBRQnJvMnpKVTkzTDBvTmhOTlVpYk9idw?oc=5",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T11:10:00Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "The new Darth Vader: how tech execs became the film villains of our age",
-   "url": "https://www.theguardian.com/film/2026/oct/09/the-new-darth-vader-how-tech-execs-became-the-film-villains-of-our-age",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T11:05:42Z",
-   "summary": "Jeremy Strong’s portrayal of Mark Zuckerberg in The Social Reckoning shows how public opinion has changed around billionaire CEOs since The Social Network’s release When The Social Network came out, Mark Zuckerberg organised a staff viewing",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Prices, Prices, Prices: Overall Inflation and the Costs You Care About",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbnc5cWE1R2ZIX29sYVZQdmNqLXBOSnlzMTV4Q2pyam9hUHkxd295SXZnZ0pfRDdkZHRURTZDV3RRMy10eUlEVzZiR1JhUFJ0bXJWVWo3dkRCT0JZRlBYTlJQQ29ZekZfTUhkbjFqQTIxRkQ3M1Eya1d3ZWlTaGVvUml1TUNxb2poci1DQnhRcXM4ZXRVVHRFRElQTThHb3NMOVlOSWRSN3ZoclZlYXR0RF9VZVNJZjFiVkdlUWY5NA?oc=5",
-   "source": "Liberty Street Economics",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T11:02:51Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "AI and the climate crisis pose existential risks. The law offers a way to reduce them | Robert Reich",
-   "url": "https://www.theguardian.com/commentisfree/2026/oct/09/ai-climate-change-liability-lawsuits",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T11:00:26Z",
-   "summary": "Liability lawsuits have held tobacco, oil and pharma companies to account in the past. AI investors won’t ignore this threat The most basic function of government is to protect people from harm. Two growing phenomena – the climate crisis an",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Next round of review meeting of ASEAN-India Trade in Goods Agreement to be held in Jan",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/next-round-of-review-meeting-of-asean-india-trade-in-goods-agreement-to-be-held-in-jan/articleshow/134831018.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-10-09T10:41:46Z",
-   "summary": "India and ASEAN will hold the next review meeting of their goods trade agreement in January 2027, as both sides push to speed up negotiations on updating the 2009 pact. The joint committee has asked sub-groups to clear pending chapters and",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "GST Council bets on faster refunds, lower penalties to ease business burden",
-   "url": "https://economictimes.indiatimes.com/news/economy/policy/gst-council-bets-on-faster-refunds-lower-penalties-to-ease-business-burden/articleshow/134830504.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-10-09T10:26:48Z",
-   "summary": "The 57th GST Council meeting has introduced measures to simplify compliance and expedite refunds for businesses. Recommendations include increasing the prosecution threshold and reducing penalties for non-compliance. The proposed framework",
-   "categories": [
-    "India",
-    "Regulation"
-   ]
-  },
-  {
-   "title": "Centre seeks fishers’ views to shape national action plan for sustainable small-scale fisheries",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/centre-seeks-fishers-views-to-shape-national-action-plan-for-sustainable-small-scale-fisheries/articleshow/134830333.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-10-09T10:22:07Z",
-   "summary": "The Union Department of Fisheries is leading the consultation process, with the Bay of Bengal Programme Inter-Governmental Organisation (BOBP-IGO) facilitating and coordinating the exercise.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Why are there so many sports subscriptions?",
-   "url": "https://www.bbc.co.uk/sport/football/videos/cj20vkpd61kqo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T10:07:13Z",
-   "summary": "Pete Oliver of DAZN explains why the is a growing number of sports subscriptions and why they are getting more expensive.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "India holds soybean cargoes over doubts about Niger origin, sources say",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/india-holds-soybean-cargoes-over-doubts-about-niger-origin-sources-say/articleshow/134829922.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-10-09T10:03:50Z",
-   "summary": "Indian customs authorities have held about 1,500 tonnes of soybean cargoes at JNPT after importers failed to provide documents proving the shipments originated in Niger and qualified for duty-free entry. The scrutiny follows a sharp surge i",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Fed minutes: Another rate hike likely coming this year to combat persistent inflation",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTExQSWY2YWhBYUZ0OElXNGx3c2JyUmpSRmVLLWdtSlh4UGdITERqdXNOaG5mQndfemFjVnQ5eS1IZzlsckhpazVhSUZIMV9uZGRfa1ZzQmN3aVdaZ0g5OTBrSGxWc0piWVlyTmtCcWVjWVZ4dGp1TDk3VU9KT3c3S29pV1MxcXloOVJ1RTlQQkYzTDRtSDNoaXVWdE1uZGpUdEo5UUNlUWhzRi1VSjFYaHV6dURVNndOZGhrZGdsdkxtYms?oc=5",
-   "source": "Jamaica Gleaner",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T09:57:02Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "I've been with my boyfriend for two years and don't know his salary",
-   "url": "https://www.bbc.co.uk/news/articles/c8wyz69r0nnpo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-10-09T09:37:38Z",
-   "summary": "Talking about salary, spending habits and debt can be some of dating's trickier conversations.",
    "categories": [
     "Markets"
    ]
