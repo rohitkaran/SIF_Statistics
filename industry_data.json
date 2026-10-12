@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-10T08:49:21Z",
+ "generated": "2026-10-12T22:12:04Z",
  "source": "AMFI SIF Monthly Report — https://www.amfiindia.com/sif/sif-monthly",
  "basis": "Official AMFI industry figures. Every month is a whole-industry snapshot at the same month-end, so month-on-month comparisons are valid.",
  "units": "INR crore",
@@ -14,98 +14,98 @@
   "2026-05",
   "2026-06",
   "2026-07",
-  "2026-08"
+  "2026-08",
+  "2026-09"
  ],
  "months_missing": [
-  "2026-09",
   "2026-10"
  ],
- "latest": "2026-08",
+ "latest": "2026-09",
  "latest_total": {
-  "period": "2026-08",
-  "schemes": 33.0,
-  "folios": 125539.0,
-  "inflow_cr": 8069.51,
-  "redemption_cr": 370.13,
-  "net_flow_cr": 7699.38,
-  "aum_cr": 31175.43,
-  "avg_aum_cr": 26446.86
+  "period": "2026-09",
+  "schemes": 34.0,
+  "folios": 156483.0,
+  "inflow_cr": 8328.94,
+  "redemption_cr": 750.77,
+  "net_flow_cr": 7578.18,
+  "aum_cr": 38286.94,
+  "avg_aum_cr": 35020.74
  },
  "latest_categories": [
   {
    "category": "Hybrid Long-Short Fund",
    "group": "Hybrid",
    "schemes": 11.0,
-   "folios": 49037.0,
-   "inflow_cr": 4364.56,
-   "redemption_cr": 251.68,
-   "net_flow_cr": 4112.88,
-   "aum_cr": 19669.5,
-   "avg_aum_cr": 17350.27,
-   "period": "2026-08",
-   "aum_change_cr": 4295.81,
-   "aum_change_pct": 27.94,
-   "share_pct": 63.09
+   "folios": 58178.0,
+   "inflow_cr": 4897.73,
+   "redemption_cr": 411.61,
+   "net_flow_cr": 4486.12,
+   "aum_cr": 23956.9,
+   "avg_aum_cr": 22022.93,
+   "period": "2026-09",
+   "aum_change_cr": 4287.4,
+   "aum_change_pct": 21.8,
+   "share_pct": 62.57
   },
   {
    "category": "Equity Ex-Top 100 Long-Short Fund",
    "group": "Equity Oriented",
    "schemes": 7.0,
-   "folios": 42902.0,
-   "inflow_cr": 2456.87,
-   "redemption_cr": 23.43,
-   "net_flow_cr": 2433.45,
-   "aum_cr": 6288.9,
-   "avg_aum_cr": 4576.8,
-   "period": "2026-08",
-   "aum_change_cr": 2499.14,
-   "aum_change_pct": 65.94,
-   "share_pct": 20.17
+   "folios": 53942.0,
+   "inflow_cr": 1653.69,
+   "redemption_cr": 161.27,
+   "net_flow_cr": 1492.42,
+   "aum_cr": 7595.35,
+   "avg_aum_cr": 7094.3,
+   "period": "2026-09",
+   "aum_change_cr": 1306.45,
+   "aum_change_pct": 20.77,
+   "share_pct": 19.84
   },
   {
    "category": "Equity Long-Short Fund",
    "group": "Equity Oriented",
-   "schemes": 11.0,
-   "folios": 23556.0,
-   "inflow_cr": 644.84,
-   "redemption_cr": 51.57,
-   "net_flow_cr": 593.27,
-   "aum_cr": 3449.98,
-   "avg_aum_cr": 3097.24,
-   "period": "2026-08",
-   "aum_change_cr": 629.27,
-   "aum_change_pct": 22.31,
-   "share_pct": 11.07
+   "schemes": 12.0,
+   "folios": 29856.0,
+   "inflow_cr": 976.0,
+   "redemption_cr": 80.79,
+   "net_flow_cr": 895.21,
+   "aum_cr": 4216.06,
+   "avg_aum_cr": 3707.62,
+   "period": "2026-09",
+   "aum_change_cr": 766.08,
+   "aum_change_pct": 22.21,
+   "share_pct": 11.01
   },
   {
    "category": "Active Asset Allocator Long-Short Fund",
    "group": "Hybrid",
    "schemes": 3.0,
-   "folios": 9404.0,
-   "inflow_cr": 592.91,
-   "redemption_cr": 35.37,
-   "net_flow_cr": 557.54,
-   "aum_cr": 1720.87,
-   "avg_aum_cr": 1378.89,
-   "period": "2026-08",
-   "aum_change_cr": 570.91,
-   "aum_change_pct": 49.65,
-   "share_pct": 5.52
+   "folios": 13519.0,
+   "inflow_cr": 782.5,
+   "redemption_cr": 94.46,
+   "net_flow_cr": 688.04,
+   "aum_cr": 2456.23,
+   "avg_aum_cr": 2141.52,
+   "period": "2026-09",
+   "aum_change_cr": 735.36,
+   "aum_change_pct": 42.73,
+   "share_pct": 6.42
   },
   {
    "category": "Sector Rotation Long-Short Fund",
    "group": "Equity Oriented",
    "schemes": 1.0,
-   "folios": 640.0,
-   "inflow_cr": 10.33,
-   "redemption_cr": 8.08,
-   "net_flow_cr": 2.24,
-   "aum_cr": 46.18,
-   "avg_aum_cr": 43.66,
-   "period": "2026-08",
-   "aum_change_cr": 2.99,
-   "aum_change_pct": 6.92,
-   "share_pct": 0.15
+   "folios": 988.0,
+   "inflow_cr": 19.02,
+   "redemption_cr": 2.64,
+   "net_flow_cr": 16.38,
+   "aum_cr": 62.4,
+   "avg_aum_cr": 54.39,
+   "period": "2026-09",
+   "aum_change_cr": 16.22,
+   "aum_change_pct": 35.12,
+   "share_pct": 0.16
   }
  ],
  "totals": [
@@ -218,6 +218,16 @@
    "net_flow_cr": 7699.38,
    "aum_cr": 31175.43,
    "avg_aum_cr": 26446.86
+  },
+  {
+   "period": "2026-09",
+   "schemes": 34.0,
+   "folios": 156483.0,
+   "inflow_cr": 8328.94,
+   "redemption_cr": 750.77,
+   "net_flow_cr": 7578.18,
+   "aum_cr": 38286.94,
+   "avg_aum_cr": 35020.74
   }
  ],
  "categories": [
@@ -1199,8 +1209,7 @@
    "avg_aum_cr": 3097.24,
    "period": "2026-08",
    "aum_change_cr": 629.27,
-   "aum_change_pct": 22.31,
-   "share_pct": 11.07
+   "aum_change_pct": 22.31
   },
   {
    "category": "Equity Ex-Top 100 Long-Short Fund",
@@ -1214,8 +1223,7 @@
    "avg_aum_cr": 4576.8,
    "period": "2026-08",
    "aum_change_cr": 2499.14,
-   "aum_change_pct": 65.94,
-   "share_pct": 20.17
+   "aum_change_pct": 65.94
   },
   {
    "category": "Sector Rotation Long-Short Fund",
@@ -1229,8 +1237,7 @@
    "avg_aum_cr": 43.66,
    "period": "2026-08",
    "aum_change_cr": 2.99,
-   "aum_change_pct": 6.92,
-   "share_pct": 0.15
+   "aum_change_pct": 6.92
   },
   {
    "category": "Debt Long-Short Fund",
@@ -1272,8 +1279,7 @@
    "avg_aum_cr": 1378.89,
    "period": "2026-08",
    "aum_change_cr": 570.91,
-   "aum_change_pct": 49.65,
-   "share_pct": 5.52
+   "aum_change_pct": 49.65
   },
   {
    "category": "Hybrid Long-Short Fund",
@@ -1287,8 +1293,110 @@
    "avg_aum_cr": 17350.27,
    "period": "2026-08",
    "aum_change_cr": 4295.81,
-   "aum_change_pct": 27.94,
-   "share_pct": 63.09
+   "aum_change_pct": 27.94
+  },
+  {
+   "category": "Equity Long-Short Fund",
+   "group": "Equity Oriented",
+   "schemes": 12.0,
+   "folios": 29856.0,
+   "inflow_cr": 976.0,
+   "redemption_cr": 80.79,
+   "net_flow_cr": 895.21,
+   "aum_cr": 4216.06,
+   "avg_aum_cr": 3707.62,
+   "period": "2026-09",
+   "aum_change_cr": 766.08,
+   "aum_change_pct": 22.21,
+   "share_pct": 11.01
+  },
+  {
+   "category": "Equity Ex-Top 100 Long-Short Fund",
+   "group": "Equity Oriented",
+   "schemes": 7.0,
+   "folios": 53942.0,
+   "inflow_cr": 1653.69,
+   "redemption_cr": 161.27,
+   "net_flow_cr": 1492.42,
+   "aum_cr": 7595.35,
+   "avg_aum_cr": 7094.3,
+   "period": "2026-09",
+   "aum_change_cr": 1306.45,
+   "aum_change_pct": 20.77,
+   "share_pct": 19.84
+  },
+  {
+   "category": "Sector Rotation Long-Short Fund",
+   "group": "Equity Oriented",
+   "schemes": 1.0,
+   "folios": 988.0,
+   "inflow_cr": 19.02,
+   "redemption_cr": 2.64,
+   "net_flow_cr": 16.38,
+   "aum_cr": 62.4,
+   "avg_aum_cr": 54.39,
+   "period": "2026-09",
+   "aum_change_cr": 16.22,
+   "aum_change_pct": 35.12,
+   "share_pct": 0.16
+  },
+  {
+   "category": "Debt Long-Short Fund",
+   "group": "Debt Oriented",
+   "schemes": 0.0,
+   "folios": 0.0,
+   "inflow_cr": 0.0,
+   "redemption_cr": 0.0,
+   "net_flow_cr": 0.0,
+   "aum_cr": 0.0,
+   "avg_aum_cr": 0.0,
+   "period": "2026-09",
+   "aum_change_cr": 0.0,
+   "aum_change_pct": null
+  },
+  {
+   "category": "Sectoral Debt Long-Short Fund",
+   "group": "Debt Oriented",
+   "schemes": 0.0,
+   "folios": 0.0,
+   "inflow_cr": 0.0,
+   "redemption_cr": 0.0,
+   "net_flow_cr": 0.0,
+   "aum_cr": 0.0,
+   "avg_aum_cr": 0.0,
+   "period": "2026-09",
+   "aum_change_cr": 0.0,
+   "aum_change_pct": null
+  },
+  {
+   "category": "Active Asset Allocator Long-Short Fund",
+   "group": "Hybrid",
+   "schemes": 3.0,
+   "folios": 13519.0,
+   "inflow_cr": 782.5,
+   "redemption_cr": 94.46,
+   "net_flow_cr": 688.04,
+   "aum_cr": 2456.23,
+   "avg_aum_cr": 2141.52,
+   "period": "2026-09",
+   "aum_change_cr": 735.36,
+   "aum_change_pct": 42.73,
+   "share_pct": 6.42
+  },
+  {
+   "category": "Hybrid Long-Short Fund",
+   "group": "Hybrid",
+   "schemes": 11.0,
+   "folios": 58178.0,
+   "inflow_cr": 4897.73,
+   "redemption_cr": 411.61,
+   "net_flow_cr": 4486.12,
+   "aum_cr": 23956.9,
+   "avg_aum_cr": 22022.93,
+   "period": "2026-09",
+   "aum_change_cr": 4287.4,
+   "aum_change_pct": 21.8,
+   "share_pct": 62.57
   }
  ],
  "new_schemes": [
@@ -1561,6 +1669,15 @@
    "schemes_in_row": 2.0,
    "funds_mobilized_cr": 1317.07,
    "amount_is_row_total": true
+  },
+  {
+   "period": "2026-09",
+   "group": null,
+   "category": "Equity Long-Short Fund",
+   "scheme": "Altiva Equity Long-Short Fund",
+   "schemes_in_row": 1.0,
+   "funds_mobilized_cr": 377.0,
+   "amount_is_row_total": false
   }
  ]
 }
