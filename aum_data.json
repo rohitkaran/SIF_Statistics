@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T22:12:05Z",
+ "generated": "2026-10-12T22:46:06Z",
  "basis": "Disclosed net assets from each fund house's own portfolio disclosure. AMFI publishes no AUM API for SIFs.",
  "counting": "One portfolio file = one fund. Plan variants are never counted separately.",
  "caveat": "SIF portfolio disclosure is staggered and roughly bi-monthly: consecutive periods contain different fund houses (2026-05 and 2026-06 share no funds at all). Period totals are therefore NOT comparable to each other and NOT industry totals. Use `latest` for the current picture and `fund_movers` for genuine growth.",
@@ -8,7 +8,8 @@
   "2026-05",
   "2026-06",
   "2026-07",
-  "2026-08"
+  "2026-08",
+  "2026-09"
  ],
  "universe": {
   "nav_schemes": 126,
@@ -44,6 +45,12 @@
    "aum_cr": 331.57,
    "funds": 2,
    "amcs": 2
+  },
+  {
+   "period": "2026-09",
+   "aum_cr": 246.04,
+   "funds": 1,
+   "amcs": 1
   }
  ],
  "by_category": {
@@ -145,6 +152,14 @@
     "aum_cr": 40.03,
     "funds": 1,
     "share_pct": 12.07
+   }
+  ],
+  "2026-09": [
+   {
+    "name": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+    "aum_cr": 246.04,
+    "funds": 1,
+    "share_pct": 100.0
    }
   ]
  },
@@ -248,24 +263,33 @@
     "funds": 1,
     "share_pct": 12.07
    }
+  ],
+  "2026-09": [
+   {
+    "name": "Diviniti SIF",
+    "aum_cr": 246.04,
+    "funds": 1,
+    "share_pct": 100.0
+   }
   ]
  },
  "latest": {
-  "aum_cr": 6444.58,
+  "aum_cr": 6399.08,
   "funds": 18,
   "periods_spanned": [
    "2025-10",
    "2026-05",
    "2026-06",
    "2026-07",
-   "2026-08"
+   "2026-08",
+   "2026-09"
   ],
   "by_house": [
    {
     "name": "iSIF SIF",
     "aum_cr": 4432.78,
     "funds": 4,
-    "share_pct": 68.78,
+    "share_pct": 69.27,
     "as_of_periods": [
      "2026-07"
     ]
@@ -274,7 +298,7 @@
     "name": "RedHex SIF",
     "aum_cr": 581.18,
     "funds": 1,
-    "share_pct": 9.02,
+    "share_pct": 9.08,
     "as_of_periods": [
      "2026-06"
     ]
@@ -283,7 +307,7 @@
     "name": "DynaSIF SIF",
     "aum_cr": 471.04,
     "funds": 2,
-    "share_pct": 7.31,
+    "share_pct": 7.36,
     "as_of_periods": [
      "2026-05"
     ]
@@ -292,25 +316,25 @@
     "name": "Altiva SIF",
     "aum_cr": 339.76,
     "funds": 1,
-    "share_pct": 5.27,
+    "share_pct": 5.31,
     "as_of_periods": [
      "2025-10"
     ]
    },
    {
     "name": "Diviniti SIF",
-    "aum_cr": 291.54,
+    "aum_cr": 246.04,
     "funds": 1,
-    "share_pct": 4.52,
+    "share_pct": 3.84,
     "as_of_periods": [
-     "2026-08"
+     "2026-09"
     ]
    },
    {
     "name": "Arudha SIF",
     "aum_cr": 200.46,
     "funds": 2,
-    "share_pct": 3.11,
+    "share_pct": 3.13,
     "as_of_periods": [
      "2026-06"
     ]
@@ -319,7 +343,7 @@
     "name": "Apex SIF",
     "aum_cr": 75.99,
     "funds": 1,
-    "share_pct": 1.18,
+    "share_pct": 1.19,
     "as_of_periods": [
      "2026-05"
     ]
@@ -328,7 +352,7 @@
     "name": "Magnum SIF",
     "aum_cr": 40.03,
     "funds": 1,
-    "share_pct": 0.62,
+    "share_pct": 0.63,
     "as_of_periods": [
      "2026-08"
     ]
@@ -357,7 +381,7 @@
     "name": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
     "aum_cr": 2227.73,
     "funds": 7,
-    "share_pct": 34.57,
+    "share_pct": 34.81,
     "as_of_periods": [
      "2025-10",
      "2026-05",
@@ -370,7 +394,7 @@
     "name": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
     "aum_cr": 2196.85,
     "funds": 2,
-    "share_pct": 34.09,
+    "share_pct": 34.33,
     "as_of_periods": [
      "2026-05",
      "2026-07"
@@ -378,21 +402,21 @@
    },
    {
     "name": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-    "aum_cr": 1066.09,
+    "aum_cr": 1020.59,
     "funds": 6,
-    "share_pct": 16.54,
+    "share_pct": 15.95,
     "as_of_periods": [
      "2026-05",
      "2026-06",
      "2026-07",
-     "2026-08"
+     "2026-09"
     ]
    },
    {
     "name": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
     "aum_cr": 953.91,
     "funds": 3,
-    "share_pct": 14.8,
+    "share_pct": 14.91,
     "as_of_periods": [
      "2026-05",
      "2026-07"
@@ -493,21 +517,6 @@
     }
    },
    {
-    "period": "2026-08",
-    "fund": "Diviniti Equity Long Short Fund",
-    "amc": "diviniti",
-    "house": "Diviniti SIF",
-    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
-    "as_of": "2026-08-31",
-    "aum_cr": 291.54,
-    "n_holdings": 44,
-    "allocation": {
-     "equity": 82.08,
-     "money_market": 10.27,
-     "cash_other": 7.65
-    }
-   },
-   {
     "period": "2026-05",
     "fund": "DynaSIF Equity Long - Short Fund",
     "amc": "dynasif",
@@ -520,6 +529,21 @@
      "equity": 72.07,
      "money_market": 16.23,
      "cash_other": 11.7
+    }
+   },
+   {
+    "period": "2026-09",
+    "fund": "Diviniti Equity Long Short Fund",
+    "amc": "diviniti",
+    "house": "Diviniti SIF",
+    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+    "as_of": "2026-09-30",
+    "aum_cr": 246.04,
+    "n_holdings": 49,
+    "allocation": {
+     "equity": 72.91,
+     "money_market": 4.01,
+     "cash_other": 23.08
     }
    },
    {
@@ -728,6 +752,18 @@
    "to_cr": 399.7,
    "change_cr": 125.31,
    "change_pct": 45.67
+  },
+  {
+   "fund": "Diviniti Equity Long Short Fund",
+   "house": "Diviniti SIF",
+   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+   "from_period": "2026-08",
+   "to_period": "2026-09",
+   "gap_months": 1,
+   "from_cr": 291.54,
+   "to_cr": 246.04,
+   "change_cr": -45.5,
+   "change_pct": -15.61
   },
   {
    "fund": "Diviniti Equity Long Short Fund",
@@ -1177,6 +1213,21 @@
     "debt": 1899.0,
     "money_market": 986.0,
     "cash_other": 0.0
+   }
+  },
+  {
+   "period": "2026-09",
+   "fund": "Diviniti Equity Long Short Fund",
+   "amc": "diviniti",
+   "house": "Diviniti SIF",
+   "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+   "as_of": "2026-09-30",
+   "aum_cr": 246.04,
+   "n_holdings": 49,
+   "allocation": {
+    "equity": 72.91,
+    "money_market": 4.01,
+    "cash_other": 23.08
    }
   }
  ]

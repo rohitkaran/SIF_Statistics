@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T22:12:05Z",
+ "generated": "2026-10-12T22:46:06Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -6893,10 +6893,10 @@
     "cash_other": 18.85
    },
    "allocation_shift": {
-    "debt": -4.15,
     "equity": 15.07,
     "money_market": -2.67,
-    "cash_other": -8.25
+    "cash_other": -8.25,
+    "debt": -4.15
    },
    "sector_shifts": [
     {
@@ -7017,9 +7017,9 @@
      "change_pct": -1.24
     },
     {
-     "sector": "Petroleum Products",
-     "from_pct": 0.74,
-     "to_pct": 1.76,
+     "sector": "Personal Products",
+     "from_pct": 2.36,
+     "to_pct": 3.38,
      "change_pct": 1.02
     }
    ]
@@ -7118,10 +7118,10 @@
     "cash_other": 9.71
    },
    "allocation_shift": {
-    "debt": 0.34,
     "equity": -0.72,
     "money_market": -0.68,
-    "cash_other": 1.06
+    "cash_other": 1.06,
+    "debt": 0.34
    },
    "sector_shifts": [
     {
@@ -7271,10 +7271,10 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "debt": -164.0,
     "equity": -81.0,
     "money_market": 129.0,
-    "cash_other": 0
+    "cash_other": 0,
+    "debt": -164.0
    },
    "sector_shifts": [
     {
@@ -7324,6 +7324,81 @@
      "from_pct": 277.0,
      "to_pct": 384.0,
      "change_pct": 107.0
+    }
+   ]
+  },
+  {
+   "fund": "Diviniti Equity Long Short Fund",
+   "amc": "diviniti",
+   "from_period": "2026-08",
+   "to_period": "2026-09",
+   "net_assets_from_cr": 291.54,
+   "net_assets_to_cr": 246.04,
+   "holdings_from": 44,
+   "holdings_to": 49,
+   "allocation_from": {
+    "equity": 82.08,
+    "money_market": 10.27,
+    "cash_other": 7.65
+   },
+   "allocation_to": {
+    "equity": 72.91,
+    "money_market": 4.01,
+    "cash_other": 23.08
+   },
+   "allocation_shift": {
+    "equity": -9.17,
+    "money_market": -6.26,
+    "cash_other": 15.43
+   },
+   "sector_shifts": [
+    {
+     "sector": "IT - Software",
+     "from_pct": 5.23,
+     "to_pct": 0.99,
+     "change_pct": -4.24
+    },
+    {
+     "sector": "Realty",
+     "from_pct": 3.81,
+     "to_pct": 0.0,
+     "change_pct": -3.81
+    },
+    {
+     "sector": "Healthcare Services",
+     "from_pct": 5.12,
+     "to_pct": 1.44,
+     "change_pct": -3.68
+    },
+    {
+     "sector": "Diversified FMCG",
+     "from_pct": 0.0,
+     "to_pct": 2.8,
+     "change_pct": 2.8
+    },
+    {
+     "sector": "Electrical Equipment",
+     "from_pct": 5.36,
+     "to_pct": 2.87,
+     "change_pct": -2.49
+    },
+    {
+     "sector": "Automobiles",
+     "from_pct": 0.79,
+     "to_pct": 2.79,
+     "change_pct": 2.0
+    },
+    {
+     "sector": "Auto Components",
+     "from_pct": 0.0,
+     "to_pct": 1.74,
+     "change_pct": 1.74
+    },
+    {
+     "sector": "Pharmaceuticals & Biotechnology",
+     "from_pct": 3.35,
+     "to_pct": 1.79,
+     "change_pct": -1.56
     }
    ]
   }
