@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-13T09:40:09Z",
+ "generated": "2026-10-13T20:18:55Z",
  "source": "https://www.amfiindia.com/api/sif-nfo",
  "note": "AMFI publishes the open-NFO list without dates. first_seen/last_seen are the dates SIFintel observed each offer on that list; launched_on is the scheme's first published NAV.",
- "open_count": 2,
- "total_tracked": 7,
+ "open_count": 3,
+ "total_tracked": 8,
  "nfos": [
   {
    "key": "mahindra-manulife-mutual-fund__msif-equity-long-short-fund",
@@ -23,6 +23,17 @@
    "scheme_id": "S-37",
    "sif_id": "42",
    "first_seen": "2026-10-12",
+   "last_seen": "2026-10-13",
+   "status": "open",
+   "launched_on": null
+  },
+  {
+   "key": "eminence-sif__eminence-hybrid-long-short-fund",
+   "fund_house": "Eminence SIF",
+   "strategy": "Eminence Hybrid Long Short Fund",
+   "scheme_id": "S-38",
+   "sif_id": "86",
+   "first_seen": "2026-10-13",
    "last_seen": "2026-10-13",
    "status": "open",
    "launched_on": null
