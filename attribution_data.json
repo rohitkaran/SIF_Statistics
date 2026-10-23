@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T18:37:39Z",
+ "generated": "2026-10-23T20:35:32Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -7359,9 +7359,9 @@
     "cash_other": 18.85
    },
    "allocation_shift": {
-    "equity": 15.07,
     "debt": -4.15,
     "cash_other": -8.25,
+    "equity": 15.07,
     "money_market": -2.67
    },
    "sector_shifts": [
@@ -7390,16 +7390,16 @@
      "change_pct": 1.75
     },
     {
-     "sector": "Automobiles",
-     "from_pct": 8.29,
-     "to_pct": 9.88,
-     "change_pct": 1.58
-    },
-    {
      "sector": "It - Software",
      "from_pct": 2.28,
      "to_pct": 0.69,
      "change_pct": -1.58
+    },
+    {
+     "sector": "Automobiles",
+     "from_pct": 8.29,
+     "to_pct": 9.88,
+     "change_pct": 1.58
     },
     {
      "sector": "Power",
@@ -7508,8 +7508,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "equity": 9.43,
-    "cash_other": -9.43
+    "cash_other": -9.43,
+    "equity": 9.43
    },
    "sector_shifts": [
     {
@@ -7584,9 +7584,9 @@
     "cash_other": 9.71
    },
    "allocation_shift": {
-    "equity": -0.72,
     "debt": 0.34,
     "cash_other": 1.06,
+    "equity": -0.72,
     "money_market": -0.68
    },
    "sector_shifts": [
@@ -7737,9 +7737,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "equity": -81.0,
     "debt": -164.0,
     "cash_other": 0,
+    "equity": -81.0,
     "money_market": 129.0
    },
    "sector_shifts": [
