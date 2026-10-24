@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T20:36:19+00:00",
+ "generated": "2026-10-24T07:33:40+00:00",
  "latest_nav": "2026-10-23",
  "schemes": {
   "SIF-120": {
@@ -444,97 +444,97 @@
    "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-86": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-87": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-89": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-167": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Direct Growth",
    "sif": "Titanium SIF",
    "first": "2026-10-16",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-170": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout",
    "sif": "Titanium SIF",
    "first": "2026-10-16",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-166": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment",
    "sif": "Titanium SIF",
    "first": "2026-10-16",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-169": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Regular Growth",
    "sif": "Titanium SIF",
    "first": "2026-10-16",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-165": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout",
    "sif": "Titanium SIF",
    "first": "2026-10-16",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-168": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment",
    "sif": "Titanium SIF",
    "first": "2026-10-16",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-125": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
    "sif": "iSIF SIF",
    "first": "2026-06-08",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-124": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
    "sif": "iSIF SIF",
    "first": "2026-06-08",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-92": {
    "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option - Direct Plan",
    "sif": "qsif SIF",
    "first": "2026-04-24",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-91": {
    "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option - Regular Plan",
    "sif": "qsif SIF",
    "first": "2026-04-24",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-90": {
    "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Direct Plan",
    "sif": "qsif SIF",
    "first": "2026-04-24",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-93": {
    "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Regular Plan",
    "sif": "qsif SIF",
    "first": "2026-04-24",
-   "last": "2026-10-22"
+   "last": "2026-10-23"
   },
   "SIF-9": {
    "name": "Altiva Hybrid Long-Short Fund - Direct Plan - Growth",
@@ -1149,8 +1149,8 @@
   "https://www.edelweissmf.com/altivasif/statutory/disclosures": false,
   "https://sif.itiamc.com/Home/DownloaddFile/10": true,
   "https://sif.itiamc.com/Disclosure?category=PORTFOLIO%20DISCLOSURES": true,
-  "https://www.sbimf.com/docs/default-source/sif-documents/sid---magnum-hybrid-long-short-fund.pdf?sfvrsn=c6e09ae7_2": false,
-  "https://www.sbimf.com/magnumsif-portfolios": false,
+  "https://www.sbimf.com/docs/default-source/sif-documents/sid---magnum-hybrid-long-short-fund.pdf?sfvrsn=c6e09ae7_2": true,
+  "https://www.sbimf.com/magnumsif-portfolios": true,
   "https://www.unionmf.com/docs/arthayasiflibraries/funddetail-downloads/isid/arthaya-equity-long-short-fund.pdf": false,
   "https://www.unionmf.com/arthayasif/about-us/downloads#factsheets": false,
   "https://www.franklintempletonindia.com/download/en-in/sif-open-end-dvsfd-equity-schemes/3ccdfa21-b19b-4a1c-9f19-eb2989a4ca17/Sapphire%20Equity%20Long-Short%20SIF%20_KIM.pdf": true,
