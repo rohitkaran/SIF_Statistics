@@ -1,54 +1,54 @@
 {
- "generated": "2026-10-26T20:40:30+00:00",
+ "generated": "2026-10-26T21:46:54+00:00",
  "latest_nav": "2026-10-26",
  "schemes": {
   "SIF-120": {
    "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Direct Plan - Growth",
    "sif": "Altiva SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-121": {
    "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Direct Plan - IDCW",
    "sif": "Altiva SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": "2026-06-10",
+   "last": "2026-09-30"
   },
   "SIF-122": {
    "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Regular Plan - Growth",
    "sif": "Altiva SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-123": {
    "name": "Altiva Equity Ex- Top 100 Long - Short Fund - Regular Plan - IDCW",
    "sif": "Altiva SIF",
-   "first": null,
-   "last": null
+   "first": "2026-06-10",
+   "last": "2026-09-30"
   },
   "SIF-155": {
    "name": "Apex Equity Ex-Top 100 Long-short Fund-Direct Growth",
    "sif": "Apex SIF",
    "first": "2026-09-01",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-156": {
    "name": "Apex Equity Ex-Top 100 Long-short Fund-Regular Growth",
    "sif": "Apex SIF",
-   "first": "2026-09-01",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-140": {
    "name": "DynaSIF Equity Ex-Top 100 Long - Short Fund - Direct Plan - Growth Option",
    "sif": "DynaSIF SIF",
-   "first": "2026-06-29",
-   "last": "2026-09-30"
+   "first": null,
+   "last": null
   },
   "SIF-141": {
    "name": "DynaSIF Equity Ex-Top 100 Long - Short Fund - Direct Plan - IDCW Option",
    "sif": "DynaSIF SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-143": {
    "name": "DynaSIF Equity Ex-Top 100 Long - Short Fund - Regular Plan - Growth Option",
@@ -65,8 +65,8 @@
   "SIF-159": {
    "name": "Magnum Equity Ex-Top 100 Long Short Fund - Direct Plan - Growth",
    "sif": "Magnum SIF",
-   "first": null,
-   "last": null
+   "first": "2026-09-02",
+   "last": "2026-09-30"
   },
   "SIF-160": {
    "name": "Magnum Equity Ex-Top 100 Long Short Fund - Direct Plan - IDCW",
@@ -77,7 +77,7 @@
   "SIF-157": {
    "name": "Magnum Equity Ex-Top 100 Long Short Fund - Regular Plan - Growth",
    "sif": "Magnum SIF",
-   "first": "2026-09-02",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-158": {
@@ -89,7 +89,7 @@
   "SIF-107": {
    "name": "WSIF Equity Ex-Top 100 Long-Short Fund - Direct Growth",
    "sif": "WSIF",
-   "first": "2026-05-11",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-104": {
@@ -102,49 +102,49 @@
    "name": "WSIF Equity Ex-Top 100 Long-Short Fund - Regular Growth",
    "sif": "WSIF",
    "first": "2026-05-11",
-   "last": "2026-09-30"
+   "last": "2026-10-26"
   },
   "SIF-106": {
    "name": "WSIF Equity Ex-Top 100 Long-Short Fund - Regular IDCW",
    "sif": "WSIF",
    "first": "2026-05-11",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-33": {
    "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Direct Plan - Growth",
    "sif": "iSIF SIF",
-   "first": "2026-10-01",
+   "first": "2026-02-05",
    "last": "2026-10-26"
   },
   "SIF-34": {
    "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Growth",
    "sif": "iSIF SIF",
-   "first": null,
-   "last": null
+   "first": "2026-02-05",
+   "last": "2026-09-30"
   },
   "SIF-23": {
    "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": "2025-11-13",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-25": {
    "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option - Regular Plan",
    "sif": "qsif SIF",
-   "first": "2026-10-01",
+   "first": "2025-11-13",
    "last": "2026-10-26"
   },
   "SIF-24": {
    "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option - Direct Plan",
    "sif": "qsif SIF",
    "first": "2025-11-13",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-26": {
    "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option - Regular Plan",
    "sif": "qsif SIF",
    "first": "2025-11-13",
-   "last": "2026-09-30"
+   "last": "2026-10-26"
   },
   "SIF-163": {
    "name": "Altiva Equity Long-Short Fund-Direct Growth",
@@ -167,8 +167,8 @@
   "SIF-164": {
    "name": "Altiva Equity Long-Short Fund-Regular IDCW",
    "sif": "Altiva SIF",
-   "first": "2026-10-05",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-153": {
    "name": "Apex Equity Long-short Fund-Direct Growth",
@@ -197,32 +197,32 @@
   "SIF-115": {
    "name": "Arthaya Equity Long Short Fund - Regular Plan - IDCW Option",
    "sif": "Arthaya SIF",
-   "first": null,
-   "last": null
+   "first": "2026-05-29",
+   "last": "2026-10-26"
   },
   "SIF-61": {
    "name": "Arudha Equity Long-Short Fund-Direct Plan-Growth",
    "sif": "Arudha SIF",
-   "first": null,
-   "last": null
+   "first": "2026-03-30",
+   "last": "2026-09-30"
   },
   "SIF-75": {
    "name": "Arudha Equity Long-Short Fund-Regular Plan-Annual IDCW",
    "sif": "Arudha SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-62": {
    "name": "Arudha Equity Long-Short Fund-Regular Plan-Growth",
    "sif": "Arudha SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-69": {
    "name": "Arudha Equity Long-Short Fund-Regular Plan-Monthly IDCW",
    "sif": "Arudha SIF",
-   "first": null,
-   "last": null
+   "first": "2026-04-10",
+   "last": "2026-09-30"
   },
   "SIF-71": {
    "name": "Arudha Equity Long-Short Fund-Regular Plan-Quarterly IDCW",
@@ -233,38 +233,38 @@
   "SIF-19": {
    "name": "Diviniti Equity Long Short Fund - Direct Plan Growth Option",
    "sif": "Diviniti SIF",
-   "first": null,
-   "last": null
+   "first": "2025-12-03",
+   "last": "2026-10-26"
   },
   "SIF-20": {
    "name": "Diviniti Equity Long Short Fund - Direct Plan IDCW Option",
    "sif": "Diviniti SIF",
-   "first": "2026-10-01",
+   "first": "2025-12-03",
    "last": "2026-10-26"
   },
   "SIF-21": {
    "name": "Diviniti Equity Long Short Fund - Regular Plan Growth Option",
    "sif": "Diviniti SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-22": {
    "name": "Diviniti Equity Long Short Fund - Regular Plan IDCW Option",
    "sif": "Diviniti SIF",
-   "first": "2026-10-01",
+   "first": "2025-12-03",
    "last": "2026-10-26"
   },
   "SIF-57": {
    "name": "DynaSIF Equity Long - Short Fund - Direct Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-02-27",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-60": {
    "name": "DynaSIF Equity Long - Short Fund - Direct Plan - IDCW Option",
    "sif": "DynaSIF SIF",
-   "first": null,
-   "last": null
+   "first": "2026-08-31",
+   "last": "2026-09-30"
   },
   "SIF-55": {
    "name": "DynaSIF Equity Long - Short Fund - Regular Plan - Growth Option",
@@ -287,79 +287,79 @@
   "SIF-171": {
    "name": "MSIF EQUITY LONG-SHORT FUND - REGULAR IDCW",
    "sif": "Mahindra Manulife Mutual Fund",
-   "first": "2026-10-26",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-172": {
    "name": "MSIF EQUITY LONG-SHORT FUND DIRECT GROWTH",
    "sif": "Mahindra Manulife Mutual Fund",
-   "first": null,
-   "last": null
+   "first": "2026-10-26",
+   "last": "2026-10-26"
   },
   "SIF-95": {
    "name": "Sapphire Equity Long-Short SIF - Direct - Growth",
    "sif": "Sapphire SIF",
-   "first": "2026-04-29",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-94": {
    "name": "Sapphire Equity Long-Short SIF - Direct- IDCW",
    "sif": "Sapphire SIF",
-   "first": "2026-04-29",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-96": {
    "name": "Sapphire Equity Long-Short SIF - Growth",
    "sif": "Sapphire SIF",
-   "first": "2026-10-01",
+   "first": "2026-04-29",
    "last": "2026-10-26"
   },
   "SIF-97": {
    "name": "Sapphire Equity Long-Short SIF - IDCW",
    "sif": "Sapphire SIF",
-   "first": "2026-04-29",
-   "last": "2026-09-30"
+   "first": null,
+   "last": null
   },
   "SIF-149": {
    "name": "Summit Equity Long-Short Fund - Direct Plan - Growth",
    "sif": "SUMMIT SIF",
    "first": "2026-07-24",
-   "last": "2026-09-30"
+   "last": "2026-10-26"
   },
   "SIF-151": {
    "name": "Summit Equity Long-Short Fund - Direct Plan - IDCW (Payout / Reinvestment)",
    "sif": "SUMMIT SIF",
    "first": "2026-07-24",
-   "last": "2026-09-30"
+   "last": "2026-10-26"
   },
   "SIF-150": {
    "name": "Summit Equity Long-Short Fund - Regular Plan - Growth",
    "sif": "SUMMIT SIF",
-   "first": "2026-07-24",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-152": {
    "name": "Summit Equity Long-Short Fund - Regular Plan - IDCW (Payout / Reinvestment)",
    "sif": "SUMMIT SIF",
-   "first": "2026-07-24",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-99": {
    "name": "Titanium Equity Long-Short Fund Direct Growth",
    "sif": "Titanium SIF",
-   "first": "2026-05-20",
-   "last": "2026-09-30"
+   "first": null,
+   "last": null
   },
   "SIF-100": {
    "name": "Titanium Equity Long-Short Fund Direct IDCW Payout",
    "sif": "Titanium SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-103": {
    "name": "Titanium Equity Long-Short Fund Direct IDCW Reinvestment",
    "sif": "Titanium SIF",
-   "first": "2026-10-01",
+   "first": "2026-05-26",
    "last": "2026-10-26"
   },
   "SIF-102": {
@@ -371,14 +371,14 @@
   "SIF-98": {
    "name": "Titanium Equity Long-Short Fund Regular IDCW Payout",
    "sif": "Titanium SIF",
-   "first": "2026-05-20",
-   "last": "2026-09-30"
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-101": {
    "name": "Titanium Equity Long-Short Fund Regular IDCW Reinvestment",
    "sif": "Titanium SIF",
-   "first": "2026-05-20",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-108": {
    "name": "WSIF Equity Long-Short Fund - Direct Growth",
@@ -389,68 +389,68 @@
   "SIF-111": {
    "name": "WSIF Equity Long-Short Fund - Regular Growth",
    "sif": "WSIF",
-   "first": "2026-05-11",
-   "last": "2026-09-30"
+   "first": null,
+   "last": null
   },
   "SIF-110": {
    "name": "WSIF Equity Long-Short Fund - Regular IDCW",
    "sif": "WSIF",
-   "first": "2026-05-11",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-127": {
    "name": "iSIF Equity Long-Short Fund - Direct Plan - Growth",
    "sif": "iSIF SIF",
-   "first": "2026-06-08",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-126": {
    "name": "iSIF Equity Long-Short Fund - Growth",
    "sif": "iSIF SIF",
    "first": "2026-06-08",
-   "last": "2026-09-30"
+   "last": "2026-10-26"
   },
   "SIF-1": {
    "name": "qsif Equity Long Short Fund - Growth Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-3": {
    "name": "qsif Equity Long Short Fund - Growth Option - Regular Plan",
    "sif": "qsif SIF",
-   "first": "2025-10-08",
-   "last": "2026-09-30"
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-2": {
    "name": "qsif Equity Long Short Fund - IDCW Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-4": {
    "name": "qsif Equity Long Short Fund - IDCW Option - Regular Plan",
    "sif": "qsif SIF",
-   "first": "2025-10-08",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-116": {
    "name": "qsif Sector Rotation Long-Short Fund - Growth Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": "2026-05-18",
-   "last": "2026-09-30"
+   "first": null,
+   "last": null
   },
   "SIF-117": {
    "name": "qsif Sector Rotation Long-Short Fund - Growth Option - RegularPlan",
    "sif": "qsif SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-118": {
    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": null,
-   "last": null
+   "first": "2026-05-18",
+   "last": "2026-09-30"
   },
   "SIF-119": {
    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option - Regular Plan",
@@ -462,25 +462,25 @@
    "name": "DynaSIF Active Asset Allocator Long- Short Fund - Direct Plan - Growth Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-10-23"
+   "last": "2026-09-30"
   },
   "SIF-86": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Direct Plan - IDCW Option",
    "sif": "DynaSIF SIF",
-   "first": "2026-03-30",
-   "last": "2026-09-30"
+   "first": null,
+   "last": null
   },
   "SIF-87": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - Growth Option",
    "sif": "DynaSIF SIF",
-   "first": "2026-10-01",
+   "first": "2026-03-30",
    "last": "2026-10-23"
   },
   "SIF-89": {
    "name": "DynaSIF Active Asset Allocator Long-Short Fund - Regular Plan - IDCW Option",
    "sif": "DynaSIF SIF",
    "first": "2026-03-30",
-   "last": "2026-10-23"
+   "last": "2026-09-30"
   },
   "SIF-167": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Direct Growth",
@@ -503,32 +503,32 @@
   "SIF-169": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Regular Growth",
    "sif": "Titanium SIF",
-   "first": "2026-10-16",
-   "last": "2026-10-23"
+   "first": null,
+   "last": null
   },
   "SIF-165": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout",
    "sif": "Titanium SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-16",
+   "last": "2026-10-23"
   },
   "SIF-168": {
    "name": "Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment",
    "sif": "Titanium SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-16",
+   "last": "2026-10-23"
   },
   "SIF-125": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
    "sif": "iSIF SIF",
-   "first": "2026-06-08",
+   "first": "2026-10-01",
    "last": "2026-10-23"
   },
   "SIF-124": {
    "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
    "sif": "iSIF SIF",
-   "first": "2026-06-08",
-   "last": "2026-10-23"
+   "first": null,
+   "last": null
   },
   "SIF-92": {
    "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option - Direct Plan",
@@ -540,19 +540,19 @@
    "name": "qsif Actice Asset Allocator Long-Short Fund - IDCW Option - Regular Plan",
    "sif": "qsif SIF",
    "first": "2026-04-24",
-   "last": "2026-10-23"
+   "last": "2026-09-30"
   },
   "SIF-90": {
    "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": "2026-10-01",
+   "first": "2026-04-24",
    "last": "2026-10-23"
   },
   "SIF-93": {
    "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Regular Plan",
    "sif": "qsif SIF",
    "first": "2026-04-24",
-   "last": "2026-10-23"
+   "last": "2026-09-30"
   },
   "SIF-9": {
    "name": "Altiva Hybrid Long-Short Fund - Direct Plan - Growth",
@@ -564,19 +564,19 @@
    "name": "Altiva Hybrid Long-Short Fund - Direct Plan - IDCW",
    "sif": "Altiva SIF",
    "first": "2025-10-24",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-11": {
    "name": "Altiva Hybrid Long-Short Fund - Regular Plan - Growth",
    "sif": "Altiva SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-12": {
    "name": "Altiva Hybrid Long-Short Fund - Regular Plan - IDCW",
    "sif": "Altiva SIF",
-   "first": null,
-   "last": null
+   "first": "2025-10-24",
+   "last": "2026-10-26"
   },
   "SIF-83": {
    "name": "Apex Hybrid Long-Short Fund - Direct - Payout of IDCW",
@@ -588,43 +588,43 @@
    "name": "Apex Hybrid Long-Short Fund - Regular - Growth",
    "sif": "Apex SIF",
    "first": "2026-03-30",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-81": {
    "name": "Apex Hybrid Long-Short Fund - Regular - Payout of IDCW",
    "sif": "Apex SIF",
    "first": "2026-03-30",
-   "last": "2026-09-30"
+   "last": "2026-10-26"
   },
   "SIF-79": {
    "name": "Apex Hybrid Long-Short Fund-Direct Growth",
    "sif": "Apex SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-51": {
    "name": "Arudha Hybrid Long-Short Fund-Direct Plan-Annual IDCW",
    "sif": "Arudha SIF",
-   "first": null,
-   "last": null
+   "first": "2026-04-08",
+   "last": "2026-10-26"
   },
   "SIF-54": {
    "name": "Arudha Hybrid Long-Short Fund-Direct Plan-Growth",
    "sif": "Arudha SIF",
-   "first": "2026-10-01",
+   "first": "2026-02-04",
    "last": "2026-10-26"
   },
   "SIF-48": {
    "name": "Arudha Hybrid Long-Short Fund-Direct Plan-Half Yearly IDCW",
    "sif": "Arudha SIF",
-   "first": "2026-02-04",
-   "last": "2026-09-30"
+   "first": null,
+   "last": null
   },
   "SIF-43": {
    "name": "Arudha Hybrid Long-Short Fund-Regular Plan-Fortnightly IDCW",
    "sif": "Arudha SIF",
    "first": "2026-08-19",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-40": {
    "name": "Arudha Hybrid Long-Short Fund-Regular Plan-Growth",
@@ -635,38 +635,38 @@
   "SIF-44": {
    "name": "Arudha Hybrid Long-Short Fund-Regular Plan-Monthly IDCW",
    "sif": "Arudha SIF",
-   "first": "2026-02-04",
-   "last": "2026-09-30"
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-145": {
    "name": "INFINITY HYBRID LONG-SHORT FUND-DIRECT - GROWTH",
    "sif": "Infinity SIF",
    "first": "2026-07-09",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-148": {
    "name": "INFINITY HYBRID LONG-SHORT FUND-DIRECT - IDCW",
    "sif": "Infinity SIF",
    "first": "2026-07-09",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-146": {
    "name": "INFINITY HYBRID LONG-SHORT FUND-REGULAR - GROWTH",
    "sif": "Infinity SIF",
-   "first": null,
-   "last": null
+   "first": "2026-07-09",
+   "last": "2026-09-30"
   },
   "SIF-147": {
    "name": "INFINITY HYBRID LONG-SHORT FUND-REGULAR - IDCW",
    "sif": "Infinity SIF",
-   "first": "2026-07-09",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-14": {
    "name": "Magnum Hybrid Long Short Fund - Direct  Plan - Growth",
    "sif": "Magnum SIF",
-   "first": null,
-   "last": null
+   "first": "2025-10-29",
+   "last": "2026-09-30"
   },
   "SIF-15": {
    "name": "Magnum Hybrid Long Short Fund - Direct Plan - Income Distribution Cum Capital Withdrawal",
@@ -677,7 +677,7 @@
   "SIF-13": {
    "name": "Magnum Hybrid Long Short Fund - Regular Plan - Growth",
    "sif": "Magnum SIF",
-   "first": "2026-10-01",
+   "first": "2025-10-29",
    "last": "2026-10-26"
   },
   "SIF-16": {
@@ -695,14 +695,14 @@
   "SIF-135": {
    "name": "Platinum Hybrid Long-Short Fund - Direct Plan - IDCW",
    "sif": "Platinum SIF",
-   "first": null,
-   "last": null
+   "first": "2026-06-11",
+   "last": "2026-10-26"
   },
   "SIF-136": {
    "name": "Platinum Hybrid Long-Short Fund - Regular Plan - Growth",
    "sif": "Platinum SIF",
-   "first": "2026-06-11",
-   "last": "2026-09-30"
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-137": {
    "name": "Platinum Hybrid Long-Short Fund - Regular Plan - IDCW",
@@ -713,43 +713,43 @@
   "SIF-139": {
    "name": "Prism Hybrid Long-Short Fund - Direct Plan - Growth Option",
    "sif": "Prism SIF",
-   "first": "2026-07-23",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-138": {
    "name": "Prism Hybrid Long-Short Fund - Regular Plan- Growth Option",
    "sif": "Prism SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-129": {
    "name": "RedHex Hybrid Long-Short Fund - Direct - Growth",
    "sif": "RedHex SIF",
    "first": "2026-06-25",
-   "last": "2026-09-30"
+   "last": "2026-10-26"
   },
   "SIF-130": {
    "name": "RedHex Hybrid Long-Short Fund - Direct - IDCW",
    "sif": "RedHex SIF",
-   "first": null,
-   "last": null
+   "first": "2026-06-25",
+   "last": "2026-10-26"
   },
   "SIF-128": {
    "name": "RedHex Hybrid Long-Short Fund - Regular - Growth",
    "sif": "RedHex SIF",
-   "first": "2026-06-25",
-   "last": "2026-09-30"
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-32": {
    "name": "Titanium Hybrid Long-Short Fund Direct Plan Growth",
    "sif": "Titanium SIF",
-   "first": "2025-12-17",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-31": {
    "name": "Titanium Hybrid Long-Short Fund Direct Plan IDCW Payout",
    "sif": "Titanium SIF",
-   "first": "2025-12-17",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-28": {
@@ -767,19 +767,19 @@
   "SIF-30": {
    "name": "Titanium Hybrid Long-Short Fund Regular Plan IDCW Payout",
    "sif": "Titanium SIF",
-   "first": "2025-12-17",
+   "first": "2026-10-01",
    "last": "2026-10-26"
   },
   "SIF-27": {
    "name": "Titanium Hybrid Long-Short Fund Regular Plan IDCW Reinvestment",
    "sif": "Titanium SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-36": {
    "name": "iSIF Hybrid Long-Short Fund - Direct Plan - Growth",
    "sif": "iSIF SIF",
-   "first": "2026-10-01",
+   "first": "2026-02-05",
    "last": "2026-10-26"
   },
   "SIF-35": {
@@ -791,26 +791,26 @@
   "SIF-5": {
    "name": "qsif Hybrid Long-Short Fund - Growth Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": null,
-   "last": null
+   "first": "2026-10-01",
+   "last": "2026-10-26"
   },
   "SIF-7": {
    "name": "qsif Hybrid Long-Short Fund - Growth Option - Regular Plan",
    "sif": "qsif SIF",
    "first": "2025-10-20",
-   "last": "2026-10-26"
+   "last": "2026-09-30"
   },
   "SIF-6": {
    "name": "qsif Hybrid Long-Short Fund - IDCW Option - Direct Plan",
    "sif": "qsif SIF",
-   "first": "2026-10-01",
-   "last": "2026-10-26"
+   "first": null,
+   "last": null
   },
   "SIF-8": {
    "name": "qsif Hybrid Long-Short Fund - IDCW Option - Regular Plan",
    "sif": "qsif SIF",
-   "first": null,
-   "last": null
+   "first": "2025-10-29",
+   "last": "2026-09-30"
   }
  },
  "periods": {
