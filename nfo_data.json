@@ -1,21 +1,10 @@
 {
- "generated": "2026-10-24T07:32:56Z",
+ "generated": "2026-10-26T20:03:26Z",
  "source": "https://www.amfiindia.com/api/sif-nfo",
  "note": "AMFI publishes the open-NFO list without dates. first_seen/last_seen are the dates SIFintel observed each offer on that list; launched_on is the scheme's first published NAV.",
- "open_count": 3,
+ "open_count": 2,
  "total_tracked": 9,
  "nfos": [
-  {
-   "key": "summit-sif__summit-active-asset-allocator-long-short-fund",
-   "fund_house": "SUMMIT SIF",
-   "strategy": "Summit Active Asset Allocator Long-Short Fund",
-   "scheme_id": "S-37",
-   "sif_id": "42",
-   "first_seen": "2026-10-12",
-   "last_seen": "2026-10-24",
-   "status": "open",
-   "launched_on": null
-  },
   {
    "key": "eminence-sif__eminence-hybrid-long-short-fund",
    "fund_house": "Eminence SIF",
@@ -23,7 +12,7 @@
    "scheme_id": "S-39",
    "sif_id": "86",
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-24",
+   "last_seen": "2026-10-26",
    "status": "open",
    "launched_on": null
   },
@@ -34,7 +23,7 @@
    "scheme_id": "S-40",
    "sif_id": "33",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-24",
+   "last_seen": "2026-10-26",
    "status": "open",
    "launched_on": null
   },
@@ -101,6 +90,17 @@
    "sif_id": "69",
    "first_seen": "2026-09-29",
    "last_seen": "2026-10-14",
+   "status": "closed",
+   "launched_on": null
+  },
+  {
+   "key": "summit-sif__summit-active-asset-allocator-long-short-fund",
+   "fund_house": "SUMMIT SIF",
+   "strategy": "Summit Active Asset Allocator Long-Short Fund",
+   "scheme_id": "S-37",
+   "sif_id": "42",
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-24",
    "status": "closed",
    "launched_on": null
   }
