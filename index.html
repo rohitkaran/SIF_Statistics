@@ -307,7 +307,9 @@
   table.mret th,table.mret td{padding:7px 12px;border-bottom:1px solid var(--line);white-space:nowrap;font-size:12px;text-align:right;
     color:var(--ink);font-variant-numeric:tabular-nums lining-nums}
   table.mret thead th{position:sticky;top:0;z-index:12;background:var(--thead);color:var(--ink-dim);
-    font-size:10px;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+    font-size:10px;text-transform:uppercase;letter-spacing:.04em;font-weight:600;cursor:pointer;user-select:none}
+  table.mret thead th:hover{color:var(--ink)}
+  table.mret thead th .ar{color:var(--accent);font-size:9px;margin-left:1px}
   table.mret th:first-child,table.mret td:first-child{text-align:left;position:sticky;left:0;background:var(--panel);
     z-index:11;box-shadow:2px 0 5px -2px rgba(0,0,0,.18);min-width:200px;max-width:270px;white-space:nowrap;overflow:hidden;
     text-overflow:ellipsis;font-family:var(--sans);font-weight:500}
@@ -1092,9 +1094,12 @@ const SIFMetrics = (function(){
     if(meta&&meta.parent){ const sp=shortParent(meta.parent), a=normStr(r.sif), b=normStr(sp);
       if(a.indexOf(b)<0 && b.indexOf(a)<0) parent=' <span class="parent">'+esc(sp)+'</span>'; }
     const badge=(PORT&&PORT.schemes&&PORT.schemes[r.code])?' <span class="pbadge" title="Portfolio holdings disclosed">▣</span>':'';
+    // clean brand-only label (matches the Monthly tab). Show the plan/option suffix only
+    // when the filters are broadened to "all", where it's needed to tell variants apart.
+    const showPlan=($('#plan').value==='all'||$('#opt').value==='all');
     first.innerHTML='<input type="checkbox" class="cmp" title="Add to compare chart"'+(compareSet.has(r.code)?' checked':'')+'>'+
       '<span class="caret">▶</span> <span class="amc">'+esc(brandShort(r.sif)||sn.head)+'</span>'+badge+
-      (sn.plan?' <span class="plan">'+esc(sn.plan)+'</span>':'');
+      (showPlan&&sn.plan?' <span class="plan">'+esc(sn.plan)+'</span>':'');
     first.title=r.name;   // full scheme name on hover; shown in full when the row is expanded
     const cb=first.querySelector('.cmp');
     cb.onclick=e=>{ e.stopPropagation(); if(cb.checked)compareSet.add(r.code); else compareSet.delete(r.code); updateCompareBtn(); };
@@ -1493,7 +1498,20 @@ const SIFMetrics = (function(){
 
   // ---- Monthly (returns + volatility vs indices) & Reports views ----
   let curView='terminal', reportsLoaded=false;
+  let mSortKey=null, mSortDir=-1;   // Monthly table sort: a 'YYYY-MM' month, 'vol', 'total', 'name', or null
   function val(sel,def){ const e=$(sel); return (e&&e.value!=null)?e.value:def; }
+  function mSortFunds(arr){
+    if(!mSortKey) return arr;
+    const k=mSortKey, dir=mSortDir;
+    const v=f=> k==='name'?(''+f.name).toLowerCase() : k==='vol'?f.vol : k==='total'?f.total : (f.mr.ret[k]);
+    return arr.slice().sort((a,b)=>{
+      let va=v(a), vb=v(b);
+      if(k==='name') return va<vb?-dir:va>vb?dir:0;
+      const na=(va==null||!isFinite(va)), nb=(vb==null||!isFinite(vb));
+      if(na&&nb) return 0; if(na) return 1; if(nb) return -1;   // blanks sink
+      return (va-vb)*dir;
+    });
+  }
   function setView(v){
     curView=v;
     document.querySelectorAll('.tabbar .tab').forEach(t=>t.classList.toggle('active', t.dataset.view===v));
@@ -1538,7 +1556,10 @@ const SIFMetrics = (function(){
     if(nMon!=='all'){ const k=+nMon; if(k>0) months=months.slice(-k); }
     months.reverse();   // most recent month on the LEFT, going back in history to the right
     const ncols=months.length+3;
-    $('#mhead').innerHTML='<tr><th>Scheme</th>'+months.map(m=>'<th>'+ymLabel(m)+'</th>').join('')+'<th>Vol&nbsp;%</th><th>Total&nbsp;%</th></tr>';
+    const hcols=[{k:'name',label:'Scheme'}].concat(months.map(m=>({k:m,label:ymLabel(m)})))
+      .concat([{k:'vol',label:'Vol&nbsp;%'},{k:'total',label:'Total&nbsp;%'}]);
+    $('#mhead').innerHTML='<tr>'+hcols.map(c=>'<th data-k="'+c.k+'">'+c.label+
+      (mSortKey===c.k?' <span class="ar">'+(mSortDir<0?'▼':'▲')+'</span>':'')+'</th>').join('')+'</tr>';
     function unit(name,o,cls,full){
       let r='<td'+(full?' title="'+esc(full)+'"':'')+'>'+esc(name)+'</td>';
       for(const m of months) r+=mcell(o.mr.ret[m]);
@@ -1551,12 +1572,12 @@ const SIFMetrics = (function(){
     if(funds.length) html+='<tr class="idxend"><td colspan="'+ncols+'" style="padding:0;height:2px"></td></tr>';
     if(cat==='all'){
       ['hls','els','smid','sr','alloc','other'].forEach(gid=>{
-        const gf=funds.filter(f=>f.group.id===gid); if(!gf.length) return;
+        const gf=mSortFunds(funds.filter(f=>f.group.id===gid)); if(!gf.length) return;
         const g=GROUPS.find(x=>x.id===gid);
         html+='<tr class="grp"><td colspan="'+ncols+'" style="border-left:3px solid '+g.color+'">'+esc(g.label)+' · '+gf.length+'</td></tr>';
         gf.forEach(f=>html+=unit(f.name,f,'',f.full));
       });
-    } else { funds.forEach(f=>html+=unit(f.name,f,'',f.full)); }
+    } else { mSortFunds(funds).forEach(f=>html+=unit(f.name,f,'',f.full)); }
     $('#mbody').innerHTML = html || '<tr><td colspan="'+ncols+'" style="padding:16px;color:var(--ink-dim)">No funds match these filters.</td></tr>';
   }
   // ---- Monthly reports: cards from the commentary index ----
@@ -1581,6 +1602,11 @@ const SIFMetrics = (function(){
   }
   document.querySelectorAll('.tabbar .tab').forEach(b=>b.onclick=()=>setView(b.dataset.view));
   ['mcat','mplan','mopt','mmonths'].forEach(id=>{ const el=$('#'+id); if(el) el.addEventListener('change',renderMonthly); });
+  // click a month (or Vol/Total/Scheme) header to sort the fund rows by it
+  { const mh=$('#mhead'); if(mh) mh.onclick=e=>{ const th=e.target.closest('th'); if(!th) return;
+      const k=th.getAttribute('data-k'); if(!k) return;
+      if(mSortKey===k) mSortDir*=-1; else { mSortKey=k; mSortDir=(k==='name'?1:-1); }
+      renderMonthly(); }; }
 
   // ---- wire up ----
   // theme toggle (persisted; a tiny <head> script applies the saved theme before first paint)
