@@ -303,20 +303,42 @@
   .mctl .fld select{background:var(--panel2);border:1px solid var(--line2);color:var(--ink);border-radius:5px;padding:5px 8px;font-size:12.5px;font-family:var(--mono)}
   .mnote{color:var(--ink-dim);font-size:11.5px;max-width:580px;line-height:1.45}
   table.mret{border-collapse:separate;border-spacing:0;width:100%;min-width:0}
-  table.mret th,table.mret td{padding:5px 9px;border-bottom:1px solid var(--line);white-space:nowrap;font-size:11.5px;text-align:right;
-    font-variant-numeric:tabular-nums lining-nums}
+  table.mret th,table.mret td{padding:7px 12px;border-bottom:1px solid var(--line);white-space:nowrap;font-size:12px;text-align:right;
+    color:var(--ink);font-variant-numeric:tabular-nums lining-nums}
   table.mret thead th{position:sticky;top:0;z-index:12;background:var(--thead);color:var(--ink-dim);
-    font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+    font-size:10px;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
   table.mret th:first-child,table.mret td:first-child{text-align:left;position:sticky;left:0;background:var(--panel);
-    z-index:11;box-shadow:1px 0 0 var(--line2);max-width:280px;white-space:normal;word-break:break-word;line-height:1.2;font-family:var(--sans)}
+    z-index:11;box-shadow:2px 0 5px -2px rgba(0,0,0,.18);min-width:200px;max-width:270px;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis;font-family:var(--sans);font-weight:500}
   table.mret thead th:first-child{z-index:13;background:var(--thead)}
   table.mret tbody tr:hover td{background:var(--rowhover)}
   table.mret tr.idx td{background:var(--panel2);font-weight:700}
   table.mret tr.idx td:first-child{color:var(--accent)}
   table.mret tr.idx:hover td{background:var(--panel2)}
+  table.mret tr.idxend td{border-bottom:2px solid var(--line2)}
   table.mret td.vol{color:var(--ink-dim)}
-  table.mret tr.grp td{background:var(--grp);font-size:10px;text-transform:uppercase;letter-spacing:.06em;
-    color:var(--ink-dim);font-weight:700;text-align:left}
+  table.mret tr.grp td{background:var(--grp);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--ink-dim);font-weight:700;text-align:left;box-shadow:none}
+  table.mret tr.retrow td{border-bottom:none}
+  table.mret tr.volrow td{border-bottom:1px solid var(--line);color:var(--ink-faint);font-size:10px;padding-top:0;padding-bottom:7px}
+  table.mret tr.volrow td:first-child{font-weight:400;color:var(--ink-faint);font-size:9.5px;font-style:italic}
+  table.mret tr.idx.volrow td{background:var(--panel2)}
+
+  /* ---- Monthly reports tab ---- */
+  #view-reports{padding:18px 14px 44px}
+  .rhead{max-width:1000px;margin:0 auto 16px}
+  .rhead h2{margin:0 0 5px;font-size:17px;color:var(--ink);font-family:var(--sans)}
+  .rhead p{margin:0;color:var(--ink-dim);font-size:12.5px;line-height:1.5;max-width:720px}
+  .rgrid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+  a.rcard{display:block;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line2);
+    border-radius:10px;padding:14px 16px;transition:border-color .12s,box-shadow .12s}
+  a.rcard:hover{border-color:var(--accent);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+  a.rcard .rdate{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-family:var(--mono)}
+  a.rcard .rtitle{font-size:15px;font-weight:700;margin:4px 0 6px;line-height:1.3;color:var(--ink)}
+  a.rcard .rsum{font-size:12.5px;color:var(--ink-dim);line-height:1.5}
+  a.rcard .rtags{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px}
+  a.rcard .rtag{font-size:10px;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:2px 9px;color:var(--ink-dim)}
+  .rload{max-width:1000px;margin:0 auto;color:var(--ink-dim);padding:20px 2px}
 
   /* column picker */
   .mobtoggle{display:none}
@@ -463,6 +485,7 @@
 <div class="tabbar">
   <button class="tab active" data-view="terminal">Risk / Return Terminal</button>
   <button class="tab" data-view="monthly">Monthly returns vs indices</button>
+  <button class="tab" data-view="reports">Monthly reports</button>
 </div>
 
 <div id="drop"><div class="box">Drop a raw AMFI file<br><span class="sub">NAVAll.txt or a NAV History report — columns mapped by header name</span></div></div>
@@ -505,9 +528,29 @@
       <option value="alloc">Allocator</option>
       <option value="other">Other</option>
     </select></div>
-    <div class="mnote">Calendar-month&nbsp;% returns (last NAV of the month vs the prior month; the first bucket is since inception), each fund's annualised volatility, and total return — shown next to <b>NIFTY&nbsp;50</b> and <b>NIFTY&nbsp;Midcap&nbsp;50</b> so you can see how the indices behaved. Uses the From/To window, Trading-days and Plan/Option filters from the top bar.</div>
+    <div class="fld"><label>Plan</label><select id="mplan">
+      <option value="all">All plans</option><option value="direct" selected>Direct</option><option value="regular">Regular</option>
+    </select></div>
+    <div class="fld"><label>Option</label><select id="mopt">
+      <option value="all">All</option><option value="growth" selected>Growth</option><option value="idcw">IDCW</option>
+    </select></div>
+    <div class="fld"><label>Months</label><select id="mmonths">
+      <option value="3">Last 3</option><option value="6">Last 6</option>
+      <option value="12" selected>Last 12</option><option value="24">Last 24</option><option value="all">All</option>
+    </select></div>
+    <div class="mnote">Each fund shows two rows — <b>calendar-month % return</b> (green/red) and, beneath it, that month's <b>annualised volatility</b> (σ). Most recent month on the left. Shown next to <b>NIFTY&nbsp;50</b> and <b>NIFTY&nbsp;Midcap&nbsp;50</b> for market context. Pick one Plan + Option so each fund is a single clean row.</div>
   </div>
   <div class="wrap"><table class="mret"><thead id="mhead"></thead><tbody id="mbody"></tbody></table></div>
+</section>
+
+<section id="view-reports" class="hidden">
+  <div class="rhead">
+    <h2>Monthly reports &amp; commentary</h2>
+    <p>How the SIF industry and individual funds behaved each month — judged against what each
+       strategy is <em>built</em> to do, not just the index. Full notes open on
+       <a href="/commentary/">sifintel.com/commentary</a>.</p>
+  </div>
+  <div id="reportsBox" class="rgrid"></div>
 </section>
 
 <style>
@@ -737,7 +780,19 @@ const SIFMetrics = (function(){
     }
     return {order, lastOf, ret};
   }
-  const api={compute, windowSeries, daysBetween, periodReturns, captureRatios, monthlyReturns};
+  // per-calendar-month annualised volatility, from the daily returns ending in each month
+  function monthlyVol(series, D){
+    const bym={};
+    for(let i=1;i<series.length;i++){ const ym=series[i][0].slice(0,7);
+      (bym[ym]||(bym[ym]=[])).push(series[i][1]/series[i-1][1]-1); }
+    const vol={};
+    for(const ym in bym){ const a=bym[ym];
+      if(a.length<2){ vol[ym]=null; continue; }
+      const mean=a.reduce((x,y)=>x+y,0)/a.length; let ss=0; for(const x of a) ss+=(x-mean)*(x-mean);
+      vol[ym]=Math.sqrt(ss/(a.length-1))*Math.sqrt(D)*100; }
+    return {vol};
+  }
+  const api={compute, windowSeries, daysBetween, periodReturns, captureRatios, monthlyReturns, monthlyVol};
   if(typeof module!=='undefined' && module.exports) module.exports=api;
   return api;
 })();
@@ -785,6 +840,12 @@ const SIFMetrics = (function(){
     const parts=name.split(' - ');
     const plan=parts.slice(1).join(' · ');
     return {head:parts[0], plan};
+  }
+  // short fund name: drop the plan/option suffix so one variant reads cleanly
+  // (used in the Monthly view, where plan+option are already fixed by the filters)
+  function shortName(name){
+    const m=(''+name).split(/\s*[-,]?\s*\b(direct|regular|growth|idcw|payout|reinvest\w*|dividend|income distribution|option|plan|bonus)\b/i);
+    return (m[0]||name).replace(/[\s\-–,]+$/,'').trim() || name;
   }
 
   // ---- columns ----
@@ -1424,66 +1485,96 @@ const SIFMetrics = (function(){
           '(<code>python fetch_amfi_sif.py --serve</code>) or a proxy. On the hosted site the data auto-refreshes daily.'; });
   }
 
-  // ---- Monthly returns vs indices view ----
-  let curView='terminal';
+  // ---- Monthly (returns + volatility vs indices) & Reports views ----
+  let curView='terminal', reportsLoaded=false;
+  function val(sel,def){ const e=$(sel); return (e&&e.value!=null)?e.value:def; }
   function setView(v){
     curView=v;
     document.querySelectorAll('.tabbar .tab').forEach(t=>t.classList.toggle('active', t.dataset.view===v));
-    const T=$('#view-terminal'), Mv=$('#view-monthly');
-    if(T) T.classList.toggle('hidden', v!=='terminal');
-    if(Mv) Mv.classList.toggle('hidden', v!=='monthly');
+    ['terminal','monthly','reports'].forEach(id=>{ const el=$('#view-'+id); if(el) el.classList.toggle('hidden', id!==v); });
     if(v==='monthly') renderMonthly();
+    if(v==='reports' && !reportsLoaded) renderReports();
   }
   function refreshActive(){ recompute(); if(curView==='monthly') renderMonthly(); }
   function ymLabel(ym){ const p=ym.split('-'); return MON[+p[1]-1]+" '"+p[0].slice(2); }
   function volOf(series,D){ if(!series||series.length<2) return null;
     const m=M.compute(series,{D:D,Rf:0,recoveryMode:'trading'}); return m.annStd; }
+  function fnum(v,d){ return (v==null||!isFinite(v))?'—':v.toFixed(d); }
+  function tot(w){ return w.length? (w[w.length-1][1]/w[0][1]-1)*100 : null; }
   function mcell(v){ if(v==null||!isFinite(v)) return '<td><span class="na">—</span></td>';
     const c=v>=0?'var(--pos)':'var(--neg)'; return '<td style="color:'+c+'">'+(v>=0?'+':'')+v.toFixed(2)+'</td>'; }
+  function vcell(v){ return '<td>'+((v==null||!isFinite(v))?'—':v.toFixed(1))+'</td>'; }
+  function matchFilt(name,plan,opt){
+    if(plan==='direct'  && !/direct/i.test(name)) return false;
+    if(plan==='regular' && !/regular/i.test(name)) return false;
+    if(opt==='growth' && !/growth/i.test(name)) return false;
+    if(opt==='idcw'   && !/idcw|dividend|payout|re-?invest/i.test(name)) return false;
+    return true;
+  }
   function renderMonthly(){
     if(!DATA) return;
     const from=$('#from').value, to=$('#to').value, D=+$('#days').value||252;
-    const cat=$('#mcat')?$('#mcat').value:'all';
-    const plan=$('#plan').value, opt=$('#opt').value;
-    const months=new Set();
-    const idxRows=[];
+    const cat=val('#mcat','all'), plan=val('#mplan','direct'), opt=val('#mopt','growth'), nMon=val('#mmonths','12');
+    const monthsSet=new Set();
+    const idx=[];
     (BENCHALL||[]).forEach(ix=>{ const w=M.windowSeries(ix.series,from,to); if(w.length<2) return;
-      const mr=M.monthlyReturns(w); mr.order.forEach(m=>months.add(m));
-      idxRows.push({name:ix.index, mr, vol:volOf(w,D), total:(w[w.length-1][1]/w[0][1]-1)*100}); });
+      const mr=M.monthlyReturns(w), mv=M.monthlyVol(w,D); mr.order.forEach(m=>monthsSet.add(m));
+      idx.push({name:ix.index, mr, mv, vol:volOf(w,D), total:tot(w)}); });
     const funds=[];
     DATA.schemes.forEach(s=>{
       if(cat!=='all' && groupOf(s.cat).id!==cat) return;
-      if(plan==='direct'  && !/direct/i.test(s.name)) return;
-      if(plan==='regular' && !/regular/i.test(s.name)) return;
-      if(opt==='growth' && !/growth/i.test(s.name)) return;
-      if(opt==='idcw'   && !/idcw|dividend|payout|re-?invest/i.test(s.name)) return;
+      if(!matchFilt(s.name,plan,opt)) return;
       const w=M.windowSeries(s.series,from,to); if(w.length<2) return;
-      const mr=M.monthlyReturns(w); mr.order.forEach(m=>months.add(m));
-      funds.push({name:s.name, group:groupOf(s.cat), mr, vol:volOf(w,D), total:(w[w.length-1][1]/w[0][1]-1)*100});
+      const mr=M.monthlyReturns(w), mv=M.monthlyVol(w,D); mr.order.forEach(m=>monthsSet.add(m));
+      funds.push({name:shortName(s.name), full:s.name, group:groupOf(s.cat), mr, mv, vol:volOf(w,D), total:tot(w)});
     });
-    const mcols=[...months].sort();
-    const ncols=mcols.length+3;
-    $('#mhead').innerHTML='<tr><th>Scheme</th>'+mcols.map(m=>'<th>'+ymLabel(m)+'</th>').join('')+'<th>Vol&nbsp;%</th><th>Total&nbsp;%</th></tr>';
-    function row(name,mr,vol,total,cls){
-      let c='<td>'+esc(name)+'</td>';
-      for(const m of mcols) c+=mcell(mr.ret[m]);
-      c+='<td class="vol">'+(vol!=null&&isFinite(vol)?vol.toFixed(1):'—')+'</td>'+mcell(total);
-      return '<tr class="'+(cls||'')+'">'+c+'</tr>';
+    let months=[...monthsSet].sort();
+    if(nMon!=='all'){ const k=+nMon; if(k>0) months=months.slice(-k); }
+    months.reverse();   // most recent month on the LEFT, going back in history to the right
+    const ncols=months.length+3;
+    $('#mhead').innerHTML='<tr><th>Scheme</th>'+months.map(m=>'<th>'+ymLabel(m)+'</th>').join('')+'<th>Vol&nbsp;%</th><th>Total&nbsp;%</th></tr>';
+    function unit(name,o,cls,full){
+      let r='<td'+(full?' title="'+esc(full)+'"':'')+'>'+esc(name)+'</td>';
+      for(const m of months) r+=mcell(o.mr.ret[m]);
+      r+='<td class="vol">'+fnum(o.vol,1)+'</td>'+mcell(o.total);
+      let v='<td>σ vol&nbsp;%</td>'; for(const m of months) v+=vcell(o.mv.vol[m]); v+='<td></td><td></td>';
+      return '<tr class="retrow '+cls+'">'+r+'</tr><tr class="volrow '+cls+'">'+v+'</tr>';
     }
     let html='';
-    idxRows.forEach(r=>html+=row(r.name,r.mr,r.vol,r.total,'idx'));
+    idx.forEach(r=>html+=unit(r.name,r,'idx',null));
+    if(funds.length) html+='<tr class="idxend"><td colspan="'+ncols+'" style="padding:0;height:2px"></td></tr>';
     if(cat==='all'){
       ['hls','els','smid','sr','alloc','other'].forEach(gid=>{
         const gf=funds.filter(f=>f.group.id===gid); if(!gf.length) return;
         const g=GROUPS.find(x=>x.id===gid);
         html+='<tr class="grp"><td colspan="'+ncols+'" style="border-left:3px solid '+g.color+'">'+esc(g.label)+' · '+gf.length+'</td></tr>';
-        gf.forEach(f=>html+=row(f.name,f.mr,f.vol,f.total,''));
+        gf.forEach(f=>html+=unit(f.name,f,'',f.full));
       });
-    } else { funds.forEach(f=>html+=row(f.name,f.mr,f.vol,f.total,'')); }
+    } else { funds.forEach(f=>html+=unit(f.name,f,'',f.full)); }
     $('#mbody').innerHTML = html || '<tr><td colspan="'+ncols+'" style="padding:16px;color:var(--ink-dim)">No funds match these filters.</td></tr>';
   }
+  // ---- Monthly reports: cards from the commentary index ----
+  function renderReports(){
+    const box=$('#reportsBox'); if(!box) return;
+    box.innerHTML='<div class="rload">Loading reports…</div>';
+    fetch('commentary/index.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
+      .then(d=>{ reportsLoaded=true;
+        const posts=(d.posts||[]).slice().sort((a,b)=>a.date<b.date?1:a.date>b.date?-1:0);
+        if(!posts.length){ box.innerHTML='<div class="rload">No reports yet — see <a href="/commentary/">/commentary</a>.</div>'; return; }
+        box.innerHTML=posts.map(p=>{
+          const url=p.url||('/commentary/'+p.slug);
+          const tags=(p.tags||[]).map(t=>'<span class="rtag">'+esc(t)+'</span>').join('');
+          return '<a class="rcard" href="'+esc(url)+'" target="_blank" rel="noopener">'+
+            '<div class="rdate">'+esc(niceDate(p.date))+'</div>'+
+            '<div class="rtitle">'+esc(p.title||'Untitled')+'</div>'+
+            '<div class="rsum">'+esc(p.summary||'')+'</div>'+
+            (tags?'<div class="rtags">'+tags+'</div>':'')+'</a>';
+        }).join('');
+      })
+      .catch(()=>{ box.innerHTML='<div class="rload">Could not load reports — open <a href="/commentary/">/commentary</a> directly.</div>'; });
+  }
   document.querySelectorAll('.tabbar .tab').forEach(b=>b.onclick=()=>setView(b.dataset.view));
-  { const mc=$('#mcat'); if(mc) mc.addEventListener('change',renderMonthly); }
+  ['mcat','mplan','mopt','mmonths'].forEach(id=>{ const el=$('#'+id); if(el) el.addEventListener('change',renderMonthly); });
 
   // ---- wire up ----
   // theme toggle (persisted; a tiny <head> script applies the saved theme before first paint)
