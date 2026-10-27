@@ -52,6 +52,7 @@ jobs:
             --from "${{ github.event.inputs.from || '2025-10-01' }}" \
             --to "$(date -u +%F)" \
             --out nav_data.json \
+            --rate 0.35 \
           || echo "::warning::AMFI NAV fetch failed — keeping last committed nav_data.json"
 
       - name: Fetch NIFTY 50 benchmark (for up/down capture)

@@ -30,9 +30,11 @@ import datetime as dt
 import gzip
 import io
 import json
+import random
 import re
 import ssl
 import sys
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -70,11 +72,29 @@ _SSL_UNVERIFIED.verify_mode = ssl.CERT_NONE
 # HTTP
 # --------------------------------------------------------------------------- #
 
-def http_get(url, timeout=45, retries=4, backoff=1.6):
-    """GET with gzip, a browser UA, and retry on transient failures.
+# Global request throttle. AMFI rate-limits bursts hard (HTTP 429), which is what
+# froze schemes at the chunk boundary. A min interval between request *starts*,
+# shared across worker threads, keeps us under the limit regardless of worker count.
+_RATE_LOCK = threading.Lock()
+_LAST_REQ = [0.0]
+MIN_INTERVAL = 0.20  # seconds between request starts (~5 req/s); tune via --rate
 
-    Returns decoded text. Raises the last error on permanent failure.
-    """
+# 429 is NOT permanent — it means "slow down", so it must be retried (the original
+# `4xx -> raise` rule gave up on it instantly). These codes are all transient.
+_RETRYABLE = {408, 425, 429, 500, 502, 503, 504}
+
+
+def _throttle():
+    with _RATE_LOCK:
+        wait = MIN_INTERVAL - (time.monotonic() - _LAST_REQ[0])
+        if wait > 0:
+            time.sleep(wait)
+        _LAST_REQ[0] = time.monotonic()
+
+
+def http_get(url, timeout=45, retries=6, backoff=1.8):
+    """GET with gzip, a browser UA, a shared throttle, and retry on transient failures
+    (including HTTP 429 / 5xx, honouring Retry-After). Raises on permanent failure."""
     headers = {
         "User-Agent": UA,
         "Accept": "application/json, text/plain, */*",
@@ -85,6 +105,7 @@ def http_get(url, timeout=45, retries=4, backoff=1.6):
     for attempt in range(retries):
         for ctx in (ssl.create_default_context(), _SSL_UNVERIFIED):
             try:
+                _throttle()
                 req = urllib.request.Request(url, headers=headers)
                 with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
                     raw = r.read()
@@ -95,16 +116,20 @@ def http_get(url, timeout=45, retries=4, backoff=1.6):
                         raw = zlib.decompress(raw)
                     return raw.decode("utf-8", "replace")
             except urllib.error.HTTPError as e:
-                # 4xx are permanent (bad params); don't waste retries.
-                if 400 <= e.code < 500:
-                    raise
+                if e.code not in _RETRYABLE:
+                    raise                     # genuine 4xx (bad params) — don't retry
                 last = e
+                ra = e.headers.get("Retry-After") if e.headers else None
+                if ra and ra.isdigit():
+                    time.sleep(min(int(ra), 30))
             except ssl.SSLError as e:
                 last = e
-                continue  # try the unverified context
+                continue                      # try the unverified context
             except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
                 last = e
-        time.sleep(backoff ** attempt)
+        # jittered backoff so parallel workers don't retry in lockstep and
+        # re-trigger AMFI's burst rate-limiting (the cause of the CI freezes).
+        time.sleep(backoff ** attempt + random.uniform(0, 0.75))
     raise last if last else RuntimeError("unreachable")
 
 
@@ -200,8 +225,17 @@ def parse_history(txt):
 
 
 def fetch_one_history(code, frm, to, url_tmpl, chunk_days):
-    """Full de-duplicated series for one Sd_Id across [frm, to]."""
+    """Return (by_date dict, ok) for one Sd_Id across [frm, to].
+
+    `ok` is False if ANY chunk request failed. A silently-dropped chunk is what
+    used to freeze a scheme at the chunk boundary (e.g. 2026-09-30, the end of the
+    first 365-day window) and then serve a stale, wrong 1-day return — so the caller
+    MUST treat ok=False as "series incomplete" and fall back to last-good data.
+    AMFI returns the whole history in one request, so with the default chunk size
+    this loop runs once and ok reflects that single call.
+    """
     by_date = {}
+    ok = True
     for a, b in chunk_ranges(frm, to, chunk_days):
         url = url_tmpl.format(sd=urllib.parse.quote(code),
                               frm=amfi_date(a), to=amfi_date(b))
@@ -209,18 +243,60 @@ def fetch_one_history(code, frm, to, url_tmpl, chunk_days):
             txt = http_get(url)
         except Exception as e:
             sys.stderr.write(f"  ! {code} {a}..{b}: {e}\n")
+            ok = False
             continue
         for iso, nav in parse_history(txt):
             by_date[iso] = nav  # dedupe by (code, date); last wins
-    return sorted(by_date.items())
+    return by_date, ok
+
+
+def load_prev(path):
+    """Load a previous nav_data.json as {code: {date: nav}} for last-good merge."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            d = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    prev = {}
+    for s in d.get("schemes", []):
+        code = s.get("code")
+        if code:
+            prev[code] = {dd: nv for dd, nv in s.get("series", [])}
+    return prev
 
 
 # --------------------------------------------------------------------------- #
 # Orchestration
 # --------------------------------------------------------------------------- #
 
+def _build_row(s, frm, to, url_tmpl, chunk_days, prev):
+    """Fetch one scheme; merge last-good + authoritative latest. -> (row, incomplete).
+
+    Three layers guarantee the newest NAV (hence the 1-day return) is right even
+    when AMFI flakes on a request:
+      1. last-good baseline from the previous file  -> never regress to an older date
+      2. fresh history overlaid on top              -> corrections and new days win
+      3. the enumerate endpoint's latest (date,nav) -> today's point is never missing
+    """
+    by_date, ok = fetch_one_history(s["code"], frm, to, url_tmpl, chunk_days)
+    hist_latest = max(by_date) if by_date else None
+
+    merged = dict(prev.get(s["code"], {}))    # 1. last-good baseline
+    merged.update(by_date)                     # 2. fresh history overlays
+    if s["latest_date"] and s["latest_nav"] is not None:
+        merged[s["latest_date"]] = float(s["latest_nav"])   # 3. pin authoritative latest
+
+    series = sorted(merged.items())
+    # "incomplete" = the history pull did not reach today's NAV, so this scheme is
+    # leaning on the safety net and may have a gap just before the latest point.
+    incomplete = (not ok) or bool(
+        s["latest_date"] and (hist_latest is None or hist_latest < s["latest_date"]))
+    return _row(s, [[d, n] for d, n in series]), incomplete
+
+
 def build_dataset(frm, to, filt, url_tmpl, chunk_days, latest_only, workers,
-                  progress=True):
+                  prev=None, progress=True):
+    prev = prev or {}
     schemes = enumerate_schemes()
     rx = re.compile(filt, re.I) if filt else None
     if rx:
@@ -229,33 +305,64 @@ def build_dataset(frm, to, filt, url_tmpl, chunk_days, latest_only, workers,
     if progress:
         sys.stderr.write(f"[enumerate] {len(schemes)} schemes match filter\n")
 
-    result = []
-
     if latest_only:
+        result = []
         for s in schemes:
-            series = []
+            merged = dict(prev.get(s["code"], {}))
             if s["latest_date"] and s["latest_nav"] is not None:
-                series = [[s["latest_date"], float(s["latest_nav"])]]
-            result.append(_row(s, series))
-        return _package(result)
+                merged[s["latest_date"]] = float(s["latest_nav"])
+            result.append(_row(s, [[d, n] for d, n in sorted(merged.items())]))
+        return _package(sorted(result, key=lambda r: (r["cat"], r["name"])))
 
-    def work(s):
-        series = fetch_one_history(s["code"], frm, to, url_tmpl, chunk_days)
-        return _row(s, [[d, n] for d, n in series])
+    rows_by_code = {}
 
-    done = 0
-    with cf.ThreadPoolExecutor(max_workers=workers) as ex:
-        futs = {ex.submit(work, s): s for s in schemes}
-        for fut in cf.as_completed(futs):
-            row = fut.result()
-            result.append(row)
-            done += 1
-            if progress and (done % 10 == 0 or done == len(schemes)):
-                sys.stderr.write(f"[history] {done}/{len(schemes)}\n")
+    def run(pool, n_workers, tag):
+        incomplete, done = [], 0
+        with cf.ThreadPoolExecutor(max_workers=n_workers) as ex:
+            futs = {ex.submit(_build_row, s, frm, to, url_tmpl, chunk_days, prev): s
+                    for s in pool}
+            for fut in cf.as_completed(futs):
+                row, inc = fut.result()
+                rows_by_code[row["code"]] = row
+                if inc:
+                    incomplete.append(futs[fut])
+                done += 1
+                if progress and (done % 10 == 0 or done == len(pool)):
+                    sys.stderr.write(f"[{tag}] {done}/{len(pool)}\n")
+        return incomplete
 
-    # stable order: by category then name
-    result.sort(key=lambda r: (r["cat"], r["name"]))
-    return _package(result)
+    incomplete = run(schemes, workers, "history")
+
+    # Retry the schemes whose history didn't reach today's NAV — exactly the ones
+    # that would otherwise have a gap before the latest point and show a wrong
+    # 1-day return. Each round is slower + more serial to shed AMFI rate-limiting;
+    # loop until the set stops shrinking (or a few rounds pass).
+    round_n = 0
+    while incomplete and round_n < 4:
+        round_n += 1
+        prev_n = len(incomplete)
+        if progress:
+            sys.stderr.write(f"[retry {round_n}] {prev_n} scheme(s) short; refetching slower\n")
+        time.sleep(3.0)
+        incomplete = run(incomplete, max(1, workers // 3), f"retry{round_n}")
+        if len(incomplete) >= prev_n and round_n >= 2:
+            break   # no progress — stop hammering AMFI
+
+    if incomplete:
+        # These still have the correct latest point (pinned from the enumerate
+        # endpoint) but their full history pull kept failing, so flag for visibility.
+        sys.stderr.write(
+            f"::warning::{len(incomplete)} SIF scheme(s) had an incomplete history pull "
+            f"(latest NAV still pinned from enumerate; may have a gap before it):\n")
+        for s in incomplete[:30]:
+            r = rows_by_code.get(s["code"], {})
+            have = r["series"][-1][0] if r.get("series") else "-"
+            sys.stderr.write(f"    {s['code']} latest {have} | {s['name'][:50]}\n")
+
+    result = sorted(rows_by_code.values(), key=lambda r: (r["cat"], r["name"]))
+    pkg = _package(result)
+    pkg["stale_count"] = len(incomplete)
+    return pkg
 
 
 def _row(s, series):
@@ -321,8 +428,9 @@ def serve(directory, host, port, default_url, chunk_days, workers):
                 filt = q.get("filter", [DEFAULT_FILTER])[0]
                 latest = q.get("latest", ["0"])[0] in ("1", "true", "yes")
                 sys.stderr.write(f"[refresh] {frm}..{to} latest={latest}\n")
+                prev = load_prev(f"{directory}/nav_data.json")
                 data = build_dataset(frm, to, filt, default_url, chunk_days,
-                                     latest, workers, progress=True)
+                                     latest, workers, prev=prev, progress=True)
                 # persist so a plain page load picks it up too
                 with open(f"{directory}/nav_data.json", "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False)
@@ -367,9 +475,18 @@ def main(argv=None):
     p.add_argument("--out", default="nav_data.json", help="output file")
     p.add_argument("--url", default=HIST_URL,
                    help="history URL template with {sd} {frm} {to} placeholders")
-    p.add_argument("--chunk-days", type=int, default=365,
-                   help="split long ranges into windows this many days wide")
-    p.add_argument("--workers", type=int, default=8, help="parallel fetch workers")
+    p.add_argument("--chunk-days", type=int, default=4000,
+                   help="split a range into windows this wide; AMFI returns the whole "
+                        "history in one request, so the default is a single call per scheme")
+    p.add_argument("--workers", type=int, default=6, help="parallel fetch workers")
+    p.add_argument("--rate", type=float, default=MIN_INTERVAL,
+                   help="min seconds between request starts, shared across workers "
+                        "(throttle to stay under AMFI's 429 rate limit)")
+    p.add_argument("--merge", dest="merge", action="store_true", default=True,
+                   help="merge onto the existing --out file so a transient failure never "
+                        "regresses a scheme to older data (default: on)")
+    p.add_argument("--no-merge", dest="merge", action="store_false",
+                   help="rebuild from scratch, ignoring any existing --out file")
     p.add_argument("--latest", action="store_true",
                    help="today's snapshot only (uses api/sif-latest-nav)")
     p.add_argument("--serve", action="store_true",
@@ -378,6 +495,7 @@ def main(argv=None):
     p.add_argument("--port", type=int, default=8765)
     p.add_argument("--dir", default=".", help="folder to serve (default: cwd)")
     args = p.parse_args(argv)
+    globals()["MIN_INTERVAL"] = args.rate   # apply shared throttle
 
     if args.serve:
         serve(args.dir, args.host, args.port, args.url, args.chunk_days, args.workers)
@@ -388,8 +506,9 @@ def main(argv=None):
     if frm > to:
         p.error("--from is after --to")
 
+    prev = load_prev(args.out) if args.merge else {}
     data = build_dataset(frm, to, args.filter, args.url, args.chunk_days,
-                         args.latest, args.workers)
+                         args.latest, args.workers, prev=prev)
 
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False)
@@ -398,9 +517,11 @@ def main(argv=None):
     dated = [d for s in data["schemes"] for d, _ in s["series"]]
     lo = min(dated) if dated else "-"
     hi = max(dated) if dated else "-"
+    stale = data.get("stale_count", 0)
     sys.stderr.write(
         f"[done] wrote {args.out}: {len(data['schemes'])} schemes, "
-        f"{n_pts} NAV points, {lo} .. {hi}\n"
+        f"{n_pts} NAV points, {lo} .. {hi}"
+        + (f", {stale} still behind latest" if stale else ", all current") + "\n"
     )
     return 0
 
