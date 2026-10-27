@@ -55,7 +55,7 @@ jobs:
             --rate 0.35 \
           || echo "::warning::AMFI NAV fetch failed — keeping last committed nav_data.json"
 
-      - name: Fetch NIFTY 50 benchmark (for up/down capture)
+      - name: Fetch NIFTY 50 + Midcap 50 benchmarks (capture ratios + Monthly view)
         run: |
           python fetch_benchmark.py --to "$(date -u +%F)" \
           || echo "::warning::benchmark fetch failed — keeping last committed benchmark_data.json"
