@@ -128,6 +128,18 @@ jobs:
             git push || echo "::warning::data commit push failed — will retry next run"
           fi
 
+      - name: Release & publish due monthly reports
+        # Drafts named content/commentary/_YYYY-MM-DD-*.md go live automatically on their date.
+        continue-on-error: true
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if python release_commentary.py | grep -q '^released:'; then
+            python publish_commentary.py --push || echo "::warning::commentary publish failed"
+          else
+            echo "no monthly reports due today"
+          fi
+
       - name: Alert on detected changes (opens a GitHub issue → emails you)
         if: ${{ hashFiles('monitor/changed.flag') != '' }}
         env:
