@@ -343,6 +343,29 @@
   a.rcard .rtag{font-size:10px;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:2px 9px;color:var(--ink-dim)}
   .rload{max-width:1000px;margin:0 auto;color:var(--ink-dim);padding:20px 2px}
 
+  /* ---- Mandate check tab ---- */
+  #view-mandate{padding:16px 14px 46px}
+  .mndhead{max-width:1040px;margin:0 auto 12px}
+  .mndhead h2{margin:0 0 4px;font-size:16px;color:var(--ink);font-family:var(--sans)}
+  .mndhead p{margin:0;color:var(--ink-dim);font-size:12px;line-height:1.5;max-width:780px}
+  .mndwrap{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;align-items:start}
+  @media (max-width:860px){ .mndwrap{grid-template-columns:1fr} }
+  #mandateChart{background:var(--panel);border:1px solid var(--line2);border-radius:10px;padding:8px}
+  .mnd-legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--ink-dim);margin:7px 2px 0}
+  .mnd-legend .k{display:inline-flex;align-items:center;gap:5px}
+  .mnd-legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .ibadge{display:inline-block;padding:1px 7px;border-radius:20px;font-size:10px;font-weight:700;color:#fff}
+  table.mnd{border-collapse:collapse;width:100%;font-size:11.5px;font-variant-numeric:tabular-nums lining-nums}
+  table.mnd th,table.mnd td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:right;white-space:nowrap;vertical-align:top}
+  table.mnd th{color:var(--ink-dim);font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+  table.mnd th.v,table.mnd td.v,table.mnd th:first-child,table.mnd td:first-child{text-align:left}
+  table.mnd tbody tr:hover td{background:var(--rowhover)}
+  .vchip{display:inline-block;padding:1px 7px;border-radius:4px;font-weight:700;font-size:10px}
+  .vchip.ok{background:rgba(75,210,138,.22);color:var(--pos)}
+  .vchip.watch{background:rgba(231,184,75,.24);color:var(--amber)}
+  .vchip.off{background:rgba(240,104,127,.26);color:var(--neg)}
+  .vflags{color:var(--ink-faint);font-size:10px;margin-top:2px;white-space:normal;max-width:220px}
+
   /* column picker */
   .mobtoggle{display:none}
   .colpick{position:relative}
@@ -487,6 +510,7 @@
 <div class="tabbar">
   <button class="tab active" data-view="terminal">Risk / Return Terminal</button>
   <button class="tab" data-view="monthly">Monthly returns vs indices</button>
+  <button class="tab" data-view="mandate">Mandate check</button>
   <button class="tab" data-view="reports">Monthly reports</button>
 </div>
 
@@ -553,6 +577,20 @@
        <a href="/commentary/">sifintel.com/commentary</a>.</p>
   </div>
   <div id="reportsBox" class="rgrid"></div>
+</section>
+
+<section id="view-mandate" class="hidden">
+  <div class="mndhead">
+    <h2>Mandate check — hybrid long-short</h2>
+    <p>Each hybrid is tagged by its <b>intent</b> (what the fund house set out to be — Debt / Arb+ / BAF+) and graded on how it's <b>actually behaving</b>: up- vs down-capture against the NIFTY, with volatility (bubble size) and drawdown feeding the verdict. The point is drift — a fund can keep an arb+ upside but leak a BAF+ downside. Intents marked “?” are an auto-guess from the SID text, pending confirmation. Uses the From/To window from the top bar (Direct–Growth plans).</p>
+  </div>
+  <div class="mndwrap">
+    <div>
+      <div id="mandateChart"></div>
+      <div class="mnd-legend" id="mandateLegend"></div>
+    </div>
+    <div style="overflow-x:auto"><table class="mnd"><thead id="mandateHead"></thead><tbody id="mandateBody"></tbody></table></div>
+  </div>
 </section>
 
 <style>
@@ -814,6 +852,7 @@ const SIFMetrics = (function(){
   let BENCH=null;            // {date: NIFTY-50 close} for up/down capture
   let BENCHNAME='NIFTY 50';
   let BENCHALL=[];           // [{index,symbol,series}] — all indices, for the Monthly view
+  let INTENTS={};            // hybrid archetype intents {brand: 'debt'|'arb+'|'baf+'} (source of truth)
   const compareSet=new Set();// scheme codes selected for the compare chart
 
   // ---- strategy grouping ----
@@ -1449,6 +1488,7 @@ const SIFMetrics = (function(){
     if(nt) nt.innerHTML='NAVs updated till <b>'+(data.dataTo? niceDate(data.dataTo):'—')+'</b>';
     recompute();
     if(typeof curView!=='undefined' && curView==='monthly') renderMonthly();
+    if(typeof curView!=='undefined' && curView==='mandate') renderMandate();
   }
   function niceDate(iso){ if(!iso||iso.length<10) return iso||'—'; const p=iso.split('-');
     return p[2]+' '+MON[+p[1]-1]+' '+p[0]; }
@@ -1473,13 +1513,18 @@ const SIFMetrics = (function(){
     fetch('benchmark_data.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
       .then(d=>{ BENCH={}; (d.series||[]).forEach(p=>BENCH[p[0]]=p[1]); BENCHNAME=d.index||'NIFTY 50';
         BENCHALL = (d.indices && d.indices.length) ? d.indices : [{index:BENCHNAME, series:d.series||[]}];
-        if(DATA){ recompute(); if(curView==='monthly') renderMonthly(); } })
+        if(DATA){ recompute(); if(curView==='monthly') renderMonthly(); if(curView==='mandate') renderMandate(); } })
       .catch(()=>{ BENCH=null; });
+  }
+  function loadArchetypes(){
+    fetch('hybrid_archetypes.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
+      .then(d=>{ INTENTS=d.intents||{}; if(DATA && curView==='mandate') renderMandate(); })
+      .catch(()=>{ INTENTS={}; });
   }
   function loadPortfolios(){
     // optional: the page works fully without it. Refresh open rows once it arrives.
     fetch('portfolios/index.json',{cache:'no-store'}).then(r=>{ if(!r.ok)throw new Error(r.status); return r.json(); })
-      .then(idx=>{ PORT=idx; _sifMeta=null; if(DATA) render(); })   // re-render so rows pick up parent AMC + badge
+      .then(idx=>{ PORT=idx; _sifMeta=null; if(DATA){ render(); if(curView==='mandate') renderMandate(); } })   // re-render so rows pick up parent AMC + badge (+ auto-intent)
       .catch(()=>{ PORT={schemes:{},amcs:{},periods:[]}; });
   }
   function doFetch(){
@@ -1515,11 +1560,12 @@ const SIFMetrics = (function(){
   function setView(v){
     curView=v;
     document.querySelectorAll('.tabbar .tab').forEach(t=>t.classList.toggle('active', t.dataset.view===v));
-    ['terminal','monthly','reports'].forEach(id=>{ const el=$('#view-'+id); if(el) el.classList.toggle('hidden', id!==v); });
+    ['terminal','monthly','reports','mandate'].forEach(id=>{ const el=$('#view-'+id); if(el) el.classList.toggle('hidden', id!==v); });
     if(v==='monthly') renderMonthly();
     if(v==='reports' && !reportsLoaded) renderReports();
+    if(v==='mandate') renderMandate();
   }
-  function refreshActive(){ recompute(); if(curView==='monthly') renderMonthly(); }
+  function refreshActive(){ recompute(); if(curView==='monthly') renderMonthly(); if(curView==='mandate') renderMandate(); }
   function ymLabel(ym){ const p=ym.split('-'); return MON[+p[1]-1]+" '"+p[0].slice(2); }
   function volOf(series,D){ if(!series||series.length<2) return null;
     const m=M.compute(series,{D:D,Rf:0,recoveryMode:'trading'}); return m.annStd; }
@@ -1600,6 +1646,98 @@ const SIFMetrics = (function(){
       })
       .catch(()=>{ box.innerHTML='<div class="rload">Could not load reports — open <a href="/commentary/">/commentary</a> directly.</div>'; });
   }
+  // ---- Mandate check (hybrids): intent vs realised behaviour ----
+  const INTENT_LABEL={debt:'Debt','arb+':'Arb+','baf+':'BAF+'};
+  const INTENT_COLOR={debt:'#0e9aa7','arb+':'#5b5bf0','baf+':'#d9820b'};
+  function autoIntent(txt){ if(!txt) return null; const t=(''+txt).toLowerCase();
+    if(/dynamic (net )?equity|balanced advantage|directional|net long|both rising and falling|shifts? (its )?net/.test(t)) return 'baf+';
+    if(/(fixed income|debt)[ -](core|orient|led|predominant|heavy)|accrual|fixed[- ]income/.test(t)) return 'debt';
+    if(/arbitrage|covered call|market neutral|hedg/.test(t)) return 'arb+';
+    return null; }
+  function intentOf(sif){
+    const b=brandShort(sif);
+    if(INTENTS[b]) return {intent:INTENTS[b], verified:true};
+    const meta=amcMetaFor(sif); const g=autoIntent(meta&&meta.strategy);
+    return g?{intent:g, verified:false}:null;
+  }
+  function behaveZone(c){ return (c==null||!isFinite(c))?'—':(c<30?'arb+':'baf+'); }
+  // grade execution vs intent using up/down capture + vol + drawdown
+  function assessHybrid(intent, up, down, vol, dd){
+    const asym=(up!=null&&down!=null&&isFinite(up)&&isFinite(down))?up-down:null;
+    const flags=[];
+    if(intent==='debt'||intent==='arb+'){ if(down!=null&&down>25) flags.push('downside leak'); }
+    else if(intent==='baf+'){ if(down!=null&&up!=null&&down>up) flags.push('negative asymmetry');
+      else if(down!=null&&down>50) flags.push('high market beta'); }
+    const volCap=intent==='debt'?4:intent==='arb+'?6:16, ddCap=intent==='debt'?4:intent==='arb+'?6:14;
+    if(vol!=null&&vol>volCap) flags.push('vol high for mandate');
+    if(dd!=null&&dd>ddCap) flags.push('drawdown deep for mandate');
+    if(asym!=null&&asym<0 && !flags.includes('negative asymmetry')) flags.push('captures more down than up');
+    const leak=flags.some(f=>/leak|negative|more down/.test(f)), risk=flags.some(f=>/vol high|drawdown deep|beta/.test(f));
+    let verdict;
+    if(asym!=null&&asym<0) verdict='off';
+    else if(leak&&risk) verdict='off';
+    else if(leak||risk) verdict='watch';
+    else if(asym!=null&&asym<3){ verdict='watch'; flags.push('weak asymmetry'); }
+    else verdict='ok';
+    return {asym, flags, verdict, behaveUp:behaveZone(up), behaveDown:behaveZone(down)};
+  }
+  function mandateScatter(rows){
+    const W=600,H=430,L=54,R=16,T=16,B=48, pw=W-L-R, ph=H-T-B, xMax=90,yMin=-12,yMax=90;
+    const X=u=>L+Math.max(0,Math.min(xMax,u))/xMax*pw;
+    const Y=d=>T+(yMax-Math.max(yMin,Math.min(yMax,d)))/(yMax-yMin)*ph;
+    let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" style="max-width:640px;height:auto;display:block">';
+    s+='<polygon points="'+X(0)+','+Y(0)+' '+X(90)+','+Y(90)+' '+X(90)+','+Y(yMin)+' '+X(0)+','+Y(yMin)+'" fill="rgba(75,210,138,.07)"/>';
+    s+='<polygon points="'+X(0)+','+Y(0)+' '+X(90)+','+Y(90)+' '+X(0)+','+Y(90)+'" fill="rgba(240,104,127,.07)"/>';
+    s+='<line x1="'+X(0)+'" y1="'+Y(0)+'" x2="'+X(90)+'" y2="'+Y(90)+'" stroke="var(--line2)" stroke-dasharray="4 4"/>';
+    s+='<line x1="'+L+'" y1="'+Y(0)+'" x2="'+(L+pw)+'" y2="'+Y(0)+'" stroke="var(--line)" stroke-dasharray="2 3"/>';
+    s+='<line x1="'+L+'" y1="'+(T+ph)+'" x2="'+(L+pw)+'" y2="'+(T+ph)+'" stroke="var(--line2)"/>';
+    s+='<line x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+(T+ph)+'" stroke="var(--line2)"/>';
+    [0,30,60,90].forEach(u=>{ s+='<text x="'+X(u)+'" y="'+(T+ph+14)+'" text-anchor="middle" font-size="9" fill="var(--ink-faint)">'+u+'</text>'; });
+    [0,30,60,90].forEach(d=>{ s+='<text x="'+(L-7)+'" y="'+(Y(d)+3)+'" text-anchor="end" font-size="9" fill="var(--ink-faint)">'+d+'</text>'; });
+    s+='<text x="'+(L+pw/2)+'" y="'+(H-7)+'" text-anchor="middle" font-size="10" fill="var(--ink-dim)">Up-capture %  →  keeps more of the rally</text>';
+    s+='<text transform="translate(13,'+(T+ph/2)+') rotate(-90)" text-anchor="middle" font-size="10" fill="var(--ink-dim)">Down-capture %  (lower = better)</text>';
+    s+='<text x="'+X(86)+'" y="'+Y(1)+'" text-anchor="end" font-size="9" fill="var(--pos)">ideal</text>';
+    s+='<text x="'+X(3)+'" y="'+Y(85)+'" font-size="9" fill="var(--neg)">leak</text>';
+    rows.forEach(r=>{ if(r.up==null||r.down==null||!isFinite(r.up)||!isFinite(r.down)) return;
+      const x=X(r.up),y=Y(r.down), rad=Math.max(4,Math.min(13,4+(r.vol||0)*0.5)), col=INTENT_COLOR[r.intent]||'#8b95a3';
+      s+='<circle cx="'+x+'" cy="'+y+'" r="'+rad+'" fill="'+col+'" fill-opacity="'+(r.verified?0.75:0.38)+
+         '" stroke="'+(r.verdict==='off'?'var(--neg)':r.verdict==='watch'?'var(--amber)':'#ffffff')+'" stroke-width="'+(r.verdict==='off'?2:1)+'"/>';
+      s+='<text x="'+(x+rad+2)+'" y="'+(y+3.5)+'" font-size="9.5" fill="var(--ink)">'+esc(r.brand)+(r.verified?'':' ?')+'</text>'; });
+    s+='</svg>';
+    return s;
+  }
+  function renderMandate(){
+    if(!DATA) return;
+    const from=$('#from').value, to=$('#to').value, D=+$('#days').value||252, Rf=+$('#rf').value||0;
+    const hyb=DATA.schemes.filter(s=>groupOf(s.cat).id==='hls' && /direct/i.test(s.name) && /growth/i.test(s.name) && !/idcw|dividend|payout|re-?invest/i.test(s.name));
+    const rows=[];
+    hyb.forEach(s=>{
+      const w=M.windowSeries(s.series,from,to); if(w.length<2) return;
+      const m=M.compute(w,{D,Rf,recoveryMode:'trading'});
+      const cap=BENCH?M.captureRatios(w,BENCH):{};
+      const io=intentOf(s.sif), intent=io?io.intent:null;
+      const a=assessHybrid(intent, cap.upCapture, cap.downCapture, m.annStd, m.maxDD);
+      rows.push({brand:brandShort(s.sif), full:s.name, intent, verified:io?io.verified:false,
+        up:cap.upCapture, down:cap.downCapture, vol:m.annStd, dd:m.maxDD, obs:m.obs, ...a});
+    });
+    const ord={debt:0,'arb+':1,'baf+':2};
+    rows.sort((a,b)=>((ord[a.intent]??9)-(ord[b.intent]??9)) || ((b.asym??-1e9)-(a.asym??-1e9)));
+    const chart=$('#mandateChart'); if(chart) chart.innerHTML=mandateScatter(rows.filter(r=>r.obs>=15));
+    const leg=$('#mandateLegend'); if(leg) leg.innerHTML=
+      Object.keys(INTENT_LABEL).map(k=>'<span class="k"><span class="dot" style="background:'+INTENT_COLOR[k]+'"></span>'+INTENT_LABEL[k]+'</span>').join('')+
+      '<span class="k">· bubble size = volatility · red ring = off-mandate · “?” = unverified intent</span>';
+    const num=(v,d)=> (v==null||!isFinite(v))?'—':((v>=0?'':'')+v.toFixed(d));
+    $('#mandateHead').innerHTML='<tr><th>Fund</th><th class="v">Intent</th><th class="v">Behaving (up/dn)</th><th>Up cap</th><th>Dn cap</th><th>Asym</th><th>Vol%</th><th>MaxDD%</th><th class="v">Verdict</th></tr>';
+    $('#mandateBody').innerHTML=rows.map(r=>{
+      const ib=r.intent?'<span class="ibadge" style="background:'+INTENT_COLOR[r.intent]+'">'+INTENT_LABEL[r.intent]+'</span>'+(r.verified?'':' <span class="sub" title="auto-guess from SID text">?</span>'):'<span class="sub">—</span>';
+      const beh=(r.obs<15)?'<span class="sub">too few obs</span>':(r.behaveUp+' up / '+r.behaveDown+' dn');
+      const flagTxt=r.flags&&r.flags.length?'<div class="vflags">'+esc(r.flags.join(' · '))+'</div>':'';
+      return '<tr><td title="'+esc(r.full)+'">'+esc(r.brand)+'</td><td class="v">'+ib+'</td><td class="v">'+beh+'</td>'+
+        '<td>'+num(r.up,0)+'</td><td>'+num(r.down,0)+'</td><td>'+num(r.asym,0)+'</td><td>'+num(r.vol,1)+'</td><td>'+num(r.dd,1)+'</td>'+
+        '<td class="v"><span class="vchip '+r.verdict+'">'+(r.verdict==='ok'?'on-mandate':r.verdict==='watch'?'watch':'off-mandate')+'</span>'+flagTxt+'</td></tr>';
+    }).join('');
+  }
+
   document.querySelectorAll('.tabbar .tab').forEach(b=>b.onclick=()=>setView(b.dataset.view));
   ['mcat','mplan','mopt','mmonths'].forEach(id=>{ const el=$('#'+id); if(el) el.addEventListener('change',renderMonthly); });
   // click a month (or Vol/Total/Scheme) header to sort the fund rows by it
@@ -1694,5 +1832,6 @@ const SIFMetrics = (function(){
   loadJSON();
   loadPortfolios();
   loadBenchmark();
+  loadArchetypes();
 })();
 </script>

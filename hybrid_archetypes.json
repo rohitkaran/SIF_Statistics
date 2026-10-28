@@ -1,0 +1,17 @@
+{
+  "note": "Hybrid long-short SIF strategy INTENT (what the fund house is trying to be), keyed by AMC brand. Intent is a stated-mandate fact, not derived from returns; the dashboard measures EXECUTION separately and flags drift. Edit this file to add/correct a fund; anything not listed falls back to an auto-guess from the SID strategy text (shown as 'unverified'). Values: debt | arb+ | baf+.",
+  "source": "User (SIF practitioner) ground truth, 2026-10-28",
+  "intents": {
+    "RedHex":   "debt",
+    "Arudha":   "debt",
+    "qsif":     "baf+",
+    "iSIF":     "baf+",
+    "Titanium": "baf+",
+    "Apex":     "arb+",
+    "Altiva":   "arb+",
+    "Infinity": "arb+",
+    "Magnum":   "arb+",
+    "Platinum": "arb+",
+    "Prism":    "arb+"
+  }
+}
