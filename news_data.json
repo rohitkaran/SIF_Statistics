@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T20:54:25Z",
+ "generated": "2026-11-04T22:47:21Z",
  "refresh_seconds": 1800,
  "count": 140,
  "sources_ok": [
@@ -15,49 +15,419 @@
   "Investing.com",
   "MarketWatch",
   "Mint Economy",
+  "RBI",
   "SEBI",
   "The Guardian",
   "US Federal Reserve"
  ],
  "sources_failed": [
-  "RBI",
   "Yahoo Finance"
  ],
  "items": [
   {
-   "title": "Democrats’ big election win revives a difficult Social Security question: Who pays?",
-   "url": "https://www.marketwatch.com/story/democrats-big-election-win-revives-a-difficult-social-security-question-who-pays-17ba9448?mod=mw_rss_topstories",
+   "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
+   "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:46:43Z",
+   "summary": "The next debt-ceiling confrontation could reverse Washington's traditional political roles, raising the possibility of spending concessions, market volatility and a damaging default.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Goldcom earnings missed by $0.88, revenue fell short of estimates",
+   "url": "https://www.investing.com/news/earnings/goldcom-earnings-missed-by-088-revenue-fell-short-of-estimates-5001727",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:35:06Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Olin extends receivables purchase agreement termination date to July 2028",
+   "url": "https://www.investing.com/news/sec-filings/olin-extends-receivables-purchase-agreement-termination-date-to-july-2028-93CH-5001726",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:34:39Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Oil falls over 8% as traders weigh impact on Iran war of Democratic midterms sweep",
+   "url": "https://www.investing.com/news/commodities-news/oil-edges-higher-as-mixed-usiran-signals-temper-peace-hopes-4997079",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:34:29Z",
+   "summary": "",
+   "categories": [
+    "Commodities & energy",
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Eversource Energy earnings beat by $0.18, revenue fell short of estimates",
+   "url": "https://www.investing.com/news/earnings/eversource-energy-earnings-beat-by-018-revenue-fell-short-of-estimates-5001722",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:33:45Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "ZTCZY Announces Operational Excellence Initiative to Support Sustainable Business Growth",
+   "url": "https://www.investing.com/news/company-news/ztczy-announces-operational-excellence-initiative-to-support-sustainable-business-growth-5001721",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:32:27Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Kenvue completes exchange offer for senior notes, amends bond covenants",
+   "url": "https://www.investing.com/news/sec-filings/kenvue-completes-exchange-offer-for-senior-notes-amends-bond-covenants-93CH-5001717",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:30:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Palomar earnings beat by $0.46, revenue topped estimates",
+   "url": "https://www.investing.com/news/earnings/palomar-earnings-beat-by-046-revenue-topped-estimates-5001714",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:30:42Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Lagarde’s Early Exit Tests ECB’s Eight-Year Terms",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWDROWFlreUdVWEF3bEg4emtvU2dvSjZueHRXSE1CUC1EcTRwVE9YT2duZE5aaUFrWV9Jc3JXb0tjVTBNdEZDR1N5WFpkNmRtaXpJeHRWcXY0OFdvdTM1MGJNM0xLNG9PczlPaDJHNWpXVi1iVmRRR2E2UDBmRFpyMnVPT1ZZZjY1RlBUNEVGdmlFc0lmRzRnVTQ4S1g5c2dzTkIwQjN3?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:30:36Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Chime raises annual revenue forecast on robust demand",
+   "url": "https://www.investing.com/news/stock-market-news/chime-raises-annual-revenue-forecast-on-robust-demand-5001269",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:30:31Z",
+   "summary": "",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Trading Day: Oil tanks, stocks leap on US midterms",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWU1HUGJVSFd3cHZ4S2xSZWM1RGFfdG1XbExrcjFPTmRuVWt3VjA3MDY2UTNsbUg5UmEzZUR6N2hfOThqSDdiT1B2RWctMVVTc1dGQjdtOXZCcW92SVVRQVFKczZGcHBONXRCNHpDTmQxc1NaNl9USHR6eXRsSmFGaFFmdw?oc=5",
+   "source": "The Mighty 790 KFGO",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T22:21:43Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
+   "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
    "source": "MarketWatch",
    "region": "US",
    "official": false,
-   "published": "2026-11-04T20:47:00Z",
-   "summary": "There are many ideas for saving Social Security. All of them will hurt.",
+   "published": "2026-11-04T22:15:00Z",
+   "summary": "“Our basic living expenses are covered by $110,000 in annual pensions and Social Security.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "How do Americans feel about the midterm results? It depends on how much money they make.",
+   "url": "https://www.marketwatch.com/story/how-do-americans-feel-about-the-midterm-results-it-depends-on-how-much-money-they-make-e2a43f08?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-04T22:06:00Z",
+   "summary": "Most Americans are “thrilled” or “happy” about the results of this year’s election. Some are especially so.",
    "categories": [
     "Geopolitics & trade"
    ]
   },
   {
-   "title": "McDonald’s tests new value menu as fast-food discount wars heat up",
-   "url": "https://www.marketwatch.com/story/mcdonalds-tests-new-value-menu-as-fast-food-discount-wars-heat-up-bfc57caf?mod=mw_rss_topstories",
+   "title": "Qualcomm’s stock falls as twin forces pressure sales",
+   "url": "https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories",
    "source": "MarketWatch",
    "region": "US",
    "official": false,
-   "published": "2026-11-04T20:41:00Z",
-   "summary": "The burger chain is overhauling its menu and seeking to deliver a “clear and compelling value proposition.”",
+   "published": "2026-11-04T22:03:00Z",
+   "summary": "Qualcomm faces the loss of Apple’s business and the negative impact of high memory costs on overall smartphone demand.",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Wall Street veteran says these are some of the most unbelievable charts he has ever seen",
+   "title": "Micron and other chip stocks slip as election results strike at the core of data-center optimism",
+   "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-04T21:55:00Z",
+   "summary": "Democratic victories in Texas and other states raise long-term questions about the AI buildout, though they do not “unwind projects already funded.”",
+   "categories": [
+    "Markets",
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "These stocks soared the most today after the Democrats trounced Trump",
+   "url": "https://www.marketwatch.com/story/these-stocks-have-soared-the-most-today-after-the-democrats-trounced-trump-9d785314?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-04T21:55:00Z",
+   "summary": "Chemical company Mosaic’s stock is the strongest performer among the S&P 500, while several tech players and associated power providers show sharp declines",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "What Republicans' huge loss means for Trump",
+   "url": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:50:05Z",
+   "summary": "Trump's handling of tariffs, the Iran war and an array of Washington-area construction projects are sure to face sudden pushback from newly empowered Democrats.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Figma’s stock falls as investors worry that AI momentum is coming at a high price",
+   "url": "https://www.marketwatch.com/story/figmas-stock-falls-as-investors-worry-that-ai-momentum-is-coming-at-a-high-price-1aa2134d?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-04T21:48:00Z",
+   "summary": "Figma’s investments in AI models and agents are driving usage, but the cost of delivering these features is proving to be expensive",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
+   "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:41:15Z",
+   "summary": "Musk spent nearly $500m in the 2026 US midterm elections, an individual election spending record.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Pound rises to its highest level since the Brexit referendum",
+   "url": "https://www.bbc.co.uk/news/articles/c6lykq2qjn2vo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:35:50Z",
+   "summary": "Pound reaches highest level against a basket of currencies since the Brexit referendum a decade ago",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Microsoft and Amazon combined to see a $424 billion market-cap boost — and these factors show why",
+   "url": "https://www.marketwatch.com/story/microsoft-and-amazon-combine-for-a-400-billion-market-cap-boost-and-these-factors-show-why-6655d1a9?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-04T21:33:00Z",
+   "summary": "Microsoft and Amazon shares rose sharply on Wednesday, with one portfolio manager noting that a cloud-supply crunch could help the companies raise prices.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Big Tech is driving a historic divide in the S&P 500. Why investors need to take notice.",
    "url": "https://www.marketwatch.com/story/wall-street-veteran-says-these-are-some-of-the-most-unbelievable-charts-he-has-ever-seen-2c78e677?mod=mw_rss_topstories",
    "source": "MarketWatch",
    "region": "US",
    "official": false,
-   "published": "2026-11-04T20:41:00Z",
+   "published": "2026-11-04T21:33:00Z",
    "summary": "A historic divergence has split the U.S. stock market: The benchmark S&P 500 index has tumbled into deeply oversold territory even as nearly half of its constituent stocks remained decidedly overbought.",
    "categories": [
     "Markets"
+   ]
+  },
+  {
+   "title": "‘It’s good to be old’: I’ve been invited to a dozen free meals that turn into annuity sales pitches. Should I stop going?",
+   "url": "https://www.marketwatch.com/story/its-good-to-be-old-ive-been-invited-to-a-dozen-free-meals-that-turn-into-annuity-sales-pitches-should-i-stop-going-63df67ca?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-04T21:30:00Z",
+   "summary": "“Salespeople typically push annuities, Medicare plans and estate-planning services.”",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Dow scores its best day in 18 months in a broad relief rally after Democrats sweep to power in Congress",
+   "url": "https://www.marketwatch.com/story/dow-scores-its-best-day-in-18-months-in-a-broad-relief-rally-after-democrats-sweep-to-power-in-congress-d7348fc0?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-04T21:29:00Z",
+   "summary": "Stocks surged, oil prices plunged and bond yields fell Wednesday on optimism around a quicker end to the Iran war now that Democrats have clinched control of Congress.",
+   "categories": [
+    "Markets",
+    "Commodities & energy",
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Services sector growth slows, impeded by tariffs, rising fuel costs: ISM",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdzNIOUNaRmVmZUNrMHB1Z2ZocEswcFZPNWdWLVBYUWE2RUpLOHY5ZFE5My1lLXNnZV84YjBUX3BTVl9MU2ZyS1RZb1NaelRLWFpMSnM1bjJESGVER3dWdm9kYlh6ekM2WFhOOUxrV3o3cGpoTDFhSXpWR0p4ek04NENHdHg2VkxVZmVkb2hhU0VaaDRPckdVSDZObzE2bFdObzBGb0Zqd2lQMFpPTmx2THpvWGlqQ1llTHd2VkFlN252YWZj?oc=5",
+   "source": "CFO Dive",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:27:17Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "FRED Adds Inflation Indicators from the St. Louis Fed - Federal Reserve Economic Data | FRED | St. Louis Fed",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNajhHTkdMQ2tpMEwyYkRxYTlXR1FpZ3I2WDRyUWJiVlZtdVJ4SFRNWDh1R0F5LTJmT09hR2FNdW5JZWx6akI2VjZCSkJ1RGd3YVZPM2hYeGl4cW1pcE4ybmtkVmx5M2g1b2tJLTRDZFNBVVFFYzVSOENSdzVadlFmT1NFRVozLVp1a2hyLW03eWhUUQ?oc=5",
+   "source": "Google News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:25:22Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "The economy brought Trump back to power. Now it's his downfall",
+   "url": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
+   "source": "CNBC Economy",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:24:22Z",
+   "summary": "Participants in the CNBC Voter Poll ranked the economy the most important issue facing the country, ahead of topics tied to democracy and immigration.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Senior Democratic congressman says party 'going to put an end' to Trump's tariffs",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN2pTTndHcUU0OU81NkZYWWhOTW4zN3UxMlBsd2RtTHVfUGU2Q3c3Wk9oakUyVlE0NHlvSDl1V2JwWnlCRXVKZjZ6OWJmZHBjRUJBUXJmZVoxQUZwSVFIX3hsOGpEb09hRTlObTkxTVllUDJHVVdSRU5XVjl1dzV2aS0xa3BGRjV6aDhZckhFaTJfZw?oc=5",
+   "source": "CBC",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:22:41Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+   "source": "CNBC Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:18:44Z",
+   "summary": "Treasury yields were last little changed Wednesday as investors weighed big wins from Democrats in the U.S. midterm elections.",
+   "categories": [
+    "Central banks & rates",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Bank’s risky decision",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE81eXlOQjgtUURPdUhwS3k5ai12RW9SNHVza21yVGhpMTZwcmR1U0RZTkxBNjBaOFpPVlhrVjhCbTBKRW5LMFdLRmdad3ZDVmxCdG01a0FROE1qWFY0R2ZUaWRrRnBzVlRUbXc?oc=5",
+   "source": "Cambridge News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T21:02:27Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "What To Expect From Friday’s Jobs Report",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZjFrOUd0QzVDUnRnc1ptLXdBeXl0VmtDcFRWSEhyanctRDVIeE5FWG1Dc3NwNl9FUXF0a1VpcU9ULWZlV01pWlE1a3RlaGl0cG5XOHVwYXBMTWFqVl9TcU0tU0JBMTh1REtWQmJjR29wTGJGT2FpR1NtVGxIcTgwVmVfOUdlYU1TTWEzQjV2bVdRR2xEVjgxaWlMcTRrQQ?oc=5",
+   "source": "Investopedia",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T20:54:22Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Treasuries Advance as Traders Eye US Votes, Refinancing Plans",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzN0NVZRRWVGTGRucWE0c2lMNmdFU3BGaS1kVlhzMDAyZUNRZjA1SWlORHJIWlotVXdWLVNqN3NMX3h3U2tISkRod0l5YXpDdzZLOWNhYmhPd2hPU3UzUE9wZmdEQ0VBWjRfZi15SmJsclVuS1lwZHcwakdPdk5pbW5ha1NhMm5SdUpBUmdDUzMxT3YxNWg3dlRHeUxjeGFPOV83bjUyNlY0ZktBSFF0Uw?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T20:52:02Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Oil Prices Sink as U.S. Midterms Raise Market Hopes for Middle East Solution",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVGZJRGVaVkdJaDR5b1REaE5CdWQtY2ZlczBhUXFWT253Vi0tMkNoUVhSNUI0Rzlqbnc5UnVVS0lqN1kwVzZ3eTJ6ODByNlc5ck5HYmlkMEVyRzlrVDNFdk8zQ2JuRWdQLUdYc3ozNUVCc3hRSGhDc0tKNW9QY1A2ZVpMZC1PNGxqUU81QkQyZms0R1VxWUUzbTRLSmYyUTRvM0ZHVmVjdTRpZ2NxLUJkcFlQZzY?oc=5",
+   "source": "WSJ",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T20:49:00Z",
+   "summary": "",
+   "categories": [
+    "Commodities & energy"
    ]
   },
   {
@@ -99,66 +469,6 @@
    ]
   },
   {
-   "title": "U.S. stocks higher at close of trade; Dow Jones Industrial Average up 3.19%",
-   "url": "https://www.investing.com/news/stock-market-news/us-stocks-higher-at-close-of-trade-dow-jones-industrial-average-up-319-5001152",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:31:02Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "3M stock soars following $7.35 billion ’forever chemicals’ settlement",
-   "url": "https://www.investing.com/news/stock-market-news/3m-stock-soars-following-735-billion-forever-chemicals-settlement-5001151",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:30:49Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Canada stocks higher at close of trade; S&P/TSX Composite up 2.39%",
-   "url": "https://www.investing.com/news/stock-market-news/canada-stocks-higher-at-close-of-trade-sptsx-composite-up-239-5001150",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:30:33Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Apple cuts employee AI budgets in cost-control push, Bloomberg News reports",
-   "url": "https://www.investing.com/news/stock-market-news/apple-cuts-employee-ai-budgets-in-costcontrol-push-bloomberg-news-reports-5001149",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:30:32Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Brazil stocks higher at close of trade; Bovespa up 0.99%",
-   "url": "https://www.investing.com/news/stock-market-news/brazil-stocks-higher-at-close-of-trade-bovespa-up-099-5001144",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:30:04Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "[Anne O. Krueger] Tariff fiasco may save free trade",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1qSGd5Mkh1M3Utd3EtOE8tbHJJRk5PNU1xMmtDMlBldThxTURlNnljQklTcmpqanhoUmp6OG1USTdGQ2dpQXF3WWZyM25sOFdXVi1pcW96VQ?oc=5",
    "source": "The Korea Herald",
@@ -166,66 +476,6 @@
    "official": false,
    "published": "2026-11-04T20:30:00Z",
    "summary": "",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
-   "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-   "source": "CNBC Economy",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:28:17Z",
-   "summary": "The next debt-ceiling confrontation could reverse Washington's traditional political roles, raising the possibility of spending concessions, market volatility and a damaging default.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Oil prices are in freefall now that the Democratic sweep is ‘rewriting the Iran playbook’",
-   "url": "https://www.marketwatch.com/story/oil-prices-are-in-freefall-now-that-the-democratic-sweep-is-rewriting-the-iran-playbook-aa437b85?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-04T20:28:00Z",
-   "summary": "Oil dropped Wednesday, putting prices on track for their largest one-week decline since 2020.",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Canada budget to expand homelessness funding as urban crisis deepens - Bloomberg",
-   "url": "https://www.investing.com/news/economy-news/canada-budget-to-expand-homelessness-funding-as-urban-crisis-deepens--bloomberg-5001142",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:24:51Z",
-   "summary": "",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "What Republicans' huge loss means for Trump",
-   "url": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T20:23:18Z",
-   "summary": "Trump's handling of tariffs, the Iran war and an array of Washington-area construction projects are sure to face sudden pushback from newly empowered Democrats.",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "The midterm election results are redrawing the map for AI data centers",
-   "url": "https://www.marketwatch.com/story/the-midterm-election-results-are-redrawing-the-map-for-ai-data-centers-8625dc0c?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-04T20:21:00Z",
-   "summary": "U.S. data-center spending won’t drop a lot, but watch for delays, relocations and increased expenses for individual projects",
    "categories": [
     "Geopolitics & trade"
    ]
@@ -243,25 +493,13 @@
    ]
   },
   {
-   "title": "S&P upgrades KLA to ’A’ as AI chip demand bolsters scale and balance sheet",
-   "url": "https://www.investing.com/news/stock-market-news/sp-upgrades-kla-to-a-as-ai-chip-demand-bolsters-scale-and-balance-sheet-5001136",
-   "source": "Investing.com",
+   "title": "Conservative US Supreme Court justices Thomas and Alito in spotlight after Democratic landslide",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMDVYRXNneFQxQ09sNE1LRkU2a2RmdWlkcHl4QmxWYnpYUUxCNThGejlvY1E1U0RoaTlEZkZkRjdlaDlIbzlubDZlMjBnWGRKbngwQXNqS1FtRzQ2by1Zd0xFWnBwdWpDY1BLbFFraEFOV08zTUgtTkRLTnRLN0tiQ2hpcjQ4amdJaWdLcExGSVF4Vk9Kc1REdTh2eVdHVTFPYzA2UzV2THBnUmhTYUdwTHVXc3ZpcGVtS3J0N2ZOUF9YMnRkajZMTjY3aw?oc=5",
+   "source": "Reuters",
    "region": "Global",
    "official": false,
-   "published": "2026-11-04T20:20:05Z",
+   "published": "2026-11-04T20:14:35Z",
    "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "As Vistra and other energy stocks slide, some analysts warn of an ‘excessive knee-jerk’ reaction",
-   "url": "https://www.marketwatch.com/story/as-vistra-and-other-energy-stocks-slide-some-analysts-warn-of-an-excessive-knee-jerk-reaction-aece0737?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-04T20:17:00Z",
-   "summary": "Energy stocks have already been under pressure, and newly elected officials may not slow the data-center boom as much as feared.",
    "categories": [
     "Markets"
    ]
@@ -279,18 +517,6 @@
    ]
   },
   {
-   "title": "Microsoft and Amazon combine for a $400 billion market-cap boost — and these factors show why",
-   "url": "https://www.marketwatch.com/story/microsoft-and-amazon-combine-for-a-400-billion-market-cap-boost-and-these-factors-show-why-6655d1a9?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-04T20:04:00Z",
-   "summary": "Microsoft and Amazon shares are rising sharply on Wednesday, with one portfolio manager noting that a cloud-supply crunch could help the companies raise prices.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "CVS Health plans to split itself up. Here's why a breakup could make sense now",
    "url": "https://www.cnbc.com/2026/11/04/cvs-health-pharmacy-aetna-split.html",
    "source": "CNBC International",
@@ -298,18 +524,6 @@
    "official": false,
    "published": "2026-11-04T19:58:41Z",
    "summary": "Analysts say that after a roughly two-year turnaround the company's retail pharmacy business and other units may be strong enough to stand on their own.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Conservative US Supreme Court justices Thomas and Alito in spotlight after Democratic landslide",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMDVYRXNneFQxQ09sNE1LRkU2a2RmdWlkcHl4QmxWYnpYUUxCNThGejlvY1E1U0RoaTlEZkZkRjdlaDlIbzlubDZlMjBnWGRKbngwQXNqS1FtRzQ2by1Zd0xFWnBwdWpDY1BLbFFraEFOV08zTUgtTkRLTnRLN0tiQ2hpcjQ4amdJaWdLcExGSVF4Vk9Kc1REdTh2eVdHVTFPYzA2UzV2THBnUmhTYUdwTHVXc3ZpcGVtS3J0N2ZOUF9YMnRkajZMTjY3aw?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T19:56:10Z",
-   "summary": "",
    "categories": [
     "Markets"
    ]
@@ -414,18 +628,6 @@
    ]
   },
   {
-   "title": "4 market-moving issues investors should watch now that the midterms are over",
-   "url": "https://www.marketwatch.com/story/4-market-moving-issues-investors-should-watch-now-that-the-midterms-are-over-9a77b3de?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-04T19:12:00Z",
-   "summary": "The Democrats’ election sweep on Tuesday could have far-reaching consequences for markets and the economy.",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
    "title": "Gold and silver prices jump, dollar dips as Democrats take control of Congress",
    "url": "https://www.cnbc.com/2026/11/04/gold-silver-platinum-dollar-midterms.html",
    "source": "CNBC International",
@@ -436,6 +638,19 @@
    "categories": [
     "Currencies",
     "Commodities & energy"
+   ]
+  },
+  {
+   "title": "RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction under LAF on November 05, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63919",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-04T19:10:00Z",
+   "summary": "On a review of current and evolving liquidity conditions, it has been decided to conduct a Variable Rate Reverse Repo (VRRR) auction on Thursday, November 05, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Window Timing Date",
+   "categories": [
+    "Central banks & rates",
+    "India"
    ]
   },
   {
@@ -451,15 +666,27 @@
    ]
   },
   {
-   "title": "SpaceX’s Qualcomm deal could be a precursor to a telecom takeover",
-   "url": "https://www.marketwatch.com/story/qualcomm-sat-out-the-semiconductor-rally-can-a-spacex-partnership-change-that-5bb4c0b2?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
+   "title": "The great sleeping giant of America has awakened | Robert Reich",
+   "url": "https://www.theguardian.com/commentisfree/2026/nov/04/democrats-elected-us-awakening",
+   "source": "The Guardian",
+   "region": "Global",
    "official": false,
-   "published": "2026-11-04T18:57:00Z",
-   "summary": "The deal adds to what a BNP Paribas analyst called an “unprecedented” amount of news putting pressure on U.S. telecommunications operators.",
+   "published": "2026-11-04T19:03:08Z",
+   "summary": "The real question in my mind is whether Democrats will take advantage of the new age of populism The great sleeping giant of the US has awakened, taken a hard look at what’s become of the nation, and roared a thunderous “NO!” What occurred",
    "categories": [
     "Markets"
+   ]
+  },
+  {
+   "title": "Billions in revenue proves Fifa right on the World Cup – but only on things it cares about",
+   "url": "https://www.theguardian.com/football/2026/nov/04/fifa-world-cup-billions-revenue",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T19:02:48Z",
+   "summary": "The 2026 edition of the tournament brought in untold amounts of money to Gianni Infantino’s governing body The total hasn’t entirely stopped rising yet, still clicking away towards a final tally. Still, Fifa has already announced that it su",
+   "categories": [
+    "Corporate & deals"
    ]
   },
   {
@@ -489,7 +716,7 @@
   },
   {
    "title": "Democrats’ Senate win could shield Federal Reserve from Trump’s influence, but risks persist",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOVXJGRTVVdjVxb0pEc1JYMVF5NjRzZGpjbm14dmp3UEI5dFpqZml5Q1phWEFoa2VKTDhaMjdaTFdMMUpXUWFqTzgwb3NKbEZuUVdNaDhOdENpa0RGMmI4aUZVYUMxWUFWYlZuLTNXOG43V1llOUloeXMxNS0weEVxcDJuUUd0OGVOMlVDeGJDbm1HWXBHNDlwN0pYTXo5dFRpZzRWSzBtVHJ2ekxzRm9sTzNkZjU4cmxRNDBjeXk4R1ppM1drUlFhZWlyVldnRnZWSTdpdWRUdG1QNU9fZ3dOMDJHX0VVdmt0R0JUQmhFdXd0YlQxUGt2enhvQURiQm1zZU5ZczRLcw?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNd3Z0aE5jS24yNWFOVE9VeWJTUVNCTEhfTnR0UFZubDk4UmRuNFBiQUNkdGc4WWlVNlZFMUZNSFYyV1NJZl9QSExFV3R2OF9vdUdnZmNsMDZ4b3ZhbkxkMXVRVkprSkRJVEN6SHA5QzFGNWNHQ2twREJIRng3Q0ZGbE9uNjVSZWlsU1FlN3JnS292ZlZxMml4S2NZWmZyNnNQSkt5Qi1vUldZNVF6M1RSQlZRM01MazQ1R3M5RkNORFdUUUV2dGxjd0ZRZjUydTVWNnhtT2FrTHJLV3plYjg3N0JXdFowV2FYRTB6ZldJeWR0eVJhTnk5eE1UZw?oc=5",
    "source": "The Economic Times",
    "region": "Global",
    "official": false,
@@ -497,18 +724,6 @@
    "summary": "",
    "categories": [
     "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Debt Limit, Tariffs Top List of Likely Deals in Trump’s New Era",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOGh1bE9OcW9Db0prLTY1Ykpsb1plR3Z5WVZlakFSUEZKZGV2THJURUJWQWdxLVZ5MWtRV2tmVFc5ekpaNk5DQWlLODRjdEs5dTVrVWR5M1d5dFUxX2l2QUU1SjY4eU52ZDVkLVZHWlNwcVo0SWhkNDFaRU00UlJoalprZXlYV1JIOGpqSk5vOHdRVHgtYWt0NEE5RXV6d1RnQ3VEbHF0UEdhLTdBbjJNOXhvZw?oc=5",
-   "source": "Bloomberg",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T18:45:02Z",
-   "summary": "",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -531,18 +746,6 @@
    "official": false,
    "published": "2026-11-04T18:37:11Z",
    "summary": "Trump is a frequent critic of media companies, especially broadcasters that he views as being biased against him.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "‘I have no financial safety net’: I’m 66, rely on Social Security and have $500 in savings. What politician speaks for me?",
-   "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-04T18:37:00Z",
-   "summary": "“In the wake of the midterm elections, how many Americans are living in poverty?”",
    "categories": [
     "Markets"
    ]
@@ -623,18 +826,6 @@
    ]
   },
   {
-   "title": "Treasuries Advance as Traders Eye US Votes, Refinancing Plans",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzN0NVZRRWVGTGRucWE0c2lMNmdFU3BGaS1kVlhzMDAyZUNRZjA1SWlORHJIWlotVXdWLVNqN3NMX3h3U2tISkRod0l5YXpDdzZLOWNhYmhPd2hPU3UzUE9wZmdEQ0VBWjRfZi15SmJsclVuS1lwZHcwakdPdk5pbW5ha1NhMm5SdUpBUmdDUzMxT3YxNWg3dlRHeUxjeGFPOV83bjUyNlY0ZktBSFF0Uw?oc=5",
-   "source": "Bloomberg",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T18:17:31Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
    "title": "Trump's midterm setback may give India an edge in trade deal",
    "url": "https://www.livemint.com/economy/us-says-no-change-in-ties-with-india-experts-see-uncertainties-over-trade-deal-11793810263147.html",
    "source": "Mint Economy",
@@ -645,18 +836,6 @@
    "categories": [
     "Geopolitics & trade",
     "India"
-   ]
-  },
-  {
-   "title": "Oil Prices Sink as U.S. Midterms Raise Market Hopes for Middle East Solution",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVGZJRGVaVkdJaDR5b1REaE5CdWQtY2ZlczBhUXFWT253Vi0tMkNoUVhSNUI0Rzlqbnc5UnVVS0lqN1kwVzZ3eTJ6ODByNlc5ck5HYmlkMEVyRzlrVDNFdk8zQ2JuRWdQLUdYc3ozNUVCc3hRSGhDc0tKNW9QY1A2ZVpMZC1PNGxqUU81QkQyZms0R1VxWUUzbTRLSmYyUTRvM0ZHVmVjdTRpZ2NxLUJkcFlQZzY?oc=5",
-   "source": "WSJ",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T18:15:00Z",
-   "summary": "",
-   "categories": [
-    "Commodities & energy"
    ]
   },
   {
@@ -747,6 +926,19 @@
    ]
   },
   {
+   "title": "What the Fed Can and Cannot Fix in Today’s Inflation",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRWhtTS1YbVhTR3pwUnJ0Q3J5Y0tKRXNqZE9HMDA1eXQ5aWtCZGwzbk5HdVVwM2cwME1XMFBPVFJOMzBPT3ZXcE1qZDFmcnh4Tm0yYWNRSVRTX2JqVHA5bEhibEtOaWVfLUVRdGhoa2VLRmRUVUZqVXhxaE1BbGwyYw?oc=5",
+   "source": "ETF Database",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T17:31:50Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
    "title": "Under pressure on inflation, PM seeks cuts to bypass Shoebridge, Taylor veto",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZ0VYOENZWHpfUnM2RTBkR09GbDB4d1dldHhfLWtDM19HVHVKY1BwQnVvWWtkS19nUnZFQmpTUC1tdzBtR2c2VnpyU0ZHeHl0SHR5VmtnOUF4TVFsdmx5Zl82cW5mMkJXZkFMcVVGeHJ3MzZoT3dwYk9JUU1oZHBzOHktSmRHWFVyenM5SFBmRTNxc1BMTEtpQ0dzUzh5a2twQ3pBeV8zZ2xtaVNCSXNMTFZGOGdTbzZkbHI3SXBfTjIwMXdfc2hZMklKX212bzhy?oc=5",
    "source": "SMH.com.au",
@@ -756,19 +948,6 @@
    "summary": "",
    "categories": [
     "Inflation & growth"
-   ]
-  },
-  {
-   "title": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
-   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T17:11:00Z",
-   "summary": "Treasury yields were last little changed Wednesday as investors weighed big wins from Democrats in the U.S. midterm elections.",
-   "categories": [
-    "Central banks & rates",
-    "Commodities & energy"
    ]
   },
   {
@@ -808,6 +987,18 @@
    ]
   },
   {
+   "title": "Airbnb can be positive for the community | Letters",
+   "url": "https://www.theguardian.com/technology/2026/nov/04/airbnb-can-be-positive-for-the-community",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-04T17:00:43Z",
+   "summary": "Readers respond to an article by Arwa Mahdawi on some self-catering hosts calling for a strike in response to new guidelines Regarding Arwa Mahdawi’s article ( Airbnb feels like a soulless rip-off – and its hosts are revolting, 28 October )",
+   "categories": [
+    "Regulation"
+   ]
+  },
+  {
    "title": "Democrats Retake Senate, Blocking Trump's Plan to Reshape Federal Reserve Board",
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MX0lObGgwbDEwZS1KQURIakRPRGQxZTJ3LVdyUzR5T0E5RlVCZDlsVVI5MlBrS2NtdzBTS2lfeklkVjBCMkNwcVpzOEd2bnZMTHo0TG03RUZnUDRWVGQtVW5WUjQxT3dOdnlfUmxxb1prS3pZQlE?oc=5",
    "source": "BigGo Finance",
@@ -826,7 +1017,7 @@
    "region": "Global",
    "official": false,
    "published": "2026-11-04T16:38:28Z",
-   "summary": "Government bond yields fall while initial fears ease over impact of election results on world’s biggest economy Business live – latest updates US midterm elections – live updates After US midterms, what will lame duck Trump mean for global",
+   "summary": "Government bond yields fall while initial fears ease over impact of election results on world’s biggest economy US midterm elections – live updates After US midterms, what will lame-duck Trump mean for global economy? US stocks have surged",
    "categories": [
     "Markets",
     "Currencies",
@@ -877,18 +1068,6 @@
    "official": false,
    "published": "2026-11-04T15:57:02Z",
    "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Elon Musk's millions fail to deliver Texas for the Republicans in fierce midterms",
-   "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T15:51:37Z",
-   "summary": "The billionaire's political action committee (Pac) contributed $47m (£35m) to Ken Paxton's campaign.",
    "categories": [
     "Markets"
    ]
@@ -1131,11 +1310,11 @@
   },
   {
    "title": "US services sector activity cools slightly in October; inflation remains elevated",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5PV1QwNWhWLVZvSEZLVGJkeUVpVGZacXVBUkp6RzhOQWwtbVBUcG9lMzB6V1R0RjdGX3kxdmpiZUdka3RzXzdwb0dCeC1wQ3Jm?oc=5",
-   "source": "The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYXZldkhZTUdLd19hOWFFclI4eVlfTk1lUHdlUzZrUGFTdWxpVjZQRmVXSWh4RlFQRjNDZTYxUHZ4TDE4em12ckQ3RFpqcmlWSEYtVlRjQWhFU2xsYV9VYVVrYkpuYS1rbHB1MmNqVmswVnV0eWpGeENsZTNNRzJLUjU4cUhadVMtVlFoWnBESWdoYm9ZQ0E?oc=5",
+   "source": "Yahoo Finance",
    "region": "Global",
    "official": false,
-   "published": "2026-11-04T15:07:07Z",
+   "published": "2026-11-04T15:07:27Z",
    "summary": "",
    "categories": [
     "Inflation & growth"
@@ -1166,21 +1345,9 @@
    ]
   },
   {
-   "title": "The worst two words in the dead of night? ‘Motorway closed’ | Adrian Chiles",
-   "url": "https://www.theguardian.com/commentisfree/2026/nov/04/the-worst-two-words-in-the-dead-of-night-motorway-closed",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T15:00:37Z",
-   "summary": "You are shunted into side streets, crawling along, united with your fellow drivers in wordless despair. Last week, at 2am, my spirit broke The worst three words in the transport lexicon are often said to be “rail”, “replacement” and “bus”,",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Higher Energy, Gold Exports Offset US Tariff Impact on Canada",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWmEyTnRCX2tVWnlwZ0p2ZXV0Yld6ZTBic3RrQlBtSmE0VzFIUHozWnZwS3kyU1ZsQVNUeTB4anFKejEzODJPM3hlNmptMHF1ZFprZVJpRENqTF94N2dTaW9PU0hiMjhuS2FXX0ZqVDU5aUE4SmFuWmE4c3FZZ1FmMnU4VzhlMEZZWDZBMk8yTVY5Y1Q1dWp1cGxoc01TLXBjUURkS25ncFFITUx0TU1ZUQ?oc=5",
-   "source": "Bloomberg",
+   "source": "Bloomberg.com",
    "region": "Global",
    "official": false,
    "published": "2026-11-04T14:58:26Z",
@@ -1204,15 +1371,15 @@
    ]
   },
   {
-   "title": "Tariff relief for Canada not guaranteed after Democrats sweep U.S. midterm elections",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNemZlakFFV3J6b0owUlo1UW16cXAxZ3B3N3BVbHZWWXUzendPbEtyUHB1aDByTFZNdVVGZjlZd2hDaG5vTTA5aVB6M200UW84TlVnZFVhbC0zREtRX2VDX21RTGNjLUwtbU5kNXJPTnZ1d3o2NXNyamhidVRycmlrSGhJNF9RUXhSa1lEMlNRaFZPSFNUYV9VZmYyZjZBTXdJbmY4X3pqMm5hZkNVN1A4MnlKZjNMV0NURDlsWEVFNXdSY2N4VWM3RHhtR09ad2kt?oc=5",
-   "source": "CTV News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T14:44:05Z",
-   "summary": "",
+   "title": "Treasury Bills: Full Auction Result",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63918",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-04T14:45:00Z",
+   "summary": "(Amount in ₹ crore) Auction Results 91-Day 182-Day 364-Day I. Notified Amount 8,000 8,000 7,000 II. Competitive Bids Received (i) Number 125 81 116 (ii) Amount 20,465.330 17,031.500 18,875.000 III. Cut-off price (₹) / Yield 98.5511 - 93.782",
    "categories": [
-    "Geopolitics & trade"
+    "Central banks & rates"
    ]
   },
   {
@@ -1231,7 +1398,7 @@
   {
    "title": "Midterm Elections: Voters Rejected Tariffs. Congress Should Too.",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeGNEQW5zVlZEWkZKSllwcVFoWGVlajdDWHVOVUQ2dkd1RnVxQmRqVU90R2h5RmNFN0Y4N0liaUpEM2FFeEtJN0ZkSWhYdW1IdmlKUDNaNGRzdVhlcTlaT2hJRFFReWNmV3NqRmpvZ1JkbmV1eDZickFXX1JuUFhuVWlaSnNvV012OGpLSG9nS3Npc0trR2JwcVV0Y3NKMDd6ZjBDTHdleVZuVm9ZaDZyYXhWb0Jydw?oc=5",
-   "source": "Bloomberg",
+   "source": "Bloomberg.com",
    "region": "Global",
    "official": false,
    "published": "2026-11-04T14:40:09Z",
@@ -1291,7 +1458,7 @@
   {
    "title": "Fed Wins Protection With Democrats Taking Control of the Senate",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSDcxTEtxUkRBRDdnOHA4d09seWthb0dBYzNuYjctTmRWZ2ZhRHd6dTdrdmREbS1BV1NuWXU5LTNLcklFUEdQMTRBeHpEU3J5U29tODFPbXVsY0laT0VxUTZJS2s4bC1WcS1odDlyYXBvYTF5TGNvWExlVXJ5enFmbzF0NUlVNXdUdlRKbkVHczYxcF9ZVVpyNllRZXhGYkxEQ291dzl3ZmNzeENqdHNnSVZVblY?oc=5",
-   "source": "Bloomberg",
+   "source": "Bloomberg.com",
    "region": "Global",
    "official": false,
    "published": "2026-11-04T14:11:24Z",
@@ -1314,17 +1481,15 @@
    ]
   },
   {
-   "title": "UK interest rates increase expected after services sector activity accelerates",
-   "url": "https://www.theguardian.com/business/2026/nov/04/uk-interest-rates-increase-expected-service-sector-activity-accelerates-pmi",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T13:53:38Z",
-   "summary": "Purchasing manager’s index at eight-month high, bolstered by spending on AI as firms regain momentum lost to Iran war The Bank of England is expected to raise interest rates on Thursday after a closely watched survey showed growth across th",
+   "title": "91-Day, 182-Day and 364-Day T-Bill Auction Result: Cut-off",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63917",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-04T14:05:00Z",
+   "summary": "T-Bill 91-Day 182-Day 364-Day I. Total Face Value Notified ₹8,000 Crore ₹8,000 Crore ₹7,000 Crore II. Cut-off Price (₹) and Implicit Yield at Cut-Off Price 98.5511 (YTM: 5.8970%) NA 93.7820 (YTM: 6.6485%) III. Total Face Value Accepted ₹8,0",
    "categories": [
-    "Central banks & rates",
-    "Markets",
-    "Geopolitics & trade"
+    "Central banks & rates"
    ]
   },
   {
@@ -1366,7 +1531,7 @@
   {
    "title": "The Federal Reserve’s Independence Is Assured for Now",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNlpyWUJ6RXdiLWEwZWhQNmpZRGdTRHFpZ2lGbWJhV3pqcUR3RDh4NUFRRVU4M19ITmRDbUxCaXRZcVB4M3BJaHBGVXUyVEstblh6RGdHOHBoQnh1eWxkLTltdng1UUlvd2dwT1FfUHFuaFc5bU1hUmlaUi15U0lxaUtmSks1enRHRGR5MGZFV0VvZjlJa3c3X18yMThGRXRJVnZZUmpnWDhwVVRSekEyLWZxd1MxNzNqSkxFbQ?oc=5",
-   "source": "Bloomberg",
+   "source": "Bloomberg.com",
    "region": "Global",
    "official": false,
    "published": "2026-11-04T13:30:09Z",
@@ -1389,13 +1554,13 @@
    ]
   },
   {
-   "title": "U.S. midterm elections in pictures: Democrats' sweeping victories deliver rebuke to Trump",
-   "url": "https://www.cnbc.com/2026/11/04/us-midterm-elections-in-pictures-democrats-republicans-trump.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T13:02:32Z",
-   "summary": "Democrats scored sweeping victories in the U.S. midterm elections on Wednesday, flipping key Republican-held seats in Congress.",
+   "title": "Result of the Second Overnight Variable Rate Reverse Repo (VRRR) auction held on November 04, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63916",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-04T13:05:00Z",
+   "summary": "Tenor 1-day Notified Amount (in ₹ crore) 25,000 Total amount of offers received (in ₹ crore) 1,180 Amount accepted (in ₹ crore) 1,180 Cut off Rate (%) 5.49 Weighted Average Rate (%) 5.49 Partial Acceptance Percentage of offers received at c",
    "categories": [
     "Markets"
    ]
@@ -1451,15 +1616,15 @@
    ]
   },
   {
-   "title": "M&S boss bemoans last week’s budget as ‘whole lot of nothing’",
-   "url": "https://www.theguardian.com/business/2026/nov/04/m-and-s-recover-from-cyber-attack-profits-bounce-back",
-   "source": "The Guardian",
+   "title": "Mortgage Rates Forecast For 2026: Experts Predict Whether Interest Rates Will Drop",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kMlJHRWhRY2owbnpsZWhWOHVVZFR1ZmM3NzhqTUVEVnpHR2xlMHp0QnR2eXFwV2wzQ2FMbXZTN3lTLUJ5OHgxdnk0S3Z2Q3hEQ2pEYW9xcWhrRktVS3B0RXB0NkdnM0hPMzBReG5neWZ1TTdvVWs4bWgxdWFNUkk?oc=5",
+   "source": "Forbes",
    "region": "Global",
    "official": false,
-   "published": "2026-11-04T12:34:30Z",
-   "summary": "Stuart Machin hits out at Labour but welcomes expected UK-EU food deal as retailer reveals half-year results The chief executive of Marks &amp; Spencer has called John Healey’s first budget as chancellor a “whole lot of nothing” and bemoane",
+   "published": "2026-11-04T12:28:00Z",
+   "summary": "",
    "categories": [
-    "India"
+    "Markets"
    ]
   },
   {
@@ -1487,6 +1652,19 @@
    ]
   },
   {
+   "title": "RBI to conduct Second Overnight Variable Rate Reverse Repo (VRRR) auction under LAF on November 04, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63915",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-04T12:05:00Z",
+   "summary": "On a review of current and evolving liquidity conditions, it has been decided to conduct a Second Variable Rate Reverse Repo (VRRR) auction on Wednesday, November 04, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Window Timi",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
    "title": "How Market Position Shapes Credit Card Interest Rates",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcVZaeElqNEsxTk5DU01iXzVVcEptd09RRWNFVWJXWXBwOXNPSnB2ODlwbkI2cEtDN2JDRnZxSzhKNXEyT00xUDRWRy1YdjRGY0d3UEZscWs1Nm1DcnpSOFFnQkpnUkI5d2djczdybHVuSHFucnNmSmZ1V1Y2MHBVUlhlMXRLVzdVQXE4aDBVRTcxbnZwUzZkRmNmZGRrWklZUFh5SVhsSjVxMFZQ?oc=5",
    "source": "Liberty Street Economics",
@@ -1496,18 +1674,6 @@
    "summary": "",
    "categories": [
     "Markets"
-   ]
-  },
-  {
-   "title": "Lagarde’s Early Exit Tests ECB’s Eight-Year Terms",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWDROWFlreUdVWEF3bEg4emtvU2dvSjZueHRXSE1CUC1EcTRwVE9YT2duZE5aaUFrWV9Jc3JXb0tjVTBNdEZDR1N5WFpkNmRtaXpJeHRWcXY0OFdvdTM1MGJNM0xLNG9PczlPaDJHNWpXVi1iVmRRR2E2UDBmRFpyMnVPT1ZZZjY1RlBUNEVGdmlFc0lmRzRnVTQ4S1g5c2dzTkIwQjN3?oc=5",
-   "source": "Bloomberg",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T12:00:01Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
    ]
   },
   {
@@ -1561,6 +1727,18 @@
    ]
   },
   {
+   "title": "Constitution of the Technical Consultative Committee for Financial Markets (TCCFM)",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63914",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-04T11:15:00Z",
+   "summary": "In pursuance of the announcement made in the Statement on Developmental and Regulatory Policies dated October 7, 2026 , the Reserve Bank of India announces the constitution of the Technical Consultative Committee for Financial Markets (TCCF",
+   "categories": [
+    "India"
+   ]
+  },
+  {
    "title": "The Good the Bad and the Ugly for Rates in 2027",
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRmNodW1fbEYxWmlPX05yeGE2cUgzNFByeFJYZ0dfSmJOWTlaX2dxb0VPdEZJcmRRNkIzdjFqRTVuUTdILU91SHp1RWxOenBVel92YjFIS1ctOXZaQk9kREdvRG0zNTVVUWRFeHNiM2U1NnMxRkFfNDNPXzdGWkdpZ3EwNVJ2UQ?oc=5",
    "source": "ing think",
@@ -1570,181 +1748,6 @@
    "summary": "",
    "categories": [
     "Markets"
-   ]
-  },
-  {
-   "title": "What's happening to UK interest rates and what does it mean for mortgages?",
-   "url": "https://www.bbc.co.uk/news/articles/c3dky111m40o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T10:47:31Z",
-   "summary": "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
-   "url": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
-   "source": "CNBC Economy",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T10:47:30Z",
-   "summary": "It was driven by energy inflation, which surged above 20% in October.",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth",
-    "Currencies"
-   ]
-  },
-  {
-   "title": "Households face fresh squeeze as Bank of England set to raise interest rates",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONVBOZ0JWU2NXMlJLTnpmWXEyLXB6dDVmVzlMQzJTdEs2RGdhMExEWUtBMDNncy1ia3Y3SkhBaFdjd2l0OEZCTzJfaUU4b0NFZTluRTFYa3hxN0U5X2VfaDItLTZUMG01THh3UTU2NExkQlpBLWFNQV91M0RIODhaY0p4MHRJWjVORjJjaXpWRUtuSlVsMG92UVVaSUFrbTlDVk9JcUtkQ1JVNVJiLXY5V0NybmZwRXkwRXB4R1ZUMDNYd9IBxwFBVV95cUxPQlJ6RS1EbUtzdEFpbHV3VF9oQXhreFFjZUdPTlpIU0pXbURuMXVvbm83X25GUmlyTVhrUEhRcFlNVTV1LTZUalI1VndxX1gybHF5OW1CdkcyTjlJdVJ6XzhIWWR6SzN0NVRoeTZsbzczdy1sWnBNQ21KUElXRjRHVi0tRF8zb2NRcktKNkZNcUJfVEtqRm9WcnRZUUR0cnQ0YTZGWE8tT1pibzVyZGNsRmNpeUwzc2gzZzh6SUJ6UXpkaFFnMURv?oc=5",
-   "source": "This is Money",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T10:45:22Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "El Niño could push U.S. inflation one percentage point higher in 2027 (SPY:NYSEARCA)",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMHVnbFhiTkRFODF6UGdkV3IzS0xOM3hXVDYxeDljbHIyTEhnRlFWRnlaSVhZWlI2UV9vcVRrb0tNVE1uOXpwTlRJWHRvOUY3WWpWWjVUNXRHWnp0ZXo3cF8tWGZBRUdyRDFsQ3IzWGk0RTBZSGpHRTJFR3gzRnYxMFNNQW5IbXBibVhtU3V1NVgwZ3dReTYyMmphaFlwcXpFS2dHZWFtQmc?oc=5",
-   "source": "Seeking Alpha",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T10:42:25Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "European Shares Rise as Novo Nordisk Earnings Lift Markets Ahead of Eurozone Inflation Data: DAX, CAC, FTSE100",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSGpZXy1sM2dNS3V1M2NkenV2NmlJWjljd0JUTTJiMXBwTDRMUlc5QXo2SVhxYjYzUE94aWdEaDhLSVpQVmRoZE54ejUxaHI1N1RzWFpRVFZqdVpiY0xOV3VDRkxVVUZhdzl2RWktTGxjUWNkUC1keEx5Q01SdlJWekZ5bHhHaFlVWFE?oc=5",
-   "source": "Yahoo Finance UK",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T10:32:08Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Markets"
-   ]
-  },
-  {
-   "title": "Sweden’s Central Bank Latest to Lift Rates in Response to War",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQM3VNMDJudWVWdzRhaUFpVkJrYW9fZjBpcDd5VnVPUFRWalVHT0JCc3hoYmFkNlVtR0o5dlNLbVVxakF1aVdJZF9MbnczS0p0NFlTMGI1YU5oYW5icy1CT01NeTdoS1pzS0RrVG84R3Y5RElhTE9BeHVjb1VEakw1SHJ3VHRVLTlHYUdPMDFmZktReEdBc0RaakZyb21VbW1TOVhiTUFUd1ExNGJIcEE?oc=5",
-   "source": "WSJ",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T09:46:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Cabinet approves five-year ₹2,814 cr push for critical mineral processing",
-   "url": "https://www.business-standard.com/economy/news/cabinet-approves-five-year-2-814-cr-push-for-critical-mineral-processing-126110401052_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-04T09:40:39Z",
-   "summary": "The five-year scheme aims to strengthen India's critical mineral ecosystem, with implementation scheduled from 2026-27 to 2030-31",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "India sees some trade relief, new risks after US midterm elections",
-   "url": "https://www.business-standard.com/economy/news/india-sees-some-trade-relief-new-risks-after-us-midterm-elections-126110400980_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-04T09:19:39Z",
-   "summary": "The Democrats won a landslide victory in both chambers of the US Congress on Tuesday in a sharp rebuke of President Donald Trump's policies",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "US midterm election results 2026: India sees some trade relief, new risks after US midterm vote",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/us-midterm-election-results-2026-india-sees-some-trade-relief-new-risks-after-us-midterm-vote/articleshow/135532996.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-04T09:11:02Z",
-   "summary": "Indian officials are cautiously optimistic about the recent US midterm election results and their implications. While the election reduces trade tension, it introduces new uncertainties for US-India relations. Analysts suggest it is too ear",
-   "categories": [
-    "Geopolitics & trade",
-    "India"
-   ]
-  },
-  {
-   "title": "Who Has to Leave the Federal Reserve Board Next",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSW1WTkFCWTVHSnlNWWYzYlZLX1lIb1B2NlMzUDI0RGltcHd2LWVVOXBzVzRXV3VNZTFWb1RfQmpDQ3NNTXk4SWh4TWNwRmNVcmFtbmE1aERHMUtTQWhjSmphcHl3a084NTdlSGF3QmlVZlNpOHNweEJhVE1zZS1vSEVRM2V5dndwUTlZWDRtLVVPX2c4UVRGYnhtNTdMaHJBNEQ1dlhVdw?oc=5",
-   "source": "RealClearMarkets",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T09:06:01Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Services sector growth hits a four-month peak in October, PMI survey shows",
-   "url": "https://www.livemint.com/economy/india-services-pmi-hsbc-india-pmi-11793781185446.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-04T09:03:03Z",
-   "summary": "Driven by strong domestic demand, HSBC's India Services PMI rose to 55.8 in October as cost pressures eased to a six-year low, even as export orders and hiring slowed.",
-   "categories": [
-    "Inflation & growth",
-    "India"
-   ]
-  },
-  {
-   "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC News",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNX3NMLXhhYU1lOVVLWU9sY0k0SDUyQnEwMG9SZ1RzNHZobTIyYk9KWGJlOGhic3FKdlQ2NXlIVDF6SW1oRlNWZlY2NHlNLWlnNGoybzAwLWlkV3V1Q1ZtM21KS2FLTy02NEF6VjY4UmFNc2hYa21mRURlSkJYZWxtc1R3VmRYZFlKNUU3NzZiMkZGNGJZcG1xZUNCN0RQNkRndEVPb9IBqgFBVV95cUxOU1FSZ3pWOURaQUxBS296TzBtRFFGclJXTnpLYWwzZXU1Q01kcVZUczBxUDAwR3FaYmFZdzlXUWM2T0Q3TDVldm9nSVY4OERYRUtkdm5sdndPSU1ETU1yc3BuMEpXLTd2VFFZRTVQcWdMZFdEZ0EzYjhTS200RFBkZy1jbE01WVhVbEgyX1Z2dXc4MWxmbXd6cl9pSlp2TDRldkdkS2hwOVE0Zw?oc=5",
-   "source": "Breaking News, Latest News and Videos",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-04T07:51:11Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "India-EU FTA to simplify and reinforce corporate cooperation, says Swedish Ambassador Petra Menander",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-eu-fta-to-simplify-and-reinforce-corporate-cooperation-says-swedish-ambassador-petra-menander/articleshow/135530352.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-04T07:47:27Z",
-   "summary": "The proposed India-European Union Free Trade Agreement (FTA) will simplify and reinforce bilateral corporate collaboration, said Sweden's Ambassador to India Petra Menander, pointing to expanded opportunities for technology transfers and jo",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "Trump's midterm setback may put India under pressure for quick trade deal on US terms: GTRI",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/trumps-midterm-setback-may-put-india-under-pressure-for-quick-trade-deal-on-us-terms-gtri/articleshow/135529851.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-04T07:44:28Z",
-   "summary": "Amid electoral challenges, US President Donald Trump is likely to ramp up pressure on India to seal a trade deal. This potential agreement would require India to decrease import tariffs on US goods while the US keeps its tariffs intact. Ana",
-   "categories": [
-    "Geopolitics & trade",
-    "India"
    ]
   }
  ]
