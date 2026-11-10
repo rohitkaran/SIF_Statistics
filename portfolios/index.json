@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T23:23:48+00:00",
+ "generated": "2026-11-10T00:05:50+00:00",
  "note": "SIFs disclose portfolios bi-monthly. Source: each AMC's own website (registry.json).",
  "periods": [
   "2025-10",
@@ -8,6 +8,7 @@
   "2026-07",
   "2026-08",
   "2026-09",
+  "2026-10",
   "unknown"
  ],
  "amcs": {
@@ -675,7 +676,8 @@
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
     "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
     "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json",
-    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json"
+    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json",
+    "2026-10": "portfolios/data/2026-10/diviniti__DIVLSF.json"
    }
   },
   "SIF-20": {
@@ -686,7 +688,8 @@
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
     "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
     "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json",
-    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json"
+    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json",
+    "2026-10": "portfolios/data/2026-10/diviniti__DIVLSF.json"
    }
   },
   "SIF-21": {
@@ -697,7 +700,8 @@
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
     "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
     "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json",
-    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json"
+    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json",
+    "2026-10": "portfolios/data/2026-10/diviniti__DIVLSF.json"
    }
   },
   "SIF-22": {
@@ -708,7 +712,8 @@
     "2026-06": "portfolios/data/2026-06/diviniti__DIVLSF.json",
     "2026-07": "portfolios/data/2026-07/diviniti__DIVLSF.json",
     "2026-08": "portfolios/data/2026-08/diviniti__DIVLSF.json",
-    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json"
+    "2026-09": "portfolios/data/2026-09/diviniti__DIVLSF.json",
+    "2026-10": "portfolios/data/2026-10/diviniti__DIVLSF.json"
    }
   },
   "SIF-125": {
