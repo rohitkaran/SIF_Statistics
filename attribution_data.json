@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T00:06:13Z",
+ "generated": "2026-11-10T00:50:26Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -7388,8 +7388,8 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "money_market": 610.0,
     "equity": 796.0,
+    "money_market": 610.0,
     "cash_other": 0
    },
    "sector_shifts": [
@@ -7463,8 +7463,8 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
-    "money_market": 0.52,
     "equity": 3.96,
+    "money_market": 0.52,
     "cash_other": -4.48
    },
    "sector_shifts": [
@@ -7571,16 +7571,16 @@
      "change_pct": 1.75
     },
     {
-     "sector": "It - Software",
-     "from_pct": 2.28,
-     "to_pct": 0.69,
-     "change_pct": -1.58
-    },
-    {
      "sector": "Automobiles",
      "from_pct": 8.29,
      "to_pct": 9.88,
      "change_pct": 1.58
+    },
+    {
+     "sector": "It - Software",
+     "from_pct": 2.28,
+     "to_pct": 0.69,
+     "change_pct": -1.58
     },
     {
      "sector": "Power",
@@ -7616,8 +7616,8 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
-    "money_market": 0.25,
     "equity": 2.67,
+    "money_market": 0.25,
     "cash_other": -2.92
    },
    "sector_shifts": [
@@ -7689,8 +7689,8 @@
     "cash_other": 13.31
    },
    "allocation_shift": {
-    "equity": 9.43,
-    "cash_other": -9.43
+    "cash_other": -9.43,
+    "equity": 9.43
    },
    "sector_shifts": [
     {
@@ -7841,8 +7841,8 @@
     "cash_other": 7.65
    },
    "allocation_shift": {
-    "money_market": 0.86,
     "equity": 4.96,
+    "money_market": 0.86,
     "cash_other": -5.82
    },
    "sector_shifts": [
@@ -7994,8 +7994,8 @@
     "cash_other": 23.08
    },
    "allocation_shift": {
-    "money_market": -6.26,
     "equity": -9.17,
+    "money_market": -6.26,
     "cash_other": 15.43
    },
    "sector_shifts": [
@@ -8069,8 +8069,8 @@
     "cash_other": 9.38
    },
    "allocation_shift": {
-    "money_market": 0.41,
     "equity": 13.29,
+    "money_market": 0.41,
     "cash_other": -13.7
    },
    "sector_shifts": [
