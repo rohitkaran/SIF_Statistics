@@ -1,10 +1,21 @@
 {
- "generated": "2026-11-12T10:07:51Z",
+ "generated": "2026-11-12T21:34:20Z",
  "source": "https://www.amfiindia.com/api/sif-nfo",
  "note": "AMFI publishes the open-NFO list without dates. first_seen/last_seen are the dates SIFintel observed each offer on that list; launched_on is the scheme's first published NAV.",
- "open_count": 0,
- "total_tracked": 9,
+ "open_count": 1,
+ "total_tracked": 10,
  "nfos": [
+  {
+   "key": "hdfc-mutual-fund__h-sif-hybrid-long-short-fund",
+   "fund_house": "HDFC Mutual Fund",
+   "strategy": "H-SIF Hybrid Long-Short Fund",
+   "scheme_id": "S-41",
+   "sif_id": "9",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "status": "open",
+   "launched_on": null
+  },
   {
    "key": "apex-sif__apex-equity-ex-top-100-long-short-fund",
    "fund_house": "Apex SIF",
