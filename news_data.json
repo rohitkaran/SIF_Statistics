@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-16T23:30:29Z",
+ "generated": "2026-11-17T00:02:36Z",
  "refresh_seconds": 1800,
- "count": 128,
+ "count": 127,
  "sources_ok": [
   "BBC Business",
   "Business Standard",
@@ -25,6 +25,188 @@
  ],
  "items": [
   {
+   "title": "United Airlines resolves system outage that affected departing flights",
+   "url": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-17T00:00:49Z",
+   "summary": "The airline said there was no impact on flights in progress and there was no indication the outage was a cyberattack.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Aged 16-24 and looking for work? Use our look-up to find out which areas have the most jobs",
+   "url": "https://www.bbc.co.uk/news/articles/cw3djdjk5d7ko?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-17T00:00:03Z",
+   "summary": "How many jobs are there where you live and in which sectors are you most likely to find an opening?",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "We couldn't afford a house alone, so we bought one with strangers",
+   "url": "https://www.bbc.co.uk/news/articles/c5742lwdyzglo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-17T00:00:02Z",
+   "summary": "People who can't afford to get on the housing ladder are buying homes with people they don't know.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Jim Cramer says Costco's hefty special dividend signals ‘more gains ahead’",
+   "url": "https://www.cnbc.com/2026/11/16/costco-special-dividend-jim-cramer.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:45:03Z",
+   "summary": "Jim Cramer says investors should hold on to Costco after its $30-per-share special dividend announcement.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Moderna amends credit agreement, lowers loan rates and extends maturities",
+   "url": "https://www.investing.com/news/sec-filings/moderna-amends-credit-agreement-lowers-loan-rates-and-extends-maturities-93CH-5031285",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:42:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Insurer Core Specialty reveals revenue dip in US IPO filing",
+   "url": "https://www.investing.com/news/stock-market-news/insurer-core-specialty-reveals-revenue-dip-in-us-ipo-filing-5031284",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:42:26Z",
+   "summary": "",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "United Airlines resolves system outage that delayed flights Monday",
+   "url": "https://www.marketwatch.com/story/united-airlines-suffers-system-outage-amid-lingering-faa-ground-stop-delays-5e33f94c?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-16T23:42:00Z",
+   "summary": "The outage came just days after an FAA ground stop disrupted air travel nationally.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Earnings call transcript: American Hotel Income Properties posts stronger Q3 2026 ops",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-american-hotel-income-properties-posts-stronger-q3-2026-ops-93CH-5031281",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:40:42Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Earnings call transcript: New Fortress Energy Q3 2026 shares fall after restructuring update",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-new-fortress-energy-q3-2026-shares-fall-after-restructuring-update-93CH-5031275",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:40:33Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Earnings call transcript: Catapult Sports posts strong H1 2026 growth",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-catapult-sports-posts-strong-h1-2026-growth-93CH-5031271",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:37:20Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "CVC plans to pull out of near-€3 billion IRCA deal, FT says",
+   "url": "https://www.investing.com/news/stock-market-news/cvc-plans-to-pull-out-of-near3-billion-irca-deal-ft-says-5031270",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:37:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Exclusive-DOJ to review DoorDash-Instacart merger, sources say",
+   "url": "https://www.investing.com/news/stock-market-news/exclusivedoordashinstacart-merger-to-be-reviewed-by-doj-sources-say-5031159",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:36:43Z",
+   "summary": "",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Vivos Therapeutics reports Q3 revenue growth, regains Nasdaq compliance",
+   "url": "https://www.investing.com/news/company-news/vivos-therapeutics-reports-q3-revenue-growth-regains-nasdaq-compliance-93CH-5031269",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:36:36Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Regulation",
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "S&P Global prices $2 billion senior notes offering",
+   "url": "https://www.investing.com/news/company-news/sp-global-prices-2-billion-senior-notes-offering-93CH-5031268",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:36:27Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Austco Healthcare at Bell Potter Healthcare Conference: growth, deals and risks",
+   "url": "https://www.investing.com/news/transcripts/austco-healthcare-at-bell-potter-healthcare-conference-growth-deals-and-risks-93CH-5031265",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-16T23:32:46Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
    "title": "Stanley Druckenmiller dumped these chip stocks while buying into SpaceX and Palantir",
    "url": "https://www.marketwatch.com/story/stanley-druckenmiller-dumped-these-chip-stocks-while-buying-into-spacex-and-palantir-9ae1f078?mod=mw_rss_topstories",
    "source": "MarketWatch",
@@ -37,75 +219,13 @@
    ]
   },
   {
-   "title": "TSX falls 1% as inflation data, Macklem departure and Nvidia weigh on sentiment",
-   "url": "https://www.investing.com/news/stock-market-news/tsx-futures-drop-as-nvidia-results-anthropic-ipo-loom-large-canadian-cpi-ahead-5029415",
-   "source": "Investing.com",
+   "title": "Jim Cramer says Nvidia’s leadership shake-up won’t derail the AI trade",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-cramer-ai-trade-leadership-change.html",
+   "source": "CNBC International",
    "region": "Global",
    "official": false,
-   "published": "2026-11-16T23:24:09Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Orezone Q3 2026 slides: record output, growth path amid stock decline",
-   "url": "https://www.investing.com/news/company-news/orezone-q3-2026-slides-record-output-growth-path-amid-stock-decline-93CH-5031249",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:24:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "XP Q3 2026 slides: asset growth strong, but margin pressure evident",
-   "url": "https://www.investing.com/news/company-news/xp-q3-2026-slides-asset-growth-strong-but-margin-pressure-evident-93CH-5031248",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:22:02Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "PicPay Q3 2026 slides: all guidance beaten, but shares sink on policy shift",
-   "url": "https://www.investing.com/news/company-news/picpay-q3-2026-slides-all-guidance-beaten-but-shares-sink-on-policy-shift-93CH-5031247",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:20:07Z",
-   "summary": "",
-   "categories": [
-    "Markets",
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Dollar hits 19-month high as hawkish Fed signals bolster rate hike bets",
-   "url": "https://www.investing.com/news/forex-news/asia-fx-muted-as-dollar-holds-near-19mth-high-yen-steady-after-weak-gdp-5028358",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:17:29Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Currencies"
-   ]
-  },
-  {
-   "title": "Saba Capital Management acquires $6,894 in Ellsworth Growth & Income Fund",
-   "url": "https://www.investing.com/news/insider-trading-news/saba-capital-management-acquires-6894-in-ellsworth-growth--income-fund-93CH-5031243",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:16:15Z",
-   "summary": "",
+   "published": "2026-11-16T23:23:47Z",
+   "summary": "CNBC's Jim Cramer pushed back against fears that Nvidia's leadership shake-up could unravel the AI boom.",
    "categories": [
     "Markets"
    ]
@@ -123,18 +243,6 @@
    ]
   },
   {
-   "title": "California consumer watchdog chief says AI companies that violate state rules will be taken to court",
-   "url": "https://www.investing.com/news/stock-market-news/california-consumer-watchdog-chief-says-ai-companies-that-violate-state-rules-will-be-taken-to-court-5031231",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:12:29Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "California sues OpenAI over Hugging Face attack",
    "url": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&at_campaign=rss",
    "source": "BBC Business",
@@ -142,42 +250,6 @@
    "official": false,
    "published": "2026-11-16T23:12:24Z",
    "summary": "Attorney General Rob Bonta alleges OpenAI misled and endangered the public",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Earnings call transcript: XP misses Q3 2026 EPS view as shares fall 4.3%",
-   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-xp-misses-q3-2026-eps-view-as-shares-fall-43-93CH-5031230",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:11:17Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "United Airlines suffers system outage amid lingering FAA ground-stop delays",
-   "url": "https://www.marketwatch.com/story/united-airlines-suffers-system-outage-amid-lingering-faa-ground-stop-delays-5e33f94c?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-16T23:10:00Z",
-   "summary": "United Airlines reported a system outage Monday evening, as the airline industry is still recovering from disruptions caused by a nationwide ground stop ordered by the Federal Aviation Administration last week.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "United Airlines resolves system outage that affected departing flights",
-   "url": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T23:08:01Z",
-   "summary": "The airline said there was no impact on flights in progress and there was no indication the outage was a cyberattack.",
    "categories": [
     "Markets"
    ]
@@ -332,7 +404,7 @@
   {
    "title": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
    "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "source": "CNBC Finance",
+   "source": "CNBC International",
    "region": "Global",
    "official": false,
    "published": "2026-11-16T22:19:02Z",
@@ -344,7 +416,7 @@
   {
    "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
    "url": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
-   "source": "CNBC Finance",
+   "source": "CNBC International",
    "region": "Global",
    "official": false,
    "published": "2026-11-16T22:14:47Z",
@@ -426,18 +498,6 @@
    ]
   },
   {
-   "title": "Robert Pattinson cast as next James Bond",
-   "url": "https://www.cnbc.com/2026/11/16/robert-pattinson-james-bond.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T21:03:36Z",
-   "summary": "Pattinson has been in major films this year, including Christopher Nolan's \"The Odyssey,\" and will soon appear in \"Dune: Part Three.\"",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Microsoft identifies months-old bug as a root cause of global outage",
    "url": "https://www.theguardian.com/technology/2026/nov/16/microsoft-global-outage-cause",
    "source": "The Guardian",
@@ -447,18 +507,6 @@
    "summary": "Report identifies three factors that led to blackout: a bug, malfunctioning internal connections and server capacity Microsoft has identified the root causes of the global outage that crippled Outlook, Exchange and a host of other vital off",
    "categories": [
     "Markets"
-   ]
-  },
-  {
-   "title": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T20:44:24Z",
-   "summary": "Anthropic's upcoming IPO is putting finance chief Krishna Rao into the limelight.",
-   "categories": [
-    "Corporate & deals"
    ]
   },
   {
@@ -496,18 +544,6 @@
    "summary": "Labour grandee seems to have assuaged MPs’ nerves on need for welfare reform to tackle youth unemployment crisis In a boxing gym in Peterborough almost a year ago, Alan Milburn, freshly appointed to run a government review into the nearly 1",
    "categories": [
     "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Prediction market odds for Tesla-SpaceX merger by April 2027 top 60%",
-   "url": "https://www.cnbc.com/2026/11/16/prediction-market-odds-for-tesla-spacex-merger-by-april-2027-top-60percent.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T19:06:41Z",
-   "summary": "The odds have climbed to 62% from 27% since Thursday, amid growing speculation that Musk's two companies will integrate.",
-   "categories": [
-    "Corporate & deals"
    ]
   },
   {
@@ -688,18 +724,6 @@
    "official": false,
    "published": "2026-11-16T17:44:02Z",
    "summary": "Trump Media & Technology Group faces a daunting challenge with a looming cash requirement of $1 billion stemming from convertible debt holders. This predicament has led to shares plummeting to near-record lows, fundamentally straining its f",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T17:39:32Z",
-   "summary": "Following the donations, the chairman emeritus of Berkshire still owns 182,140 Class A shares -- roughly $162 billion.",
    "categories": [
     "Markets"
    ]
@@ -1302,18 +1326,6 @@
    ]
   },
   {
-   "title": "Intel sued by investors after PC sales slump hits share price",
-   "url": "https://www.bbc.co.uk/news/articles/cw62p42p288do?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T03:04:01Z",
-   "summary": "A proposed class action claims the firm hid the impact of slowing PC sales from shareholders.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
    "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
    "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
    "source": "CNBC Economy",
@@ -1324,18 +1336,6 @@
    "categories": [
     "Commodities & energy",
     "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-   "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-16T01:47:57Z",
-   "summary": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.",
-   "categories": [
-    "Markets"
    ]
   },
   {
@@ -1582,19 +1582,6 @@
    "published": "2026-11-13T02:56:35Z",
    "summary": "The political climate heading into next week's Trump-Xi summit is drastically different from the last meeting in September.",
    "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "source": "CNBC Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-13T00:01:19Z",
-   "summary": "Oil prices were mixed on Thursday, after the latest comments from President Donald Trump raised worries that an end to the U.S.-Iran war was not in sight.",
-   "categories": [
-    "Commodities & energy",
     "Geopolitics & trade"
    ]
   }
