@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T03:26:58Z",
+ "generated": "2026-11-24T12:52:53Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -721,6 +721,40 @@
      ]
     },
     {
+     "code": "SIF-125",
+     "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
+     "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
+     "fund_house": "iSIF SIF",
+     "observations": 62,
+     "from": "2026-08-21",
+     "to": "2026-11-23",
+     "months": 3.0,
+     "manager_contribution_annualised_pct": -6.06,
+     "total_return_pct": -0.19,
+     "benchmark_return_pct": 4.53,
+     "market_contribution_pct": 1.34,
+     "manager_contribution_pct": -1.53,
+     "market_share_of_return_pct": -719.5,
+     "beta": 0.296,
+     "r_squared": 0.678,
+     "alpha_annual_pct": -6.07,
+     "volatility_annual_pct": 5.19,
+     "benchmark_volatility_annual_pct": 14.45,
+     "tracking_error_pct": 10.59,
+     "information_ratio": -1.93,
+     "up_capture_pct": 29.6,
+     "down_capture_pct": 37.2,
+     "up_days": 31,
+     "down_days": 31,
+     "max_drawdown_pct": -3.22,
+     "annualised_return_pct": -0.75,
+     "variants": 2,
+     "variant_codes": [
+      "SIF-125",
+      "SIF-124"
+     ]
+    },
+    {
      "code": "SIF-108",
      "name": "WSIF Equity Long-Short Fund - Direct Growth",
      "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
@@ -789,40 +823,6 @@
       "SIF-24",
       "SIF-25",
       "SIF-26"
-     ]
-    },
-    {
-     "code": "SIF-125",
-     "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
-     "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
-     "fund_house": "iSIF SIF",
-     "observations": 61,
-     "from": "2026-08-21",
-     "to": "2026-11-20",
-     "months": 2.9,
-     "manager_contribution_annualised_pct": -6.67,
-     "total_return_pct": 0.26,
-     "benchmark_return_pct": 6.39,
-     "market_contribution_pct": 1.92,
-     "manager_contribution_pct": -1.66,
-     "market_share_of_return_pct": 739.9,
-     "beta": 0.3,
-     "r_squared": 0.67,
-     "alpha_annual_pct": -6.54,
-     "volatility_annual_pct": 5.16,
-     "benchmark_volatility_annual_pct": 14.07,
-     "tracking_error_pct": 10.29,
-     "information_ratio": -2.73,
-     "up_capture_pct": 29.6,
-     "down_capture_pct": 38.4,
-     "up_days": 31,
-     "down_days": 30,
-     "max_drawdown_pct": -3.22,
-     "annualised_return_pct": 1.07,
-     "variants": 2,
-     "variant_codes": [
-      "SIF-125",
-      "SIF-124"
      ]
     },
     {
@@ -1986,6 +1986,40 @@
      ]
     },
     {
+     "code": "SIF-125",
+     "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
+     "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
+     "fund_house": "iSIF SIF",
+     "observations": 115,
+     "from": "2026-06-08",
+     "to": "2026-11-23",
+     "months": 5.5,
+     "manager_contribution_annualised_pct": 4.08,
+     "total_return_pct": 4.54,
+     "benchmark_return_pct": 9.63,
+     "market_contribution_pct": 2.7,
+     "manager_contribution_pct": 1.84,
+     "market_share_of_return_pct": 59.4,
+     "beta": 0.28,
+     "r_squared": 0.647,
+     "alpha_annual_pct": 4.03,
+     "volatility_annual_pct": 4.49,
+     "benchmark_volatility_annual_pct": 12.91,
+     "tracking_error_pct": 9.67,
+     "information_ratio": -1.25,
+     "up_capture_pct": 32.5,
+     "down_capture_pct": 28.1,
+     "up_days": 59,
+     "down_days": 56,
+     "max_drawdown_pct": -3.22,
+     "annualised_return_pct": 10.21,
+     "variants": 2,
+     "variant_codes": [
+      "SIF-125",
+      "SIF-124"
+     ]
+    },
+    {
      "code": "SIF-61",
      "name": "Arudha Equity Long-Short Fund-Direct Plan-Growth",
      "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
@@ -2017,40 +2051,6 @@
      "variant_codes": [
       "SIF-61",
       "SIF-62"
-     ]
-    },
-    {
-     "code": "SIF-125",
-     "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
-     "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
-     "fund_house": "iSIF SIF",
-     "observations": 114,
-     "from": "2026-06-08",
-     "to": "2026-11-20",
-     "months": 5.4,
-     "manager_contribution_annualised_pct": 3.91,
-     "total_return_pct": 5.0,
-     "benchmark_return_pct": 11.58,
-     "market_contribution_pct": 3.25,
-     "manager_contribution_pct": 1.75,
-     "market_share_of_return_pct": 65.0,
-     "beta": 0.281,
-     "r_squared": 0.638,
-     "alpha_annual_pct": 3.94,
-     "volatility_annual_pct": 4.46,
-     "benchmark_volatility_annual_pct": 12.67,
-     "tracking_error_pct": 9.5,
-     "information_ratio": -1.69,
-     "up_capture_pct": 32.5,
-     "down_capture_pct": 28.3,
-     "up_days": 59,
-     "down_days": 55,
-     "max_drawdown_pct": -3.22,
-     "annualised_return_pct": 11.39,
-     "variants": 2,
-     "variant_codes": [
-      "SIF-125",
-      "SIF-124"
      ]
     },
     {
@@ -2668,10 +2668,10 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "funds": 10,
    "avg_beta": 0.241,
-   "avg_r_squared": 0.324,
-   "avg_total_return_pct": 13.83,
-   "avg_market_contribution_pct": 2.42,
-   "avg_manager_contribution_pct": 11.41,
+   "avg_r_squared": 0.326,
+   "avg_total_return_pct": 13.73,
+   "avg_market_contribution_pct": 2.31,
+   "avg_manager_contribution_pct": 11.43,
    "avg_volatility_pct": 7.7
   },
   {
@@ -3735,29 +3735,29 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "iSIF SIF",
    "isin": "INF109K30067",
-   "observations": 114,
+   "observations": 115,
    "from": "2026-06-08",
-   "to": "2026-11-20",
-   "months": 5.4,
-   "manager_contribution_annualised_pct": 3.91,
-   "total_return_pct": 5.0,
-   "benchmark_return_pct": 11.58,
-   "market_contribution_pct": 3.25,
-   "manager_contribution_pct": 1.75,
-   "market_share_of_return_pct": 65.0,
-   "beta": 0.281,
-   "r_squared": 0.638,
-   "alpha_annual_pct": 3.94,
-   "volatility_annual_pct": 4.46,
-   "benchmark_volatility_annual_pct": 12.67,
-   "tracking_error_pct": 9.5,
-   "information_ratio": -1.69,
+   "to": "2026-11-23",
+   "months": 5.5,
+   "manager_contribution_annualised_pct": 4.08,
+   "total_return_pct": 4.54,
+   "benchmark_return_pct": 9.63,
+   "market_contribution_pct": 2.7,
+   "manager_contribution_pct": 1.84,
+   "market_share_of_return_pct": 59.4,
+   "beta": 0.28,
+   "r_squared": 0.647,
+   "alpha_annual_pct": 4.03,
+   "volatility_annual_pct": 4.49,
+   "benchmark_volatility_annual_pct": 12.91,
+   "tracking_error_pct": 9.67,
+   "information_ratio": -1.25,
    "up_capture_pct": 32.5,
-   "down_capture_pct": 28.3,
+   "down_capture_pct": 28.1,
    "up_days": 59,
-   "down_days": 55,
+   "down_days": 56,
    "max_drawdown_pct": -3.22,
-   "annualised_return_pct": 11.39,
+   "annualised_return_pct": 10.21,
    "variants": 2,
    "variant_codes": [
     "SIF-125",
@@ -6553,29 +6553,29 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "iSIF SIF",
    "isin": "INF109K30067",
-   "observations": 114,
+   "observations": 115,
    "from": "2026-06-08",
-   "to": "2026-11-20",
-   "months": 5.4,
-   "manager_contribution_annualised_pct": 3.91,
-   "total_return_pct": 5.0,
-   "benchmark_return_pct": 11.58,
-   "market_contribution_pct": 3.25,
-   "manager_contribution_pct": 1.75,
-   "market_share_of_return_pct": 65.0,
-   "beta": 0.281,
-   "r_squared": 0.638,
-   "alpha_annual_pct": 3.94,
-   "volatility_annual_pct": 4.46,
-   "benchmark_volatility_annual_pct": 12.67,
-   "tracking_error_pct": 9.5,
-   "information_ratio": -1.69,
+   "to": "2026-11-23",
+   "months": 5.5,
+   "manager_contribution_annualised_pct": 4.08,
+   "total_return_pct": 4.54,
+   "benchmark_return_pct": 9.63,
+   "market_contribution_pct": 2.7,
+   "manager_contribution_pct": 1.84,
+   "market_share_of_return_pct": 59.4,
+   "beta": 0.28,
+   "r_squared": 0.647,
+   "alpha_annual_pct": 4.03,
+   "volatility_annual_pct": 4.49,
+   "benchmark_volatility_annual_pct": 12.91,
+   "tracking_error_pct": 9.67,
+   "information_ratio": -1.25,
    "up_capture_pct": 32.5,
-   "down_capture_pct": 28.3,
+   "down_capture_pct": 28.1,
    "up_days": 59,
-   "down_days": 55,
+   "down_days": 56,
    "max_drawdown_pct": -3.22,
-   "annualised_return_pct": 11.39
+   "annualised_return_pct": 10.21
   },
   {
    "code": "SIF-88",
@@ -6636,6 +6636,36 @@
    "down_days": 78,
    "max_drawdown_pct": -2.6,
    "annualised_return_pct": 7.19
+  },
+  {
+   "code": "SIF-124",
+   "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
+   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
+   "fund_house": "iSIF SIF",
+   "isin": "INF109K30059",
+   "observations": 115,
+   "from": "2026-06-08",
+   "to": "2026-11-23",
+   "months": 5.5,
+   "manager_contribution_annualised_pct": 2.6,
+   "total_return_pct": 3.88,
+   "benchmark_return_pct": 9.63,
+   "market_contribution_pct": 2.7,
+   "manager_contribution_pct": 1.18,
+   "market_share_of_return_pct": 69.6,
+   "beta": 0.28,
+   "r_squared": 0.647,
+   "alpha_annual_pct": 2.59,
+   "volatility_annual_pct": 4.5,
+   "benchmark_volatility_annual_pct": 12.91,
+   "tracking_error_pct": 9.67,
+   "information_ratio": -1.41,
+   "up_capture_pct": 31.7,
+   "down_capture_pct": 29.1,
+   "up_days": 59,
+   "down_days": 56,
+   "max_drawdown_pct": -3.44,
+   "annualised_return_pct": 8.7
   },
   {
    "code": "SIF-120",
@@ -6726,36 +6756,6 @@
    "down_days": 78,
    "max_drawdown_pct": -6.2,
    "annualised_return_pct": 6.63
-  },
-  {
-   "code": "SIF-124",
-   "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
-   "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
-   "fund_house": "iSIF SIF",
-   "isin": "INF109K30059",
-   "observations": 114,
-   "from": "2026-06-08",
-   "to": "2026-11-20",
-   "months": 5.4,
-   "manager_contribution_annualised_pct": 2.44,
-   "total_return_pct": 4.35,
-   "benchmark_return_pct": 11.58,
-   "market_contribution_pct": 3.25,
-   "manager_contribution_pct": 1.1,
-   "market_share_of_return_pct": 74.8,
-   "beta": 0.281,
-   "r_squared": 0.638,
-   "alpha_annual_pct": 2.52,
-   "volatility_annual_pct": 4.46,
-   "benchmark_volatility_annual_pct": 12.67,
-   "tracking_error_pct": 9.5,
-   "information_ratio": -1.85,
-   "up_capture_pct": 31.7,
-   "down_capture_pct": 29.3,
-   "up_days": 59,
-   "down_days": 55,
-   "max_drawdown_pct": -3.44,
-   "annualised_return_pct": 9.87
   },
   {
    "code": "SIF-134",
@@ -7567,7 +7567,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "INF277K30161",
-   "observations": 24
+   "observations": 25
   },
   {
    "code": "SIF-170",
@@ -7575,7 +7575,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "INF277K30179",
-   "observations": 24
+   "observations": 25
   },
   {
    "code": "SIF-166",
@@ -7583,7 +7583,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "",
-   "observations": 24
+   "observations": 25
   },
   {
    "code": "SIF-169",
@@ -7591,7 +7591,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "INF277K30138",
-   "observations": 24
+   "observations": 25
   },
   {
    "code": "SIF-165",
@@ -7599,7 +7599,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "INF277K30146",
-   "observations": 24
+   "observations": 25
   },
   {
    "code": "SIF-168",
@@ -7607,7 +7607,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "Titanium SIF",
    "isin": "",
-   "observations": 24
+   "observations": 25
   },
   {
    "code": "SIF-174",
@@ -7639,7 +7639,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30105",
-   "observations": 12
+   "observations": 13
   },
   {
    "code": "SIF-176",
@@ -7647,7 +7647,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30113",
-   "observations": 12
+   "observations": 13
   },
   {
    "code": "SIF-177",
@@ -7655,7 +7655,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30071",
-   "observations": 12
+   "observations": 13
   },
   {
    "code": "SIF-178",
@@ -7663,7 +7663,7 @@
    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
    "fund_house": "SUMMIT SIF",
    "isin": "INF205K30089",
-   "observations": 12
+   "observations": 13
   },
   {
    "code": "SIF-181",
@@ -7735,9 +7735,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
-    "equity": 796.0,
     "money_market": 610.0,
-    "cash_other": 0
+    "cash_other": 0,
+    "equity": 796.0
    },
    "sector_shifts": [
     {
@@ -7810,9 +7810,9 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
-    "equity": 3.96,
     "money_market": 0.52,
-    "cash_other": -4.48
+    "cash_other": -4.48,
+    "equity": 3.96
    },
    "sector_shifts": [
     {
@@ -7888,8 +7888,8 @@
    },
    "allocation_shift": {
     "money_market": -2.67,
-    "debt": -4.15,
     "cash_other": -8.25,
+    "debt": -4.15,
     "equity": 15.07
    },
    "sector_shifts": [
@@ -7963,9 +7963,9 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
-    "equity": 2.67,
     "money_market": 0.25,
-    "cash_other": -2.92
+    "cash_other": -2.92,
+    "equity": 2.67
    },
    "sector_shifts": [
     {
@@ -8113,8 +8113,8 @@
    },
    "allocation_shift": {
     "money_market": -0.68,
-    "debt": 0.34,
     "cash_other": 1.06,
+    "debt": 0.34,
     "equity": -0.72
    },
    "sector_shifts": [
@@ -8188,9 +8188,9 @@
     "cash_other": 7.65
    },
    "allocation_shift": {
-    "equity": 4.96,
     "money_market": 0.86,
-    "cash_other": -5.82
+    "cash_other": -5.82,
+    "equity": 4.96
    },
    "sector_shifts": [
     {
@@ -8266,8 +8266,8 @@
    },
    "allocation_shift": {
     "money_market": 129.0,
-    "debt": -164.0,
     "cash_other": 0,
+    "debt": -164.0,
     "equity": -81.0
    },
    "sector_shifts": [
@@ -8341,9 +8341,9 @@
     "cash_other": 23.08
    },
    "allocation_shift": {
-    "equity": -9.17,
     "money_market": -6.26,
-    "cash_other": 15.43
+    "cash_other": 15.43,
+    "equity": -9.17
    },
    "sector_shifts": [
     {
@@ -8416,9 +8416,9 @@
     "cash_other": 9.38
    },
    "allocation_shift": {
-    "equity": 13.29,
     "money_market": 0.41,
-    "cash_other": -13.7
+    "cash_other": -13.7,
+    "equity": 13.29
    },
    "sector_shifts": [
     {
