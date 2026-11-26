@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T01:06:21Z",
+ "generated": "2026-11-26T11:21:18Z",
  "refresh_seconds": 1800,
  "count": 140,
  "sources_ok": [
@@ -16,1560 +16,356 @@
   "MarketWatch",
   "Mint Economy",
   "RBI",
+  "SEBI",
   "The Guardian",
   "US Federal Reserve"
  ],
  "sources_failed": [
-  "SEBI",
   "Yahoo Finance"
  ],
  "items": [
   {
-   "title": "Bank of America 2027 Economic Outlook: AI Investment as the Top US Economy Uncertainty, Fed Projected to Hike Interest Rates 3 More Times",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xb3FtSDNtTGVMVVBkNDZIRXoxS2JCZ2Q1NGZlbDJXMUxnVVRta3hTV3J4NHZfXy1tazBieXFmNXp1d2JOU0VfLTg0N1VfUlFXTnk0?oc=5",
-   "source": "36Kr",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T01:04:34Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Gold extends losses as hot US inflation cements Fed hike bets",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVpobEI5VHFVQjJ4YkFySERPUkxyRGNTVk9LUnZhRlAtaEN4bXp5aVgzaUloTEgwMkZjWFB1WFNaQWh2bHhRTExuV2k5NVU4am5iV21pMVdsS2xnbjVIczRIejA0eGF0TWgxNTdMMy1zaTZaanZDT0YtVDlJUVdvOHR2Y1RCSHQ3M0I1SklDemtiZDh3VE53bUdqS2hYUksycDAzaWdsQ2NLYWVmQmRkTWZJQVo?oc=5",
-   "source": "marketscreener.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T01:00:32Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "US announces new tariffs on host of countries including China",
-   "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T01:00:06Z",
-   "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Wild Market Swings Are Colliding With a Fed Bent on Taming Inflation",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNktjNDdMSmJmZDNsOE1CbkdBZVBNS2ZrVEJSUXQtazcwMUs3MHRwbk5xNmN4YmxhTC1OcUdlRVBDVmtiWXZYckVLQ1pOMFMxbXhPaXpsdjdMejlzLW5TMjYxYUVHQUJUamVMaERpbmIwSXd2bUoyMFJLWUcxV0JDZVVvUjE0UmRjaDdJTlJneE9CRnFrZ1dkZGdzeVA5MEtsSG93T0gySzktblJRWGZQUGlsUGVDXzNqRUtvV1pR?oc=5",
-   "source": "WSJ",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T01:00:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Trump strikes again even as America feels the pain",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeEQwUkNIb1M1a1JxdU90VnFmV292S1JOa01ZOURsNDMybXV0ZHVrOWtEVXJxT1JZMG9DbVVFbE5ydDVRN1ZNZGVYZXFSTVB0SWtqVVVXYjJWdnNOR1R4NF9YSGtBUkUwcTg1ZG9mOGp5VEtEY1dvdkhNeGlfX1lycnhNYmVwZ1BhdHliZ3lSUlhTXzNCM1l3MnBJTldvM2lMU0FYc0F5RlBwdGw4R3p4Tk0xQ1BFUQ?oc=5",
-   "source": "SMH.com.au",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:59:07Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "South Korea raises rates to highest in two years, as inflation remains above target",
-   "url": "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:58:38Z",
-   "summary": "The central bank raised rates by 25 basis points to 3.25% for its final meeting of the year, in line with expectations from economists.",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Gas prices, interest rates weigh on car sales nationwide, Fed's final 2026 Beige Book says",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMFc0UkFBakFsQk5fcHg3RFhZYjJCbkRVeTFjWjd6My1pR2xlZHBUR21VcmducThFNFJwZ0NPUlRnRGZIMC1TWkhVR1ptN0xrZGZsZVhaNFRwalhNNGN4aUVONDhHUHBFcWxEbWdUOTdJZDBxV2hYOWhVaHRPajNrd1lNUkV2NjBqbzBqWDN6aktTQVVGZ01wWGZDZXFmU3NqQ041ZXc2SVBMQVNzNHZHYWF2XzE4QTVWWUdFYkJB?oc=5",
-   "source": "Car Dealership Guy News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:58:13Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Global Market Today: Asian equities advance after late rebound in US stocks",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-equities-advance-after-late-rebound-in-us-stocks/articleshow/136175415.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-26T00:42:44Z",
-   "summary": "MSCI Inc.’s Asia Pacific equities gauge advanced 0.4%, with gains in Japan and South Korea. Australian shares also opened higher.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Macy’s Thanksgiving Day Parade postponed due to weather for first time in 100 years",
-   "url": "https://www.investing.com/news/stock-market-news/macys-thanksgiving-day-parade-postponed-due-to-storm-projections-us-media-reports-5051483",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:42:19Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Bitcoin Hovers Near $60,000 as Inflation and ETF Outflows Raise Further-Loss Risks",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE52RXd3OUhLSldqQTJQOFNHN0lSUUR3Xzg0LTU3cGpZX2JsQVhHQjhUemFrN3B1NUgwdWFJWlBHNVlndTJjeGNDQi15VTZkVldoM1VKdUlWMUQzQXN6NWNURnE0ejNvejYxaU5xV0RlYVRLOWg4?oc=5",
-   "source": "Businesskorea",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:38:35Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Crypto"
-   ]
-  },
-  {
-   "title": "Asia markets edge higher as investors assess fresh U.S. tariffs; South Korea rate decision in focus",
-   "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:38:15Z",
-   "summary": "Japan's Nikkei 225 rose 1.21% in early trade, while the Topix edged 0.71% higher. Australia's S&P/ASX 200 was up 0.15%.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Judge bars US FCC from taking steps to threaten ABC’s broadcast license",
-   "url": "https://www.investing.com/news/stock-market-news/judge-bars-us-fcc-from-taking-steps-to-threaten-abcs-broadcast-license-5051818",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:36:21Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Why this stock-market selloff is probably going to get worse before it gets better",
-   "url": "https://www.marketwatch.com/story/why-this-stock-market-selloff-is-probably-going-to-get-worse-before-it-gets-better-fce63a89?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-26T00:33:00Z",
-   "summary": "Monday’s rally helped to paper over deeper issues that must be resolved before a durable bottom can arrive.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Morningstar executive chairman sells $5.16 million in stock",
-   "url": "https://www.investing.com/news/insider-trading-news/morningstar-executive-chairman-sells-516-million-in-stock-93CH-5051811",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:31:04Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Nicholas S. Schorsch buys $6,063 in American Strategic Investment stock",
-   "url": "https://www.investing.com/news/insider-trading-news/nicholas-s-schorsch-buys-6063-in-american-strategic-investment-stock-93CH-5051808",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:30:50Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "India’s Q2 GDP growth to slow marginally to 7.6%, shows Mint poll",
-   "url": "https://www.livemint.com/economy/indias-q2-gdp-growth-to-slow-marginally-to-7-6-shows-mint-poll-11795598155206.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-26T00:30:23Z",
-   "summary": "A deficient monsoon and uneven rural demand may have weighed on growth, while resilient manufacturing and services activity are expected to have supported the economy.",
-   "categories": [
-    "Inflation & growth",
-    "India"
-   ]
-  },
-  {
-   "title": "Black Friday? No thanks, some brands say",
-   "url": "https://www.investing.com/news/stock-market-news/black-friday-no-thanks-some-brands-say-5051789",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:30:19Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Analysis-For Trump, doubling down on tariffs is about power, not popularity",
-   "url": "https://www.investing.com/news/economic-indicators/analysisfor-trump-doubling-down-on-tariffs-is-about-power-not-popularity-5051748",
-   "source": "Investing.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:24:19Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWk5iY21FejJMUDVfS2h4ekdoUnQ1RndSalFWS2pkZzJZY1AwSXRnY1otVEdsMUdRVWZJV0NKSUxEM3Boc2VlQXNMMWkweGxJSWVGaFJHcC1qWTk0WTdIbXR0Z3VNQ2N2R054YXZMa1I2eVk4RjU5T09FelF5ZC1KdGJRYnV5bFdvMjJoRzBpMjNoUDkzMDJiTmdvejdOMF85Vy1JZU16eEI1M3VzVlBNa0RyMjk?oc=5",
-   "source": "Bloomberg",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:18:00Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Asian markets were set to open with modest gains amid US tariffs — CNBC",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTEtHUXhydjZzMFBUcnpQdVJDbWNzc0ZQbUlJVHVyNEw4SmJCOUtwT3BpYnpLNzBLc0ZqclZ5akZkV1A5NlJfX0tYX1hXT01uWkxaR3BXbVpYOHpHM0taTDR1Z3RueG1EMkowTnlldkVaMDVGZXUxc1NpUUI1Si1FcV9ic1dTblpSNXB2dEpzdFE4QWtXMzBnOGJMUXZnWGhRaE10eFdBVzh6Yjh5WmtN?oc=5",
-   "source": "UA.NEWS",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:13:51Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
-   "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:12:16Z",
-   "summary": "Automakers in India are poised to sell over 30 million vehicles in the financial year ending March 2027.",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "US approves SpaceX plan to send a million data satellites to space",
-   "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:07:51Z",
-   "summary": "The Starmind constellation aims to be the most cost and energy-efficient way to meet the growing demand for AI computing power.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Elevated U.S. inflation keeps XRP under pressure with potential for tighter policy to weigh on crypto demand",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQThMMHpoMS1EYnJob0gyM1R6OE5SZTlIVzBfVGNEbGh3MmF4bUlpaUZzRWZPQzlNZkhYNXZhcDY1NTFtZmpsWTFUZUp5U2t2bWlwNTRjZ0I1UE9MajZXOVhwNG1uVDhoZjRXN0RDc2ZqdkM1NGkzbVZuVzJxa01oZ1V3QUVxUmJOaUU3UnVUbE5zeUhtNWIzbw?oc=5",
-   "source": "Traders Union",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:02:28Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Crypto"
-   ]
-  },
-  {
-   "title": "Guitar wars - the transatlantic battle over the Stratocaster",
-   "url": "https://www.bbc.co.uk/news/articles/cqd01l9x8k48o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:01:37Z",
-   "summary": "US company Fender is in dispute with a German firm that makes generic versions of its key model.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Malaysia hit with proposed US tariffs of up to 18% over industrial policies, trade links",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBudlY2RkcyQ0pZQTVudVdkVm03MGg3VDNVOXg1dmFRbzlmd3ZXTGdhRE1wVHhtYlIwRnBVOVFxVkF3VWdmU0tpb0dYekxsMWZo?oc=5",
-   "source": "The Edge Malaysia",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-26T00:00:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "\"Trump wants to demonstrate he is still the boss\": Foreign affairs expert Sushant Sareen on proposed US tariffs",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOWWZaS2NvNlo4dkVySGlwR0hqcWFkOGdTZHZ0dHBmSzJPbmNKQnNLYkRnVXNkX1gtWkFjaDJxc05tYzZsaWRoWmk4Yy1ycGxKYk9ZNFhYUm91Ni1OeGM0dGtNVVZHMHI0V19iLXZFTVlJSEpQU1lQZmk1eVRYVk1jUnR6U1BjYUdxZHZ1Wm5KbFVtUmt0LUt3UVVpelZQa2dDbVZLdGJLM2dKUW1wV1IyVzVmM1J0ejVpdXZEUjFiOWlVbHRxT202MFdpYWhWemFqVWM4aVpKY3NycXdMWnlwQkN0R1Vuc1BYYm14QkdIM2IydUU?oc=5",
-   "source": "ANI News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:59:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Opinion | Trump comes up with a new excuse for tariffs",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcTdLbjdEUG9HTnkya25yaXhXSHp2a1A4MEp4OHNFRmd2SEtaQ3JLQXBZSVQ2TWRRdmM1QnNicHRpRzBmVGtsckd4blNvWWNIR3dKdFFXZDFUd1VIbEh5X1U2anFnLVA2WjlTREtqWVk1UzR4QXBRMVY2TURIUXpTWlJlakR4WU10RGl2MTExd2hQX3pmYUE?oc=5",
-   "source": "The Washington Post",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:46:04Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Copper sinks to 11-month low as US inflation and AI sell-off deepen metals rout",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPX1lBZk1hbllfZFk0N0JNdEh6amxYWFZXeFlweWpDZ21BRC0yX2pDSXo3SWxoZ002OWo1M25TVTRqZ0pKTDNmQ3VES3o0ZnlVVUJLeTBsaFN0dWxBQ1I1YnNDY3R2RG9ONE5rdEVobGJ0Z2hMM3pSY1p2Q3Ezb2NHQmloV25BVXlhZE5UckEzWTlpRlhqaDJIQ0VvOUNoQ0w2VzN1OFVwdklNQWRQdFZzaGRTVHI2R2NkaHFpVWdCTXFmN1FQZUhDV01aOTZuSHRlQThqd05aMTZveWNhWk1XQU5sbEo?oc=5",
-   "source": "Proactive financial news",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:46:00Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Markets",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Federal Reserve releases Beige Book ahead of December rate decision",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcDBqRmN5SFdFVVdjcWh6UTJyNlFkQVZ2THhqSVcwRmlIUE9wcWk0bWZ3aDlBdXJqek81ZGZnZ1NJZVlQM0o1c1d3SXE4X1ZiRC1VT0tOY1g1UVhxSk1hQTBhSVhvN0tkaDlWUjJxQlFJdF9hNloyOXRqVnY2bW1sdDBLNnZJN2ZhcThVcHR4dDYzVXU0N2UtSzQ3N0hTOVBsdFJuTDVsN1JXQnlvSjBmVFhGcGFFLU9EMTBQVEllVHR3MVdUejE5OFdBZVkteFNlQ0lLQmpJMG1TamZGX2JQdElRUEhadHJhVXczZm5veVhnM0tVYnBlTg?oc=5",
-   "source": "kare11.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:45:35Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "US proposes surprise new tariffs on Brazil imports, including 10% duty on aircraft",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTGZ4TFg5REgyY0VnandHQjZIMFN1cnNBOEJVQTBDaU1IWDFLVUxmdHFTXzRLVnVKc3pHd3lTYk9lRHZBOWV1Skd5V0VzVU05ZDRjZXdZekl5cWFneWI2b3ptS09taEhjNzZIcGhuWVdydDk5cnpkcElkMUdTZkJjTjROT09sOG5adVUxNVpNeGp5UmxaaHl2bzh6TklXMlp2eVQyVW9idi1QV25LcnpIeFBjMEF4RzNNbkNIU3JOUlN6WWVqSjRtTlFZMA?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:42:10Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "November 26 Financial Brief: Tariffs and inflation weigh heavily on U.S. stocks",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUUpIZXpsZ3pDYm9pM3pWRXdES0E3Tml1Y0RYYW12czVNSlhWbG9ac3dsVnc1TnA5U3UwY0Q0ZnZmdGIyc2pXQWV4bHktUmhoYXNBLVhkcTVJbVlLNHJQb2pxelppYVBqTFZWUExQVm5rd0x5ZF9WaFNEQ2pjeEVLc3hLSzVKMEdrYkRpbzBkTzFaTndIVmt5UEhZMU9vbU1NTERRZU1pTGljSnFCc0E?oc=5",
-   "source": "富途牛牛",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:35:34Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Markets"
-   ]
-  },
-  {
-   "title": "US tariffs implemented by any means create the same inflation risk",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUWZwOEdHNjF2cU52eHl4cmxYWS14eS13WTQ2VlZDZTlhQ05xWEJBbWdKUm9LeS04c2lmcV9RdDFOM2lLMERJaEptVml6Q3hNUFMwY194eGdZa3h2Z2ZHV09kSElQUFZjS1hwWWUxTlF1Y2UwTzlXWVlfUlFGd2xOay1HZWxFYUtoeGU0ZFppU0pPM1Zvc2NJTVJ5Wlo0Mjd5YnBHOHRCeGY0T1UyZ3JTcGoxeDY1NHY4NWJKeUNjci1vNFhQWEoybXM3WXFodw?oc=5",
-   "source": "RBC",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:32:33Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "US trading partners’ patience wears thin as Trump slaps on new tariffs",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOXZ3Q2pWZFhFN0xaV0RTcmpzSnRJdzM1UGFNY01jTFpIUkxuQ1dRNnNqY1k2aXpRM29SVXZaS1ZFMFVuNUl2a1Zma0VielRPZGc5d3ZIREpUcmNkUVhodlY0QUtZaUVWLVRuR19lMGFLWDJVc3hvTmIyRE1HYmh3ZjhoTXAtdEZKZU1qOVBfc0RIam9JNk8wcENwVVByX0o3NDJWTklXRG10V3ZpTGJUbzQ5WEc2bEV1Tndsd05wblVSZFltbGt6Mk1zMNIBywFBVV95cUxOaUZpaExpRWZ0cHlRbTRscy1Pay0wLVoyQ3dWcDJmQ3BZR09SMUlRN1FsaUtEd2NwejlGUDNIMWlnbVR5Y1pzWWJjWXdZTEhYdXc5TXVBTTVfNC1rTzR4YktvaGRBbXNYRDFMMHVVR1VUUjJFTF9Dc1k5MkJPRjdjOWdYZkpRLVo4TFNtRkk2SGw4cklDb2tWRi1ZTU1xZS1nbl9jd3dZam5vWloydG44Ry1lTEpDbzBPMXBlN3Fack9fN1JBU3EyNUZlcw?oc=5",
-   "source": "South China Morning Post",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:30:23Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T23:30:00Z",
-   "summary": "“Retirement is a financial status, not an age.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
-   "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T23:30:00Z",
-   "summary": "“Given my age, I never make a major new purchase without thinking about the future.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "News | US inflation climbs to 3.8%, moving further above Fed target",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQY3pHc0RWVmg3aGpDQ09raWpUdlg5MVZYdjZjMk1ybzVUSnFSRVJ5dG5NZFMwTjlYQnNYbElCZ3p2LUNIY1BTMklacGhIaFJldFlsc0d1TFlMd29xblVsWGtSMTZJQmdIdzZOdDh1WTFLck81bmNRRV9xdjhYQnhqV0RSMldidExEYmk2SWpwQmFDSnJqV0J3?oc=5",
-   "source": "CoStar",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:28:17Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Gold rebounds above $3,550 as easing yields and weaker US Dollar counter hot US inflation data",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNV2dlTUJEaktWRnlZVGtZanQ5aF9lbjZFWm1ITDIyeVdvNndTVXlhRHc3b3ZWVExVQVdMY1ZNOWt1OUtack82YVo5N2tKR2dKWU9tbFJTazlyOVpNWE1PX3JHWm9HNFdfb2ttVWw4SlZZcjNBYk1sWXoxWXUybzloSFh5UldpOGRPeldlQTdNYVVKelAwbXRSRmxUcVl5WUZTSWVyQlZpOXdkNzVhZE1JR0NSbjJxTHN6LV9tbXV2ZXQtSFdKWWtqV1JsRFlLQko2OXc?oc=5",
-   "source": "FXStreet",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:26:01Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Currencies",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Strong US data leaves the Yen unmoved before Tokyo inflation",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMnV4R05yT2x4NnM5dGlHRkpiT2lGMDFycWpDUzJQVjZ1aWxBTERUQ2MyQTc2RE14N0FlREFCVlppMVpGcDVNd190NzljekN4b1Q5ME0xdmp3Q3VEYjROdEdhMWxsSzZsejVWbTBvNnI1OXphcmNuU1d3M0dZTUJVTkxLelp1NTRvZWFTdTRiRnhtY3h4MzFQcnh0eHNLeXp5dDRSVW5n?oc=5",
-   "source": "FXStreet",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:07:21Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Currencies"
-   ]
-  },
-  {
-   "title": "DW News. . China, the EU, Japan and India could face new US tariffs under a proposal targeting what the Trump administration calls overproduction. The measure would impose tariffs of up to 20% on imports from 14 major economies, with officials arguing tha",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQLU5rN2M0ellBQkhSUXdGbGZXUG5sV3A4SXVlRDhVcDg2SDljX1RfeUVkTVpsVTh4VW11UkVQM01pYkpkenRWZHluUVJTTWlBeUdSU2poTVhweG1FN1JfN1lsVUNkUVBjQi0wenhodlBuSlVFYkU5T0tNUU9iVHBrOUw1cG9UMVJwS2kyRGRCQTFtSGhMdkJKaDVCQUc2aURJMENBQjJqVk9oS3pfOWNBZy1yNkYybTBkbnhUdmFtRmFjRDV0MDBRQmV6YjRhYVQtV0tkUGVuSm5kVFN5cUdtUUF3?oc=5",
-   "source": "Facebook",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T23:05:04Z",
-   "summary": "",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
-   "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T23:00:00Z",
-   "summary": "“My wife stopped working outside the home in 1970.”",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Rising inflation strengthens case for Fed rate hikes",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXpJVTkyNUl6U3BfVzhQWWdFVXpSSFEyaFRVajhVODNha0M2clBwUjBfN2EtZWdOaGlHTTJiakVXUWRnR3M3VThsdm1sMlk1cHhvVkFEcHdJa2hmZ0trMWctTmpLQlg1Mk4zR0xrcTVjNGNlbm9rUHVVbm90UU44NnhTX0NneXNQMkhLZmlRVFlFaXEtU3c?oc=5",
-   "source": "Marketplace.org",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:50:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
-   "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T22:45:00Z",
-   "summary": "Doing nothing and maintaining an even temperament is often the work of gods.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Inflation makes US interest rate rise ‘near certain’",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcmM2bmx5bERZdDdqZktFWDJiVFVjOTQwWmxGTE9XdGZZdF9fQUktNjVkck5BUXh2NFA0MDlmRVkyOHVaSmFENjVhVmljZzh1cmF2MXpyQzljSENjeE1WeTdVX19Ua19MdEpSbXpyM0Ruby04RmpzSXV5UTBrTnp6X0tiUlRnbmgyVGo3ME9jeFVrMFlxeHdTczFXZTkyUXdkampCWm9FamJWQQ?oc=5",
-   "source": "The Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:45:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "New US tariffs worry Thai exporters",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWkRKaWdFam1WMTBmckFkQVg1NHVpTGZ1M255cUhhcEZ1LW5XcHcxYUhIT3pDYUo4d2kxNWI1LUZub0EwdDh6RGFGSmZ5OWdBTjI1QkFMSjk2MHlfQWJHYkNHdFotbEszcUFIb1lyNHBRUmM0SDJyT25WbUkzSDlfTnptSFFmQkJjdW1LWm5iSnN6UQ?oc=5",
-   "source": "Bangkok Post",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:44:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Inflation heats up before the holidays, putting Fed in pressure cooker",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wYV9VbV9VZmVfVTZVWE1tTVllZ3dub0JXZ0Y5bWEzLU54OThyUWNYX2MyUTdDQ0RvQW1OUmR0TGJTc3hwZFV2QmEyY3JUWnhRTVlLQy1vcjRONWJJYldvZ1NHWXp2V3BvZVMtWjVvLWFHZHBpQkhHSVVGVU9JQkU?oc=5",
-   "source": "Scotsman Guide",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:36:51Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "We are living in perilous times if Nvidia’s Jensen Huang dictates your 401(k) balance",
-   "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T22:31:00Z",
-   "summary": "Why did a futurist with Huang’s prescient vision build a company where all roads lead to him?",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US economy expands at a rapid 4.3% in third quarter",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPejd6WkdmcHU4amtKempkcFYtWV9LdFlfdFIwRC1lelBORV9OU0xHd3kyM2EtMXJYaEV4WlRJWnZhZ2xYWER3b0dKU1QzTlFyOVAzb1RDNlJrbTFWbHNRSFY0MTRNYWVWUFppY0NURld5cVVFZ1dVaXYyMkNicFktNkdXWnJCRGF3U1p5Z1BZOWtPX1FOa3dv?oc=5",
-   "source": "Semafor",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:30:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Macy's postpones Thanksgiving Day Parade due to severe weather",
-   "url": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:26:56Z",
-   "summary": "Macy's announced Wednesday that its annual Thanksgiving Day Parade is being postponed to Saturday due to severe weather.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Inflation returns to year's highest level ahead of Black Friday; president proposes new tariffs",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS3VUcGYyTHhsZ2VaLTRTeC1DdlVUdWVzdXFxMHBpdGN4VnRZS2ZOSWlwMlNtcHliU2N4OWwxYUJzZE1lNUZtQ2RpY3BTWjdRM1Rxc0dNSTRwdXZvWF83VDU5b1lVS0lQOVBGaHpnZUVpMUtocUJ5dmE2QndQQ29NQXNkbm5iQWlBQ3BsNVplU2gzYWRTWlV6a0FtbXZObEZ5V2VCYkZoMkw5WjBjX0t3TFpNdHMtSTI4UnA1ZV9ONVN5cE55UW1sOFB3dw?oc=5",
-   "source": "WLWT",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:25:59Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Nasdaq, S&P 500 end down, but well off lows as investors buy bargains",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNekxNUWtOR1pxOTJPX2dfTUhyWW4teS1oQUY4V0ZsNHZwV2d4a2NWU280b0hYSWhyNFEydWxhTWdrbXpKendCTUx3RS1FT2V1NmJlRzdPOFIxcG9tdXQwMGN1QWhsanpHUWhCbHl3TFEwQUtmWVZtWGhSVFhjRXh1Vm5GYzVsQVdWSE4tOXNYaFZKQk82TzNB?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:19:30Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Beige Book confirms hot US economy and signs of wage pressure building",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBwOUFXTEo5WXdJQ0s0dlpoRDM0cDhfbVF4aHY0NGdQV0p2RWNLTWJMOUVuazlBVU43X2luX1BHMV9tOVZTdHFtMVR2QWRHUTVuZnI2SVJuejU2ajVab1RtTWZvbjRvYnZTNlczb0NyblA?oc=5",
-   "source": "Financial Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:17:53Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Oracle, CoreWeave and other tech stocks bounce back after selloff",
-   "url": "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T22:16:00Z",
-   "summary": "Oracle, CoreWeave and other technology stocks bounced back from early losses on Wednesday, after what appeared to be a major selloff eased ahead of the market’s close.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Nvidia’s stock has given back a big chunk of Monday’s rally as dip buyers cash in",
-   "url": "https://www.marketwatch.com/story/nvidias-stock-is-giving-back-more-than-half-of-mondays-rally-as-dip-buyers-cash-in-ee4fa52c?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T22:11:00Z",
-   "summary": "Based on where retail investors bought Nvidia shares on the dip last week, their gains are now nearly all gone, according to Vanda Research.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "New US tariffs: 'Trump lashing out really indiscriminately', expert says",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObEtvSm5QWGhiRFdhOFZhNzNpU0Y4dTJpTkVfLWpKUWl1OWs2d1hUQ3JYU0QxaHB0Rm1rNVRkcDFmNnk5OXVTTWw4YWhvUGt2WTc5ZlM5VVpmQm40U0hyZjl5RnBiYmtBY2lGN2tqUFZ5TkRkMlpwRkhWVWNUR3ZaYUZjdnE5ZVhzUWlxd2llWE5BVS1fejdGWFc2bXE?oc=5",
-   "source": "France 24",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:06:26Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Businesses Plan More Price Hikes for 2027 as Inflation Hits 3-Year High",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS2tmMTlPRUxWOW4xamRyY2hyY1FWaERYbmFWOVhyYmZfVUF1OEhtdlc5TFo1bGNHbmJWSlFBY0pRYTBDUjF4ZExMN1JJOHotS2RqaE5rTVpqdmN6UXVtd1hGNFF0SGlMZnZxVjZBUmxqSUVKSDFmWGRIMVFmWVZpcHNKUld3UFgwRVR0V1hwM3N0TG5DLU94aQ?oc=5",
-   "source": "Barron's",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T22:01:00Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
-   "url": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
-   "source": "CNBC Economy",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:56:43Z",
-   "summary": "Alan Greenspan famously held the line on interest rates because he believed in the productivity promise of the internet boom. Why can't Kevin Warsh do the same?",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Rising inflation is setting consumers up for a holiday squeeze",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcGNDdUdNbHdEOHg4d21Hc0hDNFl4OGsxZUVtd0xPV3NUQ2M2dDh4RURzSE5QY01ndEVGVzRxbm10b1lDTU1nc0hHS080S2k2WWtTOGZCQlIyY0NBZWR3LXRFUnZfRHhHWmtHS0EtRV9aeGtob01JSUtEajlndk50MU1GMXA0a01QalhqbWtYanVZSTVwVkxIeHFhekhZY2dwMGlkSHJYeEhndWc?oc=5",
-   "source": "Scripps News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:56:15Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Elon Musk and SpaceX to donate roughly $17.8 billion to ‘Trump accounts’",
-   "url": "https://www.marketwatch.com/story/elon-musk-and-spacex-to-donate-roughly-17-8-billion-to-trump-accounts-071c12e1?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T21:50:00Z",
-   "summary": "SpaceX to provide one newly issued Class A share to every active ‘Trump account,’ and CEO Musk will match that gift.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "U.S. unveils proposed tariffs on major partners, including EU and China",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORnp3eHdMRlE1bl94RDRQR19iNFJHZktWT1d6WEZ3clQzRmhtaURtWl9iaG9BWERUU2FCblNTejFUTW44d2RHLWFuM2syT3ItZERoaUpLNy1veUJwUjRPTGtjbDk0Qk5sT1JUNDg5YTViSHg0RGxYYUFQLUJybDFHZDlTaDRrblJrOGpJWFFmNnNWSlJEWFB4ZTZmMXJjbnlIVTNyRHFjYmtOd0xJaVdIT2FMQU4?oc=5",
-   "source": "Canadian Affairs",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:44:16Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US stocks fall further as fears over AI intensify",
-   "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:43:18Z",
-   "summary": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Brazil says proposed new US tariffs ‘unacceptable’",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeGpkdWtqdDR5TXk1UmxibjcyQ0ttcDBfZm8yR043RXZSd0lROUdzWFdwOS01aGhKcFh4ZXFMSVBCdFg5Zl9lQ1o5aUJKcDZ5S1haNEZ6V1V4YklycTJfZ09zSmtRR0ZETFhpNmpMNkNTRUV0OXJaSGlmcHlfaEJLaWtreURmOVh5aHJKWjgtVEE?oc=5",
-   "source": "Arab News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:41:44Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "HP’s stock is a standout gainer in the tech selloff, as an earnings beat still matters",
-   "url": "https://www.marketwatch.com/story/hps-stock-is-a-standout-gainer-in-the-tech-rout-as-an-earnings-beat-still-matters-8f6c76ad?mod=mw_rss_topstories",
-   "source": "MarketWatch",
-   "region": "US",
-   "official": false,
-   "published": "2026-11-25T21:36:00Z",
-   "summary": "PC maker’s ‘low-quality’ beat is enough to propel its shares amid the tech rout.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Stocks Slump Again as Investors Fret About A.I., Tariffs and Inflation",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE02aG9MTzVQV1FPaHZkWUlkbUctTTNOWWxwTHplcDc2akxGWU4xRy1MQndiMUxhU0tEN2Y5WkdRTlIxRU80aUxmbGNJOWVVdE12VjZ1YnM2NU8xN0VoX0ZmNVNrbDlGOEdLV0kzV19fcEJrNDVjUk1KZnhVMA?oc=5",
-   "source": "The New York Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:32:42Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Markets"
-   ]
-  },
-  {
-   "title": "Poundland collapses putting 11,000 jobs at risk",
-   "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:31:10Z",
-   "summary": "The discount chain has fallen into administration after its owners failed to find a buyer.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US Inflation Accelerates; December Rate Hike Seen as 'Fait Accompli'",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5scXkwU3Z6ZlotR3Vrb1pOb3psa2hqN3ViUXd2S1k4SkV4T25UT0NqNEQ0T2xGeXdQV1dqNUluSzE3RGNqaHBoUUF3M3RMODRURGlfMktvR1g2M1NuTndvTklsQXJnM2kzbXhPUVlB0gFmQVVfeXFMTWtIVkxjdDFPTmlpOXBsSW9JMmk2RGpSa1JoQVBSVWRZSDcwb05ZbW5CNWhaWC1mNjdmZVkzZjFaY2xDZ3lXZUZOSkZsd0lKaVFoaGx4UzVOM2lFTnBkbUxiNHJCSjh3?oc=5",
-   "source": "SBS 뉴스",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:11:20Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Tech stocks sink but close well off the lows, Anthropic struggles to rebound above IPO price",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:04:57Z",
-   "summary": "Nvidia and other AI-linked stocks fell as investors weighed AI spending, inflation and higher-rate risks.",
-   "categories": [
-    "Inflation & growth",
-    "Markets",
-    "Corporate & deals"
-   ]
-  },
-  {
-   "title": "Treasury Yields Extend Fall After U.S. Data Flurry",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWGhuNzRQQ2Z2ZWMwOFZPOTk4UXFxNWg4R09KdWVyVXItRnRQMnFJYkxvM3Flb1ktS2pJMFFqZXJodXM1ZXhpZ2hiOUoxTmRXMzZXVEtqZUF2emgyb0dfZm9xbVktNGJrSkZCTjdvZkVmQVItODZmZXdkX3lydHV2SUY4NzFWY3V6RnBlREg1RFhXa0hLaGt4MGRRbmhpQVpm?oc=5",
-   "source": "WSJ",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:02:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "New US Tariffs Put Consumer Stocks In Focus",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5JN0lqX1NfLTVKUTB4NFBQLUwwMkxqYmlXbmFuUW9mSEI1Vm5WeGV6Z0kyckpFS1NaaW40VC1yRHY1QkcyN2xNb1BnN0cxNUJVSzh3aVctbmpGV1VDb2VmaU1tZnRpOHZGaWl1dXFMMGVqcVNra0l4eVpJU2I?oc=5",
-   "source": "Finimize",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:00:31Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-   "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T21:00:08Z",
-   "summary": "Whether the Trump administration has investigated Jensen Huang for potential national security risks has been the subject of questions.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Fed survey shows continued economic growth, sticky inflation in recent weeks",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZm5vWXNOWWIxaUVxUEVsRDBCWmpwYmd6eWJMLW1tcnJMVmxvR08ybXFaYWlFcVZ2YU1fYk9hbWotWlBXTzVValBHSFFzNjM1QlpyVWNCXzFPTFRZMUtWeHp0SThmaWxRMTVYVXp3UlM2R3pKQnVNS2hiZ1VERU9EVnFGNlA5dGZEa1NtZ1o5REVxM3ZzX2ZpOXRaN0lydzlDZk1VQ2FlS212U3dw?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T20:42:46Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Newly proposed tariffs raise chances of the Fed keeping interest rates higher for longer",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUVBPbUFTb1h0MEdxOXBWX1N0V0V3MXFNSktwOTJKc25xOWdpczFIbHFSZ0JYalM1QUNGdUtnUVZRSkFOdURVLTROQndxYlZnZUJaaUdpdURidXRtYUF3VnJtS21yQ2ZQd1BzeE9DSjh3X0w4aWZOVFJ1ZVp0VFNyUkVuOHlkWFd5NUlCYmZUc3VXQkd6Rnp3U01kT1Z1cTlSZnhMZ1VFZkFTcm01MDI1TDNuc08zMk1JeDB4NTJiaEU5OEpBQWR2NllWUmxDenB2emFpR2Q5R3k5dno3ODBxVGs0UndyeU0?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T20:39:42Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Tariff inflation was fading. New proposed tariffs could reverse that",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUU8xZzJXcXh3VDFHWmlJYk1XS3lzVk50NTI4akZtWVNta2FtVFZFMFlGMFBSRTlWRGp3RFkwRFdyTC15Q2t1S2V5ZEVFVS1hR0lvZDlWZHIzenFQRDVJT1V4MlJkTXRwU2lRSkg5RnpDNGpvM2xCbWsta3FkbUZVM1RROFprcVNmSW5UbTI2TnJhQ3F6cVFmejA4UWZDMDN3bWhxTUVYTFc1dTFZM3pZaGg5enFWWlFkZThIR0RKZklpa0lxYkFGOENqb09GanJmSEhaaVM3aHFVbnM?oc=5",
-   "source": "USA Today",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T20:38:00Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "Trump imposes new tariffs as inflation continues to rise",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPS0oxRkc1TVd1RFBpdVAxTVY5ZzAwVEs1OWczUTlja1BiTnEzclFBOHM1YVo3azVfUXZmdlZoR1Vfb1hqemNQcUM3cTQ1a3FlZjV3eDdZcTQweVlyT0xLVkFfQ2trRFFIRW1yUVJRLXBFRnVubmMxU2NDcHE0SlBWQ1pjdk92NmFlMGZVX2dDcjIyWFJsaUpJQTlSaFN2RC1ERjVRTjl0azVHbUNUMURMRDMyUnZNdGVtRlBDVWRHZXZZUm0wcURBR1ExOTk3RmlRUm53cmZ2Z2I1UDl2ckE?oc=5",
-   "source": "Deseret News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T20:13:05Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Fed survey shows continued growth and sticky inflation in recent weeks",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/fed-survey-shows-continued-growth-and-sticky-inflation-in-recent-weeks/articleshow/136172166.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T20:07:37Z",
-   "summary": "The United States is currently experiencing modest economic growth; however, inflation continues to be a significant concern. This has prompted the Federal Reserve to contemplate potential interest rate adjustments. Recent reports show a ma",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "US Targets China, EU With New Tariffs Citing Overcapacity",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOWM5Vm8yZ0dtNTRyRFIxYjc0R3ZZMEwxeGNsT0dUWXV6STNtU2VXN0tkY1ROZHdWVkpwWHF3NXpQMk16SS1TU2VwVUJSSUtpek9FcHVmNE80eTBjNzFqdHVIa2NHSUp1WHBXRWZDMEFKUHJfNVB5cHZGT0JCUng0cktmRXowWVd4T0JyZ1RzQW5ubTk0OUZHSE11aDE0SkJjZENuelpNOGExSXMyc2dDNDNB?oc=5",
-   "source": "Bloomberg",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T20:06:28Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
-   "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
-   "source": "US Federal Reserve",
-   "region": "US",
-   "official": true,
-   "published": "2026-11-25T20:00:00Z",
-   "summary": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
-   "categories": [
-    "Currencies"
-   ]
-  },
-  {
-   "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
-   "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
-   "source": "US Federal Reserve",
-   "region": "US",
-   "official": true,
-   "published": "2026-11-25T20:00:00Z",
-   "summary": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
-   "categories": [
-    "Currencies"
-   ]
-  },
-  {
-   "title": "Lower energy prices aren’t enough to cool inflation, raising pressure on Fed",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQZGFUS19qYXN4TDF4YVJZWUYwSWlnVm5GbG5QMVRVcjJjMVRwWVpnaHo5ajUwLTE0S2hrMDlGdXdtWnFrNHJ0ZHdmQjc3SDlvY0Z6ZDVHNzg5WXljUzlvNkRUM2tvRV9nZFlPZ0pRRVg0UXVyMGpfVnB3d0RUZHV5SmJHdExObDV1YUY2X0V5UzRyaHBvb0VKdEl3S0NqVTJvNE9Yblp1ZjRMRFVXNzkwcV9naXJMSU1mSjFJMGVaOU14UzI1VEhVS3daVDBVNF9fN3BwN21RdjNVaUlDdGhqYmI3NXdIcWVPRFJjSVh1Sm9CdkJZ?oc=5",
-   "source": "WLUK",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:58:58Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Copper slumps to lowest in 11 months as investors flee",
-   "url": "https://economictimes.indiatimes.com/markets/commodities/copper-slumps-to-lowest-in-11-months-as-investors-flee/articleshow/136172100.cms",
-   "source": "ET Markets",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T19:53:49Z",
-   "summary": "Copper prices on the London Metal Exchange have plummeted to their lowest point in over 11 months, fueled by a shift away from technology and AI stocks, causing widespread market anxiety. Notably, open interest in copper reflects this trend",
-   "categories": [
-    "Markets",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-   "source": "CNBC International",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:52:47Z",
-   "summary": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and other groups.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "25% proposed US tariffs: India rejects excess capacity charge, seeks early trade deal",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWDA5cHNIakpZQWpXVDlhZU9tbkxWU1g2Z3g1a0hVU3VjNVNSNDF4QnQ2dU56YnhxRnRCbGd6bjZxd1U2aEZKZHVpWGdJaXNHYmZWR2RwV004ck9uOUJWZUhuUEdwVDh4VDVsN0lGd3JOMjJfd3M3d0N3X0lpa2FIRFBfc1Qya21RVjR3QlNDRzRBa29xNl9hZl9qRjZ4dEQ1NGpWZWhOYTdSMlB2YkllbXAyTS1kaE1OUE1zSDA1S2JZY0owS2RKYWlCeUQ5akhjTVHSAd8BQVVfeXFMTVNzbmVROEtWcncwUjFQM05Xa3lBVE4taENPSmFPVU5VVUZYemJzMXdqX0k3OENxdlpMZGhxSldNOVBXeE9iU0xZekNyMlpqZFFrc1Y3R1pnU0FiV1FiTUhta29UYlg5blZkMDBLNnZGcXgtU1hONUUxV2lxU2VvQkhWdUVpRFh6RjNNdFdxQnFrdHF1REZjbnZrTUR3cGJqX1NxTy1STzVEZlN4QmZxLUhxRnZyZUpoQTR5N1hpMzdidXZDbFF5YXdscHJPQ1NhY3NzNmNadGwwbHNIajRRWQ?oc=5",
-   "source": "The New Indian Express",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:49:25Z",
-   "summary": "",
-   "categories": [
-    "Geopolitics & trade",
-    "India"
-   ]
-  },
-  {
-   "title": "The Beige Book – First District",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcTNyYzVQZm13aDRHdDVUQlVVd3RicW5OUGExTW1CVE1URHFxQWJfREJXU2plSk41bXBESmtpUXpVZzM0Rk0zT0FZdkpvZnBHaWlDUWkyTXhuWHhEMFI3NWszdHMtY1hDZ2tQdEJZOUlaVi1LdDQ4QkZWdmZRQk9TcURqWnhDeEdIYkpxSWFySkhzX1dFU2NrVnZzY3duUXZQZUZzSkRXVFVsUVQ2OTFZYk5PX0xtX1Rqd0xLU1lialAyVjE1LVozQVdEcUhmVW8?oc=5",
-   "source": "Federal Reserve Bank of Boston",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:48:35Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "EU says 'strongly' rejects premise of new US tariffs",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTnJLd2ctVnNWZUFTZDh2bVB0YVlUZEs1QVJuR0ZzYUw0S1NobnJJZHV2ZFNZWklKSWFFcWF4TlVfNHZSekEzamhVSUktU3A2MnFqMGo2SGtWVGpTTl9EWXFfcllPczZSazBOcVlhYnQxdTFwNXFiRDJSNGktcm1jWUFubnY?oc=5",
-   "source": "France 24",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:46:11Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "US Inflation Picked Up Speed – Again",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE90dEpMLWR4V2hjUUhKUEVVZEFoaXR5emxBeGt6RllFTjVlUFhMU0t3OHYtbDdHTUtVaFNiWU1PNlRFeHlpV0VTTUl6UzFwb2tqRGxFYjhjWnpRWWdzcEVEQmI0UGJxVDFGdFFiUTBhWm4?oc=5",
-   "source": "Finimize",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:45:58Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Why are investors freaking out even as the U.S. economy surges?",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBSTTFwUEpMWjI1TFJzbVRra3BraEh3czZ6ZGpWNmItT2pMeDhlOWdEb0hneXhtaDhncmhiMDlmcDRENlJlMl9hLTd0anlDQXpqWDRYb1RsUEZTSUpoSXhsaEF1VTFKZVN1TlQ1Yg?oc=5",
-   "source": "CBS News",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:45:38Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "The Fed says inflation hasn’t gotten any better ahead of its key December vote to raise rates",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOV0o1WjBQV3JLSkJlU1VRU0I4SUczYUVfcG1zZEVLU0ZZa1Y3MFJYcHhZWHNtVlVPTWJjcUJYalpFWEFIVkdjNW8xTFkwSG5uUC1YNG0zOVpGcE1GQ1h3UU5YZmxkUEFnWFQ1aTZSVklUSU9EblV0ckVYeEpNaGxIVUpNYlplaDBONHEwSkpPUGdXX2RiUXJQb1lOb0RQdEJwQUwxam0xZjZ5dnJlYUNFM2pZeDZmQVVlNzFDRUZHaWZBQWVCLTBPYUF1VXpXYmxT?oc=5",
-   "source": "MarketWatch",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:39:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "What we know about Trump's Thanksgiving tariffs",
-   "url": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:38:05Z",
-   "summary": "Donald Trump is targeting China, the European Union and 12 other jurisdictions in a new round of tariffs.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Fed Beige Book Shows Moderate Growth, Uptick in Wage Pressures",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQWV5eGNLVEd2LU00RkQ2VlpWbGJqam5RUEVQd0dmN1lRYjBZOGVCYmxwTG5XV1huU3RfR2hNN0tuRV9iSW5NY2NxUUhsS1JORF90dF9wTnJBYTF5VEI3Y3BMd1luV2lMSFJseXdTQTVNTVk3eFRFdjM1ZWpmYVdCN0lnNEoxMWV3bUxFbjl0RVRDSmtidEhvS08wN29xRElHcVBiX2ZNa1l6bU5sWjB5NzFR?oc=5",
-   "source": "Bloomberg",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:35:50Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "World reacts to Trump’s new tariffs as US stocks tumble",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2xwNlNFeVhicVplSG9FSUZVd2xjOUxCcHd6QjFfeV9PV0VNTkNmOEVQWkN1S2JRbGd6WXBlZ2czdlRWT3hDcWlWclMzeVA0c09QZzVzRTY0VWhxZEJOMU1BNVhpRTNVLThIczAwODJjSzBka1lXVkFRc1pBWGZjRHRhakwxUTdhdllTYVJXUGg1cE9tbWg2clBQZXFBcWl00gGmAUFVX3lxTE1ManFzV2ItczJsaU1wc2t3Tkc3OXdMTlhsdF9tZVh2c29Ld2lLakRybW1sZEhzOXMwNUh5ZUVLd2prWTFSUFZpbm40alhZcEcxVFBIM1NTUzljU1dzdS1oZ2RxTlp6cGNSUzRTOGlxbE5GNGZORy1Da3diOS1NWExyM1RNQVZrZkJEMkhZREdZY1BickkyNE1pbWIzOHdhRFk3Zng2TWc?oc=5",
-   "source": "Al Jazeera",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:31:28Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "UK food inflation could hit 5% next year, Bank of England says",
-   "url": "https://www.theguardian.com/business/2026/nov/25/uk-food-inflation-sharp-rise-next-year-mounting-cost-pressures-bank-of-england",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:25:57Z",
-   "summary": "Sharp rise expected as cost pressures mount, with experts factoring in energy price cap hike and potential impact of El Niño Food price inflation in the UK could hit 5% next year, the Bank of England has said, despite rising less sharply th",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Ministers can’t control gas prices, but they can attack other energy costs more ruthlessly",
-   "url": "https://www.theguardian.com/business/nils-pratley-on-finance/2026/nov/25/energy-bills-gas-prices-electricity-costs",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:21:16Z",
-   "summary": "Louise Haigh talked the right talk at the CBI this week, but greater ambition and tighter timelines are needed Shocked by average annual energy bills at £2,166 for the first three months of next year? Here’s worse news. It is currently poss",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on November 26, 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64043",
+   "title": "Result: First Conversion/Switch Auction of State Government Securities",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64049",
    "source": "RBI",
    "region": "India",
    "official": true,
-   "published": "2026-11-25T19:20:00Z",
-   "summary": "On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a Variable Rate Repo (VRR) auction on Thursday, November 26, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Window Timi",
-   "categories": [
-    "Central banks & rates",
-    "India"
-   ]
-  },
-  {
-   "title": "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVmt0OG9famdFX2l1SjBPc1A0aWZYc3Aza2tac0ZTYWk0bWplX2xRWVBUdjh3ZEtOQ1RQbFdhaUc0Wl8zZkpKaGV5c3Q1R3AxZHF0VjBqZ0RicnRRNVZ6X2RfYmNQUnBtTXBfbmNQUWRuZXpVcXFGa2pyRXhJZmhIWUxjXzc5cm1RTG1HSm1n?oc=5",
-   "source": "The New York Times",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:13:30Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "PCE inflation reveals challenge Federal Reserve faces, Mike Shedlock argues",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONWhrOGpPcWNneWd3TDJYcE8zaVZ3dUl0elFnaFJQbHdoYjJtMk1GV3pjT0lBU3QyeGRhcWxuMW5XXzVYdkV3S1Rvd200elFYd1Rha2NEWm41NFBVQkFObU5Yc3FRZ1p2dlU3N3dxR1dhaDJReXZnajA5bmlnSHp0SkZCOEdTLU9m?oc=5",
-   "source": "Traders Union",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:10:19Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "Beige Book Finds Modest Growth amid Ongoing Cost Pressures",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQVZMcTduWkVIVEhGTFNhc19PWFlHMGxIci1xY2VTNmx2TnkwSTRfdTNJUHhybXVHZGNLNVpxaVRlNTh0YmJNOU9vcERJc2YzMHhzb2M4SVA3ekZpenpwY1dnVnF0NDY1Sll0bkd4aWZQSkkwcjZLSGlXOUZSMFVlR0hldDVJMGNaZzFCZExCUTlXWEJ4QzRmOEtaRVlaRjFLMlc2U1NJa0lVNG42eGMxeTUtNk5PVllwRl9laVZsRHo5RnE5aW1oWWJiZnAzWTJXbDhKZ0ZCUUQ?oc=5",
-   "source": "Federal Reserve Bank of Atlanta",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T19:08:05Z",
+   "published": "2026-11-26T16:25:00Z",
    "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Gold price falls 3% to more than one-year low after data shows US inflation rose further",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbjI1bXczUVJCV0J4SHlXS1pzckF2aWRnSWxwckY1V2duUzVhM1BZNkJxM2RTdjN1eWJrOGNma19INTJPYjRjcDFDTGp3LTRwYU53UjEzTkU5Z3BvTkgtS09uVVR6RHlPUnByVzVsVW83Qm1RNUI0WFZrVlZOd3lIWWR0Zm9KSVQzSHVlVUdwS0tncTM2UmR5U01PaW9ZeFlTOGxDcEo1ajF2STF3eTVma21KeDFQdw?oc=5",
-   "source": "Mining.com",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T18:58:47Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Poundland collapses, putting more than 10,000 jobs at risk",
-   "url": "https://www.theguardian.com/business/2026/nov/25/poundland-administration-jobs-at-risk-gordon-brothers",
-   "source": "The Guardian",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T18:50:54Z",
-   "summary": "Budget retail chain expected to be broken up, with store closures, after US owner rejected at least two last-ditch bids Do you work for Poundland? Tell us how you’re affected Poundland has collapsed into administration, putting more than 10",
+   "title": "Underwriting Auction for sale of Government Securities for ₹33,000 crore on November 27, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64048",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-26T12:15:00Z",
+   "summary": "Government of India has announced the sale (re-issue) of Government Securities, as detailed below, through auction to be held on November 27, 2026 (Friday). As per the extant scheme of underwriting commitment notified on November 14, 2007,",
    "categories": [
     "India"
    ]
   },
   {
-   "title": "Electronics exports from India to cross $60 bn in FY27: Meity official",
-   "url": "https://www.business-standard.com/economy/news/electronics-exports-from-india-to-cross-60-bn-in-fy27-meity-official-126112501247_1.html",
-   "source": "Business Standard",
+   "title": "Result of the Second Overnight Variable Rate Repo (VRR) auction held on November 26, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64047",
+   "source": "RBI",
    "region": "India",
-   "official": false,
-   "published": "2026-11-25T18:41:36Z",
-   "summary": "India's electronics exports have crossed $38.4 billion in the first seven months of FY27, with the government expecting shipments to exceed $60 billion by the end of the fiscal year.",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "New US tariff may give India edge over Asian peers if trade deal done: GTRI",
-   "url": "https://www.business-standard.com/world-news/new-us-tariff-may-give-india-edge-over-asian-peers-if-trade-deal-done-gtri-126112501238_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T18:40:01Z",
-   "summary": "GTRI said a proposed 17% US tariff under a trade pact would give India a slight edge over Asian competitors, while the rate could rise to 25% without an agreement.",
-   "categories": [
-    "Geopolitics & trade",
-    "India"
-   ]
-  },
-  {
-   "title": "From ropeways to ring roads: Karan Adani reveals the group’s next big bets at ET Bengal Ascends",
-   "url": "https://economictimes.indiatimes.com/news/economy/infrastructure/from-ropeways-to-ring-roads-karan-adani-reveals-the-groups-next-big-bets-at-et-bengal-ascends/articleshow/136171190.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T18:38:41Z",
-   "summary": "Adani Group aims to expand its operations in West Bengal by bidding for thermal power and infrastructure projects. The group plans to develop the Kolkata Outer Ring Road to ease urban congestion. Karan Adani highlighted the importance of st",
+   "official": true,
+   "published": "2026-11-26T12:00:00Z",
+   "summary": "Tenor 1-day Notified Amount (in ₹ crore) 50,000 Total amount of bids received (in ₹ crore) 45,731 Amount allotted (in ₹ crore) 45,731 Cut off Rate (%) 5.51 Weighted Average Rate (%) 5.65 Partial Allotment Percentage of bids received at cut",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "The Guardian view on rising energy prices: only bold action can win public confidence | Editorial",
-   "url": "https://www.theguardian.com/commentisfree/2026/nov/25/the-guardian-view-on-rising-energy-prices-only-bold-action-can-win-public-confidence",
-   "source": "The Guardian",
+   "title": "AUD/USD falls despite stronger-than-expected inflation data",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVVdPeWdBbWpDMm9Ma2I2Snd4YmZsUzNzZm13MmN5bzN4ckxXcjBUcVpBRVpDYXBkZm5hTVdTQzZzQzRkTjd6S2pMY09mdzZLOWdiaEtObW1HV3hhcE9ZUHVremtCM0dTZE5QZm9HNTI5ZTA4ejl2TmxRaFM0WVROb1l4RGRaaXYxZVZNSTEwTHM2dW04MnVvdk16OE84WkdVTFlKN2EzdUdkd3c?oc=5",
+   "source": "www.equiti.com",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T18:33:21Z",
-   "summary": "Andy Burnham needs a radical vision of economic change to move on from policies aimed at giving voters ‘breathing space’ Ask Andy Burnham a question and it won’t be long before he mentions the cost of living. Responding to&nbsp;the results",
-   "categories": [
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "US to cap India tariff at 17% if trade deal is reached, USTR says",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRmdGMDdiZVhMaEZiM2hLVlNhdXQzZkM1b2F5NXFYaWZzbC1mX25kLU56ZThrNjFmZ2JVMW9fbjJhbUMwMXdzN3JLYXAyNE02a0FqclFyblhxZmxfbWRLVlQ5OFdoQkdmNEF1ZTlZUzRVVkkxQm14eDY0R1ZtUXJpRWhaNDE5c1hOM3pUYUhiRmJ1NnlTaGVrQk9uNGwwU2w5UmliTkRpZGQ?oc=5",
-   "source": "Reuters",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T18:26:10Z",
+   "published": "2026-11-26T11:08:24Z",
    "summary": "",
    "categories": [
-    "Geopolitics & trade",
-    "India"
+    "Inflation & growth"
    ]
   },
   {
-   "title": "US accuses India of creating manufacturing overcapacity through PLI, Make in India schemes",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/us-accuses-india-of-creating-manufacturing-overcapacity-through-pli-make-in-india-schemes/articleshow/136170979.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T18:25:31Z",
-   "summary": "Concerns have emerged from the US about India’s industrial approaches, especially those facilitating manufacturing growth and export enhancement. Initiatives like Make in India, coupled with financial policies that uphold low interest rates",
-   "categories": [
-    "India"
-   ]
-  },
-  {
-   "title": "25% US tariffs: Commerce Ministry bats for resolution within trade deal framework",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYVlZZnh6czBpV24wcmxRNWhaOVV6Z0FkU0hkNnhoS3RGTGNBRHVqOXZtMnlqQW5ldV9vNjVjSGM0ZVhkd2hEaGN5Z1Y4VlZPZ3VCd29RTHNTbWZFLWtZWTFsOHc2OHRqMW1VZkptMV9WSkFmaWloU0M5Yi1iLU15V2FXZEFtVjJlTUIzZXo4Q3N3QVUzODZxbC1vc1JrNEpBYjFaSlQ2WmFKTjUzbmfSAbQBQVVfeXFMUDZmeWxCSDRULVl3WVE5WmU0d2VCU1BBQXdsS052U3I4VW81MjdZRTZCRFJweFp1WElmYzRGVnFFcHF1X1pCd3dUc1VSNmVEWkxGV3pJMENsR3IzdHdQaU9EVDM5M2QySGVHaHpuVWdJa3VaaHR2OEZJOHI3d1dtWjd5ejFWVTJOVUFNZU9ma0NXMDN2XzZwd0tZZUxHQmFubWlSeEpUamQ2SU1vazVfTGRvaGhl?oc=5",
+   "title": "New US tariffs, old playbook: Why India might be better prepared this time",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSm9ZdG5yTF9HUWkwYWdLVGlSeWNxa1RLTzJSTjBfbExnRWRiWXcwdGlua2pEVl8zeE51R05NQ2pENVFwSjZXODJMaGxzdkpGRDA0SDFuaUJCcWxVQjhHN2ZCX0dMazZYOGR5X2w1OU51OTVQSjQtcjEwaWxtdjFjSUpDNHFvcE52TXg1MGpkTXhkLUEzbXBFTVNTMVMteEdHcVlxMzVMZHkxOWNPeXlN0gG2AUFVX3lxTE5JNXRGRzVqdFJqVndtLWlFYmNCS1B5VVpub08weGpxZTloMENFU0s3WnVnaGtXSmE0XzJ4cFpmT2lZaVhCSzZtZEtIMDdUYndfaXR0SFZrSksxVUdYc2Y1eWpYeXlNLWMtY2FONFVDSHZpd2ZpZVdhNllfdUFzTHVPTF9LQ1FJN2RuU3VfaGhzY2dHakVrd1pqbENuTjZDYkxxV1BpZHVzOHBMQlFoU2VLWHM5Smtn?oc=5",
    "source": "The Indian Express",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T18:16:28Z",
+   "published": "2026-11-26T11:06:36Z",
    "summary": "",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "India rejects US' structural excess capacity allegations as Washington links 17% tariff to trade deal, 25% otherwise",
-   "url": "https://www.livemint.com/economy/india-rejects-us-structural-excess-capacity-allegations-as-washington-links-17-tariff-to-trade-deal-25-otherwise-11795630104530.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T18:15:51Z",
-   "summary": "India rejected US claims of structural excess capacity, saying it has none in any sector. New Delhi said it remains committed to concluding a bilateral trade deal, as Washington proposed tariffs of 17% if an agreement is reached and 25% oth",
-   "categories": [
-    "Geopolitics & trade",
-    "India"
-   ]
-  },
-  {
-   "title": "US proposes up to 25% tariff on India, offers 17% upon trade deal",
-   "url": "https://www.business-standard.com/economy/news/us-proposes-up-to-25-tariff-on-india-offers-17-upon-trade-deal-126112501255_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T18:12:32Z",
-   "summary": "Second-steepest tariff among those facing Section 301 probe",
-   "categories": [
-    "Geopolitics & trade",
-    "India"
-   ]
-  },
-  {
-   "title": "Trump administration unveils new tariffs on China, EU and other U.S. trading partners",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORmM5VkRiTDFQLWNMQTdNb1lZa0ZieU50OHpleFVKeHd2ejBwWHRDR25WYlRUNTcwS3ZBWDRLaERNSmFNZi1JcjFqRnVLRUNzRG9DUzRwVGtZcTRXREpGY21xbjhZN0pvcTBJbTlXRHhuZlF0QnphLVhGTkNWamZzOTdqNWJvUFdLRWFQS1F6Z1RQd2c?oc=5",
-   "source": "MS NOW",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T18:11:22Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Section 301 probe: India rejects US claim of structural excess capacity",
-   "url": "https://www.business-standard.com/economy/news/section-301-probe-india-rejects-us-claim-of-structural-excess-capacity-126112501293_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T18:10:56Z",
-   "summary": "India said trade-related concerns should be addressed through bilateral trade negotiations after the US proposed tariffs of up to 25 per cent on Indian goods",
    "categories": [
     "India"
    ]
   },
   {
-   "title": "Gold falters ahead of key US inflation print",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQngxTnFVMHNMbExrQjVfMm1oMEt6ZEM1al8ySlh2TXVIU3dZR1ZOU3VOZjdtSFNmTWUzLVRfcksxazF3T2p3OWtiaEt0Z2xzVl9Gcnc3MXZHTDZ2TzlaNzBENXc3bTZhNHcwNTRxMUJUdUNBV1k2QUVoeTI3NGktM2JzSGJpcjNPYm1oZnRQUmpaUUM1aUJuWkdaNWZsTFEzV2c?oc=5",
-   "source": "The Daily Star",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T18:07:15Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Tariffs Are Back. Their Timing Couldn’t Be Worse.",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVG00MmZOc2RzdDByQXJEMmNXUlFBRnR3aDNpSnRWVWRpcDJnUEFJbWNEOW01eVRLcmoxMVFjRlFFaXRpaS0tS2g5TGV3WFJFU2tidnRBWnZnWHdZblJaQUptVEpUVXBFSmJpNVRLbEVFQ0tyRF9fNmlwVFRYU2JHNEJUZ0VkZzNKZEdGMTFDLV9hOUxpQ2RF?oc=5",
-   "source": "Barron's",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T18:06:00Z",
-   "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "47th Half-Yearly Report on Management of Foreign Exchange Reserves: April – September 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64042",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-11-25T18:05:00Z",
-   "summary": "It may be recalled that in February 2004 , the Reserve Bank initiated the practice of compiling half-yearly reports on the management of foreign exchange reserves and making them public to promote greater transparency and enhance disclosure",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Fresh US tariffs weigh on markets ahead of Fed decision",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBNLUJmVTF1eXhwY1dUMUlXZ3ItZi1Ub2RXVGpQMlI3MzZUd1Y2dnVsemdRX04tRjBqRDkweXlvV0NEQ3piTVNPNHRvZm5XVUlIdkhwQV9WdmY?oc=5",
-   "source": "BBC",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T18:00:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Martin Lewis' tips on staying warm this winter",
-   "url": "https://www.bbc.co.uk/news/videos/cjr4gw12k2lwo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T17:59:14Z",
-   "summary": "Energy bills will soar by 26% for millions of households in January after a surge in gas prices sparked by the Iran war.",
-   "categories": [
-    "Geopolitics & trade"
-   ]
-  },
-  {
-   "title": "RBI Bulletin – November 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64041",
-   "source": "RBI",
-   "region": "India",
-   "official": true,
-   "published": "2026-11-25T17:55:00Z",
-   "summary": "Today, the Reserve Bank released the November 2026 issue of its monthly Bulletin. The Bulletin includes six speeches, four articles and current statistics. The four articles are: I. State of the Economy; II. Shifting Drivers of Imported Inf",
-   "categories": [
-    "Central banks & rates",
-    "India"
-   ]
-  },
-  {
-   "title": "US proposes extra tariffs of up to 25% on Indian goods, 17% after trade deal",
-   "url": "https://www.livemint.com/economy/new-us-tariffs-on-india-impact-trade-deal-11795623444552.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T17:47:16Z",
-   "summary": "India faces an additional tariff of up to 25%, which can come down to 17% if both sides sign the proposed trade deal, according to the US Trade Representative. The US is India’s largest export market, accounting for shipments of goods worth",
-   "categories": [
-    "Geopolitics & trade",
-    "India"
-   ]
-  },
-  {
-   "title": "Expectation of rising US inflation keeps pressure on gold through currency and policy channels",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeHl2S2xfR3VwYU1lV1FVRFVJUGxnYUtIRTdqS0RFY3dqRmxjc0hJVWFCbHRVaEphd0FKQ2cydnBna2swRzNoVzFDZHM4Q2tyYnNpenJyd0xkRGVJUndkUElXWGF4WDI0N09Fa1Z1dWJ4QUZ0MTByTEU3bFJIVVVyY0o5WUlsWW4wMXF3WA?oc=5",
-   "source": "Traders Union",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T17:42:31Z",
-   "summary": "",
-   "categories": [
-    "Inflation & growth",
-    "Currencies",
-    "Commodities & energy"
-   ]
-  },
-  {
-   "title": "Ben Jennings on Andy Burnham’s help with winter fuel bills – cartoon",
-   "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/25/ben-jennings-burnham-help-with-winter-fuel-bills-cartoon",
+   "title": "Ministers ‘fail to make case’ for Heathrow third runway, MPs report says",
+   "url": "https://www.theguardian.com/environment/2026/nov/26/ministers-fail-to-make-case-for-heathrow-third-runway-mps-report-says",
    "source": "The Guardian",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T17:41:10Z",
-   "summary": "Continue reading...",
+   "published": "2026-11-26T11:00:32Z",
+   "summary": "Transport committee says policy papers show expanding airport would fall short of pledges on economy and climate Ministers have “failed to make the case” for a third runway at Heathrow , according to a damning report by MPs. The Commons tra",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Rising rate expectations put pressure on silver amid changing US inflation outlook",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQzV6TWF5QVo4VXAtYXFQaFhscUFaLWc1bC1Gb2NxcHlNNW44US03SEpFNjhEdXVQdFM5Y2hId2ZjVHBGSHFqU2xPMmRxVjVSUmJoVVJ0Q2V5WmFUVGVXcVNlTzFwNi1iV0V0UWNRV012bnUtYXVUckNyQTJVaXkwLTdMTW1IUjdFcWFhRWNFTQ?oc=5",
-   "source": "Traders Union",
+   "title": "Trump’s Tariffs Cast New Pall Over Thanksgiving",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQk1uVWtYMllaS0FEN2JHUUtTZDhJalBpV0FHdnQ0UTNYbXlfSWhpMmpJN0YwNWtPU3lZb2RiUFBQM2FES3hwc3B3SXByOTJMdlRyNkFMaFFXbGFlTTVsalo1RXM0c2JkZTV4ZFB5MG9MR3RsLUZoaVY4M2RZV19NT3ZGREZMRzNuSnhJcHJPU0Rlb3E4MmtBSFc0M1dxcVl4Rl9XeDlNRzVtZVRkNndSUTdjbUo3S1VLRklhVllyWXdhaUNEYWM2NE5WUTFQZw?oc=5",
+   "source": "Bloomberg.com",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T17:31:37Z",
+   "published": "2026-11-26T10:59:09Z",
    "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "European shares rise as benign U.S. tariffs and Thanksgiving lull offer relief",
+   "url": "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:56:22Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "BoE to lower UK big-bank capital needs, warns AI debt and rising yields add risk",
+   "url": "https://www.investing.com/news/economy-news/boe-to-lower-uk-bigbank-capital-needs-warns-ai-debt-and-rising-yields-add-risk-5052395",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:56:11Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Dollar rally takes a pause for Thanksgiving",
+   "url": "https://www.investing.com/news/economy-news/dollar-steady-as-sliding-yields-temper-safehaven-bid-5051883",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:54:22Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "Currencies"
+   ]
+  },
+  {
+   "title": "HICL Infrastructure H1 FY2027 slides: 11.3% return, 10%+ target",
+   "url": "https://www.investing.com/news/company-news/hicl-infrastructure-h1-fy2027-slides-113-return-10-target-93CH-5052394",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:54:07Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Amcham warns new U.S. tariffs could erode Brazil’s competitiveness",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNT0dFemh6WnFoRzlTU3VuaDRnNGRWYldlTDZQVFFaeXUzMUVaTTNWSXQxaUJzZUxOY2ZoQTJsSGVHQlZqVEN0M0txQVlXQVpNbEN2emdVa2FmYzZxVzN2cVphcHFXZk9leDM5Q0h1amF0eXlWVUVuT1NpM1VhMkJoYnJXTTY2RW45YmJVV2cwcXhibzNKNldLeTF0MHFvVWVXSnc1QUdtak43QmVRZE9BczNEUWNKcUl4TFZSQ1pobFNOYXp3eVIzQkJ1TkpwQkdnbEM5R9IB4wFBVV95cUxQSlMtVVRNSnhFNmhxVzV0eWpNWmczd0dJdEg0OW5EY2ozS1dYQ054RjF5SU0zYUozVWIwR3kwbGtERnFiVE1jUzlWaG9OOGhFTDJLQ2JBckFzWF9rMjBjYWV2d25STWJPNU5QelVSazBfRGd3X1l3NGlmQTVpMVhZRmI4MzdKWXh4MG5zTVM5MTNpS3BTUWwyMG9GSjVIMzRPMGxiamFUa2xBeTNvWm55V3A5NVNqdVRQMzBUajZ6cUNwYl8tbXlFUWRsUlBBb1J6RndFdFBzQnJSbVNaa2Q2ZFg1QQ?oc=5",
+   "source": "Valor International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:51:51Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Halfords HY27 slides: profit jumps 66%, FY27 guidance upgraded",
+   "url": "https://www.investing.com/news/company-news/halfords-hy27-slides-profit-jumps-66-fy27-guidance-upgraded-93CH-5052393",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:51:41Z",
+   "summary": "",
+   "categories": [
+    "Corporate & deals"
+   ]
+  },
+  {
+   "title": "Factbox-Status of Asian nations’ trade talks with Trump",
+   "url": "https://www.investing.com/news/economic-indicators/factboxstatus-of-asian-nations-trade-talks-with-trump-5052392",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:48:22Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Apparel and textiles targeted in latest US tariffs",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1mRmtqdmR0REUwbFlSaEJhZ29ERXdpX2FFTEluMWNDVHlCRUZ3dmJmVDBsVXhMTVlBWFNTZXQzLVJEaThSMVp2RVpfMVV4bVBqSHREcVRUMXNqcU15OHpNWE1Zb3JlRkgxV1RKT19zZ3h2eFlnVmlhaW5Qcw?oc=5",
+   "source": "Just Style",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:48:22Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Nvidia reportedly halts chip shipments to south-east Asia as stock sell-off eases – business live",
+   "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:46:01Z",
+   "summary": "UK competition watchdog finds millions of people can’t afford private dental care, with prices rising by an inflation-busting 7% a year A shopping centre in London that was due to be knocked down and replaced with a retail emporium and more",
    "categories": [
     "Inflation & growth",
-    "Commodities & energy"
+    "Markets"
    ]
   },
   {
-   "title": "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates.",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOLXEwWmxfQlloLXRNcENFN0UwSmFNV0Z1VW9aMzNSeGU3ajdlUVlVNUdKMGNDZTk1a3RjNVJ3ZkNyWXQ3YUN1dEZCMmV5allEUDNVd2FoSnBINFRiYTdXTFh4ajFtNm5HUjVBVmJIT3YwYnlzS3lnMUFycDdwSlpRRlRqV01ZMlpmRGZZb0xVOEF2Y2FrdVlMeGVuNWxJZjlaQWZMV2YzTlVmTkpZQmJCRFRfSlU5azVt?oc=5",
-   "source": "MarketWatch",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T17:31:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
-   ]
-  },
-  {
-   "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
-   "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
-   "source": "ECB",
-   "region": "Europe",
-   "official": true,
-   "published": "2026-11-25T17:30:00Z",
-   "summary": "",
-   "categories": [
-    "Central banks & rates"
-   ]
-  },
-  {
-   "title": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+   "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+   "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
    "source": "CNBC International",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T17:28:24Z",
-   "summary": "Nvidia GPU sellers are seeking new buyers after new U.S. rules tightened remote access to advanced AI chips for China-linked customers",
+   "published": "2026-11-26T10:45:45Z",
+   "summary": "Trump and NATO chief Mark Rutte urged Russia to avoid actions that could expand the war and called for a rapid peaceful resolution.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "German consumer confidence edges up but stays near record lows",
+   "url": "https://www.investing.com/news/economic-indicators/german-consumer-confidence-edges-up-but-stays-near-record-lows-93CH-5052385",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:40:19Z",
+   "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Energy price increase 'could put me in hospital'",
-   "url": "https://www.bbc.co.uk/news/articles/cm5y1g42x2wzo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
+   "title": "Earnings call transcript: HICL posts H1 2026 gains, lifts return target",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-hicl-posts-h1-2026-gains-lifts-return-target-93CH-5052384",
+   "source": "Investing.com",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T17:26:13Z",
-   "summary": "People on Teesside share their views on the news energy bills are expected to increase by 26%.",
+   "published": "2026-11-26T10:39:37Z",
+   "summary": "",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Prediction markets push OpenAI IPO expectations later into 2027",
-   "url": "https://www.cnbc.com/2026/11/25/openai-ipo-odds-2027-prediction-markets.html",
-   "source": "CNBC Finance",
+   "title": "Futures point to Black Friday gains for Wall Street as global markets welcome U.S. resilience.",
+   "url": "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-26T10:37:00Z",
+   "summary": "A rebound off lows for the S&P 500 on Wednesday calms bourses after AI wash out",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Earnings call transcript: Halfords H1 2026 profit surge lifts shares 14%",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-halfords-h1-2026-profit-surge-lifts-shares-14-93CH-5052383",
+   "source": "Investing.com",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T17:08:03Z",
-   "summary": "Kalshi traders have cut the odds of OpenAI confirming an IPO before June 2027, as AI stocks and related markets have weakened.",
+   "published": "2026-11-26T10:36:52Z",
+   "summary": "",
    "categories": [
     "Markets",
     "Corporate & deals"
    ]
   },
   {
-   "title": "The White House announced a raft of new tariffs on the same day inflation data came back at nearly twice the Fed’s target",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdWVHVE9zZ0YwZURJTU1TcTB0SmctN1FqWlljNlFsUEdvUHRMSDRtcnU3YXFBZjlicFhuaEJRNXgzTTd1emdhYzB2Y2dubEJwUUFpQk9VUEo1QmlhM3ZvMG1Lb0tOeVF0SDZrc3VvUUlqZFhDQndtc1dJUl9JUm8zc0EyZ3dJRnRjOG9OY0VOS1I?oc=5",
-   "source": "Fortune",
-   "region": "Global",
+   "title": "Spike in oil prices partly reverses rupee rally, forward premiums surge",
+   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/spike-in-oil-prices-partly-reverses-rupee-rally-forward-premiums-surge/articleshow/136188127.cms",
+   "source": "ET Markets",
+   "region": "India",
    "official": false,
-   "published": "2026-11-25T17:06:00Z",
-   "summary": "",
+   "published": "2026-11-26T10:36:16Z",
+   "summary": "The Indian rupee has faced depreciation as a result of escalating oil prices combined with pressures from surrounding currencies. With Brent crude exceeding $96 per barrel, worries about India's import costs and inflation have intensified.",
    "categories": [
-    "Central banks & rates",
-    "Inflation & growth"
+    "Inflation & growth",
+    "Markets",
+    "Currencies",
+    "Commodities & energy"
    ]
   },
   {
-   "title": "Inflation remains stubbornly high, despite a drop in gas prices",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdzJJdmV4bkNxVHhqSnJlMnU0c0ZQTExtVU5qSGZucEMteHU4MTN3NVhaRGlFTWRSdWF5YjIxVlVFbllndUF5UXV6N0FyU2xRN09UWUVaSVo4cnp2RjFNRFZUX3RvTWNEcFVnczktZnVFaWxrc3VhUVhMa0tUemlTVXBUN1JkUV9XLWlTbnpNWHAtbkp3VWptX3RCemhMLUgt0gGmAUFVX3lxTE4xT2RBRGNoTXV0VU56V1huYk1fSVg1OERvblB4N21UbUZ3bGhndnFoUXcxekdMRlA2cDZid1ltbnBjdjlReklKOUs2QVY1SkJMRlc5T1ZKNm84cUJHOXByTG9aR0RGWElkRHNONS00bkQyY3BWWG9xWkl0cDBfYWFpN2M5MVU2ZTNHcTR1b3gzV0xLT0lydVBqN0tsbHNFckdOdF9lOGc?oc=5",
-   "source": "PBS",
+   "title": "Experts say new U.S. tariffs do not pose substantial threat, India should not rush into trade deal",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZFByTVdLdWx5cnJhWHlIS1k1cGt1VU5pd2JVMm1LRkYxblg5OVlwMmxKVm1yeWYwVXJsajJJdmhHOXlUNV9zbWJkSDhjOXBmZm1wbFZRUW1OSWdsbkprejN5VDhCVnZEdENEVzEyNThYUURQUGZ5ekp3aTZvM3k4OF8xNTNISTVPeF9FU0tkQjN6LTNfWHhJRmVtaFBKTTE1ZmhZbnVRX21TSmh2VjJYZDlET3VNcF9QRFhOc2t1Qkg0aThHYkU2bTFITW1iNlpfN1B0OXR3WEFJNnJjWVRxVmFlbnAycExUM3pvNm9n0gH0AUFVX3lxTE5hdUhBQXdPYzFYeEFaVEpPYWVGUFlJbmhHZE9NbTZOcUh3OW80bllYenlBcVFrLVZzREs3T0J6eVB0ZmcySm12dUFpZ3FCOUdGQmM1STNBbXBpbkEyZXk0ZnQ1Y2JibnhnUlI0ZUdveG5WenZXZ19NRno0eXhKeFJKZHUyLWJwX19Yay1NX1pSSGQzYUlreloyNFJRZW44S1h2NmV2eW5iOVptS1J1SE5YdlBjdWhSa0tPOFNCclA0S0EwTjhENTBpNkh3cXRvV0FULTZBS0pLTTBwYnNyb3BIdmVoeVFGck92QVBsN2tXTnVwNE0?oc=5",
+   "source": "The Hindu",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T17:01:18Z",
+   "published": "2026-11-26T10:36:03Z",
    "summary": "",
    "categories": [
-    "Inflation & growth"
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "China, Japan and other US trade partners reject Trump’s proposed tariffs over excess capacity",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX3poMWFCZmRtVk5ZVWI0UThNbGVsQnllLURYS3FkTnFEbVQ2OGNEdC0ydDVOVXJ0VDZjSFVjN1FsaGs4RHlNNjhDXzFBaXJYWVlBTWxCNUdHTW5ZMDNjN3BVZHJrT2pVVGpoSmVMeEU0YXBkekN4bnp2N1R6OXNLTmRJVDlXcl9Pcl8tVm96NExaS0lVVF9hRDdtX2VSMWF4WE5TWTkydEM3emR6NEY3Z1o2OFRIRGh0M1pTLXpMUzFaNWZsVmxHR25yUjF1dDlOUXlhTlZJazJodkZO?oc=5",
+   "source": "The Federal",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:35:34Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "RBI to conduct Second Overnight Variable Rate Repo (VRR) auction under LAF on November 26, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64046",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-26T10:35:00Z",
+   "summary": "On a review of current and evolving liquidity conditions in the near term, it has been decided to conduct a second Variable Rate Repo (VRR) auction on Thursday, November 26, 2026, as under: Sl. No. Notified Amount (₹ crore) Tenor (day) Wind",
+   "categories": [
+    "Central banks & rates",
+    "India"
+   ]
+  },
+  {
+   "title": "Rajasthan chief secy asks officials to fast-track operationalising mines",
+   "url": "https://www.business-standard.com/economy/news/rajasthan-chief-secy-asks-officials-to-fast-track-operationalising-mines-126112600836_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T10:33:11Z",
+   "summary": "Rajasthan Chief Secretary V Srinivas urged departments to expedite clearances and operationalise auctioned mines, as the state seeks to tap mineral potential beyond the Aravalli region.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Singapore rebuts US tariffs logic on pensions scheme, as Southeast Asia hits back",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQUsxX0lWdkRCLV9hUmtOREgxQmw4b1VwNTdvN29UUXoybm11RG1HSVY0QVZIVVlkdjhaUVhKaTNvYUZtc3Jnc2ZsNkVjWmRaVHFEbFVRekdpQnFPSUFpaHZ0R2hydVlPVkNTejlSV0JnWlNpRDdHV0g1M05hdEt1S01kYlhVc2x0Z2dlbTlUSHBiN0xXbnNGRlh5UzZUYndEa1djaUtGb3JfZXpLMTZSei1CNkpYbkgwektBWVo5TdIBvwFBVV95cUxNeFlCc0dycG5ySzhsT1FiQ3IxcVRfQ1lQejBQWVY5eU5INENhSmk5dkxrYXBuakpBckpDdVhnb0J4OWR1WXJYYVZJenRva0VBd3ZCb0IwcWRpX1EzZmJYYWZ2UFdTRkNRUkl1b0xSQzM2RFlSdTZ5bWNLT3gxUEJOMGZ6VHpmVHctcWdpZllIRjNlNmFQXzRPQkdxRVlyNk9vRnJIZWUxMXVQM3FYYllnZTFMTTY5WUp6SURGZ2tNdw?oc=5",
+   "source": "South China Morning Post",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:30:03Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Result of the Overnight Variable Rate Repo (VRR) auction held on November 26, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64045",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-26T10:25:00Z",
+   "summary": "Tenor 1-day Notified Amount (in ₹ crore) 75,000 Total amount of bids received (in ₹ crore) 1,40,535 Amount allotted (in ₹ crore) 75,007 Cut off Rate (%) 5.68 Weighted Average Rate (%) 5.69 Partial Allotment Percentage of bids received at cu",
+   "categories": [
+    "Markets"
    ]
   },
   {
@@ -1578,144 +374,237 @@
    "source": "BBC Business",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T17:00:32Z",
+   "published": "2026-11-26T10:15:47Z",
    "summary": "Poundland has collapse into administration. Why?",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Scots react to news of rising energy prices",
-   "url": "https://www.bbc.co.uk/news/videos/cmqlq07d71yko?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
+   "title": "Norse Atlantic Airways suspends all flights as it makes urgent funding plea",
+   "url": "https://www.theguardian.com/business/2026/nov/26/norse-atlantic-airways-suspends-all-flights-urgent-funding-plea",
+   "source": "The Guardian",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T16:56:47Z",
-   "summary": "Scots describe how an increase in energy bills will affect them.",
+   "published": "2026-11-26T10:15:18Z",
+   "summary": "Norwegian airline says its finances are ‘critical’ and it will file for bankruptcy if it cannot secure short-term backing Business live – latest updates Norse Atlantic Airways has suspended all flights and said it will file for bankruptcy i",
    "categories": [
-    "Commodities & energy"
+    "Markets"
    ]
   },
   {
-   "title": "World stocks tumble as Trump tariffs rattle markets, AI rally fades",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTFdBa09BUFRidnFKcTFWQkJCb1R2Smh3ZjJ0NkdvMFE1WkdEUklRdzUyZmhFWHgyUHRIS3prWmJQRFlYNGpLSHJ6OThoZVEyWmVDV0NxRTZHblh2cXc4Q0l4MkZXRm83amRNc1l3Qk95UHZJeFpfUENWNTdlLW9sakhBV013cGJicjYxU0pkMlQ4M0tWcTh3dVg5dVJhMzlF?oc=5",
-   "source": "Yahoo Finance",
+   "title": "Tech billionaire takes his case against red tape to the Federal Reserve",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSVZoU0stTElBY1VHVk93NWpGbjZQeEFTQll0TXZBUE82dGVpMmVEOGpKbldjRGcxZERvTUl6SHF4eDRUdHV0Sm1YVVpLcWF5X0txSldhaWZMcFFJa2l4blpIVFk2M2p5N2NrbHFwYzY1Vm9YWTFOTFJkaFFwb2ZaQk9HczlteC1kQzQ0YlB4S2Qza2lvS0RkZllMT25pdmRDcXB3WUVna1poWDlXeE56VGFIeHFMS3ltNWZjTEt3cjM?oc=5",
+   "source": "The Washington Post",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T16:52:13Z",
+   "published": "2026-11-26T10:12:40Z",
    "summary": "",
    "categories": [
-    "Markets"
+    "Central banks & rates"
    ]
   },
   {
-   "title": "Washington announces fresh Swiss tariffs of up to 15%",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNM0VJUUpPN1FZLVEwYXhtelhGY0xFWTBKNl9SQUV3VENPNG1xbDN1ZjhJUkNtUzZBM25wWjlOanczSTM1S2lsREdzN3ViUkM3Mm4xVmh5RWpBLVlyZXJ4OXUyUEV6V0Y5VXhvaW5nYk5tV2t2ZXVJWm1EZjFkZGRsSEx4OHhhWE9DazIxR0dmQ25UR0dKS0RVVmdGdDdhLXloTGh4M3VVWUdfcjF3c1BpbW0wbEV1UnFzOHRDeGthdFg?oc=5",
-   "source": "SWI swissinfo.ch",
+   "title": "Why does India face one of the highest US tariffs without a trade deal?",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSVZtOWJhTVY5N0NBQnQzLTRKMVhMbUdsanJUMFhQdkxpVjdiWUZOY29CeEQxakh2NUlTWVFXVFJjZDQta0MzeG1iMkExa1IxeVpWbWJpU2JOUGM4RE1HZHdPYWRnOEhSb0J0bVVUZGt1a0lYSE9qbjBFazF4Rk1ibFhmbjVqWW1BWVI4b2E3ZlFwR29hRlFCUHVTYXNheW4zLVNwWTNIdTZnMDdLUi1SdHZ30gG3AUFVX3lxTE4xaTdXcFNhWlJnSVlVNnhOY3Mzazl2dzFYUEtaMjdwc0tBVWVlbGp4cHJGZVJLeEJHVjFMZERIR09WbzdzdEN6c1piU2J2X3FMYjI5NWpwUTNrdWZuOU0xNFhXSXJ3SDRzQXVUb05qNnNFQi05R09TQUdCV1lJTzhKXzcyREx4OHpHSWJ3d0h4U1I2d1EyZDE1WTUzZm5tWGo2QnBSS3l6RUtROVNsUnBMR2JrcTRrSQ?oc=5",
+   "source": "India Today",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T16:51:58Z",
+   "published": "2026-11-26T10:12:29Z",
    "summary": "",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "RBI shifts more gold home amid geopolitical uncertainty",
-   "url": "https://www.livemint.com/economy/rbi-gold-reserves-rbi-offshore-gold-custody-central-banks-gold-reserves-11795615735990.html",
-   "source": "Mint Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T16:51:20Z",
-   "summary": "The shift comes against the backdrop of growing concerns among central banks about the risks associated with holding sovereign assets in foreign jurisdictions",
-   "categories": [
-    "Central banks & rates",
-    "Commodities & energy",
-    "India"
-   ]
-  },
-  {
-   "title": "Trump's accounts traded Nvidia shares 44 times this year, records show",
-   "url": "https://www.bbc.co.uk/news/articles/cq772vk664yvo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T16:42:11Z",
-   "summary": "A review of the US president's financial disclosures shows Donald Trump's investment portfolios have regularly traded shares in the tech giant.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Pvt sector's share in R&D spending rises to 45% from 30%: NITI's Karandikar",
-   "url": "https://www.business-standard.com/economy/news/pvt-sector-s-share-in-r-d-spending-rises-to-45-from-30-niti-s-karandikar-126112501248_1.html",
-   "source": "Business Standard",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T16:31:01Z",
-   "summary": "India's gross expenditure on research and development reached ₹2.5 trillion in 2024-25, accounting for 0.9 per cent of GDP, with the private sector's share rising steadily",
-   "categories": [
-    "Inflation & growth",
-    "India"
-   ]
-  },
-  {
-   "title": "Maharashtra Cabinet approves free foodgrains for 42.30 lakh farmers, Rs 5,548 crore for Narmada-Tapi project",
-   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/maharashtra-cabinet-approves-free-foodgrains-for-42-30-lakh-farmers-rs-5548-crore-for-narmada-tapi-project/articleshow/136167631.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T16:25:35Z",
-   "summary": "The Maharashtra Cabinet on Wednesday approved free foodgrains for 42.30 lakh farmers, ₹5,548 crore for the Narmada-Tapi Valley Diversion Project and a draft bill to regulate private aided schools, among 14 decisions taken at the meeting.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "Why has Poundland collapsed and what happens next?",
-   "url": "https://www.bbc.co.uk/news/videos/ckregn0gq2ydo?at_medium=RSS&at_campaign=rss",
-   "source": "BBC Business",
-   "region": "Global",
-   "official": false,
-   "published": "2026-11-25T16:24:30Z",
-   "summary": "The retail chain has collapsed just one year after being bought for £1 by an American firm.",
-   "categories": [
-    "Markets"
-   ]
-  },
-  {
-   "title": "India-UK investment treaty talks stall, pact unlikely soon, officials say",
-   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-uk-investment-treaty-talks-stall-pact-unlikely-soon-officials-say/articleshow/136167556.cms",
-   "source": "ET Economy",
-   "region": "India",
-   "official": false,
-   "published": "2026-11-25T16:23:01Z",
-   "summary": "The prospect of India pursuing a bilateral investment treaty with the UK appears grim, primarily because of enduring disputes related to taxation and arbitration. Talks have hit a snag, with both countries entrenched in contrasting views on",
    "categories": [
     "Geopolitics & trade",
     "India"
    ]
   },
   {
-   "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-   "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-   "source": "CNBC International",
+   "title": "The tech rout should bottom soon, with a 25% rally for the S&P 500 to follow, says Deutsche Bank",
+   "url": "https://www.marketwatch.com/story/the-tech-rout-should-bottom-soon-with-a-25-rally-for-the-s-p-500-to-follow-says-deutsche-bank-c9070bf6?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-26T10:11:00Z",
+   "summary": "Deutsche Bank sees the benchmark index reaching 9,000 points by the end of 2027 as focus shifts from capital expenditure to monetization from artificial intelligence.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "India attracts $31 bn in climate equity funding, but $22-24 trn needed by 2070: BCG-IVCA",
+   "url": "https://economictimes.indiatimes.com/news/economy/finance/india-attracts-31-bn-in-climate-equity-funding-but-22-24-trn-needed-by-2070-bcg-ivca/articleshow/136186999.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T10:04:32Z",
+   "summary": "India has secured nearly USD 31 billion in climate funding since 2021, focusing primarily on power and transport. Underfunded sectors such as manufacturing, waste management, and agriculture require significant investment to meet future goa",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+   "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+   "source": "CNBC Economy",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T16:17:13Z",
-   "summary": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
+   "published": "2026-11-26T10:02:44Z",
+   "summary": "The U.S. planned a fresh tariff salvo on 14 trading partners, while offering some countries lower rates if they secure trade deals with Washington.",
    "categories": [
-    "Inflation & growth",
     "Geopolitics & trade"
    ]
   },
   {
-   "title": "Can SPCX withstand higher debt costs if Federal Reserve maintains its two percent inflation focus?",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUlVpeWtmSjBVSmJyVTc4TFlraHZGaVZyaVRCWS1GZWNsTjFfbGUxY1N6U3JLckRTUldaSGhOTFJfelI1bGh6SUhsbG12NjJFY2NnNEF1VWlNTzF4OTVVSHJFWGdVdVVrM040REFySGVCanB1RGhYSGthUEp4bnU1Y1JhLVNQN3JH?oc=5",
-   "source": "Traders Union",
+   "title": "Opinion | The Next Fed Leader Should Be a Bot",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPY3d4aHMyWlBfRmZ4bThickt0RDFpTDA0Ti1SbDRhMElqc0tucmYwRHVXUDdMay1kMHNNazJJX2VlU3dhVGhjNHp3YkxldkxsSEVkcUNIOTNudVRtd1FXNVdKdXhJTVpzR19ObzRfenVzc2lTS2V4T0JqRm9rd1JBWGo5V0ZWVU5XNG1uYklyQQ?oc=5",
+   "source": "The New York Times",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T16:07:31Z",
+   "published": "2026-11-26T10:02:41Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "A vocal cohort of tech leaders celebrates Huang’s Nvidia return, but others are keeping quiet",
+   "url": "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:00:52Z",
+   "summary": "Elon Musk and Sam Altman among those rejoicing but Google, Meta and Apple chiefs have declined to weigh in The phrase “return of the king” rippled across social media on Monday. A vocal subsection of the tech industry was celebrating the re",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Upper Midwest economy growing amid 'the high costs of everything'",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYUpJdjhqek95bUVfcHFGNGk1N2JuQ3llRnJmUHBGZVpBQzFxNEk4cTVta1NIakd5NmdESk9tVGZlckF6S3BxR09YUWsyTE1NYnlwcnhvQ3puUFRiQWdaRXU5ajJzSE9jM05LSU9oQ1B2QktpVmd0VUJaSWFpdm5ObFQ2NUZocmhPaTRnam9SdmFXNHdNanhWaWtncTQ5ZGRNYjdzV1VSdTNTNTgxbXkwVw?oc=5",
+   "source": "MPR News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T10:00:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Govt projects Kharif foodgrain production at 167.14 mln tonnes despite El Nino; 2025-26 crop output a record",
+   "url": "https://economictimes.indiatimes.com/news/economy/agriculture/india-projects-kharif-foodgrain-production-at-16714-million-tonnes-despite-el-nino-challenges/articleshow/136186752.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T09:59:52Z",
+   "summary": "Kharif foodgrain production for the 2026-27 crop year is projected at 167.14 million tonnes amid weather challenges. Agriculture Minister Shivraj Singh Chouhan announced these estimates despite El Nino and a delayed monsoon. In the previous",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "New UK-EU treaty has 10-year termination clause",
+   "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:59:14Z",
+   "summary": "Text of the treaties will be published this afternoon, alongside legislation designed to enact the bulk of the deal.",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Uttar Pradesh MSME Promotion Policy, 2022: Incentives, eligibility and implementation",
+   "url": "https://www.business-standard.com/economy/uttar-pradesh/uttar-pradesh-msme-promotion-policy-2022-incentives-eligibility-and-implementation-126112300551_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T09:56:52Z",
+   "summary": "The policy is one of Uttar Pradesh's principal frameworks for encouraging smaller manufacturing enterprises",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Explained: US-India tariffs timeline from 26% to new 25% levy",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUDR3UmctTG1QbS1TSjBVTGViTUp3blBkUnpTaGFuQVBuWnNIZ1ZBMEd4MUtmNHhoeF9oandrSldEM2RWVnhuZnVhUlZHUUVHUkQ4bHRXUldNTmNsUmJoMnhkaE03NkI2dkZrTENFcUx3aW11UjZJaGtzektHcnlqSnhvN24yVl8tek1hcS1TSHZXdFZCclpjTHRoNUlwaVdsVVplOVlpQ3XSAa8BQVVfeXFMTjY3NG5pU29HREdJNnRNOWZDRWQ2cXI5YUJCZDdIbmhuWm00WXNTaUY2LWg0TDNqU2FKdm5VV2VLUFJhSkhna3VQTV9OSlJyd090dFlVSWFDR1l2XzhYdlhwemY3X3NJUFB4OWJtRDhiazdjTUJfUVBsVl9XcWRWWnB6WHFHbjZPWjAyUUxNMHgwb1FaVzFsRm9BcVZsSXJleUhVSVJtWG9fRUhjSzUwZw?oc=5",
+   "source": "The Indian Express",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:40:24Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "Car finance compensation payments explained",
+   "url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:39:50Z",
+   "summary": "Millions could be entitled to compensation as a result of commission arrangements between lenders and dealers.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "New US tariffs: Brussels protests, but not at the rate",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeTlaZmxZS0RUXzJ0dXJDSFFMd0g2RGJKRm5mdXdpLUJfSDNyTXZBSXl6Yi1TT1JpaWIwUU9xeG9mUjl6RzNNOFU1a1JfZFZYUTlRQkFqcTNEY0RsNkg3U3RGVDJBZFFnYzVkSS0zczRSSW1kZDJWTlpPZi0wLVdZUw?oc=5",
+   "source": "Steel and Stainless Steel News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:37:53Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Musk's plan to send a million SpaceX data satellites into space approved",
+   "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:27:44Z",
+   "summary": "The Starmind constellation aims to be the most cost and energy-efficient way to meet the growing demand for AI computing power.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "UK signs £8bn deal to ensure submarines are 'warfighting ready'",
+   "url": "https://www.bbc.co.uk/news/articles/cq39gz99l1pyo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:23:46Z",
+   "summary": "The deal will allow \"work around the clock to get our submarines back out to sea\" , Wes Streeting says.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "UK regulator admits error in calculating car finance compensation payments",
+   "url": "https://www.theguardian.com/business/2026/nov/26/uk-regulator-admits-error-in-calculating-car-finance-compensation-payments",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:18:11Z",
+   "summary": "FCA also tells Barclays to stop making settlement offers while it works through data problems Business live – latest updates The financial regulator has admitted that it has miscalculated part of the compensation scheme for victims of the c",
+   "categories": [
+    "Regulation"
+   ]
+  },
+  {
+   "title": "US inflation accelerates to 3.8% as strong growth complicates Fed's rate outlook",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BM0V6STdiUGQzdkZZeVhMa3g4Y056REVjQnBDZkRlUGpTemFKeURNUmMxWW4ydnlTWGRFeVhrdkpXQmNKNEZ3ajY5M1FhSDJhLWg3LQ?oc=5",
+   "source": "AzerNews",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:17:00Z",
    "summary": "",
    "categories": [
     "Central banks & rates",
@@ -1723,40 +612,1150 @@
    ]
   },
   {
-   "title": "Share your most outrageous experience when trying to rent a room in the UK?",
-   "url": "https://www.theguardian.com/money/2026/nov/25/share-your-most-outrageous-experience-when-trying-to-rent-a-room-in-the-uk",
+   "title": "Details of two treaties at heart of Andy Burnham’s EU reset to be published",
+   "url": "https://www.theguardian.com/politics/2026/nov/26/treaties-andy-burnham-eu-reset-published",
    "source": "The Guardian",
    "region": "Global",
    "official": false,
-   "published": "2026-11-25T16:01:47Z",
-   "summary": "We’d like to hear your stories of trying to find flatmates in the private rental market in the UK. Have you had to audition? What demands or restrictive rules have you encountered? Finding a room to rent in the UK has become intensely compe",
+   "published": "2026-11-26T09:16:19Z",
+   "summary": "Government also to publish bill that will enact EU deals as Tories and Reform hit out over 10-year termination clause Europe live – latest updates Business live – latest updates Details of two treaties at the heart of Andy Burnham’s post- B",
    "categories": [
     "Markets"
    ]
   },
   {
-   "title": "Committee proposes GST data, salary records to reshape state GDP estimates",
-   "url": "https://www.business-standard.com/economy/news/committee-proposes-gst-data-salary-records-to-reshape-state-gdp-estimates-126112501232_1.html",
+   "title": "Textile stocks: Gokaldas Exports, Arvind, Kitex Garments fall as proposed US tariffs raise export...",
+   "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPaDlEN3A4dndVSk5fUi1DME9sQXdUcE1RblptVEdIUmFkSHExa2FqZ1RmSGtBSF9VMHZXaVZyYXdBUmJJTngzVUNFMkFqaVJZMVBnOWxWeWJKSk4wcTVuUmpEYWhWUHJYRzBWSFMxUXF1dVZOWks2dVhaVkdHRGlwOVQ4anU0UmtERnN2VC0tVUxKMHh6c0c0TU5aOVN1eUxQN05BaHlObENfZ0xJSEtaaElMMFZQVzhjODVxa29GLU13N2c1UEc2aG1QRTRDUjNFbGNHX1Y3bURJdHZEbWZ6MXZhRU5CWHJoalZ6LWM1Y01Mdzh1UWxsUkNkM05mQzhlRTNRY05aRHl1Y3VtZXY5MnQ5LXpXVUtzMHVQQzJkM0paNnM2R0FTS012Sm5QUEI3WnJIalVTQXJTeEXSAcACQVVfeXFMT2FLdHA1SUNUQ3JjVVUwYWV5ckh2bEowM3RaNFRER2VwRHFyUkdHdnJkN3VVYjFINWhQb080ZjVCNVFqZnlLbE51VGNVNm1wYkZ2TTVsbHk3OXBvTC1KOXd3YXNvM1pyRW5MRDNaTWxOUEZWVDBpNTdBS21vNVVtdjdhcnpnUFBiTkl4eks1WFdjUlQydWVBeDduWDQ5a1hHYmtZUDJsajZZcDBfbmJRUi16a3VMcF9uS2VkQkliVjA4ZXNlTXk2bTU0TEFiUHliR09HdjdVY21nUGJGYUxWUnZzem5LbTc5ZXpsdG9jaE92dG5XN3EzMXJWVjZabzBXbmlRVnJ4dGRHVTkwNGxMb0o0VW9aOGVtOUQxdWc2anJxUGNKenR0X196c1pReHg3YWhOY1cxSzNzcnY2VzF3WDA?oc=5",
+   "source": "Moneycontrol.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:11:45Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSkF3aC1sbjRDck0zelpqaHVfa29acDJvY3VITko0eWJjaFJaQndUREJXUmhZb3ZDZm14YmRVZDFOV2JZUF9YNW9xVF9lOHVSTFVQWVBQRGpSQy1STi1Pa1EtTW9vQVRmUmNPQm9wdDJLcmNSRlB5MEhLak5VaGpEWVhNVThvNUZIQnVYa2VDa0ZyMHBtLUx5REVTUmRySm9WU3BwMm5VWTRtRjdXRVZOYWk5NDc?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:11:11Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Exporters seek early trade deal with US, cite 17% tariff advantage",
+   "url": "https://www.business-standard.com/economy/news/exporters-seek-early-trade-deal-with-us-cite-17-tariff-advantage-126112600601_1.html",
    "source": "Business Standard",
    "region": "India",
    "official": false,
-   "published": "2026-11-25T15:58:46Z",
-   "summary": "The NSO panel has proposed using GST returns, location-wise central government salary payments and annual enterprise surveys to improve state and district economic output estimates",
+   "published": "2026-11-26T09:08:17Z",
+   "summary": "Indian exporters on Thursday urged the government to seal a trade pact with the US at the earliest, saying the proposed 17 per cent tariff, as outlined in the USTR report, would give India an advantage over competing nations. They said that",
    "categories": [
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "High US PCE, Trump tariffs and hawkish Fed outlook weigh on stocks",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOE4xLW1QTzlRR1RGR1FSMnVwVkRTSnVHTmt0Uk1ZYjlQeGU2N003ZFVBZVAwU2lZWlJUUFduTDhOVU9CVUZxdFZkelRORkxiMXhWU01GTXJka0Qxc0xGNVQ1bU5vck9RSUlwX2xPT3gxdTVlV2lZdGFGZC1IX0RKNkxybktEV3hxR1Z4ak1XMW9sclpvQ2lTTUJpUGRaWVNRQ0lJNERHUFN3NVRIVGVmMFhySQ?oc=5",
+   "source": "www.equiti.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:05:47Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Markets"
+   ]
+  },
+  {
+   "title": "Roundup: U.S. inflation rises in October, increasing chances of rate hike",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBCb1l3NVgwWi1hNGttbHRENWdrX3Y5SjdfSm1JWVJFZXpOTGxaRHAwZGMtc1JEeHZKdjN5T1RaRGV2OVJlYmpHS0R5Y1ZEWWFzdGJkaWpzdXBDSzNwektxVkJTX2Y5TW9pcTRZR0JlS280VkNOMGVBejNNems?oc=5",
+   "source": "Xinhua",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:05:15Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "DXY Forecast: Trump Tariffs, Inflation & Fed Rate Hikes",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTVSa3RtZkR5dE9OTnE2eDJWVlRVM1F4ODhRVGtMSlFZS1l2R0JibkNzYmN2NjBUT0xpV3lDUHRwLTF1S2hBQVJDNnV2S3VXUWlhTFF5U2twTk5PUk16YzBZaGgwemNPMGhlNmhHbnc1TXl6cFVzQWdwOVVqSUh0dDd3SllrYzBraWZrd0FoUkZKdVNrd3ctR0l1VVRtb0tack9J?oc=5",
+   "source": "www.equiti.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:03:42Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
+   "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:02:30Z",
+   "summary": "Norse Atlantic has suspended all flights and said it may it have to file for bankruptcy, a day after it warned its financial position was \"critical.\"",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "China Reserves Right to Respond to New US Tariffs...",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQmtqalVYSjRLYkphRW5aUjEtUV9obE5aVlc4akgzejVwN2xnTmZHc0FNVDc3M2ZQOVpXXzFjdUpGV3E3NFpaSFhEY0NYNU9WRWs4azNzUFJZeDl6MjVHdjhmZ3NGZXdZb1dfVGJZcFJlNGNsdzRBb3c2VTREalNqY01SYnlXVEZSQUdsaHRQVUpwMG05X2piQXlGd0RvQQ?oc=5",
+   "source": "Jordan News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T09:02:21Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Money Market Operations as on November 25, 2026",
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64044",
+   "source": "RBI",
+   "region": "India",
+   "official": true,
+   "published": "2026-11-26T09:00:00Z",
+   "summary": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS @ --> Money Markets @ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 7,79,137.97 5.72 4.30-5.94 I. Call Money 14,280.85 5.73 4.30-5.88 II. Triparty Repo 5,",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
+   "url": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:59:11Z",
+   "summary": "Latin America’s copper, oil, gas and rare earths could benefit from rising AI energy demand, if infrastructure and fiscal policy attract investment.",
+   "categories": [
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Proposed 25% U.S. Tariffs on India: Impact & Analysis",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbWo3RTdjaGx4cGxxVUl5UnhEYTkxcFY2NGVTaXFUNU9XcG1qQkQzakNhT2o3Wkh6N0NmUnFxeTI4WEk0NmRKMFNxMFJkYkd0cFVWaWlPNFg0MjRTeEJmR2sydE9BLUlVMU9UdVZmeURQTE1QenNaX1Qxd0FpWTZRWExR?oc=5",
+   "source": "INSIGHTS IAS",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:59:07Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "China accuses US of ‘political manipulation’ amid fresh threats of tariffs over ‘industrial overcapacity’",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRDVVQ3ZnTzRlOUhvUVhzVUZrTHZGbFpGZXZDLWhWRHdLd2tLdDBZandoSExWWF9pVHdRc3FwUHhaUlF0a0tyMkpBQWtHc2xZQ2duM3E3OWJULWVHOV9YNU9Pc3FxS2N4Y3JMaDhfTG9NeWdrcHp2RmRGTmRhRHJObmw0VVV5UTBtbThSTGhKa2NWMmRCandkX0lJVkNKYVhjTXJLaEg2UjVaTkpkclNmX1F2dmFQUVY0eEI2bkpqdHdLcG03MjdnRGotekM4Umc3R0NDOENDNS1FOUd0R2Y5NjN3?oc=5",
+   "source": "Anadolu Ajansı",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:54:31Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "How Donald Trump's proposed fresh tariff salvo for India compare with rival nations",
+   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/how-donald-trumps-proposed-fresh-tariff-salvo-for-india-compare-with-rival-nations/articleshow/136184609.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T08:52:31Z",
+   "summary": "The US has proposed a 25% tariff on Indian imports to address excess industrial capacity issues. This rate could decrease to 17% if a trade deal is reached. India's trade ministry is reviewing the US's trade practices allegations while defe",
+   "categories": [
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "Gold stabilizes after falling to more than one-year low",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE42ZldNcG1GdnBya3l2U0xEQWtVN2dDNmJUaDhPcl9FTFlYbGJ4T09peTctNDVFdHhxUUd0Znd4c3FkdXdOdmM1ZzNCRUg?oc=5",
+   "source": "سانا",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:46:34Z",
+   "summary": "",
+   "categories": [
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "New Tariffs on China Risk Undermining Trade Truce With U.S.",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWUcwQ3JjLUlNWjhSZnFuYWMzVEFGd0RMR2lZT2VmWUdBejNHckpxbWFSb0lsTUNuTzktdm9qTk94eTgxMXFRQkplOTdZZkFDSEVaUkVZcWFfb1lEMTNEVzFHd013bXhoRFU4ajZjOTB0UXFhM1FacVliRVdqcFY5dG11UURVYmFZang5ZEpaZEVCazhBMjFz?oc=5",
+   "source": "WSJ",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:42:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Gold Rises But U.S. Inflation Data Fuels Rate-Hike Expectations",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNajEySk9PeUN4cE9LZVVCWFlJYUUycFB4TGdFbzl2WXJrVUlmLTNwcVBYUl9YdHdVbnNGS183bTJ4b2VPSGU5c1c1b3F5RUw2cEM5c3pQOXFFcEw4T3laYXU3X1BQd01CNm5qbW13THBGUm9zX0YwT3kxcEhfZXJDRlZfdW1DdklRRzFIX1Z5WndWcFZiZHcwQw?oc=5",
+   "source": "WSJ",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:40:00Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "China Threatens Retaliation Against New US Tariffs, Calls Overcapacity Claims Protectionism",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV0NINWUyMVJ5MzBlMUVWaVI0Y3huc1FhQjVHUFNXNDhxNTg5bkpCdWpSeGJxX1NzbVVKS05LdlgxODBxMFpCazNlcWRHVU1lQXUzTTk1X3piNXpOZUR5Tl9GdzZ3Nm82X2x1MDg5Z3B3dnQtek8zT3NFZ0RsLUtrc2ZXU0lQejhBRHYyVy1ubURJUVlHS01ReVV2OUJKNUcyb0tfMHlUdXo2bTdQcmJzUkJIMXhScGlrUU9hLTBsTy1IYTN6Y29RbWhDWmhxbWNtX1V3MA?oc=5",
+   "source": "Deshabhimani",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:38:35Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Zambia Inflation Edges Up on Eve of Interest-Rate Verdict",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVW9aRUl4U2RPWWR1Z1dkUmdZVkVSQWJNNnZRVWZwUE13LVF5RUxZM1BzZHgweHZzQS10dThMVDBncThOZUVRMWlzVVZ3VFJ2Q2doWmtEbDFtT2VIS0xIa0lGb2NfMkRRRTJpbkcxeXpWWEdNM0Vic3QtekVnVVY0TDlVMnMyR09qbzd1c25IVG83Tk9xUVh2Q1Rtb2lDSE40ZTlfMmtMcUx0enIz?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:31:19Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Poundland collapses putting 11,000 jobs at risk",
+   "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:24:29Z",
+   "summary": "The discount chain has fallen into administration after its owners failed to find a buyer.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Kiwi Rally Stalls as Firm U.S. Inflation Lifts Fed Bets",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWUdsQm1aRDU0WWt4WERrUmN6dm9yTGNQTVJRTzhFZDU0ODB3eV9PZE04R2lnU082OUNZRHpsUHhnRVdJdEN1Rkp3X1VpTTlISk1UZVp4eXl4dTFSa0dyZlR5bTZkS2I4NjNrRXU1ZGRNU1N1aXNvU0hwdlI5V0FOa3FQMGpJQ1E3LWJIZDFiNTl5b2hLUk1YUEN2SQ?oc=5",
+   "source": "TradingPedia",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:20:53Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth",
+    "Markets"
+   ]
+  },
+  {
+   "title": "UK watchdog calls for shake-up of private dentistry market amid ‘catalogue of concerns’",
+   "url": "https://www.theguardian.com/society/2026/nov/26/uk-watchdog-calls-for-shake-up-of-private-dentistry-market",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:13:01Z",
+   "summary": "CMA report highlights inflation-busting annual rises and practices that ‘may not operate in patients’ best interests’ Tell us: what is your experience of UK private dentistry? Business live – latest updates The UK’s competition watchdog has",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "China says reserves right to take 'measures' after new US tariffs",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdWpVaHkyQ1NBazZnWkRsSW11TEJ3LVdLa2JPTnBJWjBjd1lOandDdzB1cTZkWUktNG43R2xDekJkbk5yMWNWdjRDWDRjNTdfQ1lDcE9fUXJ0cEZQaDlYSHhMTXlyRDNMeHF5QVdGN0ZCRm12cWlSaTFSZEU3aS01NjVRX3dnSmpGazBHZTR2emY1alY5VFNkenFZMUpqTG1jemlaSkxGZklUMUhwUTNZN0V6d0rSAcIBQVVfeXFMT1QwV21Tdm1jS013OHpobTV6QURGLVZEeXNfNWxybkY2VHYxRWhpZmFCdDRkVGs5VTRob0NESENtMWNtaG45VFpFOGhJd2tKeGdnUDF6SURoWlB4aS1VdU9MUlQzdWo1ZjM3dldJcW9PcG5Ub0RRR0o0OUxENE1NVU5TdWhXYzgyYTdkajZGTGxwTHczTmJFNkxnQ0VfWl80d09KSFAwcU43VGdNNi0xT2ZaLVYzZ0RDN2g0UzhXdllmM0E?oc=5",
+   "source": "The New Indian Express",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:08:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "European shares as benign U.S. tariffs and Thanksgiving lull offer relief",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWJYZnBRMFQwTDY5blN3VE0tSk9sQmhJN29KQjdrNTZwQ1FIOXpLZHNnTUpJbkY0Qm5wYS1VWFh5Z2kzWEtwTDJhUG55a0xXRjRFU25ZeGptWlU5azVYTWRreG9XSWtvbUZ3MTNReEVneVRLbG9XOS1YbDgxQWwyUWZmTjVoQk9NWlNEUTVOZDB5UWFBMzRYNmtuTmdCNGx0MG9WXzM1Yjl2bnNSQUR1VXU1NEc4NzdRWnZFbk4wY0hoZ2s0NEt3?oc=5",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:07:34Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "US Inflation Challenges Expectations For Faster Rate Cuts",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQN09nSi1GY0cwU3RiNUw2MjdqellicmdYTUJWMDREVHVvVERILWFaUlg5ck9rSmpqSnA3TjFrWnRtZmxWdlQyR2xtbEFwREphcE9lWVlTZkJVY0ZDQUZoQUcxTTBZM24yTUI0U256VFRQdElvdndTVHZLYjEzbHdzUHVXalRmMEFDQnZuQU5sNkdWQkE?oc=5",
+   "source": "Cointribune",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:05:00Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "We may all be eating too much protein. But that won’t stop the influencers and big business | Devi Sridhar",
+   "url": "https://www.theguardian.com/commentisfree/2026/nov/26/eating-too-much-protein-influencers-big-business-ultra-processed-food",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T08:00:50Z",
+   "summary": "Protein is the food industry’s current nutritional good guy. The fact that it’s often added to ultra-processed food makes it anything but When I was growing up in the US in the 1980s and 90s, fat in foods was demonised . Low-fat yoghurt, lo",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Major economies balk at new US tariffs over 'unfair' trade",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTFRtOHN2Uk1DcllGOGpSWUJldzFyR2xHY2ZzR1EtVXhUUDR0M2ZHZy1PMXNQa0ZBMW51Rk0xb0l3eDNsb3B4cl9oMHNQYjE3aVFrRmlwLTg3VGVvRDBDZ25odjNUeGI4aU1ub2YwSFoza28xMVh2STF3bEhTbkRVdmgzZDFNbGJMNEZvZ0NkcG5pVjV5dWpDNktSSVFNdDV4b0hMeENodExud2tIOVU3SWR3?oc=5",
+   "source": "Daily Dispatch",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:51:24Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Tariffs come full circle: How Trump’s Section 301 tariffs restore duties struck down by US top court",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeG5mRkxxcFJUUGJTTjJoX2xrN000MXdoUHpheGkxWkpzX0FMWmliZlJnNDJZTmZ5VGlYUndiWmtlTWJ2RXcwbE5NVDlpUmE5MGVmdlE1RjdYUFBQWVNmbGRlTmpfX05KVkJJMkw4WVNnTXAxYWhvS2hoZHBoVnVpT1RKVjNMVFZqNUVIUzdHR2pTemdjNnlBUVpZcHZXZFY1UW5EWUJ0YkhCSUNxMlZLWmxpOGdoOUdPbUVsVE1MNWPSAccBQVVfeXFMTm5GN0lfREVyUm9LNmwtRGNraFc4QWdyUVVzZTRGWVhEX2hTTlo1Ui1oQUd6U0x5c0NUOTgwQUtjVXlqVkFFYVp5eFo0b2Z3b3FzX05qOF9hclBzX0owWEdoeXNpOS1TR0ZDUTY2cDloYzdaTUxCRjdjTzZRWUFSelFSZkhzZDVBT01HSTBtd2QxQ3VwdWsyTXNsc2F0SDJYbDVlTFVnMm9Ta2JzbUNGNHlmVS12Y2laVEo2ZUplYTJkZWpGeGdlZw?oc=5",
+   "source": "The Indian Express",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:46:58Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Taking on Starlink: Europe’s largest satellite factory opens in push to rival Musk",
+   "url": "https://www.cnbc.com/2026/11/26/starlink-satellites-aerospacelab-factory-belgium.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:45:05Z",
+   "summary": "The 20,000-square-meter mega factory will be able to produce up to 500 satellites annually, making it the world's third-largest satellite production site.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
+   "url": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
+   "source": "CNBC Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:30:11Z",
+   "summary": "Xpeng Co-President Brian Gu shared his humanoid robot predictions with CNBC in an interview Thursday.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Singapore protests proposed US tariffs of up to 20%, urges Washington to reconsider - CNBC TV18",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMnVodjVESlZVczZYeldZTjU1ZGtyZXo2NjhOVXJ4cm42UU1vQWNrbjZqY2pZeWRFeEJwcE9mZ01MVGt3QkVaMTd3a25xRWVncGhrNUhXUUdGXzBVbkhRZmFxd3VpNlRJRjByaU1QOTFHWk5nMml5RnpvblIxRUwzamtDNU53TENsYm9BRDhlRHN1Ty1RTmU4eUZYUWNDNWExMS1HSDlLYzRWdDg1alNlX0N2NGtwRE0?oc=5",
+   "source": "LinkedIn",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:29:16Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing",
+   "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:23:42Z",
+   "summary": "Goldman Sachs Alternatives' inaugural survey of high-net-worth investors found they're increasingly looking to alternatives amid turbulent markets.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Gold steadies after dipping below $3,500 on US inflation data",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVjF2QnE3eDdUX3ZFbXgtUWZ2YXZfTjRpbGllQm9DaFlfamhrMzdQdFNQaGxRbkowRlNMNjBiWGlTRUpKNkJDRGJLRWVZeHYtRVFTOHFGaUJxS1RwT0syemlqU2lfNUlrUEJDUzJuYzVSTVp6TGV1OENmM1c2amxubzB3MVo3MmdsanhWcGI5VEJ4NDNvM3RtN3ROd2l1UFEtVkZB?oc=5",
+   "source": "Anadolu Ajansı",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:19:46Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "'Unacceptable': China, EU among major economies against new US tariffs",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSzlzNkVzNEdFVU9tanZOU0tVbWJxVW9oV2VueklTWlU5bDNSbFFLNkRzbEZlRGVJVnkzWjk5cGdLZzdmXy1PNmtHTHROU0VPY1ZSdk1QUmVZWVYzQ0xSWXhHUWxtVXd4M0xvSHRpNFNiNkdWMm9sRW16ZjktcEg5dnl6bWx1a0pKRlo2bXl4VE1yNTlqTVpnTFF6WVJhd2dWSlhXQVhMek55Nkk?oc=5",
+   "source": "France 24",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:16:41Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Is the stock market open for Thanksgiving? The answer might surprise you.",
+   "url": "https://www.marketwatch.com/story/is-the-stock-market-open-for-thanksgiving-the-answer-might-surprise-you-e68114d4?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "region": "US",
+   "official": false,
+   "published": "2026-11-26T07:16:00Z",
+   "summary": "The answer to the question of whether the stock market is open on Thanksgiving isn’t a simple yes or no, as the major exchanges are closed, but trading of equity futures is open for part of the day.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Elon Musk pledges to give two SpaceX shares to every child in the US",
+   "url": "https://www.theguardian.com/technology/2026/nov/26/elon-musk-pledges-to-give-two-spacex-shares-to-every-child-in-the-us",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:02:37Z",
+   "summary": "The total value of the shares could reach almost $18bn and comes as tech companies debate how to share the spoils of the AI boom Elon Musk, the world’s richest person, has pledged to give every child in the US two shares in SpaceX, the spac",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "‘It’s in quite a dark place’: why UK housebuilding is struggling",
+   "url": "https://www.theguardian.com/business/2026/nov/26/why-uk-housebuilding-is-struggling",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T07:00:48Z",
+   "summary": "The sector is in retreat across parts of the county, with developments paused. Despite a grim outlook for 2027 there is some cause for hope A shopping centre in London that was due to be knocked down and replaced with a retail emporium and",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "London commuters braced for disruption as tube strike begins",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/26/tube-drivers-strike-will-cause-severe-disruption-to-network-on-thursday-and-friday",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:56:24Z",
+   "summary": "Industrial action by RMT drivers expected to cause severe disruption on Thursday and Friday Severe disruption is expected across the London Underground on Thursday and Friday, when many tube drivers will go on strike. Drivers who are part o",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "New US tariffs capped at trade deal levels",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSW80YmZOMjQwOTU1Sm83YnZYQW1HMXhnaldxa19vWUNva28zbWE3TG1yMzE0TThPSWN2VTJPQl91Wnp3bmVOVzFfbVVPMmhobkVLOTJ4TGFIOG9kbi1JMXlRQjhKeWg4QmRwXy1sYXFGQVpIdXdsWWhSb2oxZUtQSU9hWDRNYk5jaXpEWm9MN2Qxam8?oc=5",
+   "source": "FXStreet",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:56:23Z",
+   "summary": "",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWk5iY21FejJMUDVfS2h4ekdoUnQ1RndSalFWS2pkZzJZY1AwSXRnY1otVEdsMUdRVWZJV0NKSUxEM3Boc2VlQXNMMWkweGxJSWVGaFJHcC1qWTk0WTdIbXR0Z3VNQ2N2R054YXZMa1I2eVk4RjU5T09FelF5ZC1KdGJRYnV5bFdvMjJoRzBpMjNoUDkzMDJiTmdvejdOMF85Vy1JZU16eEI1M3VzVlBNa0RyMjk?oc=5",
+   "source": "Bloomberg.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:56:00Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "EU rejects new US tariffs targeting industrial overcapacity",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaXdMT1VINDZiRHBnMWc3ckhCb2VzUWxvQ0VKdk5jc1FUcTc0V24tT1BKV2piMFlFbmVMSzc2U05vdlFBWW54eWpadU9rQ1h3QlJGaEJkYUdHclh1ZzhZcU83YnBfeTBqWVcySE13bHVVbWVTbWJpUTlXLWNYbmlRQndFRkRGbzZJMFZjRGtOd2k2bXFwN0ZLMmMtdi1HQVNqT21xd2JYVQ?oc=5",
+   "source": "RFI",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:54:58Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Countries targeted by new US tariffs voice their displeasure",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSU5jZFhoY1JtUWxvd21wWXNlSjBkXzE3ZzRfWFpRbDU0MERWTVBKTWlJd1Z4aXZQZGhCeEk5TUhJcjNORTN0eC02aDQ0QkppR0lvNzlWXzNxVVZwaHAtaFdkcEtIWUNHcTg2RTE5U2RVTDc0RUdDQ1RLLWtJZXJfamdKTXNONG5KaXhzMUVEdGx6NmJPWmt3?oc=5",
+   "source": "Le Temps",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:54:55Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "USD INR Rate: Rupee Falls 20 Paise to 92.40 Against US Dollar as Crude Oil Prices Rise and Tariff Concerns Mount",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYXlFVFMzUXI0Zi1EQy1pcWhSTUxfaVFNVWpPcEtEaVJSYkdJSlZBczU5OTF5SklUVkFfbzJjRFZ3c1FKeWo3OXRyMnNMOGstNVcxcGVZbl9sMl9ZSlhWQU1sN3AyeUdFdFlxMFJpSDBiZTBqMTRxc1lNRjBqZnhEdkp6bF9XV2RnWFgzbXZDUVNRalZ6ZUNUaW11N0hKRmdFSS1MbmdyWVJjSkY4MkRybWRiaExhbE5ydFBwWWtfb181d1JicEpRaEh3?oc=5",
+   "source": "Kotak Neo",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:52:30Z",
+   "summary": "",
+   "categories": [
+    "Currencies",
+    "Commodities & energy",
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "Major export categories exempt from US tariffs, frontloading may cushion impact on India: Reports",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOY2JoMXhXZC0tMzFSQUJ1Zl9relRmc1p1OUl4MjgtcGFlV20tUTQ0X3paRmRVRkZURVU5QS1sNlVRQVo4YXIwd3d3dmRLNzdtcE9SYkxMa256WmFUUGpsZFpYZXBMVUlDV0tVOHFmeDNUYnE4Nm9tVzhidnY5RkhkUE5zZUpabm1xc2laVzV2RER2X3EyX1VNZFctcGdXRWtSM0FoRDdXVzR3VDlTS1NzY09vLW0xVHJ5LWhRNF9IWlg0Zw?oc=5",
+   "source": "Public TV English",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:49:42Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+   "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:39:34Z",
+   "summary": "SpaceX said it will donate one share of the company's class A stock to every active Trump Account, and CEO Elon Musk would match it.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Japan calls proposed new US tariffs 'regrettable'",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQXhoX3MzV05QVEZIMmw2WEJ4dUpJVzNKNVdWQTNqeURyN29xY2ZPNTh5SDVFX3VGUU5SVno5b0pPY3R1Ui1qcU10ZTBrWm5VTmd4WHV2NS1Mc2xvOURTX1AyZy1od3ZKaVc3MXVyUUxOb2tFZ0NpOGRhVWRXU0VzdVJLSzZRY2hGYTNaM3dxU2VRX0HSAZgBQVVfeXFMTkFPRmVCZGVORmxmU193ajZLc3Riend0MldPVzNTZjRWX3JfU2tXVG0xY2x2c0ozM3pCQVVYanFmZkhCdGhBdjkxdHg0allhWFYzZGhpQnBYWTFURDhoT2lXVzlVcGM3eDBxcUlmdkFzMjFhWmNpWmh2Qlo4VUtIa3IwZERHWHFIZ0xydVFkNkVhWGRlcFVFZWg?oc=5",
+   "source": "A News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:38:24Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "How countries are responding to proposed US tariffs",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBEc2FGREZHYTU1U3dhRlhSSlpxcUpPVjNmUDZaaUktQXBJVWlwMTlyZEFHQ21ETFVUOUU3a2drc2x1ZzVnRFVjZVNHLWZhazhZdXFtRFF2Uk8?oc=5",
+   "source": "TRT World",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:35:42Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Eurasia Group expects 'very reserved' China retaliation to U.S. tariffs",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdlZPSWpnR194eXZjVUpVQ3pRamt2Rl9FTlFTUWc2MnVYODh4ZWp6eEVGak5Tc2VGRmhoSndLTjdjZ1lGZTFtR3l0UUJKRWlsQXgyeGhPcDRGSmluSzFmd2t6V1p5dXhhMmJvRDZCb29DcGFkSWNxRDJaRjAtb3ZKdFZkVzNIc2tkWTNMOExPNXQ3RWVZWktjS0w1N3A3bXdKMEJKbHA0eGxJMVF5OS1r?oc=5",
+   "source": "CNBC",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:23:34Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "South African rand steady ahead of producer inflation data",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNejFWZndKZmdWbWwyZzN0aUtyQll5YlRvbHp2MnEtODJJdWppNFdGdUtlaFNTQ2stQ0E4elBzbTdkMXVFTUZWQWFSRTNHLUxfY0hPcEVQUms2RGdwdnJZNnc0c1F3bzZIX3JUOWpXcF9PeV9mYVQwVkNXMm5meUEwdkRhVy1CZWkxSWY0WXcyUUZDWXpEb1VTaDFvNVRoOGROTE9LMDVRcw?oc=5",
+   "source": "Reuters",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:18:00Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Parents cutting basics at Christmas, charity warns",
+   "url": "https://www.bbc.co.uk/news/articles/cq1k98gpzmy4o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:13:47Z",
+   "summary": "The chief executive of Worthing Soup Kitchen says some families choose between food and presents.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Trump tariff threat ‘unacceptable’, says Brazil, as China denounces levies as baseless",
+   "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
+   "source": "The Guardian",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T06:10:56Z",
+   "summary": "Brazil indignant about proposed tariffs on sugar and aircraft, while Beijing says new levies amount to ‘political manipulation’ Trump proposing new tariffs on 14 partners including China and EU Brazil has said it will not bend to the new US",
+   "categories": [
+    "Geopolitics & trade"
+   ]
+  },
+  {
+   "title": "North Korea's Kim calls for nuclear arsenal expansion, says status 'will never change'",
+   "url": "https://www.cnbc.com/2026/11/26/north-korea-kim-nuclear-weapons-expansion.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T05:50:34Z",
+   "summary": "Kim Jong Un called for wider use of tactical nuclear weapons and an expanded arsenal, rejecting international denuclearization pressure.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "US Inflation Rises To 3.8% in October 2026: How Will It Affect Gold Rates, Stock Markets, Interest Rates And India?",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQdmZFZTllSldtbW1hcjdZZHF2OWFZc0dLZVZ3RW91djJldGJYbUN6bHN6dk9iZGNBSlk3b29DQVphY3otcWxOMzJRd0pKSmEzNS1yWjVTOW5RemxheWZoREt0WlM4ZXNqNWszcThCTy1oclB6aE96SDBKbmZDZzZRTmc1T29CdE1HQXVwWHZPTU9FWW1hY244dzJITWlFN3BHd0Q1dEVFM1hMV2xqaWhoeW5nUGJLZWo3LTMyemhzaGc5NWR1MXFQRnFoWTRKbEw0QkIxbHd5dlo2b0cxZjdvOTRWeUY5MUtrN2FGdlozZ2dfdHNTbEVQR211c9IBggJBVV95cUxNblJwUlpibWZpWTVhcEluakZ5Y2I3cUVneVNoejYxVEEzUVpUVFItWjFkV3FrLWhfRFVkWDExT2hvS3J4RE5uX3I2X1ktRW9OVDYtZVhZZllHRklRQlVKMGN4ZkZydEQtSXI4a1ZjbmlVOEJudHp4VERqNXZHRHhjeTdwOUI2QVdNSnNPcENXc2VoeXRSY3Znbzd3LVN3ekVrbURhY1hsdlVhUlBjdU56TXE0enNyVWxGNlpNeVhnUkp6LUg3RjlJczlGd25NY0ZLd3A3R1U2Nm5MbTdEc0tpQ0dOcl92Zk9ZWGIyTHRUWkVXOENxMUxVR2Zod0dJaGdmTnc?oc=5",
+   "source": "Jagran Josh",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T05:46:38Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth",
+    "Markets",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "Stocks rally in Asia, US tariffs not as dire as feared By Reuters",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQd0RZWHFaUUQ3bGJvMmlXTXlDMjZ4UnJ2RU9KbDVYeEQ5VXRiaGwzSTBsS2J6X2c1aHpLSzZCczFva0NMQ3QtT0FUaEJFRDV2d3dRQjNZcENCVmhZX3E3bmFDQm13bUxuVDFMN09fZUhLdHlNcWVtUUpiTjhMOEdjOU9FZmxnU0RzZ3UxU0J2b2tZX3o3eVBrTFNsek5icGFpMk15N3RsSVdJaXdyeUE?oc=5",
+   "source": "Investing.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T05:39:35Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
+   "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
+   "source": "CNBC Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T05:36:01Z",
+   "summary": "The AI boom could trigger a recession, but data centers remain an attractive investment opportunity, a hedge fund manager said.",
+   "categories": [
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "11:11 | US Tariffs on India, NSE's global ranking, Anthropic's Wall Street divide",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSkdtX1ZRRF9DemZrSXJVUWwtdE9aZXgtY0tZZTVxNmdfTGswZ0JfdmtfSEcxeDZZWU9LR2tyWHExQ3JuUkdVODJlSnVJVlQxZ1pzWERwWlUzSG1qYlZoYW4xQ000X2pPcFU3bm55M1gzMHh0eXRKSTVzSzEwa3lOVDA3QkoxS2FMVE9jLUFZQlFkdFJ5Yjhtc21KYk1mcnRRUnhWWmh3b3ozQkQxVkVYVFZQT3hiOTMyTnZrY3lB0gHDAUFVX3lxTE9kSXhpSENBNzBRSkdscVk1ZjFRY0VHdlpLbEg4a0JhaWRvUDY5UVBjaFRBLVlFUlptQjBnajRic3RSTDVSblNkZXIwREtOamRGR1JHdU90bTZLcjdCam1WM09IY1EySGRVckZBNlU2REFOQ1BRd01KVEo4Q3ZGdDhscmhXUldVZWJWQjRtQWNqYXVVcTY2U0d5WUFiTDNUdHRVZFcxX2J6VzMyY1BFb3U0RTlvQ09mS1JGRmd4U0pobmpxZw?oc=5",
+   "source": "CNBC TV18",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T05:30:10Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "A Fed tightening to allow subsequent loosening",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBoMmVIOXlodnl2ZVg0SjJsc3VFVXA1S3o1a3JVNXhsSHJRUExyZlVjajZ4aVIwNWMyZWZia2RjSXFjeDBuMmljOEZVbUF6aTh3UkhNZXVBdVZId3JpbVRfRTlvb2RqNFlsSGg4MjVBTVU?oc=5",
+   "source": "Financial Times",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T05:30:09Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "Rupee falls 20 paise to 92.40 against US dollar in early trade",
+   "url": "https://economictimes.indiatimes.com/markets/forex/rupee-falls-20-paise-to-92-40-against-us-dollar-in-early-trade/articleshow/136179591.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T05:24:36Z",
+   "summary": "The rupee fell 20 paise to 92.40 against the US dollar in early trade. Higher crude oil prices and proposed tariffs by the US administration increased dollar demand. Foreign fund inflows supported the rupee but it faced pressure from rising",
+   "categories": [
+    "Currencies",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "US tariffs already priced in; strong fundamentals, FII return to drive Nifty higher: Kotak Neo",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcWxWQWpnZ1dtT0hRRkhkRVBJLUV1bUdEanQ3czlCeUxKbmhBWVJvQzBjWnl2VzgyLWt5RGtTNWl4c25TZjBfemdES0htVjFxOTRiM2UyNFR0SjdOdU9MdURfZ2pCcW9Hdk82b25fbXBmZDBna2Nnb2U4U3RnZUhjeUhsbUlKZ3c1dE9iMmpFc3BQbGpxZnFlY0FHcFlLNTM5cDd6aUZhTkRjMDhRQjd6S09zRmRaT01ScDBVSUlWS3dtczhwclI3dEpHVUdMRGhkc2VSV2k2RFRqUQ?oc=5",
+   "source": "ANI News",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T05:24:00Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "India bonds tumble as Brent tops $95 per barrel, RBI flags food inflation risks",
+   "url": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-tumble-as-brent-tops-95-per-barrel-rbi-flags-food-inflation-risks/articleshow/136179562.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T05:20:12Z",
+   "summary": "Indian government bonds fell as oil prices surged, raising concerns about inflation and economic stability. The Reserve Bank of India highlighted rising food inflation pressures, indicating widespread price increases. Higher oil prices may",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "Trump's tariff policy: A timeline of changing duties, deals on Indian goods",
+   "url": "https://www.business-standard.com/economy/news/india-us-trade-tariffs-trump-trade-deal-sanctions-goods-timeline-duties-126112600186_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T04:59:40Z",
+   "summary": "The US has changed its tariff policy on Indian goods several times under President Donald Trump, with duties announced, withdrawn and proposed again",
+   "categories": [
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "INDIA STOCKS-Indian shares pause after recent rally; US tariffs in focus",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTVN3cE9jSDd0YXh5WkM5anRXU0RIeXpKdXBDQTd5M0MwYlZSWi1qTnpyTTE0TGxYN2lTd1lLNkhuYmx2T2RJTnI0ZFJQcTFuT18tM3NyenBJT2NkVlY0eFAwOWx5RFI1dEJXNHFlR3l1NjJkNDBLWmtmSFhxdVl0a1pSdkFXd28wVXh4d1VwTktyOS10ckJRMmZIM3kyb2Z6WW12VllmbDl1Q3RLT0VBTWtIaWZZSjFaVHZYY1d6WU9ZNTBvQjZ1dEhaVnjSAdIBQVVfeXFMTXN0WnYzZnhoYUZwQktRU3VILUszUFZfaklneEhYOVY3d053cTA5eXN5eFNwM3RwSG94amtMY0w5U2RORklUejFWZ0ZNVzRUS0pTR3RDRUlwbkFWeDNHOTlVR1VoSEFlNG45aVc3bkthMUZMX2laNzZLSnJ6M28xcW5nQWtxeHFIdU1EY3Y0TXdJVHNHTTc4M25YY2hlQTE5dDFLelItbFQxWE01SnllTElLeTRqYkpQeTA0OVBoRG5JWU02ajM2SERmTHNYaDlvNElB?oc=5",
+   "source": "bfsi.economictimes.indiatimes.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:54:01Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "Adani firms plan public bond sale to raise at least Rs 2,000 crore",
+   "url": "https://economictimes.indiatimes.com/markets/bonds/adani-firms-plan-public-bond-sale-to-raise-at-least-220-million/articleshow/136178950.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T04:49:08Z",
+   "summary": "Adani Enterprises and Adani Power are planning public bond offerings to raise at least Rs 20 billion ($220 million), according to sources. The fundraising could help revive India's subdued public debt market, where issuances have lagged the",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "Gold steadies after hitting over one-year low; Fed outlook in focus",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNS2RGZHQ2cnNGQUVwT25tM2lrZFZkUDMwdXpSWWpkSmljWFpFZGh1dWl3WUwwZ2Ricy1hd2lsSVRRazdmeW1OdXFycllzcmJ2NWxQdEQtMmZRN2pBUjJaTFMtZXlJOHVXNHBDWmdzc09jQmk5YnhQQU0wUmx4cEtVOFl3SVTSAYoBQVVfeXFMTjVWQXJNNzhKbnh3SkxiV1VhbGtUQ1BrYTJfMnJ3Qnl4WVkxMjMwQVAxSHhtSkRWZ2E5TEpIZV96Vm9jRjhKQUV2ZVd2WHd4dmlMTzlxVW9UQWJQSWl4dlNUbFR5VGl5V0EwMURrSndKS3MyOVpwNGdGVzd3eno4TVpBb2tZY0xmNDBR?oc=5",
+   "source": "CNBC",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:45:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Eternal, Adani Enterprises among 10 stocks with highest FII buying in Q2. How many do you have?",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-adani-enterprises-among-10-stocks-with-highest-fii-buying-in-q2-how-many-do-you-have/slideshow/136178864.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T04:36:47Z",
+   "summary": "In the September 2026 quarter, Foreign Institutional Investors (FIIs) boosted their stakes in various firms, notably in Eternal and Adani Enterprises, despite facing mixed performance trends in stock values. While ICICI Bank and the Life In",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Sensex Opens Flat, Nifty Slips as IT Stocks Lead Early Gains",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNaHlsV0VsR2Zlc196dnk4WnU3SEFnSWVmVS1uVFExMW9rTmxNTUR3ZkYtR25Ka2V1cm01SEJhY2hIS2lBQ3RJZ0ZXX0VyYzdPcDZWNFU3OFZQaGE2bjZZdHN1d21yY2thQzJpZDNjc19SVzZLQjMzMzBUalc1Tm5ELUR5RjI1b3ZJZk5LbXJFaW5sbjdJUkRwT21VX2R6SlhnZERpUE10SzJLT0dsaUJzVmhWcVJtVWM2SzJsanM2ZmEyZElIeFo5QUJQcFVqTDNNbGZ5bnNaNmQ3d0U0enZXemlFMGhhR1p1cFJTcm96OUM?oc=5",
+   "source": "HDFC Sky",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:36:12Z",
+   "summary": "",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "Eicher Motors Share Price Live Updates: Eicher Motors Bonus Updates",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/eicher-motors-stock-price-today-live-26-nov-2026/liveblog/136178686.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T04:35:25Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "SRF, Cipla, Thermax: Who's impacted by US tariffs and who's not; Jefferies answers",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPNEptODJWNDdqaTlQTXpHdHlTMnBDaUlSZUVpazM2TldVXzdOY08tTFZEb1g2cGdNOHFKU1ZfZmRQcGxSZEpPWVJEN0p5YWpRQUFfZGlud21QT1haUm9wQmJXT3BSNENfRXo5enNOY3V5bElTVGg0OGpJZC1FcDRDMEVFSy0ydFB0ZmE2X01jZGtySllobjZHOXRPUV9ZS1ZhM3o3cDdIQV9kWkFQVUJrZHpOV2JhS2dqV0FLVWxMX09Fc2V4MUpxVzZJRlpYY2otLXZKWktBOGhzdmdwbFHSAeMBQVVfeXFMTjhXcHJ0YmRCeVJDUnFRWmZXVWFzVnJfVXlzUnp1VHpmQjIwZ0JwYmtWRlV6WlFjZ1pwdTZFOE85UUlXVW1qVU5ZWEZXMVprYjBRaGo5dnpaSjFWVmVWY3MtdlN6NUxneWdqeEhWTk1vaWkyWVdpNHNwNDBESFlLRzRlU2hRUHdicHFoMGlXUlNNYTJuQnp5eFl5YTd3OFVwMjNOOEdxN1JLMG51N2ZFcUQxeDFsM29iYVUyT1ZWZW5QeURKb1paZXlBQ3JFVGV1WjRzdExtX0kyaXF0N2lyNXd6Rms?oc=5",
+   "source": "Business Standard",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:33:12Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Rupee Falls 20 Paise to 92.40 Amid US Tariffs, High Crude",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObFo4U3g1dGVlYUFUdWJIenlPQVVRbEMybXZIQ1lGQmNLSF9ibmlfaEN3cDZvUWVrM0djeTBBSkUtczRIdXd6dGIxRGdsTnAwQUhraFo2TXcxUjh3LXFieFd3YmV6MWpvczZ6Nlowc001eHdzZldpNW5IWmtXcEhEbjRoTjYxQjBsRDktX2Z2dXFiU29DUnlCUlBRZkdtZEdRMkgzZWNMbDdHLVk00gGyAUFVX3lxTE5Ub2RuMXJuekZLbWdPcVBJMl9qNGlqbnU1MmQyYzNnQ2YyaHhoamU3T1JaTVA1bThqSTlBRHk1VUZOODdzYjYtaUFIa3dJWEVQN2RhN3ZwZTI3bC1XaEN3UzVHVjhFWHFQdm9RbVdVS28ybE81UXI0Y2NFTS05YmU4SUhGNmRoYThnNGZVbi0xUTI4T09SdUR2RTFscDR3R2hpdWJoQU1ETkxBa2N6MGVMTnc?oc=5",
+   "source": "Rediff MoneyWiz",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:31:59Z",
+   "summary": "",
+   "categories": [
+    "Currencies",
+    "Commodities & energy",
+    "India"
+   ]
+  },
+  {
+   "title": "Hedge funds are no longer just for the rich. They’re wooing everyday investors",
+   "url": "https://www.cnbc.com/2026/11/26/hedge-funds-retail-investors.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:20:18Z",
+   "summary": "Hedge funds are increasingly courting retail investors as the industry seeks new avenues for growth.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "US tariff threat: Indian traders urge Modi to hit back with 25% duty",
+   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/us-tariff-threat-indian-traders-urge-modi-to-hit-back-with-25-duty/articleshow/136178272.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T04:16:45Z",
+   "summary": "The Chamber of Trading Industry (CTI) has urged the government to consider imposing a 25 per cent retaliatory tariff on US goods if Washington proceeds with higher duties on Indian products, warning that the proposed measures could affect e",
+   "categories": [
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+   "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:12:18Z",
+   "summary": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer India a competitive advantage.",
+   "categories": [
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "USTR proposes new tariffs on 14 trading partners, including 25% on India; Indian experts react",
+   "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/ustr-proposes-new-tariffs-on-14-trading-partners-including-25-on-india-indian-experts-react/videoshow/136178264.cms",
+   "source": "ET Economy",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T04:11:31Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "US announces new tariffs on host of countries including China",
+   "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Business",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:10:58Z",
+   "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Judge blocks FCC early-renewal process for Disney-owned ABC stations, for now",
+   "url": "https://www.cnbc.com/2026/11/26/fcc-disney-abc-stations-judge-block.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T04:00:15Z",
+   "summary": "A judge has blocked the FCC's early license renewal process for Disney-owned ABC stations in 'important victory for the First Amendment'",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Brazil expresses indignation over proposed new US tariffs",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBoZmJpdlh0cHU3Wm1WSy11eG9TVm0yRVN3NWdQZDkydnkxRzl6Qnc3dFZqQUtoX1N2bmlEVnZJMmVNUWpTNE13WUZkc0Z3SU9DdnJ1NzhNdDI?oc=5",
+   "source": "chinadailyhk",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:55:08Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Jupiter Wagons among 8 stocks showing White Marubozu pattern",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/jupiter-wagons-among-8-stocks-showing-white-marubozu-pattern/slideshow/136177975.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T03:50:59Z",
+   "summary": "Eight Nifty500 stocks, including Jupiter Wagons, Dabur India and Hindustan Unilever, featured on StockEdge's White Marubozu bullish scanner. The candlestick pattern indicates strong buying momentum, with stocks closing at or near their sess",
+   "categories": [
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "Gold eases as U.S. inflation data reinforces Fed rate-hike bets",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQY2thUklVaEdLMjdheElwREQ5ZjNfRlB3TjEyZWNQTHJwelJidWk3OUtYSWZKMlhkdkJ5TG1BRHczbW9HOEY2TlpvOEZWRmdGUFVMR3VHMkJhYnAySGtib0dlOUFoSElHOGg2cEpMMjE3amw1Y2ZaRy0zMzQxSDJ2Z0s3TnhvZ2FvQ1RuR3JMTXQ1NTAzN3FrbzZaeVBhZw?oc=5",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:50:00Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Britannia Industries among 4 stocks closing above VWAP",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/britannia-industries-among-4-stocks-closing-above-vwap/slideshow/136177856.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T03:45:17Z",
+   "summary": "Four Nifty500 stocks closed more than 2% above their respective volume-weighted average prices on November 25, according to StockEdge’s technical scan, indicating that they ended the session above their average traded levels.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Avenue Supermarts among 3 stocks showing RSI trending up",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/avenue-supermarts-among-3-stocks-showing-rsi-trending-up/slideshow/136177712.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T03:41:43Z",
+   "summary": "Three Nifty500 stocks that gained over 5% on November 26 featured in StockEdge’s RSI Trending Up scan, with their Relative Strength Index (RSI) crossing above 50 from below, signalling strengthening price momentum.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "South Korea upgrades growth forecast, raises benchmark rates to highest in two years",
+   "url": "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:32:53Z",
+   "summary": "The central bank raised rates by 25 basis points to 3.25% for its final meeting of the year, in line with expectations from economists.",
+   "categories": [
+    "Central banks & rates"
+   ]
+  },
+  {
+   "title": "25% proposed US tariffs: India rejects excess capacity charge",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeUpMQUdZMWNyLW0zNkxDTUFtQVkzTUhKT2hRblctd1hRVWhLZS1nVnJXdTdiLWZMU2o4LTBaekNidkRpQzJxQURqelZQUGY2bkFmd1JiRS1JSzhTUXNFdndtcnVidko1dmJxQk5fRFdUb2YxVExQLW9iS0J6VE5EQ204eGxYcVZzWGpaSVAyeXhPd3JSb0JwYUh1bldFTkN3MV80OXpMRDE0anRVbG41ejkxLXlDbWdjdFRQNUFORHd2RjIwWHRVNlZ3eENfZHQ1UUg2UndvdjRXS2M?oc=5",
+   "source": "Rediff.com",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:29:39Z",
+   "summary": "",
+   "categories": [
+    "India"
+   ]
+  },
+  {
+   "title": "US PCE Inflation Rises to 3.8% in October; Will the Fed Hike Interest Rates in December?",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcTJQeWhhXzNOWVUwSjE4Q1VRR05lcGVyd3NRcW1idWdIWlU0SXh3ajJaNTJ1dndSdW5pZ3ZMLWVjWDB0U01TNnZWQVhnV1VCUzlGaTFyXzVoUThBLWJkVC1zQW1Gb0FTM1JWSTFYcHNfNGRfd2NZWGRMcDBrUDUzdEJOUTN1Ym4yb3lIYkZKaU80SzBGOE5OVHZfdExVcS1KNnN4UlhLYjBuRDVXUWhPV1hmZnFpQjUtR1JrRm5QdndCUTZNcm1jTnhxejh3dnNrQWp0d0VPekNCMU0wTVpTVGR5YUc?oc=5",
+   "source": "Kotak Neo",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:26:15Z",
+   "summary": "",
+   "categories": [
+    "Central banks & rates",
+    "Inflation & growth"
+   ]
+  },
+  {
+   "title": "Gift Nifty Signals Higher Open for Sensex, Nifty on Thursday as Asia Rebounds; US Inflation Runs Hot",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYWlxZXJqalhYb043ZWNqeG5PQWFMb3QyYmE2U1R1S0ZlSmZyV252WGhyd2NwR3JhU3hEWGdaWHNJOHdldVFsdkxxOFd0cXdjQ3BxdTc1Y1IzcjdLbTMzdmpQeEFyTXRsLXAzZ180YjdyZjFFSHI4TURjdmtOaUJMTGxVOUc3eDEtb016aGMxcjdEX2xEU2Y4TDRXMW84N3RFaEhJcTJ6bDNZRU0xMUxvS1doTWxWeUlqVFhVUUQxM3NTMnZHR0J3dnRzaHFfOW91U3ZSX1plQQ?oc=5",
+   "source": "HDFC Sky",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:20:34Z",
+   "summary": "",
+   "categories": [
+    "Inflation & growth",
+    "Markets",
+    "India"
+   ]
+  },
+  {
+   "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
+   "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+   "source": "CNBC International",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:19:44Z",
+   "summary": "S&P Global Ratings said Nvidia's credit rating could be cut by one notch as it flagged \"rising\" management and governance risk at the chipmaker.",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Asian Chip Stocks Rebound as Traders Shrug Off Proposed US Tariffs",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA3U0JGbmViSU1FeFRKd3NrdDg4TVFLX2tfWjBvLTVfTDhXZUVRSzNKN0h2cnliT0phQnlxZTBGSnlMbTNnd0ZvcjZEMk5mN0xGejBfMVA3eEpPLThrUUYtR3lNdExocXFBa1BCVk9yU2s2RkNBMHc?oc=5",
+   "source": "BigGo Finance",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T03:05:00Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "Gold rises marginally, silver gains 2% on MCX; ETFs surge up to 6%: Gold Silver Rates Live Updates",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/url-live-updates-gold-rate-today-26th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/136176736.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T02:44:21Z",
+   "summary": "",
+   "categories": [
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Rupee has room to rally before RBI steps in, strategists say",
+   "url": "https://economictimes.indiatimes.com/markets/forex/rupee-has-room-to-rally-before-rbi-steps-in-strategists-say/articleshow/136176673.cms",
+   "source": "ET Markets",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T02:43:43Z",
+   "summary": "India's rupee is experiencing a notable rally against the dollar, driven by foreign equity inflows and decreasing oil prices. Analysts project the rupee may reach levels between 90 and 91 per dollar. The Reserve Bank of India is likely to h",
+   "categories": [
+    "Central banks & rates",
+    "Markets",
+    "Currencies",
+    "Commodities & energy"
+   ]
+  },
+  {
+   "title": "Asian shares bounce as AI concerns, fresh US tariffs lurk in background",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcUNxZWZyWmxxempfMGxaLW0ydXBHbGJGd1RNZWdJR2xtemV2bU1yUmtQRm43cGFvWmc0UVlYMjMyS3htRHZKclBmMlN1bHFrQ1JPVHBqOTBMa0ZmMW9abVRRQ1RDaTgtdkpKQTNxUUhRdU9GOEtYZzlZZTRZa1pDNURfVDVORTFScnBIMDFzVjd1Z0RLRjFkUENoeXFQT0tWVlQzZWRwQnVuMFR1LXU2UXdWVlNnWVpGUlBRVDc2YjFGbnNFdjVCUXAyVE1RT0hhN25n0gHYAUFVX3lxTE9nNmZrdVlfWGYxRi1oR2Fod015V0doaFNLQnNLN2dhLXc0TGhia0hSZmhCbTdwaHc1aVVGaEZncjFQTXh5Z1IzWnd0eVRUZ2Q0bnYtOS1UMm4ySnVPQjAwd0xTX1pQSTdhTzVjc3FyT3A1UTVraTB3dWI4UU5wSVpCd19pMHRLX0pGWmxibjRITEhKMFF4N1IwRlpvNlMwMnBMd1ZUZWgwdUp3dFV5dWlSRl9nR3kxZnEtQVNKcHFyUzUtUVJNdjNsc1NSS3QzMHFxVERmRWlvWQ?oc=5",
+   "source": "Business Standard",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T02:42:48Z",
+   "summary": "",
+   "categories": [
+    "Markets"
+   ]
+  },
+  {
+   "title": "New US tariff push: Why India has an edge over its rivals, and at what cost",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZ2hYcDl2SjFvVEF6OE5rV3FyS1ROQTlLVkRxbmRtRHRKcWdVbE8wUFF3eGhab0QzalZkRU9iVjBiRnJVOUU2eG9NVjlPVV9velU1alVOdkR4ODBZWndwWFVhby1TNkxOT2N5bXp0Y3AycGdsZW8wUk1va3kwSGI2dk9GUGZUTVh5QTAtQlhuMmpSSEQ3SG1mMUk1dC1GQUR1NlZGS1lJT3FIX3JycS0yYWJCaXRUNjBiSEx3eHE5Q1c1M21tVmFCYzJYUjhJd9IB1AFBVV95cUxNbHhkb2kxRDc0ODZNcXMtT2NIekYzdURFX3ZaNi1LeGZ6TzZ5Z002eE9nbjdDNkVPYUdTbTVCQjE4QUI5dVh5V3RnRjNIYTBtS2pZbXNYU1VkUzc4N3lMcnBrbzIwTEdMLTNUT0ZWeVNJRzBuOUNZcUtabGVwTEdCR0RiX3pGTnFabkMtcU1VcUVOdklxeVFfa1NSNmxiUU9Id3BsYTd0V2hkenlvRDBtYmVpX0xTeDlDMmJ2TXdia09RUEJKQUtTRGEyM0wzYlVQMjl5UQ?oc=5",
+   "source": "The Indian Express",
+   "region": "Global",
+   "official": false,
+   "published": "2026-11-26T02:39:33Z",
+   "summary": "",
+   "categories": [
+    "Geopolitics & trade",
+    "India"
+   ]
+  },
+  {
+   "title": "Inflation more generalised, more categories seeing price hikes: RBI paper",
+   "url": "https://www.business-standard.com/economy/news/inflation-more-generalised-more-categories-seeing-price-hikes-rbi-paper-126112600055_1.html",
+   "source": "Business Standard",
+   "region": "India",
+   "official": false,
+   "published": "2026-11-26T02:24:46Z",
+   "summary": "The headline consumer price inflation accelerated to 6.1 per cent in October on an annual basis, compared to 5.5 per cent in September",
+   "categories": [
+    "Central banks & rates",
     "Inflation & growth",
     "India"
    ]
   },
   {
-   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-   "url": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
-   "source": "CNBC International",
-   "region": "Global",
+   "title": "Dollar steady as sliding yields temper safe-haven bid",
+   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-steady-as-sliding-yields-temper-safe-haven-bid/articleshow/136176300.cms",
+   "source": "ET Markets",
+   "region": "India",
    "official": false,
-   "published": "2026-11-25T15:55:40Z",
-   "summary": "Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI's headquarters.",
+   "published": "2026-11-26T02:07:43Z",
+   "summary": "After dipping to a one-week low, the US dollar has stabilized, influenced by the recent drop in Treasury yields. The upcoming economic indicators hint at potential interest rate increases by the Federal Reserve in December. Meanwhile, the y",
    "categories": [
-    "Markets"
+    "Central banks & rates",
+    "Currencies"
    ]
   }
  ]
