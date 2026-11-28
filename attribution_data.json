@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T22:52:05Z",
+ "generated": "2026-11-28T00:40:15Z",
  "benchmark": "NIFTY 50",
  "method": "Daily fund returns regressed on daily NIFTY 50 returns. Market contribution = beta x cumulative benchmark return; manager contribution is the residual, i.e. everything not explained by market exposure — selection, the short book, timing, cash and fees together.",
  "not_brinson": "This is returns-based, not a Brinson allocation/selection attribution. Brinson requires benchmark sector weights at each date, which are not published for this category.",
@@ -7770,9 +7770,9 @@
     "cash_other": 0.0
    },
    "allocation_shift": {
+    "money_market": 610.0,
     "equity": 796.0,
-    "cash_other": 0,
-    "money_market": 610.0
+    "cash_other": 0
    },
    "sector_shifts": [
     {
@@ -7845,9 +7845,9 @@
     "cash_other": 13.47
    },
    "allocation_shift": {
+    "money_market": 0.52,
     "equity": 3.96,
-    "cash_other": -4.48,
-    "money_market": 0.52
+    "cash_other": -4.48
    },
    "sector_shifts": [
     {
@@ -7998,9 +7998,9 @@
     "cash_other": 18.38
    },
    "allocation_shift": {
+    "money_market": 0.25,
     "equity": 2.67,
-    "cash_other": -2.92,
-    "money_market": 0.25
+    "cash_other": -2.92
    },
    "sector_shifts": [
     {
@@ -8223,9 +8223,9 @@
     "cash_other": 7.65
    },
    "allocation_shift": {
+    "money_market": 0.86,
     "equity": 4.96,
-    "cash_other": -5.82,
-    "money_market": 0.86
+    "cash_other": -5.82
    },
    "sector_shifts": [
     {
@@ -8376,9 +8376,9 @@
     "cash_other": 23.08
    },
    "allocation_shift": {
+    "money_market": -6.26,
     "equity": -9.17,
-    "cash_other": 15.43,
-    "money_market": -6.26
+    "cash_other": 15.43
    },
    "sector_shifts": [
     {
@@ -8451,9 +8451,9 @@
     "cash_other": 9.38
    },
    "allocation_shift": {
+    "money_market": 0.41,
     "equity": 13.29,
-    "cash_other": -13.7,
-    "money_market": 0.41
+    "cash_other": -13.7
    },
    "sector_shifts": [
     {
